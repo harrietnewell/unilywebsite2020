@@ -1,0 +1,47 @@
+
+.c-article__side-container {
+	.c-articles__media {
+		margin-bottom: 10px;
+	}
+}
+
+.youtube-subscribe-btn {
+	background-color: #ff0000;
+	border: none;
+	color: white;
+	padding: 5px 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 12px "YouTube Noto",Roboto,arial,sans-serif;
+	cursor: pointer;
+	border-radius: 2px;
+	&:hover {
+		background-color: #e62117;
+	}
+	&:focus {
+		outline: none !important;
+	}
+	.icon {
+		background: url(/media/zpncpwl4/youtube-white.svg) no-repeat;
+		float: left;
+		width: 17px;
+		height: 14.4px;
+		margin-right: 6px;
+		margin-top: 1.2px;
+	}
+	.span {
+		float: left;
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.c-articles__content {
+	.c-metadata__item--date {
+		&:before {
+			margin-top: 0 !important;
+			margin-left: 0 !important;
+		}
+	}
+}
