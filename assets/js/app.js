@@ -1,5 +1,3 @@
-var initialScrollDistance = 0;
-
 $(document).ready(function() {
 
 
@@ -102,24 +100,13 @@ $(document).ready(function() {
     closeDropdown();
   });
 
-  // $(window).on('blur scroll', function() {
-  //   closeDropdown();
-  // });
-    $(window).on("scroll", function () {
-        if ($('header.c-head').hasClass('c-head--subnav')) {
-            // initialScrollDistance = $(window).scrollTop();
-            if (Math.abs(initialScrollDistance - $(window).scrollTop()) > 150) {
-                // closeDropdown();
-            }
-        } else {
-            initialScrollDistance = $(window).scrollTop();
-        }
-        
-    });
+  $(window).on('blur scroll', function() {
+    closeDropdown();
+  });
 
-  // $('body').on('mouseleave', function() {
-  //   closeDropdown();
-  // });
+  $('body').on('mouseleave', function() {
+    closeDropdown();
+  });
 
 
   // On Document Click
@@ -148,7 +135,6 @@ $(document).ready(function() {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active').next().removeClass('active');
     } else {
-      $(".js-link-more").removeClass("active").next().removeClass("active");
       $(this).addClass('active').next().addClass('active');
       new SimpleBar($(this).next()[0]);
     }

@@ -3942,7 +3942,7 @@ textarea.hs-input {
   background-size: 0.75rem 0.75rem; }
 
 .c-more__heading.active:after {
-  background-image: url(../img/icon-minus-navy.svg); }
+  background-image: url(../img/minus-navy.svg); }
 
 .c-dropdown__box .c-more {
   margin-top: 1.25rem;
@@ -4276,7 +4276,7 @@ textarea.hs-input {
       background-image: url(../img/plus-navy.svg);
       background-size: 1rem 1rem; }
   .c-popular .c-popular__link.active:after {
-    background-image: url(../img/icon-minus-navy.svg); }
+    background-image: url(../img/minus-navy.svg); }
   .c-popular__nav {
     list-style: none;
     padding: 0; }
