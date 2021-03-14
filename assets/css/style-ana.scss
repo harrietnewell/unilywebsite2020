@@ -6,6 +6,8 @@ body {
   /*color: #1c1c1b;*/
   /*margin: 0;*/
 }
+
+/** Global styles inpired with Bootstrap **/
 *, ::after, ::before {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -35,6 +37,13 @@ body {
 .max-width-440 { max-width: 440px; }
 .min-height-425 { min-height: 425px; }
 .min-height-650 { min-height: 650px; }
+
+.position-relative {
+  position: relative !important;
+}
+
+/** End Global styles inspired by Bootstrap **/
+
 
 .containter-custom {
   width: 1515px;
@@ -352,12 +361,29 @@ body {
   &:after {
     width: .75rem;
     height: .75rem;
-    background-image: url("../img/plus-navy.svg");
+    background-image: url("https://unilyweb2020.azureedge.net/media/vs5dubzh/plus-navy.svg");
+  }
+  &.active {
+    &:after {
+      background-image: url("https://unilyweb2020.azureedge.net/media/fath3k52/minus-navy.svg");
+    }
   }
 }
-.c-more__heading.active:after,
-.c-popular .c-popular__link.active:after {
-  background-image: url("../img/icon-minus-navy.svg");
+.c-popular {
+  .c-popular__link {
+    &.active {
+      &:after {
+        background-image: url("https://unilyweb2020.azureedge.net/media/fath3k52/minus-navy.svg");
+      }
+    }
+  }
+}
+.c-block-home__media {
+  .link-play {
+    &:before {
+      background-image: url("https://unilyweb2020.azureedge.net/media/bwkoyffj/play-black.svg");
+    }
+  }
 }
 
 @keyframes pulsate-1 {
@@ -499,7 +525,7 @@ body {
     display: block;
     width: 2.5rem;
     height: 2.5rem;
-    background: url("../img/close-black.svg") no-repeat center;
+    background: url("https://unilyweb2020dev.azureedge.net/media/uuzbwrlw/close-black.svg") no-repeat center;
     background-size: 1rem;
     opacity: 0.75;
     position: relative;
@@ -565,3 +591,137 @@ body {
   filter: grayscale(100%);
 }
 /** End _c-lightbox.scss  **/
+
+
+/** Start _c-footer.scss  **/
+.c-foot {
+  font-size: 0.9375rem;
+
+  .c-foot-nav__col {
+    flex: 0 0 auto;
+  }
+  .c-foot__heading {
+    font-size: 0.9375rem;
+  }
+  .footer-cursor-before-link:before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    margin-left: -18px;
+    margin-right: 6px;
+    background: url("../img/img-cdn/cursor-arrow-navy.svg") no-repeat center;
+    background-size: contain;
+  }
+  .c-social--foot-floated-right {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  .container-wide-1 {
+    width: 90%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .container-wide-2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .c-foot {
+    .c-foot-nav__row {
+      margin-bottom: 120px;
+    }
+    &.py-type-1 {
+      padding-top: 120px;
+      padding-bottom: 190px !important;
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .c-foot {
+    .container-wide-2 {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .c-foot {
+    .container-wide-2 {
+      width: 80%;
+      max-width: 80%;
+    }
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .c-foot {
+    .container-wide-2 {
+      width: 70%;
+      max-width: 70%;
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .c-foot {
+    &.py-type-1 {
+      padding-top: 80px;
+      padding-bottom: 50px !important;
+    }
+    .c-foot-nav__row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+
+      .c-foot-nav__col {
+        flex: 0 0 50%;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+    }
+    .c-social--foot-floated-right {
+      position: relative;
+      top: 0;
+      right: 0;
+      margin-top: 70px;
+      justify-content: center;
+    }
+    .c-popular__row.active {
+      display: flex;
+      flex-wrap: wrap;
+      .c-popular__col {
+        flex: 0 0 50%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .c-foot {
+    .c-foot__nav {
+      margin-bottom: 0;
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .c-foot {
+    .c-popular__row.active,
+    .c-foot-nav__row {
+
+      .c-popular__col,
+      .c-foot-nav__col {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}
+
+
+/** End _c-footer.scss  **/
