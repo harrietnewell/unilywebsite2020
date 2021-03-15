@@ -229,41 +229,30 @@ $(document).ready(function() {
   }
 
 
-// Cookie
-  
- /* if($('#onetrust-banner-sdk').length) {
-	  ('#onetrust-banner-sdk').wrap('div class="c-cookie"></div>');
-  }
-  */
-  if ($(".c-alert").length > 1){
+  // Cookie
+ 
+  if($('#onetrust-banner-sdk:visible').length) {
+ 
+    if ($(".c-alert").length > 1){
 
-   if($('#onetrust-banner-sdk').length && $('.c-alert').length && (window.matchMedia('screen and (min-width: 1028px)').matches))  {
-    $(window).resize(function() {
-      if($('#onetrust-banner-sdk:visible').length ) {
-        var alertHeight = $('.c-alert').outerHeight();
-        var headHeight =  $('.c-head__wrap').outerHeight();
-        $('#onetrust-banner-sdk').css('min-height', alertHeight+headHeight);
-      }
-    }).resize(),
-	$('#onetrust-consent-sdk').appendTo(".c-head");
-  }
-  } else {
-	  
-	$(window).resize(function() {
-      if($('#onetrust-banner-sdk:visible').length ) {
+      $(window).resize(function() {
+        if(window.matchMedia('screen and (min-width: 1028px)').matches) {
+          var alertHeight = $('.c-alert').outerHeight();
+          var headHeight =  $('.c-head__wrap').outerHeight();
+          $('#onetrust-banner-sdk').css('min-height', alertHeight+headHeight);
+		}
+      }).resize(), $('#onetrust-consent-sdk').appendTo(".c-head");
+    
+	} else {	  
+	
+	  $(window).resize(function() {
         var headHeight =  $('.c-head__wrap').outerHeight();
         $('#onetrust-banner-sdk').css('min-height',headHeight);
-      }
-    }).resize(),
-	$('#onetrust-consent-sdk').appendTo(".c-head");  
-	  
+      }).resize(), $('#onetrust-consent-sdk').appendTo(".c-head");  
+    
+	}
   }
   
-  
-//$('#onetrust-consent-sdk').appendTo(".c-head");
-
-
-
   // Insights horizontal navigation
 
   if($('.c-category-nav__container').length) {
