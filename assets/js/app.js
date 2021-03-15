@@ -246,8 +246,10 @@ $(document).ready(function() {
 	} else {	  
 	
 	  $(window).resize(function() {
-        var headHeight =  $('.c-head__wrap').outerHeight();
-        $('#onetrust-banner-sdk').css('min-height',headHeight);
+		  if(window.matchMedia('screen and (min-width: 1028px)').matches) {
+	        var headHeight =  $('.c-head__wrap').outerHeight();
+            $('#onetrust-banner-sdk').css('min-height',headHeight);
+		  }
       }).resize(), $('#onetrust-consent-sdk').appendTo(".c-head");  
     
 	}
