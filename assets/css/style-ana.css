@@ -603,7 +603,7 @@ body {
 }
 
 /** End _c-lightbox.scss  **/
-/** Start _c-footer.scss  **/
+/** Start footer scss  **/
 .c-foot {
   font-size: 0.9375rem;
 }
@@ -612,6 +612,9 @@ body {
 }
 .c-foot .c-foot__heading {
   font-size: 0.9375rem;
+}
+.c-foot .c-popular__heading {
+  font-size: 1.25rem;
 }
 .c-foot .footer-cursor-before-link:before {
   content: "";
@@ -646,7 +649,7 @@ body {
 
 @media only screen and (min-width: 992px) {
   .c-foot .c-foot-nav__row {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
   .c-foot.py-type-1 {
     padding-top: 120px;
@@ -707,13 +710,15 @@ body {
   }
 }
 @media only screen and (max-width: 575px) {
-  .c-foot .c-popular__row.active .c-popular__col,
-.c-foot .c-popular__row.active .c-foot-nav__col,
-.c-foot .c-foot-nav__row .c-popular__col,
-.c-foot .c-foot-nav__row .c-foot-nav__col {
-    flex: 0 0 100%;
+  .c-foot .c-popular__row.active,
+.c-foot .c-foot-nav__row {
+    justify-content: center;
   }
 }
-/** End _c-footer.scss  **/
+.c-social__link--youtube:before {
+  background-image: url("https://unilyweb2020.azureedge.net/media/4hnfbypb/youtube-navy.svg");
+}
+
+/** End footer scss  **/
 
 /*# sourceMappingURL=style-ana.css.map */
