@@ -14,11 +14,11 @@ body {
   -webkit-overflow-scrolling: touch;
   text-shadow: none;
 }
-
 .mx-auto { margin-right: auto !important; margin-left: auto !important; }
 .my-5 { margin-top: 3rem !important; margin-bottom: 3rem !important; }
 .mt-5 { margin-top: 3rem !important; }
 .mt-4 { margin-top: 1.5rem !important; }
+.mt-2 { margin-top: .5rem !important; }
 .mt-0 { margin-top: 0 !important; }
 .mb-3 { margin-bottom: 1rem !important; }
 .mb-2 { margin-bottom: .5rem !important; }
@@ -31,6 +31,10 @@ body {
 .pb-3 { padding-bottom: 1rem !important; }
 .pb-1 { padding-bottom: .25rem !important; }
 .pb-0 { padding-bottom: 0 !important; }
+
+@media (min-width:768px){
+  .mt-md-4 { margin-top: 1.5rem !important; }
+}
 
 .full-width { width: 100%; }
 .max-width-full { max-width: 100%; }
