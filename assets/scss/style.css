@@ -4765,15 +4765,17 @@ textarea.hs-input {
     margin-bottom: 0;
   }
 }
-.c-block-home__slidein {
-  transform: translateX(50%);
-  opacity: 0;
-  animation: 0.75s forwards ease 1.5s hero;
-}
 @media (max-width: 767px) {
   .c-block-home__slidein {
     width: 100%;
     height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .c-block-home__slidein {
+    transform: translateX(50%);
+    opacity: 0;
+    animation: 0.75s forwards ease 1.5s hero;
   }
 }
 .c-block-home__img {
@@ -6061,6 +6063,8 @@ textarea.hs-input {
 #onetrust-pc-sdk #close-pc-btn-handler.ot-close-icon {
   background: url(https://unilyweb2020dev.azureedge.net/media/uuzbwrlw/close-black.svg) no-repeat center center !important;
   background-size: 0.75rem 0.75rem !important;
+  top: 20px !important;
+  right: 25px !important;
 }
 #onetrust-pc-sdk #close-pc-btn-handler.ot-close-icon:hover {
   opacity: 1 !important;
@@ -6102,16 +6106,14 @@ textarea.hs-input {
   border: 1px solid #3EC8ED !important;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  #onetrust-consent-sdk #onetrust-banner-sdk {
-    height: 160px !important;
-  }
+#onetrust-consent-sdk #onetrust-banner-sdk {
+  position: fixed !important;
 }
-@media (min-width: 320px) and (max-width: 1028px) {
-  #onetrust-banner-sdk.otFlat {
-    position: fixed;
-  }
+
+#onetrust-banner-sdk div {
+  margin: auto !important;
 }
+
 .c-testimonials {
   list-style: none;
   padding-left: 0;

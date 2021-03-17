@@ -321,6 +321,8 @@
 #onetrust-pc-sdk #close-pc-btn-handler.ot-close-icon {
     background: url(#{$cdn-url}media/uuzbwrlw/close-black.svg) no-repeat center center !important;
     background-size: rem-size(12px 12px) !important;
+    top: 20px !important;
+    right:25px !important;
 
     &:hover {
         opacity: 1 !important;
@@ -366,15 +368,12 @@
   border: 1px solid $color-unily-light-blue !important;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-	#onetrust-consent-sdk {
-		#onetrust-banner-sdk {
-			height: 160px !important;
-		}
+#onetrust-consent-sdk {
+	#onetrust-banner-sdk {
+        position:fixed !important;
 	}
 }
-@media (min-width: 320px) and (max-width: 1028px) {
-	#onetrust-banner-sdk.otFlat {
-		position: fixed;
-	}
+
+#onetrust-banner-sdk div {
+    margin: auto !important;
 }

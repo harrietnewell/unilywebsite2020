@@ -606,16 +606,18 @@ body {
   .c-popular__heading {
     font-size: 1.25rem;
   }
-  .footer-cursor-before-link:before {
-    content: '';
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    position: relative;
-    margin-left: -18px;
-    margin-right: 6px;
-    background: url("../img/img-cdn/cursor-arrow-navy.svg") no-repeat center;
-    background-size: contain;
+  .footer-cursor-before-link {
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      position: relative;
+      margin-left: -18px;
+      margin-right: 6px;
+      background: url("../img/img-cdn/cursor-arrow-navy.svg") no-repeat center;
+      background-size: contain;
+    }
   }
   .c-social--foot-floated-right {
     position: absolute;
