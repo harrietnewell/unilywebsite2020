@@ -1,0 +1,130 @@
+@import "../lightbox/style";
+
+
+/** Start footer scss  **/
+.c-foot {
+  font-size: 0.9375rem;
+
+  .c-foot-nav__col {
+    flex: 0 0 auto;
+  }
+  .c-foot__heading {
+    font-size: 0.9375rem;
+  }
+  .c-popular__heading {
+    font-size: 1.25rem;
+  }
+  .footer-cursor-before-link {
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      position: relative;
+      margin-left: -18px;
+      margin-right: 6px;
+      background: url("../../assets/img/img-cdn/cursor-arrow-navy.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+  .container-wide-1 {
+    width: 90%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .container-wide-2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .c-foot {
+    .c-foot-nav__row {
+      margin-bottom: 100px;
+    }
+    &.py-type-1 {
+      padding-top: 120px;
+      padding-bottom: 190px !important;
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .c-foot {
+    .container-wide-2 {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .c-foot {
+    .container-wide-2 {
+      width: 80%;
+      max-width: 80%;
+    }
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .c-foot {
+    .container-wide-2 {
+      width: 70%;
+      max-width: 70%;
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .c-foot {
+    &.py-type-1 {
+      padding-top: 80px;
+      padding-bottom: 50px !important;
+    }
+    .c-foot-nav__row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+
+      .c-foot-nav__col {
+        flex: 0 0 50%;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+    }
+    .c-popular__row.active {
+      display: flex;
+      flex-wrap: wrap;
+      .c-popular__col {
+        flex: 0 0 50%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .c-foot {
+    .c-foot__nav {
+      margin-bottom: 0;
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .c-foot {
+    .c-popular__row.active,
+    .c-foot-nav__row {
+      justify-content: center;
+      .c-popular__col,
+      .c-foot-nav__col {
+        //flex: 0 0 100%;
+      }
+    }
+  }
+}
+.c-social__link--youtube:before {
+  background-image: url("https://unilyweb2020.azureedge.net/media/4hnfbypb/youtube-navy.svg");
+}
+
+/** End footer scss  **/

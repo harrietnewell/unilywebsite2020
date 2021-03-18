@@ -129,6 +129,7 @@ $(document).ready(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active').next().removeClass('active');
         } else {
+            $('.js-link-more').removeClass('active').next().removeClass('active');
             $(this).addClass('active').next().addClass('active');
             new SimpleBar($(this).next()[0]);
         }

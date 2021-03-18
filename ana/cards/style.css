@@ -344,23 +344,23 @@ body {
 }
 
 .bg-img-1 {
-  background: url("../img/img-cdn/gettyimages-1073728878.jpg") no-repeat right top;
+  background: url("../../assets/img/img-cdn/gettyimages-1073728878.jpg") no-repeat right top;
 }
 .bg-img-1 .label {
   background-color: #fff;
 }
 .bg-img-1 .label span {
-  background: url("../img/img-cdn/gettyimages-1073728878.jpg") no-repeat calc(100% + 20px) -40px;
+  background: url("../../assets/img/img-cdn/gettyimages-1073728878.jpg") no-repeat calc(100% + 20px) -40px;
 }
 
 .bg-img-2 {
-  background: url("../img/img-cdn/gettyimages-10737288781.jpg") no-repeat right top;
+  background: url("../../assets/img/img-cdn/gettyimages-10737288781.jpg") no-repeat right top;
 }
 .bg-img-2 .label {
   background-color: #fff;
 }
 .bg-img-2 .label span {
-  background: url("../img/img-cdn/gettyimages-10737288781.jpg") no-repeat calc(100% + 20px) -40px;
+  background: url("../../assets/img/img-cdn/gettyimages-10737288781.jpg") no-repeat calc(100% + 20px) -40px;
 }
 
 .overlay {
@@ -399,25 +399,6 @@ body {
 .overlay-leaving .rotation-leaving {
   position: relative;
   z-index: 4;
-}
-
-.c-more__list,
-.c-more__container {
-  max-height: 13.5rem;
-  height: auto;
-}
-
-.c-more__heading:after {
-  width: 0.75rem;
-  height: 0.75rem;
-  background-image: url("https://unilyweb2020.azureedge.net/media/vs5dubzh/plus-navy.svg");
-}
-.c-more__heading.active:after {
-  background-image: url("https://unilyweb2020.azureedge.net/media/fath3k52/minus-navy.svg");
-}
-
-.c-popular .c-popular__link.active:after {
-  background-image: url("https://unilyweb2020.azureedge.net/media/fath3k52/minus-navy.svg");
 }
 
 .c-block-home__media .link-play:before {
@@ -612,122 +593,5 @@ body {
 }
 
 /** End _c-lightbox.scss  **/
-/** Start footer scss  **/
-.c-foot {
-  font-size: 0.9375rem;
-}
-.c-foot .c-foot-nav__col {
-  flex: 0 0 auto;
-}
-.c-foot .c-foot__heading {
-  font-size: 0.9375rem;
-}
-.c-foot .c-popular__heading {
-  font-size: 1.25rem;
-}
-.c-foot .footer-cursor-before-link:before {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  position: relative;
-  margin-left: -18px;
-  margin-right: 6px;
-  background: url("../img/img-cdn/cursor-arrow-navy.svg") no-repeat center;
-  background-size: contain;
-}
-.c-foot .c-social--foot-floated-right {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
-.c-foot .container-wide-1 {
-  width: 90%;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-.c-foot .container-wide-2 {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
 
-@media only screen and (min-width: 992px) {
-  .c-foot .c-foot-nav__row {
-    margin-bottom: 100px;
-  }
-  .c-foot.py-type-1 {
-    padding-top: 120px;
-    padding-bottom: 190px !important;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .c-foot .container-wide-2 {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .c-foot .container-wide-2 {
-    width: 80%;
-    max-width: 80%;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  .c-foot .container-wide-2 {
-    width: 70%;
-    max-width: 70%;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .c-foot.py-type-1 {
-    padding-top: 80px;
-    padding-bottom: 50px !important;
-  }
-  .c-foot .c-foot-nav__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 25px;
-  }
-  .c-foot .c-foot-nav__row .c-foot-nav__col {
-    flex: 0 0 50%;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  .c-foot .c-social--foot-floated-right {
-    position: relative;
-    top: 0;
-    right: 0;
-    margin-top: 70px;
-    justify-content: center;
-  }
-  .c-foot .c-popular__row.active {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .c-foot .c-popular__row.active .c-popular__col {
-    flex: 0 0 50%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .c-foot .c-foot__nav {
-    margin-bottom: 0;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .c-foot .c-popular__row.active,
-.c-foot .c-foot-nav__row {
-    justify-content: center;
-  }
-}
-.c-social__link--youtube:before {
-  background-image: url("https://unilyweb2020.azureedge.net/media/4hnfbypb/youtube-navy.svg");
-}
-
-/** End footer scss  **/
-
-/*# sourceMappingURL=style-ana.css.map */
+/*# sourceMappingURL=style.css.map */
