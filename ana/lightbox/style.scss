@@ -2,6 +2,18 @@
 
 
 
+.btn {
+  &.btn-img {
+    display: inline-flex;
+    align-items: center;
+    img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+      margin-right: 8px;
+    }
+  }
+}
 .c-lightbox {
   &.popup-01 {
     visibility: hidden;
@@ -34,66 +46,66 @@
     width: 2.5rem;
     height: 2.5rem;
     background: url("https://unilyweb2020dev.azureedge.net/media/uuzbwrlw/close-black.svg") no-repeat center;
-    background-size: 1rem;
+    background-size: .75rem;
     opacity: 0.75;
     position: relative;
   }
 }
-.c-block-home {
-  .puls-icon {
-    display: inline-flex;
-    align-items: center;
-    margin-top: 1.875rem;
-
-    &:before {
-      background-image: none;
-    }
-    img {
-      width: 18px;
-      height: 18px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 5px;
-      margin: auto;
-    }
-    > span {
-      background: transparent;
-      width: 54px;
-      height: 54px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      margin-right: 10px;
-
-      > span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        animation: pulsate-1 2.75s infinite ease-in-out forwards;
-        /*animation: 2s linear .1s pulsate-1;*/
-        background: #102B43;
-        border-radius: 50%;
-
-        > span {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 28px;
-          height: 28px;
-          animation: pulsate-2 2.75s infinite ease-in-out forwards;
-          /*animation: 2s linear .1s pulsate-2;*/
-          background: #3EC8ED;
-          border-radius: 50%;
-        }
-      }
-    }
-  }
-}
+//.c-block-home {
+//  .puls-icon {
+//    display: inline-flex;
+//    align-items: center;
+//    margin-top: 1.875rem;
+//
+//    &:before {
+//      background-image: none;
+//    }
+//    img {
+//      width: 18px;
+//      height: 18px;
+//      position: absolute;
+//      top: 0;
+//      right: 0;
+//      bottom: 0;
+//      left: 5px;
+//      margin: auto;
+//    }
+//    > span {
+//      background: transparent;
+//      width: 54px;
+//      height: 54px;
+//      display: inline-flex;
+//      align-items: center;
+//      justify-content: center;
+//      position: relative;
+//      margin-right: 10px;
+//
+//      > span {
+//        display: flex;
+//        align-items: center;
+//        justify-content: center;
+//        width: 44px;
+//        height: 44px;
+//        animation: pulsate-1 2.75s infinite ease-in-out forwards;
+//        /*animation: 2s linear .1s pulsate-1;*/
+//        background: #102B43;
+//        border-radius: 50%;
+//
+//        > span {
+//          display: flex;
+//          align-items: center;
+//          justify-content: center;
+//          width: 28px;
+//          height: 28px;
+//          animation: pulsate-2 2.75s infinite ease-in-out forwards;
+//          /*animation: 2s linear .1s pulsate-2;*/
+//          background: #3EC8ED;
+//          border-radius: 50%;
+//        }
+//      }
+//    }
+//  }
+//}
 .circular-black-white {
   border-radius: 50%;
   filter: grayscale(100%);

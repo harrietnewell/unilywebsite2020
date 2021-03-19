@@ -186,16 +186,6 @@
   display: inline-block;
 }
 .btn {
-  &.btn-img {
-    display: inline-flex;
-    align-items: center;
-    img {
-      width: 18px;
-      height: 18px;
-      object-fit: contain;
-      margin-right: 8px;
-    }
-  }
   &.btn-07 {
     color: #fff;
     border: 2px solid #fff;
