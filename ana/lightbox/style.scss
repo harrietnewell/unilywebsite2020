@@ -51,6 +51,13 @@
     position: relative;
   }
 }
+.c-block-home__media {
+  .link-play {
+    &:before {
+      background-image: url("https://unilyweb2020.azureedge.net/media/bwkoyffj/play-black.svg");
+    }
+  }
+}
 .circular-black-white {
   border-radius: 50%;
   filter: grayscale(100%);

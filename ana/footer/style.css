@@ -217,7 +217,7 @@
   position: relative;
   z-index: 1;
 }
-.flip-card-front .card--white:after {
+.flip-card-front.card--white:after {
   content: " ";
   position: absolute;
   top: 0;
@@ -382,10 +382,6 @@
   z-index: 4;
 }
 
-.c-block-home__media .link-play:before {
-  background-image: url("https://unilyweb2020.azureedge.net/media/bwkoyffj/play-black.svg");
-}
-
 @media (max-width: 1199px) {
   .containter-custom {
     max-width: 100%;
@@ -494,6 +490,10 @@
   background-size: 0.75rem;
   opacity: 0.75;
   position: relative;
+}
+
+.c-block-home__media .link-play:before {
+  background-image: url("https://unilyweb2020.azureedge.net/media/bwkoyffj/play-black.svg");
 }
 
 .circular-black-white {

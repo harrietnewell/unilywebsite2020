@@ -217,7 +217,7 @@
   position: relative;
   z-index: 1;
 }
-.flip-card-front .card--white:after {
+.flip-card-front.card--white:after {
   content: " ";
   position: absolute;
   top: 0;
@@ -380,10 +380,6 @@
 .overlay-leaving .rotation-leaving {
   position: relative;
   z-index: 4;
-}
-
-.c-block-home__media .link-play:before {
-  background-image: url("https://unilyweb2020.azureedge.net/media/bwkoyffj/play-black.svg");
 }
 
 @media (max-width: 1199px) {

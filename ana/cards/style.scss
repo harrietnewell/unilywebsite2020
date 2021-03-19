@@ -118,7 +118,7 @@
     position: relative;
     z-index: 1;
   }
-  .card--white {
+  &.card--white {
     &:after {
       content: " ";
       position: absolute;
@@ -295,13 +295,6 @@
   .rotation-leaving {
     position: relative;
     z-index: 4;
-  }
-}
-.c-block-home__media {
-  .link-play {
-    &:before {
-      background-image: url("https://unilyweb2020.azureedge.net/media/bwkoyffj/play-black.svg");
-    }
   }
 }
 
