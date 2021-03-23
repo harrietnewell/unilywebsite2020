@@ -528,6 +528,18 @@
     white-space: normal;
     width: 100%;
   }
+    
+  &.btn-img {
+	display: inline-flex;
+	align-items: center;
+
+	img {
+	  width: 18px;
+	  height: 18px;
+      object-fit: contain;
+	  margin-right: 8px;
+	}
+  }
 
   &-outline {
     padding: rem-size(8px 14px);

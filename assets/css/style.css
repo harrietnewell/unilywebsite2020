@@ -793,6 +793,16 @@ th {
   white-space: normal;
   width: 100%;
 }
+.btn.btn-img {
+  display: inline-flex;
+  align-items: center;
+}
+.btn.btn-img img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-right: 8px;
+}
 .btn-outline {
   padding: 0.5rem 0.875rem;
   border: 1px solid #1C1C1B;
