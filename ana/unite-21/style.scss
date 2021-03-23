@@ -1,0 +1,14 @@
+
+
+.c-social__link--linkedin {
+  &:before {
+    background-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .agenda.container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
