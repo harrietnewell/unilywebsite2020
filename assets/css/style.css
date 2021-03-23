@@ -4775,17 +4775,15 @@ textarea.hs-input {
     margin-bottom: 0;
   }
 }
+.c-block-home__slidein {
+  transform: translateX(50%);
+  opacity: 0;
+  animation: 0.75s forwards ease 1.5s hero;
+}
 @media (max-width: 767px) {
   .c-block-home__slidein {
     width: 100%;
     height: auto;
-  }
-}
-@media (min-width: 768px) {
-  .c-block-home__slidein {
-    transform: translateX(50%);
-    opacity: 0;
-    animation: 0.75s forwards ease 1.5s hero;
   }
 }
 .c-block-home__img {

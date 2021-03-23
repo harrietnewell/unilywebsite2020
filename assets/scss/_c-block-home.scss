@@ -96,11 +96,9 @@
       height: auto;
     }
 
-    @media (min-width: $breakpoint-md) {
-      transform: translateX(50%);
-      opacity: 0;
-      animation: 0.75s forwards ease 1.5s hero;
-    }
+    transform: translateX(50%);
+    opacity: 0;
+    animation: 0.75s forwards ease 1.5s hero;
   }
 
   &__img {
