@@ -564,13 +564,11 @@
     margin-bottom: 25px;
   }
   .c-foot .c-foot-nav__row {
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 0;
+    column-count: 2;
   }
   .c-foot .c-foot-nav__row .c-foot-nav__col {
-    flex: 0 0 50%;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .c-foot .c-popular__row.active {
     display: flex;
