@@ -33,7 +33,6 @@ var unilyHsFormLightbox = {
             method: 'GET',
             url: '/umbraco/surface/hsformlightbox/checksubmission/' + hsFormId,
             success: function success(data) {
-                console.log(data);
                 if (data === 'True') { // If already submitted, play video straight...
                     $(`[${unilyHsFormLightbox.hsFormLightboxIdAttr}='${hsLightboxId}']`).find(`a[${unilyHsFormLightbox.hsFormVideoSelector}]`).click();
                 } else { // ...otherwise show form
