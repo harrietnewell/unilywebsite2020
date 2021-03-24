@@ -633,5 +633,20 @@
 }
 
 /** End footer scss  **/
+@media only screen and (max-width: 767px) {
+  .c-foot .c-foot-nav__row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .c-foot .c-foot-nav__row .c-foot-nav__col {
+    flex: 0 0 auto;
+    min-width: 35%;
+    max-width: 60%;
+  }
+  .c-foot .c-foot-nav__row .c-foot-nav__col:nth-child(1) {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-02.css.map */

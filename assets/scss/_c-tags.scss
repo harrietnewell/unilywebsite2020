@@ -35,6 +35,7 @@
     &:hover {
       color: $color-01;
       background: darken($color-02, 10%);
+      border-color: darken($color-02, 10%);
       text-decoration: none !important;
     }
   }
