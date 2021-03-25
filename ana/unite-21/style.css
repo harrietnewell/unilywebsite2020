@@ -2,14 +2,19 @@
   background-size: 1.4rem !important;
 }
 
-.mb-px-10 {
-  margin-bottom: 10px;
+.random-margin-type-1 {
+  margin-bottom: 7px;
 }
 
 @media (min-width: 768px) {
   .agenda.container {
     padding-left: 40px;
     padding-right: 40px;
+  }
+}
+@supports (-webkit-touch-callout: none) {
+  .random-margin-type-1 {
+    margin-bottom: 25px;
   }
 }
 
