@@ -1,7 +1,6 @@
 /** Global styles inspired by Bootstrap **/
 *, ::after, ::before {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   -webkit-overflow-scrolling: touch;
   text-shadow: none;
 }
