@@ -24,8 +24,18 @@
 .pb-1 { padding-bottom: .25rem !important; }
 .pb-0 { padding-bottom: 0 !important; }
 
+.position-relative { position: relative !important; }
+
+.text-left { text-align: left !important; }
+
+.d-block { display: block !important; }
+
 @media (min-width:768px){
   .mt-md-4 { margin-top: 1.5rem !important; }
+  .mb-md-4 { margin-bottom: 1.5rem !important; }
+  .pb-md-5 { padding-bottom: 3rem !important; }
+  .text-md-center { text-align: center !important; }
+  .d-md-none { display: none !important; }
 }
 
 .full-width { width: 100%; }
@@ -34,8 +44,5 @@
 .min-height-425 { min-height: 425px; }
 .min-height-650 { min-height: 650px; }
 
-.position-relative {
-  position: relative !important;
-}
 
 /** End Global styles inspired by Bootstrap **/
