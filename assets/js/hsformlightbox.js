@@ -4,9 +4,13 @@ var unilyHsFormLightbox = {
 
     lightboxIdAttr: "data-hs-lightbox-id",
     openAttr: "data-hs-lightbox-open-id",
-    openSelector: "[data-hs-lightbox-open-id]",
     closeAttr: "data-hs-lightbox-close-id",
+    lightboxSelector: "[data-hs-lightbox-id]",
+    openSelector: "[data-hs-lightbox-open-id]",
+    containerSelector: ".c-lightbox__container",
     closeSelector: "[data-hs-lightbox-close-id]",
+    trackBySessionAttr: "data-hs-lightbox-track-by-session",
+    closeOnSubmissionAttr: "data-hs-lightbox-close-on-submission",
     hsFormLightboxIdAttr: "data-hs-form-lightbox-id",
     hsFormIdAttr: "data-hs-form-id",
     hsFormVideoSelector: "data-hs-form-video",
@@ -24,44 +28,71 @@ var unilyHsFormLightbox = {
             var hsLightboxId = $(this).attr(unilyHsFormLightbox.closeAttr);
             unilyHsFormLightbox.close(hsLightboxId);
         });
+
+        $(document).on('click', unilyHsFormLightbox.containerSelector, function (e) {
+            e.preventDefault();
+            if (e.target == e.currentTarget) {
+                var hsLightboxId = $(this).closest(unilyHsFormLightbox.lightboxSelector).attr(unilyHsFormLightbox.lightboxIdAttr);
+                unilyHsFormLightbox.close(hsLightboxId);
+            }
+        });
     },
 
     open: function open(hsLightboxId) {
-        var hsFormId = unilyHsFormLightbox.getHsFormId(hsLightboxId);
 
-        $.ajax({
-            method: 'GET',
-            url: '/umbraco/surface/hsformlightbox/checksubmission/' + hsFormId,
-            success: function success(data) {
-                if (data === 'True') { // If already submitted, play video straight...
-                    $(`[${unilyHsFormLightbox.hsFormLightboxIdAttr}='${hsLightboxId}']`).find(`a[${unilyHsFormLightbox.hsFormVideoSelector}]`).click();
-                } else { // ...otherwise show form
+        if (unilyHsFormLightbox.isTrackBySession(hsLightboxId)) {
+
+            var hsFormId = unilyHsFormLightbox.getHsFormId(hsLightboxId);
+            $.ajax({
+                method: 'GET',
+                url: '/umbraco/surface/hsformlightbox/checksubmission/' + hsFormId,
+                success: function success(data) {
+                    if (data === 'True') { // If already submitted, play video straight... // TODO - Make this more generic, rather than hard coding to video playing
+                        $(`[${unilyHsFormLightbox.hsFormLightboxIdAttr}='${hsLightboxId}']`).find(`a[${unilyHsFormLightbox.hsFormVideoSelector}]`).click();
+                    } else { // ...otherwise show form
+                        $(`[${unilyHsFormLightbox.lightboxIdAttr}='${hsLightboxId}']`).addClass('opened');
+                    }
+                },
+                error: function error() {
                     $(`[${unilyHsFormLightbox.lightboxIdAttr}='${hsLightboxId}']`).addClass('opened');
                 }
-            },
-			error: function error() {
-				$(`[${unilyHsFormLightbox.lightboxIdAttr}='${hsLightboxId}']`).addClass('opened');
-			}
-        });
+            });
+
+        } else {
+            $(`[${unilyHsFormLightbox.lightboxIdAttr}='${hsLightboxId}']`).addClass('opened');
+        }
     },
 
     close: function close(hsLightboxId) {
         $(`[${unilyHsFormLightbox.lightboxIdAttr}='${hsLightboxId}']`).removeClass('opened');
     },
 
-    confirmSubmission: function confirmSubmit(hsLightboxId) {
+    confirmSubmission: function confirmSubmission(hsLightboxId) {
 
-        var hsFormId = unilyHsFormLightbox.getHsFormId(hsLightboxId);
-        $.ajax({
-            method: 'POST',
-            url: '/umbraco/surface/hsformlightbox/confirmsubmission/' + hsFormId
-        });
+        if (unilyHsFormLightbox.isTrackBySession(hsLightboxId)) {
 
-        unilyHsFormLightbox.close(hsLightboxId);
+            var hsFormId = unilyHsFormLightbox.getHsFormId(hsLightboxId);
+            $.ajax({
+                method: 'POST',
+                url: '/umbraco/surface/hsformlightbox/confirmsubmission/' + hsFormId
+            });
+        }
+
+        if (unilyHsFormLightbox.isCloseOnSubmission(hsLightboxId)) {
+            unilyHsFormLightbox.close(hsLightboxId);
+        }
     },
 
     getHsFormId: function getHsFormId(hsLightboxId) {
         return $(`[${unilyHsFormLightbox.hsFormLightboxIdAttr}='${hsLightboxId}']`).attr(unilyHsFormLightbox.hsFormIdAttr);
+    },
+
+    isTrackBySession: function isTrackBySession(hsLightboxId) {
+        return $(`[${unilyHsFormLightbox.lightboxIdAttr}='${hsLightboxId}']`).attr(unilyHsFormLightbox.trackBySessionAttr) === 'true';
+    },
+
+    isCloseOnSubmission: function isCloseOnSubmission(hsLightboxId) {
+        return $(`[${unilyHsFormLightbox.lightboxIdAttr}='${hsLightboxId}']`).attr(unilyHsFormLightbox.closeOnSubmissionAttr) === 'true';
     }
 };
 

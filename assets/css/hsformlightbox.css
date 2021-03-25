@@ -11,6 +11,7 @@
   opacity: 1;
 }
 .c-lightbox.popup-01 .c-lightbox__content {
+  color: #1C1C1B;
   position: relative;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   text-align: left;
