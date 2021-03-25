@@ -2,6 +2,10 @@
   background-size: 1.4rem !important;
 }
 
+.mb-px-10 {
+  margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
   .agenda.container {
     padding-left: 40px;
