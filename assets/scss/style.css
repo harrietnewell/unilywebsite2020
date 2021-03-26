@@ -5156,11 +5156,10 @@ textarea.hs-input {
     padding-right: 3.125rem;
     top: -0.5625rem;
   }
-  .c-agenda__time sup {
-    font-size: 0.75rem;
-    vertical-align: super;
-    top: 0;
-  }
+}
+.c-agenda__time sup {
+  font-size: 0.75rem;
+  vertical-align: super;
 }
 .c-agenda__time + .c-agenda__heading {
   margin-top: 0 !important;

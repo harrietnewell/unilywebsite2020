@@ -93,11 +93,10 @@
             padding-right: rem-size(50px);
             top: rem-size(-9px);
 
-            sup {
-                font-size: 0.75rem;
-                vertical-align: super;
-                top: 0;
-            }
+        }
+        sup {
+          font-size: 0.75rem;
+          vertical-align: super;
         }
 
         & + .c-agenda__heading {
