@@ -36,4 +36,22 @@ $( document ).ready(function() {
     //
     // });
     
+    
+    /* Footer content reorganization */
+    
+    
+    wrap();
+    $(window).on('resize', function(){
+        wrap();
+    });
+    
+    function wrap() {
+        if ($(window).width() > 767 ) {
+            if (!$('.wrap-unwrap__child').parent().hasClass('wrap-unwrap')) {
+                $( '.wrap-unwrap__child' ).wrapAll( "<div class='wrap-unwrap' />");
+            }
+        } else {
+            $('.wrap-unwrap').contents().unwrap();
+        }
+    }
 });
