@@ -6,7 +6,8 @@
   }
 }
 .random-margin-type-1 {
-  margin-bottom: 7px;
+  //margin-bottom: 7px;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .agenda.container {
@@ -16,6 +17,6 @@
 }
 @supports (-webkit-touch-callout: none) {
   .random-margin-type-1 {
-    margin-bottom: 14px;
+    margin-bottom: 20px;
   }
 }
