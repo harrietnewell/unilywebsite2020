@@ -1,4 +1,4 @@
-@import "../lightbox/style";
+@import "../css/global";
 
 
 /** Start footer scss  **/
@@ -14,6 +14,7 @@
     }
   }
   .c-foot__heading {
+
     font-size: 0.9375rem;
   }
   .c-popular__heading {
@@ -48,7 +49,7 @@
   }
   .c-foot-nav__row {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     .mobile-right,
     .mobile-left {

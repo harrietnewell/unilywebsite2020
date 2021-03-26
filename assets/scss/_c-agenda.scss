@@ -91,8 +91,11 @@
      text-align: right;
      padding-right: rem-size(50px);
      top: rem-size(-9px);
+     sup {
+       font-size: 0.75rem;
+       vertical-align: super;
+     }
     }
-
     & + .c-agenda__heading {
       margin-top: 0 !important;
     }
