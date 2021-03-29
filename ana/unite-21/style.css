@@ -143,8 +143,8 @@
 }
 @media (max-width: 767px) {
   .c-block-video {
-    height: 75vh;
-    max-height: 75vh;
+    height: calc(75vh - 50px);
+    max-height: calc(75vh - 50px);
   }
 }
 @supports (-webkit-touch-callout: none) {
