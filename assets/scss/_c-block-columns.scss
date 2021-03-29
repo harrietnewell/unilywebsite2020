@@ -10,6 +10,9 @@
     margin-bottom: rem-size(-70px);
   }
 
+  &__divider {
+    flex: 0 0 100%;
+  }
   &__col {
     padding-left: rem-size(20px);
     padding-right: rem-size(20px);

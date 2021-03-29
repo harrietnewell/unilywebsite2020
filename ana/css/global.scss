@@ -30,6 +30,8 @@
 
 .d-block { display: block !important; }
 
+.justify-content-center { -ms-flex-pack:center!important; justify-content:center!important }
+
 @media (min-width:768px){
   .mt-md-4 { margin-top: 1.5rem !important; }
   .mb-md-4 { margin-bottom: 1.5rem !important; }

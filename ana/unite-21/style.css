@@ -82,6 +82,11 @@
   display: block !important;
 }
 
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
 @media (min-width: 768px) {
   .mt-md-4 {
     margin-top: 1.5rem !important;
@@ -125,7 +130,7 @@
 
 /** End Global styles inspired by Bootstrap **/
 .c-social__link--linkedin:before {
-  background-size: 1.375rem !important;
+  background-size: 1.25rem !important;
 }
 
 .random-margin-type-1 {
@@ -143,8 +148,8 @@
 }
 @media (max-width: 767px) {
   .c-block-video {
-    height: calc(75vh - 50px);
-    max-height: calc(75vh - 50px);
+    height: 75vh;
+    max-height: 75vh;
   }
 }
 @supports (-webkit-touch-callout: none) {
