@@ -121,7 +121,6 @@
   }
 }
 
-
 // Images
 
 .img {
@@ -771,4 +770,21 @@
   background: url(#{$cdn-url}media/wfcnshva/check-white.svg) no-repeat center center;
   background-size: rem-size(65px 65px);
   margin-bottom: rem-size(15px);
+}
+
+// Additional Styles (Ana)
+
+.random-margin-type-1 {
+  margin-bottom: 20px;
+}
+
+.justify-content-center {
+  -ms-flex-pack:center !important;
+  justify-content:center !important;
+}
+
+.d-md-none { 
+  @media (min-width:$breakpoint-md){
+    display: none !important; 
+  }
 }

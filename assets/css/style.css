@@ -999,6 +999,21 @@ th {
   margin-bottom: 0.9375rem;
 }
 
+.random-margin-type-1 {
+  margin-bottom: 20px;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+}
+
 .c-head {
   color: #fff;
   background: #112A3F;
@@ -5073,6 +5088,16 @@ textarea.hs-input {
   background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, whitesmoke 100%);
 }
 
+@media (min-width: 768px) {
+  .agenda {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .agenda .heading-07-alt {
+    margin-bottom: 4.0625rem;
+  }
+}
+
 .c-agenda {
   position: relative;
   list-style: none;
@@ -5595,6 +5620,12 @@ textarea.hs-input {
   }
   .c-block-video:before {
     padding-bottom: 43.75%;
+  }
+}
+@media (max-width: 767px) {
+  .c-block-video {
+    height: 75vh;
+    max-height: 75vh;
   }
 }
 .c-block-video__container {
@@ -6546,7 +6577,7 @@ textarea.hs-input {
   background-image: url(https://unilyweb2020dev.azureedge.net/media/mgtp43ap/linkedin-blue.svg);
   width: 1.75rem !important;
   height: 1.75rem !important;
-  background-size: 1.6875rem !important;
+  background-size: 1.25rem !important;
 }
 .c-social__link--youtube:before {
   background-image: url(https://unilyweb2020dev.azureedge.net/media/ia5c1nvc/youtube-blue.svg);

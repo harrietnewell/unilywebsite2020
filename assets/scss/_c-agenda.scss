@@ -1,5 +1,15 @@
 // Agenda
 
+.agenda {
+    @media (min-width: $breakpoint-md) {
+        padding-left: 40px;
+        padding-right: 40px;
+        .heading-07-alt {
+            margin-bottom: 4.0625rem;
+        }
+    }
+}
+
 .c-agenda {
     position: relative;
     list-style: none;

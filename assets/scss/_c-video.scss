@@ -26,6 +26,11 @@
       padding-bottom: 43.75%; //39%; // 1920x840 16x7 aspect ratio
     }
   }
+  
+  @media (max-width: $breakpoint-md-down) {
+    height: 75vh;
+    max-height: 75vh;
+  }
 
   &__container {
     z-index: 100;
