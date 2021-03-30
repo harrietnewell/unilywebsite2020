@@ -5973,6 +5973,8 @@ textarea.hs-input {
   margin: auto !important;
   width: auto !important;
   flex: 0 0 auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 #onetrust-banner-sdk .ot-sdk-row:after {
@@ -5986,7 +5988,7 @@ textarea.hs-input {
 }
 
 #onetrust-banner-sdk:not(.ot-iab-2) #onetrust-group-container {
-  width: unset !important;
+  width: 100% !important;
 }
 @media (min-width: 1000px) {
   #onetrust-banner-sdk:not(.ot-iab-2) #onetrust-group-container {
