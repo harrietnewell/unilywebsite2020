@@ -1,4 +1,6 @@
 
+// Amina
+
 .c-article__side-container {
 	.c-articles__media {
 		margin-bottom: 10px;
@@ -44,4 +46,21 @@
 			margin-left: 0 !important;
 		}
 	}
+}
+
+// Ana
+
+.random-margin-type-1 {
+  margin-bottom: 20px;
+}
+
+.justify-content-center {
+  -ms-flex-pack:center !important;
+  justify-content:center !important;
+}
+
+.d-md-none { 
+  @media (min-width:$breakpoint-md){
+    display: none !important; 
+  }
 }

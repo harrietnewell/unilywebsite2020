@@ -999,21 +999,6 @@ th {
   margin-bottom: 0.9375rem;
 }
 
-.random-margin-type-1 {
-  margin-bottom: 20px;
-}
-
-.justify-content-center {
-  -ms-flex-pack: center !important;
-  justify-content: center !important;
-}
-
-@media (min-width: 768px) {
-  .d-md-none {
-    display: none !important;
-  }
-}
-
 .c-head {
   color: #fff;
   background: #112A3F;
@@ -7035,4 +7020,19 @@ textarea.hs-input {
 .c-articles__content .c-metadata__item--date:before {
   margin-top: 0 !important;
   margin-left: 0 !important;
+}
+
+.random-margin-type-1 {
+  margin-bottom: 20px;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
 }
