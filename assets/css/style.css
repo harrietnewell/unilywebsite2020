@@ -5101,7 +5101,7 @@ textarea.hs-input {
   }
 }
 .c-agenda__img-heading {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 1.5625rem;
 }
 .c-agenda p {
   margin-bottom: 0;
@@ -7021,10 +7021,6 @@ textarea.hs-input {
 .c-articles__content .c-metadata__item--date:before {
   margin-top: 0 !important;
   margin-left: 0 !important;
-}
-
-.random-margin-type-1 {
-  margin-bottom: 20px;
 }
 
 .justify-content-center {
