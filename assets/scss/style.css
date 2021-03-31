@@ -5101,7 +5101,7 @@ textarea.hs-input {
   }
 }
 .c-agenda__img-heading {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5625rem;
 }
 .c-agenda p {
   margin-bottom: 0;
@@ -7040,3 +7040,5 @@ textarea.hs-input {
     display: none !important;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

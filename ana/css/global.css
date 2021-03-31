@@ -87,6 +87,11 @@
   justify-content: center !important;
 }
 
+@media (min-width: 992px) {
+  .d-lg-none {
+    display: none !important;
+  }
+}
 @media (min-width: 768px) {
   .mt-md-4 {
     margin-top: 1.5rem !important;
