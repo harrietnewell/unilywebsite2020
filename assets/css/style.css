@@ -5610,8 +5610,8 @@ textarea.hs-input {
 }
 @media (max-width: 767px) {
   .c-block-video {
-    height: 75vh;
-    max-height: 75vh;
+    height: 60vh;
+    max-height: 60vh;
   }
 }
 .c-block-video__container {
