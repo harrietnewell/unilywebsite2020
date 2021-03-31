@@ -55,6 +55,11 @@
   justify-content:center !important;
 }
 
+.d-lg-none {
+  @media (min-width:$breakpoint-lg){
+    display: none !important;
+  }
+}
 .d-md-none { 
   @media (min-width:$breakpoint-md){
     display: none !important; 
