@@ -16,6 +16,11 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   text-align: left;
 }
+@media (max-width: 767px) {
+  .c-lightbox.popup-01 .c-lightbox__content p {
+    font-size: 1rem !important;
+  }
+}
 
 .close-popup {
   color: #1C1C1B;
