@@ -6563,9 +6563,9 @@ textarea.hs-input {
 }
 .c-social__link--linkedin:before {
   background-image: url(https://unilyweb2020dev.azureedge.net/media/mgtp43ap/linkedin-blue.svg);
-  width: 1.75rem !important;
+  width: 1.25rem !important;
   height: 1.75rem !important;
-  background-size: 1.25rem !important;
+  background-size: contain !important;
 }
 .c-social__link--youtube:before {
   background-image: url(https://unilyweb2020dev.azureedge.net/media/ia5c1nvc/youtube-blue.svg);

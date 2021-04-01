@@ -28,9 +28,9 @@
 
         &--linkedin:before {
             background-image: url(#{$cdn-url}media/mgtp43ap/linkedin-blue.svg);
-			width: rem-size(28px) !important;
+			width: rem-size(20px) !important;
 			height: rem-size(28px) !important;
-			background-size: rem-size(20px) !important;
+			background-size: contain !important;
         }
 
         &--youtube:before {
