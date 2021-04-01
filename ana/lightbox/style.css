@@ -162,7 +162,6 @@
   display: none;
   opacity: 0;
 }
-
 .video-section__modal.open {
   display: flex;
   position: fixed;
@@ -178,55 +177,38 @@
   -webkit-animation: fadeIn 0.2s;
   animation: fadeIn 0.2s;
 }
-
+.video-section__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10013;
+  cursor: pointer;
+}
+.video-section__modal-close img {
+  width: 26px;
+}
 .video-section .container {
   position: relative;
   display: flex;
   justify-content: center;
   z-index: 4;
 }
-
-.video-section__modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  z-index: 10013;
-}
-
-.video-section__modal-close svg {
-  width: 26px;
-}
-
-.video-section__modal-close svg path {
-  fill: #00ACA8;
-}
-
 .video-section video {
-  width: 80%;
+  min-height: 0;
+  width: 85%;
   margin: 0 auto;
   display: block;
 }
-
-.video-section__modal video {
-  min-height: 0;
-  width: 100%;
-}
-
 .video-section__cover {
   position: relative;
   max-width: 960px;
   margin: 0 auto;
+  cursor: pointer;
 }
-
 .video-section__cover video {
   max-width: 960px;
   width: 100%;
 }
-
 .video-section__cover > svg {
   position: absolute;
   left: 50%;
@@ -235,9 +217,11 @@
   transform: translate(-50%, -50%);
   width: 62px;
 }
-
 .video-section__cover > svg path {
-  fill: #00ACA8;
+  fill: #e6e6e6;
+}
+.video-section__cover:hover > svg path {
+  fill: #ffffff;
 }
 
 @keyframes fadeIn {
@@ -252,6 +236,13 @@
   .video-section__cover {
     padding: 0 1rem;
   }
+}
+.color-type-2 .video-section__cover > svg path {
+  fill: #15b7e3;
+}
+
+.color-type-2 .video-section__cover:hover > svg path {
+  fill: #3ec8ed;
 }
 
 /*# sourceMappingURL=style.css.map */

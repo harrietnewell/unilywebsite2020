@@ -11,9 +11,9 @@ $(document).ready(function (){
         
         videoModal.addClass('open');
         video.prop('muted', false);
-        video.get(0).currentTime = currentVideo.get(0).currentTime;
+        // video.get(0).currentTime = currentVideo.get(0).currentTime;
         video.get(0).play();
-        console.log('aaa'+currentVideo.get(0).currentTime);
+        // console.log('aaa'+currentVideo.get(0).currentTime);
         
     })
     
