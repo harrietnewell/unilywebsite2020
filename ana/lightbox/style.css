@@ -218,7 +218,7 @@
   width: 62px;
 }
 .video-section__cover > svg path {
-  fill: #e6e6e6;
+  fill: #cccccc;
 }
 .video-section__cover:hover > svg path {
   fill: #ffffff;
