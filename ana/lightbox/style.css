@@ -185,13 +185,14 @@
   cursor: pointer;
 }
 .video-section__modal-close img {
-  width: 26px;
+  width: 19px;
 }
-.video-section .container {
+.video-section .wrapper {
   position: relative;
   display: flex;
   justify-content: center;
   z-index: 4;
+  width: 100%;
 }
 .video-section video {
   min-height: 0;
@@ -218,7 +219,7 @@
   width: 62px;
 }
 .video-section__cover > svg path {
-  fill: #e6e6e6;
+  fill: #cccccc;
 }
 .video-section__cover:hover > svg path {
   fill: #ffffff;

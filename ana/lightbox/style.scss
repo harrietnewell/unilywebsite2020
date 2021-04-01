@@ -29,15 +29,16 @@
       cursor: pointer;
 
       img {
-        width: 26px;
+        width: 19px;
       }
     }
   }
-  .container {
+  .wrapper {
     position: relative;
     display: flex;
     justify-content: center;
     z-index: 4;
+    width: 100%;
   }
 
   video {
@@ -66,7 +67,7 @@
       width: 62px;
 
       path {
-        fill: darken(#ffffff, 10%);
+        fill: darken(#ffffff, 20%);
       }
     }
 
