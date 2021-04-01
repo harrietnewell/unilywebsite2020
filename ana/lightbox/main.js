@@ -31,5 +31,3 @@ $(document).ready(function (){
         
     })
 });
-// if( $("video").prop('muted') )
-//     if( $("video").prop('muted', true) )
