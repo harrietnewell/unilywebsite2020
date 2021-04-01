@@ -134,10 +134,6 @@
 }
 
 /** End Global styles inspired by Bootstrap **/
-.c-social__link--linkedin:before {
-  background-size: 1.25rem !important;
-}
-
 .random-margin-type-1 {
   margin-bottom: 20px;
 }
