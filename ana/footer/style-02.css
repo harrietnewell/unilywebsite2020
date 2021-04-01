@@ -161,19 +161,9 @@
   background: url("../../assets/img/img-cdn/cursor-arrow-navy.svg") no-repeat center;
   background-size: contain;
 }
-.c-foot .container-wide-1 {
-  width: 90%;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
 .c-foot .container-wide-2 {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  width: 100%;
+  max-width: 100rem;
 }
 .c-foot .c-foot-nav__row {
   margin-top: 0;
@@ -200,14 +190,17 @@
     height: auto !important;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1160px) {
   .c-foot .container-wide-2 {
-    max-width: 1200px;
+    padding-left: calc(25% - 270px);
+    padding-right: calc(25% - 270px);
   }
 }
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1600px) {
   .c-foot .container-wide-2 {
-    max-width: 1400px;
+    max-width: 1380px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 830px) {
@@ -219,9 +212,6 @@
   .c-foot {
     display: flex;
     flex-direction: column;
-  }
-  .c-foot .container-wide-2:first-child {
-    margin-bottom: 10px;
   }
   .c-foot .c-foot-nav__row {
     margin-bottom: 0;
