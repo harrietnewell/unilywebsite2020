@@ -134,7 +134,7 @@
 }
 
 /** End Global styles inspired by Bootstrap **/
-.random-margin-type-1 {
+.custom-margin-type-1 {
   margin-bottom: 20px;
 }
 
@@ -154,7 +154,7 @@
   }
 }
 @supports (-webkit-touch-callout: none) {
-  .random-margin-type-1 {
+  .custom-margin-type-1 {
     margin-bottom: 20px;
   }
 }

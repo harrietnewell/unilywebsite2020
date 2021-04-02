@@ -275,26 +275,34 @@ $(document).ready(function () {
     }
     
     
+    
+    /** Documentation https://github.com/vimeo/player.js#ready-promisevoid-error **/
+    var placeholder_player = new Vimeo.Player($('#video-placeholder-1').get(0));
+    placeholder_player.ready().then(function() {
+        placeholder_player.play();
+    });
+    placeholder_player.setMuted(true);
+    
+    var player_modal = new Vimeo.Player($('#video-modal-1').get(0));
+    
+    
     // Open this video in modal
     $(document).on('click', '.open-video-modal', function (e) {
         e.preventDefault();
-        var currentVideo = $(this).find('video');
+        player_modal.play();
+        player_modal.setMuted(false);
         var videoModal = $(this).closest('.video-section-wrapper').find('.video-section__modal');
-        var video = videoModal.find('video');
-        currentVideo.prop('muted', true);
         videoModal.addClass('open');
-        video.prop('muted', false);
-        video.get(0).play();
     });
     
     // Close modal and switch playing video
     $(document).on('click', '.video-section__modal-close', function (e) {
         e.preventDefault();
-        var mainVideo = $(this).closest('.video-section-wrapper').find('.video-section__cover').find('video');
+        player_modal.setMuted(true);
+        placeholder_player.play();
+        placeholder_player.setMuted(true);
         var videoModal = $(this).closest('.video-section__modal');
-        var video = videoModal.find('video');
         videoModal.removeClass('open');
-        video.prop('muted', true);
     });
 });
 
