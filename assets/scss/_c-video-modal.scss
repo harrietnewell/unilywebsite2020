@@ -4,6 +4,7 @@
   &__modal {
     display: none;
     opacity: 0;
+    overflow: auto;
 
     &.open {
       display: flex;
@@ -14,7 +15,7 @@
       height: 100%;
       align-items: center;
       justify-content: center;
-      background: hsla(0,0%,100%,.8);
+      background: rgba(11, 11, 11, 0.8);
       z-index: 10014;
       opacity: 1;
       -webkit-animation: fadeIn .2s;
@@ -22,10 +23,15 @@
     }
     &-close {
       position: absolute;
-      top: 1rem;
-      right: 1rem;
+      top: -2rem;
+      right: -2px;
       z-index: 10013;
       cursor: pointer;
+      color: #fff;
+      opacity: 0.65;
+      font-style: normal;
+      font-size: 28px;
+      font-family: Arial, Baskerville, monospace;
 
       img {
         width: 19px;
@@ -34,16 +40,18 @@
   }
   .wrapper {
     position: relative;
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     z-index: 4;
     width: 100%;
+    max-height: 100vh;
 
     .video-box {
-      padding:56.25% 0 0 0;
+      padding: 48.75% 0 0 0; // 56.25 - (100%-85%)/2
       position:relative;
       width: 85%;
       max-height: 90vh;
+      margin: 2rem auto;
       iframe {
         position:absolute;
         top:0;
@@ -62,10 +70,10 @@
     margin: 0 auto;
     cursor: pointer;
 
-    video {
-      max-width: 960px;
-      width: 100%;
-    }
+    //video {
+    //  max-width: 960px;
+    //  width: 100%;
+    //}
     .video-box {
       padding:56.25% 0 0 0;
       position:relative;
@@ -109,6 +117,18 @@
   .video-section {
     &__cover {
       padding: 0 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .video-section {
+
+    .wrapper {
+
+      .video-box {
+        width: calc(100% - 12px);
+        padding: calc(56.75% - 12px) 0 0 0;
+      }
     }
   }
 }

@@ -304,5 +304,20 @@ $(document).ready(function () {
         var videoModal = $(this).closest('.video-section__modal');
         videoModal.removeClass('open');
     });
+    
+    // Outside click
+    $(document).click(function(event) {
+        var $target = $(event.target);
+        if ($('.video-box--modal').length) {
+            console.log($target.closest('.video-box--modal'));
+            if(($target.closest('.video-box--modal').length < 1) && $target.closest('.video-section__modal').hasClass('open')) {
+                player_modal.setMuted(true);
+                placeholder_player.play();
+                placeholder_player.setMuted(true);
+                var videoModal = $target.closest('.video-section').find('.video-section__modal');
+                videoModal.removeClass('open');
+            }
+        }
+    });
 });
 

@@ -6698,6 +6698,7 @@ textarea.hs-input {
 .video-section__modal {
   display: none;
   opacity: 0;
+  overflow: auto;
 }
 .video-section__modal.open {
   display: flex;
@@ -6708,7 +6709,7 @@ textarea.hs-input {
   height: 100%;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(11, 11, 11, 0.8);
   z-index: 10014;
   opacity: 1;
   -webkit-animation: fadeIn 0.2s;
@@ -6716,26 +6717,33 @@ textarea.hs-input {
 }
 .video-section__modal-close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: -2rem;
+  right: -2px;
   z-index: 10013;
   cursor: pointer;
+  color: #fff;
+  opacity: 0.65;
+  font-style: normal;
+  font-size: 28px;
+  font-family: Arial, Baskerville, monospace;
 }
 .video-section__modal-close img {
   width: 19px;
 }
 .video-section .wrapper {
   position: relative;
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
   z-index: 4;
   width: 100%;
+  max-height: 100vh;
 }
 .video-section .wrapper .video-box {
-  padding: 56.25% 0 0 0;
+  padding: 48.75% 0 0 0;
   position: relative;
   width: 85%;
   max-height: 90vh;
+  margin: 2rem auto;
 }
 .video-section .wrapper .video-box iframe {
   position: absolute;
@@ -6749,10 +6757,6 @@ textarea.hs-input {
   max-width: 960px;
   margin: 0 auto;
   cursor: pointer;
-}
-.video-section__cover video {
-  max-width: 960px;
-  width: 100%;
 }
 .video-section__cover .video-box {
   padding: 56.25% 0 0 0;
@@ -6793,6 +6797,12 @@ textarea.hs-input {
 @media only screen and (min-width: 768px) {
   .video-section__cover {
     padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .video-section .wrapper .video-box {
+    width: calc(100% - 12px);
+    padding: calc(56.75% - 12px) 0 0 0;
   }
 }
 .color-type-2 .video-section__cover > svg path {
