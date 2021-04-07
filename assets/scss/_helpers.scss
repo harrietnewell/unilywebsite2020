@@ -306,9 +306,15 @@
 .link-play {
   font-size: rem-size(16px);
   font-weight: bold;
-
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.625rem;
+    vertical-align: -0.125rem;
+  }
   &:before {
-    content: " ";
+    //content: " ";
+    content: none;
     display: inline-block;
     margin-right: rem-size(10px);
     font: 0/0 a;
