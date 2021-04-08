@@ -6722,7 +6722,7 @@ textarea.hs-input {
 }
 .video-section__modal-close {
   position: absolute;
-  top: -2rem;
+  top: -1.6rem;
   right: -14px;
   z-index: 10013;
   cursor: pointer;
@@ -6786,7 +6786,7 @@ textarea.hs-input {
 .video-section__cover > svg path {
   fill: rgba(255, 255, 255, 0.8);
 }
-.video-section__cover:hover > svg path {
+.video-section__cover > svg:hover path {
   fill: #ffffff;
 }
 

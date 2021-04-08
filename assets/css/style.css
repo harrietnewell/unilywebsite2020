@@ -6722,7 +6722,7 @@ textarea.hs-input {
 }
 .video-section__modal-close {
   position: absolute;
-  top: -2rem;
+  top: -1.6rem;
   right: -14px;
   z-index: 10013;
   cursor: pointer;
