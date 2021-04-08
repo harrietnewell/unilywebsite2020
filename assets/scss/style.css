@@ -6829,6 +6829,9 @@ textarea.hs-input {
     width: calc(100% - 12px);
     padding: calc(56.75% - 12px) 0 0 0;
   }
+  .video-section__cover > svg {
+    width: 50px;
+  }
 }
 .color-type-2 .video-section__cover > svg path {
   fill: #15b7e3;

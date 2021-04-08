@@ -124,12 +124,15 @@
 }
 @media only screen and (max-width: 767px) {
   .video-section {
-
     .wrapper {
-
       .video-box {
         width: calc(100% - 12px);
         padding: calc(56.75% - 12px) 0 0 0;
+      }
+    }
+    &__cover {
+      >svg {
+        width: 50px;
       }
     }
   }
