@@ -24,17 +24,16 @@
     &-close {
       position: absolute;
       top: -2rem;
-      right: 0;
+      right: -14px;
       z-index: 10013;
       cursor: pointer;
       color: #fff;
       opacity: 0.65;
-      font-style: normal;
-      font-size: 28px;
-      font-family: Arial, Baskerville, monospace;
+      width: 2.5rem;
+      height: 2.5rem;
 
       img {
-        width: 19px;
+        width: 12px;
       }
     }
   }

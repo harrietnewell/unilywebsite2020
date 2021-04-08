@@ -600,7 +600,7 @@ th {
 .link-play svg {
   width: 16px;
   height: 16px;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
   vertical-align: -0.125rem;
 }
 .link-play:before {
@@ -6723,17 +6723,16 @@ textarea.hs-input {
 .video-section__modal-close {
   position: absolute;
   top: -2rem;
-  right: 0;
+  right: -14px;
   z-index: 10013;
   cursor: pointer;
   color: #fff;
   opacity: 0.65;
-  font-style: normal;
-  font-size: 28px;
-  font-family: Arial, Baskerville, monospace;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .video-section__modal-close img {
-  width: 19px;
+  width: 12px;
 }
 .video-section .wrapper {
   position: relative;
