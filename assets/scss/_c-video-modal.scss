@@ -31,6 +31,9 @@
       opacity: 0.65;
       width: 2.5rem;
       height: 2.5rem;
+      &:hover {
+        opacity: 1;
+      }
 
       img {
         width: 12px;

@@ -625,6 +625,24 @@ th {
   margin-right: 8px;
 }
 
+.mfp-close-btn-in .mfp-close {
+  font-size: 0;
+  display: inline-flex;
+  width: auto !important;
+  padding: 10px;
+  align-items: center;
+}
+.mfp-close-btn-in .mfp-close:before {
+  content: "";
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: auto;
+  background: url(https://unilyweb2020dev.azureedge.net/media/5wbncnts/close-white.svg) no-repeat center center;
+  background-size: 0.75rem 0.75rem;
+  margin-bottom: 4px;
+}
+
 .paragraph-01 {
   font-size: 1rem;
 }
@@ -6730,6 +6748,9 @@ textarea.hs-input {
   opacity: 0.65;
   width: 2.5rem;
   height: 2.5rem;
+}
+.video-section__modal-close:hover {
+  opacity: 1;
 }
 .video-section__modal-close img {
   width: 12px;

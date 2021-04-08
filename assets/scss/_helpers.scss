@@ -336,6 +336,26 @@
   margin-right: 8px;
 }
 
+// Mfp video lightbox close icon
+.mfp-close-btn-in {
+  .mfp-close {
+    font-size: 0;
+    display: inline-flex;
+    width: auto !important;
+    padding: 10px;
+    align-items: center;
+    &:before {
+      content: '';
+      display: block;
+      width: rem-size(12px);
+      height: rem-size(12px);
+      margin-left: auto;
+      background: url(#{$cdn-url}media/5wbncnts/close-white.svg) no-repeat center center;
+      background-size: rem-size(12px 12px);
+      margin-bottom: 4px;
+    }
+  }
+}
 
 // Paragraphs
 
@@ -533,7 +553,7 @@
     white-space: normal;
     width: 100%;
   }
-    
+
   &.btn-img {
 	display: inline-flex;
 	align-items: center;
