@@ -30,8 +30,8 @@ var unilyHsFormLightbox = {
         });
 
         $(document).on('click', unilyHsFormLightbox.containerSelector, function (e) {
-            e.preventDefault();
             if (e.target == e.currentTarget) {
+                e.preventDefault();
                 var hsLightboxId = $(this).closest(unilyHsFormLightbox.lightboxSelector).attr(unilyHsFormLightbox.lightboxIdAttr);
                 unilyHsFormLightbox.close(hsLightboxId);
             }

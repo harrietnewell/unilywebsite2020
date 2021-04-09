@@ -274,7 +274,19 @@ $(document).ready(function () {
         }).resize();
     }
     
-    
+    // Footer nav wrap
+
+    $(window).on('resize', function () {
+
+        if ($(window).width() > 767) {
+            if (!$('.wrap-unwrap__child').parent().hasClass('wrap-unwrap')) {
+                $('.wrap-unwrap__child').wrapAll("<div class='wrap-unwrap' />");
+            }
+        } else {
+            $('.wrap-unwrap').contents().unwrap();
+        }
+
+    }).resize();
     
     /** Documentation https://github.com/vimeo/player.js#ready-promisevoid-error **/
     var placeholder_player = new Vimeo.Player($('#video-placeholder-1').get(0));
