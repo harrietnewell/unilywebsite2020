@@ -19,14 +19,17 @@
             position: relative;
             box-shadow: 0 0 8px rgba(0, 0, 0, .6);
             text-align: left;
-			
-			p {
-			
-				@media (max-width: $breakpoint-md-down) {
-					font-size: rem-size(16px) !important;
-				}
-			
-			}
+
+            p {
+                margin-left: unset !important;
+                margin-right: unset !important;
+                max-width: none !important;
+                font-size: rem-size(16px) !important;
+
+                @media (max-width: $breakpoint-md-down) {
+                    font-size: rem-size(16px) !important;
+                }
+            }
         }
     }
 }
@@ -37,6 +40,7 @@
     top: 5px;
     right: 5px;
     display: block;
+    background:none !important;
 
     &:after {
         content: '';

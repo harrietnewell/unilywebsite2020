@@ -16,6 +16,12 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   text-align: left;
 }
+.c-lightbox.popup-01 .c-lightbox__content p {
+  margin-left: unset !important;
+  margin-right: unset !important;
+  max-width: none !important;
+  font-size: 1rem !important;
+}
 @media (max-width: 767px) {
   .c-lightbox.popup-01 .c-lightbox__content p {
     font-size: 1rem !important;
@@ -28,6 +34,7 @@
   top: 5px;
   right: 5px;
   display: block;
+  background: none !important;
 }
 .close-popup:after {
   content: "";
