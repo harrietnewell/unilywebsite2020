@@ -31,6 +31,9 @@
       opacity: 0.65;
       width: 2.5rem;
       height: 2.5rem;
+      &:hover {
+        opacity: 1;
+      }
 
       img {
         width: 12px;
@@ -121,12 +124,15 @@
 }
 @media only screen and (max-width: 767px) {
   .video-section {
-
     .wrapper {
-
       .video-box {
         width: calc(100% - 12px);
         padding: calc(56.75% - 12px) 0 0 0;
+      }
+    }
+    &__cover {
+      >svg {
+        width: 50px;
       }
     }
   }
