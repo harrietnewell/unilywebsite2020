@@ -288,48 +288,5 @@ $(document).ready(function () {
 
     }).resize();
     
-    /** Documentation https://github.com/vimeo/player.js#ready-promisevoid-error **/
-    var placeholder_player = new Vimeo.Player($('#video-placeholder-1').get(0));
-    placeholder_player.ready().then(function() {
-        placeholder_player.play();
-    });
-    placeholder_player.setMuted(true);
-    
-    var player_modal = new Vimeo.Player($('#video-modal-1').get(0));
-    
-    
-    // Open this video in modal
-    $(document).on('click', '.open-video-modal', function (e) {
-        e.preventDefault();
-        player_modal.play();
-        player_modal.setMuted(false);
-        var videoModal = $(this).closest('.video-section-wrapper').find('.video-section__modal');
-        videoModal.addClass('open');
-    });
-    
-    // Close modal and switch playing video
-    $(document).on('click', '.video-section__modal-close', function (e) {
-        e.preventDefault();
-        player_modal.setMuted(true);
-        placeholder_player.play();
-        placeholder_player.setMuted(true);
-        var videoModal = $(this).closest('.video-section__modal');
-        videoModal.removeClass('open');
-    });
-    
-    // Outside click
-    $(document).click(function(event) {
-        var $target = $(event.target);
-        if ($('.video-box--modal').length) {
-            console.log($target.closest('.video-box--modal'));
-            if(($target.closest('.video-box--modal').length < 1) && $target.closest('.video-section__modal').hasClass('open')) {
-                player_modal.setMuted(true);
-                placeholder_player.play();
-                placeholder_player.setMuted(true);
-                var videoModal = $target.closest('.video-section').find('.video-section__modal');
-                videoModal.removeClass('open');
-            }
-        }
-    });
 });
 

@@ -88,13 +88,14 @@
         z-index: -1;
       }
     }
-    >svg {
+    svg {
       position: absolute;
       left: 50%;
       top: 50%;
       -webkit-transform: translate(-50%,-50%);
       transform: translate(-50%,-50%);
       width: 62px;
+      height: auto;
       z-index: 10;
 
       path {
@@ -102,7 +103,7 @@
       }
     }
 
-    >svg {
+    svg {
       &:hover {
         path {
           fill: #ffffff;
@@ -131,23 +132,9 @@
       }
     }
     &__cover {
-      >svg {
+      svg {
         width: 50px;
       }
     }
   }
-}
-
-
-
-
-
-
-
-
-.color-type-2 .video-section__cover>svg path {
-  fill: darken(#3ec8ed, 10%);
-}
-.color-type-2 .video-section__cover:hover>svg path {
-  fill: #3ec8ed;
 }
