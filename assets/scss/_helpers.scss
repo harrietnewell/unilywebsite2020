@@ -306,7 +306,7 @@
 .link-play {
   font-size: rem-size(16px);
   font-weight: bold;
-  svg {
+  img {
     width: 16px;
     height: 16px;
     margin-right: 0.5rem;
@@ -330,9 +330,10 @@
 
 .c-block-home__media .link-play:before {
   background-image: url(#{$cdn-url}media/bwkoyffj/play-black.svg);
-  height: 26px;
+  //height: 26px;
   background-repeat: no-repeat;
   background-position: 95% 160%;
+  background-size: contain;
   margin-right: 8px;
 }
 

@@ -597,7 +597,7 @@ th {
   font-size: 1rem;
   font-weight: bold;
 }
-.link-play svg {
+.link-play img {
   width: 16px;
   height: 16px;
   margin-right: 0.5rem;
@@ -619,9 +619,9 @@ th {
 
 .c-block-home__media .link-play:before {
   background-image: url(https://unilyweb2020dev.azureedge.net/media/bwkoyffj/play-black.svg);
-  height: 26px;
   background-repeat: no-repeat;
   background-position: 95% 160%;
+  background-size: contain;
   margin-right: 8px;
 }
 
@@ -4887,7 +4887,7 @@ textarea.hs-input {
 }*/
 @media only screen and (max-width: 767px) {
   .c-block-home .link-play {
-    margin-top: 0.9375rem;
+    margin-top: 1.375rem;
     display: inline-block;
   }
 }
@@ -6719,65 +6719,10 @@ textarea.hs-input {
   justify-content: center;
 }
 
-.video-section__modal {
-  display: none;
-  opacity: 0;
-  overflow: auto;
+.mpf-wrapper .mfp-iframe-holder .mfp-content {
+  max-width: 85%;
 }
-.video-section__modal.open {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  background: rgba(11, 11, 11, 0.8);
-  z-index: 10014;
-  opacity: 1;
-  -webkit-animation: fadeIn 0.2s;
-  animation: fadeIn 0.2s;
-}
-.video-section__modal-close {
-  position: absolute;
-  top: -1.6rem;
-  right: -14px;
-  z-index: 10013;
-  cursor: pointer;
-  color: #fff;
-  opacity: 0.65;
-  width: 2.5rem;
-  height: 2.5rem;
-}
-.video-section__modal-close:hover {
-  opacity: 1;
-}
-.video-section__modal-close img {
-  width: 12px;
-}
-.video-section .wrapper {
-  position: relative;
-  display: block;
-  text-align: center;
-  z-index: 4;
-  width: 100%;
-  max-height: 100vh;
-}
-.video-section .wrapper .video-box {
-  padding: 48.75% 0 0 0;
-  position: relative;
-  width: 85%;
-  max-height: 90vh;
-  margin: 2rem auto;
-}
-.video-section .wrapper .video-box iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 .video-section__cover {
   position: relative;
   max-width: 960px;
@@ -6796,7 +6741,7 @@ textarea.hs-input {
   height: 100%;
   z-index: -1;
 }
-.video-section__cover svg {
+.video-section__cover .video-box img {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -6805,33 +6750,23 @@ textarea.hs-input {
   width: 62px;
   height: auto;
   z-index: 10;
+  opacity: 0.8;
 }
-.video-section__cover svg path {
-  fill: rgba(255, 255, 255, 0.8);
-}
-.video-section__cover svg:hover path {
-  fill: #ffffff;
+.video-section__cover .video-box img:hover {
+  opacity: 1;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @media only screen and (min-width: 768px) {
   .video-section__cover {
     padding: 0 1rem;
   }
 }
 @media only screen and (max-width: 767px) {
-  .video-section .wrapper .video-box {
-    width: calc(100% - 12px);
-    padding: calc(56.75% - 12px) 0 0 0;
+  .mpf-wrapper .mfp-iframe-holder .mfp-content {
+    max-width: 100%;
   }
-  .video-section__cover svg {
+
+  .video-section__cover .video-box img {
     width: 50px;
   }
 }
