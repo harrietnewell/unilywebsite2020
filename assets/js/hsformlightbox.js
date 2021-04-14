@@ -36,6 +36,13 @@ var unilyHsFormLightbox = {
                 unilyHsFormLightbox.close(hsLightboxId);
             }
         });
+
+        unilyHsFormLightbox.pinLightboxesToBody();
+    },
+
+    pinLightboxesToBody: function pinLightboxesToBody() {
+        // This is done to prevent an overlap issue with the header on mobile
+        $(unilyHsFormLightbox.lightboxSelector).prependTo('body');
     },
 
     open: function open(hsLightboxId) {
