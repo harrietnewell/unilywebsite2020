@@ -312,29 +312,29 @@
     margin-right: 0.5rem;
     vertical-align: -0.125rem;
   }
-  &:before {
-    //content: " ";
-    content: none;
-    display: inline-block;
-    margin-right: rem-size(10px);
-    font: 0/0 a;
-    width: rem-size(16px);
-    height: rem-size(16px);
-    background-image: url(#{$cdn-url}media/axbecndz/play-white.svg);
-    background-size: rem-size(22px 22px);
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    vertical-align: rem-size(-2px);
-  }
+  //&:before {
+  //  //content: " ";
+  //  content: none;
+  //  display: inline-block;
+  //  margin-right: rem-size(10px);
+  //  font: 0/0 a;
+  //  width: rem-size(16px);
+  //  height: rem-size(16px);
+  //  background-image: url(#{$cdn-url}media/axbecndz/play-white.svg);
+  //  background-size: rem-size(22px 22px);
+  //  background-repeat: no-repeat;
+  //  background-position: 100% 50%;
+  //  vertical-align: rem-size(-2px);
+  //}
 }
 
 .c-block-home__media .link-play:before {
-  background-image: url(#{$cdn-url}media/bwkoyffj/play-black.svg);
-  //height: 26px;
-  background-repeat: no-repeat;
-  background-position: 95% 160%;
-  background-size: contain;
-  margin-right: 8px;
+  //background-image: url(#{$cdn-url}media/bwkoyffj/play-black.svg);
+  ////height: 26px;
+  //background-repeat: no-repeat;
+  //background-position: 95% 160%;
+  //background-size: contain;
+  //margin-right: 8px;
 }
 
 // Mfp video lightbox close icon
