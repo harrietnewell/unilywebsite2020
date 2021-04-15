@@ -803,7 +803,6 @@ th {
 .btn.btn-img img {
   width: 18px !important;
   height: 18px !important;
-  object-fit: contain;
   margin-right: 8px;
 }
 .btn-outline {
