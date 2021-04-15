@@ -6698,7 +6698,7 @@ textarea.hs-input {
   justify-content: center;
 }
 
-.mpf-wrapper .mfp-iframe-holder .mfp-content {
+.mfp-content.widescreen {
   max-width: 85% !important;
 }
 
@@ -6709,11 +6709,11 @@ textarea.hs-input {
   cursor: pointer !important;
 }
 .video-section__cover .video-box {
-  padding: 56.25% 0 0 0;
-  position: relative;
+  padding: 56.25% 0 0 0 !important;
+  position: relative !important;
 }
 .video-section__cover .video-box iframe {
-  position: absolute;
+  position: absolute !important;
   top: 0 !important;
   left: 0 !important;
   width: 100% !important;
@@ -6741,7 +6741,7 @@ textarea.hs-input {
   }
 }
 @media only screen and (max-width: 767px) {
-  .mpf-wrapper .mfp-iframe-holder .mfp-content {
+  .mfp-content.widescreen {
     max-width: 100% !important;
   }
 
