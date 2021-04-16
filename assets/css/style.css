@@ -4182,6 +4182,11 @@ textarea.hs-input {
   margin-bottom: 1.875rem;
 }
 .c-block-05--alt {
+  /*.c-block-05__content {
+    @media (min-width: $breakpoint-md) {
+      text-align: right;
+    }
+  }*/
   /*.c-block-05__media--side {
     margin-right: 0;
     margin-left: rem-size(-20px);
@@ -4214,11 +4219,6 @@ textarea.hs-input {
     padding-left: 1.25rem;
     padding-right: 3%;
     justify-content: flex-end;
-  }
-}
-@media (min-width: 768px) {
-  .c-block-05--alt .c-block-05__content {
-    text-align: right;
   }
 }
 
