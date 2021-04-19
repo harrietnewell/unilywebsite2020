@@ -6711,6 +6711,10 @@ textarea.hs-input {
   padding: 56.25% 0 0 0 !important;
   position: relative !important;
 }
+.video-section__cover .video-box--bg-1 {
+  background: url("../../assets/img/video-placeholder.jpg") no-repeat center;
+  background-size: cover;
+}
 .video-section__cover .video-box iframe {
   position: absolute !important;
   top: 0 !important;
@@ -6719,7 +6723,7 @@ textarea.hs-input {
   height: 100% !important;
   z-index: -1 !important;
 }
-.video-section__cover .video-box img {
+.video-section__cover .video-box .play-icon {
   position: absolute !important;
   left: 50% !important;
   top: 50% !important;
@@ -6730,7 +6734,7 @@ textarea.hs-input {
   z-index: 10 !important;
   opacity: 0.8 !important;
 }
-.video-section__cover .video-box img:hover {
+.video-section__cover .video-box .play-icon:hover {
   opacity: 1 !important;
 }
 
@@ -6744,7 +6748,7 @@ textarea.hs-input {
     max-width: 100% !important;
   }
 
-  .video-section__cover .video-box img {
+  .video-section__cover .video-box .play-icon {
     width: 50px !important;
   }
 }

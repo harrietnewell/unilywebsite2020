@@ -79,6 +79,11 @@
             padding: 56.25% 0 0 0 !important;
             position: relative !important;
 
+            &--bg-1 {
+              background: url("../../assets/img/video-placeholder.jpg") no-repeat center;
+              background-size: cover;
+            }
+
             iframe {
                 position: absolute !important;
                 top: 0 !important;
@@ -88,7 +93,7 @@
                 z-index: -1 !important;
             }
 
-            img {
+            .play-icon {
                 position: absolute !important;
                 left: 50% !important;
                 top: 50% !important;
@@ -100,7 +105,7 @@
                 opacity: .8 !important;
             }
 
-            img {
+            .play-icon {
                 &:hover {
                     opacity: 1 !important;
                 }
@@ -134,7 +139,7 @@
     //}
     &__cover {
       .video-box {
-        img {
+        .play-icon {
           width: 50px !important;
         }
       }
