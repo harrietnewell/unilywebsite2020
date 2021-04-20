@@ -19,8 +19,9 @@
 <style>
 .c-cards{
 max-width:66.25rem;    margin-left: auto;
-    margin-right: auto; padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
 	}
 	
 .cards-list {
@@ -64,7 +65,8 @@ text-align: left;
 .card_img_portrait_right img {
 position: relative;
     margin-top: auto;
-margin-left:50px;
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 
@@ -85,9 +87,9 @@ margin-left:50px;
 
 .c-card-01 .card-banner {
 	background-image: url(assets/media/back.png); /* fallback */
-	background-image: linear-gradient(88deg,rgba(0, 0, 0, 0.7) 0%,transparent 80%), url(assets/media/back.png);
+	background-image: linear-gradient(88deg,rgba(0, 0, 0, 0.55) 0%,transparent 80%), url(assets/media/back.png);
 	background-position: center;
-	height:450px;
+	height:580px;
 	width:100%;
 }
 
@@ -103,7 +105,7 @@ margin-left:50px;
 
 .c-card-02 .card-banner{
   
-  height:450px; 
+  height:450px;
   width:100%;
     background: #F5F5F5;
 }
@@ -126,7 +128,7 @@ margin-left:50px;
 .c-card-03 .card-banner{
 		height:725px; 
 	width:100%;
-	background: #F5F5F5;
+	background: #fff;
 }
   .c-card-03 h1{
   text-transform: uppercase;
@@ -271,7 +273,7 @@ mix-blend-mode: screen;
 @media (min-width: 481px) and (max-width: 767px) {
   
 .c-card-02, .c-card-03  {
-	width:400px;
+	/*width:400px;*/
 
 }
 .c-card-block {
@@ -296,13 +298,14 @@ mix-blend-mode: screen;
   }
   .c-card-block{
       padding-left: 30px;
-    padding-top: 50px;
-    width: 100%;
+      padding-right: 30px;
+      padding-top: 50px;
+      width: 100%;
   }
   
   .card_img_right img {
     position: relative;
-    float: right;
+    /*float: right;*/
     margin-bottom: 30px;
     margin-top: 6px;
     margin-right: 30px;
@@ -319,7 +322,7 @@ mix-blend-mode: screen;
 }
 .c-card-03 {
    /* width: 49.2%; */
-   width:100%;
+   /*width:100%;*/
 }
 
 .card_img_right img{
@@ -328,11 +331,13 @@ float:left;
 }
 .c-card-03, .c-card-03 .bg   {
    /* background-size: 200% 110%; */
-width:100%;
+/*width:100%;*/
 }
 .card_img_portrait_right img {
 
-margin-left: 30px;
+/*margin-left: 30px;*/
+    padding-left: 30px;
+    padding-right: 30px;
 }
   
 }
@@ -342,9 +347,32 @@ margin-left: 30px;
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
- 
-  
+@media (max-width: 1068px) {
+    .c-cards {
+        width: 812px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .card-section .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+@media (max-width: 734px) {
+    .c-card-01,
+    .c-card-02,
+    .c-card-03 {
+        width: 390px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .c-card-01 .card-banner {
+        height: 525px;
+    }
 }
 
 /* 
@@ -386,11 +414,11 @@ margin-left: 30px;
 
 .c-card-03, .c-card-03 .bg   {
  /*   background-size: 300% 110%; */
-width:100%;
+/*width:100%;*/
 }
 
-.c-card-03 .card-banner   {
-height:465px;
+.c-card-03 .card-banner {
+    height: 525px;
 }
 .c-card-block {
 	width:332px;
@@ -419,7 +447,9 @@ height:465px;
 }
 
 .card_img_portrait_right img{
-  margin-left:30px;
+  /*margin-left:30px;*/
+    padding-left: 30px;
+    padding-right: 30px;
   
 
 }
@@ -462,12 +492,13 @@ height:465px;
 
 .c-card-03, .c-card-03 .bg   {
  /*   background-size: 490% 110%; */
-width:100%;
+/*width:100%;*/
 
 }
 
-.c-card-03 .card-banner   {
-height:465px;
+.c-card-01 .card-banner,
+.c-card-03 .card-banner {
+    height:465px;
 }
 .c-card-block {
 	width:332px;
@@ -495,7 +526,9 @@ height:465px;
 
 .card_img_portrait_right img{
 width:80%;
-margin-left: 30px;
+/*margin-left: 30px;*/
+    padding-left: 30px;
+    padding-right: 30px;
 }
   
 }
@@ -503,7 +536,9 @@ margin-left: 30px;
 .card-logo-top {
 margin-bottom:21px;
 }
-
+.card-section {
+    background: #f5f5f5;
+}
 </style>
 <body>
 
@@ -1489,12 +1524,12 @@ margin-bottom:21px;
 
   </section>
 
-<section>
+<section class="card-section">
 
 
 
 <div class="container py">
-
+    <h2 class="heading-01-alt text-center"><strong>FEATURE STORE.</strong> Coming soon to Unily.</h2>
 <div class="c-cards">
 <div class="c-card-01">
 
@@ -1511,7 +1546,7 @@ margin-bottom:21px;
 
 <div class="cards-list">
 
-  <div class="c-card-02">
+  <div class="c-card-03">
 <div class="card-banner">
 <div class="card-tag"><a href="#" class="tag tag-03">NEW</a></div>
   <div class="c-card-block">
@@ -1521,22 +1556,22 @@ margin-bottom:21px;
   
  
   </div>
-   <div class="card_img_right">
-       <img alt="" class="img img-shadow" width="300" src="assets/media/a5e9ff433c5fbab77d920dd6e21265a062878c3c.png">
+   <div class="card_img_portrait_right">
+       <img alt="" class="img img-shadow" src="assets/media/a5e9ff433c5fbab77d920dd6e21265a062878c3c.png">
 	  </div>
 	  </div>
 </div>
 
-  <div class="c-card-02">
+  <div class="c-card-03">
 <div class="card-banner">
   <div class="c-card-block">
   <img class="card-logo-top" alt=""  height="30" src="assets/media/microsoft.png">
 <p>Empower and transform your whole business with features like news, social and enterprise search.</p>
               <p><a href="#" class="btn btn-02">Social</a></p>
   </div>
-   <div class="card_img_right">
+    <div class="card_img_portrait_right">
 
-          <img src="assets/media/frontline-workers.png" width="300" class="img img-shadow" alt="">
+          <img src="assets/media/frontline-workers.png" class="img img-shadow" alt="">
 
         </div>
   </div>
@@ -1565,7 +1600,7 @@ margin-bottom:21px;
 		   
   </div>
    	  <div class="card_img_portrait_right">
-   <img class="img img-shadow" alt="Microsoft 365 intranet integrations" width="380" src="assets/img/img-snippet.png">
+   <img class="img img-shadow" alt="Microsoft 365 intranet integrations" src="assets/img/img-snippet.png">
   	  </div>	
   
   </div>

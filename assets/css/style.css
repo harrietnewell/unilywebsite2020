@@ -6711,10 +6711,6 @@ textarea.hs-input {
   padding: 56.25% 0 0 0 !important;
   position: relative !important;
 }
-.video-section__cover .video-box--bg-1 {
-  background: url("../../assets/img/video-placeholder.jpg") no-repeat center;
-  background-size: cover;
-}
 .video-section__cover .video-box iframe {
   position: absolute !important;
   top: 0 !important;
