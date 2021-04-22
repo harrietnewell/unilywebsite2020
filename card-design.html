@@ -562,6 +562,54 @@ margin-bottom:21px;
 .card-section {
     background: #f5f5f5;
 }
+.logos-row-wrapper {
+    padding: 50px 0 50px 0;
+}
+.logos-row {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.logos-row.logos-row-6 img {
+    width: 75px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 15px 20px 0;
+}
+.link-animated-arrow {
+    font-weight: 300;
+    line-height: 1.4;
+    transition: color 200ms;
+    display: flex;
+    align-items: center;
+}
+.link-animated-arrow:hover {
+    text-decoration: none;
+}
+.link-animated-arrow svg {
+    fill: #3EC8ED;
+    padding-top: 1px;
+    transition: fill 200ms, transform 200ms;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+.link-animated-arrow:hover svg {
+    transform: translateX(4px);
+}
+@media (max-width: 767px) {
+    .logos-row {
+        justify-content: center;
+    }
+    .logos-row.logos-row-6 img {
+        margin: 0 8px 20px 8px;
+    }
+}
+
+
+
+
+
 </style>
 <body>
 
@@ -1180,6 +1228,20 @@ margin-bottom:21px;
 								<input type="submit" value="Get Started" class="hs-button primary large">
 							</div>
 						</div>
+                        <div class="logos-row-wrapper">
+                            <h6 class="mb-2">Recognised by</h6>
+                            <div class="logos-row logos-row-6">
+                                <img src="assets/media/microsoft.svg" alt="" />
+                                <img src="assets/media/forrester.svg" alt="" />
+                                <img src="assets/media/nielsen-norman.svg" alt="" />
+                                <img src="assets/media/451.svg" alt="" />
+                                <img src="assets/media/ragan.svg" alt="" />
+                                <img src="assets/media/ee-award.svg" alt="" />
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#" class="link-animated-arrow mb-3">Learn more <svg viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg" class="_8v6j"><path d="M10.0429 0.542893C10.4334 0.152369 11.0666 0.152369 11.4571 0.542893L17.7071 6.79289C18.0976 7.18342 18.0976 7.81658 17.7071 8.20711L11.4571 14.4571C11.0666 14.8476 10.4334 14.8476 10.0429 14.4571C9.65237 14.0666 9.65237 13.4334 10.0429 13.0429L14.5858 8.5H1C0.447715 8.5 0 8.05228 0 7.5C0 6.94772 0.447715 6.5 1 6.5H14.5858L10.0429 1.95711C9.65237 1.56658 9.65237 0.933417 10.0429 0.542893Z"></path></svg></a>
+                        </div>
 					</form>
 				</div>
 				<!-- END - dynamic form (skeleton) markup copied from Unily.com -->

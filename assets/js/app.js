@@ -163,13 +163,17 @@ $(document).ready(function () {
     // Transparent Head
 
     if ($('.c-head--transparent').length) {
+        // addTransparency();
         $(window).scroll(function () {
-            if ($(document).scrollTop() > 100) {
-                $('.c-head').addClass('scrolling');
-            } else {
-                $('.c-head').removeClass('scrolling');
-            }
+            addTransparency();
         });
+    }
+    function addTransparency() {
+        if ($(document).scrollTop() > 100) {
+            $('.c-head').addClass('scrolling');
+        } else {
+            $('.c-head').removeClass('scrolling');
+        }
     }
 
     // Loading Screen
