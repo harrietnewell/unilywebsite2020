@@ -163,7 +163,7 @@ $(document).ready(function () {
     // Transparent Head
 
     if ($('.c-head--transparent').length) {
-        // addTransparency();
+        addTransparency();
         $(window).scroll(function () {
             addTransparency();
         });
