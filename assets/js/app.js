@@ -292,5 +292,11 @@ $(document).ready(function () {
 
     }).resize();
     
+    
+    
+});
+// Display svg when document is loaded (e.g. svg after font is loaded)
+document.fonts.ready.then(function() {
+    $('.display-after-font').show();
 });
 
