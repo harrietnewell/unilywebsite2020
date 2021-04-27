@@ -9,18 +9,19 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  
+<!--  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <style>
 .c-cards{
 max-width:66.25rem;    margin-left: auto;
-    margin-right: auto; padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
 	}
 	
 .cards-list {
@@ -37,11 +38,13 @@ max-width:66.25rem;    margin-left: auto;
 
 
 .card-banner {
-  margin: 10px auto;
-  border-radius: 20px;
-  /*box-shadow: 5px 5px 10px rgba(28, 28, 27, 0.3);*/
-  cursor: pointer;
-  transition: 0.4s;
+    margin: 10px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    /*box-shadow: 5px 5px 10px rgba(28, 28, 27, 0.3);*/
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .card_img_right img{
@@ -64,7 +67,8 @@ text-align: left;
 .card_img_portrait_right img {
 position: relative;
     margin-top: auto;
-margin-left:50px;
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 
@@ -73,24 +77,25 @@ margin-left:50px;
     flex-direction: row;
     justify-content: space-between;
     max-width: 66rem;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
- /*   padding-top: 3.75rem;
-    padding-bottom: 3.75rem; */
-
+    margin: 0 auto;
 }
-
 .c-card-01 .card-banner {
-	background-image: url(assets/media/back.png); /* fallback */
-	background-image: linear-gradient(88deg,rgba(0, 0, 0, 0.7) 0%,transparent 80%), url(assets/media/back.png);
-	background-position: center;
-	height:450px;
+    background: url("assets/media/back.png") no-repeat center;
+    background-size: cover;
+    height:580px;
 	width:100%;
 }
-
+.c-card-01 .card-banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(88deg, rgba(0, 0, 0, 0.55) 0%, transparent 80%);
+    overflow: hidden;
+}
 
 
 .c-card-01 h1{
@@ -103,7 +108,7 @@ margin-left:50px;
 
 .c-card-02 .card-banner{
   
-  height:450px; 
+  height:450px;
   width:100%;
     background: #F5F5F5;
 }
@@ -116,36 +121,36 @@ margin-left:50px;
 	padding-left: 50px;
 	padding-top: 50px;
 	width: 400px;
+    position: relative;
 }
 
 .c-card-03 {
 	width:49%;
-
+    position: relative;
 }
 
 .c-card-03 .card-banner{
 		height:725px; 
 	width:100%;
-	background: #F5F5F5;
+	background: #fff;
 }
   .c-card-03 h1{
   text-transform: uppercase;
 
 }
- .c-card-03 .bg{
- background-image: url(assets/media/back.png); /* fallback */
-
-background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.7) 0%,transparent 80%), url(assets/media/back.png);
-background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.7) 0%,transparent 80%), url(assets/img/portrait-img.jpg);
-
-
-
-  height: 500px;
-    background-size:100%;
+.c-card-03 .bg{
+    background: url("assets/img/portrait-img.jpg") no-repeat center;
+    background-size: cover;
     height: 725px;
-    background-position: center;
-    width: 110% 
- background-repeat: no-repeat;
+}
+.c-card-03 .bg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, transparent 80%);
 }
 
 @media all and (max-width: 500px) {
@@ -161,6 +166,9 @@ background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.7) 0%,transparent 80%),
     float: right;
     padding: 30px;
 }
+.card-tag .tag {
+    display: inline-block;
+}
 .card-tag .tag-text-01{
   background-color: #3EC8ED;
   color: black;
@@ -174,16 +182,31 @@ background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.7) 0%,transparent 80%),
   }
   
 .tag-ko-01{
-  background-color: #3EC8ED;
-  color: black;
-  font-weight: bold;
-  margin: 0 auto;
-  text-align: center;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: color;
-  vertical-align: baseline;
+  /*background-color: #3EC8ED;*/
+  /*color: black;*/
+  /*font-weight: bold;*/
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
+  /*position: absolute;*/
+  /*transform: translate(-50%, -50%);*/
+  /*mix-blend-mode: color;*/
+  /*vertical-align: baseline;*/
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display:block;
   }
+.tag-svg-white {
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 2px;
+    position: relative;
+}
+.tag-svg-white text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    width: 26px;
+    height: 15px;
+}
   
 
   
@@ -259,9 +282,9 @@ background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.7) 0%,transparent 80%),
   position: absolute;
   transform: translate(-50%, -50%);
   mix-blend-mode: color;
-mix-blend-mode: screen;
+  mix-blend-mode: screen;
   }
-  
+
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -269,9 +292,9 @@ mix-blend-mode: screen;
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
+
 .c-card-02, .c-card-03  {
-	width:400px;
+	/*width:400px;*/
 
 }
 .c-card-block {
@@ -296,13 +319,14 @@ mix-blend-mode: screen;
   }
   .c-card-block{
       padding-left: 30px;
-    padding-top: 50px;
-    width: 100%;
+      padding-right: 30px;
+      padding-top: 50px;
+      width: 100%;
   }
   
   .card_img_right img {
     position: relative;
-    float: right;
+    /*float: right;*/
     margin-bottom: 30px;
     margin-top: 6px;
     margin-right: 30px;
@@ -319,7 +343,7 @@ mix-blend-mode: screen;
 }
 .c-card-03 {
    /* width: 49.2%; */
-   width:100%;
+   /*width:100%;*/
 }
 
 .card_img_right img{
@@ -328,11 +352,13 @@ float:left;
 }
 .c-card-03, .c-card-03 .bg   {
    /* background-size: 200% 110%; */
-width:100%;
+    /*width:100%;*/
 }
 .card_img_portrait_right img {
 
-margin-left: 30px;
+/*margin-left: 30px;*/
+    padding-left: 30px;
+    padding-right: 30px;
 }
   
 }
@@ -342,9 +368,36 @@ margin-left: 30px;
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
- 
-  
+@media (max-width: 1068px) {
+    .c-cards {
+        width: 812px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .card-section .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+@media (max-width: 734px) {
+    .c-card-01,
+    .c-card-02,
+    .c-card-03 {
+        width: 390px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .c-card-01 .card-banner {
+        height: 525px;
+    }
+    .c-card-01 .card-banner:before,
+    .c-card-03 .bg:before {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, transparent 80%);
+    }
 }
 
 /* 
@@ -364,8 +417,8 @@ margin-left: 30px;
 @media (min-width: 481px) and (max-width: 767px) {
 
 .c-card-01 .card-banner {
-	background-image: url(assets/media/back.png); /* fallback */
-	background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.7) 0%,transparent 80%), url(assets/media/back.png);
+	/*background-image: url(assets/media/back.png); !* fallback *!*/
+	/*background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.7) 0%,transparent 80%), url(assets/media/back.png);*/
 
 }
   .c-cards {
@@ -386,11 +439,11 @@ margin-left: 30px;
 
 .c-card-03, .c-card-03 .bg   {
  /*   background-size: 300% 110%; */
-width:100%;
+/*width:100%;*/
 }
 
-.c-card-03 .card-banner   {
-height:465px;
+.c-card-03 .card-banner {
+    height: 525px;
 }
 .c-card-block {
 	width:332px;
@@ -419,7 +472,9 @@ height:465px;
 }
 
 .card_img_portrait_right img{
-  margin-left:30px;
+  /*margin-left:30px;*/
+    padding-left: 30px;
+    padding-right: 30px;
   
 
 }
@@ -434,11 +489,11 @@ height:465px;
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-.c-card-01 .card-banner {
-	background-image: url(assets/media/back.png); /* fallback */
-	background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.7) 0%,transparent 80%), url(assets/media/back.png);
+/*.c-card-01 .card-banner {*/
+/*	background-image: url(assets/media/back.png); !* fallback *!*/
+/*	background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.7) 0%,transparent 80%), url(assets/media/back.png);*/
 
-}
+/*}*/
 
 
 
@@ -462,12 +517,13 @@ height:465px;
 
 .c-card-03, .c-card-03 .bg   {
  /*   background-size: 490% 110%; */
-width:100%;
+/*width:100%;*/
 
 }
 
-.c-card-03 .card-banner   {
-height:465px;
+.c-card-01 .card-banner,
+.c-card-03 .card-banner {
+    height:465px;
 }
 .c-card-block {
 	width:332px;
@@ -495,7 +551,9 @@ height:465px;
 
 .card_img_portrait_right img{
 width:80%;
-margin-left: 30px;
+/*margin-left: 30px;*/
+    padding-left: 30px;
+    padding-right: 30px;
 }
   
 }
@@ -503,6 +561,58 @@ margin-left: 30px;
 .card-logo-top {
 margin-bottom:21px;
 }
+.card-section {
+    background: #f5f5f5;
+}
+.logos-row-wrapper {
+    padding: 50px 0 50px 0;
+}
+.logos-row {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.logos-row.logos-row-6 img {
+    width: 65px;
+    height: 32px;
+    object-fit: contain;
+    margin: 0 10px 20px 0;
+}
+.link-animated-arrow {
+    font-weight: 300;
+    line-height: 1.4;
+    transition: color 200ms;
+    display: flex;
+    align-items: center;
+}
+.link-animated-arrow:hover {
+    text-decoration: none;
+}
+.link-animated-arrow svg {
+    fill: #3EC8ED;
+    padding-top: 1px;
+    transition: fill 200ms, transform 200ms;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+.link-animated-arrow:hover svg {
+    transform: translateX(4px);
+}
+@media (max-width: 767px) {
+    .logos-row {
+        justify-content: center;
+    }
+    .logos-row.logos-row-6 img {
+        margin: 0 8px 20px 8px;
+    }
+}
+.display-after-font {
+    display: none;
+}
+
+
+
 
 </style>
 <body>
@@ -1122,6 +1232,21 @@ margin-bottom:21px;
 								<input type="submit" value="Get Started" class="hs-button primary large">
 							</div>
 						</div>
+                        <div class="logos-row-wrapper">
+                            <h6 class="mb-2">Recognised by</h6>
+                            <div class="logos-row logos-row-6">
+                                <img src="assets/media/microsoft.svg" alt="" />
+                                <img src="assets/media/forrester.svg" alt="" />
+                                <img src="assets/media/nielsen-norman.svg" alt="" />
+                                <img src="assets/media/gartner.svg" alt="" />
+                                <img src="assets/media/451.svg" alt="" />
+                                <img src="assets/media/ragan.svg" alt="" />
+                                <img src="assets/media/ee-award.svg" alt="" />
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#" class="link-animated-arrow mb-3">Learn more <svg viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg" class="_8v6j"><path d="M10.0429 0.542893C10.4334 0.152369 11.0666 0.152369 11.4571 0.542893L17.7071 6.79289C18.0976 7.18342 18.0976 7.81658 17.7071 8.20711L11.4571 14.4571C11.0666 14.8476 10.4334 14.8476 10.0429 14.4571C9.65237 14.0666 9.65237 13.4334 10.0429 13.0429L14.5858 8.5H1C0.447715 8.5 0 8.05228 0 7.5C0 6.94772 0.447715 6.5 1 6.5H14.5858L10.0429 1.95711C9.65237 1.56658 9.65237 0.933417 10.0429 0.542893Z"></path></svg></a>
+                        </div>
 					</form>
 				</div>
 				<!-- END - dynamic form (skeleton) markup copied from Unily.com -->
@@ -1363,7 +1488,7 @@ margin-bottom:21px;
   </section>
 
 
-  <section class="container pt">
+  <section class="container pt pb">
 
     <div class="c-guide">
 
@@ -1416,91 +1541,28 @@ margin-bottom:21px;
   </section>
 
 
-  <section class="container py">
-
-    <h2 class="heading-01-alt text-center"><strong>3 steps.</strong> Power better work for everyone.</h2>
-
-    <div class="c-block-columns c-block-columns--steps text-center">
-
-      <div class="c-block-columns__col">
-
-        <div class="c-block-columns__item">
-
-          <div class="c-step bg-03">
-            <div class="c-step__inner">
-              #1
-            </div>
-          </div>
-
-          <h3 class="heading-05-alt"><strong>Plan</strong></h3>
-
-          <p>Empower and transform your whole business with features like news, social and enterprise search.</p>
-
-        </div>
-
-      </div>
-
-      <div class="c-block-columns__col">
-
-        <div class="c-block-columns__item">
-
-          <div class="c-step bg-02">
-            <div class="c-step__inner">
-              #2
-            </div>
-          </div>
-
-          <h3 class="heading-05-alt"><strong>Launch</strong></h3>
-
-          <p>Empower and transform your whole business with features like news, social and enterprise search.</p>
-
-        </div>
-
-      </div>
-
-      <div class="c-block-columns__col">
-
-        <div class="c-block-columns__item">
-
-          <div class="c-step bg-04">
-            <div class="c-step__inner">
-              #3
-            </div>
-          </div>
-
-          <h3 class="heading-05-alt"><strong>Grow</strong></h3>
-
-          <p>Empower and transform your whole business with features like news, social and enterprise search.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-	
-	
-
-</div>
-
-  
-  
-  
-
-
-  </section>
-
-<section>
+<section class="card-section">
 
 
 
 <div class="container py">
-
+    <h2 class="heading-01-alt text-center"><strong>FEATURE STORE.</strong> Coming soon to Unily.</h2>
 <div class="c-cards">
 <div class="c-card-01">
 
 <div class="card-banner">
 
-<div class="card-tag"><a href="#" class="tag tag-ko-01">NEW</a></div>
+<div class="card-tag">
+    <svg width="30" height="20" preserveAspectRatio="xMidYMid meet" class="display-after-font tag-svg-white">
+        <defs>
+            <mask id="mask" x="0" y="0">
+                <rect x="0" y="0" width="30" height="20" fill="#fff"></rect>
+                <text text-anchor="middle" x="15" y="14" dy="0.5" font-family="'Roboto Condensed">NEW</text>
+            </mask>
+        </defs>
+        <rect x="0" y="0" width="30" height="20" mask="url(#mask)" fill-opacity="1" style="fill: #fff;"></rect>
+    </svg>
+</div>
   <div class="c-card-block">
 <h1 class="heading-03-alt" style="color:#fff;"><strong> Feature Store</strong></h1>
 <p style="color:#fff;">Install intranet features in seconds including industry specific experiences, app integrations and lorem ipsum.</p>
@@ -1511,7 +1573,7 @@ margin-bottom:21px;
 
 <div class="cards-list">
 
-  <div class="c-card-02">
+  <div class="c-card-03">
 <div class="card-banner">
 <div class="card-tag"><a href="#" class="tag tag-03">NEW</a></div>
   <div class="c-card-block">
@@ -1521,22 +1583,22 @@ margin-bottom:21px;
   
  
   </div>
-   <div class="card_img_right">
-       <img alt="" class="img img-shadow" width="300" src="assets/media/a5e9ff433c5fbab77d920dd6e21265a062878c3c.png">
+   <div class="card_img_portrait_right">
+       <img alt="" class="img img-shadow" src="assets/media/a5e9ff433c5fbab77d920dd6e21265a062878c3c.png">
 	  </div>
 	  </div>
 </div>
 
-  <div class="c-card-02">
+  <div class="c-card-03">
 <div class="card-banner">
   <div class="c-card-block">
   <img class="card-logo-top" alt=""  height="30" src="assets/media/microsoft.png">
 <p>Empower and transform your whole business with features like news, social and enterprise search.</p>
               <p><a href="#" class="btn btn-02">Social</a></p>
   </div>
-   <div class="card_img_right">
+    <div class="card_img_portrait_right">
 
-          <img src="assets/media/frontline-workers.png" width="300" class="img img-shadow" alt="">
+          <img src="assets/media/frontline-workers.png" class="img img-shadow" alt="">
 
         </div>
   </div>
@@ -1545,7 +1607,18 @@ margin-bottom:21px;
 
     <div class="c-card-03">
 <div class="card-banner bg">
-<div class="card-tag"><a href="#" class="tag tag-ko-09">NEW</a></div>
+<div class="card-tag">
+    
+    <svg width="30" height="20" preserveAspectRatio="xMidYMid meet" class="tag-svg-white">
+        <defs>
+            <mask id="mask" x="0" y="0">
+                <rect x="0" y="0" width="30" height="20" fill="#fff"></rect>
+                <text text-anchor="middle"  x="15" y="14" dy="0.5">NEW</text>
+            </mask>
+        </defs>
+        <rect x="0" y="0" width="30" height="20" mask="url(#mask)" fill-opacity="1" style="fill: #fff;" ></rect>
+    </svg>
+</div>
   <div class="c-card-block">
 <h1 class="heading-03-alt" style="color:#fff;"><strong>Feature Store</strong></h1>
 <p style="color:#fff;">Empower and transform your whole business with features like news, social and enterprise search.</p>
@@ -1565,7 +1638,7 @@ margin-bottom:21px;
 		   
   </div>
    	  <div class="card_img_portrait_right">
-   <img class="img img-shadow" alt="Microsoft 365 intranet integrations" width="380" src="assets/img/img-snippet.png">
+   <img class="img img-shadow" alt="Microsoft 365 intranet integrations" src="assets/img/img-snippet.png">
   	  </div>	
   
   </div>
