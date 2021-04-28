@@ -1304,6 +1304,10 @@ th {
   display: block;
 }
 
+.scroll-to-section .c-nav__link.selected:after, .scroll-to-section .c-nav__link.active:after {
+  content: none;
+}
+
 @media (max-width: 999px) {
   .nav-active .c-head__wrap,
 .nav-active .c-head__navigation.active {
@@ -4454,6 +4458,7 @@ textarea.hs-input {
 @media (min-width: 768px) {
   .c-block-columns--speakers {
     width: 61.25rem;
+    max-width: 100%;
   }
 }
 

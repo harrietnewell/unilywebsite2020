@@ -324,6 +324,18 @@
         }
     }
 }
+.scroll-to-section {
+  .c-nav {
+    &__link {
+      &.selected,
+      &.active {
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: $breakpoint-head-down) {
   .nav-active {
