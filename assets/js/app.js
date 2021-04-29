@@ -223,9 +223,9 @@ $(document).ready(function () {
     /** New scroll **/
     if ($('.scroll-to-section').length) {
     
-        $('.scroll-to-section a').on('click', function () {
+        $('.scroll-to-section li.js-nav-link a').on('click', function () {
             handleNavToggle();
-            $('.scroll-to-section a').removeClass('active');
+            $('.scroll-to-section li.js-nav-link a').removeClass('active');
             $(this).addClass('active');
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top - 50
@@ -236,8 +236,8 @@ $(document).ready(function () {
             $('.id-section').each(function () {
                 if ($(window).scrollTop() >= $(this).offset().top - 51) {
                     var id = $(this).attr('id');
-                    $('.scroll-to-section a').removeClass('active');
-                    $('.scroll-to-section a[href=\\#' + id + ']').addClass('active');
+                    $('.scroll-to-section li.js-nav-link a').removeClass('active');
+                    $('.scroll-to-section li.js-nav-link a[href=\\#' + id + ']').addClass('active');
                 }
             });
         });
