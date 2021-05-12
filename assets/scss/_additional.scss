@@ -394,3 +394,31 @@
 }
 
 /** End footer scss  **/
+
+
+
+
+
+
+
+
+
+
+
+/** Tiktok video **/
+.c-embed {
+  &.c-embed {
+    &--tiktok {
+      padding-bottom: 700px;
+      height: 0;
+
+      iframe {
+        width: auto;
+        min-width: 341px;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
