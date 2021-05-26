@@ -39,3 +39,10 @@
 .c-table td.integrations {
     vertical-align: middle;
 }
+
+@media all and (max-width:1024px) {
+    .c-pricing {
+        padding: 1.375rem;
+        padding-bottom: 4.375rem;
+    }
+}
