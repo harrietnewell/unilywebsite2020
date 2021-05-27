@@ -4,12 +4,11 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    max-width: 66.25rem;
+    max-width: 63.5rem;
 }
 
 .c-pricing {
     width: 100%;
-    /*    max-width: 66.25rem;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -32,8 +31,10 @@
 
 .c-table td {
     height: auto;
-    padding: 0.625rem;
-    padding-bottom: 0.625rem;
+/*
+    padding: 1.625rem 0.625rem;
+    padding-bottom: 1.625rem;
+*/
 }
 
 .c-table td.integrations {
@@ -42,7 +43,9 @@
 
 @media all and (max-width:1024px) {
     .c-pricing {
+/*
         padding: 1.375rem;
         padding-bottom: 4.375rem;
+*/
     }
 }
