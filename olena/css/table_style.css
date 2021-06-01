@@ -29,17 +29,10 @@
     max-width: 100%;
 }
 
-.c-table td {
-    /*    height: auto;*/
-    /*
-    padding: 1.625rem 0.625rem;
-    padding-bottom: 1.625rem;
-*/
-}
-
 .c-table td.integrations {
     vertical-align: middle;
 }
+
 
 @media all and (max-width:768px) {
 
