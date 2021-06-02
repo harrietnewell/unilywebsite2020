@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    max-width: 57.19rem;
+    max-width: 56.88rem;
 }
 
 .c-pricing {
@@ -31,6 +31,11 @@
 
 .c-table td.integrations {
     vertical-align: middle;
+}
+
+.included,
+.not-included {
+    display: none;
 }
 
 
