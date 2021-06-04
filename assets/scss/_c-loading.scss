@@ -1,18 +1,21 @@
 // Loading Screen
 
-.c-loading {
-  background: $color-white;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100000;
+$animation-delay: 0.25s;
 
-  &.hidden {
+.c-loading {
+    background: $color-white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    animation-delay: $animation-delay;
     animation: 0.75s ease-in-out 0.5s forwards hideload;
-  }
+    /*&.hidden {
+    animation: 0.75s ease-in-out 0.5s forwards hideload;
+  }*/
 }
 
 .c-loading__icon {
@@ -23,12 +26,14 @@
   animation: 1s infinite scaleout;
 }
 
-.c-loading.hidden .c-loading__wrap {
-  animation: 0.75s forwards ease-in-out hideicon;
+.c-loading .c-loading__wrap {
+    animation-delay: $animation-delay;
+    animation: 0.75s forwards ease-in-out hideicon;
 }
 
-.c-loading.hidden .c-loading__icon {
-  animation: 1s infinite scaleout; 
+.c-loading .c-loading__icon {
+    animation-delay: $animation-delay;
+    animation: 1s infinite scaleout;
 }
 
 .c-loading__animation {
