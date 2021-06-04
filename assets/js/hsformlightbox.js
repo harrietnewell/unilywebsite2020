@@ -96,6 +96,4 @@ var unilyHsFormLightbox = {
     }
 };
 
-$(document).ready(function () {
-    unilyHsFormLightbox.init();
-});
+unilyHsFormLightbox.init();
