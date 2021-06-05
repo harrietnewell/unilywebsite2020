@@ -429,3 +429,8 @@
     }
   }
 }
+
+// Temp fix for pages with stick nav - .c-page { overflow:hidden } is breaking sticky side nav
+.c-page--sticky-side-nav {
+	overflow:visible !important;
+}

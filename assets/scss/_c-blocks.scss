@@ -100,9 +100,9 @@
         //padding-left: 0;
         //padding-right: rem-size(20px);
       }
-      .c-block-01__media--img-side {
+      /*.c-block-01__media--img-side {
         text-align: right !important;
-      }
+      }*/
       .c-block-01__content {
         padding-left: rem-size(20px);
         //padding-right: rem-size(60px); 
@@ -164,7 +164,7 @@
     }
 
     &--alt {
-      text-align: right;
+      //text-align: right;
 
       .c-block-01__content {
         &:before{
