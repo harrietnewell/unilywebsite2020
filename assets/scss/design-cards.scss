@@ -5,6 +5,11 @@
   padding-left: 5px;
   padding-right: 5px;
 
+  @media (max-width: 991px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .d-cards-list {
     display: flex;
     justify-content: space-between;
@@ -35,6 +40,7 @@
 
         .d-card-heading {
           font-size: 54px;
+          line-height: 1.15;
           font-weight: 700;
           color: #1C1C1B;
           margin-bottom: 25px;
@@ -43,6 +49,7 @@
         .d-card-img-1 {
           max-width: 80%;
           margin: auto;
+          text-align: center;
 
           img {
             max-width: 100%;
@@ -77,6 +84,12 @@
         display: inline-block;
         text-align: center;
         font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        transition-property: background-color, border-color, color;
+        transition-duration: 250ms;
+        &:hover {
+          color: #fff;
+          background: #1C1C1B;
+        }
       }
 
       &--content-white {
@@ -88,6 +101,10 @@
         .d-card-button {
           color: #fff;
           border-color: #fff;
+          &:hover {
+            color: #1C1C1B;
+            background: #fff;
+          }
         }
       }
       &--bg-img {
