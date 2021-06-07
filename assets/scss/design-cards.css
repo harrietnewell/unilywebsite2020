@@ -2,14 +2,6 @@
   max-width: 66.25rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-@media (max-width: 991px) {
-  .d-cards {
-    padding-right: 0;
-    padding-left: 0;
-  }
 }
 .d-cards .d-cards-list {
   display: flex;
@@ -82,6 +74,7 @@
   display: inline-block;
   text-align: center;
   font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  transition-timing-function: ease-in-out;
   transition-property: background-color, border-color, color;
   transition-duration: 250ms;
 }
