@@ -76,9 +76,8 @@
 				<button class="btn btn-nav btn-06" id="eventbrite-widget-modal-trigger-71556684971" type="button">Register Now</button>
             </div>
             <p class="c-block-video__link">
-                <a href="https://player.vimeo.com/video/337823309" class="link-play magnific-video">
+                <a href="https://player.vimeo.com/video/337823309" class="link-play" id="popupVideo1">
                     <img src="https://unilyweb2020.azureedge.net/media/axbecndz/play-white.svg" alt="Play" />
-<!--                    <svg aria-hidden="true" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#ffffff" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>-->
                     Watch <strong class="font-alt">UNITE</strong> 19 recap
                 </a>
             </p>
@@ -132,12 +131,9 @@
         <div class="video-section">
             <div class="video-section-wrapper">
                 <div class="video-section__cover">
-<!--                    <a href="https://player.vimeo.com/video/482722821" class="link-play magnific-video">-->
-                    <a href="https://www.youtube.com/watch?v=MyaW2iGcI5g" class="link-play magnific-video" mfp-custom-class="widescreen">
+                    <a href="https://www.youtube.com/watch?v=MyaW2iGcI5g" class="link-play" id="popupVideo2" mfp-custom-class="widescreen">
                         <div class="video-box">
                             <img class="play-icon" src="https://unilyweb2020.azureedge.net/media/axbecndz/play-white.svg" alt="Play" />
-<!--                            <svg aria-hidden="true" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>-->
-<!--                            <iframe src="https://player.vimeo.com/video/261063347?autoplay=1&loop=1&color=ef0800&title=0&byline=0&portrait=0&background=1" title=0 sidedock=0 controls=0 frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>-->
                             <<iframe width="798" height="449" src="https://www.youtube-nocookie.com/embed/MyaW2iGcI5g?rel=0&controls=0&showinfo=0&loop=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>
                         </div>
                     </a>
@@ -698,9 +694,11 @@
 <script src="assets/js/vendor/simplebar.min.js"></script>
 <script src="assets/js/vendor/magnific-popup-1.1.0.min.js"></script>
 <script src="assets/js/videopopup.js"></script>
-<script src="assets/js/app.js"></script>
 <script src="assets/js/wherenext.js"></script>
+<script src="assets/js/app.js"></script>
 <script type="text/javascript">
+	unilyVideoPopup.init($('#popupVideo1'));
+	unilyVideoPopup.init($('#popupVideo2'));
 	unilyWhereNext.init($('[data-where-next]'));
 </script>
 
