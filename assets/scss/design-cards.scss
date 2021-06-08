@@ -78,8 +78,8 @@
         text-align: center;
         font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
         transition-timing-function: ease-in-out;
-        transition-property: background-color, border-color, color;
-        transition-duration: 250ms;
+        //transition-property: background-color, border-color, color;
+        //transition-duration: 250ms;
         &:hover {
           color: #fff;
           background: #1C1C1B;
