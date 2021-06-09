@@ -38,6 +38,17 @@
     display: none;
 }
 
+.reach_icon {
+    margin: 0 1em 0 0;
+    width: 30px;
+}
+
+.c-table__heading-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 
 @media all and (max-width:768px) {
 
