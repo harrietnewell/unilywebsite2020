@@ -292,5 +292,12 @@ unilyApp.init();
 
 // Display svg when document is loaded (e.g. svg after font is loaded)
 document.fonts.ready.then(function() {
+    $('.svg-transparent-tag-placeholder').each(function () {
+        var width = $('.svg-transparent-tag-placeholder').outerWidth();
+        var height = $('.svg-transparent-tag-placeholder').outerHeight();
+        var svg = $(this).closest('.d-card-tag').find('svg');
+        svg.width(width);
+        svg.height(height);
+    })
 $('.display-after-font').show();
 });
