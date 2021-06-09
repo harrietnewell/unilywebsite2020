@@ -123,6 +123,24 @@
     }
   }
 }
+
+.display-after-font {
+  display: none;
+}
+
+.tag-svg-white {
+  font-family: 'Roboto Condensed', sans-serif;
+  border-radius: 2px;
+  position: relative;
+
+  text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    width: 26px;
+    height: 15px;
+  }
+}
 .tag-09 {
   border-color: #fff;
   color: #fff;
