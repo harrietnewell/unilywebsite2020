@@ -39,7 +39,7 @@
 }
 
 .reach_icon {
-    margin: 0 1em 0 0;
+    margin: 0 0.5em 0 0;
     width: 30px;
 }
 
@@ -47,6 +47,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.c-table__heading-main-02 {
+    padding: 4.375rem 0 0;
 }
 
 
