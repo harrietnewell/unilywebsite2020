@@ -299,5 +299,9 @@ document.fonts.ready.then(function() {
         svg.width(width);
         svg.height(height);
     })
-$('.display-after-font').show();
+    /** Safari aligmnet **/
+    if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+        $('.display-after-font').find('text').attr('dx', '1.0');
+    }
+    $('.display-after-font').show();
 });
