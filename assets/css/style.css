@@ -1159,6 +1159,7 @@ th {
 .c-nav__item {
   margin-bottom: 1.25rem;
   padding-left: 2.5rem;
+  /* TODO - Implement variable for 1100px? */
 }
 @media (min-width: 1000px) {
   .c-nav__item {
@@ -1171,6 +1172,12 @@ th {
   }
   .c-nav__item:last-child {
     padding-right: 0;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1100px) {
+  .c-nav__item {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 .c-nav__item--search {
@@ -1264,6 +1271,7 @@ th {
     background-repeat: no-repeat;
     background-size: 0% 3px;
     transition: background 0.3s;
+    white-space: nowrap;
   }
 }
 .c-nav .c-nav__link:hover .c-nav__text,
