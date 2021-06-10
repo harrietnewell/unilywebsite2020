@@ -2,17 +2,31 @@
 // TODO - UPDATE WITH SCSS VARIABLES
 
 .d-cards {
-  max-width: 66.25rem;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 80px 0;
+  //max-width: 66.25rem;
+  //margin-left: auto;
+  //margin-right: auto;
+  //padding-left: 10px;
+  //padding-right: 10px;
 
   .d-cards-list {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     flex-wrap: wrap;
 
+    &:first-child {
+      @media (min-width: 768px) {
+        padding-right: 10px;
+      }
+    }
+    &:last-child {
+      @media (min-width: 768px) {
+        padding-left: 10px;
+      }
+    }
     .d-single-card {
-      width: 49%;
+      //width: 49%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       position: relative;
@@ -124,6 +138,19 @@
       @media (max-width: 767px) {
         width: 100%;
       }
+    }
+
+    .c-block-05__content {
+      @media (min-width: 768px) {
+        max-width: 31.25rem;
+      }
+    }
+  }
+  .c-block-05 {
+    margin-top: 0;
+    margin-bottom: 0;
+    .c-block-05__row {
+      padding: 0;
     }
   }
 }
