@@ -131,6 +131,9 @@
 .d-cards .c-block-05 .c-block-05__row {
   padding: 0;
 }
+.d-cards .c-block-05__row:last-of-type .d-single-card {
+  margin-bottom: 0;
+}
 
 .display-after-font {
   display: none;

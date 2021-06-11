@@ -153,6 +153,13 @@
       padding: 0;
     }
   }
+  .c-block-05__row {
+    &:last-of-type {
+      .d-single-card {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .display-after-font {
