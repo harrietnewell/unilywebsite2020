@@ -14,8 +14,16 @@
 		
 <!--        Menu items in one row and removed focus on close the notification banner -->
         <style>
-            .c-alert__close {
-                outline: none;
+            .c-alert__close,
+            .c-alert__close:focus {
+                outline: 0 !important;
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
             }
         </style>
         
