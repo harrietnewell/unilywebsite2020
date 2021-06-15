@@ -352,29 +352,29 @@ th {
 }
 
 .pt {
-  padding-top: 2.5rem;
+  padding-top: 2.5rem !important;
 }
 @media (min-width: 768px) {
   .pt {
-    padding-top: 5rem;
+    padding-top: 5rem !important;
   }
 }
 
 .pb {
-  padding-bottom: 2.5rem;
+  padding-bottom: 2.5rem !important;
 }
 @media (min-width: 768px) {
   .pb {
-    padding-bottom: 5rem;
+    padding-bottom: 5rem !important;
   }
 }
 
 .pb-sm {
-  padding-bottom: 1.5625rem;
+  padding-bottom: 1.5625rem !important;
 }
 @media (min-width: 768px) {
   .pb-sm {
-    padding-bottom: 3.75rem;
+    padding-bottom: 3.75rem !important;
   }
 }
 
@@ -401,11 +401,11 @@ th {
 }
 
 .pt-sm {
-  padding-top: 1.5625rem;
+  padding-top: 1.5625rem !important;
 }
 @media (min-width: 768px) {
   .pt-sm {
-    padding-top: 3.75rem;
+    padding-top: 3.75rem !important;
   }
 }
 

@@ -44,27 +44,27 @@
 // Top/Bottom Padding
 
 .pt {
-  padding-top: rem-size(40px);
+    padding-top: rem-size(40px) !important;
 
-  @media (min-width: $breakpoint-md) {
-    padding-top: rem-size(80px);
-  }
+    @media (min-width: $breakpoint-md) {
+        padding-top: rem-size(80px) !important;
+    }
 }
 
 .pb {
-  padding-bottom: rem-size(40px);
+    padding-bottom: rem-size(40px) !important;
 
-  @media (min-width: $breakpoint-md) {
-    padding-bottom: rem-size(80px);
-  }
+    @media (min-width: $breakpoint-md) {
+        padding-bottom: rem-size(80px) !important;
+    }
 }
 
 .pb-sm {
-  padding-bottom: rem-size(25px);
+    padding-bottom: rem-size(25px) !important;
 
-  @media (min-width: $breakpoint-md) {
-    padding-bottom: rem-size(60px);
-  }
+    @media (min-width: $breakpoint-md) {
+        padding-bottom: rem-size(60px) !important;
+    }
 }
 
 .py {
@@ -88,11 +88,11 @@
 }
 
 .pt-sm {
-  padding-top: rem-size(25px);
+    padding-top: rem-size(25px) !important;
 
-  @media (min-width: $breakpoint-md) {
-    padding-top: rem-size(60px);
-  }
+    @media (min-width: $breakpoint-md) {
+        padding-top: rem-size(60px) !important;
+    }
 }
 
 .mt {
