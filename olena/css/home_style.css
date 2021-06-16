@@ -203,7 +203,6 @@
 }
 
 
-
 @media (min-width: 1000px) {
     .c-head__navigation {
         width: 92%;
@@ -215,10 +214,6 @@
 
     .c-head__wrap {
         justify-content: center;
-    }
-
-    .c-head__container {
-        width: 100%;
     }
 
     .c-page {
@@ -243,10 +238,6 @@
 }
 
 @media only screen and (min-width: 1670px) {
-    .c-foot .container-wide-2 {
-        /*        padding-left: 230px;*/
-    }
-
     .c-foot .container-wide-2 {
         max-width: 1010px;
         padding: 0;
