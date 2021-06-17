@@ -5277,10 +5277,8 @@ textarea.hs-input {
 .c-table {
   width: 100%;
   font-size: 1rem;
-  margin-bottom: 1.875rem;
-  max-width: 65rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  max-width: 100%;
 }
 .c-table ul, .c-table ol {
   padding-left: 1.2rem;
@@ -5334,6 +5332,9 @@ textarea.hs-input {
 .c-table td:last-child {
   padding-right: 0;
 }
+.c-table td.integrations {
+  vertical-align: middle;
+}
 .c-table small {
   font-size: 0.875rem;
 }
@@ -5346,32 +5347,63 @@ textarea.hs-input {
 
 .c-pricing {
   position: relative;
-}
-.c-pricing__legend {
-  list-style: none;
-  margin: 0rem 0rem 1.875rem 0rem;
-  padding: 0;
-  font-size: 1rem;
-  display: flex;
   width: 100%;
-  max-width: 65rem;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 56.88rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 4.375rem;
+  margin: auto;
+  /*padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 56.88rem;*/
+  /*&__legend {
+      list-style: none;
+      margin: rem-size(0 0 30px 0);
+      padding: 0;
+      font-size: rem-size(16px);
+      display: flex;
+      width: 100%;
+      max-width: rem-size(1040px);
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (min-width: $breakpoint-md) {
+          justify-content: flex-end;
+      }
+
+      li {
+          margin-right: rem-size(40px);
+
+          &:last-child {
+              margin-right: 0;
+          }
+      }
+
+      .included, .not-included {
+          vertical-align: -2px;
+          margin-right: rem-size(3px);
+      }
+  }*/
 }
-@media (min-width: 768px) {
-  .c-pricing__legend {
-    justify-content: flex-end;
-  }
+.c-pricing .included, .c-pricing .not-included {
+  display: none;
 }
-.c-pricing__legend li {
-  margin-right: 2.5rem;
+.c-pricing .module_icon {
+  margin: 0 0.4em 0 0;
+  width: 30px;
 }
-.c-pricing__legend li:last-child {
-  margin-right: 0;
+.c-pricing .c-table__heading-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.c-pricing__legend .included, .c-pricing__legend .not-included {
-  vertical-align: -2px;
-  margin-right: 0.1875rem;
+.c-pricing .c-table__heading-main-02 {
+  padding: 4.375rem 0 0;
 }
 
 .c-foot {
