@@ -4154,11 +4154,11 @@ textarea.hs-input {
     align-items: center;
   }
   .c-block-05__col:first-child {
-    padding-right: 3%;
+    padding-right: 3.125rem;
     justify-content: flex-end;
   }
   .c-block-05__col:last-child {
-    padding-left: 3%;
+    padding-left: 3.125rem;
     padding-bottom: 0;
   }
 }
@@ -4241,12 +4241,12 @@ textarea.hs-input {
 @media (min-width: 768px) {
   .c-block-05--alt .c-block-05__row .c-block-05__col:first-child {
     justify-content: flex-start;
-    padding-left: 3%;
+    padding-left: 3.125rem;
     padding-right: 1.25rem;
   }
   .c-block-05--alt .c-block-05__row .c-block-05__col:last-child {
     padding-left: 1.25rem;
-    padding-right: 3%;
+    padding-right: 3.125rem;
     justify-content: flex-end;
   }
 }

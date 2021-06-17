@@ -534,11 +534,11 @@
       //background: rgba(green,0.2);
 
       &:first-child {
-        padding-right: 3%;
+        padding-right: rem-size(50px);
         justify-content: flex-end;
       }
       &:last-child {
-        padding-left: 3%;
+        padding-left: rem-size(50px);
         padding-bottom: 0;
       }
     }
@@ -634,12 +634,12 @@
         @media (min-width: $breakpoint-md) {
           &:first-child {
             justify-content: flex-start;
-            padding-left: 3%;
+            padding-left: rem-size(50px);
             padding-right: rem-size(20px);
           }
           &:last-child {
             padding-left: rem-size(20px);
-            padding-right: 3%;
+            padding-right: rem-size(50px);
             justify-content: flex-end;
           }
         }
