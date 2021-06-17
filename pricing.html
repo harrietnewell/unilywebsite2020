@@ -14,6 +14,48 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
+  <style>
+  
+	/* Original styles for pricing legend */
+  
+	.c-pricing__legend {
+		list-style: none;
+		margin: 0 0 1.875rem 0; /* rem-size(0 0 30px 0) */
+		padding: 0;
+		font-size: 1rem; /* rem-size(16px) */
+		display: flex;
+		width: 100%;
+		max-width: 65rem; /* rem-size(1040px) */
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	@media (min-width: 768px) {
+		.c-pricing__legend {
+			justify-content: flex-end;
+		}
+    }
+
+    .c-pricing__legend li {
+      margin-right: 2.5rem; /* rem-size(40px) */
+    }
+
+	.c-pricing__legend li:last-child {
+        margin-right: 0;
+    }
+
+    .c-pricing__legend .included, .c-pricing__legend .not-included {
+      vertical-align: -2px;
+      margin-right: 0.1875rem; /* rem-size(3px) */
+	  display: inline-block; /* Should not be needed if display:none is removed from css */
+    }
+	
+	.c-pricing .included, .not-included {
+		display: inline-block; /* Should not be needed if display:none is removed from css */
+	}
+  
+  </style>
+
 </head>
 <body>
 
