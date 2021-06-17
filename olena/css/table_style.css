@@ -14,6 +14,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-bottom: 4.375rem;
+    padding-top: 4.375rem;
 }
 
 .c-pricing__legend {
