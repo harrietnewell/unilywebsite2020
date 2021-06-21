@@ -134,6 +134,14 @@
 .d-cards .c-block-05__row:last-of-type .d-single-card {
   margin-bottom: 0;
 }
+@media (max-width: 767px) {
+  .d-cards .c-block-05__row .c-block-05__col {
+    padding-bottom: 1.25rem !important;
+  }
+  .d-cards .c-block-05__row .d-single-card {
+    margin-bottom: 0;
+  }
+}
 
 .display-after-font {
   display: none;

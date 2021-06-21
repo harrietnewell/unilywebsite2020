@@ -1,6 +1,12 @@
 // Cards
 // TODO - UPDATE WITH SCSS VARIABLES
 
+// Functions
+@import "functions";
+
+// Variables
+@import "variables"; 
+
 .d-cards {
   padding: 0;
   //max-width: 66.25rem;
@@ -158,6 +164,17 @@
       .d-single-card {
         margin-bottom: 0;
       }
+    }
+
+    @media (max-width: 767px) {
+
+        .c-block-05__col {
+            padding-bottom: rem-size(20px) !important;
+        }
+
+        .d-single-card {
+            margin-bottom: 0;
+        }
     }
   }
 }
