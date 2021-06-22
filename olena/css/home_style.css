@@ -1,5 +1,6 @@
 .c-block-home__img {
     width: 100%;
+    height: 594px;
     padding: 0;
 }
 
@@ -123,6 +124,14 @@
     border-color: #fff;
 }
 
+.c-clients__container--5 .heading-06 {
+    padding-left: 8rem;
+}
+
+.c-clients {
+    margin: 0rem 0 0 2.1rem;
+}
+
 
 @media (min-width: 768px) {
     .d-cards .d-cards-list:first-child {
@@ -162,7 +171,7 @@
     .c-block-home__item {
         max-width: 29.1rem;
         margin-left: auto;
-        margin-right: 1.4rem;
+        margin-right: 1.2rem;
     }
 
     .c-block-home__media {
@@ -177,7 +186,7 @@
     .c-block-05__col:first-child {
         padding-right: 73px;
         justify-content: flex-end;
-        margin-left: 3.4rem;
+        margin-left: 3.6rem;
     }
 
     .c-block-05__col:last-child {
@@ -189,6 +198,7 @@
         margin-left: 0;
     }
 }
+
 
 .c-head__wrap {
     /*    padding: 0rem 0.9375rem;*/
@@ -235,11 +245,12 @@
         padding-left: 190px;
         padding: 0;
     }
+
 }
 
 @media only screen and (min-width: 1670px) {
     .c-foot .container-wide-2 {
-        max-width: 1010px;
+       
         padding: 0;
     }
 }
@@ -247,14 +258,43 @@
 
 
 .c-foot .container-wide-2 {
-    width: 100%;
-    max-width: 1040px;
-    padding: 0 0 0 22px;
+    max-width: 75rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-@media all and (max-width: 1441px) {
-    .c-foot .container-wide-2 {
-        padding: 0 0 0 17px;
+@media all and (max-width: 1599px) {}
+
+@media all and (max-width: 1440px) {
+
+    .c-clients__container--5 .heading-06 {
+        padding-left: 0;
+    }
+
+    .c-clients {
+        margin: 0rem 0 0 0;
+    }
+
+    .c-clients__item {
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .c-clients__container--5 {
+        padding-left: 6.6rem;
+    }
+}
+
+@media all and (max-width: 1280px) {
+    .c-clients__container--5 {
+        padding-left: 4.6rem;
+    }
+}
+
+@media only screen and (max-width: 1112px) {
+
+    .c-foot__row {
+        margin-left: 2.2rem;
     }
 }
 
@@ -263,6 +303,14 @@
     .c-foot .container-wide-2,
     .c-head__wrap {
         padding: 0rem 0.9375rem;
+    }
+
+    .c-foot__row {
+        margin-left: 0.5rem;
+    }
+
+    .c-clients__container--5 {
+        padding-left: 1.25rem;
     }
 }
 
@@ -275,4 +323,20 @@
     .c-head__container {
         width: 100%;
     }
+}
+
+@media all and (max-width:768px) {
+    .c-block-05__row {
+        flex-wrap: wrap;
+    }
+
+    .c-block-05__col {
+        flex: 0 0 60%;
+    }
+
+    .d-cards .c-block-05__col:first-child {
+        margin-left: 0;
+        padding: 0;
+    }
+
 }
