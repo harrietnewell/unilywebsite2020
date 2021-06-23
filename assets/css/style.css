@@ -7068,37 +7068,6 @@ textarea.hs-input {
   z-index: 1 !important;
 }
 
-.c-lightbox.active {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(28, 28, 27, 0.8);
-  z-index: 9999;
-}
-.c-lightbox__container {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.25rem;
-}
-@media (min-width: 768px) {
-  .c-lightbox__container {
-    padding: 2.5rem;
-  }
-}
-.c-lightbox__content {
-  background: #fff;
-  border-radius: 0.25rem;
-  max-width: 32.5rem;
-  width: 100%;
-  padding: 2.5rem;
-}
-
 .c-article__side-container .c-articles__media {
   margin-bottom: 10px;
 }
