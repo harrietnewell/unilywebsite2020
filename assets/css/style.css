@@ -1004,7 +1004,6 @@ th {
 .c-head {
   color: #fff;
   background: #112A3F;
-  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -1341,6 +1340,21 @@ th {
     top: auto;
   }
 }
+body.sticky-header .c-head {
+  position: fixed;
+}
+body.sticky-header .c-page {
+  padding-top: 3.125rem;
+}
+@media (min-width: 1000px) {
+  body.sticky-header .c-page {
+    padding-top: 4rem;
+  }
+}
+body.sticky-header .c-page--top {
+  padding-top: 3.125rem;
+}
+
 @media (max-width: 999px) {
   .c-dropdown {
     display: none !important;
@@ -7040,15 +7054,6 @@ textarea.hs-input {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding-top: 3.125rem;
-}
-@media (min-width: 1000px) {
-  .c-page {
-    padding-top: 4rem;
-  }
-}
-.c-page--top {
-  padding-top: 3.125rem;
 }
 @media (min-width: 1000px) {
   .c-page--top {
