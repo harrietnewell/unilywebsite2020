@@ -1,3 +1,46 @@
+ .c-dropdown__icon {
+            height: 2rem;
+            width: 2.375rem;
+        }
+
+        .c-dropdown__icon--01,
+        .c-dropdown__icon--02,
+        .c-dropdown__icon--03,
+        .c-dropdown__icon--04,
+        .c-dropdown__icon--05,
+        .c-dropdown__icon--06,
+        .c-dropdown__icon--07,
+        .c-dropdown__icon--08,
+        .c-dropdown__icon--09 {
+            background-size: 2rem 2rem;
+        }
+
+        @media (min-width: 1000px) {
+            .c-dropdown__item {
+                max-width: 22rem;
+            }
+
+            .c-dropdown__link {
+                max-width: 19.5rem;
+            }
+        }
+
+        @media (min-width: 1011px) {
+            .c-clients__container--5 {
+                margin-left: calc(((50vw - 40px) - 465px) / 2);
+            }
+
+        }
+
+        @media only screen and (min-width: 1600px) {
+            .c-clients__container--5 {
+                max-width: 1306px;
+                margin-left: auto;
+            }
+        }
+
+
+
 .c-block-home__img {
     width: 100%;
     height: 594px;
