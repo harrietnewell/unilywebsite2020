@@ -3,16 +3,23 @@
 .c-head {
   color: $color-white;
   background: $color-unily-dark-blue;
-  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 650;
 
+  &--transparent {
+      position:fixed !important;
+  }
+
   &--transparent:not(.scrolling) {
     @media (min-width: $breakpoint-head) {
       background: transparent;
     }
+  }
+
+  &--unite {
+      position:fixed !important;
   }
 
   &--transparent-alt:not(.scrolling) {

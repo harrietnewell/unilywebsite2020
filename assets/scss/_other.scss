@@ -12,17 +12,10 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding-top: rem-size(50px);
-
-  @media (min-width: $breakpoint-head) {
-    padding-top: rem-size(64px);
-  }
 
   &--top {
-    padding-top: rem-size(50px);
-
     @media (min-width: $breakpoint-head) {
-      padding-top: 0;
+      padding-top: 0 !important;
     }
   }
 }
