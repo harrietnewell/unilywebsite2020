@@ -218,7 +218,7 @@
      }
 
      .c-block-home__media {
-/*         max-width: 840px;*/
+         /*         max-width: 840px;*/
          padding: 0;
          margin: 0 -3.25rem 0 3.25rem
      }
@@ -245,6 +245,19 @@
 
      .d-cards .c-block-05__col .c-block-05__content {
          max-width: 32.7rem;
+     }
+
+     .c-foot-nav__row {
+         width: 1180px;
+     }
+
+     .c-guide__media {
+         justify-content: flex-start;
+     }
+
+     .c-guide {
+         max-width: 87%;
+         margin: 0 1.2rem 0 auto;
      }
 
  }
@@ -371,7 +384,7 @@
      .c-foot .container-wide-2 {
          max-width: 100rem;
          padding-left: 1.25rem;
-    padding-right: 1.25rem;
+         padding-right: 1.25rem;
      }
 
      .c-foot__row {
