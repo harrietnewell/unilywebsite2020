@@ -48,7 +48,9 @@ var unilyHsFormLightbox = {
                 url: '/umbraco/surface/hsformlightbox/checksubmission/' + hsFormId,
                 success: function success(data) {
                     if (data === 'True') { // If already submitted, play video straight... // TODO - Make this more generic, rather than hard coding to video playing
-                        $(`[${unilyHsFormLightbox.hsFormLightboxIdAttr}='${hsLightboxId}']`).find(`a[${unilyHsFormLightbox.hsFormVideoSelector}]`).click();
+                        var videoLinkElement = $(`[${unilyHsFormLightbox.hsFormLightboxIdAttr}='${hsLightboxId}']`).find(`a[${unilyHsFormLightbox.hsFormVideoSelector}]`);
+                        unilyVideoPopup.init(videoLinkElement); // Manually init pop up as it will not be done by lazy due to visibility // TODO - Look into this!
+                        videoLinkElement.click();
                     } else { // ...otherwise show form
                         $(`[${unilyHsFormLightbox.lightboxIdAttr}='${hsLightboxId}']`).addClass('opened');
                     }

@@ -172,6 +172,7 @@ var unilyApp = {
 
         
         /** New scroll **/
+        // TODO - Combine this with code in pillarpagenav.js, repetetive
         if ($('.scroll-to-section').length) {
 
             $('.scroll-to-section li.js-nav-link a').on('click', function (e) {
@@ -200,15 +201,16 @@ var unilyApp = {
                 }
             });
 
-            $(window).on('scroll', function () {
-                $('.id-section').each(function () {
-                    if ($(window).scrollTop() >= $(this).offset().top - 51) {
-                        var id = $(this).attr('id');
-                        $('.scroll-to-section li.js-nav-link a').removeClass('active');
-                        $('.scroll-to-section li.js-nav-link a[href=\\#' + id + ']').addClass('active');
-                    }
-                });
-            });
+            // TODO - Delete? Removed at request of Chris Saville (29/06/2021) as dynamic highlighting no longer wn
+            //$(window).on('scroll', function () {
+            //    $('.id-section').each(function () {
+            //        if ($(window).scrollTop() >= $(this).offset().top - 51) {
+            //            var id = $(this).attr('id');
+            //            $('.scroll-to-section li.js-nav-link a').removeClass('active');
+            //            $('.scroll-to-section li.js-nav-link a[href=\\#' + id + ']').addClass('active');
+            //        }
+            //    });
+            //});
         }
 
         // Insights horizontal navigation
@@ -290,18 +292,10 @@ var unilyApp = {
 
 unilyApp.init();
 
+// NOTE - This script is used in the template https://harrietnewell.github.io/unilywebsite2020/card-design.html, 
+// which is not used in the live site as of yet (16/05/2021)
 // Display svg when document is loaded (e.g. svg after font is loaded)
-document.fonts.ready.then(function() {
-    $('.svg-transparent-tag-placeholder').each(function () {
-        var width = $('.svg-transparent-tag-placeholder').outerWidth();
-        var height = $('.svg-transparent-tag-placeholder').outerHeight();
-        var svg = $(this).closest('.d-card-tag').find('svg');
-        svg.width(width);
-        svg.height(height);
-    })
-    /** Safari aligmnet **/
-    if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
-        $('.display-after-font').find('text').attr('dx', '0.5');
-    }
-    $('.display-after-font').show();
-});
+//document.fonts.ready.then(function() {
+//    $('.display-after-font').show();
+//});
+
