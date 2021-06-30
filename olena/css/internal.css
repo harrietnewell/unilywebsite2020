@@ -1,0 +1,15 @@
+.c-block-05--alt .c-block-05__row .c-block-05__col:last-child {
+    padding-right: 73px;
+    justify-content: flex-end;
+    margin-left: 3.6rem;
+}
+
+.c-block-05--alt .c-block-05__row .c-block-05__col:first-child {
+    margin: 0;
+}
+
+@media all and (min-width: 1000px) {
+    .c-page {
+        padding-top: 0;
+    }
+}
