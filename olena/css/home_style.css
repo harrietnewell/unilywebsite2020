@@ -259,12 +259,8 @@
          max-width: 87%;
          margin: 0 1.2rem 0 auto;
      }
-
  }
-
-
  .c-head__wrap {
-     /*    padding: 0rem 0.9375rem;*/
      padding: 0rem;
      max-width: 1010px;
      margin-left: auto;
@@ -317,8 +313,6 @@
          padding: 0;
      }
  }
-
-
 
  .c-foot .container-wide-2 {
      max-width: 75rem;
