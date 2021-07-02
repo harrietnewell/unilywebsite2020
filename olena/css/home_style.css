@@ -168,11 +168,11 @@
  }
 
  .c-clients__container--5 .heading-06 {
-     padding-left: 8rem;
+     padding-left: 7.9rem;
  }
 
  .c-clients {
-     margin: 0rem 0 0 2.1rem;
+     margin: 0rem 0 0 2rem;
  }
 
 
@@ -252,14 +252,17 @@
      }
 
      .c-guide__media {
-         justify-content: flex-start;
+/*         justify-content: flex-start;*/
      }
 
      .c-guide {
+/*
          max-width: 87%;
          margin: 0 1.2rem 0 auto;
+*/
      }
  }
+
  .c-head__wrap {
      padding: 0rem;
      max-width: 1010px;
