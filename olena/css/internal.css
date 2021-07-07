@@ -13,3 +13,23 @@
         padding-top: 0;
     }
 }
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: #DCDCDC;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 25px 0 0;
+    cursor: pointer;
+}
+
+.c-block_clm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
