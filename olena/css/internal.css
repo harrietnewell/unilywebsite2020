@@ -32,4 +32,19 @@
     align-items: flex-start;
 }
 
+.grid-content-item:nth-of-type(2n+1) .c-block-05__row::before {
+     z-index: -1;
+     content: " ";
+     display: block;
+     background: #F5F5F5;
+     width: 70.625rem;
+     position: absolute;
+     left: 50%;
+     top: 0;
+     bottom: 0;
+     margin-left: -20.625rem;
+ }
 
+ .grid-content-item:first-of-type .c-block-05__row::before {
+     display: none;
+ }

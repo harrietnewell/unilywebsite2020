@@ -27,15 +27,17 @@
 
  @media (min-width: 1011px) {
      .c-clients__container--5 {
-         margin-left: calc(((50vw - 40px) - 465px) / 2);
+         /*         margin-left: calc(((50vw - 40px) - 465px) / 2);*/
      }
 
  }
 
  @media only screen and (min-width: 1600px) {
      .c-clients__container--5 {
+         /*
          max-width: 1306px;
          margin-left: auto;
+*/
      }
  }
 
@@ -168,13 +170,35 @@
  }
 
  .c-clients__container--5 .heading-06 {
-     padding-left: 7.94rem;
+     padding-left: 5.7rem;
  }
 
  .c-clients {
-     margin: 0rem 0 0 2.04rem;
+     /*     margin: 0rem 0 0 2.04rem;*/
  }
 
+ .c-clients__container--5 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: stretch;
+     max-width: 1357px;
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     position: relative;
+     margin-top: 0;
+     margin-bottom: 0;
+     padding-top: 3.75rem;
+     padding-bottom: 3.75rem;
+     padding-left: 5.25rem;
+     padding-right: 0;
+ }
+
+ .c-clients__item {
+     justify-content: center;
+     padding: 0;
+ }
 
  @media (min-width: 768px) {
      .d-cards .d-cards-list:first-child {
@@ -285,6 +309,7 @@
      }
 
  }
+
  @media all and (max-width: 767px) {
      .c-foot .wrap-unwrap {
          display: none;
@@ -336,7 +361,8 @@
  }
 
  .c-foot .container-wide-2 {
-     max-width: 75rem;
+     /*     max-width: 75rem;*/
+     max-width: 1180px;
      padding-left: 0;
      padding-right: 0;
  }
@@ -359,13 +385,14 @@
      }
 
      .c-clients__container--5 {
-         padding-left: 6.6rem;
+         padding-left: 11.6rem;
      }
  }
 
  @media all and (max-width: 1280px) {
+
      .c-clients__container--5 {
-         padding-left: 4.6rem;
+         padding-left: 9rem;
      }
  }
 
@@ -388,8 +415,9 @@
      }
 
      .c-clients__container--5 {
-         padding-left: 1.25rem;
+         padding-left: 3.25rem;
      }
+
 
  }
 
@@ -405,7 +433,22 @@
      .c-foot__row {
          margin-left: 0;
      }
+
+     .c-clients__container--5 {
+         padding-left: 1rem;
+         padding-right: 1rem;
+     }
+
+     .c-clients__item {
+         justify-content: center;
+         padding: 0;
+     }
+
+     .c-clients__container--5 .heading-06 {
+         padding-left: 2.7rem;
+     }
  }
+
 
  @media all and (max-width: 999px) {
 
@@ -432,4 +475,10 @@
          padding: 0;
      }
 
+ }
+
+ @media all and (max-width:767px) {
+     .c-clients__container--5 .heading-06 {
+         padding-left:0;
+     }
  }
