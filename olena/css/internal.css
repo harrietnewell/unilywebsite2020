@@ -32,19 +32,99 @@
     align-items: flex-start;
 }
 
-.grid-content-item:nth-of-type(2n+1) .c-block-05__row::before {
-     z-index: -1;
-     content: " ";
-     display: block;
-     background: #F5F5F5;
-     width: 70.625rem;
-     position: absolute;
-     left: 50%;
-     top: 0;
-     bottom: 0;
-     margin-left: -20.625rem;
- }
 
- .grid-content-item:first-of-type .c-block-05__row::before {
-     display: none;
- }
+@media all and (min-width:1024px) {
+    .grid-content-item:nth-of-type(2n+1) .c-block-05__row::before {
+        z-index: -1;
+        content: " ";
+        display: block;
+        background: #F5F5F5;
+        width: 70.625rem;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        margin-left: -20.625rem;
+    }
+}
+
+.grid-content-item:first-of-type .c-block-05__row::before {
+    display: none;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0 35px 43px;
+    background-color: #F5F5F5;
+}
+
+.nav_box {
+    max-width: 1050px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo_box {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav .box {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .text {
+    font-size: 16px;
+    color: #112A3F;
+    margin: 0 0 0 15px;
+}
+
+.nav .link {
+    color: #112A3F;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+@media all and (max-width:1024px) {
+    .nav {
+        padding: 35px 20px;
+    }
+
+    .nav_box {
+        max-width: 100%;
+    }
+
+    .nav .box {
+        width: 60%;
+    }
+}
+
+@media all and (max-width:768px) {
+    .nav_box {
+        flex-direction: column;
+    }
+
+    .nav .box {
+        width: 90%;
+        margin: 20px 0 0;
+    }
+}
+
+@media all and (max-width:500px) {
+
+    .nav .box {
+        flex-direction: column;
+    }
+}
