@@ -610,77 +610,23 @@
 
     <div class="c-page">
 
-        <!--
-        <div class="grid-content-item">
-
-
-
-            <div class="pt-sm">
-
-                <div class="container container-sm">
-                    <h1 class="heading-01-alt text-center"><strong>Transform Internal Communications. </strong> The power of next-gen publishing.</h1>
-                    <div class="intro ">
-                        <p>Effective communication is the cornerstone of an informed and engaged workforce. Unily is the complete internal communications solution that lets you push comms across all your channels from one place, so you can spend more time creating the content and experiences your employees love.</p>
-                    </div>
-                </div>
-
-
-                <div class="container container-full pt-sm">
-                    <div class="image">
-                        <img src="img/8824e0be20718f96fba722f46edcf4f4228140e5.jpeg" alt="" data-lazy class="img " height="628" width="1470">
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        
-        
-        
--->
-
-        <!--
-       
-        <div class="grid-content-item">
-            <section class="c-block-05">
-
-                <div class="c-block-05__row">
-
-                    <div class="c-block-05__col">
-                        <div class="c-block-05__media c-block-05__media--width-md">
-                            <img src="img/mfhyghBr5B5.svg" alt="Internal communications platform" class="img img-shadow">
-                        </div>
-                    </div>
-                    <div class="c-block-05__col">
-                        <div class="c-block-05__content">
-                            <h2 class="heading-01-alt"><strong>ENGAGE EVERYONE WITH PERSONALIZED COMMS</strong></h2>
-                            <p>Empower and transform your whole business with features like news, social and enterprise search.</p>
-                            <p><a href="/solutions/culture-and-engagement" class="btn btn-02" target="_self">SOCIAL</a></p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
-        </div>
--->
         <div class="nav">
-           <div class="nav_box">
-            <div class="logo_box">
-                <img alt="" src="img/Interface-Essential__x2F__VoiceID__x2F__voice-id.svg">
-                <p class="text">Internal Communications</p>
-            </div>
-            <div class="box">
-                <a href="" class="link">Engage evertone with personalized comms </a>
-                <a href="" class="link">Empower your people with a voice</a>
-            </div>
+            <div class="nav_box">
+                <div class="logo_box">
+                    <img alt="" src="img/Interface-Essential__x2F__VoiceID__x2F__voice-id.svg">
+                    <p class="text">Internal Communications</p>
+                </div>
+                <div class="box">
+                    <a href="#section1" class="link">Engage evertone with personalized comms </a>
+                    <a href="#section2" class="link">Empower your people with a voice</a>
+                </div>
             </div>
         </div>
 
         <div class="grid-content-item">
             <section class="c-block-05  ">
 
-                <div class="c-block-05__row">
+                <div class="c-block-05__row" id="section1">
 
                     <div class="c-block-05__col">
                         <div class="c-block-05__content">
@@ -703,7 +649,7 @@
         <div class="grid-content-item">
             <section class="c-block-05">
 
-                <div class="c-block-05__row">
+                <div class="c-block-05__row" id="section2">
 
                     <div class="c-block-05__col">
                         <div class="c-block-05__media c-block-05__media--width-md">
@@ -1289,5 +1235,29 @@
 
     <script src="/assets/js/app.min.js?v=2.1.8" defer></script>
     <script src="/assets/js/cookiebanner.min.js?v=2.1.8" defer></script>
+
+    <script>
+        //        var $page = $('html, body');
+        // $('.link[href*="#"]').click(function() {
+        // $page.animate({
+        // scrollTop: $($.attr(this, 'href')).offset().top
+        // }, 1400);
+        // return false;
+        // });
+        const anchors = document.querySelectorAll('.link[href*="#"]')
+
+        for (let anchor of anchors) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault()
+
+                const blockID = anchor.getAttribute('href').substr(1)
+
+                document.getElementById(blockID).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+            })
+        }
+    </script>
 
 </body></html>
