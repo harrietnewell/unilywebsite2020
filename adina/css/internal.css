@@ -70,6 +70,10 @@
   align-items: center;
 }
 
+.nav_box_v2 {
+  max-width: 2000px;
+}
+
 .nav .logo_box {
   width: auto;
   display: flex;
