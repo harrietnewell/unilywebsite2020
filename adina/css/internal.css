@@ -82,6 +82,9 @@
 
   font-weight: bold;
 }
+.nav .logo_box_wide {
+  width: 900px;
+}
 
 .nav .box {
   width: 77%;
@@ -133,6 +136,10 @@
   .nav .box {
     width: 90%;
     margin: 20px 0 0;
+  }
+
+  .nav .logo_box_wide {
+    width: auto;
   }
 }
 
