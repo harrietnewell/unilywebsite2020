@@ -5,10 +5,11 @@
 }
 
 .c-more__heading:after {
-  width: 0.75rem;
-  height: 0.75rem;
+  width: .75rem;
+  height: .75rem;
   background-image: url("https://unilyweb2020.azureedge.net/media/vs5dubzh/plus-navy.svg");
 }
+
 .c-more__heading.active:after {
   background-image: url("https://unilyweb2020.azureedge.net/media/fath3k52/minus-navy.svg");
 }
@@ -21,10 +22,8 @@
   .c-more .c-more__list a {
     font-size: 1rem !important;
   }
-
   .hide-overflow-menu-item li a :after {
     bottom: 0 !important;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

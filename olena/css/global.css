@@ -1,6 +1,7 @@
 /** Global styles inspired by Bootstrap **/
 *, ::after, ::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -23,7 +24,7 @@
 }
 
 .mt-2 {
-  margin-top: 0.5rem !important;
+  margin-top: .5rem !important;
 }
 
 .mt-0 {
@@ -35,11 +36,11 @@
 }
 
 .mb-2 {
-  margin-bottom: 0.5rem !important;
+  margin-bottom: .5rem !important;
 }
 
 .mb-1 {
-  margin-bottom: 0.25rem !important;
+  margin-bottom: .25rem !important;
 }
 
 .mb-0 {
@@ -63,7 +64,7 @@
 }
 
 .pb-1 {
-  padding-bottom: 0.25rem !important;
+  padding-bottom: .25rem !important;
 }
 
 .pb-0 {
@@ -84,7 +85,8 @@
 
 .justify-content-center {
   -ms-flex-pack: center !important;
-  justify-content: center !important;
+  -webkit-box-pack: center !important;
+          justify-content: center !important;
 }
 
 @media (min-width: 992px) {
@@ -92,27 +94,25 @@
     display: none !important;
   }
 }
+
 @media (min-width: 768px) {
   .mt-md-4 {
     margin-top: 1.5rem !important;
   }
-
   .mb-md-4 {
     margin-bottom: 1.5rem !important;
   }
-
   .pb-md-5 {
     padding-bottom: 3rem !important;
   }
-
   .text-md-center {
     text-align: center !important;
   }
-
   .d-md-none {
     display: none !important;
   }
 }
+
 .full-width {
   width: 100%;
 }
@@ -134,5 +134,4 @@
 }
 
 /** End Global styles inspired by Bootstrap **/
-
 /*# sourceMappingURL=global.css.map */
