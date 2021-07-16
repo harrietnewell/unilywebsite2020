@@ -115,6 +115,10 @@
   margin: 0;
 }
 
+.navy-link {
+  background-image: linear-gradient(#112a3f, #112a3f) !important;
+}
+
 @media all and (max-width: 1024px) {
   .nav {
     padding: 35px 20px;
