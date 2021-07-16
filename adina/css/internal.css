@@ -83,7 +83,7 @@
   font-weight: bold;
 }
 .nav .logo_box_wide {
-  width: 900px;
+  width: 400px;
 }
 
 .nav .logo_box_breadcrumb {
@@ -97,6 +97,14 @@
   justify-content: flex-end;
   align-items: center;
   margin: 0px 20px 0px 20px;
+}
+.nav .box ul {
+  display: flex;
+}
+.nav .box li {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-right: 10px;
 }
 
 .nav .text {
@@ -119,6 +127,12 @@
   background-image: linear-gradient(#112a3f, #112a3f) !important;
 }
 
+@media all and (max-width: 1224px) {
+  .nav-dnone {
+    display: none;
+  }
+}
+
 @media all and (max-width: 1024px) {
   .nav {
     padding: 35px 20px;
@@ -130,10 +144,6 @@
 
   .nav .box {
     width: 60%;
-  }
-
-  .nav-dnone {
-    display: none;
   }
 }
 
