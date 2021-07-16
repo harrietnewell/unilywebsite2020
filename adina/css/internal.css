@@ -115,10 +115,6 @@
   margin: 0;
 }
 
-.blue-link {
-  background-image: linear-gradient(#3ec8ed, #3ec8ed) !important;
-}
-
 @media all and (max-width: 1024px) {
   .nav {
     padding: 35px 20px;
