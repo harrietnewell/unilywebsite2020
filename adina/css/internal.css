@@ -86,6 +86,11 @@
   width: 900px;
 }
 
+.nav .logo_box_breadcrumb {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 .nav .box {
   width: 77%;
   display: flex;
