@@ -222,7 +222,7 @@
 
 	.container-wide-2 {
 		width: 100%;
-		max-width: 100rem;
+		max-width: 98rem !important;
 	}
 
 	.c-foot-nav__row {
@@ -295,6 +295,7 @@
 	}
 }
 
+/*
 @media only screen and (min-width: 1670px) {
 	.c-foot {
 		.container-wide-2 {
@@ -304,6 +305,7 @@
 		}
 	}
 }
+*/
 
 @media only screen and (min-width: 768px) and (max-width: 830px) {
 	.c-foot-nav__col {

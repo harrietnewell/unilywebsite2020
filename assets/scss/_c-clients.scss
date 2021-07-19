@@ -42,6 +42,13 @@
     }
   }
 
+  &__header {
+    @media (min-width: $breakpoint-md) {
+	  max-width:1012px;
+	  margin: 0px auto 20px auto;
+	}
+  }
+
   &--3 {
     .c-clients__item {
       @media (min-width: $breakpoint-md) {
