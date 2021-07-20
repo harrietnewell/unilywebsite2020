@@ -222,7 +222,7 @@
 
 	.container-wide-2 {
 		width: 100%;
-		max-width: 98rem !important;
+		max-width: rem-size(1220px) !important;
 	}
 
 	.c-foot-nav__row {
@@ -267,8 +267,6 @@
 @media only screen and (min-width: 1160px) {
 	.c-foot {
 		.container-wide-2 {
-			padding-left: calc(25% - 280px);
-			padding-right: calc(25% - 280px);
 
 			.mobile-left {
 				.c-foot-nav__col {

@@ -3062,6 +3062,20 @@ p.c-metadata__item + p.c-metadata__item {
 .tag-08:hover {
   color: #FF8A00;
 }
+.tag-09 {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+.tag-09:hover {
+  color: #FFFFFF;
+}
+.tag-10 {
+  border-color: #1C1C1B;
+  color: #1C1C1B;
+}
+.tag-10:hover {
+  color: #1C1C1B;
+}
 .tag-lg {
   font-size: 0.875rem;
   line-height: 19px;
@@ -5435,6 +5449,17 @@ textarea.hs-input {
 .c-pricing .c-table__heading-main-02 {
   padding: 4.375rem 0 0;
 }
+.c-pricing-header-logo {
+  display: table;
+}
+.c-pricing-header-logo img {
+  display: table-cell;
+}
+.c-pricing-header-logo .link-info {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 0.3125rem;
+}
 
 .c-foot {
   color: #112A3F;
@@ -7289,7 +7314,7 @@ textarea.hs-input {
 }
 .c-foot .container-wide-2 {
   width: 100%;
-  max-width: 98rem !important;
+  max-width: 76.25rem !important;
 }
 .c-foot .c-foot-nav__row {
   margin-top: 0;
@@ -7321,10 +7346,6 @@ textarea.hs-input {
   }
 }
 @media only screen and (min-width: 1160px) {
-  .c-foot .container-wide-2 {
-    padding-left: calc(25% - 280px);
-    padding-right: calc(25% - 280px);
-  }
   .c-foot .container-wide-2 .mobile-left .c-foot-nav__col {
     margin-right: auto;
     margin-left: auto;
