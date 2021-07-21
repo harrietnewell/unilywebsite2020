@@ -163,4 +163,19 @@
     .c-table__heading-main-02 {
         padding: 4.375rem 0 0;
     }
+
+    &-header-logo {
+
+        display: table;
+
+        img {
+            display: table-cell;
+        }
+
+        .link-info {
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: rem-size(5px);
+        }
+    }
 }

@@ -147,8 +147,8 @@
     }
 
     .c-block-05__content {
-      @media (min-width: 768px) {
-        max-width: 31.25rem;
+      @media (min-width: $breakpoint-md) {
+        max-width: rem-size(495px);
       }
     }
   }
@@ -198,13 +198,4 @@
   visibility: hidden;
   opacity: 0;
   white-space: nowrap;
-}
-.tag-09 {
-  border-color: #fff;
-  color: #fff;
-}
-
-.tag-10 {
-    border-color: #1C1C1B;
-    color: #1C1C1B;
 }

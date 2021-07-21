@@ -534,11 +534,11 @@
       //background: rgba(green,0.2);
 
       &:first-child {
-        padding-right: rem-size(50px);
+        padding-right: rem-size(46px);
         justify-content: flex-end;
       }
       &:last-child {
-        padding-left: rem-size(50px);
+        padding-left: rem-size(100px);
         padding-bottom: 0;
       }
     }

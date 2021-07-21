@@ -3062,6 +3062,20 @@ p.c-metadata__item + p.c-metadata__item {
 .tag-08:hover {
   color: #FF8A00;
 }
+.tag-09 {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+.tag-09:hover {
+  color: #FFFFFF;
+}
+.tag-10 {
+  border-color: #1C1C1B;
+  color: #1C1C1B;
+}
+.tag-10:hover {
+  color: #1C1C1B;
+}
 .tag-lg {
   font-size: 0.875rem;
   line-height: 19px;
@@ -4177,11 +4191,11 @@ textarea.hs-input {
     align-items: center;
   }
   .c-block-05__col:first-child {
-    padding-right: 3.125rem;
+    padding-right: 2.875rem;
     justify-content: flex-end;
   }
   .c-block-05__col:last-child {
-    padding-left: 3.125rem;
+    padding-left: 6.25rem;
     padding-bottom: 0;
   }
 }
@@ -4776,8 +4790,9 @@ textarea.hs-input {
     align-items: center;
     justify-content: space-between;
     margin-top: -0.9375rem;
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
+    max-width: 70.125rem;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem;
   }
@@ -4827,7 +4842,7 @@ textarea.hs-input {
 }
 @media (min-width: 768px) {
   .c-block-home__item {
-    max-width: 29.1rem;
+    max-width: 28.125rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -4961,6 +4976,12 @@ textarea.hs-input {
     max-width: 260px;
     padding: 0rem 1.25rem;
     margin: 1.875rem 0rem;
+  }
+}
+@media (min-width: 768px) {
+  .c-clients__header {
+    max-width: 1012px;
+    margin: 0px auto 20px auto;
   }
 }
 @media (min-width: 768px) {
@@ -5427,6 +5448,17 @@ textarea.hs-input {
 }
 .c-pricing .c-table__heading-main-02 {
   padding: 4.375rem 0 0;
+}
+.c-pricing-header-logo {
+  display: table;
+}
+.c-pricing-header-logo img {
+  display: table-cell;
+}
+.c-pricing-header-logo .link-info {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 0.3125rem;
 }
 
 .c-foot {
@@ -7282,7 +7314,7 @@ textarea.hs-input {
 }
 .c-foot .container-wide-2 {
   width: 100%;
-  max-width: 100rem;
+  max-width: 76.25rem !important;
 }
 .c-foot .c-foot-nav__row {
   margin-top: 0;
@@ -7314,10 +7346,6 @@ textarea.hs-input {
   }
 }
 @media only screen and (min-width: 1160px) {
-  .c-foot .container-wide-2 {
-    padding-left: calc(25% - 280px);
-    padding-right: calc(25% - 280px);
-  }
   .c-foot .container-wide-2 .mobile-left .c-foot-nav__col {
     margin-right: auto;
     margin-left: auto;
@@ -7333,13 +7361,17 @@ textarea.hs-input {
     margin-right: 0;
   }
 }
+/*
 @media only screen and (min-width: 1670px) {
-  .c-foot .container-wide-2 {
-    max-width: 105rem;
-    padding-left: 170px;
-    padding-right: 20px;
-  }
+	.c-foot {
+		.container-wide-2 {
+			max-width: 105rem;
+			padding-left: 170px;
+			padding-right: 20px;
+		}
+	}
 }
+*/
 @media only screen and (min-width: 768px) and (max-width: 830px) {
   .c-foot-nav__col {
     padding: 0 0.3rem;

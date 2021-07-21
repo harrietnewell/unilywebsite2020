@@ -222,7 +222,7 @@
 
 	.container-wide-2 {
 		width: 100%;
-		max-width: 100rem;
+		max-width: rem-size(1220px) !important;
 	}
 
 	.c-foot-nav__row {
@@ -267,8 +267,6 @@
 @media only screen and (min-width: 1160px) {
 	.c-foot {
 		.container-wide-2 {
-			padding-left: calc(25% - 280px);
-			padding-right: calc(25% - 280px);
 
 			.mobile-left {
 				.c-foot-nav__col {
@@ -295,6 +293,7 @@
 	}
 }
 
+/*
 @media only screen and (min-width: 1670px) {
 	.c-foot {
 		.container-wide-2 {
@@ -304,6 +303,7 @@
 		}
 	}
 }
+*/
 
 @media only screen and (min-width: 768px) and (max-width: 830px) {
 	.c-foot-nav__col {
