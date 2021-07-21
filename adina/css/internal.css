@@ -127,6 +127,10 @@
   background-image: linear-gradient(#112a3f, #112a3f) !important;
 }
 
+.c-bredcrumb-left {
+  margin-left: 0;
+}
+
 @media all and (max-width: 1224px) {
   .nav-dnone {
     display: none;
