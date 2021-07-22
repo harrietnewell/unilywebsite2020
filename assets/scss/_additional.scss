@@ -400,15 +400,6 @@
 /** End footer scss  **/
 
 
-
-
-
-
-
-
-
-
-
 /** Tiktok video **/
 .c-embed {
   &.c-embed {
@@ -433,4 +424,63 @@
 // Temp fix for pages with stick nav - .c-page { overflow:hidden } is breaking sticky side nav
 .c-page--sticky-side-nav {
 	overflow:visible !important;
+}
+
+/** Lists **/
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li li {
+  list-style-type: disc;
+}
+
+ul ul {
+  margin-bottom:0;
+}
+
+ol {
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: rem-size(5px);
+}
+
+/* Circle Call Out */
+.c-circle-callout {
+	border-radius: 50%;
+	overflow: hidden;
+	height: 300px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-20px;
+}
+
+.c-circle-callout-text {
+	display:table-cell;
+	height:300px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:20px;
+	padding:30px;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.c-circle-callout-text span {
+	display:block;
+	font-size: 80px;
+	font-weight: bold;
+	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Alternate Quote */
+.c-quote-alt {
+	border-left:none !important;
+	padding-left:0px !important;
+}
+
+.c-quote-alt footer {
+	font-size: 16px !important;
 }
