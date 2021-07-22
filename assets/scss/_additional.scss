@@ -400,15 +400,6 @@
 /** End footer scss  **/
 
 
-
-
-
-
-
-
-
-
-
 /** Tiktok video **/
 .c-embed {
   &.c-embed {
@@ -433,4 +424,21 @@
 // Temp fix for pages with stick nav - .c-page { overflow:hidden } is breaking sticky side nav
 .c-page--sticky-side-nav {
 	overflow:visible !important;
+}
+
+/** Lists **/
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li li {
+  list-style-type: disc;
+}
+
+ol {
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: rem-size(5px);
 }

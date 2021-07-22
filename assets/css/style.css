@@ -6549,18 +6549,6 @@ textarea.hs-input {
   transition: background-size 0.3s;
   padding-bottom: 2px;
 }
-.c-content__content ul {
-  padding-left: 1.2rem;
-}
-.c-content__content ul li li {
-  list-style-type: disc;
-}
-.c-content__content ol {
-  padding-left: 1.3rem;
-}
-.c-content__content li {
-  margin-bottom: 0.3125rem;
-}
 .c-content__content a:not(.btn):not(.tag):hover {
   background-size: 100% 2px;
 }
@@ -7458,4 +7446,21 @@ textarea.hs-input {
 
 .c-page--sticky-side-nav {
   overflow: visible !important;
+}
+
+/** Lists **/
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li li {
+  list-style-type: disc;
+}
+
+ol {
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.3125rem;
 }
