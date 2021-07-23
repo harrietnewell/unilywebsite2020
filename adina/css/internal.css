@@ -180,6 +180,10 @@
   .c-block-05__row {
     padding-top: 0px;
   }
+
+  .c-block-05__col {
+    padding-top: 0.5rem;
+  }
 }
 
 @media (min-width: 768px) {
