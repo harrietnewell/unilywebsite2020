@@ -5935,6 +5935,14 @@ textarea.hs-input {
   text-decoration: none !important;
 }
 
+#accept-recommended-btn-handler {
+  text-transform: uppercase !important;
+}
+
+#ot-pc-desc br {
+  display: none;
+}
+
 #onetrust-accept-btn-handler, .onetrust-close-btn-handler {
   border-radius: 0.125rem !important;
   padding: 0.5625rem 0.9375rem !important;

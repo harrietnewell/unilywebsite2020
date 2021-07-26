@@ -30,28 +30,37 @@
   }
 }
 
-#onetrust-accept-btn-handler, .onetrust-close-btn-handler {
-  border-radius: rem-size(2px) !important;
-  padding: rem-size(9px 15px) !important;
-  white-space: nowrap !important;
-  text-transform: uppercase !important;
-  font-family: $font-alt !important;
-  font-weight: bold !important;
-  font-size: rem-size(16px) !important;
-  border: 0 !important;
-  line-height: 1.35 !important;
-  cursor: pointer !important;
-  text-align: center !important;
-  letter-spacing: normal !important;
-  background: $color-unily-light-blue !important;
-  color: $color-white !important;
+#accept-recommended-btn-handler {
+    text-transform: uppercase !important;
+}
 
-  &:hover {
-    background: darken($color-unily-light-blue, 10%) !important;
-  }
-  &:active, &:focus {
-    outline: none !important;
-  }
+#ot-pc-desc br {
+    display:none;
+}
+
+#onetrust-accept-btn-handler, .onetrust-close-btn-handler {
+    border-radius: rem-size(2px) !important;
+    padding: rem-size(9px 15px) !important;
+    white-space: nowrap !important;
+    text-transform: uppercase !important;
+    font-family: $font-alt !important;
+    font-weight: bold !important;
+    font-size: rem-size(16px) !important;
+    border: 0 !important;
+    line-height: 1.35 !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    letter-spacing: normal !important;
+    background: $color-unily-light-blue !important;
+    color: $color-white !important;
+
+    &:hover {
+        background: darken($color-unily-light-blue, 10%) !important;
+    }
+
+    &:active, &:focus {
+        outline: none !important;
+    }
 }
 
 #onetrust-pc-sdk .ot-switch-nob {
