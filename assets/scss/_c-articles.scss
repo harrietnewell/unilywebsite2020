@@ -102,7 +102,7 @@
         bottom: 0;
     }
 
-    &__heading {
+    /*&__heading {
         margin-bottom: rem-size(15px);
         font-size: rem-size(20px);
         line-height: 1.4;
@@ -115,7 +115,7 @@
         @media (max-width: $breakpoint-md-down) {
             font-size: rem-size(20px) !important;
         }
-    }
+    }*/
 
     &--side,
     &--dropdown {
@@ -147,9 +147,9 @@
             }
         }
 
-        .c-articles__heading {
+        /*.c-articles__heading {
             font-size: rem-size(18px);
-        }
+        }*/
 
         /*.c-articles__date {
             font-size: rem-size(16px);

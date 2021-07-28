@@ -2266,6 +2266,20 @@ body.sticky-header .c-page--top {
           }
       }
   }*/
+  /*&__heading {
+      margin-bottom: rem-size(15px);
+      font-size: rem-size(20px);
+      line-height: 1.4;
+
+      a {
+          color: $color-unily-black;
+          text-decoration: none;
+      }
+
+      @media (max-width: $breakpoint-md-down) {
+          font-size: rem-size(20px) !important;
+      }
+  }*/
 }
 @media (min-width: 1754px) {
   .c-articles__container {
@@ -2326,20 +2340,6 @@ body.sticky-header .c-page--top {
   right: 0;
   bottom: 0;
 }
-.c-articles__heading {
-  margin-bottom: 0.9375rem;
-  font-size: 1.25rem;
-  line-height: 1.4;
-}
-.c-articles__heading a {
-  color: #1C1C1B;
-  text-decoration: none;
-}
-@media (max-width: 767px) {
-  .c-articles__heading {
-    font-size: 1.25rem !important;
-  }
-}
 .c-articles--side, .c-articles--dropdown {
   display: block;
   margin: 0;
@@ -2352,6 +2352,9 @@ body.sticky-header .c-page--top {
   max-width: 20.375rem;
 }
 .c-articles--dropdown, .c-articles--side {
+  /*.c-articles__heading {
+      font-size: rem-size(18px);
+  }*/
   /*.c-articles__date {
       font-size: rem-size(16px);
 
@@ -2387,9 +2390,6 @@ body.sticky-header .c-page--top {
 .c-articles--dropdown > li:last-child, .c-articles--side > li:last-child {
   border-bottom: 0;
   padding-bottom: 0;
-}
-.c-articles--dropdown .c-articles__heading, .c-articles--side .c-articles__heading {
-  font-size: 1.125rem;
 }
 .c-articles--side {
   margin-bottom: 3.75rem;
@@ -7513,4 +7513,33 @@ li {
 
 .c-quote-alt footer {
   font-size: 16px !important;
+}
+
+/* Solution/Feature Page Breadcrumb */
+.container-breadcrumb {
+  padding: 60px 20px 0px 20px;
+  max-width: 1048px;
+  width: 100%;
+  margin: 0 auto -30px auto;
+}
+@media (max-width: 767px) {
+  .container-breadcrumb {
+    padding-top: 25px;
+  }
+}
+
+.post-title {
+  font-weight: 700;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.post-title a {
+  color: #1C1C1B;
+  text-decoration: none;
+}
+
+.c-articles--side .post-title, .c-articles--dropdown .post-title {
+  font-size: 18px;
 }
