@@ -459,12 +459,13 @@ li {
 }
 
 .c-circle-callout-text {
-	display:table-cell;
-	height:300px;
-	vertical-align:middle;
-	text-align:center;
-	font-size:20px;
-	padding:30px;
+	display: table-cell;
+	height: 300px;
+	width: 300px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 20px;
+	padding: 30px;
 	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -483,4 +484,36 @@ li {
 
 .c-quote-alt footer {
 	font-size: 16px !important;
+}
+
+/* Solution/Feature Page Breadcrumb */
+.container-breadcrumb {
+	padding: 60px 20px 0px 20px;
+	max-width: 1048px;
+	width: 100%;
+	margin: 0 auto -30px auto; // TODO - Negative top margin is temp fix for use on solution feature pages where content blocks have top margin of 30px
+
+	@media (max-width: 767px) {
+		padding-top: 25px;
+	}
+}
+
+// snippet title styles
+.post-title {
+	font-weight: 700;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-bottom: 15px;
+	font-size: 20px;
+	line-height: 1.4;
+
+	a {
+		color: $color-unily-black;
+		text-decoration: none;
+	}
+}
+
+.c-articles--side, .c-articles--dropdown {
+	.post-title {
+		font-size: 18px;
+	}
 }
