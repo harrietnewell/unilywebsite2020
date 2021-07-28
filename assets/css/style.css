@@ -384,7 +384,7 @@ th {
 }
 @media (min-width: 768px) {
   .py {
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
   }
 }

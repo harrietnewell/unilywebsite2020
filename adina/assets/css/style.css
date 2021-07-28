@@ -6587,6 +6587,16 @@ textarea.hs-input {
     flex: 0 0 80%;
     margin-top: -1.8125rem;
   }
+
+  .c-content__side_wide {
+    flex: 0 0 30% !important;
+    margin-top: -1.625rem;
+  }
+  .c-content__content_wide {
+    flex: 0 0 70% !important;
+    margin-top: -1.8125rem;
+  }
+  
   .c-content__side-container {
     position: sticky;
     top: 7.5rem;
