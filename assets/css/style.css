@@ -7491,6 +7491,7 @@ li {
 .c-circle-callout-text {
   display: table-cell;
   height: 300px;
+  width: 300px;
   vertical-align: middle;
   text-align: center;
   font-size: 20px;
