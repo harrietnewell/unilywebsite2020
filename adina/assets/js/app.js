@@ -259,16 +259,31 @@ var unilyApp = {
 
         // Event sidebar form move for mobiles
 
+        // if ($('.c-article__form').length) {
+
+        //     $(window).resize(function () {
+
+        //         if (!$('.c-article > .c-article__form').length && window.matchMedia('(max-width: 767px)').matches) {
+        //             var articleForm = $('.c-article__form').detach();
+        //             $(".c-article__media").after(articleForm);
+        //         } else if (!$('.c-article__side .c-article__form').length && window.matchMedia('(min-width: 768px)').matches) {
+        //             var articleForm = $('.c-article__form').detach();
+        //             $(".c-article__side").prepend(articleForm);
+        //         }
+        //     }).resize();
+        // }
+
+        // Code adjustment for flexbox migration
         if ($('.c-article__form').length) {
 
             $(window).resize(function () {
 
-                if (!$('.c-article > .c-article__form').length && window.matchMedia('(max-width: 767px)').matches) {
+                if (!$('.c-content > .c-article__form').length && window.matchMedia('(max-width: 767px)').matches) {
                     var articleForm = $('.c-article__form').detach();
                     $(".c-article__media").after(articleForm);
-                } else if (!$('.c-article__side .c-article__form').length && window.matchMedia('(min-width: 768px)').matches) {
+                } else if (!$('.c-content__side .c-article__form').length && window.matchMedia('(min-width: 768px)').matches) {
                     var articleForm = $('.c-article__form').detach();
-                    $(".c-article__side").prepend(articleForm);
+                    $(".c-content__side").prepend(articleForm);
                 }
             }).resize();
         }
