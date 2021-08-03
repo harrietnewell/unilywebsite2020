@@ -686,6 +686,7 @@
 							flex-direction:row;
 							align-items:center;
 							padding:30px;
+							border-radius:4px;
 						}
 
 						.c-info-callout-rectangle-left p {
@@ -704,6 +705,16 @@
 						.c-info-callout-rectangle-right span {
 							order:1;
 							padding-left:30px;
+						}
+
+						@media (max-width:767px) {
+							.c-info-callout-rectangle {
+								flex-direction:column;
+							}
+							
+							.c-info-callout-rectangle p {
+								text-align:center;
+							}
 						}
 						
 						/* Info Call Out [Circle] Styles */
@@ -738,7 +749,7 @@
 							<div class="c-info-callout c-info-callout-rectangle c-info-callout-rectangle c-info-callout-rectangle-right" style="background-color:#3EC8ED;">
 								<span style="color:#FFF">74%</span>
 								<p style="color:#FFF">
-									lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis suscipit mauris, id posuere ligula cursus nec. Nunc porttitor, sem et placerat rutrum.
 								</p>
 							</div>
 						</div>
@@ -751,7 +762,7 @@
 							<div class="c-info-callout c-info-callout-rectangle c-info-callout-rectangle c-info-callout-rectangle-left" style="background-color:#3EC8ED;">
 								<span style="color:#FFF">74%</span>
 								<p style="color:#FFF">
-									lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis suscipit mauris, id posuere ligula cursus nec. Nunc porttitor, sem et placerat rutrum.
 								</p>
 							</div>
 						</div>
