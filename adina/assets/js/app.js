@@ -171,7 +171,7 @@ var unilyApp = {
         }
 
         
-        /** New scroll **/
+      /** New scroll **/
         // TODO - Combine this with code in pillarpagenav.js, repetetive
         if ($('.scroll-to-section').length) {
 
@@ -197,11 +197,21 @@ var unilyApp = {
                                 fx.end = realPos;
                             }
                         },
-                        },
                     });
                 }
             });
 
+            // TODO - Delete? Removed at request of Chris Saville (29/06/2021) as dynamic highlighting no longer wn
+            //$(window).on('scroll', function () {
+            //    $('.id-section').each(function () {
+            //        if ($(window).scrollTop() >= $(this).offset().top - 51) {
+            //            var id = $(this).attr('id');
+            //            $('.scroll-to-section li.js-nav-link a').removeClass('active');
+            //            $('.scroll-to-section li.js-nav-link a[href=\\#' + id + ']').addClass('active');
+            //        }
+            //    });
+            //});
+        }
             // TODO - Delete? Removed at request of Chris Saville (29/06/2021) as dynamic highlighting no longer wn
             //$(window).on('scroll', function () {
             //    $('.id-section').each(function () {
