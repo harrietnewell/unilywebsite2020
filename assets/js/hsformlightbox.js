@@ -45,7 +45,7 @@ var unilyHsFormLightbox = {
             var hsFormId = unilyHsFormLightbox.getHsFormId(hsLightboxId);
             $.ajax({
                 method: 'GET',
-                url: '/umbraco/surface/hsformlightbox/checksubmission/' + hsFormId,
+                url: '/umbraco/surface/hsform/checksubmission/' + hsFormId,
                 success: function success(data) {
                     if (data === 'True') { // If already submitted, play video straight... // TODO - Make this more generic, rather than hard coding to video playing
                         var videoLinkElement = $(`[${unilyHsFormLightbox.hsFormLightboxIdAttr}='${hsLightboxId}']`).find(`a[${unilyHsFormLightbox.hsFormVideoSelector}]`);
@@ -63,10 +63,22 @@ var unilyHsFormLightbox = {
         } else {
             $(`[${unilyHsFormLightbox.lightboxIdAttr}='${hsLightboxId}']`).addClass('opened');
         }
+
+        unilyHsFormLightbox.setBodyScroll(false);
     },
 
     close: function close(hsLightboxId) {
         $(`[${unilyHsFormLightbox.lightboxIdAttr}='${hsLightboxId}']`).removeClass('opened');
+        unilyHsFormLightbox.setBodyScroll(true);
+    },
+
+    setBodyScroll: function setBodyScroll(enableScroll) {
+        if (enableScroll) {
+            $('body').removeClass('no-scroll');
+        }
+        else {
+            $('body').addClass('no-scroll');
+        }
     },
 
     confirmSubmission: function confirmSubmission(hsLightboxId) {
@@ -76,7 +88,7 @@ var unilyHsFormLightbox = {
             var hsFormId = unilyHsFormLightbox.getHsFormId(hsLightboxId);
             $.ajax({
                 method: 'POST',
-                url: '/umbraco/surface/hsformlightbox/confirmsubmission/' + hsFormId
+                url: '/umbraco/surface/hsform/confirmsubmission/' + hsFormId
             });
         }
 
