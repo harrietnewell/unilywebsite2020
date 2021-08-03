@@ -189,7 +189,7 @@ var unilyApp = {
                         scrollTop: $target.offset().top - 50 // Scroll to this location.
                     }, {
                         duration: 400,
-                        step: function(now, fx) => {
+                        step: function(now, fx) {
                             //  location will change as images etc. are lazy loaded
                             //  Where is the target now located on the page?
                             let realPos = $target.offset().top - 50;
