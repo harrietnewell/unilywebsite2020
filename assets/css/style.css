@@ -7477,36 +7477,80 @@ li {
   margin-bottom: 0.3125rem;
 }
 
-/* Circle Call Out */
-/*
-c-circle-callout {
-	border-radius: 50%;
-	overflow: hidden;
-	height: 300px;
-	width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top:-20px;
+/* Info Call Out Styles */
+.c-info-callout {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+}
+.c-info-callout span {
+  display: block;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.c-info-callout p {
+  font-size: 18px;
+  padding: 30px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+.c-info-callout-rectangle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  border-radius: 4px;
+}
+@media (max-width: 767px) {
+  .c-info-callout-rectangle {
+    flex-direction: column;
+  }
+  .c-info-callout-rectangle p {
+    text-align: center;
+    padding: 0;
+  }
+  .c-info-callout-rectangle span {
+    padding: 0;
+  }
+}
+.c-info-callout-rectangle-left p {
+  order: 1;
+}
+.c-info-callout-rectangle-left span {
+  order: 2;
+  padding-right: 30px;
+}
+.c-info-callout-rectangle-right p {
+  order: 2;
+}
+.c-info-callout-rectangle-right span {
+  order: 1;
+  padding-left: 30px;
+}
+.c-info-callout-circle {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.c-info-callout-circle span {
+  order: 1;
+}
+.c-info-callout-circle p {
+  order: 2;
+  text-align: center;
+  padding: 0 30px;
 }
 
-.c-circle-callout-text {
-	display: table-cell;
-	height: 300px;
-	width: 300px;
-	vertical-align: middle;
-	text-align: center;
-	font-size: 18px;
-	padding: 30px;
-	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.c-circle-callout-text span {
-	display:block;
-	font-size: 60px;
-	font-weight: bold;
-	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-*/
 /* Alternate Quote */
 .c-quote-alt {
   border-left: none !important;
