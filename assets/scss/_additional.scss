@@ -475,6 +475,15 @@ li {
 		padding:30px;
 		border-radius:4px;
 		
+		span {
+			font-size: 70px;
+			flex: 0 0 auto;
+		}
+		
+		p {
+			font-size: 20px;	
+		}
+		
 		@media (max-width:767px) {
 			
 			flex-direction:column;

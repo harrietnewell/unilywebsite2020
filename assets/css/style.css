@@ -7503,6 +7503,13 @@ li {
   padding: 30px;
   border-radius: 4px;
 }
+.c-info-callout-rectangle span {
+  font-size: 70px;
+  flex: 0 0 auto;
+}
+.c-info-callout-rectangle p {
+  font-size: 20px;
+}
 @media (max-width: 767px) {
   .c-info-callout-rectangle {
     flex-direction: column;
