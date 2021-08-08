@@ -178,8 +178,8 @@ var unilyApp = {
             $('.scroll-to-section li.js-nav-link a').on('click', function (e) {
 
                 handleNavToggle();
-                $('.scroll-to-section li.js-nav-link a').removeClass('active');
-                $(this).addClass('active');
+                //$('.scroll-to-section li.js-nav-link a').removeClass('active');
+                //$(this).addClass('active');
 
                 const $target = $($(this).attr('href'));
 
