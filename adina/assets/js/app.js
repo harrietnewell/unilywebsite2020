@@ -222,7 +222,7 @@ var unilyApp = {
             //        }
             //    });
             //});
-        }
+        
 
         // Insights horizontal navigation
 
