@@ -6618,9 +6618,14 @@ textarea.hs-input {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media (min-width: 768px) {
   .c-embed--video {
     width: 80%;
+  }
+
+  .ie-mr{
+    margin-right: 20px;
   }
 }
 .c-embed--video:after {
