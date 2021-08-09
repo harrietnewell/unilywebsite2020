@@ -53,6 +53,16 @@
       margin-top: rem-size(-29px);
     }
 
+    .c-content__side_wide {
+      flex: 0 0 30% !important;
+      margin-top: rem-size(-26px);
+    }
+    
+	.c-content__content_wide {
+      flex: 0 0 70% !important;
+      margin-top: rem-size(-29px);
+    }
+
     &__side-container {
       position: sticky;
       top: rem-size(120px);

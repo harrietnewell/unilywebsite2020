@@ -2703,6 +2703,7 @@ p.c-metadata__item + p.c-metadata__item {
 }
 .c-article__form {
   margin-bottom: 1.875rem;
+  padding-top: 20px;
 }
 .c-article__content {
   font-size: 1.125rem;
@@ -6587,6 +6588,14 @@ textarea.hs-input {
     flex: 0 0 80%;
     margin-top: -1.8125rem;
   }
+  .c-content .c-content__side_wide {
+    flex: 0 0 30% !important;
+    margin-top: -1.625rem;
+  }
+  .c-content .c-content__content_wide {
+    flex: 0 0 70% !important;
+    margin-top: -1.8125rem;
+  }
   .c-content__side-container {
     position: sticky;
     top: 7.5rem;
@@ -7600,4 +7609,10 @@ li {
 .no-scroll {
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+@media (min-width: 768px) and (-ms-high-contrast: none) {
+  .ie-mr {
+    margin-right: 20px;
+  }
 }

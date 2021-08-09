@@ -189,7 +189,7 @@ var unilyApp = {
                         scrollTop: $target.offset().top - 50 // Scroll to this location.
                     }, {
                         duration: 400,
-                        step: (now, fx) => {
+                        step: function (now, fx) {
                             //  location will change as images etc. are lazy loaded
                             //  Where is the target now located on the page?
                             let realPos = $target.offset().top - 50;
@@ -263,12 +263,12 @@ var unilyApp = {
 
             $(window).resize(function () {
 
-                if (!$('.c-article > .c-article__form').length && window.matchMedia('(max-width: 767px)').matches) {
+                if (!$('.c-content > .c-article__form').length && window.matchMedia('(max-width: 767px)').matches) {
                     var articleForm = $('.c-article__form').detach();
                     $(".c-article__media").after(articleForm);
-                } else if (!$('.c-article__side .c-article__form').length && window.matchMedia('(min-width: 768px)').matches) {
+                } else if (!$('.c-content__side .c-article__form').length && window.matchMedia('(min-width: 768px)').matches) {
                     var articleForm = $('.c-article__form').detach();
-                    $(".c-article__side").prepend(articleForm);
+                    $(".c-content__side").prepend(articleForm);
                 }
             }).resize();
         }
