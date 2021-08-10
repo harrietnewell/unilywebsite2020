@@ -187,6 +187,7 @@
                 padding-left: rem-size(10px);
                 padding-right: rem-size(10px);
                 flex: 0 1 50%;
+				-ms-flex-preferred-size: 46%;
                 border-bottom: 0;
 
                 &:last-child {

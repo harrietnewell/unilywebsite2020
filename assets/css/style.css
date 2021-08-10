@@ -2403,6 +2403,7 @@ body.sticky-header .c-page--top {
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     flex: 0 1 50%;
+    -ms-flex-preferred-size: 46%;
     border-bottom: 0;
   }
   .c-articles--side > li:last-child {
@@ -2649,6 +2650,9 @@ p.c-metadata__item + p.c-metadata__item {
     position: relative;
   }*/
 }
+.c-article .c-content__content {
+  margin-bottom: 1.875rem;
+}
 @media (min-width: 768px) {
   .c-article--blog, .c-article--event, .c-article--podcast, .c-article--casestudy {
     grid-template-columns: 7.19fr 2.81fr;
@@ -2693,6 +2697,7 @@ p.c-metadata__item + p.c-metadata__item {
   margin-top: 1.25rem;
 }
 .c-article__media {
+  padding-top: 25px;
   margin-bottom: 1.875rem;
 }
 @media (max-width: 767px) {
@@ -3118,6 +3123,10 @@ p.c-metadata__item + p.c-metadata__item {
 
 @media (min-width: 768px) {
   .c-article__content .c-tags__list {
+    margin-top: 1.875rem;
+  }
+
+  .c-article .c-content .c-tags__list {
     margin-top: 1.875rem;
   }
 }
@@ -6575,6 +6584,8 @@ textarea.hs-input {
     display: flex;
     margin: 0rem -0.625rem;
     flex-wrap: nowrap;
+    /* TODO - This style is for article pages - style c-content__side using the parent c-article class instead */
+    /* TODO - This style is for article pages - style c-content__content using the parent c-article class instead */
   }
   .c-content__side, .c-content__content {
     padding-left: 0.625rem;
@@ -6589,8 +6600,9 @@ textarea.hs-input {
     margin-top: -1.8125rem;
   }
   .c-content .c-content__side_wide {
-    flex: 0 0 30% !important;
+    flex: 0 0 28.4% !important;
     margin-top: -1.625rem;
+    margin-left: auto;
   }
   .c-content .c-content__content_wide {
     flex: 0 0 70% !important;

@@ -2,6 +2,10 @@
 
 .c-article {
 
+  .c-content__content {
+	margin-bottom:rem-size(30px);
+  }
+
   /*&--blog-alt { //this was used as an alternate blog layout (full width __media), leaving it here just in case
     @media (min-width: $breakpoint-md) {
       grid-template-columns: 7.19fr 2.81fr;
@@ -125,6 +129,7 @@
   }
 
   &__media {
+	padding-top:25px;
     margin-bottom: rem-size(30px);
   }
 

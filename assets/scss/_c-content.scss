@@ -53,11 +53,14 @@
       margin-top: rem-size(-29px);
     }
 
+    /* TODO - This style is for article pages - style c-content__side using the parent c-article class instead */
     .c-content__side_wide {
-      flex: 0 0 30% !important;
+      flex: 0 0 28.4% !important;
       margin-top: rem-size(-26px);
+	  margin-left:auto;
     }
     
+	/* TODO - This style is for article pages - style c-content__content using the parent c-article class instead */
 	.c-content__content_wide {
       flex: 0 0 70% !important;
       margin-top: rem-size(-29px);
