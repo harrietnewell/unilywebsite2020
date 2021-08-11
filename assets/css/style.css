@@ -2653,6 +2653,12 @@ p.c-metadata__item + p.c-metadata__item {
 .c-article .c-content__content {
   margin-bottom: 1.875rem;
 }
+@media (max-width: 767px) {
+  .c-article .c-content__content .c-article__media {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
 @media (min-width: 768px) {
   .c-article--blog, .c-article--event, .c-article--podcast, .c-article--casestudy {
     grid-template-columns: 7.19fr 2.81fr;
@@ -2697,7 +2703,6 @@ p.c-metadata__item + p.c-metadata__item {
   margin-top: 1.25rem;
 }
 .c-article__media {
-  padding-top: 25px;
   margin-bottom: 1.875rem;
 }
 @media (max-width: 767px) {
@@ -2708,7 +2713,6 @@ p.c-metadata__item + p.c-metadata__item {
 }
 .c-article__form {
   margin-bottom: 1.875rem;
-  padding-top: 20px;
 }
 .c-article__content {
   font-size: 1.125rem;
@@ -6601,12 +6605,18 @@ textarea.hs-input {
   }
   .c-content .c-content__side_wide {
     flex: 0 0 28.4% !important;
-    margin-top: -1.625rem;
+    margin-top: 0px;
     margin-left: auto;
+  }
+  .c-content .c-content__side_wide .c-articles__media {
+    margin-bottom: 10px !important;
+  }
+  .c-content .c-content__side_wide .c-tags__list {
+    margin-top: 0px;
   }
   .c-content .c-content__content_wide {
     flex: 0 0 70% !important;
-    margin-top: -1.8125rem;
+    margin-top: 0px;
   }
   .c-content__side-container {
     position: sticky;

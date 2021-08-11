@@ -4,6 +4,13 @@
 
   .c-content__content {
 	margin-bottom:rem-size(30px);
+	
+	@media (max-width: $breakpoint-md-down) {
+        .c-article__media {
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+    }
   }
 
   /*&--blog-alt { //this was used as an alternate blog layout (full width __media), leaving it here just in case
@@ -129,7 +136,6 @@
   }
 
   &__media {
-	padding-top:25px;
     margin-bottom: rem-size(30px);
   }
 
@@ -149,7 +155,6 @@
   &__form {
     //@media (max-width: $breakpoint-md-down) {
       margin-bottom: rem-size(30px);
-	  padding-top: 20px;
     //}
   }
 
