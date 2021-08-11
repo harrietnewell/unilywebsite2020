@@ -53,27 +53,6 @@
       margin-top: rem-size(-29px);
     }
 
-    /* TODO - This style is for article pages - style c-content__side using the parent c-article class instead */
-    .c-content__side_wide {
-      flex: 0 0 28.4% !important;
-      margin-top: 0px;
-	  margin-left:auto;
-	  
-	  .c-articles__media {
-	    margin-bottom:10px !important;
-	  }
-	  
-	  .c-tags__list {
-	    margin-top:0px;
-	  }
-    }
-    
-	/* TODO - This style is for article pages - style c-content__content using the parent c-article class instead */
-	.c-content__content_wide {
-      flex: 0 0 70% !important;
-      margin-top: 0px;
-    }
-
     &__side-container {
       position: sticky;
       top: rem-size(120px);

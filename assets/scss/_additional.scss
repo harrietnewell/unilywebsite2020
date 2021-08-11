@@ -595,10 +595,3 @@ li {
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
-
-// ie-specific styles
-@media (min-width: 768px) and (-ms-high-contrast:none) {
-	.ie-mr{
-		margin-right: 20px;
-	}
-}

@@ -6,4 +6,6 @@ echo "building hsformlightbox.css" &^
 sass --no-source-map hsformlightbox.scss ../css/hsformlightbox.css &^
 echo "building cards.css" &^
 sass --no-source-map cards.scss ../css/cards.css &^
+echo "building insight.css" &^
+sass --no-source-map insight.scss ../css/insight.css &^
 PAUSE
