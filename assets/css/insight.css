@@ -5,7 +5,6 @@
 }
 .c-insight .c-content .c-content__content {
   margin-top: 0px;
-  margin-bottom: 1.875rem;
   flex: 0 0 70% !important;
 }
 @media (max-width: 767px) {
@@ -13,6 +12,10 @@
     margin-left: -20px;
     margin-right: -20px;
   }
+}
+.c-insight .c-content .c-content__content .container {
+  padding: 0;
+  margin-bottom: 20px;
 }
 .c-insight .c-content .c-content__side {
   margin-top: 0px;
