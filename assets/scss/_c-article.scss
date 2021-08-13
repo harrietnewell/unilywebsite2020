@@ -313,18 +313,22 @@
 
     &__media {
       flex: 0 0 35%;
+      -ms-flex-preferred-size: 32%;
     }
 
     &__content {
       flex: 0 0 65%;
+      -ms-flex-preferred-size: 62%;
     }
 
     &--alt {
       .c-widget__media {
         flex: 0 0 50%;
+        -ms-flex-preferred-size: 47%;
       }
       .c-widget__content {
         flex: 0 0 50%;
+        -ms-flex-preferred-size: 47%;
       }
     }
   }
