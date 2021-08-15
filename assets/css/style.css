@@ -2577,106 +2577,6 @@ p.c-metadata__item + p.c-metadata__item {
     opacity: 1;
   }
 }
-.c-article {
-  /*&--blog-alt { //this was used as an alternate blog layout (full width __media), leaving it here just in case
-    @media (min-width: $breakpoint-md) {
-      grid-template-columns: 7.19fr 2.81fr;
-      grid-template-rows: auto auto auto;
-      grid-template-areas: "c-article__header c-article__header" "c-article__media c-article__media" "c-article__content c-article__side";
-      gap: 0px 40px;
-      display: grid;
-
-     .c-article__header { grid-area: c-article__header; }
-      .c-article__media { grid-area: c-article__media; }
-      .c-article__content { grid-area: c-article__content; }
-      .c-article__side { grid-area: c-article__side; }
-    }
-  }*/
-  /*&__date,
-  &__location {
-    font-size: rem-size(16px);
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    color: $color-01;
-    line-height: 1.2;
-
-    @media (min-width: $breakpoint-md) {
-      font-size: rem-size(16px);
-      margin-bottom: rem-size(24px);
-    }
-  }*/
-  /*&__date {
-    &:before {
-      content: " ";
-      display: inline-block;
-      background: url(https://unilyweb2020dev.azureedge.net/media/svmfykiq/clock-gray.svg) no-repeat center center;
-      background-size: rem-size(21px 21px);
-      width: rem-size(21px);
-      height: rem-size(21px);
-      margin-right: rem-size(8px);
-      vertical-align: -5px;
-      position: relative;
-
-      @media (max-width: $breakpoint-md-down) {
-        background-size: rem-size(18px 18px);
-        width: rem-size(18px);
-        height: rem-size(18px);
-        margin-right: rem-size(7px);
-        vertical-align: -3px;
-      }
-    }
-  }*/
-  /*&__location {
-    &:before {
-      content: " ";
-      display: inline-block;
-      background: url(https://unilyweb2020dev.azureedge.net/media/dbdikvvv/location-gray.svg) no-repeat center center;
-      background-size: rem-size(22px 24px);
-      width: rem-size(22px);
-      height: rem-size(24px);
-      margin-right: rem-size(8px);
-
-      @media (max-width: $breakpoint-md-down) {
-        background-size: rem-size(16px 18px);
-        width: rem-size(18px);
-        height: rem-size(17px);
-        margin-right: rem-size(5px);
-        vertical-align: -2px;
-      }
-    }
-  }*/
-  /*.c-article__date + .c-article__location {
-    margin-top: rem-size(-5px);
-    position: relative;
-  }*/
-}
-@media (min-width: 768px) {
-  .c-article--blog, .c-article--event, .c-article--podcast, .c-article--casestudy {
-    grid-template-columns: 7.19fr 2.81fr;
-    grid-template-rows: auto auto 1fr;
-    grid-template-areas: "c-article__header c-article__header" "c-article__media  c-article__side" "c-article__content c-article__side";
-    gap: 0px 40px;
-    display: grid;
-  }
-  .c-article--blog .c-article__header, .c-article--event .c-article__header, .c-article--podcast .c-article__header, .c-article--casestudy .c-article__header {
-    grid-area: c-article__header;
-  }
-  .c-article--blog .c-article__media, .c-article--event .c-article__media, .c-article--podcast .c-article__media, .c-article--casestudy .c-article__media {
-    grid-area: c-article__media;
-  }
-  .c-article--blog .c-article__content, .c-article--event .c-article__content, .c-article--podcast .c-article__content, .c-article--casestudy .c-article__content {
-    grid-area: c-article__content;
-  }
-  .c-article--blog .c-article__side, .c-article--event .c-article__side, .c-article--podcast .c-article__side, .c-article--casestudy .c-article__side {
-    grid-area: c-article__side;
-  }
-}
-.c-article--guide .c-article__content {
-  max-width: 47.8125rem;
-  margin-left: auto;
-  margin-right: auto;
-}
 .c-article__header {
   margin-bottom: 1.5rem;
   font-size: 1.25rem;
@@ -2696,12 +2596,6 @@ p.c-metadata__item + p.c-metadata__item {
 }
 .c-article__media {
   margin-bottom: 1.875rem;
-}
-@media (max-width: 767px) {
-  .c-article--blog .c-article__media, .c-article--podcast .c-article__media, .c-article--casestudy .c-article__media, .c-article--event .c-article__media {
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
-  }
 }
 .c-article__form {
   margin-bottom: 1.875rem;

@@ -2,47 +2,6 @@
 
 .c-article {
 
-  /*&--blog-alt { //this was used as an alternate blog layout (full width __media), leaving it here just in case
-    @media (min-width: $breakpoint-md) {
-      grid-template-columns: 7.19fr 2.81fr;
-      grid-template-rows: auto auto auto;
-      grid-template-areas: "c-article__header c-article__header" "c-article__media c-article__media" "c-article__content c-article__side";
-      gap: 0px 40px;
-      display: grid;
-
-     .c-article__header { grid-area: c-article__header; }
-      .c-article__media { grid-area: c-article__media; }
-      .c-article__content { grid-area: c-article__content; }
-      .c-article__side { grid-area: c-article__side; }
-    }
-  }*/
-
-  &--blog,
-  &--event,
-  &--podcast,
-   &--casestudy{
-    @media (min-width: $breakpoint-md) {
-      grid-template-columns: 7.19fr 2.81fr;
-      grid-template-rows: auto auto 1fr;
-      grid-template-areas: "c-article__header c-article__header" "c-article__media  c-article__side" "c-article__content c-article__side";
-      gap: 0px 40px;
-      display: grid;
-
-      .c-article__header { grid-area: c-article__header; }
-      .c-article__media { grid-area: c-article__media; }
-      .c-article__content { grid-area: c-article__content; }
-      .c-article__side { grid-area: c-article__side; }
-    }
-  }
-
-  &--guide {
-    .c-article__content {
-      max-width: rem-size(765px);
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
   &__header {
     margin-bottom: rem-size(24px);
     font-size: rem-size(20px);
@@ -57,68 +16,6 @@
     }
   }
 
-  /*&__date,
-  &__location {
-    font-size: rem-size(16px);
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    color: $color-01;
-    line-height: 1.2;
-
-    @media (min-width: $breakpoint-md) {
-      font-size: rem-size(16px);
-      margin-bottom: rem-size(24px);
-    }
-  }*/
-
-  /*&__date {
-    &:before {
-      content: " ";
-      display: inline-block;
-      background: url(#{$cdn-url}media/svmfykiq/clock-gray.svg) no-repeat center center;
-      background-size: rem-size(21px 21px);
-      width: rem-size(21px);
-      height: rem-size(21px);
-      margin-right: rem-size(8px);
-      vertical-align: -5px;
-      position: relative;
-
-      @media (max-width: $breakpoint-md-down) {
-        background-size: rem-size(18px 18px);
-        width: rem-size(18px);
-        height: rem-size(18px);
-        margin-right: rem-size(7px);
-        vertical-align: -3px;
-      }
-    }
-  }*/
-
-  /*&__location {
-    &:before {
-      content: " ";
-      display: inline-block;
-      background: url(#{$cdn-url}media/dbdikvvv/location-gray.svg) no-repeat center center;
-      background-size: rem-size(22px 24px);
-      width: rem-size(22px);
-      height: rem-size(24px);
-      margin-right: rem-size(8px);
-
-      @media (max-width: $breakpoint-md-down) {
-        background-size: rem-size(16px 18px);
-        width: rem-size(18px);
-        height: rem-size(17px);
-        margin-right: rem-size(5px);
-        vertical-align: -2px;
-      }
-    }
-  }*/
-
-  /*.c-article__date + .c-article__location {
-    margin-top: rem-size(-5px);
-    position: relative;
-  }*/
-
   .c-article__heading + .c-tags__list {
     position: relative;
     margin-top: rem-size(20px);
@@ -128,23 +25,8 @@
     margin-bottom: rem-size(30px);
   }
 
-  @media (max-width: $breakpoint-md-down) {
-    &--blog,
-	&--podcast,
-	&--casestudy,
-    &--event/*,
-    &--blog-alt*/ {
-      .c-article__media {
-        margin-left: rem-size(-20px);
-        margin-right: rem-size(-20px);
-      }
-    }
-  }
-
   &__form {
-    //@media (max-width: $breakpoint-md-down) {
-      margin-bottom: rem-size(30px);
-    //}
+	margin-bottom: rem-size(30px);
   }
 
   &__content {
