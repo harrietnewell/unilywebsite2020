@@ -29,7 +29,9 @@
 	margin-bottom: rem-size(30px);
   }
 
-  &__content {
+  /* 
+	// TODO:DELETE
+    &__content {
     font-size: rem-size(18px);
     line-height: 1.4;
 
@@ -75,7 +77,7 @@
     li {
       margin-bottom: rem-size(5px);
     }
-  }
+  }*/
 
   &__heading {
     font-size: rem-size(28px);
@@ -173,9 +175,12 @@
   }
 }
 
+/*
+// TODO:DELETE
 .c-article__side .hs_submit {
   margin-bottom: rem-size(20px);
 }
+*/
 
 .c-widget {
   font-size: rem-size(16px);
