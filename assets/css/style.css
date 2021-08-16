@@ -1120,6 +1120,16 @@ th {
 .c-logo a {
   display: block;
 }
+@media (min-width: 1000px) and (-ms-high-contrast: none) {
+  .c-logo a {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 999px) and (-ms-high-contrast: none) {
+  .c-logo a {
+    margin-top: 0.4375rem;
+  }
+}
 .c-logo__img {
   width: 4.875rem;
   height: auto;

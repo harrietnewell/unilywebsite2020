@@ -122,6 +122,14 @@
 
   a {
     display: block;
+	
+	@media (min-width: $breakpoint-head) and (-ms-high-contrast:none) {
+        margin-top: 10px;
+    }
+	 
+	@media (max-width: $breakpoint-head-down) and (-ms-high-contrast:none) {
+		margin-top: rem-size(7px);
+	}
   }
 
   &__img {
