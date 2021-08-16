@@ -596,3 +596,11 @@ li {
 }
 
 // Adina
+
+@media (min-width: 1000px) and (-ms-high-contrast:none) {
+
+  .c-dropdown__row-ie {
+    display: inline !important;
+  }
+}
+
