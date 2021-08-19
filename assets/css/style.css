@@ -3222,6 +3222,7 @@ p.c-metadata__item + p.c-metadata__item {
   }
   .c-category-nav--side .c-category-nav__item {
     padding: 0rem 0.625rem 0rem 0rem;
+    margin-bottom: 1.4375rem;
   }
   .c-category-nav--side .c-category-nav__container {
     max-height: calc(100vh - 175px);
