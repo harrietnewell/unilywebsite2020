@@ -3483,6 +3483,9 @@ select.hs-input:focus {
 .hs-fieldtype-select .input select::placeholder {
   color: #b4b4b4;
 }
+.hs-fieldtype-select .input select.is-placeholder {
+  color: #b4b4b4;
+}
 .hs-fieldtype-select .input select:invalid {
   color: #b4b4b4;
 }

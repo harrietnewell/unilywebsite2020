@@ -249,6 +249,10 @@ select.hs-input:focus{color:$color-unily-light-blue;}
       color: $color-08; //$color-07; //$color-unily-grey-3;
     }
 
+    &.is-placeholder {
+      color: $color-08; //$color-07; //$color-unily-grey-3;
+    }
+
     &:invalid {
       color: $color-08; //$color-unily-grey-3;
     }
