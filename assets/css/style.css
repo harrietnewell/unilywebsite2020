@@ -5222,6 +5222,9 @@ textarea.hs-input {
   left: -1.75rem;
   top: -1.25rem;
 }
+.c-agenda__image + .c-agenda__heading {
+  margin-top: 0 !important;
+}
 .c-agenda__heading {
   margin-top: 1.875rem;
   margin-bottom: 0.75rem;
