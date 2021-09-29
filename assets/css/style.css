@@ -5166,6 +5166,9 @@ textarea.hs-input {
   top: 0.125rem;
   left: -0.5625rem;
 }
+.c-agenda__bullet + .c-agenda__heading {
+  margin-top: 0 !important;
+}
 .c-agenda__time {
   position: relative;
   font-weight: bold;
@@ -5188,6 +5191,9 @@ textarea.hs-input {
   font-size: 0.75rem;
   vertical-align: super;
   top: 0;
+}
+.c-agenda__time + .c-agenda__heading {
+  margin-top: 0 !important;
 }
 .c-agenda__link {
   position: relative;
@@ -5217,7 +5223,7 @@ textarea.hs-input {
   top: -1.25rem;
 }
 .c-agenda__heading {
-  margin-top: 0px;
+  margin-top: 1.875rem;
   margin-bottom: 0.75rem;
   font-size: 1rem !important;
 }
