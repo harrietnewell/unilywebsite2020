@@ -61,6 +61,13 @@
                     padding-left: rem-size(50px);
                     text-align: left;
                 }
+				
+				.c-agenda__link {
+                    left: 100%;
+                    right: auto;
+                    padding-left: rem-size(50px);
+                    text-align: left;
+                }
             }
         }
     }
@@ -115,6 +122,29 @@
         }
     }
 
+	&__link {
+        position: relative;
+        top: rem-size(-18px);
+        margin-bottom: 0;
+
+		a {  
+			display: inline-block !important;
+			text-decoration: none !important;
+		}
+
+        @media (min-width: $breakpoint-md) {
+            position: absolute;
+            right: 100%;
+            width: 100%;
+            text-align: right;
+            padding-right: rem-size(50px);
+        }
+		
+		& + .c-agenda__heading {
+            margin-top: 0 !important;
+        }
+    }
+
     &__image {
         position: absolute;
         display: block;
@@ -147,6 +177,15 @@
 
     &__item:nth-child(even) {
         .c-agenda__time {
+            @media (min-width: $breakpoint-md) {
+                left: 100%;
+                right: auto;
+                padding-left: rem-size(50px);
+                text-align: left;
+            }
+        }
+
+		.c-agenda__link {
             @media (min-width: $breakpoint-md) {
                 left: 100%;
                 right: auto;

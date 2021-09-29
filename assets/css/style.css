@@ -744,6 +744,7 @@ th {
   line-height: 1.35;
   cursor: pointer;
   text-align: center;
+  text-decoration: none;
 }
 .btn-lg {
   padding-top: 0.6875rem;
@@ -5140,6 +5141,12 @@ textarea.hs-input {
     padding-left: 3.125rem;
     text-align: left;
   }
+  .c-agenda__item:nth-child(even) .c-agenda__link {
+    left: 100%;
+    right: auto;
+    padding-left: 3.125rem;
+    text-align: left;
+  }
 }
 .c-agenda__bullet:after {
   content: " ";
@@ -5185,6 +5192,27 @@ textarea.hs-input {
 .c-agenda__time + .c-agenda__heading {
   margin-top: 0 !important;
 }
+.c-agenda__link {
+  position: relative;
+  top: -1.125rem;
+  margin-bottom: 0;
+}
+.c-agenda__link a {
+  display: inline-block !important;
+  text-decoration: none !important;
+}
+@media (min-width: 768px) {
+  .c-agenda__link {
+    position: absolute;
+    right: 100%;
+    width: 100%;
+    text-align: right;
+    padding-right: 3.125rem;
+  }
+}
+.c-agenda__link + .c-agenda__heading {
+  margin-top: 0 !important;
+}
 .c-agenda__image {
   position: absolute;
   display: block;
@@ -5213,6 +5241,14 @@ textarea.hs-input {
 }
 @media (min-width: 768px) {
   .c-agenda__item:nth-child(even) .c-agenda__time {
+    left: 100%;
+    right: auto;
+    padding-left: 3.125rem;
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .c-agenda__item:nth-child(even) .c-agenda__link {
     left: 100%;
     right: auto;
     padding-left: 3.125rem;
