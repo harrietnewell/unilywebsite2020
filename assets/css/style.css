@@ -5189,17 +5189,14 @@ textarea.hs-input {
   vertical-align: super;
   top: 0;
 }
-.c-agenda__time + .c-agenda__heading {
-  margin-top: 0 !important;
-}
 .c-agenda__link {
   position: relative;
-  top: -1.125rem;
   margin-bottom: 0;
 }
 .c-agenda__link a {
   display: inline-block !important;
   text-decoration: none !important;
+  font-size: 1.125rem !important;
 }
 @media (min-width: 768px) {
   .c-agenda__link {
@@ -5208,10 +5205,8 @@ textarea.hs-input {
     width: 100%;
     text-align: right;
     padding-right: 3.125rem;
+    top: -1.25rem;
   }
-}
-.c-agenda__link + .c-agenda__heading {
-  margin-top: 0 !important;
 }
 .c-agenda__image {
   position: absolute;
@@ -5222,7 +5217,7 @@ textarea.hs-input {
   top: -1.25rem;
 }
 .c-agenda__heading {
-  margin-top: 1.875rem;
+  margin-top: 0px;
   margin-bottom: 0.75rem;
   font-size: 1rem !important;
 }

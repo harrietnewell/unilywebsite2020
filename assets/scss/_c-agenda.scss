@@ -116,20 +116,16 @@
           vertical-align: super;
 		  top: 0;
         }
-
-        & + .c-agenda__heading {
-            margin-top: 0 !important;
-        }
     }
 
 	&__link {
         position: relative;
-        top: rem-size(-18px);
         margin-bottom: 0;
 
 		a {  
 			display: inline-block !important;
 			text-decoration: none !important;
+			font-size: rem-size(18px) !important;
 		}
 
         @media (min-width: $breakpoint-md) {
@@ -138,10 +134,7 @@
             width: 100%;
             text-align: right;
             padding-right: rem-size(50px);
-        }
-		
-		& + .c-agenda__heading {
-            margin-top: 0 !important;
+			top: rem-size(-20px);
         }
     }
 
@@ -155,7 +148,7 @@
     }
 
     &__heading {
-        margin-top: rem-size(30px);
+        margin-top: 0px;
         margin-bottom: rem-size(12px);
         font-size: rem-size(16px) !important;
     }
