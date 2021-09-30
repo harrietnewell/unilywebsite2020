@@ -257,22 +257,6 @@ var unilyApp = {
             }).resize();
         }
 
-        // Event sidebar form move for mobiles
-
-        if ($('.c-article__form').length) {
-
-            $(window).resize(function () {
-
-                if (!$('.c-content > .c-article__form').length && window.matchMedia('(max-width: 767px)').matches) {
-                    var articleForm = $('.c-article__form').detach();
-                    $(".c-article__media").after(articleForm);
-                } else if (!$('.c-content__side .c-article__form').length && window.matchMedia('(min-width: 768px)').matches) {
-                    var articleForm = $('.c-article__form').detach();
-                    $(".c-content__side").prepend(articleForm);
-                }
-            }).resize();
-        }
-
         // Footer nav wrap
 
         $(window).on('resize', function () {
