@@ -2,6 +2,8 @@
 
 var unilyVideoPopup = {
 
+    autoPlaySelector: 'data-video-popup-auto-play',
+
     init: function init(element) {
 
         $(element).magnificPopup({
@@ -18,5 +20,14 @@ var unilyVideoPopup = {
                 }
             }
         });
+
+        if (unilyVideoPopup.isAutoPlay(element)) {
+            $(element).click();
+        }
+    },
+
+    isAutoPlay: function isAutoPlay(element) {
+        var autoPlaySelector = $(element).attr(unilyVideoPopup.autoPlaySelector);
+        return !(typeof autoPlaySelector === 'undefined' || autoPlaySelector === false);
     }
 };
