@@ -52,25 +52,26 @@
 					position: static;
 				  }
 				  
-				  /*
 				  li[data-navitem]:hover::after {
 					  position: absolute;
 					  content: "";
 					  width: 0px;
 					  height: 0px;
-					  border-top: 15px solid transparent;
-					  border-right: 15px solid transparent;
-					  border-bottom: 15px solid #FFF;
-					  border-left: 15px solid transparent;
-					  bottom: -6px;
-					  margin-left:20px;
+					  border-top: 20px solid #FFF;
+					  border-right: 20px solid #FFF;
+					  border-bottom: 20px solid transparent;
+					  border-left: 20px solid transparent;
+					  transform: rotate(315deg);
+					  bottom: -35px;
+					  margin-left:5px;
+					  border-top-right-radius: 6px;
 				  }
-				  */
 				  
 				  div[data-subnav] {
 					position: absolute;
 					padding:20px;
-					top:90%;
+					top:100%;
+					margin-top:10px;
 					left:0;
 					border-radius:10px;
 					background:#FFF;
@@ -79,8 +80,8 @@
 					visibility:hidden;
 					opacity:0;
 					transition: visibility 0s, opacity 250ms linear, width 250ms, margin 250ms;
-					width:0;
-					margin-left:50%;
+					width:100%;
+					margin-left:0;
 					overflow:hidden;
 					max-height:90vh;
 				  }
@@ -104,7 +105,7 @@
 				  .subnav_heading {
 					font-size:16px;
 					font-weight:550;
-					color:#666;
+					color:#1C1C1B;
 					margin-bottom:30px;
 				  }
 				  
@@ -117,7 +118,7 @@
 				  }
 				  
 				  ul.subnav_icon_list li a .icon {
-					display:block;
+					display:none; /* TODO - Update */
 					float:left;
 					background-size:32px;
 					background-repeat:no-repeat;
@@ -131,14 +132,15 @@
 				    display:block;
 					font-size:14px;
 					font-weight:425;
-					color:#112a3f;
+					color:#1C1C1B;
+					text-transform:uppercase;
 				  }
 				  
 				  ul.subnav_icon_list li a .desc {
 					display:block;
 					font-size:14px;
 					font-weight:300;
-					color:#112a3f;
+					color:#1C1C1B;
 					opacity:0.6;
 				  }
 				  
@@ -147,10 +149,11 @@
 				  }
 				  
 				  .more-link {
-					color:#112a3f;
+					color:#1C1C1B;
 					margin:15px 0px;
 					cursor:pointer;
 					font-size:14px;
+					text-transform:uppercase;
 				  }
 				  
 				  [data-more-target] {
@@ -167,9 +170,10 @@
 				  }
 				  
 				  ul.subnav_list li a {
-					color:#112a3f;
+					color:#1C1C1B;
 					opacity:0.6;
 					font-size:14px;
+					text-transform:uppercase;
 				  }
 				  
 				  ul.subnav_list li a:hover {
