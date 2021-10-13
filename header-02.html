@@ -48,6 +48,10 @@
 
 				<style>
 				  
+				  li.c-nav__item {
+					position:relative;
+				  }
+				  
 				  li[data-navitem] a {
 					position: static;
 				  }
@@ -62,35 +66,36 @@
 					  border-bottom: 20px solid transparent;
 					  border-left: 20px solid transparent;
 					  transform: rotate(315deg);
-					  bottom: -35px;
+					  bottom: -40px;
 					  margin-left:5px;
 					  border-top-right-radius: 6px;
+					  left:0;
+					  right:0;
+					  margin:auto;
 				  }
 				  
 				  div[data-subnav] {
-					position: absolute;
-					padding:20px;
-					top:100%;
-					margin-top:10px;
+					position:fixed;
+					top:70px;
 					left:0;
+					right:0;
+					margin:auto;
+					padding:20px;
+					overflow:hidden;
 					border-radius:10px;
 					background:#FFF;
 					-webkit-box-shadow: 2px 2px 15px 5px rgba(0,0,0,0.25); 
 					box-shadow: 2px 2px 15px 5px rgba(0,0,0,0.25);
 					visibility:hidden;
 					opacity:0;
-					transition: visibility 0s, opacity 250ms linear, width 250ms, margin 250ms;
-					width:100%;
-					margin-left:0;
-					overflow:hidden;
+					transition: visibility 0s, opacity 250ms linear;
+					width:800px;
 					max-height:90vh;
 				  }
 				  
 				  li[data-navitem]:hover div[data-subnav] {
 					visibility:visible;
 					opacity:1;
-					width:100%;
-					margin-left:0;
 				  }
 				  
 				  .subnav_container {
@@ -104,9 +109,10 @@
 				  
 				  .subnav_heading {
 					font-size:16px;
-					font-weight:550;
+					font-weight:bold;
 					color:#1C1C1B;
 					margin-bottom:30px;
+					font-family:"Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
 				  }
 				  
 				  ul.subnav_icon_list {
@@ -131,21 +137,18 @@
 				  ul.subnav_icon_list li a .title {
 				    display:block;
 					font-size:14px;
-					font-weight:425;
+					font-weight:bold;
 					color:#1C1C1B;
 					text-transform:uppercase;
+					font-family:"Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
 				  }
 				  
 				  ul.subnav_icon_list li a .desc {
 					display:block;
 					font-size:14px;
-					font-weight:300;
+					font-weight:normal;
 					color:#1C1C1B;
-					opacity:0.6;
-				  }
-				  
-				  ul.subnav_icon_list li a:hover .desc {
-					opacity:1;
+					font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 				  }
 				  
 				  .more-link {
@@ -171,13 +174,10 @@
 				  
 				  ul.subnav_list li a {
 					color:#1C1C1B;
-					opacity:0.6;
 					font-size:14px;
 					text-transform:uppercase;
-				  }
-				  
-				  ul.subnav_list li a:hover {
-					opacity:1;
+					font-weight:bold;
+					font-family:"Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
 				  }
 				  
 				  ul.subnav_icon_list_4_col {
@@ -192,10 +192,8 @@
 				  
 				  /* TODO - Delete */
 				  .show-nav {
-					visibility:visible !important;
+				    visibility:visible !important;
 					opacity:1 !important;
-					width:100% !important;
-					margin-left:0 !important;
 				  }
 				  
 				  
@@ -274,20 +272,28 @@
 										<li><a href="#">Healthcare</a></li>
 										<li><a href="#">Professional Services</a></li>
 										<li><a href="#">Retail</a></li>
+										<li><a href="#">Travel &amp; Transport</a></li>
+										<li><a href="#">Food &amp; Agriculture</a></li>
+										<li><a href="#">Financial Services</a></li>
+										<li><a href="#">Manufacturing </a></li>
+										<li><a href="#">Pharmaceuticals </a></li>
+										<li><a href="#">Technology</a></li>
+										<li><a href="#">Hospitality</a></li>
 									</ul>
 									
-									<div class="more-link" data-more-link>More</div>
-									<div data-more-target>
-										<ul class="subnav_list">
-											<li><a href="#">Travel &amp; Transport</a></li>
-											<li><a href="#">Food &amp; Agriculture</a></li>
-											<li><a href="#">Financial Services</a></li>
-											<li><a href="#">Manufacturing </a></li>
-											<li><a href="#">Pharmaceuticals </a></li>
-											<li><a href="#">Technology</a></li>
-											<li><a href="#">Hospitality</a></li>
-										</ul>
-									</div>
+									<!-- TODO - DELETE -->
+									<!-- <div class="more-link" data-more-link>More</div> -->
+									<!-- <div data-more-target> -->
+										<!-- <ul class="subnav_list"> -->
+											<!-- <li><a href="#">Travel &amp; Transport</a></li> -->
+											<!-- <li><a href="#">Food &amp; Agriculture</a></li> -->
+											<!-- <li><a href="#">Financial Services</a></li> -->
+											<!-- <li><a href="#">Manufacturing </a></li> -->
+											<!-- <li><a href="#">Pharmaceuticals </a></li> -->
+											<!-- <li><a href="#">Technology</a></li> -->
+											<!-- <li><a href="#">Hospitality</a></li> -->
+										<!-- </ul> -->
+									<!-- </div> -->
 
 								</div>
 
@@ -537,102 +543,97 @@
 							<span class="c-nav__text">Insights</span>
 						</a>
 						
-						<div data-subnav>
+						<div data-subnav class="subnav">
 							
-								<div class="c-dropdown__container">
-									<div class="c-dropdown__row">
+								<div class="subnav_container">
+								
+									<div class="subnav_column">
 
-										<div class="c-dropdown__col">
+										<div class="subnav_heading">Insights</div>
 
-											<div class="c-dropdown__box bg-01">
+										<ul class="subnav_list">
+											<li><a href="#">Blogs</a></li>
+											<li><a href="#">Guides</a></li>
+											<li><a href="#">Case Studies</a></li>
+											<li><a href="#">Events</a></li>
+											<li><a href="#">Webinars</a></li>
+											<li><a href="#">Podcasts</a></li>
+										</ul>
 
-												<div class="c-dropdown__heading">Insights</div>
-
-												<ul class="c-subnav">
-													<li class="c-subnav__item"><a href="#" class="c-subnav__link">Blogs</a></li>
-													<li class="c-subnav__item"><a href="#" class="c-subnav__link">Guides</a></li>
-													<li class="c-subnav__item"><a href="#" class="c-subnav__link">Case Studies</a></li>
-													<li class="c-subnav__item"><a href="#" class="c-subnav__link">Events</a></li>
-													<li class="c-subnav__item"><a href="#" class="c-subnav__link">Webinars</a></li>
-													<li class="c-subnav__item"><a href="#" class="c-subnav__link">Podcasts</a></li>
-												</ul>
-
-											</div>
-
-										</div>
-
-										<div class="c-dropdown__col">
-
-											<div class="c-dropdown__heading">Featured insights</div>
-
-											<ul class="c-articles c-articles--dropdown">
-												<li class="c-articles__item">
-													<div class="c-articles__content">
-														<span class="tag tag-02">Blogs</span>
-														<p class="post-title"><a href="#">Why employee experience platforms are the intranets of the future</a></p>
-														<ul class="c-tags__list ">
-															<li><a href="#" class="tag tag-01">#Employee Experience</a></li>
-														</ul>
-													</div>
-												</li>
-												<li class="c-articles__item">
-													<div class="c-articles__content">
-														<span class="tag tag-02">Blogs</span>
-														<p class="post-title"><a href="#">5 internal comms trends to focus on in 2021</a></p>
-														<ul class="c-tags__list ">
-															<li><a href="#" class="tag tag-01">#Employee Engagement</a></li>
-															<li><a href="#" class="tag tag-01">#Future of Work</a></li>
-															<li><a href="#" class="tag tag-01">#Internal Communications</a></li>
-														</ul>
-													</div>
-												</li>
-												<li class="c-articles__item">
-													<div class="c-articles__content">
-														<span class="tag tag-04">Guides</span>
-														<p class="post-title"><a href="#">Intranet design 2021: Innovative designs to inspire employee engagement</a></p>
-														<ul class="c-tags__list ">
-															<li><a href="#" class="tag tag-01 ">#Design</a></li>
-															<li><a href="#" class="tag tag-01 ">#Employee Engagement</a></li>
-														</ul>
-													</div>
-												</li>
-												<li class="c-articles__item">
-													<div class="c-articles__content">
-														<span class="tag tag-05">Case Studies</span>
-														<p class="post-title"><a href="#">Shell powers employee experience with a Unily intranet</a></p>
-														<ul class="c-tags__list ">
-															<li><a href="#" class="tag tag-01 ">#Employee Experience</a></li>
-															<li><a href="#" class="tag tag-01 ">#Energy</a></li>
-															<li><a href="#" class="tag tag-01 ">#ROI</a></li>
-														</ul>
-													</div>
-												</li>
-												<li class="c-articles__item">
-													<div class="c-articles__content">
-														<span class="tag tag-02">Blogs</span>
-														<p class="post-title"><a href="#">Introducing plug and play intranet integrations with Unily's Feature Store</a></p>
-														<ul class="c-tags__list ">
-															<li><a href="#" class="tag tag-01 ">#Feature Store</a></li>
-															<li><a href="#" class="tag tag-01 ">#Integrations</a></li>
-															<li><a href="#" class="tag tag-01 ">#Product</a></li>
-														</ul>
-													</div>
-												</li>
-											</ul>
-
-										</div>
-
-										<div class="c-dropdown__col">
-											<div class="c-dropdown__heading">Deep dives</div>
-											<ul class="c-subnav">
-												<li class="c-subnav__item"><a href="#" class="c-subnav__link">Intranet basics</a></li>
-												<li class="c-subnav__item"><a href="#" class="c-subnav__link">Digital Workplace</a></li>
-												<li class="c-subnav__item"><a href="#" class="c-subnav__link">Employee Experience </a></li>
-												<li class="c-subnav__item"><a href="#" class="c-subnav__link">Intranet Software</a></li>
-												<li class="c-subnav__item"><a href="#" class="c-subnav__link">Internal Communications</a></li>
-											</ul>
-										</div>
 									</div>
+
+									<div class="subnav_column">
+
+										<div class="subnav_heading">Featured insights</div>
+
+										<ul class="c-articles c-articles--dropdown">
+											<li class="c-articles__item">
+												<div class="c-articles__content">
+													<span class="tag tag-02">Blogs</span>
+													<p class="post-title"><a href="#">Why employee experience platforms are the intranets of the future</a></p>
+													<ul class="c-tags__list ">
+														<li><a href="#" class="tag tag-01">#Employee Experience</a></li>
+													</ul>
+												</div>
+											</li>
+											<li class="c-articles__item">
+												<div class="c-articles__content">
+													<span class="tag tag-02">Blogs</span>
+													<p class="post-title"><a href="#">5 internal comms trends to focus on in 2021</a></p>
+													<ul class="c-tags__list ">
+														<li><a href="#" class="tag tag-01">#Employee Engagement</a></li>
+														<li><a href="#" class="tag tag-01">#Future of Work</a></li>
+														<li><a href="#" class="tag tag-01">#Internal Communications</a></li>
+													</ul>
+												</div>
+											</li>
+											<li class="c-articles__item">
+												<div class="c-articles__content">
+													<span class="tag tag-04">Guides</span>
+													<p class="post-title"><a href="#">Intranet design 2021: Innovative designs to inspire employee engagement</a></p>
+													<ul class="c-tags__list ">
+														<li><a href="#" class="tag tag-01 ">#Design</a></li>
+														<li><a href="#" class="tag tag-01 ">#Employee Engagement</a></li>
+													</ul>
+												</div>
+											</li>
+											<li class="c-articles__item">
+												<div class="c-articles__content">
+													<span class="tag tag-05">Case Studies</span>
+													<p class="post-title"><a href="#">Shell powers employee experience with a Unily intranet</a></p>
+													<ul class="c-tags__list ">
+														<li><a href="#" class="tag tag-01 ">#Employee Experience</a></li>
+														<li><a href="#" class="tag tag-01 ">#Energy</a></li>
+														<li><a href="#" class="tag tag-01 ">#ROI</a></li>
+													</ul>
+												</div>
+											</li>
+											<li class="c-articles__item">
+												<div class="c-articles__content">
+													<span class="tag tag-02">Blogs</span>
+													<p class="post-title"><a href="#">Introducing plug and play intranet integrations with Unily's Feature Store</a></p>
+													<ul class="c-tags__list ">
+														<li><a href="#" class="tag tag-01 ">#Feature Store</a></li>
+														<li><a href="#" class="tag tag-01 ">#Integrations</a></li>
+														<li><a href="#" class="tag tag-01 ">#Product</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+
+									</div>
+
+									<div class="subnav_column">
+										<div class="subnav_heading">Deep dives</div>
+										<ul class="subnav_list">
+											<li><a href="#">Intranet basics</a></li>
+											<li><a href="#">Digital Workplace</a></li>
+											<li><a href="#">Employee Experience </a></li>
+											<li><a href="#">Intranet Software</a></li>
+											<li><a href="#">Internal Communications</a></li>
+										</ul>
+									</div>
+							
 								</div>
 
 							</div>
@@ -1026,17 +1027,17 @@
     </div>
     <!--PageEnd-->
 
-    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <!-- <script src="assets/js/vendor/jquery-3.5.1.min.js"></script> -->
 	<!-- <script src="assets/js/app.js"></script> -->
-	<script type="text/javascript">
-		$(document).ready(function(){
+	<!-- <script type="text/javascript"> -->
+		<!-- $(document).ready(function(){ -->
 			
-			$("[data-more-link]").click(function(){
-				$(this).next("[data-more-target]").slideToggle();
-			});
+			<!-- $("[data-more-link]").click(function(){ -->
+				<!-- $(this).next("[data-more-target]").slideToggle(); -->
+			<!-- }); -->
 		
-		});
-	</script>
+		<!-- }); -->
+	<!-- </script> -->
 	
 </body>
 </html>
