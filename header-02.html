@@ -56,7 +56,7 @@
 					position: static;
 				  }
 				  
-				  li[data-navitem]:hover::after {
+				  li[data-navitem]::after {
 					  position: absolute;
 					  content: "";
 					  width: 0px;
@@ -72,6 +72,14 @@
 					  left:0;
 					  right:0;
 					  margin:auto;
+					  visibility:hidden;
+					  opacity:0;
+					  transition: visibility 250s, opacity 250ms linear;
+				  }
+				  
+				  li[data-navitem]:hover::after {
+					  visibility:visible;
+					  opacity:1;
 				  }
 				  
 				  div[data-subnav] {
@@ -88,7 +96,7 @@
 					box-shadow: 2px 2px 15px 5px rgba(0,0,0,0.25);
 					visibility:hidden;
 					opacity:0;
-					transition: visibility 0s, opacity 250ms linear;
+					transition: visibility 250s, opacity 250ms linear;
 					width:800px;
 					max-height:90vh;
 				  }
@@ -109,10 +117,10 @@
 				  
 				  .subnav_heading {
 					font-size:16px;
-					font-weight:bold;
+					font-weight:normal;
 					color:#1C1C1B;
 					margin-bottom:30px;
-					font-family:"Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+					font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 				  }
 				  
 				  ul.subnav_icon_list {
