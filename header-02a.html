@@ -49,25 +49,34 @@
 				<style>
 				  
 				  :root {
-					--subnav-arrow-pos:0px;
+					--subnav-arrow-pos:auto;
 					--subnav-width:800px;
 				  }
 				  
 				  #subnav-arrow {
 					position:absolute;
 					left: var(--subnav-arrow-pos);
-					top:60px;
-					height:0px;
-					width:0px;
+					top:65px;
+					height:30px;
+					width:30px;
+					background:#FFF;
+					/*
 					border-top: 15px solid #FFF;
 					border-right: 15px solid #FFF;
 					border-bottom: 15px solid transparent;
 					border-left: 15px solid transparent;
-					border-top-right-radius: 5px;
+					*/
+					border-radius: 3px;
 					transform: rotate(315deg);
-					transition:left 250ms;
+					visibility:hidden;
+					opacity:0;
+					transition: visibility 250s, opacity 250ms linear, left 250ms;
 					z-index:11;
-					display:none;
+				  }
+				  
+				  #subnav-arrow.active {
+					visibility:visible;
+					opacity:1;
 				  }
 				  
 				  #subnav {
@@ -85,6 +94,9 @@
 					opacity:0;
 					transition: visibility 250s, opacity 250ms linear, width 250ms;
 					z-index:10;
+					left:0;
+					right:0;
+					margin:auto;
 				  }
 				  
 				  #subnav.active {
@@ -206,7 +218,7 @@
 
 				<div id="subnav">
 					
-					<div data-subnav-target="solutions" data-subnav-width="600" class="subnav">
+					<div data-subnav-target="solutions" data-subnav-width="800" class="subnav">
 								
 						<div class="subnav_container">
 
@@ -279,20 +291,6 @@
 									<li><a href="#">Technology</a></li>
 									<li><a href="#">Hospitality</a></li>
 								</ul>
-								
-								<!-- TODO - DELETE -->
-								<!-- <div class="more-link" data-more-link>More</div> -->
-								<!-- <div data-more-target> -->
-									<!-- <ul class="subnav_list"> -->
-										<!-- <li><a href="#">Travel &amp; Transport</a></li> -->
-										<!-- <li><a href="#">Food &amp; Agriculture</a></li> -->
-										<!-- <li><a href="#">Financial Services</a></li> -->
-										<!-- <li><a href="#">Manufacturing </a></li> -->
-										<!-- <li><a href="#">Pharmaceuticals </a></li> -->
-										<!-- <li><a href="#">Technology</a></li> -->
-										<!-- <li><a href="#">Hospitality</a></li> -->
-									<!-- </ul> -->
-								<!-- </div> -->
 
 							</div>
 
@@ -300,7 +298,7 @@
 						
 					</div>
 					
-					<div data-subnav-target="features" data-subnav-width="800" class="subnav">
+					<div data-subnav-target="features" data-subnav-width="600" class="subnav">
 								
 						<div class="subnav_container">
 
@@ -1035,14 +1033,25 @@
 		$(document).ready(function(){
 			
 			function hideSubNavConditional() {
-				if(!subnavArrowHoverActive && !subnavHoverActive) {
-					$("#subnav").removeClass('active');
-				}
+				
+				setTimeout(function() {
+					if(!subnavArrowHoverActive && !subnavHoverActive && !subnavItemHoverActive) {
+						currentActiveSubNav = null;
+						$("#subnav").removeClass('active');
+						$('#subnav-arrow').removeClass('active');
+					}
+				}, 50);
 			}
 			
 			$("[data-subnav-item]").on("mouseover", function(){
+				subnavItemHoverActive = true;
 				var target = $(this).attr('data-subnav-item');
 				if(currentActiveSubNav !== target) {	
+					
+					// If first enter, remove current pointer position
+					if(!currentActiveSubNav) {
+						$('body').css('--subnav-arrow-pos', "auto");
+					}
 					
 					currentActiveSubNav = target;
 					
@@ -1055,26 +1064,24 @@
 					targetSubnavElement.fadeIn("slow");
 
 					// Show subnav arrow and set new position
-					$('#subnav-arrow').show();
 					var navOffset = $('div.c-head__wrap').offset().left;
 					var elementOffset = $(this).offset().left;
 					var elementHalfWidth = $(this).outerWidth()/2;			
 					var newPosition = elementOffset - navOffset + elementHalfWidth - 15;
 					$('body').css('--subnav-arrow-pos', newPosition + "px");
+					$('#subnav-arrow').addClass('active');
 				}
 				
 			});
 			
 			var currentActiveSubNav = '';
+			var subnavItemHoverActive = false;
 			var subnavArrowHoverActive = false;
 			var subnavHoverActive = false;
 			
 			$("[data-subnav-item]").on("mouseleave", function() {
-				var target = $(this).attr('data-subnav-item');
-				$('#subnav').removeClass('active');
-				if (currentActiveSubNav === target) {
-					currentActiveSubNav = null;
-				}
+				subnavItemHoverActive = false;
+				hideSubNavConditional();
 			});
 			
 			$('#subnav-arrow').on("mouseover", function() { 
@@ -1087,23 +1094,13 @@
 			});
 			
 			$("#subnav").on("mouseover", function() {
-				$('#subnav').addClass('active');
+				subnavHoverActive = true;
 			});
 			
 			$("#subnav").on("mouseleave", function() {
-				$('#subnav').removeClass('active');
-				
-				// TODO - start here, get conditions for showing/hiding subnav correct
-				// Also, get animation of nav arrow as per stripe, appears under nav item immediately on first hover, no slide in
-				
+				subnavHoverActive = false;
 				hideSubNavConditional();
 			});
-			
-			/*
-			$("[data-navitem]").on("mouseout", function() {
-				$('#subnav-arrow').hide();
-			});
-			*/
 		});
 	
 	</script>
