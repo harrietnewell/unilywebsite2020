@@ -261,11 +261,19 @@ var unilyApp = {
 
         $(window).on('resize', function () {
 
+            var wrapElementIds = new Set($('[data-wrap-unwrap]').map(function (idx, el) { return $(el).attr('data-wrap-unwrap'); }));
+
             if ($(window).width() > 767) {
-                if (!$('.wrap-unwrap__child').parent().hasClass('wrap-unwrap')) {
-                    $('.wrap-unwrap__child').wrapAll("<div class='wrap-unwrap' />");
-                }
-            } else {
+
+                wrapElementIds.forEach(function (idx, id) {
+
+                    var wrapElements = $('[data-wrap-unwrap="' + id + '"]');
+
+                    if (!wrapElements.parent().hasClass('wrap-unwrap'))
+                        wrapElements.wrapAll("<div class='wrap-unwrap' />");    
+                });    
+            }
+            else {
                 $('.wrap-unwrap').contents().unwrap();
             }
 

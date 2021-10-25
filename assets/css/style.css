@@ -7130,9 +7130,7 @@ TODO:DELETE
 }
 
 /** Global styles inspired by Bootstrap **/
-*,
-::after,
-::before {
+*, ::after, ::before {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
 }
@@ -7380,8 +7378,7 @@ TODO:DELETE
   }
   .c-foot .c-foot-nav__row .c-foot-nav__col {
     flex: 0 0 auto;
-    min-width: 35%;
-    max-width: 60%;
+    width: 45%;
     margin-bottom: 10px;
   }
   .c-foot .c-foot-nav__row .c-foot-nav__col:nth-child(1) {
@@ -7572,18 +7569,12 @@ li {
   text-decoration: none;
 }
 
-.c-articles--side .post-title,
-.c-articles--dropdown .post-title {
+.c-articles--side .post-title, .c-articles--dropdown .post-title {
   font-size: 18px;
 }
 
 .no-scroll {
   overflow-x: hidden;
   overflow-y: hidden;
-}
-
-@media (min-width: 1000px) and (-ms-high-contrast: none) {
-  .c-dropdown__row {
-    display: inline !important;
-  }
+  position: relative;
 }
