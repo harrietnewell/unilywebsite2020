@@ -7578,3 +7578,9 @@ li {
   overflow-y: hidden;
   position: relative;
 }
+
+@media (min-width: 768px) {
+  .c-widget__media .c-embed--video {
+    width: 100% !important;
+  }
+}

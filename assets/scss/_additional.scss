@@ -597,3 +597,10 @@ li {
 	overflow-y: hidden;
 	position:relative;
 }
+
+// video embed on content call out block
+.c-widget__media .c-embed--video {
+	@media (min-width: $breakpoint-md) {
+		width: 100% !important;
+	}
+}
