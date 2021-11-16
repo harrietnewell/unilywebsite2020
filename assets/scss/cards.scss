@@ -17,6 +17,7 @@
 
   .d-cards-list {
     display: flex;
+    flex: 0 0 auto !important;
     //justify-content: space-between;
     flex-wrap: wrap;
 
