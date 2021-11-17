@@ -569,17 +569,19 @@
                             <li><a href="#">Contact Us</a></li>
 							<li><a href="#">Subscribe</a></li>
 							<li id="language-control">
-								<svg id="language-icon" width="16" height="16" viewBox="0 0 16 16">
-									<path d="M7.5 2C10.91 2 13 4.01 13 6.5c0 2.07-1.45 3.82-3.92 4.34L6.62 13.3a.66.66 0 0 1-1.12-.46v-2.1C3.29 10.12 2 8.45 2 6.5 2 4.01 4.09 2 7.5 2z" fill="#0A2540" fill-rule="evenodd"></path>
-								</svg>
-							
-								<a href="#" id="language-selector">English</a>
+								<a href="#" id="language-selector">
+									<svg id="language-icon" width="16" height="16" viewBox="0 0 16 16">
+										<path d="M7.5 2C10.91 2 13 4.01 13 6.5c0 2.07-1.45 3.82-3.92 4.34L6.62 13.3a.66.66 0 0 1-1.12-.46v-2.1C3.29 10.12 2 8.45 2 6.5 2 4.01 4.09 2 7.5 2z" fill="#0A2540" fill-rule="evenodd"></path>
+									</svg>
+									<span>English</span>
+								</a>
 								<div id="languages">
 									<ul id="languages-list">
 										<li><a href="#">English</a></li>
 										<li><a href="#">French</a></li>
 										<li><a href="#">German</a></li>
 										<li><a href="#">Italian</a></li>
+										<li><a href="#">Spanish</a></li>
 									</ul>
 									<span id="languages-arrow"></span>
 								</div>
@@ -591,16 +593,61 @@
 					
 					<script type="text/javascript">
 						
-						$('#language-selector').on('click', function(e) {
-							e.preventDefault();
-							$('#languages').fadeIn();
-						});
+						var unilyLanguageSelection = {
 						
-						$('#languages-list li a').on('click', function(e) {
-							e.preventDefault();
-							$('#language-selector').text($(this).text());
-							$('#languages').fadeOut();
-						});
+							languageSelectorElementSelector: '#language-selector',
+							languagesListElementSelector: '#languages',
+							languageElementSelector: '#languages-list li a',
+						
+							assignCloseLanguagesEvents: function() {
+								setTimeout(function() {
+									$(unilyLanguageSelection.languageSelectorElementSelector).unbind();
+									$(document).on('click', unilyLanguageSelection.hideLanguagesList);
+								}, 100);
+							},
+						
+							assignOpenLanguagesEvents: function() {
+								setTimeout(function() {
+									unilyLanguageSelection.assignLanguageSelectorClick();
+									$(document).off('click', unilyLanguageSelection.hideLanguagesList);
+								}, 100);
+							},
+						
+							showLanguagesList: function() {
+								$(unilyLanguageSelection.languagesListElementSelector).fadeIn();
+								unilyLanguageSelection.assignCloseLanguagesEvents();
+							},
+						
+							hideLanguagesList: function() {
+								$(unilyLanguageSelection.languagesListElementSelector).fadeOut();
+								unilyLanguageSelection.assignOpenLanguagesEvents();
+							},
+						
+							assignLanguageSelectorClick: function() {
+								$('#language-selector').on('click', function(e) {
+									e.preventDefault();
+									unilyLanguageSelection.showLanguagesList();
+								});
+							},
+							
+							setLanguage: function(element) {
+								// TODO - Implement language selection logic
+								$('#language-selector span').text($(element).text());
+							},
+							
+							init: function() {
+						
+								unilyLanguageSelection.assignLanguageSelectorClick();
+						
+								$(unilyLanguageSelection.languageElementSelector).on('click', function(e) {
+									e.preventDefault();
+									unilyLanguageSelection.setLanguage(this);
+									unilyLanguageSelection.hideLanguagesList();
+								});
+							}
+						}
+						
+						unilyLanguageSelection.init();
 					
 					</script>
 					
@@ -614,15 +661,20 @@
 						#language-control {
 							position:relative;
 						}
+						
+						a#language-selector:hover {
+							background:none !important;
+						}
 					
 						#languages {
 							position:absolute;
-							top:-180px;
+							left:-18px;
+							bottom:36px;
 							background: #FFF;
 							border-radius: 5px;
-							padding:20px 40px;
-							-webkit-box-shadow: 2px 2px 15px 5px rgba(0,0,0,0.25); 
-							box-shadow: 2px 2px 15px 5px rgba(0,0,0,0.25);
+							padding:20px 40px 20px 20px;
+							-webkit-box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.4); 
+							box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.4);
 							display:none;
 						}
 						
