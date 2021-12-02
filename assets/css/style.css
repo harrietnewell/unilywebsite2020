@@ -3815,17 +3815,19 @@ textarea.hs-input {
   .c-block-01__content {
     align-self: center;
   }
-  .c-block-01--alt .c-block-01__content:before {
-    z-index: -1;
-    content: " ";
-    display: block;
-    background: #F5F5F5;
-    width: 70.625rem;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    margin-left: -20.625rem;
+  .c-block-01--alt .c-block-01__content {
+    /*&:before{
+      z-index: -1;
+      content: " ";
+      display: block;
+      background: $color-unily-grey-1;
+      width: rem-size(1130px);
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      margin-left: rem-size(-330px);
+    }*/
   }
 }
 .c-block-01 .c-block-01__media--img-side {
@@ -4192,18 +4194,18 @@ textarea.hs-input {
 @media (min-width: 768px) {
   .c-block-05--alt .c-block-05__row {
     flex-direction: row-reverse;
-  }
-  .c-block-05--alt .c-block-05__row:before {
-    z-index: -1;
-    content: " ";
-    display: block;
-    background: #F5F5F5;
-    width: 70.625rem;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    margin-left: -20.625rem;
+    /*&:before{
+      z-index: -1;
+      content: " ";
+      display: block;
+      background: $color-unily-grey-1;
+      width: rem-size(1130px);
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      margin-left: rem-size(-330px);
+    }*/
   }
 }
 @media (min-width: 768px) {
