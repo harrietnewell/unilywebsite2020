@@ -4128,7 +4128,7 @@ textarea.hs-input {
     justify-content: flex-end;
   }
   .c-block-05__col:last-child {
-    padding-left: 6.25rem;
+    padding-left: 2.875rem;
     padding-bottom: 0;
   }
 }
@@ -4215,7 +4215,7 @@ textarea.hs-input {
     padding-right: 1.25rem;
   }
   .c-block-05--alt .c-block-05__row .c-block-05__col:last-child {
-    /*padding-left: rem-size(20px);*/
+    padding-left: 1.25rem;
     padding-right: 2.875rem;
     justify-content: flex-end;
   }
