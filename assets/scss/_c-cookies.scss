@@ -1,13 +1,5 @@
 // Cookies
 
-#onetrust-banner-sdk.otFlat {
-  //bottom: auto !important;
-  //top: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  width: 100% !important;
-}
-
 .onetrust-pc-dark-filter {
   background: rgba(#1d1d1f,0.8) !important;
 }
@@ -19,7 +11,7 @@
 }
 
 #onetrust-consent-sdk #onetrust-pc-sdk h3, #onetrust-consent-sdk #onetrust-pc-sdk h4, #onetrust-consent-sdk #onetrust-pc-sdk h5, #onetrust-consent-sdk #onetrust-pc-sdk h6, #onetrust-consent-sdk #onetrust-pc-sdk p, #onetrust-consent-sdk #onetrust-pc-sdk #ot-ven-lst .ot-ven-opts p, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-desc, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-title, #onetrust-consent-sdk #onetrust-pc-sdk .ot-li-title, #onetrust-consent-sdk #onetrust-pc-sdk .ot-sel-all-hdr span, #onetrust-consent-sdk #onetrust-pc-sdk #ot-host-lst .ot-host-info, #onetrust-consent-sdk #onetrust-pc-sdk #ot-fltr-modal #modal-header, #onetrust-consent-sdk #onetrust-pc-sdk .ot-checkbox label span, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-lst #ot-sel-blk p, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-lst #ot-lst-title span, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-lst .back-btn-handler p, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-lst .ot-ven-name, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-lst #ot-ven-lst .consent-category, #onetrust-consent-sdk #onetrust-pc-sdk .ot-leg-btn-container .ot-inactive-leg-btn, #onetrust-consent-sdk #onetrust-pc-sdk .ot-label-status, #onetrust-consent-sdk #onetrust-pc-sdk .ot-chkbox label span, #onetrust-consent-sdk #onetrust-pc-sdk #clear-filters-handler {
-  color: #1d1d1f !important;
+  color: $color-unily-black !important;
 }
 
 #onetrust-consent-sdk #onetrust-pc-sdk .privacy-notice-link, #onetrust-consent-sdk #onetrust-pc-sdk .category-vendors-list-handler, #onetrust-consent-sdk #onetrust-pc-sdk .category-vendors-list-handler + a, #onetrust-consent-sdk #onetrust-pc-sdk .category-host-list-handler, #onetrust-consent-sdk #onetrust-pc-sdk .ot-ven-link, #onetrust-consent-sdk #onetrust-pc-sdk #ot-host-lst .ot-host-name a, #onetrust-consent-sdk #onetrust-pc-sdk #ot-host-lst .ot-acc-hdr .ot-host-expand, #onetrust-consent-sdk #onetrust-pc-sdk #ot-host-lst .ot-host-info a {
@@ -30,15 +22,16 @@
   }
 }
 
-#accept-recommended-btn-handler {
-    text-transform: uppercase !important;
-}
-
 #ot-pc-desc br {
-    display:none;
+    display: none;
+    content: ' ';
+
+    &::after {
+        content: ' ';
+    }
 }
 
-#onetrust-accept-btn-handler, .onetrust-close-btn-handler {
+#onetrust-accept-btn-handler, #accept-recommended-btn-handler, .onetrust-close-btn-handler {
     border-radius: rem-size(2px) !important;
     padding: rem-size(9px 15px) !important;
     white-space: nowrap !important;
@@ -83,7 +76,7 @@
 }
 
 #onetrust-pc-sdk .ot-cat-grp .ot-always-active {
-  color: #666 !important;
+  color: $color-unily-black !important;
 }
 
 #onetrust-consent-sdk #onetrust-pc-sdk .ot-acc-grpcntr.ot-acc-txt, #onetrust-consent-sdk #onetrust-pc-sdk .ot-acc-txt .ot-subgrp-tgl .ot-switch.ot-toggle {
@@ -92,53 +85,64 @@
 
 #onetrust-banner-sdk {
   box-shadow: none !important;
+
+  &:focus {
+      outline: none !important;
+  }
 }
 
-#onetrust-consent-sdk #onetrust-banner-sdk {
-  background-color: $color-unily-dark-blue !important;
+#onetrust-consent-sdk #onetrust-policy-text {
+    color:$color-unily-black !important;
+    font-size: rem-size(16px) !important;
+    margin: 0 !important;
+    line-height: 1.4 !important;
+    width: 100% !important;
 }
 
- #onetrust-consent-sdk #onetrust-policy-text {
-  color: #fff !important;
-  font-size: rem-size(16px) !important;
+#onetrust-policy-title {
+    margin: 0px 0px 10px 0px !important;
+    padding: 0px !important;
+    font-size: 22px !important;
+    color: $color-unily-black !important;
 }
 
 #onetrust-banner-sdk #onetrust-accept-btn-handler, #onetrust-banner-sdk #onetrust-reject-all-handler, #onetrust-banner-sdk #onetrust-pc-btn-handler {
-  border-radius: rem-size(2px) !important;
-  padding: rem-size(9px 15px) !important;
-  white-space: nowrap !important;
-  text-transform: uppercase !important;
-  font-family: $font-alt !important;
-  font-weight: bold !important;
-  font-size: rem-size(16px) !important;
-  border: 0 !important;
-  line-height: 1.35 !important;
-  cursor: pointer !important;
-  text-align: center !important;
-  letter-spacing: normal !important;
-  min-width: 0 !important;
-  background: $color-unily-light-blue !important;
-  color: $color-white !important;
-
-  &:hover {
-    background: darken($color-unily-light-blue, 10%) !important;
+    border-radius: rem-size(2px) !important;
+    padding: rem-size(9px 15px) !important;
+    white-space: nowrap !important;
+    text-transform: uppercase !important;
+    font-family: $font-alt !important;
+    font-weight: bold !important;
+    font-size: rem-size(16px) !important;
+    border: 0 !important;
+    line-height: 1.35 !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    letter-spacing: normal !important;
+    min-width: 0 !important;
+    background: $color-unily-light-blue !important;
+    color: $color-white !important;
     opacity: 1 !important;
-  }
 
-  &:focus {
-    outline: none !important;
-  }
+    &:hover {
+        background: darken($color-unily-light-blue, 10%) !important;
+    }
+
+    &:focus {
+        outline: none !important;
+    }
 }
 
 #onetrust-banner-sdk #onetrust-pc-btn-handler.cookie-setting-link {
-  background: transparent !important;
-  text-decoration: none !important;
-  opacity: 0.6 !important;
+    background: transparent !important;
+    text-decoration: none !important;
+    opacity: 0.6 !important;
+    margin-left: 10px !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #onetrust-banner-sdk #onetrust-button-group {
-  display: inline-flex !important;
-  flex-direction: row-reverse;
+    display: inline-flex !important;
 }
 
 #onetrust-banner-sdk .ot-sdk-eight.ot-sdk-columns {
@@ -153,23 +157,29 @@
   margin-left: 0 !important;
 }
 
-#onetrust-banner-sdk .ot-sdk-columns {
-  float: none !important;
-}
-
 #onetrust-banner-sdk .ot-sdk-container {
   width: 100% !important;
-  padding: rem-size(8px 20px) !important;
+  padding: rem-size(40px) !important;
   margin-left: auto !important;
   margin-right: auto !important;
   max-width: rem-size(1600px) !important;
 }
 
+#onetrust-banner-sdk.otCenterRounded {
+    max-width: 500px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    height: fit-content !important;
+    margin: auto !important;
+    transform: none !important; //translateY(-50%);
+}
+
 #onetrust-banner-sdk .ot-sdk-row {
   @media (min-width: $breakpoint-head) {
     display: flex !important;
+    flex-direction: column !important;
     justify-content: space-between !important;
-    align-items: center !important; 
+    align-items: flex-start !important; 
   }
 }
 
@@ -197,37 +207,29 @@
 }
 
 #onetrust-banner-sdk:not(.ot-iab-2) #onetrust-button-group-parent {
-  margin: auto !important;
-  width: auto !important;
-  flex: 0 0 auto !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+    padding: 15px 0px 0px 0px !important;
+    display: block !important;
 }
 
 #onetrust-banner-sdk .ot-sdk-row:after {
   display: none !important;
 }
 
-#onetrust-consent-sdk #onetrust-policy-text {
-  @media (min-width: $breakpoint-head) {
-    margin-bottom: 0 !important;
-  }
-}
-
 #onetrust-banner-sdk:not(.ot-iab-2) #onetrust-group-container {
   width: 100% !important;
-
-  @media (min-width: $breakpoint-head) {
-    padding-right: rem-size(20px) !important;
-  }
 }
 
 #onetrust-consent-sdk #onetrust-pc-btn-handler.cookie-setting-link {
-  margin-right: 0 !important;
+    margin-right: 0 !important;
+    color: $color-unily-black !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #onetrust-consent-sdk #onetrust-pc-sdk button:not(#clear-filters-handler):not(.ot-close-icon):not(#filter-btn-handler):not(.ot-remove-objection-handler):not(.ot-obj-leg-btn-handler) {
   margin: 0 !important;
+  opacity: 1 !important;
 }
 
 #onetrust-pc-sdk .ot-btn-container {
@@ -250,6 +252,11 @@
 }
 
 #onetrust-pc-sdk.otPcCenter {
+
+  top:0 !important;
+  bottom: 0 !important;
+  margin: auto !important;
+
   @media (min-width: 601px) {
     max-height: calc(100vh - 15%) !important;
     height: rem-size(860px) !important;
@@ -257,7 +264,7 @@
 }
 
 .ot-category-desc {
-  max-width: 400px !important;
+    max-width: 400px !important;
 }
 
 #onetrust-pc-sdk .ot-cat-item p {
@@ -320,7 +327,7 @@
 }
 
 #onetrust-consent-sdk #onetrust-pc-sdk .privacy-notice-link {
-  display: inline-block !important;
+  display: inline !important;
   padding-bottom: 2px !important;
   line-height: 1.2 !important;
 }
@@ -333,7 +340,8 @@
     background: url(#{$cdn-url}media/uuzbwrlw/close-black.svg) no-repeat center center !important;
     background-size: rem-size(12px 12px) !important;
     top: 20px !important;
-    right:25px !important;
+    right: 25px !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:hover {
         opacity: 1 !important;
@@ -385,6 +393,120 @@
 	}
 }
 
-#onetrust-banner-sdk div {
-    margin: auto !important;
+/* Cookie Policy Styles */
+
+div#ot-sdk-cookie-policy {
+
+    font, h1, h2, h3, h4, h5, h6, span, a {
+        color: $color-unily-black !important;
+    }
+
+    div, p {
+        font-size: 18px !important;
+        color: $color-unily-black !important;
+        line-height: 1.4 !important;
+    }
+
+    table {
+        width: 100% !important;
+        font-size: rem-size(16px) !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        table-layout: fixed !important;
+        border: none !important;
+
+        ul, ol {
+            padding-left: 1.2rem !important;
+        }
+
+        li {
+            margin-bottom: rem-size(5px) !important;
+        }
+
+        tr {
+            border-bottom: 1px solid $color-02 !important;
+        }
+
+        th {
+            padding-bottom: rem-size(10px) !important;
+            padding-left: rem-size(10px) !important;
+            padding-right: rem-size(10px) !important;
+            vertical-align: bottom !important;
+            font-weight: 700 !important;
+            font-size: 16px !important;
+            color: $color-unily-black !important;
+            background-color: #FFF !important;
+            border-left: none !important;
+            border-right: none !important;
+
+            &:first-child {
+                padding-left: 0 !important;
+            }
+
+            &:last-child {
+                padding-right: 0 !important;
+            }
+
+            small {
+                font-weight: normal !important;
+                font-size: inherit !important;
+            }
+        }
+
+        td {
+            vertical-align: top !important;
+            height: rem-size(70px) !important;
+            padding: rem-size(10px) !important;
+            padding-bottom: rem-size(5px) !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important; // table overflows, not ideal
+            font-size: 16px !important;
+            color: $color-unily-black !important;
+            border-left: none !important;
+            border-right: none !important;
+
+            &:first-child {
+                padding-left: 0 !important;
+            }
+
+            &:last-child {
+                padding-right: 0 !important;
+            }
+
+            &.integrations {
+                vertical-align: middle !important;
+            }
+        }
+
+        small {
+            font-size: rem-size(14px) !important;
+        }
+
+        tbody + thead th {
+            padding-top: rem-size(70px) !important;
+
+            &:first-child {
+                padding-left: 0 !important;
+            }
+        }
+    }
+}
+
+button.ot-sdk-show-settings {
+    background: $color-unily-light-blue;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 7px 15px;
+    display: inline-block;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: $font-alt;
+    font-weight: bold;
+    color: $color-unily-white !important;
+    align-self: center;
+
+    &:hover {
+        background: darken($color-unily-light-blue, 10%) !important;
+    }
 }

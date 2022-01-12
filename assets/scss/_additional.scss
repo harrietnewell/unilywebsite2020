@@ -593,9 +593,10 @@ li {
 
 // no-scroll
 .no-scroll {
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position:relative;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	max-width: 100%;
 }
 
 // video embed on content call out block
