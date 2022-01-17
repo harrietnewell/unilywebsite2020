@@ -170,6 +170,10 @@ var unilyApp = {
             new SimpleBar($('.c-testimonials__wrap')[0]);
         }
 
+        if ($('.c-table--scrollable').length) {
+            new SimpleBar($('.c-table--scrollable')[0]);
+        }
+
         
         /** New scroll **/
         // TODO - Combine this with code in pillarpagenav.js, repetetive
