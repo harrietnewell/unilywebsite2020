@@ -1,0 +1,356 @@
+@media all and (min-width:1000px) {
+    /* Navbar */
+
+    .navbar-inner {
+        box-shadow: none;
+        border: none;
+    }
+
+    .navbar-inner .brand {
+        margin-top: 14px;
+        display: block;
+    }
+
+    .navbar .nav > li {
+        float: left;
+    }
+
+    .navbar .nav > li > a:hover,
+    .navbar .nav > li > a:active,
+    .navbar .nav > li > a:focus,
+    .navbar .nav > li > a.active,
+    .navbar .nav > .active > a,
+    .navbar .nav > .active > a:hover,
+    .navbar .nav > .active > a:focus,
+    .active-menu {
+        background: #a1a1a1 !important;
+        color: #fff !important;
+    }
+
+    .navbar .nav > li > a {
+        float: none;
+        text-decoration: none;
+        text-shadow: none;
+    }
+
+    .dropdown-menu > li {
+        /*    position: relative;*/
+        -webkit-user-select: none;
+        /* Chrome/Safari */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* IE10+ */
+        /* Rules below not implemented in browsers yet */
+        -o-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        list-style: none;
+        padding: 8px 0px;
+        margin: 0 20px;
+    }
+
+    .dropdown-menu > li > a {
+        display: block;
+        font-size: 1rem;
+        clear: both;
+        white-space: nowrap;
+        font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #1c1c1b;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        white-space: nowrap;
+        width: fit-content;
+        line-height: calc(24/18);
+    }
+
+    .dropdown-menu > li > a span,
+    .dropdown-menu.thirdlevel > li > a {
+        background-image: linear-gradient(#333, #333);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 3px;
+        padding: 0.25rem 0;
+        transition: background .3s;
+    }
+
+    .dropdown-menu > li:hover > a span,
+    .dropdown-menu.thirdlevel > li:hover > a {
+        background-size: 100% 3px;
+    }
+
+    .c-nav__item img.arrow_icon {
+        width: 6px;
+        transform: rotate(90deg);
+        margin: 0 0 0 9px;
+        opacity: 0;
+        transition: hover .3s;
+    }
+
+    .dropdown:hover img.arrow_icon {
+        opacity: 1;
+    }
+
+    .nav > li > a,
+    .nav > li {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        border: none;
+        padding: 1.3rem 0rem;
+        z-index: 9;
+    }
+
+    .dropdown .firstlevel {
+        position: absolute;
+        box-shadow: rgb(0 0 0 / 12%) 0px 4px 64px;
+        border: none;
+        z-index: 9;
+        background-color: white;
+        border-radius: 8px;
+        top: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.8) translateZ(0px) translateX(-9px);
+        transition: all .2s ease-in-out 0s;
+    }
+
+    .c-nav__item {
+        justify-content: center;
+    }
+
+    .c-nav__item {
+        padding: 0;
+        margin: 0 1em;
+    }
+
+    .c-nav__item:hover .firstlevel {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1) translateZ(0px) translateX(-9px);
+        transition: all 0.2s ease-in-out 0s;
+    }
+
+    .features_item .firstlevel {
+        transform: scale(0.8) translateZ(0px) translateX(5px);
+    }
+
+    .features_item.c-nav__item:hover .firstlevel {
+        transform: scale(1) translateZ(0px) translateX(5px);
+    }
+
+    .dropdown .thirdlevel {
+        opacity: 0;
+        transition: all .2s ease-in-out 0s;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        list-style: none;
+        color: rgb(0, 45, 89);
+        background-color: #f5f5f5;
+        visibility: hidden;
+        box-shadow: rgb(0 0 0 / 12%) 9px 5px 24px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .twolevel:hover .sub-menu.thirdlevel {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.2s ease-in-out 0s;
+    }
+
+    .css-1578db3 {
+        width: 0.5rem;
+        height: 0.8rem;
+        display: inline-block;
+        line-height: 1em;
+        flex-shrink: 0;
+        color: currentcolor;
+        vertical-align: middle;
+        fill: none;
+        stroke: currentcolor;
+        margin-bottom: 3px;
+    }
+
+    .twolevel .css-1578db3 {
+        visibility: hidden;
+        margin-left: 4px;
+    }
+
+    .twolevel:hover .css-1578db3 {
+        visibility: visible;
+    }
+
+    .secondlevel {
+        left: 100%;
+    }
+
+    .dropdown .firstlevel.sub-menu-clm-three {
+        display: flex;
+        width: auto;
+    }
+
+    .dropdown .firstlevel.sub-menu-clm-three .menu_clm,
+    .dropdown .firstlevel.sub-menu-clm-two .menu_clm {
+        width: max-content;
+
+    }
+
+    .dropdown .firstlevel.sub-menu-clm-three .menu_clm:last-of-type,
+    .dropdown .firstlevel.sub-menu-clm-two .menu_clm:last-of-type {
+        margin: 0;
+    }
+
+    .dropdown .firstlevel.sub-menu-clm-three li,
+    .dropdown .firstlevel.sub-menu-clm-two li {
+        width: auto;
+        list-style: none;
+        padding: 8px 0;
+        margin: 0 20px;
+    }
+
+    .dropdown .firstlevel.sub-menu-clm-three li a,
+    .dropdown .firstlevel.sub-menu-clm-two li a {
+        display: block;
+        font-size: 1rem;
+        clear: both;
+        white-space: nowrap;
+        font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #1c1c1b;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0.25rem 0;
+        background-image: linear-gradient(#333, #333);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 3px;
+        transition: background .3s;
+        white-space: nowrap;
+        width: fit-content;
+        line-height: calc(24/18);
+    }
+
+    .dropdown .firstlevel.sub-menu-clm-three li a:hover {
+        background-size: 100% 3px;
+    }
+
+    .dropdown .firstlevel.sub-menu-clm-two {
+        display: flex;
+        width: auto;
+    }
+
+    .dropdown .firstlevel.sub-menu-clm-two li {
+        width: auto;
+    }
+
+
+    .firstlevel::after {
+        content: "";
+        width: 14px;
+        height: 14px;
+        border-radius: 2px 0 0 0;
+        background-color: white;
+        position: absolute;
+        top: -7px;
+        left: 47%;
+        transform: rotate(45deg);
+    }
+
+    .c-head.c-head--subnav {
+        color: #fff;
+        background: #112A3F;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 650;
+    }
+
+    .c-head--subnav:before {
+        display: none;
+    }
+
+    .c-head--subnav .c-nav__text {
+        background-image: linear-gradient(#fff, #fff);
+        background-size: 0% 3px;
+        color: white;
+    }
+
+    .c-nav .c-nav__link.active .c-nav__text {
+        background-image: linear-gradient(#fff, #fff);
+        background-size: 0% 3px;
+        color: white;
+    }
+
+    .c-head--subnav .c-nav__link:hover .c-nav__text {
+        background-size: 100% 3px;
+    }
+
+    .c-head--subnav .c-logo__img {
+        display: block;
+    }
+
+    .c-head--subnav .c-logo__img--alt {
+        display: none;
+    }
+
+    .c-head--subnav .c-nav__link--search:after {
+        background: url(https://unilyweb2020dev.azureedge.net/media/zjmlsevn/search-white.svg) no-repeat;
+    }
+    
+    
+}
+
+
+
+
+
+
+/*mobile resize*/
+
+
+
+@media screen and (max-width:768px) {
+    .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .navbar .nav > li {
+        width: 100% !important;
+        height: 55px !important;
+        border-top: 1px solid #ddd;
+        background: #fff !important;
+    }
+
+    #main-menu {
+        width: 100%;
+        padding-left: 0px !important;
+        margin-right: -7px !important;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+@media all and (max-width:991px) {
+
+    .navbar .nav > li > .dropdown-menu {
+        display: none !important;
+    }
+
+    .dropdown .firstlevel,
+    .dropdown .thirdlevel {
+        display: none;
+    }
+}
+
+@media all and (max-width:999px) {
+    .c-nav__item img.arrow_icon {
+        display: none;
+    }
+
+}
