@@ -47,7 +47,7 @@
         cursor: pointer;
         list-style: none;
         padding: 8px 0px;
-        margin: 0 20px;
+        margin: 0 2rem;
     }
 
     .dropdown-menu > li > a {
@@ -73,6 +73,7 @@
         background-size: 0% 3px;
         padding: 0.25rem 0;
         transition: background .3s;
+        line-height: 1;
     }
 
     .dropdown-menu > li:hover > a span,
@@ -90,6 +91,10 @@
 
     .dropdown:hover img.arrow_icon {
         opacity: 1;
+    }
+
+    .c-nav__item:hover .c-nav__text {
+        background-size: 100% 3px;
     }
 
     .nav > li > a,
@@ -153,8 +158,7 @@
         background-color: #f5f5f5;
         visibility: hidden;
         box-shadow: rgb(0 0 0 / 12%) 9px 5px 24px;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
+       border-radius: 8px;
     }
 
     .twolevel:hover .sub-menu.thirdlevel {
@@ -210,7 +214,15 @@
         width: auto;
         list-style: none;
         padding: 8px 0;
-        margin: 0 20px;
+        margin: 0 2rem;
+    }
+     .dropdown .firstlevel.sub-menu-clm-three .menu_clm:last-of-type li,
+    .dropdown .firstlevel.sub-menu-clm-two .menu_clm:last-of-type li {
+        margin: 0 2em 0 1rem;
+    }
+      .dropdown .firstlevel.sub-menu-clm-three .menu_clm:first-of-type li,
+    .dropdown .firstlevel.sub-menu-clm-two .menu_clm:first-of-type li {
+        margin: 0 1em 0 2rem;
     }
 
     .dropdown .firstlevel.sub-menu-clm-three li a,
@@ -223,18 +235,24 @@
         color: #1c1c1b;
         font-weight: bold;
         text-transform: uppercase;
+        
+       
+        white-space: nowrap;
+        width: fit-content;
+        line-height: calc(24/18);
+    }
+    .dropdown .firstlevel.sub-menu-clm-three li a span,
+    .dropdown .firstlevel.sub-menu-clm-two li a span
+    {
         padding: 0.25rem 0;
         background-image: linear-gradient(#333, #333);
         background-position: 0% 100%;
         background-repeat: no-repeat;
         background-size: 0% 3px;
-        transition: background .3s;
-        white-space: nowrap;
-        width: fit-content;
-        line-height: calc(24/18);
+         transition: background .3s;
     }
 
-    .dropdown .firstlevel.sub-menu-clm-three li a:hover {
+    .dropdown .firstlevel.sub-menu-clm-three li a:hover span{
         background-size: 100% 3px;
     }
 
@@ -255,7 +273,7 @@
         border-radius: 2px 0 0 0;
         background-color: white;
         position: absolute;
-        top: -7px;
+        top: -5px;
         left: 47%;
         transform: rotate(45deg);
     }
@@ -288,6 +306,9 @@
     .c-head--subnav .c-nav__link:hover .c-nav__text {
         background-size: 100% 3px;
     }
+     .c-nav__item:hover .c-nav__link.active .c-nav__text {
+        background-size: 100% 3px;
+    }
 
     .c-head--subnav .c-logo__img {
         display: block;
@@ -300,8 +321,8 @@
     .c-head--subnav .c-nav__link--search:after {
         background: url(https://unilyweb2020dev.azureedge.net/media/zjmlsevn/search-white.svg) no-repeat;
     }
-    
-    
+
+
 }
 
 
