@@ -127,7 +127,7 @@
 
     .dropdown .firstlevel {
         position: absolute;
-        box-shadow: rgb(0 0 0 / 12%) 0px 4px 64px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 64px;
         border: none;
         z-index: 9;
         background-color: white;
@@ -173,7 +173,7 @@
         color: rgb(0, 45, 89);
         background-color: $color-unily-grey-1;
         visibility: hidden;
-        box-shadow: rgb(0 0 0 / 12%) 9px 5px 24px;
+        box-shadow: rgba(0, 0, 0, 0.12) 9px 5px 24px;
         border-radius: 8px;
     }
 
