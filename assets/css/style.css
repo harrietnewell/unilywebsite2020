@@ -1970,12 +1970,13 @@ body.sticky-header .c-page--top {
     user-select: none;
     cursor: pointer;
     list-style: none;
-    padding: 8px 0px;
+    padding: 7px 0px;
     margin: 0 2rem;
   }
 
   .dropdown-menu > li > a {
-    display: block;
+    display: flex;
+    align-items: center;
     font-size: 1rem;
     clear: both;
     white-space: nowrap;
@@ -2109,14 +2110,14 @@ body.sticky-header .c-page--top {
     display: inline-block;
     line-height: 1em;
     vertical-align: middle;
-    margin-bottom: 3px;
     filter: invert(1);
     content: "";
     visibility: hidden;
-    margin-left: 4px;
     background-image: url(https://unilyweb2020dev.azureedge.net/media/1yul22mo/arrow-right-white.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    margin-left: 7px;
+    margin-bottom: 5px;
   }
 
   .twolevel:hover .twolevel-item::after {
