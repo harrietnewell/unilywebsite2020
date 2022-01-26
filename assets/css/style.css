@@ -2129,40 +2129,21 @@ body.sticky-header .c-page--top {
   }
 
   .dropdown .firstlevel.sub-menu-clm-three {
-    display: flex;
-    width: auto;
+    width: 674px;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+    padding: 1.3rem 2rem;
   }
 
-  .dropdown .firstlevel.sub-menu-clm-three .menu_clm,
-.dropdown .firstlevel.sub-menu-clm-two .menu_clm {
-    width: max-content;
-  }
-
-  .dropdown .firstlevel.sub-menu-clm-three .menu_clm:last-of-type,
-.dropdown .firstlevel.sub-menu-clm-two .menu_clm:last-of-type {
-    margin: 0;
-  }
-
-  .dropdown .firstlevel.sub-menu-clm-three li,
-.dropdown .firstlevel.sub-menu-clm-two li {
+  .dropdown .firstlevel.sub-menu-clm-three li {
     width: auto;
     list-style: none;
     padding: 8px 0;
-    margin: 0 2rem;
+    margin: 0;
   }
 
-  .dropdown .firstlevel.sub-menu-clm-three .menu_clm:last-of-type li,
-.dropdown .firstlevel.sub-menu-clm-two .menu_clm:last-of-type li {
-    margin: 0 2em 0 1rem;
-  }
-
-  .dropdown .firstlevel.sub-menu-clm-three .menu_clm:first-of-type li,
-.dropdown .firstlevel.sub-menu-clm-two .menu_clm:first-of-type li {
-    margin: 0 1em 0 2rem;
-  }
-
-  .dropdown .firstlevel.sub-menu-clm-three li a,
-.dropdown .firstlevel.sub-menu-clm-two li a {
+  .dropdown .firstlevel.sub-menu-clm-three li a {
     display: block;
     font-size: 1rem;
     clear: both;
@@ -2176,8 +2157,7 @@ body.sticky-header .c-page--top {
     line-height: calc(24/18);
   }
 
-  .dropdown .firstlevel.sub-menu-clm-three li a span,
-.dropdown .firstlevel.sub-menu-clm-two li a span {
+  .dropdown .firstlevel.sub-menu-clm-three li a span {
     padding: 0.25rem 0;
     background-image: linear-gradient(#333333, #333333);
     background-position: 0% 100%;
@@ -2188,15 +2168,6 @@ body.sticky-header .c-page--top {
 
   .dropdown .firstlevel.sub-menu-clm-three li a:hover span {
     background-size: 100% 3px;
-  }
-
-  .dropdown .firstlevel.sub-menu-clm-two {
-    display: flex;
-    width: auto;
-  }
-
-  .dropdown .firstlevel.sub-menu-clm-two li {
-    width: auto;
   }
 
   .firstlevel::after {
