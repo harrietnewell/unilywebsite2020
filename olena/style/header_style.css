@@ -46,12 +46,13 @@
         user-select: none;
         cursor: pointer;
         list-style: none;
-        padding: 8px 0px;
+        padding: 7px 0px;
         margin: 0 2rem;
     }
 
     .dropdown-menu > li > a {
-        display: block;
+        display: flex;
+        align-items: center;
         font-size: 1rem;
         clear: both;
         white-space: nowrap;
@@ -59,7 +60,6 @@
         color: #1c1c1b;
         font-weight: bold;
         text-transform: uppercase;
-
         white-space: nowrap;
         width: fit-content;
         line-height: calc(24/18);
@@ -188,14 +188,13 @@
         display: inline-block;
         line-height: 1em;
         vertical-align: middle;
-        margin-bottom: 3px;
         filter: invert(1);
         content: '';
         visibility: hidden;
-        margin-left: 4px;
         background-image: url(../../assets/img/arrow-right-white_new.svg);
         background-repeat: no-repeat;
         background-size: contain;
+        margin: 0 0 0 7px;
     }
 
     .twolevel:hover .twolevel-item::after {
