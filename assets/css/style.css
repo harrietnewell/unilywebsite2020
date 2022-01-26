@@ -2117,7 +2117,7 @@ body.sticky-header .c-page--top {
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 7px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 
   .twolevel:hover .twolevel-item::after {
