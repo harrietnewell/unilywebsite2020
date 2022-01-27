@@ -95,7 +95,6 @@
 			margin: 0 0 0 0;
 			transition: hover .3s;
 			width: 10px;
-			height: 11px;
 			display: inline-block;
 			line-height: 1em;
 			vertical-align: middle;
@@ -104,7 +103,8 @@
 			visibility: hidden;
 			background-image: url(#{$cdn-url}media/1yul22mo/arrow-right-white.svg);
 			background-repeat: no-repeat;
-			background-size: contain;
+			background-size: 7px;
+			background-position: center;
 			position: relative;
 			border: none;
 			top: 0;	

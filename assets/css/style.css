@@ -2015,7 +2015,6 @@ body.sticky-header .c-page--top {
     margin: 0 0 0 0;
     transition: hover 0.3s;
     width: 10px;
-    height: 11px;
     display: inline-block;
     line-height: 1em;
     vertical-align: middle;
@@ -2024,7 +2023,8 @@ body.sticky-header .c-page--top {
     visibility: hidden;
     background-image: url(https://unilyweb2020dev.azureedge.net/media/1yul22mo/arrow-right-white.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 7px;
+    background-position: center;
     position: relative;
     border: none;
     top: 0;
