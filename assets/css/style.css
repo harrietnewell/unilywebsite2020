@@ -1565,7 +1565,7 @@ body.sticky-header .c-page--top {
 
   .dropdown .c-nav__link span,
 .dropdown .c-nav__link.active span {
-    margin-right: 0.625rem;
+    margin-right: 0.5625rem;
   }
   .dropdown .c-nav__link::after,
 .dropdown .c-nav__link.active::after {
