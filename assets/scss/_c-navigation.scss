@@ -156,6 +156,7 @@
     .twolevel-item::after {
         width: 6px;
         height: 11px;
+		margin: 0 0 1px 7px;
         display: inline-block;
         line-height: 1em;
         vertical-align: middle;
@@ -165,8 +166,6 @@
         background-image: url(#{$cdn-url}media/1yul22mo/arrow-right-white.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        margin-left: 7px;
-        margin-bottom: 3px;
     }
 
     .twolevel:hover .twolevel-item::after {
