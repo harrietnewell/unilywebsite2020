@@ -3150,6 +3150,9 @@ p.c-metadata__item + p.c-metadata__item {
 .c-form--subscribe .hs-richtext {
   color: #fff !important;
 }
+.c-form--meeting-link {
+  line-break: anywhere;
+}
 
 /*.c-subscribe .c-form--subscribe,*/
 @media (min-width: 768px) {
@@ -5158,12 +5161,12 @@ textarea.hs-input {
 }
 
 .c-foot {
-  color: #112A3F;
+  color: #1C1C1B;
   font-size: 1rem;
   padding-bottom: 1.25rem !important;
 }
 .c-foot a {
-  color: #112A3F;
+  color: #1C1C1B;
 }
 @media (min-width: 768px) {
   .c-foot__row {
@@ -5227,7 +5230,7 @@ textarea.hs-input {
   margin-bottom: 1.25rem;
 }
 .c-foot__nav a {
-  background-image: linear-gradient(#112A3F, #112A3F);
+  background-image: linear-gradient(#1C1C1B, #1C1C1B);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
@@ -5242,7 +5245,7 @@ textarea.hs-input {
   margin-bottom: 0.625rem;
 }
 .c-foot__col--contact a span {
-  background-image: linear-gradient(#112A3F, #112A3F);
+  background-image: linear-gradient(#1C1C1B, #1C1C1B);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
@@ -5323,7 +5326,7 @@ textarea.hs-input {
   margin-bottom: 0;
 }
 .c-popular a {
-  background-image: linear-gradient(#112A3F, #112A3F);
+  background-image: linear-gradient(#1C1C1B, #1C1C1B);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
