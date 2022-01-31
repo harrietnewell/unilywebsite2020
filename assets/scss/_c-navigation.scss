@@ -58,19 +58,17 @@
 		}
 		
 		&::after {
-			transform: rotate(90deg);
-			margin: 0 0 0 0;
+			margin: 0 0 3px 0;
 			transition: hover .3s;
-			width: 10px;
+			width: 11px;
 			display: inline-block;
 			line-height: 1em;
 			vertical-align: middle;
-			margin-bottom: 3px;
 			content: '';
 			visibility: hidden;
-			background-image: url(#{$cdn-url}media/1yul22mo/arrow-right-white.svg);
+			background-image: url(#{$cdn-url}media/af1hepjj/arrow-down-white.svg);
 			background-repeat: no-repeat;
-			background-size: 7px;
+			background-size: contain;
 			background-position: center;
 			position: relative;
 			border: none;
