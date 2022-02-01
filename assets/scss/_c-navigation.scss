@@ -187,8 +187,9 @@
         margin: 0;
     }
 
-    .dropdown .firstlevel.sub-menu-clm-three li a{
-        display: block;
+    .dropdown .firstlevel.sub-menu-clm-three li a {
+        display: flex;
+    align-items: center;
         font-size: 1rem;
         clear: both;
         white-space: nowrap;
