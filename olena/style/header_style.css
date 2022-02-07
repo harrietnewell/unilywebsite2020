@@ -92,7 +92,7 @@
 
     .c-nav__link::after,
     .c-nav__link.active:after {
-        transform: rotate(90deg);
+/*        transform: rotate(90deg);*/
         margin: 0 0 0 9px;
         transition: hover .3s;
         width: 6px;
