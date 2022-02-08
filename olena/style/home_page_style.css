@@ -38,10 +38,12 @@ div.medium_width_content {
     margin: 0 auto;
 }
 
+/*
 .max_width_content.container {
     padding-left: 0;
     padding-right: 0;
 }
+*/
 
 .c-block-client--video {
     max-height: 840px;
@@ -74,6 +76,7 @@ div.medium_width_content {
     margin: 1.875rem 0 1.875rem 5.875rem;
 }
 
+/*
 .c-articles--carousel > li:first-of-type {
     flex: 0 0 23.75rem;
     padding-left: 0;
@@ -85,14 +88,19 @@ div.medium_width_content {
     padding-left: 0.625rem;
     padding-right: 0;
 }
+*/
 
+/*
 .c-articles--carousel {
     padding: 0;
 }
+*/
 
+/*
 .c-articles--carousel:after {
     display: none;
 }
+*/
 
 @media all and (min-width: 768px) {
     .d-cards .d-cards-list .c-block-05__content {
