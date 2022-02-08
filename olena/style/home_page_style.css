@@ -1,31 +1,4 @@
-/*
-.c-block-home__item {
-    margin: 0;
-}
 
-
-.top_section_width_content {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-
-.c-block-05__col_m {
-    width: auto;
-}
-
-.medium_width_content {
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: space-between;
-    padding: 0;
-}
-
-
-div.medium_width_content {
-    padding: 3.75rem 0;
-}
-*/
 .medium_width__low_content {
     max-width: 1016px;
     margin: 0 auto;
@@ -37,13 +10,6 @@ div.medium_width_content {
     max-width: 1920px;
     margin: 0 auto;
 }
-
-/*
-.max_width_content.container {
-    padding-left: 0;
-    padding-right: 0;
-}
-*/
 
 .c-block-client--video {
     max-height: 840px;
