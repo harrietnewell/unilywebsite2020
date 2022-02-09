@@ -1653,13 +1653,13 @@ body.sticky-header .c-page--top {
     opacity: 0;
     transition: all 0.2s ease-in-out 0s;
     position: absolute;
-    left: 100%;
+    left: 99.5%;
     top: 0;
     list-style: none;
     color: #002d59;
     background-color: #F5F5F5;
     visibility: hidden;
-    box-shadow: rgba(28, 28, 27, 0.3) 9px 5px 24px;
+    box-shadow: none;
     border-radius: 8px;
   }
 
