@@ -18,6 +18,25 @@
     margin: 0;
 }
 
+.c-foot .c-foot-nav__col:first-of-type {
+    padding: 0rem 0.625rem 0 0;
+}
+
+/*
+.c-foot .c-foot-nav__col:last-of-type{
+    padding: 0rem 0 0 0.625rem ;
+}
+*/
+.c-foot .wrap-unwrap:last-of-type .c-foot-nav__col {
+    padding: 0rem 0 0 0.625rem;
+    width: fit-content;
+}
+
+.c-foot .wrap-unwrap:last-of-type div,
+.c-foot .wrap-unwrap:last-of-type li,
+.c-foot .wrap-unwrap:last-of-type a {
+    width: auto;
+}
 
 @media all and (min-width: 768px) {
     .d-cards .d-cards-list .c-block-05__content {
