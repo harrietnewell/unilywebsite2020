@@ -2125,35 +2125,6 @@ body.sticky-header .c-page--top {
   margin-right: -0.625rem;
   display: flex;
   flex-wrap: wrap;
-  /*&__date {
-      color: $color-01;
-      margin-bottom: 0;
-      font-weight: 500;
-      line-height: 1.2;
-
-      @media (max-width: $breakpoint-md-down) {
-          font-size: rem-size(16px);
-      }
-
-      &:before {
-          content: " ";
-          display: inline-block;
-          background: url(https://unilyweb2020dev.azureedge.net/media/svmfykiq/clock-gray.svg) no-repeat center center;
-          background-size: rem-size(21px 21px);
-          width: rem-size(21px);
-          height: rem-size(21px);
-          margin-right: rem-size(8px);
-          vertical-align: -5px;
-
-          @media (max-width: $breakpoint-md-down) {
-              background-size: rem-size(18px 18px);
-              width: rem-size(18px);
-              height: rem-size(18px);
-              margin-right: rem-size(7px);
-              vertical-align: -3px;
-          }
-      }
-  }*/
   /*&__heading {
       margin-bottom: rem-size(15px);
       font-size: rem-size(20px);
@@ -2625,12 +2596,6 @@ p.c-metadata__item + p.c-metadata__item {
   background-size: 1.875rem 1.75rem;
 }
 
-/*
-// TODO:DELETE
-.c-article__side .hs_submit {
-  margin-bottom: rem-size(20px);
-}
-*/
 .c-widget {
   font-size: 1rem;
 }
@@ -6528,52 +6493,6 @@ TODO:DELETE
 .c-social__link--instagram:before {
   background-image: url(https://unilyweb2020dev.azureedge.net/media/ytqbespx/instagram-blue.svg);
   background-size: 1.125rem 1.125rem;
-}
-.c-social--foot {
-  justify-content: flex-start;
-}
-@media (min-width: 768px) {
-  .c-social--foot {
-    justify-content: flex-end;
-    margin-bottom: 2.625rem;
-  }
-}
-.c-social--foot .c-social__item {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-}
-.c-social--foot .c-social__item:first-child {
-  padding-left: 0;
-}
-.c-social--foot .c-social__item:last-child {
-  padding-right: 0;
-}
-.c-social--foot .c-social__link:before {
-  width: 1.75rem;
-  height: 1.75rem;
-  background-size: 1.75rem 1.75rem;
-}
-.c-social--foot .c-social__link--linkedin:before {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/hv0ljypp/linkedin-navy.svg);
-}
-.c-social--foot .c-social__link--vimeo:before {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/euomro2b/vimeo-navy.svg);
-}
-.c-social--foot .c-social__link--twitter:before {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/vmle3xad/twitter-navy.svg);
-  background-size: 1.75rem 1.75rem;
-}
-.c-social--foot .c-social__link--facebook:before {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/xuvf0fxx/facebook-navy.svg);
-  background-size: 1.5rem 1.5rem;
-  width: 0.875rem;
-}
-.c-social--foot .c-social__link--instagram:before {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/imbjhssy/instagram-navy.svg);
-  background-size: 1.5625rem 1.5625rem;
-}
-.c-social--foot .c-social__link--youtube:before {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/4hnfbypb/youtube-navy.svg);
 }
 
 @media (min-width: 768px) {

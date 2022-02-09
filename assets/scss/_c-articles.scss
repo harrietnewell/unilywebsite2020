@@ -15,36 +15,6 @@
         }
     }
 
-    /*&__date {
-        color: $color-01;
-        margin-bottom: 0;
-        font-weight: 500;
-        line-height: 1.2;
-
-        @media (max-width: $breakpoint-md-down) {
-            font-size: rem-size(16px);
-        }
-
-        &:before {
-            content: " ";
-            display: inline-block;
-            background: url(#{$cdn-url}media/svmfykiq/clock-gray.svg) no-repeat center center;
-            background-size: rem-size(21px 21px);
-            width: rem-size(21px);
-            height: rem-size(21px);
-            margin-right: rem-size(8px);
-            vertical-align: -5px;
-
-            @media (max-width: $breakpoint-md-down) {
-                background-size: rem-size(18px 18px);
-                width: rem-size(18px);
-                height: rem-size(18px);
-                margin-right: rem-size(7px);
-                vertical-align: -3px;
-            }
-        }
-    }*/
-
     &__item {
         width: rem-size(400px);
         flex: 0 1 33.333333%;
