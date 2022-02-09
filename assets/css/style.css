@@ -1676,10 +1676,9 @@ body.sticky-header .c-page--top {
     display: inline-block;
     line-height: 1em;
     vertical-align: middle;
-    filter: invert(1);
     content: "";
     visibility: hidden;
-    background-image: url(https://unilyweb2020dev.azureedge.net/media/1yul22mo/arrow-right-white.svg);
+    background-image: url(https://unilyweb2020dev.azureedge.net/media/cueh5p2n/arrow-right-black.svg);
     background-repeat: no-repeat;
     background-size: contain;
   }
