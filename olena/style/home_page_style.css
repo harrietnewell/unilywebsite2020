@@ -52,5 +52,7 @@
         padding-left: 3rem;
     }
 
-
+.d-cards .d-cards-list .d-single-card {
+    margin-bottom: 20px;
+}
 }
