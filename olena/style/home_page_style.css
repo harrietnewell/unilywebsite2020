@@ -22,11 +22,6 @@
     padding: 0rem 0.625rem 0 0;
 }
 
-/*
-.c-foot .c-foot-nav__col:last-of-type{
-    padding: 0rem 0 0 0.625rem ;
-}
-*/
 .c-foot .wrap-unwrap:last-of-type .c-foot-nav__col {
     padding: 0rem 0 0 0.625rem;
     width: fit-content;
@@ -46,4 +41,16 @@
     .c-clients__header {
         max-width: 1016px;
     }
+
+    .c-block-05__col:first-child,
+    .c-block-05--alt .c-block-05__row .c-block-05__col:last-child {
+        padding-right: 3rem;
+    }
+
+    .c-block-05__col:last-child,
+    .c-block-05--alt .c-block-05__row .c-block-05__col:first-child {
+        padding-left: 3rem;
+    }
+
+
 }
