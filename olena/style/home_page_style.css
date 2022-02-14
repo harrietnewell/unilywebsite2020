@@ -55,10 +55,6 @@
 }
 
 
-.c-block-05__media--width-md img,
-.c-block-home__img {
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.12));
-}
 
 @media all and (min-width: 768px) {
     .d-cards .d-cards-list .c-block-05__content {
