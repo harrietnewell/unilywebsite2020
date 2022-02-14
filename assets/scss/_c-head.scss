@@ -1,110 +1,110 @@
 // Header (with navigation)
 
 .c-head {
-  color: $color-white;
-  background: $color-unily-dark-blue;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 650;
-
-  &--transparent {
-      position:fixed !important;
-  }
-
-  &--transparent:not(.scrolling) {
-    @media (min-width: $breakpoint-head) {
-      background: transparent;
-    }
-  }
-
-  &--unite {
-      position:fixed !important;
-  }
-
-  &--transparent-alt:not(.scrolling) {
-    background: transparent;
-  }
-
-  &--static {
-    position: absolute;
-  }
-
-  &__wrap {
-    @media (min-width: $breakpoint-head) {
-      padding: rem-size(0 15px);
-      max-width: rem-size(1040px);
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-  }
-
-  &__nav-link {
-    position: absolute;
+    color: $color-white;
+    background: $color-unily-dark-blue;
     top: 0;
     right: 0;
-    height: rem-size(50px);
-    width: rem-size(61px);
-    font: 0/0 a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 0;
+    z-index: 650;
 
-    @media (min-width: $breakpoint-head) {
-      display: none;
+    &--transparent {
+        position: fixed !important;
     }
 
-    &:after {
-      content: " ";
-      display: block;
-      background: #fff;
-      width: rem-size(32px);
-      height: rem-size(10px);
-      background: url(#{$cdn-url}media/1vce5m0y/menu-white.svg) no-repeat;
-      background-size: rem-size(32px 10px);
-    }
-  }
-
-  &__navigation {
-    @media (max-width: $breakpoint-head-down) {
-      position: fixed;
-      top: rem-size(50px);
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: $color-unily-dark-blue;
-      opacity: 0;
-      display: none;
-      height: 100vh;
-
-      &.active {
-        display: block;
-        z-index: 10000;
-        opacity: 1;
-      }
+    &--transparent:not(.scrolling) {
+        @media (min-width: $breakpoint-head) {
+            background: transparent;
+        }
     }
 
-    @media (min-width: $breakpoint-head) {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    &--unite {
+        position: fixed !important;
     }
-  }
 
-  &__container {
-    position: relative;
-
-    @media (min-width: $breakpoint-head) {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: rem-size(1120px);
+    &--transparent-alt:not(.scrolling) {
+        background: transparent;
     }
-  }
+
+    &--static {
+        position: absolute;
+    }
+
+    &__wrap {
+        @media (min-width: $breakpoint-head) {
+            padding: rem-size(0 15px);
+            max-width: rem-size(1040px);
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    }
+
+    &__nav-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: rem-size(50px);
+        width: rem-size(61px);
+        font: 0/0 a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: $breakpoint-head) {
+            display: none;
+        }
+
+        &:after {
+            content: " ";
+            display: block;
+            background: #fff;
+            width: rem-size(32px);
+            height: rem-size(10px);
+            background: url(#{$cdn-url}media/w0wgmf2o/circles-white.svg) no-repeat;
+            background-size: rem-size(32px 10px);
+        }
+    }
+
+    &__navigation {
+        @media (max-width: $breakpoint-head-down) {
+            position: fixed;
+            top: rem-size(50px);
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $color-unily-dark-blue;
+            opacity: 0;
+            display: none;
+            height: 100vh;
+
+            &.active {
+                display: block;
+                z-index: 10000;
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: $breakpoint-head) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__container {
+        position: relative;
+
+        @media (min-width: $breakpoint-head) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: rem-size(1120px);
+        }
+    }
 }
 
 .c-logo {

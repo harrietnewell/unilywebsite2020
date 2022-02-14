@@ -204,29 +204,29 @@
 // Caption
 
 .caption {
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: rem-size(4px);
-  display: block;
-  background: $color-unily-grey-1;
-  font-size: rem-size(16px);
-  padding: rem-size(10px 15px 10px 56px);
-  position: relative;
-  margin-top: rem-size(10px);
-  min-height: rem-size(44px);
-
-  &:before {
-    content: " ";
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: rem-size(4px);
     display: block;
-    width: rem-size(27px);
-    height: rem-size(24px);
-    position: absolute;
-    background: url(#{$cdn-url}media/3fhckdru/caption-black.svg) no-repeat;
-    background-size: rem-size(27px 24px);
-    top: 50%;
-    margin-top: rem-size(-12px);
-    left: rem-size(15px);
-  }
+    background: $color-unily-grey-1;
+    font-size: rem-size(16px);
+    padding: rem-size(10px 15px 10px 56px);
+    position: relative;
+    margin-top: rem-size(10px);
+    min-height: rem-size(44px);
+
+    &:before {
+        content: " ";
+        display: block;
+        width: rem-size(27px);
+        height: rem-size(24px);
+        position: absolute;
+        background: url(#{$cdn-url}media/ebedumr2/image-caption-black.svg) no-repeat;
+        background-size: rem-size(27px 24px);
+        top: 50%;
+        margin-top: rem-size(-12px);
+        left: rem-size(15px);
+    }
 }
 
 

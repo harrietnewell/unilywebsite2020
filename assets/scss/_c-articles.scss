@@ -252,23 +252,23 @@
 
         &--date:before {
             background-image: url(#{$cdn-url}media/svmfykiq/clock-gray.svg);
-			width: rem-size(18.8px) !important;
-			height: rem-size(18.8px) !important;
-			background-size: rem-size(16.96px 16.96px) !important;
-			margin-top:rem-size(-1px);
-			margin-left: rem-size(-1.3px);
+            width: rem-size(18.8px) !important;
+            height: rem-size(18.8px) !important;
+            background-size: rem-size(16.96px 16.96px) !important;
+            margin-top: rem-size(-1px);
+            margin-left: rem-size(-1.3px);
         }
 
         &--location:before {
-            background-image: url(#{$cdn-url}media/dbdikvvv/location-gray.svg);
+            background-image: url(#{$cdn-url}media/h1znjuxe/location-pin-gray.svg);
         }
 
         &--watch:before {
-            background-image: url(#{$cdn-url}media/0ccd0wni/ondemand-gray.svg);
+            background-image: url(#{$cdn-url}media/55flckx1/play-circle-gray.svg);
         }
 
         &--virtual:before {
-            background-image: url(#{$cdn-url}media/p43nxfbw/virtual-gray.svg);
+            background-image: url(#{$cdn-url}media/kqfjfcdi/camera-gray.svg);
         }
 
         &--live:before {
@@ -292,11 +292,11 @@
             animation: live 1s infinite;
         }
     }
-	
-	 &__item--youtube-subscribe {
+
+    &__item--youtube-subscribe {
         font-family: $font-alt;
         margin-top: rem-size(-11px);
-		margin-left: rem-size(-25px);
+        margin-left: rem-size(-25px);
     }
 
     &--alt {

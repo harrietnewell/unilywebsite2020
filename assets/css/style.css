@@ -524,7 +524,7 @@ th {
   width: 1.6875rem;
   height: 1.5rem;
   position: absolute;
-  background: url(https://unilyweb2020dev.azureedge.net/media/3fhckdru/caption-black.svg) no-repeat;
+  background: url(https://unilyweb2020dev.azureedge.net/media/ebedumr2/image-caption-black.svg) no-repeat;
   background-size: 1.6875rem 1.5rem;
   top: 50%;
   margin-top: -0.75rem;
@@ -1064,7 +1064,7 @@ th {
   background: #fff;
   width: 2rem;
   height: 0.625rem;
-  background: url(https://unilyweb2020dev.azureedge.net/media/1vce5m0y/menu-white.svg) no-repeat;
+  background: url(https://unilyweb2020dev.azureedge.net/media/w0wgmf2o/circles-white.svg) no-repeat;
   background-size: 2rem 0.625rem;
 }
 @media (max-width: 999px) {
@@ -1584,7 +1584,7 @@ body.sticky-header .c-page--top {
     vertical-align: middle;
     content: "";
     visibility: hidden;
-    background-image: url(https://unilyweb2020dev.azureedge.net/media/af1hepjj/down-arrow-white.svg);
+    background-image: url(https://unilyweb2020dev.azureedge.net/media/hiffp1ko/arrow-down-white.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -2358,13 +2358,13 @@ body.sticky-header .c-page--top {
   margin-left: -0.08125rem;
 }
 .c-metadata__item--location:before {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/dbdikvvv/location-gray.svg);
+  background-image: url(https://unilyweb2020dev.azureedge.net/media/h1znjuxe/location-pin-gray.svg);
 }
 .c-metadata__item--watch:before {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/0ccd0wni/ondemand-gray.svg);
+  background-image: url(https://unilyweb2020dev.azureedge.net/media/55flckx1/play-circle-gray.svg);
 }
 .c-metadata__item--virtual:before {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/p43nxfbw/virtual-gray.svg);
+  background-image: url(https://unilyweb2020dev.azureedge.net/media/kqfjfcdi/camera-gray.svg);
 }
 .c-metadata__item--live:before {
   background: none;
@@ -5301,11 +5301,11 @@ textarea.hs-input {
   margin-left: 0.3125rem;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/vs5dubzh/plus-navy.svg);
-  background-size: 1rem 1rem;
+  background-image: url(https://unilyweb2020dev.azureedge.net/media/hhjjm1ss/plus-black.svg);
+  background-size: 0.9375rem 0.9375rem;
 }
 .c-popular .c-popular__link.active:after {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/fath3k52/minus-navy.svg);
+  background-image: url(https://unilyweb2020dev.azureedge.net/media/wxqnhnla/minus-black.svg);
 }
 .c-popular__nav {
   list-style: none;
