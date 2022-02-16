@@ -558,6 +558,11 @@
 
   &__media {
     font: 0/0 a;
+    
+    @media (min-width: $breakpoint-md) {
+        width: 100%;
+        max-width: rem-size(460px);
+    }
 
     @media (min-width: $breakpoint-md) {
       //align-self: center;
@@ -565,12 +570,8 @@
 
     &--centered {
       text-align: center;
-
-      @media (min-width: $breakpoint-md) {
-        width: 100%;
-        max-width: rem-size(460px);
-      }
     }
+
     /*&--side {
       margin-right: rem-size(-20px);
     }*/

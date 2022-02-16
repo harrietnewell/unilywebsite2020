@@ -3989,14 +3989,14 @@ textarea.hs-input {
     margin-right: rem-size(-20px);
   }*/
 }
-.c-block-05__media--centered {
-  text-align: center;
-}
 @media (min-width: 768px) {
-  .c-block-05__media--centered {
+  .c-block-05__media {
     width: 100%;
     max-width: 28.75rem;
   }
+}
+.c-block-05__media--centered {
+  text-align: center;
 }
 .c-block-05__media--height-md img {
   max-height: 28.125rem;
