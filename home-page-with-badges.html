@@ -380,15 +380,23 @@
 							
 							.c-block-home__media {
 								position: relative;
+								padding-left:60px;
 							}
 							
 							.c-badge {
 								position: absolute;
-								left:-45px;
+								left:-25px;
 								top:100px;
 								height:100px;
 								width:100px;
 								z-index: 1;
+								transition: width 0.1s, height 0.1s, left 0.1s, top 0.1s;
+								
+								animation: fadeIn 3s;
+								-webkit-animation: fadeIn 3s;
+								-moz-animation: fadeIn 3s;
+								-o-animation: fadeIn 3s;
+								-ms-animation: fadeIn 3s;
 							}
 							
 							.c-badge img {
@@ -398,9 +406,34 @@
 							.c-badge:hover {
 								height:110px;
 								width:110px;
-								left:-50px;
+								left:-30px;
 								top:95px;
-								transition: width 0.2s, height 0.2s, left 0.2s, top 0.2s;
+								transition: width 0.1s, height 0.1s, left 0.1s, top 0.1s;
+							}
+							
+							@keyframes fadeIn {
+							  0% {opacity:0;}
+							  100% {opacity:1;}
+							}
+
+							@-moz-keyframes fadeIn {
+							  0% {opacity:0;}
+							  100% {opacity:1;}
+							}
+
+							@-webkit-keyframes fadeIn {
+							  0% {opacity:0;}
+							  100% {opacity:1;}
+							}
+
+							@-o-keyframes fadeIn {
+							  0% {opacity:0;}
+							  100% {opacity:1;}
+							}
+
+							@-ms-keyframes fadeIn {
+							  0% {opacity:0;}
+							  100% {opacity:1;}
 							}
 							
 						</style>
