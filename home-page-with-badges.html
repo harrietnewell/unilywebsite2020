@@ -378,37 +378,55 @@
 					
 						<style type="text/css">
 							
-							.c-block-home__media {
-								position: relative;
-								padding-left:60px;
-							}
-							
 							.c-badge {
-								position: absolute;
-								left:-25px;
-								top:100px;
 								height:100px;
 								width:100px;
 								z-index: 1;
-								transition: width 0.1s, height 0.1s, left 0.1s, top 0.1s;
+							}
+
+							@media (min-width: 768px){
+							
+								.c-block-home__media {
+									position: relative;
+									padding-left:60px;
+								}
 								
-								animation: fadeIn 3s;
-								-webkit-animation: fadeIn 3s;
-								-moz-animation: fadeIn 3s;
-								-o-animation: fadeIn 3s;
-								-ms-animation: fadeIn 3s;
+								.c-badge {
+									position: absolute;
+									left:-25px;
+									top:100px;
+									opacity: 0;
+									transition: width 0.1s, height 0.1s, left 0.1s, top 0.1s;
+									
+									animation: fadeIn 2s 1.5s;
+									-webkit-animation: fadeIn 2s 1.5s;
+									-moz-animation: fadeIn 2s 1.5s;
+									-o-animation: fadeIn 2s 1.5s;
+									-ms-animation: fadeIn 2s 1.5s;
+									-webkit-animation-fill-mode: forwards;
+								}
+								
+								.c-badge img {
+									filter: drop-shadow(5px 5px 10px rgba(28, 28, 27, 0.3));
+								}
+								
+								.c-badge:hover {
+									height:110px;
+									width:110px;
+									left:-30px;
+									top:95px;
+									transition: width 0.1s, height 0.1s, left 0.1s, top 0.1s;
+								}
+							
 							}
 							
-							.c-badge img {
-								filter: drop-shadow(5px 5px 10px rgba(28, 28, 27, 0.3));
-							}
-							
-							.c-badge:hover {
-								height:110px;
-								width:110px;
-								left:-30px;
-								top:95px;
-								transition: width 0.1s, height 0.1s, left 0.1s, top 0.1s;
+							@media (max-width: 767px){
+								.c-badge {
+									margin-top:20px;
+									margin-left:auto;
+									margin-right:auto;
+									margin-bottom:-20px;
+								}
 							}
 							
 							@keyframes fadeIn {
@@ -436,18 +454,21 @@
 							  100% {opacity:1;}
 							}
 							
+							
+							
 						</style>
-					
-						<div class="c-badge">
-							<a href="#">
-								<img src="https://unilyweb2020.azureedge.net/media/qm1h44tn/forrester-wave.svg" alt="Forester Wave Badge">
-							</a>
-						</div>
 					
                         <div class="c-block-home__slidein">
                             <img src="assets/media/hero.png" class="c-block-home__img" height="594" width="800" alt="">
                             <a href="https://player.vimeo.com/video/482722821" class="link-play magnific-video"><img src="https://unilyweb2020dev.azureedge.net/media/bwkoyffj/play-black.svg" alt="" />Learn more about Unily</a>
                         </div>
+						
+						<div class="c-badge">
+							<a href="#">
+								<img src="https://unilyweb2020.azureedge.net/media/qm1h44tn/forrester-wave.svg" alt="Forester Wave Badge">
+							</a>
+						</div>
+						
                     </div>
                 </div>
             </div>
