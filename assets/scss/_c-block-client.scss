@@ -9,6 +9,8 @@
     align-items: center;
     min-height: rem-size(320px);
     font-size: rem-size(16px);
+    max-width: $site-max-width;
+    margin: auto;
 
     @media (min-width: $breakpoint-md) {
         font-size: rem-size(22px);
@@ -45,6 +47,8 @@
     &--video { // 16x7 aspect ratio
         height: rem-size(370px);
         position: relative;
+        max-width: $site-max-width;
+        margin: 0 auto;
 
         @media (min-width: $breakpoint-md) {
             min-height: rem-size(500px);
@@ -211,7 +215,6 @@
             width: rem-size(130px);
             height: rem-size(130px);
             background-size: rem-size(80px 80px);
-			
         }
 
         &:hover {

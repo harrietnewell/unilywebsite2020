@@ -352,6 +352,12 @@ th {
   max-width: none;
 }
 
+.container-mobile-rollup {
+  max-width: 1016px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .pt {
   padding-top: 2.5rem !important;
 }
@@ -3966,11 +3972,11 @@ textarea.hs-input {
     align-items: center;
   }
   .c-block-05__col:first-child {
-    padding-right: 2.875rem;
+    padding-right: 3rem;
     justify-content: flex-end;
   }
   .c-block-05__col:last-child {
-    padding-left: 2.875rem;
+    padding-left: 3rem;
     padding-bottom: 0;
   }
 }
@@ -4022,43 +4028,20 @@ textarea.hs-input {
 .c-block-05 p {
   margin-bottom: 1.875rem;
 }
-.c-block-05--alt {
-  /*.c-block-05__content {
-    @media (min-width: $breakpoint-md) {
-      text-align: right;
-    }
-  }*/
-  /*.c-block-05__media--side {
-    margin-right: 0;
-    margin-left: rem-size(-20px);
-  }*/
-}
 @media (min-width: 768px) {
   .c-block-05--alt .c-block-05__row {
     flex-direction: row-reverse;
-    /*&:before{
-      z-index: -1;
-      content: " ";
-      display: block;
-      background: $color-unily-grey-1;
-      width: rem-size(1130px);
-      position: absolute;
-      left: 50%;
-      top: 0;
-      bottom: 0;
-      margin-left: rem-size(-330px);
-    }*/
   }
 }
 @media (min-width: 768px) {
   .c-block-05--alt .c-block-05__row .c-block-05__col:first-child {
     justify-content: flex-start;
-    padding-left: 3.125rem;
+    padding-left: 3rem;
     padding-right: 1.25rem;
   }
   .c-block-05--alt .c-block-05__row .c-block-05__col:last-child {
     padding-left: 1.25rem;
-    padding-right: 2.875rem;
+    padding-right: 3rem;
     justify-content: flex-end;
   }
 }
@@ -4340,6 +4323,8 @@ textarea.hs-input {
   align-items: center;
   min-height: 20rem;
   font-size: 1rem;
+  max-width: 1920px;
+  margin: auto;
 }
 @media (min-width: 768px) {
   .c-block-client {
@@ -4374,6 +4359,8 @@ textarea.hs-input {
 .c-block-client--video {
   height: 23.125rem;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .c-block-client--video {
@@ -4667,45 +4654,6 @@ textarea.hs-input {
     transform: translateX(0);
   }
 }
-/*.c-home-animation {
-  position: relative;
-  background: url(https://unilyweb2020dev.azureedge.net/media/id2n2t3h/unily-homecircles.svg) no-repeat center center;
-  background-size: contain;
-  height: 550px;
-  width: 550px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height: 100%; //rem-size(550px);
-  max-width: rem-size(550px);
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center;
-
-  @media (max-width: $breakpoint-md-down) {
-    width: 300px; 
-    height: 300px; 
-    max-width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  &__play {
-    font: 0/0 a;
-    display: block;
-    width: rem-size(91px);
-    height: rem-size(91px);
-    background: url(https://unilyweb2020dev.azureedge.net/media/1r4pjl2r/unily-homeplay.svg) no-repeat center center;
-    background-size: rem-size(91px 91px);
-
-    @media (max-width: $breakpoint-md-down) {
-      width: 46px;
-      height: 46px;
-      background-size: rem-size(46px 46px);
-    }
-  }
-
-}*/
 @media only screen and (max-width: 767px) {
   .c-block-home .link-play {
     margin-top: 1.375rem;
@@ -4755,7 +4703,7 @@ textarea.hs-input {
 }
 @media (min-width: 768px) {
   .c-clients__header {
-    max-width: 1012px;
+    max-width: 1016px;
     margin: 0px auto 20px auto;
   }
 }
@@ -5083,7 +5031,7 @@ textarea.hs-input {
 .c-pricing {
   position: relative;
   width: 100%;
-  max-width: 56.88rem;
+  max-width: 1016px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -5159,6 +5107,12 @@ textarea.hs-input {
 }
 .c-foot a {
   color: #1C1C1B;
+}
+.c-foot__row {
+  max-width: 1016px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0;
 }
 @media (min-width: 768px) {
   .c-foot__row {

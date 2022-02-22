@@ -41,6 +41,12 @@
   max-width: none;
 }
 
+.container-mobile-rollup {
+    max-width: $site-medium-width;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 
 // Top/Bottom Padding
 

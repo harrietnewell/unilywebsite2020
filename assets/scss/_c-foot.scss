@@ -10,6 +10,11 @@
     }
 
     &__row {
+        max-width: $site-medium-width;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 0;
+
         @media (min-width: $breakpoint-md) {
             display: flex;
             justify-content: space-between;

@@ -136,49 +136,6 @@
   }
 }
 
-
-//
-
-/*.c-home-animation {
-  position: relative;
-  background: url(#{$cdn-url}media/id2n2t3h/unily-homecircles.svg) no-repeat center center;
-  background-size: contain;
-  height: 550px;
-  width: 550px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height: 100%; //rem-size(550px);
-  max-width: rem-size(550px);
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center;
-
-  @media (max-width: $breakpoint-md-down) {
-    width: 300px; 
-    height: 300px; 
-    max-width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  &__play {
-    font: 0/0 a;
-    display: block;
-    width: rem-size(91px);
-    height: rem-size(91px);
-    background: url(#{$cdn-url}media/1r4pjl2r/unily-homeplay.svg) no-repeat center center;
-    background-size: rem-size(91px 91px);
-
-    @media (max-width: $breakpoint-md-down) {
-      width: 46px;
-      height: 46px;
-      background-size: rem-size(46px 46px);
-    }
-  }
-
-}*/
-
 @media only screen and (max-width: 767px) {
   .c-block-home {
     .link-play {
