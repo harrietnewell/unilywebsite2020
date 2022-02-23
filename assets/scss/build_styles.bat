@@ -8,4 +8,6 @@ echo "building cards.css" &^
 sass --no-source-map cards.scss ../css/cards.css &^
 echo "building insight.css" &^
 sass --no-source-map insight.scss ../css/insight.css &^
+echo "building report-link.css" &^
+sass --no-source-map report-link.scss ../css/report-link.css &^
 PAUSE
