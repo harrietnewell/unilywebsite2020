@@ -4145,6 +4145,7 @@ p {
 .c-block-full--bg {
   color: #fff;
   position: relative;
+  padding-top: 4rem;
 }
 .c-block-full--bg:before {
   content: " ";
@@ -4160,9 +4161,9 @@ p {
   z-index: 1;
   position: relative;
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .c-block-full--bg {
-    padding-top: 4rem;
+    padding-top: 5.625rem;
   }
 }
 @media (min-width: 1000px) {
