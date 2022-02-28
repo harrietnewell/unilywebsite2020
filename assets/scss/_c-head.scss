@@ -10,6 +10,10 @@
 
     &--transparent {
         position: fixed !important;
+
+        @media (max-width: $breakpoint-head-down) {
+            position: static !important;
+        }
     }
 
     &--transparent:not(.scrolling) {

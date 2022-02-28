@@ -1022,6 +1022,11 @@ th {
 .c-head--transparent {
   position: fixed !important;
 }
+@media (max-width: 999px) {
+  .c-head--transparent {
+    position: static !important;
+  }
+}
 @media (min-width: 1000px) {
   .c-head--transparent:not(.scrolling) {
     background: transparent;
@@ -1368,7 +1373,7 @@ th {
   }
 }
 body.sticky-header .c-head {
-  position: fixed;
+  position: fixed !important;
 }
 body.sticky-header .c-page {
   padding-top: 3.125rem;
