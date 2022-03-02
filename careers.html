@@ -333,13 +333,40 @@
 
 	<style type="text/css">
 		
+		.teamtailor-jobs-widget {
+			padding-top: 40px;
+		}
+		
 		.teamtailor-jobs__job-wrapper {
 			display: flex;
 			flex-wrap: wrap;
 		}
 		
+		.teamtailor-jobs__job::before {
+			content: 'Careers';
+			border: .0625rem solid #288873;
+			font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;
+			border-radius: 2px;
+			color: #288873;
+			text-decoration: none;
+			white-space: nowrap;
+			max-width: 100%;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			display: inline-block;
+			font-size: .8125rem;
+			background-image: none !important;
+			line-height: 17px;
+			padding-left: 2px;
+			padding-right: 2px;
+			vertical-align: text-bottom;
+		}
+		
 		.teamtailor-jobs__job {
 			flex: 0 0 33.333333%;
+			margin-bottom: 40px;
 		}
 		
 		.teamtailor-jobs__job-title {
