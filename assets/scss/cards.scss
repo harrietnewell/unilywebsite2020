@@ -34,6 +34,7 @@
     .d-single-card {
       //width: 49%;
       width: 100%;
+      max-width: 498px;
       display: flex;
       flex-direction: column;
       position: relative;
@@ -154,7 +155,7 @@
 
     .c-block-05__content {
       @media (min-width: $breakpoint-md) {
-        max-width: rem-size(498px);
+        max-width: 498px;
       }
     }
   }

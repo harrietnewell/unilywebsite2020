@@ -18,6 +18,7 @@
 }
 .d-cards .d-cards-list .d-single-card {
   width: 100%;
+  max-width: 498px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -125,7 +126,7 @@
 }
 @media (min-width: 768px) {
   .d-cards .d-cards-list .c-block-05__content {
-    max-width: 31.125rem;
+    max-width: 498px;
   }
 }
 .d-cards .c-block-05 {
