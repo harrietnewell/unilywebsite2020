@@ -10,4 +10,6 @@ echo "building insight.css" &^
 sass --no-source-map insight.scss ../css/insight.css &^
 echo "building report-link.css" &^
 sass --no-source-map report-link.scss ../css/report-link.css &^
+echo "building careers.css" &^
+sass --no-source-map careers.scss ../css/careers.css &^
 PAUSE
