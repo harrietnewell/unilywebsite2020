@@ -274,6 +274,10 @@
         &--live:before {
             background: none;
         }
+
+        &--job:before {
+            content: none;
+        }
     }
 
     &__item--live {

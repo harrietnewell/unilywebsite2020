@@ -2380,6 +2380,9 @@ body.sticky-header .c-page--top {
 .c-metadata__item--live:before {
   background: none;
 }
+.c-metadata__item--job:before {
+  content: none;
+}
 .c-metadata__item--live {
   font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
