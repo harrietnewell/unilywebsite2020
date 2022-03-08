@@ -111,9 +111,7 @@ var unilyApp = {
             $('.scroll-to-section li.js-nav-link a').on('click', function (e) {
 
                 handleNavToggle();
-                //$('.scroll-to-section li.js-nav-link a').removeClass('active');
-                //$(this).addClass('active');
-
+                
                 const $target = $($(this).attr('href'));
 
                 if ($target.length > 0) { // item with that id exists
@@ -122,7 +120,8 @@ var unilyApp = {
                         scrollTop: $target.offset().top - 50 // Scroll to this location.
                     }, {
                         duration: 400,
-                        step: function (now, fx) {
+                            step: function (now, fx) {
+
                             //  location will change as images etc. are lazy loaded
                             //  Where is the target now located on the page?
                             let realPos = $target.offset().top - 50;
@@ -133,17 +132,6 @@ var unilyApp = {
                     });
                 }
             });
-
-            // TODO - Delete? Removed at request of Chris Saville (29/06/2021) as dynamic highlighting no longer wn
-            //$(window).on('scroll', function () {
-            //    $('.id-section').each(function () {
-            //        if ($(window).scrollTop() >= $(this).offset().top - 51) {
-            //            var id = $(this).attr('id');
-            //            $('.scroll-to-section li.js-nav-link a').removeClass('active');
-            //            $('.scroll-to-section li.js-nav-link a[href=\\#' + id + ']').addClass('active');
-            //        }
-            //    });
-            //});
         }
 
         // Insights horizontal navigation

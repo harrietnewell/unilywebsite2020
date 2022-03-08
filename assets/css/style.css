@@ -683,12 +683,6 @@ th {
   }
 }
 
-/*
-// TODO:DELETE
-.c-article__side * + .heading-03 {
-  margin-top: rem-size(40px);
-}
-*/
 @media (min-width: 768px) {
   .heading-04, .heading-04-alt {
     font-size: 1.75rem;
@@ -2449,57 +2443,6 @@ p.c-metadata__item + p.c-metadata__item {
     opacity: 1;
   }
 }
-.c-article {
-  /* 
-  // TODO:DELETE
-     &__content {
-     font-size: rem-size(18px);
-     line-height: 1.4;
-
-     @media (max-width: $breakpoint-md-down) {
-       margin-bottom: rem-size(30px);
-     }
-
-     img:not(.img-alt) {
-       max-width: 100%;
-       height: auto;
-     }
-
-     a:not(.btn):not(.tag) {
-       background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue);
-       background-position: 0% 100%;
-       background-repeat: no-repeat;
-       background-size: 0% 2px;
-       transition: background-size .3s;
-       padding-bottom: 2px;
-     }
-
-     a:not(.btn):not(.tag):hover {
-       background-size: 100% 2px;
-     }
-
-     blockquote {
-       font-size: rem-size(22px);
-       border-left: 2px solid $color-unily-light-blue;
-       margin-left: 0;
-       padding-left: rem-size(20px);
-
-       footer {
-         font-size: rem-size(14px);
-       }
-     }
-
-     ul {
-       padding-left: 1.2rem;
-     }
-     ol {
-       padding-left: 1.3rem;
-     }
-     li {
-       margin-bottom: rem-size(5px);
-     }
-   }*/
-}
 .c-article__header {
   margin-bottom: 1.5rem;
   font-size: 1.25rem;
@@ -2892,14 +2835,6 @@ p.c-metadata__item + p.c-metadata__item {
   margin-bottom: 3.75rem;
 }
 
-/*
-// TODO:DELETE
-@media (min-width: $breakpoint-md) {
-  .c-article__content .c-tags__list {
-    margin-top: rem-size(30px);
-  }
-}
-*/
 .c-category-nav {
   display: flex;
   align-items: center;
@@ -6381,15 +6316,6 @@ button.ot-sdk-show-settings:hover {
   overflow: auto;
 }
 
-/*
-TODO:DELETE
-.c-article__content {
-  .container {
-    padding: 0;
-    margin-bottom: 1.25rem;
-  }
-}
-*/
 .c-content .c-testimonials__item--lg, .c-article .c-testimonials__item--lg {
   width: 100%;
 }
@@ -7177,14 +7103,6 @@ TODO:DELETE
   z-index: 1 !important;
 }
 
-/*
-// TODO:DELETE
-.c-article__side-container {
-	.c-articles__media {
-		margin-bottom: 10px;
-	}
-}
-*/
 .youtube-subscribe-btn {
   background-color: #ff0000;
   border: none;

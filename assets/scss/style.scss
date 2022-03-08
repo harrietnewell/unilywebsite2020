@@ -1,30 +1,23 @@
-// Hello.
-
+// Style
 
 // Functions
 @import "functions"; 
 
-
 // Variables
 @import "variables"; 
-
 
 // Normalize
 @import "normalize";
 
-
 // Base
 @import "base";
-
 
 // Helpers
 @import "helpers"; // Custom Styles
 
-
 // Components
 @import "c-head"; // Page header with basic navigation
 @import "c-head-sticky"; // Sticky header styles
-// @import "c-dropdown"; // Desktop Dropdown  // TODO - Delete this file, no longer used
 @import "c-subnav"; // Navigation used in mobile and dropdown
 @import "c-navigation"; // Navgigation - // TODO - remove redundant styles from above references for old nav
 @import "c-subscribe"; // Subscribe
@@ -46,7 +39,6 @@
 @import "c-block-subscribe"; // Subscribe block on dark blue bg
 @import "c-block-home"; // Home page hero
 @import "c-clients";
-// @import "c-more"; // TODO - Delete this file, no longer used
 @import "c-agenda";
 @import "c-table";
 @import "c-foot";
@@ -54,7 +46,6 @@
 @import "c-video";
 @import "c-box";
 @import "c-404";
-//@import "c-loading";
 @import "c-cookies";
 @import "c-testimonials";
 @import "c-content"; // Pillar pages
@@ -67,7 +58,6 @@
 
 @import "simplebar"; 
 
-
 // Other
 @import "other";
 
@@ -75,7 +65,5 @@
 // Print
 @import "print";
 
-
-// Additional added by Amina
-
+// Additional styles
 @import "additional";

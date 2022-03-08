@@ -29,56 +29,6 @@
 	margin-bottom: rem-size(30px);
   }
 
-  /* 
-	// TODO:DELETE
-    &__content {
-    font-size: rem-size(18px);
-    line-height: 1.4;
-
-    @media (max-width: $breakpoint-md-down) {
-      margin-bottom: rem-size(30px);
-    }
-
-    img:not(.img-alt) {
-      max-width: 100%;
-      height: auto;
-    }
-
-    a:not(.btn):not(.tag) {
-      background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue);
-      background-position: 0% 100%;
-      background-repeat: no-repeat;
-      background-size: 0% 2px;
-      transition: background-size .3s;
-      padding-bottom: 2px;
-    }
-
-    a:not(.btn):not(.tag):hover {
-      background-size: 100% 2px;
-    }
-
-    blockquote {
-      font-size: rem-size(22px);
-      border-left: 2px solid $color-unily-light-blue;
-      margin-left: 0;
-      padding-left: rem-size(20px);
-
-      footer {
-        font-size: rem-size(14px);
-      }
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-    ol {
-      padding-left: 1.3rem;
-    }
-    li {
-      margin-bottom: rem-size(5px);
-    }
-  }*/
-
   &__heading {
     font-size: rem-size(28px);
     line-height: 1.2;
