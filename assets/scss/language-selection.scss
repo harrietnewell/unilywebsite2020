@@ -1,0 +1,46 @@
+// Language Selection
+#language-icon {
+    position: relative;
+    top: 3px;
+}
+
+#language-control {
+    position: relative;
+}
+
+a#language-selector:hover {
+    background: none !important;
+}
+
+#languages {
+    position: absolute;
+    left: -18px;
+    bottom: 36px;
+    background: #FFF;
+    border-radius: 5px;
+    padding: 20px 40px 20px 20px;
+    -webkit-box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.3);
+    display: none;
+}
+
+#languages-arrow {
+    position: absolute;
+    left: 10px;
+    bottom: -5px;
+    height: 30px;
+    width: 30px;
+    background: #FFF;
+    border-radius: 3px;
+    transform: rotate(315deg);
+    z-index: 11;
+}
+
+#languages ul {
+    padding: 0;
+}
+
+#languages ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}

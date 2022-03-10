@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/language-selection.css" rel="stylesheet">
 	<link href="assets/css/vendor/magnific-popup-1.1.0.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     
@@ -425,120 +426,6 @@
 							</li>
                         </ul>
                     </div>
-					
-					<script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
-					
-					<script type="text/javascript">
-						
-						var unilyLanguageSelection = {
-						
-							languageSelectorElementSelector: '#language-selector',
-							languagesListElementSelector: '#languages',
-							languageElementSelector: '#languages-list li a',
-						
-							assignCloseLanguagesEvents: function() {
-								setTimeout(function() {
-									$(unilyLanguageSelection.languageSelectorElementSelector).unbind();
-									$(document).on('click', unilyLanguageSelection.hideLanguagesList);
-								}, 100);
-							},
-						
-							assignOpenLanguagesEvents: function() {
-								setTimeout(function() {
-									unilyLanguageSelection.assignLanguageSelectorClick();
-									$(document).off('click', unilyLanguageSelection.hideLanguagesList);
-								}, 100);
-							},
-						
-							showLanguagesList: function() {
-								$(unilyLanguageSelection.languagesListElementSelector).fadeIn();
-								unilyLanguageSelection.assignCloseLanguagesEvents();
-							},
-						
-							hideLanguagesList: function() {
-								$(unilyLanguageSelection.languagesListElementSelector).fadeOut();
-								unilyLanguageSelection.assignOpenLanguagesEvents();
-							},
-						
-							assignLanguageSelectorClick: function() {
-								$(unilyLanguageSelection.languageSelectorElementSelector).on('click', function(e) {
-									e.preventDefault();
-									unilyLanguageSelection.showLanguagesList();
-								});
-							},
-							
-							setLanguage: function(element) {
-								// TODO - Implement language selection logic
-								$('#language-selector span').text($(element).text());
-							},
-							
-							init: function() {
-						
-								unilyLanguageSelection.assignLanguageSelectorClick();
-						
-								$(unilyLanguageSelection.languageElementSelector).on('click', function(e) {
-									e.preventDefault();
-									unilyLanguageSelection.setLanguage(this);
-									unilyLanguageSelection.hideLanguagesList();
-								});
-							}
-						}
-						
-						unilyLanguageSelection.init();
-					
-					</script>
-					
-					<style type="text/css">
-					
-						#language-icon {
-							position:relative;
-							top:3px;
-						}
-					
-						#language-control {
-							position:relative;
-						}
-						
-						a#language-selector:hover {
-							background:none !important;
-						}
-					
-						#languages {
-							position:absolute;
-							left:-18px;
-							bottom:36px;
-							background: #FFF;
-							border-radius: 5px;
-							padding:20px 40px 20px 20px;
-							-webkit-box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.3); 
-							box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.3);
-							display:none;
-						}
-						
-						#languages-arrow {
-							position:absolute;
-							left: 10px;
-							bottom:-5px;
-							height:30px;
-							width:30px;
-							background:#FFF;
-							border-radius: 3px;
-							transform: rotate(315deg);
-							z-index:11;
-						}
-					
-						#languages ul
-						{
-							padding:0;
-						}
-					
-						#languages ul li
-						{
-							list-style-type:none;
-							margin-bottom:10px;
-						}
-					</style>
-					
                     <div class="c-foot-nav__col">
                         <div class="c-foot__heading">Solutions</div>
                         <ul class="c-foot__nav">
@@ -654,6 +541,7 @@
 <script src="assets/js/vendor/magnific-popup-1.1.0.min.js"></script>
 <script src="assets/js/videopopup.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/languageselection.js"></script>
 <script type="text/javascript">
 	unilyVideoPopup.init($('#popupVideo1'));
 </script>
