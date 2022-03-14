@@ -1693,7 +1693,7 @@ body.sticky-header .c-page--top {
   }
 
   .dropdown .firstlevel.sub-menu-clm-three {
-    width: 700px;
+    width: auto;
     -webkit-columns: 3;
     -moz-columns: 3;
     columns: 3;
