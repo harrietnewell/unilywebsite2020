@@ -10,7 +10,7 @@
   justify-content: center;
 
   &__col {
-    width: rem-size(400px);
+    width: 400px;
     flex: 0 1 33.333333%;
     padding-left: rem-size(10px);
     padding-right: rem-size(10px);
@@ -20,7 +20,7 @@
     overflow: hidden;
 
     @media (max-width: $breakpoint-md-down) {
-      width: rem-size(300px);
+      width: 300px;
       flex: 0 0 100%;
     }
   }

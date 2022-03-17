@@ -353,7 +353,7 @@ th {
 }
 
 .container-mobile-rollup {
-  max-width: 1016px;
+  max-width: 1280px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -6074,7 +6074,7 @@ button.ot-sdk-show-settings:hover {
   justify-content: center;
 }
 .c-testimonials__col {
-  width: 25rem;
+  width: 400px;
   flex: 0 1 33.333333%;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -6085,7 +6085,7 @@ button.ot-sdk-show-settings:hover {
 }
 @media (max-width: 767px) {
   .c-testimonials__col {
-    width: 18.75rem;
+    width: 300px;
     flex: 0 0 100%;
   }
 }
