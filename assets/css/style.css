@@ -1137,6 +1137,9 @@ th {
     margin-top: 0.4375rem;
   }
 }
+.c-logo a img:hover {
+  cursor: pointer;
+}
 .c-logo__img {
   width: 4.875rem;
   height: auto;
@@ -3717,7 +3720,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.5625rem;
+  padding: 25px 40px;
 }
 .c-block-02__content > *:last-child {
   margin-bottom: 0;

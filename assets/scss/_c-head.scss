@@ -135,6 +135,10 @@
 	@media (max-width: $breakpoint-head-down) and (-ms-high-contrast:none) {
 		margin-top: rem-size(7px);
 	}
+
+    img:hover {
+        cursor:pointer;
+    }
   }
 
   &__img {
