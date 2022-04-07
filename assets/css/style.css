@@ -1084,6 +1084,22 @@ th {
   line-height: 1.75;
 }
 
+.flex-1 {
+  flex: 1 0 0;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.d-flex {
+  display: flex;
+}
+
 .c-head {
   color: #fff;
   background: #112a3f;
@@ -7379,6 +7395,19 @@ button.ot-sdk-show-settings:hover {
   margin-bottom: 0 !important;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pt-4 {
   padding-top: 1.5rem !important;
 }
@@ -7867,6 +7896,22 @@ li {
   .c-widget__media .c-embed--video {
     width: 100% !important;
   }
+}
+
+.flex-1 {
+  flex: 1 0 0;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.d-flex {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

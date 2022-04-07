@@ -100,6 +100,19 @@
   margin-bottom: 0 !important;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pt-4 {
   padding-top: 1.5rem !important;
 }
@@ -675,4 +688,20 @@ li {
   @media (min-width: $breakpoint-md) {
     width: 100% !important;
   }
+}
+
+.flex-1 {
+  flex: 1 0 0;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.d-flex {
+  display: flex;
 }

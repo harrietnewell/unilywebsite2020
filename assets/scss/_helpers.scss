@@ -837,3 +837,20 @@
 .leading-03 {
   line-height: 1.75;
 }
+
+// Flex
+.flex-1 {
+  flex: 1 0 0;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.d-flex {
+  display: flex;
+}
