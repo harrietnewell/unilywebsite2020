@@ -35,7 +35,7 @@
       color: $color-unily-light-blue; //$color-white;
       height: rem-size(46px);
       border-color: rgba($color-white, 0.7);
-      
+
       &::placeholder {
         color: rgba($color-white, 0.7); //$color-08; //$color-07; //$color-unily-grey-3;
       }
@@ -46,7 +46,6 @@
         box-shadow: inset 0 0 0 1px $color-unily-light-blue;
         //color: $color-unily-light-blue !important;
       }
-
     }
 
     .hs-submit {
@@ -61,12 +60,13 @@
   }
 
   &--meeting-link {
-      line-break: anywhere;
+    line-break: anywhere;
   }
 }
 
-/*.c-subscribe .c-form--subscribe,*/ .c-block-home .c-form--subscribe {
-   @media (min-width: $breakpoint-md) {
+/*.c-subscribe .c-form--subscribe,*/
+.c-block-home .c-form--subscribe {
+  @media (min-width: $breakpoint-md) {
     text-align: left;
   }
 
@@ -75,7 +75,8 @@
   }
 }
 
-.c-block-home .c-form--subscribe {
+.c-block-home .c-form--subscribe,
+.c-block-cloud .c-form--subscribe {
   .hs-richtext {
     color: $color-01 !important;
   }
@@ -95,7 +96,7 @@
 }
 
 .c-block-subscribe {
-    .hs-main-font-element {
+  .hs-main-font-element {
     color: inherit !important;
   }
 }
@@ -156,7 +157,7 @@
   color: $color-unily-pink;
   width: rem-size(18px);
   height: rem-size(18px);
-  line-height:rem-size(18px);
+  line-height: rem-size(18px);
 }
 
 .hs-form-checkbox input[type="checkbox"] {
@@ -227,8 +228,12 @@
   }
 }
 
-select.hs-input{color:#999;}
-select.hs-input:focus{color:$color-unily-light-blue;}
+select.hs-input {
+  color: #999;
+}
+select.hs-input:focus {
+  color: $color-unily-light-blue;
+}
 
 .hs-main-font-element {
   color: $color-unily-black !important;
@@ -277,7 +282,8 @@ select.hs-input:focus{color:$color-unily-light-blue;}
   color: $color-unily-light-blue !important;
 }
 
-.hs-fieldtype-radio  > label, .hs-fieldtype-checkbox  > label {
+.hs-fieldtype-radio > label,
+.hs-fieldtype-checkbox > label {
   display: block !important;
   font-size: rem-size(16px);
   font-weight: bold;
@@ -316,8 +322,8 @@ select.hs-input:focus{color:$color-unily-light-blue;}
 }
 
 textarea.hs-input {
-    height: rem-size(92px); //rem-size(120px);
-  }
+  height: rem-size(92px); //rem-size(120px);
+}
 
 .hs-button {
   border-radius: rem-size(2px);
@@ -347,22 +353,22 @@ textarea.hs-input {
 }
 
 .hs-richtext {
-    font-size: rem-size(16px) !important;
-    color: $color-01 !important;
+  font-size: rem-size(16px) !important;
+  color: $color-01 !important;
 
-    a {
-        color: $color-unily-light-blue !important;
-        background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue) !important;
-        background-position: 0% 100% !important;
-        background-repeat: no-repeat !important;
-        background-size: 0% 2px !important;
-        transition: background-size .3s !important;
-        padding-bottom: 2px !important;
+  a {
+    color: $color-unily-light-blue !important;
+    background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue) !important;
+    background-position: 0% 100% !important;
+    background-repeat: no-repeat !important;
+    background-size: 0% 2px !important;
+    transition: background-size 0.3s !important;
+    padding-bottom: 2px !important;
 
-        &:hover {
-            background-size: 100% 2px !important;
-        }
+    &:hover {
+      background-size: 100% 2px !important;
     }
+  }
 }
 
 .hs-error-msgs {
@@ -387,7 +393,7 @@ textarea.hs-input {
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
-    transition: background-size .3s;
+    transition: background-size 0.3s;
     padding-bottom: 2px;
 
     &:hover {

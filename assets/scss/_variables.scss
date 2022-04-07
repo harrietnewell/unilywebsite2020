@@ -1,63 +1,57 @@
 // Variables
 
-
 // Paths
-$cdn-url: '';
-@if variable-exists(cdn-url-override)
-{
-    $cdn-url: $cdn-url-override;
-}
-@else
-{
-    $cdn-url: 'https://unilyweb2020dev.azureedge.net/';
+$cdn-url: "";
+@if variable-exists(cdn-url-override) {
+  $cdn-url: $cdn-url-override;
+} @else {
+  $cdn-url: "https://unilyweb2020dev.azureedge.net/";
 }
 
 //$fonts-path:  '../fonts/'; // #{$fonts-path}
 
-
 // Fonts
 
-$font:        Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-alt:    'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
+$font: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-alt: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Font sizes (for rem-px function)
 
 $rem-size-base: 16px;
-
 
 // Colors
 
 $color-white: #fff;
 
 // Colours from the Style Guide
-$color-unily-light-blue: #3EC8ED;
-$color-unily-green: #3FC3A3;
-$color-unily-yellow: #FCDA0E;
-$color-unily-orange: #FF8A00;
-$color-unily-pink: #FF2896;
-$color-unily-purple: #B479FF;
-$color-unily-dark-blue: #112A3F;
-$color-unily-mid-blue: #3A90A8;
-$color-unily-black: #1C1C1B;
-$color-unily-white: #FFFFFF;
+$color-unily-light-blue: #3ec8ed;
+$color-unily-green: #3fc3a3;
+$color-unily-yellow: #fcda0e;
+$color-unily-orange: #ff8a00;
+$color-unily-pink: #ff2896;
+$color-unily-purple: #b479ff;
+$color-unily-dark-blue: #112a3f;
+$color-unily-mid-blue: #3a90a8;
+$color-unily-black: #1c1c1b;
+$color-unily-white: #ffffff;
 $color-unily-grey-4: #777777;
-$color-unily-grey-3: #C7C7C7;
-$color-unily-grey-1: #F5F5F5;
+$color-unily-grey-3: #c7c7c7;
+$color-unily-grey-1: #f5f5f5;
 
 // Other Colors
 $color-01: #666;
-$color-02: #DCDCDC;
-$color-03: #1B3449; //search navbar bg 
+$color-02: #dcdcdc;
+$color-03: #1b3449; //search navbar bg
 $color-04: #333333;
 $color-05: #ff0000;
-$color-06: #C8c8c8;
+$color-06: #c8c8c8;
 $color-07: #999999;
 $color-08: #b4b4b4;
+$color-white-alpha: rgba($color-white, 0.7);
 
 // Site Width
 $site-max-width: 1920px;
-$site-medium-width: 1016px;
+$site-medium-width: 1080px;
 $site-client-elements-width: 1280px;
 
 // Grid Gutter

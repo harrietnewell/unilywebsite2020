@@ -33,7 +33,7 @@
   width: 5rem;
   height: 5rem;
   transform: translate3d(-40px, -40px, 0);
-  background: #3EC8ED;
+  background: #3ec8ed;
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -75,3 +75,5 @@
     height: 0;
   }
 }
+
+/*# sourceMappingURL=loading.css.map */

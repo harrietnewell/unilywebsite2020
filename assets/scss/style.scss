@@ -1,10 +1,10 @@
 // Style
 
 // Functions
-@import "functions"; 
+@import "functions";
 
 // Variables
-@import "variables"; 
+@import "variables";
 
 // Normalize
 @import "normalize";
@@ -21,19 +21,20 @@
 @import "c-subnav"; // Navigation used in mobile and dropdown
 @import "c-navigation"; // Navgigation - // TODO - remove redundant styles from above references for old nav
 @import "c-subscribe"; // Subscribe
-@import "c-search"; // Search 
+@import "c-search"; // Search
 @import "c-articles"; // + Metadata
 @import "c-article"; // + Share
-@import "c-pagination"; 
+@import "c-pagination";
 @import "c-breadcrumb";
-@import "c-tags"; 
+@import "c-tags";
 @import "c-category-nav";
-@import "c-form"; 
-@import "c-guide"; 
-@import "c-alert"; 
+@import "c-form";
+@import "c-guide";
+@import "c-alert";
 @import "c-blocks"; // 01-04 various layouts (2 column blocks)
 @import "c-block-full"; // Full width+height block with image on the left covering top of the page
 @import "c-block-about"; // About page
+@import "c-block-cloud"; // Cloud Intranet page
 @import "c-block-columns"; // 3 column layouts (with steps)
 @import "c-block-client"; //Client blocks (full width with bg image or video and text overlay)
 @import "c-block-subscribe"; // Subscribe block on dark blue bg
@@ -56,11 +57,10 @@
 @import "c-video-modal";
 @import "c-padding";
 
-@import "simplebar"; 
+@import "simplebar";
 
 // Other
 @import "other";
-
 
 // Print
 @import "print";

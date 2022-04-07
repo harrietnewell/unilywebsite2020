@@ -1,6 +1,5 @@
 // Content Blocks
 
-
 // Block with partial grey bg on alternating rows
 // TODO - Delete when sure not needed anymore (22/02/2022)
 /*.c-block-01 {
@@ -101,10 +100,10 @@
         //padding-left: 0;
         //padding-right: rem-size(20px);
       }*/
-      /*.c-block-01__media--img-side {
+/*.c-block-01__media--img-side {
         text-align: right !important;
       }*/
-      /*.c-block-01__content {
+/*.c-block-01__content {
         padding-left: rem-size(20px);
         //padding-right: rem-size(60px); 
 
@@ -168,7 +167,7 @@
       //text-align: right;
 
       .c-block-01__content {*/
-        /*&:before{
+/*&:before{
           z-index: -1;
           content: " ";
           display: block;
@@ -180,7 +179,7 @@
           bottom: 0;
           margin-left: rem-size(-330px);
         }*/
-      /*}
+/*}
     }
   }
 
@@ -204,12 +203,11 @@
 
 }*/
 
-
 // Block for clients (squares)
 .c-block-02 {
   font-size: rem-size(16px);
   margin-left: rem-size(-20px);
-  margin-right: rem-size(-20px); 
+  margin-right: rem-size(-20px);
 
   @media (min-width: $breakpoint-md) {
     display: flex;
@@ -251,7 +249,6 @@
   }
 }
 
-
 // 2 column layout, currently on About page
 .c-block-03 {
   margin-bottom: rem-size(30px);
@@ -273,12 +270,12 @@
 
     &--alt {
       & > *:last-child {
-         grid-column: 1;
-         grid-row: 1;
+        grid-column: 1;
+        grid-row: 1;
       }
       & > *:first-child {
-         grid-column: 2;
-         grid-row: 1;
+        grid-column: 2;
+        grid-row: 1;
       }
     }
 
@@ -336,7 +333,6 @@
     width: 100% !important;
   }
 }
-
 
 // 2 column layout on various backrounds
 // TODO - Delete when sure not needed anymore (22/02/2022)
@@ -487,157 +483,164 @@
   }
 }*/
 
-
 // 2 column layout
 .c-block-05 {
-    margin-top: rem-size(30px);
-    //margin-bottom: rem-size(25px);
-    overflow: hidden;
+  margin-top: rem-size(30px);
+  //margin-bottom: rem-size(25px);
+  overflow: hidden;
+
+  @media (min-width: $breakpoint-md) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__row {
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+      max-width: $site-medium-width;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: rem-size(60px);
+      padding-bottom: rem-size(60px);
+    }
+  }
+
+  &__col {
+    @media (max-width: $breakpoint-md-down) {
+      padding-left: rem-size(20px);
+      padding-right: rem-size(20px);
+    }
+    //padding-top: rem-size(30px);
+    padding-bottom: rem-size(30px);
+
+    &:last-child {
+      padding-bottom: rem-size(25px);
+      //padding-bottom: 0;
+    }
 
     @media (min-width: $breakpoint-md) {
-        margin-top: 0;
-        margin-bottom: 0;
+      flex: 0 0 50%;
+      display: flex;
+      padding-bottom: 0;
+      align-items: center;
+      //background: rgba(green,0.2);
+      &:first-child {
+        padding-right: rem-size(48px);
+        justify-content: flex-end;
+      }
+
+      &:last-child {
+        padding-left: rem-size(48px);
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__content {
+    @media (min-width: $breakpoint-md) {
+      // max-width: rem-size(460px);
+      //align-self: center;
+      margin-bottom: 0;
+      padding-right: rem-size(64px);
     }
 
-    &__row {
-        @media (min-width: $breakpoint-md) {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: stretch;
-            max-width: $site-medium-width;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-top: rem-size(60px);
-            padding-bottom: rem-size(60px);
-        }
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__media {
+    font: 0/0 a;
+
+    @media (min-width: $breakpoint-md) {
+      width: 100%;
+      // max-width: rem-size(460px);
     }
 
-    &__col {
-        @media (max-width: $breakpoint-md-down) {
-            padding-left: rem-size(20px);
-            padding-right: rem-size(20px);
-        }
-        //padding-top: rem-size(30px);
-        padding-bottom: rem-size(30px);
-
-        &:last-child {
-            padding-bottom: rem-size(25px);
-            //padding-bottom: 0;
-        }
-
-        @media (min-width: $breakpoint-md) {
-            flex: 0 0 50%;
-            display: flex;
-            padding-bottom: 0;
-            align-items: center;
-            //background: rgba(green,0.2);
-            &:first-child {
-                padding-right: rem-size(48px);
-                justify-content: flex-end;
-            }
-
-            &:last-child {
-                padding-left: rem-size(48px);
-                padding-bottom: 0;
-            }
-        }
+    @media (min-width: $breakpoint-md) {
+      //align-self: center;
     }
 
-    &__content {
-        @media (min-width: $breakpoint-md) {
-            max-width: rem-size(460px);
-            //align-self: center;
-            margin-bottom: 0;
-        }
-
-        > *:last-child {
-            margin-bottom: 0;
-        }
+    &--centered {
+      text-align: center;
     }
-
-    &__media {
-        font: 0/0 a;
-
-        @media (min-width: $breakpoint-md) {
-            width: 100%;
-            max-width: rem-size(460px);
-        }
-
-        @media (min-width: $breakpoint-md) {
-            //align-self: center;
-        }
-
-        &--centered {
-            text-align: center;
-        }
-        /*&--side {
+    /*&--side {
       margin-right: rem-size(-20px);
     }*/
-        &--height-md {
-            img {
-                max-height: rem-size(450px);
-                width: auto;
-            }
-        }
+    &--height-md {
+      img {
+        max-height: rem-size(450px);
+        width: auto;
+      }
+    }
 
+    @media (min-width: $breakpoint-md) {
+      &--width-md {
+        img {
+          // max-width: rem-size(460px);
+          width: 100%;
+        }
+      }
+
+      &--height-sm {
+        img {
+          max-height: rem-size(370px);
+          width: auto;
+        }
+      }
+
+      &--height-md {
+        img {
+          max-height: rem-size(530px);
+        }
+      }
+    }
+  }
+
+  .heading-01-alt {
+    margin-bottom: rem-size(20px);
+    margin-left: 0;
+  }
+
+  p {
+    margin-bottom: rem-size(30px);
+  }
+
+  &--alt {
+    .c-block-05__row {
+      @media (min-width: $breakpoint-md) {
+        flex-direction: row-reverse;
+      }
+
+      .c-block-05__col {
         @media (min-width: $breakpoint-md) {
-            &--width-md {
-                img {
-                    max-width: rem-size(460px);
-                    width: 100%;
-                }
-            }
+          &:first-child {
+            justify-content: flex-start;
+            // padding-left: 48px;
+            padding-right: 0px;
+          }
 
-            &--height-sm {
-                img {
-                    max-height: rem-size(370px);
-                    width: auto;
-                }
-            }
-
-            &--height-md {
-                img {
-                    max-height: rem-size(530px);
-                }
-            }
+          &:last-child {
+            padding-left: 0px;
+            // padding-right: 48px;
+            justify-content: flex-end;
+          }
         }
-    }
+      }
 
-    .heading-01-alt {
-        margin-bottom: rem-size(20px);
-        margin-left: 0;
-    }
-
-    p {
-        margin-bottom: rem-size(30px);
-    }
-
-    &--alt {
-        .c-block-05__row {
-            @media (min-width: $breakpoint-md) {
-                flex-direction: row-reverse;
-            }
-
-            .c-block-05__col {
-                @media (min-width: $breakpoint-md) {
-                    &:first-child {
-                        justify-content: flex-start;
-                        padding-left: 48px;
-                        padding-right: 0px;
-                    }
-
-                    &:last-child {
-                        padding-left: 0px;
-                        padding-right: 48px;
-                        justify-content: flex-end;
-                    }
-                }
-            }
+      @media (min-width: $breakpoint-md) {
+        .c-block-05__content {
+          padding-right: 0;
+          padding-left: rem-size(64px);
         }
+      }
     }
+  }
 }

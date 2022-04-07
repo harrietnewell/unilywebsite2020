@@ -1,0 +1,108 @@
+//
+
+.c-block-cloud {
+  &__wrap {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: $color-unily-dark-blue; //linear-gradient(90deg, #3EC8ED 0%, #3FC3A3 100%);
+    color: $color-white;
+
+    @media (max-width: $breakpoint-md-down) {
+      height: calc(100vh - 50px);
+    }
+
+    &__heading {
+      margin: 0;
+      font-weight: normal;
+
+      @media (max-width: $breakpoint-md-down) {
+        font-size: rem-size(30px);
+      }
+    }
+  }
+
+  &__heading {
+    font-size: rem-size(54px);
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: rem-size(20px);
+    margin-left: 0;
+
+    @media (max-width: $breakpoint-md-down) {
+      font-size: rem-size(30px);
+    }
+
+    strong {
+      font-family: $font-alt;
+      font-size: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &__content {
+    @media (min-width: $breakpoint-md) {
+      flex: 0 0 50%;
+      padding-left: 0px;
+      padding-right: rem-size(20px);
+    }
+  }
+
+  &__list {
+    &-item {
+      line-height: 1.75;
+    }
+  }
+
+  &__info {
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
+
+  &__form {
+    background: #fff;
+    border-radius: 0.5rem;
+    max-width: 32.5rem;
+    width: 100%;
+    padding: rem-size(30px) rem-size(30px) rem-size(32px);
+    color: #1c1c1b;
+    position: relative;
+    box-shadow: 0 0 8px rgb(0 0 0 / 60%);
+    text-align: left;
+    margin: auto 0;
+  }
+
+  &__brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-item {
+      opacity: 0.75;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:not(:first-child) {
+        margin-left: rem-size(25px);
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: rem-size(-15px);
+    max-width: $site-medium-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: rem-size(15px);
+    padding-bottom: rem-size(15px);
+    &__wrap {
+      overflow: hidden;
+    }
+  }
+}
