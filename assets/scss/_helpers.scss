@@ -28,6 +28,10 @@
   max-width: rem-size(870px);
 }
 
+.container-main {
+  max-width: rem-size(1080px);
+}
+
 .container-md {
   max-width: rem-size(1220px);
 }
@@ -814,15 +818,21 @@
   list-style: none;
   padding-left: 0;
 
+  li {
+    display: flex;
+    align-items: center;
+  }
+
   > li:before {
     content: "";
     display: inline-flex;
-    width: rem-size(20px);
-    height: rem-size(20px);
+    width: rem-size(16px);
+    height: rem-size(16px);
     margin-right: rem-size(10px);
     background-image: url("../../assets/img/icon-tick.svg");
     background-size: 100% 100%;
-    vertical-align: middle;
+    position: relative;
+    top: rem-size(-1px);
   }
 
   &--dark {
@@ -836,21 +846,4 @@
 
 .leading-03 {
   line-height: 1.75;
-}
-
-// Flex
-.flex-1 {
-  flex: 1 0 0;
-}
-
-.align-items-end {
-  align-items: flex-end;
-}
-
-.justify-content-end {
-  justify-content: flex-end;
-}
-
-.d-flex {
-  display: flex;
 }

@@ -72,6 +72,10 @@
   margin-top: 1.5rem !important;
 }
 
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
 .mt-2 {
   margin-top: 0.5rem !important;
 }
@@ -82,6 +86,10 @@
 
 .mb-5 {
   margin-bottom: 2.5rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
 }
 
 .mb-3 {
@@ -113,8 +121,45 @@
   margin-right: auto;
 }
 
+.my-3 {
+  @extend .mt-3;
+  @extend .mb-3;
+}
+
+.my-4 {
+  @extend .mt-4;
+  @extend .mb-4;
+}
+
+.p-0 {
+  padding-top: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+
+.pt-5 {
+  padding-top: 3rem !important;
+}
+
 .pt-4 {
   padding-top: 1.5rem !important;
+}
+
+.pt-3 {
+  padding-top: 1rem !important;
+}
+
+.pt-2 {
+  padding-top: 0.5rem !important;
+}
+
+.pt-1 {
+  padding-top: 0.25rem !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
 }
 
 .pb-5 {
@@ -127,6 +172,10 @@
 
 .pb-3 {
   padding-bottom: 1rem !important;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem !important;
 }
 
 .pb-1 {
@@ -149,6 +198,10 @@
   padding-right: 1rem !important;
 }
 
+.pr-2 {
+  padding-right: 0.5rem !important;
+}
+
 .pr-1 {
   padding-right: 0.25rem !important;
 }
@@ -169,12 +222,41 @@
   padding-left: 1rem !important;
 }
 
+.pl-2 {
+  padding-left: 0.5rem !important;
+}
+
 .pl-1 {
   padding-left: 0.25rem !important;
 }
 
 .pl-0 {
   padding-left: 0 !important;
+}
+
+.py-5 {
+  @extend .pt-5;
+  @extend .pb-5;
+}
+
+.px-0 {
+  @extend .pl-0;
+  @extend .pr-0;
+}
+
+.px-1 {
+  @extend .pl-1;
+  @extend .pr-1;
+}
+
+.px-2 {
+  @extend .pl-2;
+  @extend .pr-2;
+}
+
+.px-3 {
+  @extend .pl-3;
+  @extend .pr-3;
 }
 
 .position-relative {
@@ -196,6 +278,16 @@
 
 @media (min-width: 992px) {
   .d-lg-none {
+    display: none !important;
+  }
+}
+
+@media (min-width: $breakpoint-head) {
+  .d-head-flex {
+    display: flex !important;
+  }
+
+  .d-head-none {
     display: none !important;
   }
 }
@@ -690,6 +782,7 @@ li {
   }
 }
 
+// Flex
 .flex-1 {
   flex: 1 0 0;
 }
@@ -702,6 +795,22 @@ li {
   justify-content: flex-end;
 }
 
+.align-items-end {
+  align-items: flex-end;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
 .d-flex {
   display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-direction-column {
+  flex-direction: column;
 }
