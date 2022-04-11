@@ -4857,6 +4857,10 @@ textarea.hs-input {
   .c-block-home__item > *:last-child {
     margin-bottom: 0;
   }
+  .c-block-home__item--v1 {
+    max-width: unset;
+    padding-right: 4rem;
+  }
 }
 .c-block-home__slidein {
   transform: translateX(50%);
@@ -4925,6 +4929,137 @@ textarea.hs-input {
   height: 3.75rem;
   align-items: center;
   justify-content: center;
+}
+
+.c-block-cards__row {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .c-block-cards__row {
+    flex-direction: row;
+  }
+}
+.c-block-cards__item {
+  flex: 1;
+  margin: 0.625rem;
+}
+@media (min-width: 768px) {
+  .c-block-cards__item:first-child {
+    margin-left: 0;
+  }
+  .c-block-cards__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.c-block-card {
+  width: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: no-repeat center;
+  background-size: cover;
+  padding: 45px 75px 30px 75px;
+  min-height: 660px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.c-block-card .d-card-tag {
+  position: absolute;
+  top: 19px;
+  right: 27px;
+  float: none;
+  padding: 0;
+}
+.c-block-card .d-single-card-content {
+  position: relative;
+}
+.c-block-card .d-single-card-content .d-card-heading {
+  font-size: 54px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #1c1c1b;
+  margin-bottom: 25px;
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.c-block-card .d-single-card-content p {
+  color: #1c1c1b;
+}
+.c-block-card .d-single-card-content .d-card-img-1 {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.c-block-card .d-single-card-content .d-card-img-1 img {
+  max-width: 100%;
+}
+.c-block-card .d-single-card-content .d-card-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-block-card .d-single-card-content .d-card-logos img {
+  width: 46%;
+  object-fit: contain;
+  object-position: left;
+  margin-bottom: 25px;
+}
+.c-block-card .d-card-bottom {
+  position: relative;
+  margin-top: auto;
+  text-align: center;
+}
+.c-block-card .d-card-button {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1c1c1b;
+  border: 2px solid #1c1c1b;
+  padding: 5px 20px;
+  border-radius: 40px;
+  display: inline-block;
+  text-align: center;
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  transition-timing-function: ease-in-out;
+}
+.c-block-card .d-card-button:hover {
+  color: #fff;
+  background: #1c1c1b;
+}
+.c-block-card--content-white .d-single-card-content .d-card-heading,
+.c-block-card--content-white .d-single-card-content p {
+  color: #fff;
+}
+.c-block-card--content-white .d-card-button {
+  color: #fff;
+  border-color: #fff;
+}
+.c-block-card--content-white .d-card-button:hover {
+  color: #1c1c1b;
+  background: #fff;
+}
+.c-block-card--bg-img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.36) 0%, transparent 100%);
+}
+@media (max-width: 991px) {
+  .c-block-card {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .c-block-card {
+    width: 100%;
+  }
 }
 
 .c-clients {
@@ -7433,8 +7568,56 @@ button.ot-sdk-show-settings:hover {
   margin-bottom: 0 !important;
 }
 
+.ml-5 {
+  margin-left: 2.5rem !important;
+}
+
+.ml-4 {
+  margin-left: 1.5rem !important;
+}
+
+.ml-3 {
+  margin-left: 1rem !important;
+}
+
+.ml-2 {
+  margin-left: 0.5rem !important;
+}
+
+.ml-1 {
+  margin-left: 0.25rem !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-5 {
+  margin-right: 2.5rem !important;
+}
+
+.mr-4 {
+  margin-right: 1.5rem !important;
+}
+
+.mr-3 {
+  margin-right: 1rem !important;
+}
+
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
 }
 
 .mr-auto {
@@ -7566,6 +7749,10 @@ button.ot-sdk-show-settings:hover {
   justify-content: center !important;
 }
 
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
 @media (min-width: 992px) {
   .d-lg-none {
     display: none !important;
@@ -7621,7 +7808,7 @@ button.ot-sdk-show-settings:hover {
     padding-right: 0.25rem !important;
   }
 
-  .pr-md-0 {
+  .pr-md-0, .px-md-0 {
     padding-right: 0 !important;
   }
 
@@ -7641,7 +7828,7 @@ button.ot-sdk-show-settings:hover {
     padding-left: 0.25rem !important;
   }
 
-  .pl-md-0 {
+  .pl-md-0, .px-md-0 {
     padding-left: 0 !important;
   }
 }
