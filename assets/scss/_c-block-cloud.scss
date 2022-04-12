@@ -10,6 +10,7 @@
     @media (min-width: $breakpoint-md) {
       height: 100vh;
       flex-direction: row;
+      text-align: unset;
     }
 
     &__heading {

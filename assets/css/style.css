@@ -4340,6 +4340,7 @@ textarea.hs-input {
   .c-block-cloud__wrap {
     height: 100vh;
     flex-direction: row;
+    text-align: unset;
   }
 }
 .c-block-cloud__wrap__heading {
