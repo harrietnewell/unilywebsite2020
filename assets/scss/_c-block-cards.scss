@@ -32,15 +32,19 @@
   position: relative;
   background: no-repeat center;
   background-size: cover;
-  padding: 45px 75px 30px 75px;
-  min-height: 660px;
-  border-radius: 40px;
+  padding: rem-size(45px) rem-size(75px) rem-size(30px) rem-size(75px);
+  border-radius: rem-size(40px);
   overflow: hidden;
+  min-height: rem-size(480px);
+
+  @media (min-width: $breakpoint-md) {
+    min-height: rem-size(660px);
+  }
 
   .d-card-tag {
     position: absolute;
-    top: 19px;
-    right: 27px;
+    top: rem-size(19px);
+    right: rem-size(27px);
     float: none;
     padding: 0;
   }
@@ -48,12 +52,16 @@
     position: relative;
 
     .d-card-heading {
-      font-size: 54px;
       line-height: 1.15;
       font-weight: 700;
       color: #1c1c1b;
-      margin-bottom: 25px;
+      margin-bottom: rem-size(25px);
+      font-size: rem-size(36px);
       font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+      @media (min-width: $breakpoint-md) {
+        font-size: rem-size(54px);
+      }
     }
 
     p {
@@ -76,10 +84,9 @@
       justify-content: space-between;
       img {
         width: 46%;
-        //height: 30px;
         object-fit: contain;
         object-position: left;
-        margin-bottom: 25px;
+        margin-bottom: rem-size(25px);
       }
     }
   }
@@ -89,19 +96,17 @@
     text-align: center;
   }
   .d-card-button {
-    font-size: 16px;
+    font-size: rem-size(16px);
     text-transform: uppercase;
     font-weight: 700;
     color: #1c1c1b;
-    border: 2px solid #1c1c1b;
-    padding: 5px 20px;
-    border-radius: 40px;
+    border: rem-size(2px) solid #1c1c1b;
+    padding: rem-size(5px) rem-size(20px);
+    border-radius: rem-size(40px);
     display: inline-block;
     text-align: center;
     font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
     transition-timing-function: ease-in-out;
-    //transition-property: background-color, border-color, color;
-    //transition-duration: 250ms;
     &:hover {
       color: #fff;
       background: #1c1c1b;
@@ -136,11 +141,11 @@
     }
   }
 
-  @media (max-width: 991px) {
-    padding-right: 35px;
-    padding-left: 35px;
+  @media (max-width: $breakpoint-lg-down) {
+    padding-right: rem-size(35px);
+    padding-left: rem-size(35px);
   }
-  @media (max-width: 767px) {
-    width: 100%;
+  @media (max-width: $breakpoint-md-down) {
+    max-width: 100%;
   }
 }

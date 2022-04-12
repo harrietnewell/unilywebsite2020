@@ -1,15 +1,15 @@
-//
-
 .c-block-cloud {
   &__wrap {
-    height: 100vh;
     display: flex;
     align-items: center;
     background: $color-unily-dark-blue; //linear-gradient(90deg, #3EC8ED 0%, #3FC3A3 100%);
     color: $color-white;
+    flex-direction: column;
+    text-align: center;
 
-    @media (max-width: $breakpoint-md-down) {
-      height: calc(100vh - 50px);
+    @media (min-width: $breakpoint-md) {
+      height: 100vh;
+      flex-direction: row;
     }
 
     &__heading {
@@ -23,21 +23,8 @@
   }
 
   &__heading {
-    font-size: rem-size(54px);
-    font-weight: normal;
-    line-height: 1.1;
+    @extend .heading-01-alt;
     margin-bottom: rem-size(20px);
-    margin-left: 0;
-
-    @media (max-width: $breakpoint-md-down) {
-      font-size: rem-size(30px);
-    }
-
-    strong {
-      font-family: $font-alt;
-      font-size: bold;
-      text-transform: uppercase;
-    }
   }
 
   &__content {
