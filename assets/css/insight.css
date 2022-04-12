@@ -22,7 +22,7 @@
 }
 .c-insight .c-content .c-content__side {
   margin-top: 0px;
-  flex: 0 0 28.4% !important;
+  flex: 0 0 21.25rem;
   margin-left: auto;
 }
 .c-insight .c-content .c-content__side .c-articles__media {
@@ -41,7 +41,9 @@
 .c-insight .c-content__wide .c-content__content {
   flex: unset !important;
 }
-.c-insight .c-content__wide .c-content__content .grid-content-item, .c-insight .c-content__wide .c-content__content .c-tags__list, .c-insight .c-content__wide .c-content__content .c-share {
+.c-insight .c-content__wide .c-content__content .grid-content-item,
+.c-insight .c-content__wide .c-content__content .c-tags__list,
+.c-insight .c-content__wide .c-content__content .c-share {
   max-width: 765px;
   margin-left: auto;
   margin-right: auto;
