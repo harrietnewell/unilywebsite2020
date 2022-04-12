@@ -79,24 +79,15 @@
     a {
       color: $color-unily-black;
     }
-    //@media (min-width: $breakpoint-md) {
-    //align-self: stretch;
-    //}
   }
 
   &__item {
     @media (min-width: $breakpoint-md) {
       max-width: 450px;
-      /*margin-left: auto;*/
       margin-right: auto;
 
       > *:last-child {
         margin-bottom: 0;
-      }
-
-      &--v1 {
-        max-width: unset;
-        padding-right: 4rem;
       }
     }
   }

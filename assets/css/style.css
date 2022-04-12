@@ -4845,15 +4845,10 @@ textarea.hs-input {
 @media (min-width: 768px) {
   .c-block-home__item {
     max-width: 450px;
-    /*margin-left: auto;*/
     margin-right: auto;
   }
   .c-block-home__item > *:last-child {
     margin-bottom: 0;
-  }
-  .c-block-home__item--v1 {
-    max-width: unset;
-    padding-right: 4rem;
   }
 }
 .c-block-home__slidein {
