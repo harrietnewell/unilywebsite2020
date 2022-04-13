@@ -9,7 +9,7 @@
 
     .c-content__content {
       margin-top: 0px;
-      flex: 0 0 70% !important;
+      flex: 1;
 
       @media (max-width: $breakpoint-md-down) {
         margin-bottom: 30px;
