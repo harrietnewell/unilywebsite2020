@@ -31,6 +31,11 @@
 .container-main {
   max-width: rem-size(1080px);
 
+  @media (max-width: $breakpoint-md-down) {
+    padding-left: rem-size(20px);
+    padding-right: rem-size(20px);
+  }
+
   &--1016 {
     max-width: rem-size(1016px);
   }
@@ -868,4 +873,8 @@
 
 .leading-03 {
   line-height: 1.75;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
 }

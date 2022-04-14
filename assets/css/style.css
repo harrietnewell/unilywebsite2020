@@ -343,6 +343,12 @@ th {
 .container-main {
   max-width: 67.5rem;
 }
+@media (max-width: 767px) {
+  .container-main {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
 .container-main--1016, .page-changer--1016 .container-main,
 .page-changer--1016 .c-block-cloud,
 .page-changer--1016 .c-block-05__row {
@@ -1120,6 +1126,10 @@ th {
 
 .leading-03 {
   line-height: 1.75;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
 }
 
 .c-head {
@@ -3764,6 +3774,12 @@ textarea.hs-input {
 .c-block-05__col {
   padding-bottom: 1.875rem;
 }
+@media (max-width: 767px) {
+  .c-block-05__col {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
 .c-block-05__col:last-child {
   padding-bottom: 1.5625rem;
 }
@@ -4067,6 +4083,10 @@ textarea.hs-input {
 }
 .c-block-cloud__brands-item:not(:first-child) {
   margin-left: 1.5625rem;
+}
+.c-block-cloud__brands-item > img {
+  display: flex;
+  width: 100%;
 }
 .c-block-cloud__clients {
   display: grid;
@@ -4609,9 +4629,12 @@ textarea.hs-input {
 }
 .c-block-cards__item {
   flex: 1;
-  margin: 0.625rem;
+  margin: 0.625rem 1.25rem;
 }
 @media (min-width: 768px) {
+  .c-block-cards__item {
+    margin: 0.625rem;
+  }
   .c-block-cards__item:first-child {
     margin-left: 0;
   }
@@ -4820,6 +4843,12 @@ textarea.hs-input {
 .c-clients__img {
   max-width: 100%;
   width: auto;
+}
+@media (max-width: 767px) {
+  .c-clients__wrap {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {

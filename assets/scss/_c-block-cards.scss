@@ -9,7 +9,12 @@
   }
 
   &__item {
+    flex: 1;
+    margin: rem-size(10px) rem-size(20px);
+
     @media (min-width: $breakpoint-md) {
+      margin: rem-size(10px);
+
       &:first-child {
         margin-left: 0;
       }
@@ -18,9 +23,6 @@
         margin-right: 0;
       }
     }
-
-    flex: 1;
-    margin: rem-size(10px);
   }
 }
 
