@@ -1095,10 +1095,11 @@ th {
 .tick-list li {
   display: flex;
   align-items: center;
+  text-align: left;
 }
 .tick-list > li:before {
   content: "";
-  display: inline-flex;
+  display: block;
   width: 1rem;
   height: 1rem;
   margin-right: 0.625rem;
@@ -1106,6 +1107,12 @@ th {
   background-size: 100% 100%;
   position: relative;
   top: -0.0625rem;
+  flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  .tick-list > li:before {
+    margin-right: 0.625rem;
+  }
 }
 .tick-list--dark > li:before {
   background-image: url("../../assets/img/icon-tick--dark.svg");
@@ -3756,12 +3763,6 @@ textarea.hs-input {
 }
 .c-block-05__col {
   padding-bottom: 1.875rem;
-}
-@media (max-width: 767px) {
-  .c-block-05__col {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
 }
 .c-block-05__col:last-child {
   padding-bottom: 1.5625rem;
