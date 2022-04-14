@@ -1,0 +1,9 @@
+.page-changer {
+  &--1016 {
+    .container-main,
+    .c-block-cloud,
+    .c-block-05__row {
+      @extend .container-main--1016;
+    }
+  }
+}

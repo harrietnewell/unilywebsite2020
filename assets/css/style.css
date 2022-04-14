@@ -343,6 +343,11 @@ th {
 .container-main {
   max-width: 67.5rem;
 }
+.container-main--1016, .page-changer--1016 .container-main,
+.page-changer--1016 .c-block-cloud,
+.page-changer--1016 .c-block-05__row {
+  max-width: 63.5rem;
+}
 
 .container-md {
   max-width: 76.25rem;

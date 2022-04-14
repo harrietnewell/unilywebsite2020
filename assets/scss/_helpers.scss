@@ -30,6 +30,10 @@
 
 .container-main {
   max-width: rem-size(1080px);
+
+  &--1016 {
+    max-width: rem-size(1016px);
+  }
 }
 
 .container-md {
