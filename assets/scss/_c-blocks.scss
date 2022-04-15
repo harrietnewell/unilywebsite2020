@@ -181,8 +181,7 @@
       }
 
       &:last-child {
-        padding-left: rem-size(48px);
-        padding-bottom: 0;
+        padding-left: 0;
       }
     }
   }
@@ -190,7 +189,8 @@
   &__content {
     @media (min-width: $breakpoint-md) {
       margin-bottom: 0;
-      margin-right: 4rem;
+      margin-right: auto;
+      max-width: rem-size(460px);
     }
 
     > *:last-child {
@@ -203,6 +203,8 @@
 
     @media (min-width: $breakpoint-md) {
       width: 100%;
+      max-width: rem-size(460px);
+      margin-left: auto;
     }
 
     &--centered {
@@ -270,13 +272,11 @@
         .c-block-05__content {
           margin-right: 0;
           margin-left: auto;
-          max-width: rem-size(475px);
         }
 
         .c-block-05__media {
           margin-left: 0;
           margin-right: auto;
-          max-width: rem-size(520px);
         }
       }
     }

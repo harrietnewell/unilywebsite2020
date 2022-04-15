@@ -6,4 +6,12 @@
       @extend .container-main--1016;
     }
   }
+
+  &--1020 {
+    .container-main,
+    .c-block-cloud,
+    .c-block-05__row {
+      @extend .container-main--1020;
+    }
+  }
 }
