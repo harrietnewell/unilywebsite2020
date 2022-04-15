@@ -12,7 +12,7 @@
   }
 
   &__item {
-    margin: rem-size(30px) 0;
+    margin: rem-size(25px) 0;
   }
 
   &__logo {
@@ -20,5 +20,9 @@
     height: rem-size(60px);
     align-items: center;
     justify-content: center;
+  }
+
+  .paragraph-02 {
+    margin: 0;
   }
 }

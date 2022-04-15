@@ -4609,13 +4609,16 @@ textarea.hs-input {
   }
 }
 .c-block-awards__item {
-  margin: 1.875rem 0;
+  margin: 1.5625rem 0;
 }
 .c-block-awards__logo {
   display: flex;
   height: 3.75rem;
   align-items: center;
   justify-content: center;
+}
+.c-block-awards .paragraph-02 {
+  margin: 0;
 }
 
 .c-block-cards__row {
