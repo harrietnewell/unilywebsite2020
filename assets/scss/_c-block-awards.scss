@@ -13,16 +13,18 @@
 
   &__item {
     margin: rem-size(25px) 0;
+    text-align: left;
   }
 
   &__logo {
     display: flex;
     height: rem-size(60px);
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .paragraph-02 {
+    font-size: rem-size(16px);
     margin: 0;
   }
 }

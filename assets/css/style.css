@@ -4610,14 +4610,16 @@ textarea.hs-input {
 }
 .c-block-awards__item {
   margin: 1.5625rem 0;
+  text-align: left;
 }
 .c-block-awards__logo {
   display: flex;
   height: 3.75rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .c-block-awards .paragraph-02 {
+  font-size: 1rem;
   margin: 0;
 }
 
