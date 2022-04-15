@@ -10,7 +10,7 @@
 
   &__item {
     flex: 1;
-    margin: rem-size(10px) rem-size(20px);
+    margin: rem-size(10px) 0;
 
     @media (min-width: $breakpoint-md) {
       margin: rem-size(10px);

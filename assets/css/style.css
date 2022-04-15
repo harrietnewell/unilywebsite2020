@@ -4634,7 +4634,7 @@ textarea.hs-input {
 }
 .c-block-cards__item {
   flex: 1;
-  margin: 0.625rem 1.25rem;
+  margin: 0.625rem 0;
 }
 @media (min-width: 768px) {
   .c-block-cards__item {
