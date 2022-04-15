@@ -282,6 +282,31 @@
   padding-left: 0 !important;
 }
 
+.py-0 {
+  @extend .pt-0;
+  @extend .pb-0;
+}
+
+.py-1 {
+  @extend .pt-1;
+  @extend .pb-1;
+}
+
+.py-2 {
+  @extend .pt-2;
+  @extend .pb-2;
+}
+
+.py-3 {
+  @extend .pt-3;
+  @extend .pb-3;
+}
+
+.py-4 {
+  @extend .pt-4;
+  @extend .pb-4;
+}
+
 .py-5 {
   @extend .pt-5;
   @extend .pb-5;
@@ -491,9 +516,7 @@
       }
 
       img {
-        margin-top: -10px;
         max-width: 75px;
-        height: auto !important;
       }
     }
 
@@ -870,4 +893,10 @@ li {
 
 .flex-direction-column {
   flex-direction: column;
+}
+
+// Other
+.py-20px {
+  padding-top: rem-size(20px);
+  padding-bottom: rem-size(20px);
 }
