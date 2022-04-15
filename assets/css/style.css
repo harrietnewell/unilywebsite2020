@@ -4028,12 +4028,13 @@ textarea.hs-input {
   color: #fff;
   flex-direction: column;
   text-align: center;
+  padding: 1.5625rem 0;
 }
 @media (min-width: 768px) {
   .c-block-cloud__wrap {
-    height: 100vh;
     flex-direction: row;
     text-align: unset;
+    padding: 10rem 0;
   }
 }
 .c-block-cloud__wrap__heading {
@@ -4097,6 +4098,7 @@ textarea.hs-input {
   list-style: none;
   padding: 0;
   width: 100%;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .c-block-cloud__clients {
@@ -7490,7 +7492,7 @@ button.ot-sdk-show-settings:hover {
     margin-bottom: 1.5rem !important;
   }
 
-  .pb-md-5 {
+  .pb-md-5, .py-md-5, .c-clients__wrap {
     padding-bottom: 3rem !important;
   }
 
@@ -7518,6 +7520,10 @@ button.ot-sdk-show-settings:hover {
     padding-right: 1rem !important;
   }
 
+  .pr-md-2 {
+    padding-right: 0.5rem !important;
+  }
+
   .pr-md-1 {
     padding-right: 0.25rem !important;
   }
@@ -7538,12 +7544,68 @@ button.ot-sdk-show-settings:hover {
     padding-left: 1rem !important;
   }
 
+  .pl-md-2 {
+    padding-left: 0.5rem !important;
+  }
+
   .pl-md-1 {
     padding-left: 0.25rem !important;
   }
 
   .pl-md-0, .px-md-0 {
-    padding-left: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .pt-md-5, .py-md-5, .c-clients__wrap {
+    padding-top: 3rem !important;
+  }
+
+  .pt-md-4, .py-md-4 {
+    padding-top: 1.5rem !important;
+  }
+
+  .pt-md-3, .py-md-3 {
+    padding-top: 1rem !important;
+  }
+
+  .pt-md-2, .py-md-2 {
+    padding-top: 0.5 !important;
+  }
+
+  .pt-md-1, .py-md-1 {
+    padding-top: 0.25rem !important;
+  }
+
+  .pt-md-0, .py-md-0 {
+    padding-top: 0 !important;
+  }
+
+  .pb-md-0, .py-md-0 {
+    padding-bottom: 0 !important;
+  }
+
+  .pb-md-5, .py-md-5, .c-clients__wrap {
+    padding-bottom: 3rem !important;
+  }
+
+  .pb-md-4, .py-md-4 {
+    padding-bottom: 1.5rem !important;
+  }
+
+  .pb-md-3, .py-md-3 {
+    padding-bottom: 1rem !important;
+  }
+
+  .pb-md-2, .py-md-2 {
+    padding-bottom: 0.5 !important;
+  }
+
+  .pb-md-1, .py-md-1 {
+    padding-bottom: 0.25rem !important;
+  }
+
+  .pb-md-0, .py-md-0 {
+    padding-bottom: 0 !important;
   }
 }
 .full-width {

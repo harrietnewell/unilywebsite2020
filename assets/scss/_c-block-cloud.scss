@@ -6,11 +6,12 @@
     color: $color-white;
     flex-direction: column;
     text-align: center;
+    padding: rem-size(25px) 0;
 
     @media (min-width: $breakpoint-md) {
-      height: 100vh;
       flex-direction: row;
       text-align: unset;
+      padding: 10rem 0;
     }
 
     &__heading {
@@ -85,6 +86,7 @@
     list-style: none;
     padding: 0;
     width: 100%;
+    margin-bottom: 0;
 
     @media (min-width: $breakpoint-md) {
       grid-template-columns: max-content 1fr 1fr 1fr max-content;
