@@ -843,19 +843,22 @@
     display: flex;
     align-items: center;
     text-align: left;
+    line-height: 1.4;
+    @extend .mb-2;
   }
 
   > li:before {
     content: "";
-    display: block;
+    display: flex;
     width: rem-size(16px);
     height: rem-size(16px);
     margin-right: rem-size(10px);
     background-image: url("../../assets/img/icon-tick.svg");
     background-size: 100% 100%;
     position: relative;
-    top: rem-size(-1px);
+    top: 0.425rem;
     flex-shrink: 0;
+    align-self: flex-start;
 
     @media (min-width: $breakpoint-md) {
       margin-right: rem-size(10px);

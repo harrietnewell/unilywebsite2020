@@ -1102,18 +1102,20 @@ th {
   display: flex;
   align-items: center;
   text-align: left;
+  line-height: 1.4;
 }
 .tick-list > li:before {
   content: "";
-  display: block;
+  display: flex;
   width: 1rem;
   height: 1rem;
   margin-right: 0.625rem;
   background-image: url("../../assets/img/icon-tick.svg");
   background-size: 100% 100%;
   position: relative;
-  top: -0.0625rem;
+  top: 0.425rem;
   flex-shrink: 0;
+  align-self: flex-start;
 }
 @media (min-width: 768px) {
   .tick-list > li:before {
@@ -7268,7 +7270,7 @@ button.ot-sdk-show-settings:hover {
   margin-bottom: 1rem !important;
 }
 
-.mb-2 {
+.mb-2, .tick-list li {
   margin-bottom: 0.5rem !important;
 }
 
