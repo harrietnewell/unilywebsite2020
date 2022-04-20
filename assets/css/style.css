@@ -349,15 +349,18 @@ th {
     padding-right: 1.25rem;
   }
 }
-.container-main--1016, .page-changer--1016 .container-main,
+.container-main--1016, .page-changer--1016 .container,
+.page-changer--1016 .container-main,
 .page-changer--1016 .c-block-cloud,
-.page-changer--1016 .c-block-05__row {
+.page-changer--1016 .c-block-05__row,
+.page-changer--1016 .c-head__wrap {
   max-width: 63.5rem;
 }
 .container-main--1020, .page-changer--1020 .container,
 .page-changer--1020 .container-main,
 .page-changer--1020 .c-block-cloud,
-.page-changer--1020 .c-block-05__row {
+.page-changer--1020 .c-block-05__row,
+.page-changer--1020 .c-head__wrap {
   max-width: 63.75rem;
 }
 
@@ -7991,6 +7994,10 @@ li {
 
 .pt-80px {
   padding-top: 5rem;
+}
+
+.page-changer .c-head__wrap {
+  padding: 0 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
