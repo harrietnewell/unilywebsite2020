@@ -354,7 +354,8 @@ th {
 .page-changer--1016 .c-block-05__row {
   max-width: 63.5rem;
 }
-.container-main--1020, .page-changer--1020 .container-main,
+.container-main--1020, .page-changer--1020 .container,
+.page-changer--1020 .container-main,
 .page-changer--1020 .c-block-cloud,
 .page-changer--1020 .c-block-05__row {
   max-width: 63.75rem;
@@ -7986,6 +7987,10 @@ li {
 .py-20px {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.pt-80px {
+  padding-top: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
