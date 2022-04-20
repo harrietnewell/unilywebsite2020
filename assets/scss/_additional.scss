@@ -595,3 +595,18 @@ li {
 		width: 100% !important;
 	}
 }
+
+// circles styles
+.c-circles__time {
+	font-family: $font-alt;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 8px;
+
+	sup {
+		font-size: 12px;
+		vertical-align: super;
+		top: 3px;
+	}
+}

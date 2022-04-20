@@ -7599,3 +7599,16 @@ li {
     width: 100% !important;
   }
 }
+
+.c-circles__time {
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.c-circles__time sup {
+  font-size: 12px;
+  vertical-align: super;
+  top: 3px;
+}
