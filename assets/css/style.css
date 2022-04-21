@@ -341,28 +341,24 @@ th {
 }
 
 .container-main {
-  max-width: 67.5rem;
+  max-width: 70rem;
   margin: 0 auto;
-}
-@media (max-width: 767px) {
-  .container-main {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .container-main--1016, .page-changer--1016 .container,
 .page-changer--1016 .container-main,
 .page-changer--1016 .c-block-cloud,
 .page-changer--1016 .c-block-05__row,
 .page-changer--1016 .c-head__wrap {
-  max-width: 63.5rem;
+  max-width: 66rem;
 }
 .container-main--1020, .page-changer--1020 .container,
 .page-changer--1020 .container-main,
 .page-changer--1020 .c-block-cloud,
 .page-changer--1020 .c-block-05__row,
 .page-changer--1020 .c-head__wrap {
-  max-width: 63.75rem;
+  max-width: 66.25rem;
 }
 
 .container-md {

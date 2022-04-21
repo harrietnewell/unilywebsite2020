@@ -29,20 +29,18 @@
 }
 
 .container-main {
-  max-width: rem-size(1080px);
+  max-width: rem-size(calc(1080px + 40px));
   margin: 0 auto;
 
-  @media (max-width: $breakpoint-md-down) {
-    padding-left: rem-size(20px);
-    padding-right: rem-size(20px);
-  }
+  padding-left: rem-size(20px);
+  padding-right: rem-size(20px);
 
   &--1016 {
-    max-width: rem-size(1016px);
+    max-width: rem-size(1016px + 40px);
   }
 
   &--1020 {
-    max-width: rem-size(1020px);
+    max-width: rem-size(1020px + 40px);
   }
 }
 
