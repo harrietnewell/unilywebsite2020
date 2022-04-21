@@ -3764,6 +3764,8 @@ textarea.hs-input {
   .c-block-05 {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 @media (min-width: 768px) {

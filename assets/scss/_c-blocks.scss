@@ -139,6 +139,8 @@
   @media (min-width: $breakpoint-md) {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: rem-size(20px);
+    padding-right: rem-size(20px);
   }
 
   &__row {
