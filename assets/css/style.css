@@ -342,6 +342,7 @@ th {
 
 .container-main {
   max-width: 67.5rem;
+  margin: 0 auto;
 }
 @media (max-width: 767px) {
   .container-main {
@@ -7997,7 +7998,7 @@ li {
 }
 
 .page-changer .c-head__wrap {
-  padding: 0 1.25rem;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

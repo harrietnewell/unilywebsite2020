@@ -30,6 +30,7 @@
 
 .container-main {
   max-width: rem-size(1080px);
+  margin: 0 auto;
 
   @media (max-width: $breakpoint-md-down) {
     padding-left: rem-size(20px);
