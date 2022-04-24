@@ -3973,7 +3973,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    max-width: 1016px;
+    max-width: 1020px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -4584,7 +4584,7 @@ p {
     align-items: center;
     justify-content: space-between;
     margin-top: -0.9375rem;
-    max-width: 1016px;
+    max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 0.9375rem;
@@ -4742,7 +4742,7 @@ p {
 }
 @media (min-width: 768px) {
   .c-clients__header {
-    max-width: 1016px;
+    max-width: 1020px;
     margin: 0px auto 20px auto;
   }
 }
@@ -5070,7 +5070,7 @@ p {
 .c-pricing {
   position: relative;
   width: 100%;
-  max-width: 1016px;
+  max-width: 1020px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -5148,7 +5148,7 @@ p {
   color: #1C1C1B;
 }
 .c-foot__row {
-  max-width: 1016px;
+  max-width: 1020px;
   margin: 0 auto;
   justify-content: space-between;
   padding: 0;
@@ -7613,7 +7613,25 @@ li {
 }
 
 .c-agenda__location {
-  font-size: 12px;
-  font-weight: bold;
   margin-top: 17px;
+  font-size: 12px;
+  list-style-type: none;
+}
+.c-agenda__location li {
+  font-weight: bold;
+  color: #1C1C1B;
+  display: inline-block;
+}
+.c-agenda__location li::before {
+  content: " ";
+  background-image: url(https://unilyweb2020dev.azureedge.net/media/jkwheltj/location-pin-black.svg);
+  align-self: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
 }

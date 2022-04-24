@@ -612,7 +612,27 @@ li {
 
 // agenda location styles
 .c-agenda__location {
-	font-size: 12px;
-	font-weight: bold;
 	margin-top: 17px;
+	font-size: 12px;
+	list-style-type: none;
+
+	li {
+		font-weight: bold;
+		color: $color-unily-black;
+		display: inline-block;
+
+		&::before {
+			content: ' ';
+			background-image: url(#{$cdn-url}media/jkwheltj/location-pin-black.svg);
+			align-self: center;
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 12px;
+			width: 12px;
+			display: inline-block;
+			margin-right: 5px;
+			position: relative;
+			top: 2px;
+		}
+	}
 }
