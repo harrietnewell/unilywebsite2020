@@ -414,13 +414,13 @@ th {
 }
 
 .py {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
 }
 @media (min-width: 768px) {
   .py {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
   }
 }
 
@@ -5223,7 +5223,7 @@ textarea.hs-input {
 .c-foot {
   color: #1c1c1b;
   font-size: 1rem;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.25rem !important;
   padding-top: 1.25rem;
 }
 .c-foot a {

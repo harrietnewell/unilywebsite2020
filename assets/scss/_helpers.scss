@@ -94,12 +94,12 @@
 }
 
 .py {
-  padding-top: rem-size(40px);
-  padding-bottom: rem-size(40px);
+  padding-top: rem-size(40px) !important;
+  padding-bottom: rem-size(40px) !important;
 
   @media (min-width: $breakpoint-md) {
-    padding-top: rem-size(80px);
-    padding-bottom: rem-size(80px);
+    padding-top: rem-size(80px) !important;
+    padding-bottom: rem-size(80px) !important;
   }
 }
 

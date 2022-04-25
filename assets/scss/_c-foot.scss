@@ -3,7 +3,7 @@
 .c-foot {
   color: $color-unily-black;
   font-size: rem-size(16px);
-  padding-bottom: rem-size(20px);
+  padding-bottom: rem-size(20px) !important;
   padding-top: rem-size(20px);
 
   a {
