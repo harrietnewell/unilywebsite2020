@@ -164,11 +164,6 @@
   &__col {
     padding-bottom: rem-size(30px);
 
-    @media (max-width: $breakpoint-md-down) {
-      padding-left: rem-size(20px);
-      padding-right: rem-size(20px);
-    }
-
     &:last-child {
       padding-bottom: rem-size(25px);
     }

@@ -103,11 +103,6 @@
   }
 
   &__wrap {
-    @extend .py-md-5;
-
-    @media (max-width: $breakpoint-md-down) {
-      padding-left: rem-size(20px);
-      padding-right: rem-size(20px);
-    }
+    @extend .py-5;
   }
 }

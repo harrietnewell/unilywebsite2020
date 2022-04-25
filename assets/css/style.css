@@ -340,23 +340,30 @@ th {
   max-width: 54.375rem;
 }
 
-.container-main {
-  max-width: 70rem;
+.container-extend, .container-main--1020, .page-changer--1020 .container,
+.page-changer--1020 .container-main,
+.page-changer--1020 .c-block-05,
+.page-changer--1020 .c-head__wrap, .container-main--1016, .page-changer--1016 .container,
+.page-changer--1016 .container-main,
+.page-changer--1016 .c-block-05,
+.page-changer--1016 .c-head__wrap, .container-main {
   margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+
+.container-main {
+  max-width: 70rem;
+}
 .container-main--1016, .page-changer--1016 .container,
 .page-changer--1016 .container-main,
-.page-changer--1016 .c-block-cloud,
-.page-changer--1016 .c-block-05__row,
+.page-changer--1016 .c-block-05,
 .page-changer--1016 .c-head__wrap {
   max-width: 66rem;
 }
 .container-main--1020, .page-changer--1020 .container,
 .page-changer--1020 .container-main,
-.page-changer--1020 .c-block-cloud,
-.page-changer--1020 .c-block-05__row,
+.page-changer--1020 .c-block-05,
 .page-changer--1020 .c-head__wrap {
   max-width: 66.25rem;
 }
@@ -3784,12 +3791,6 @@ textarea.hs-input {
 .c-block-05__col {
   padding-bottom: 1.875rem;
 }
-@media (max-width: 767px) {
-  .c-block-05__col {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-}
 .c-block-05__col:last-child {
   padding-bottom: 1.5625rem;
 }
@@ -4862,13 +4863,6 @@ textarea.hs-input {
   max-width: 100%;
   width: auto;
 }
-@media (max-width: 767px) {
-  .c-clients__wrap {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-}
-
 @media (min-width: 768px) {
   .agenda {
     padding-left: 40px;
@@ -7361,7 +7355,7 @@ button.ot-sdk-show-settings:hover {
   padding-left: 0 !important;
 }
 
-.pt-5, .py-5 {
+.pt-5, .py-5, .c-clients__wrap {
   padding-top: 3rem !important;
 }
 
@@ -7385,7 +7379,7 @@ button.ot-sdk-show-settings:hover {
   padding-top: 0 !important;
 }
 
-.pb-5, .py-5 {
+.pb-5, .py-5, .c-clients__wrap {
   padding-bottom: 3rem !important;
 }
 
@@ -7496,7 +7490,7 @@ button.ot-sdk-show-settings:hover {
     margin-bottom: 1.5rem !important;
   }
 
-  .pb-md-5, .py-md-5, .c-clients__wrap {
+  .pb-md-5, .py-md-5 {
     padding-bottom: 3rem !important;
   }
 
@@ -7560,7 +7554,7 @@ button.ot-sdk-show-settings:hover {
     padding-top: 0 !important;
   }
 
-  .pt-md-5, .py-md-5, .c-clients__wrap {
+  .pt-md-5, .py-md-5 {
     padding-top: 3rem !important;
   }
 
@@ -7588,7 +7582,7 @@ button.ot-sdk-show-settings:hover {
     padding-bottom: 0 !important;
   }
 
-  .pb-md-5, .py-md-5, .c-clients__wrap {
+  .pb-md-5, .py-md-5 {
     padding-bottom: 3rem !important;
   }
 

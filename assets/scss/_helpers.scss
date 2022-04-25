@@ -28,18 +28,23 @@
   max-width: rem-size(870px);
 }
 
-.container-main {
-  max-width: rem-size(calc(1080px + 40px));
+.container-extend {
   margin: 0 auto;
-
   padding-left: rem-size(20px);
   padding-right: rem-size(20px);
+}
+
+.container-main {
+  @extend .container-extend;
+  max-width: rem-size(calc(1080px + 40px));
 
   &--1016 {
+    @extend .container-extend;
     max-width: rem-size(1016px + 40px);
   }
 
   &--1020 {
+    @extend .container-extend;
     max-width: rem-size(1020px + 40px);
   }
 }
