@@ -340,10 +340,10 @@ th {
   max-width: 54.375rem;
 }
 
-.container-extend, .container-main--1020, .page-changer--1020 .container,
+.container-extend, .container-main--1020, .page-changer--1020 .container:not(.container-full),
 .page-changer--1020 .container-main,
 .page-changer--1020 .c-block-05,
-.page-changer--1020 .c-head__wrap, .container-main--1016, .page-changer--1016 .container,
+.page-changer--1020 .c-head__wrap, .container-main--1016, .page-changer--1016 .container:not(.container-full),
 .page-changer--1016 .container-main,
 .page-changer--1016 .c-block-05,
 .page-changer--1016 .c-head__wrap, .container-main {
@@ -355,13 +355,13 @@ th {
 .container-main {
   max-width: 70rem;
 }
-.container-main--1016, .page-changer--1016 .container,
+.container-main--1016, .page-changer--1016 .container:not(.container-full),
 .page-changer--1016 .container-main,
 .page-changer--1016 .c-block-05,
 .page-changer--1016 .c-head__wrap {
   max-width: 66rem;
 }
-.container-main--1020, .page-changer--1020 .container,
+.container-main--1020, .page-changer--1020 .container:not(.container-full),
 .page-changer--1020 .container-main,
 .page-changer--1020 .c-block-05,
 .page-changer--1020 .c-head__wrap {

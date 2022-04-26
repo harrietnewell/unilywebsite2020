@@ -1,6 +1,6 @@
 .page-changer {
   &--1016 {
-    .container,
+    .container:not(.container-full),
     .container-main,
     .c-block-05,
     .c-head__wrap {
@@ -9,7 +9,7 @@
   }
 
   &--1020 {
-    .container,
+    .container:not(.container-full),
     .container-main,
     .c-block-05,
     .c-head__wrap {
