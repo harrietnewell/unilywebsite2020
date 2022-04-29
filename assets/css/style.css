@@ -7486,6 +7486,10 @@ button.ot-sdk-show-settings:hover {
     margin-top: 1.5rem !important;
   }
 
+  .mt-md-2 {
+    margin-top: 0.5rem !important;
+  }
+
   .mb-md-4 {
     margin-bottom: 1.5rem !important;
   }
@@ -7986,6 +7990,10 @@ li {
 
   .justify-content-md-end {
     justify-content: flex-end;
+  }
+
+  .justify-content-md-start {
+    justify-content: flex-start;
   }
 }
 .py-20px {
