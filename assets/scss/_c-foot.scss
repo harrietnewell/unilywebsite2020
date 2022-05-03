@@ -79,8 +79,12 @@
       margin-bottom: rem-size(35px);
     }
 
-    li {
+    li:not(:last-child) {
       margin-bottom: rem-size(15px);
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
 
     a {
