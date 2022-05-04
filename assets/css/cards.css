@@ -44,12 +44,12 @@
   font-size: 54px;
   line-height: 1.15;
   font-weight: 700;
-  color: #1C1C1B;
+  color: #1c1c1b;
   margin-bottom: 25px;
   font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .d-cards .d-cards-list .d-single-card .d-single-card-content p {
-  color: #1C1C1B;
+  color: #1c1c1b;
 }
 .d-cards .d-cards-list .d-single-card .d-single-card-content .d-card-img-1 {
   max-width: 80%;
@@ -80,8 +80,8 @@
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #1C1C1B;
-  border: 2px solid #1C1C1B;
+  color: #1c1c1b;
+  border: 2px solid #1c1c1b;
   padding: 5px 20px;
   border-radius: 40px;
   display: inline-block;
@@ -91,9 +91,10 @@
 }
 .d-cards .d-cards-list .d-single-card .d-card-button:hover {
   color: #fff;
-  background: #1C1C1B;
+  background: #1c1c1b;
 }
-.d-cards .d-cards-list .d-single-card--content-white .d-single-card-content .d-card-heading, .d-cards .d-cards-list .d-single-card--content-white .d-single-card-content p {
+.d-cards .d-cards-list .d-single-card--content-white .d-single-card-content .d-card-heading,
+.d-cards .d-cards-list .d-single-card--content-white .d-single-card-content p {
   color: #fff;
 }
 .d-cards .d-cards-list .d-single-card--content-white .d-card-button {
@@ -101,7 +102,7 @@
   border-color: #fff;
 }
 .d-cards .d-cards-list .d-single-card--content-white .d-card-button:hover {
-  color: #1C1C1B;
+  color: #1c1c1b;
   background: #fff;
 }
 .d-cards .d-cards-list .d-single-card--bg-img:before {
@@ -168,5 +169,3 @@
   opacity: 0;
   white-space: nowrap;
 }
-
-/*# sourceMappingURL=cards.css.map */
