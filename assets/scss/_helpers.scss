@@ -36,7 +36,7 @@
 
 .container-main {
   @extend .container-extend;
-  max-width: rem-size(calc(1080px + 40px));
+  max-width: rem-size(1080px + 40px);
 
   &--1016 {
     @extend .container-extend;

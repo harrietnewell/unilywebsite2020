@@ -950,6 +950,47 @@ li {
   }
 }
 
+// circles styles
+.c-circles__time {
+	font-family: $font-alt;
+	font-weight: bold;
+	font-size: 22px;
+	margin-bottom: 8px;
+
+	sup {
+		font-size: 12px;
+		vertical-align: super;
+		top: 1px;
+	}
+}
+
+// agenda location styles
+.c-agenda__location {
+	margin-top: 17px;
+	font-size: 12px;
+	list-style-type: none;
+
+	li {
+		font-weight: bold;
+		color: $color-unily-black;
+		display: inline-block;
+
+		&::before {
+			content: ' ';
+			background-image: url(#{$cdn-url}media/jkwheltj/location-pin-black.svg);
+			align-self: center;
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 12px;
+			width: 12px;
+			display: inline-block;
+			margin-right: 5px;
+			position: relative;
+			top: 2px;
+		}
+	}
+}
+
 // Flex
 .flex-1 {
   flex: 1 0 0;
