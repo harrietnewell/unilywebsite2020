@@ -11,22 +11,6 @@
   justify-content: center;
   align-items: center;
 
-  &__container--3 {
-    max-width: rem-size(780px);
-  }
-
-  &__container--4 {
-    max-width: rem-size(1040px);
-  }
-
-  &__container--5 {
-    max-width: rem-size(1300px);
-  }
-
-  &__container--6 {
-    max-width: rem-size(1560px);
-  }
-
   &__item {
     font: 0/0 a;
     margin-bottom: rem-size(50px);
@@ -69,6 +53,10 @@
   }
 
   &--5 {
+    @media (min-width: $breakpoint-md) {
+      margin: rem-size(0 -90px);
+    }
+
     .c-clients__item {
       @media (min-width: $breakpoint-md) {
         flex: 0 0 20%;
@@ -77,6 +65,10 @@
   }
 
   &--6 {
+    @media (min-width: $breakpoint-md) {
+      margin: rem-size(0 -32px);
+    }
+
     .c-clients__item {
       @media (min-width: $breakpoint-md) {
         flex: 0 0 16.666666%;
