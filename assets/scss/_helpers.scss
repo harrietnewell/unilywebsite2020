@@ -4,10 +4,9 @@
 
 .container {
   width: 100%;
-  max-width: 1320px;
+  max-width: calc(#{$site-medium-width} + 40px);
   min-height: 1px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: rem-size(20px);
   padding-right: rem-size(20px);
 
