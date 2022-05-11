@@ -37,17 +37,27 @@
   }
 
   &--3 {
+    @media (min-width: $breakpoint-md) {
+      margin: rem-size(0 -112px);
+    }
+    
     .c-clients__item {
       @media (min-width: $breakpoint-md) {
         flex: 0 0 33.333333%;
+        max-width: unset;
       }
     }
   }
 
   &--4 {
+    @media (min-width: $breakpoint-md) {
+      margin: rem-size(0 -106px);
+    }
+
     .c-clients__item {
       @media (min-width: $breakpoint-md) {
         flex: 0 0 25%;
+        max-width: unset;
       }
     }
   }
