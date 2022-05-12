@@ -135,12 +135,12 @@
 .c-block-05 {
   margin-top: rem-size(30px);
   overflow: hidden;
+  padding-left: rem-size(20px);
+  padding-right: rem-size(20px);
 
   @media (min-width: $breakpoint-md) {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: rem-size(20px);
-    padding-right: rem-size(20px);
   }
 
   &__row {
