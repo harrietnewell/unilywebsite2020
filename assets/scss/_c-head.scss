@@ -36,11 +36,11 @@
 
   &__wrap {
     @media (min-width: $breakpoint-head) {
+      display: flex;
       padding: rem-size(0 20px);
       max-width: calc(#{$site-medium-width} + 40px);
       margin-left: auto;
       margin-right: auto;
-      display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
