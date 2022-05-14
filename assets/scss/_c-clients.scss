@@ -7,7 +7,6 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  margin: rem-size(0 -10px);
   justify-content: center;
   align-items: center;
 
@@ -15,7 +14,6 @@
     font: 0/0 a;
     margin-bottom: rem-size(50px);
     flex: 0 0 50%;
-    padding: rem-size(0 20px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +22,6 @@
     @media (min-width: $breakpoint-md) {
       flex: 0 0 20%;
       max-width: 260px;
-      padding: rem-size(0 20px);
       margin: rem-size(30px 0);
     }
   }
@@ -37,51 +34,69 @@
   }
 
   &--3 {
-    @media (min-width: $breakpoint-md) {
-      margin: rem-size(0 -112px);
-    }
-    
     .c-clients__item {
       @media (min-width: $breakpoint-md) {
         flex: 0 0 33.333333%;
         max-width: unset;
+
+        &:nth-child(3n+1):not(:last-child) {
+          justify-content: flex-start;
+        }
+
+        &:nth-child(3n) {
+          justify-content: flex-end;
+        }
       }
     }
   }
 
   &--4 {
-    @media (min-width: $breakpoint-md) {
-      margin: rem-size(0 -106px);
-    }
-
     .c-clients__item {
       @media (min-width: $breakpoint-md) {
         flex: 0 0 25%;
         max-width: unset;
+
+        &:nth-child(4n+1):not(:last-child) {
+          justify-content: flex-start;
+        }
+
+        &:nth-child(4n) {
+          justify-content: flex-end;
+        }
       }
     }
   }
 
   &--5 {
-    @media (min-width: $breakpoint-md) {
-      margin: rem-size(0 -90px);
-    }
-
     .c-clients__item {
       @media (min-width: $breakpoint-md) {
         flex: 0 0 20%;
+        max-width: unset;
+
+        &:nth-child(5n+1):not(:last-child) {
+          justify-content: flex-start;
+        }
+
+        &:nth-child(5n) {
+          justify-content: flex-end;
+        }
       }
     }
   }
 
   &--6 {
-    @media (min-width: $breakpoint-md) {
-      margin: rem-size(0 -32px);
-    }
-
     .c-clients__item {
       @media (min-width: $breakpoint-md) {
         flex: 0 0 16.666666%;
+        max-width: unset;
+
+        &:nth-child(6n+1):not(:last-child) {
+          justify-content: flex-start;
+        }
+
+        &:nth-child(6n) {
+          justify-content: flex-end;
+        }
       }
     }
   }
