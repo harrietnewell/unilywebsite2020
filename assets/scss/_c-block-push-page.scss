@@ -1,4 +1,4 @@
-.c-block-cloud {
+.c-block-push-page {
   &__wrap {
     display: flex;
     align-items: center;
@@ -26,7 +26,6 @@
   }
 
   &__heading {
-    @extend .heading-01-alt;
     margin-bottom: rem-size(20px);
   }
 

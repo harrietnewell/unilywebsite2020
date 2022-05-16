@@ -12,4 +12,6 @@ echo "building report-link.css" &^
 sass --no-source-map report-link.scss ../css/report-link.css &^
 echo "building language-selection.css" &^
 sass --no-source-map language-selection.scss ../css/language-selection.css &^
+echo "building push-page.css" &^
+sass --no-source-map push-page.scss ../css/push-page.css &^
 PAUSE

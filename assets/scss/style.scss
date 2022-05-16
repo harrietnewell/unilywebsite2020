@@ -34,7 +34,6 @@
 @import "c-blocks"; // 01-04 various layouts (2 column blocks)
 @import "c-block-full"; // Full width+height block with image on the left covering top of the page
 @import "c-block-about"; // About page
-@import "c-block-cloud"; // Cloud Intranet page
 @import "c-block-columns"; // 3 column layouts (with steps)
 @import "c-block-client"; //Client blocks (full width with bg image or video and text overlay)
 @import "c-block-subscribe"; // Subscribe block on dark blue bg
@@ -69,6 +68,3 @@
 
 // Additional styles
 @import "additional";
-
-// Page Changer (A handy way to quickly override styles for an entire page)
-@import "page-changer";

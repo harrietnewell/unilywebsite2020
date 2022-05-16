@@ -1,0 +1,107 @@
+.c-block-push-page__wrap {
+  display: flex;
+  align-items: center;
+  background: #112a3f;
+  color: #fff;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5625rem 0;
+}
+@media (min-width: 768px) {
+  .c-block-push-page__wrap {
+    flex-direction: row;
+    text-align: unset;
+    padding: 10rem 0;
+    height: calc(100vh - 100px);
+  }
+}
+.c-block-push-page__wrap__heading {
+  margin: 0;
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  .c-block-push-page__wrap__heading {
+    font-size: 1.875rem;
+  }
+}
+.c-block-push-page__heading {
+  margin-bottom: 1.25rem;
+}
+@media (min-width: 768px) {
+  .c-block-push-page__content {
+    flex: 0 0 50%;
+    padding-left: 0px;
+    padding-right: 1.25rem;
+  }
+}
+.c-block-push-page__info {
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+.c-block-push-page__form {
+  background: #fff;
+  border-radius: 0.5rem;
+  max-width: 32.5rem;
+  width: 100%;
+  padding: 2.5rem 2.5rem;
+  color: #1c1c1b;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  text-align: left;
+  margin: auto 0;
+}
+.c-block-push-page__brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-block-push-page__brands-item {
+  opacity: 0.75;
+  transition: 0.3s;
+}
+.c-block-push-page__brands-item:hover {
+  opacity: 1;
+}
+.c-block-push-page__brands-item:not(:first-child) {
+  margin-left: 1.5625rem;
+}
+.c-block-push-page__brands-item > img {
+  display: flex;
+  width: 100%;
+}
+.c-block-push-page__clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .c-block-push-page__clients {
+    grid-template-columns: max-content 1fr 1fr 1fr max-content;
+  }
+}
+.c-block-push-page__clients > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.875rem 0;
+}
+@media (min-width: 768px) {
+  .c-block-push-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -0.9375rem;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+  }
+  .c-block-push-page__wrap {
+    overflow: hidden;
+  }
+}
