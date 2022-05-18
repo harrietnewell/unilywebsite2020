@@ -27,27 +27,6 @@
   max-width: rem-size(870px);
 }
 
-.container-extend {
-  margin: 0 auto;
-  padding-left: rem-size(20px);
-  padding-right: rem-size(20px);
-}
-
-.container-main {
-  @extend .container-extend;
-  max-width: rem-size($site-medium-width + 40px);
-
-  &--1016 {
-    @extend .container-extend;
-    max-width: rem-size(1016px + 40px);
-  }
-
-  &--1020 {
-    @extend .container-extend;
-    max-width: rem-size(1020px + 40px);
-  }
-}
-
 .container-md {
   max-width: rem-size(1220px);
 }
@@ -260,18 +239,6 @@
 }
 .text-left {
   text-align: left;
-}
-
-@media (min-width: $breakpoint-md) {
-  .text-md-center {
-    text-align: center;
-  }
-  .text-md-right {
-    text-align: right;
-  }
-  .text-md-left {
-    text-align: left;
-  }
 }
 
 .semitransparent {

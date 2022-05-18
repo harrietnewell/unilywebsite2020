@@ -354,16 +354,6 @@
   }
 }
 
-@media (min-width: $breakpoint-head) {
-  .d-head-flex {
-    display: flex !important;
-  }
-
-  .d-head-none {
-    display: none !important;
-  }
-}
-
 @media (min-width: 768px) {
   .mt-md-4 {
     margin-top: 1.5rem !important;
@@ -387,7 +377,7 @@
   .text-md-right {
     text-align: right !important;
   }
-
+  
   .d-md-none {
     display: none !important;
   }

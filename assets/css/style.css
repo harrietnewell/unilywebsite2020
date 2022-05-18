@@ -339,22 +339,6 @@ th {
   max-width: 54.375rem;
 }
 
-.container-extend, .container-main--1020, .container-main--1016, .container-main {
-  margin: 0 auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.container-main {
-  max-width: 66.25rem;
-}
-.container-main--1016 {
-  max-width: 66rem;
-}
-.container-main--1020 {
-  max-width: 66.25rem;
-}
-
 .container-md {
   max-width: 76.25rem;
 }
@@ -564,19 +548,6 @@ th {
   text-align: left;
 }
 
-@media (min-width: 768px) {
-  .text-md-center {
-    text-align: center;
-  }
-
-  .text-md-right {
-    text-align: right;
-  }
-
-  .text-md-left {
-    text-align: left;
-  }
-}
 .semitransparent {
   opacity: 0.6;
 }
@@ -7358,15 +7329,6 @@ button.ot-sdk-show-settings:hover {
 
 @media (min-width: 992px) {
   .d-lg-none {
-    display: none !important;
-  }
-}
-@media (min-width: 1000px) {
-  .d-head-flex {
-    display: flex !important;
-  }
-
-  .d-head-none {
     display: none !important;
   }
 }
