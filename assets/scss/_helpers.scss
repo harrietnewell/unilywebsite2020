@@ -833,7 +833,7 @@
     width: rem-size(16px);
     height: rem-size(16px);
     margin-right: rem-size(10px);
-    background-image: url("../../assets/img/icon-tick.svg");
+    background-image: url(#{$cdn-url}media/oydby5ko/check-circle-white.svg);
     background-size: 100% 100%;
     position: relative;
     top: 0.425rem;
@@ -847,7 +847,7 @@
 
   &--dark {
     > li:before {
-      background-image: url("../../assets/img/icon-tick--dark.svg");
+      background-image: url(#{$cdn-url}media/oc3dsa5x/check-circle-black.svg);
     }
   }
 }

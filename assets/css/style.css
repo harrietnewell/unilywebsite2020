@@ -1083,7 +1083,7 @@ th {
   width: 1rem;
   height: 1rem;
   margin-right: 0.625rem;
-  background-image: url("../../assets/img/icon-tick.svg");
+  background-image: url(https://unilyweb2020dev.azureedge.net/media/oydby5ko/check-circle-white.svg);
   background-size: 100% 100%;
   position: relative;
   top: 0.425rem;
@@ -1096,7 +1096,7 @@ th {
   }
 }
 .tick-list--dark > li:before {
-  background-image: url("../../assets/img/icon-tick--dark.svg");
+  background-image: url(https://unilyweb2020dev.azureedge.net/media/oc3dsa5x/check-circle-black.svg);
 }
 
 .leading-03 {
