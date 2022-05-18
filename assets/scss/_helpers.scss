@@ -27,6 +27,13 @@
   max-width: rem-size(870px);
 }
 
+.container-main {
+  margin: 0 auto;
+  padding-left: rem-size(20px);
+  padding-right: rem-size(20px);
+  max-width: rem-size($site-medium-width + 40px);
+}
+
 .container-md {
   max-width: rem-size(1220px);
 }
