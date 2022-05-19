@@ -1,0 +1,99 @@
+.c-clients-updated {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.c-clients-updated__item {
+  font: 0/0 a;
+  margin-bottom: 3.125rem;
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 16.25rem;
+}
+@media (min-width: 768px) {
+  .c-clients-updated__item {
+    flex: 0 0 20%;
+    max-width: 260px;
+    margin: 1.875rem 0rem;
+  }
+}
+@media (min-width: 768px) {
+  .c-clients-updated__header {
+    max-width: 1020px;
+    margin: 0px auto 20px auto;
+  }
+}
+@media (min-width: 768px) {
+  .c-clients-updated--3 .c-clients-updated__item {
+    flex: 0 0 33.333333%;
+    max-width: unset;
+  }
+  .c-clients-updated--3 .c-clients-updated__item:nth-child(3n+1):not(:last-child) {
+    justify-content: flex-start;
+  }
+  .c-clients-updated--3 .c-clients-updated__item:nth-child(3n) {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  .c-clients-updated--4 .c-clients-updated__item {
+    flex: 0 0 25%;
+    max-width: unset;
+  }
+  .c-clients-updated--4 .c-clients-updated__item:nth-child(4n+1):not(:last-child) {
+    justify-content: flex-start;
+  }
+  .c-clients-updated--4 .c-clients-updated__item:nth-child(4n) {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  .c-clients-updated--5 .c-clients-updated__item {
+    flex: 0 0 20%;
+    max-width: unset;
+  }
+  .c-clients-updated--5 .c-clients-updated__item:nth-child(5n+1):not(:last-child) {
+    justify-content: flex-start;
+  }
+  .c-clients-updated--5 .c-clients-updated__item:nth-child(5n) {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  .c-clients-updated--6 .c-clients-updated__item {
+    flex: 0 0 16.666666%;
+    max-width: unset;
+  }
+  .c-clients-updated--6 .c-clients-updated__item:nth-child(6n+1):not(:last-child) {
+    justify-content: flex-start;
+  }
+  .c-clients-updated--6 .c-clients-updated__item:nth-child(6n) {
+    justify-content: flex-end;
+  }
+}
+.c-clients-updated__link {
+  display: block;
+  transform: scale(1);
+  transition: translateZ(0) transform 0.3s;
+  backface-visibility: hidden;
+}
+.c-clients-updated__link:hover {
+  transform: translateZ(0) scale(1.1);
+  transition: transform 0.3s;
+  backface-visibility: hidden;
+}
+.c-clients-updated__img {
+  max-width: 100%;
+  width: auto;
+}
+.c-clients-updated__wrap {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}

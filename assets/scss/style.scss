@@ -38,8 +38,6 @@
 @import "c-block-client"; //Client blocks (full width with bg image or video and text overlay)
 @import "c-block-subscribe"; // Subscribe block on dark blue bg
 @import "c-block-home"; // Home page hero
-@import "c-block-awards"; // Awards block
-@import "c-block-cards"; // Cards block
 @import "c-clients";
 @import "c-agenda";
 @import "c-table";
@@ -62,6 +60,7 @@
 
 // Other
 @import "other";
+
 
 // Print
 @import "print";

@@ -1,0 +1,28 @@
+.c-block-awards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px 0px;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .c-block-awards {
+    grid-template-columns: max-content max-content max-content max-content;
+    justify-content: space-between;
+  }
+}
+.c-block-awards__item {
+  margin: 1.5625rem 0;
+  text-align: left;
+}
+.c-block-awards__logo {
+  display: flex;
+  height: 3.75rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+.c-block-awards .paragraph-02 {
+  font-size: 1rem;
+  margin: 0;
+}

@@ -1,125 +1,104 @@
 // Clients
 
 .c-clients {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-  &__item {
-    font: 0/0 a;
-    margin-bottom: rem-size(50px);
-    flex: 0 0 50%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
     display: flex;
+    flex-wrap: wrap;
+    margin: rem-size(0 -10px);
     justify-content: center;
     align-items: center;
-    max-width: rem-size(260px);
 
-    @media (min-width: $breakpoint-md) {
-      flex: 0 0 20%;
-      max-width: 260px;
-      margin: rem-size(30px 0);
+    &__container--3 {
+        max-width: rem-size(780px);
     }
-  }
 
-  &__header {
-    @media (min-width: $breakpoint-md) {
-      max-width: $site-medium-width;
-      margin: 0px auto 20px auto;
+    &__container--4 {
+        max-width: rem-size(1040px);
     }
-  }
 
-  &--3 {
-    .c-clients__item {
-      @media (min-width: $breakpoint-md) {
-        flex: 0 0 33.333333%;
-        max-width: unset;
-
-        &:nth-child(3n+1):not(:last-child) {
-          justify-content: flex-start;
-        }
-
-        &:nth-child(3n) {
-          justify-content: flex-end;
-        }
-      }
+    &__container--5 {
+        max-width: rem-size(1300px);
     }
-  }
 
-  &--4 {
-    .c-clients__item {
-      @media (min-width: $breakpoint-md) {
-        flex: 0 0 25%;
-        max-width: unset;
-
-        &:nth-child(4n+1):not(:last-child) {
-          justify-content: flex-start;
-        }
-
-        &:nth-child(4n) {
-          justify-content: flex-end;
-        }
-      }
+    &__container--6 {
+        max-width: rem-size(1560px);
     }
-  }
 
-  &--5 {
-    .c-clients__item {
-      @media (min-width: $breakpoint-md) {
-        flex: 0 0 20%;
-        max-width: unset;
+    &__item {
+        font: 0/0 a;
+        margin-bottom: rem-size(50px);
+        flex: 0 0 50%;
+        padding: rem-size(0 20px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: rem-size(260px);
 
-        &:nth-child(5n+1):not(:last-child) {
-          justify-content: flex-start;
+        @media (min-width: $breakpoint-md) {
+            flex: 0 0 20%;
+            max-width: 260px;
+            padding: rem-size(0 20px);
+            margin: rem-size(30px 0);
         }
-
-        &:nth-child(5n) {
-          justify-content: flex-end;
-        }
-      }
     }
-  }
 
-  &--6 {
-    .c-clients__item {
-      @media (min-width: $breakpoint-md) {
-        flex: 0 0 16.666666%;
-        max-width: unset;
-
-        &:nth-child(6n+1):not(:last-child) {
-          justify-content: flex-start;
+    &__header {
+        @media (min-width: $breakpoint-md) {
+            max-width: $site-medium-width;
+            margin: 0px auto 20px auto;
         }
+    }
 
-        &:nth-child(6n) {
-          justify-content: flex-end;
+    &--3 {
+        .c-clients__item {
+            @media (min-width: $breakpoint-md) {
+                flex: 0 0 33.333333%;
+            }
         }
-      }
     }
-  }
 
-  &__link {
-    display: block;
-    transform: scale(1);
-    transition: translateZ(0) transform 0.3s;
-    backface-visibility: hidden;
-
-    &:hover {
-      transform: translateZ(0) scale(1.1);
-      transition: transform 0.3s;
-      backface-visibility: hidden;
+    &--4 {
+        .c-clients__item {
+            @media (min-width: $breakpoint-md) {
+                flex: 0 0 25%;
+            }
+        }
     }
-  }
 
-  &__img {
-    max-width: 100%;
-    width: auto;
-  }
+    &--5 {
+        .c-clients__item {
+            @media (min-width: $breakpoint-md) {
+                flex: 0 0 20%;
+            }
+        }
+    }
 
-  &__wrap {
-    @extend .py-5;
-  }
+    &--6 {
+        .c-clients__item {
+            @media (min-width: $breakpoint-md) {
+                flex: 0 0 16.666666%;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        transform: scale(1);
+        transition: translateZ(0) transform .3s;
+        backface-visibility: hidden;
+
+        &:hover {
+            transform: translateZ(0) scale(1.1);
+            transition: transform .3s;
+            backface-visibility: hidden;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        width: auto;
+    }
 }
