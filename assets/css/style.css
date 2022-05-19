@@ -1086,7 +1086,7 @@ th {
   background-image: url(https://unilyweb2020dev.azureedge.net/media/oydby5ko/check-circle-white.svg);
   background-size: 100% 100%;
   position: relative;
-  top: 0.425rem;
+  top: 5px;
   flex-shrink: 0;
   align-self: flex-start;
 }
@@ -4991,7 +4991,7 @@ textarea.hs-input {
 }
 .c-foot__logo {
   font: 0/0 a;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.625rem !important;
 }
 .c-foot__col--contact a span {
   background-image: linear-gradient(#1c1c1b, #1c1c1b);

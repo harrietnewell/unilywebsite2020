@@ -103,7 +103,7 @@
 
   &__logo {
     font: 0/0 a;
-    margin-bottom: rem-size(10px);
+    margin-bottom: rem-size(10px) !important;
   }
 
   &__col--contact a {
