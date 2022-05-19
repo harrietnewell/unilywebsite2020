@@ -129,7 +129,8 @@
 	
 	@media (max-width: $breakpoint-md-down) {
 		.c-nav__btn {
-			padding: 5px 7px;
+			padding: 5px 8px;
+			font-size: 15px;
 		}
 	}
 }
