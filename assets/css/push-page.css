@@ -50,6 +50,9 @@
   text-align: left;
   margin: auto 0;
 }
+.c-block-push-page__form .legal-consent-container, .c-block-push-page__form .hs-error-msgs {
+  text-align: left;
+}
 .c-block-push-page__brands {
   display: flex;
   align-items: center;

@@ -21,12 +21,12 @@
   </head>
   <body>
     <!--HeaderTransparentStart-->
-    <header class="c-head c-head--transparent">
+    <header class="c-head">
       <div class="c-head__wrap c-head__wrap-push-page">
         <div class="d-flex flex-1"></div>
         <div class="c-head__container">
           <div class="c-logo">
-            <a href="#">
+            <a href="#" data-push-page-link>
               <img src="assets/media/unily-intranet-solutions-logo.svg" alt="Unily" class="c-logo__img" />
               <img
                 src="assets/media/unily-intranet-solutions-logo-dark.svg"
@@ -39,14 +39,14 @@
         </div>
 
         <div class="d-flex flex-1 justify-content-end">
-          <a href="#" class="c-nav__btn">Get Started</a>
+          <a href="#" class="c-nav__btn" data-push-page-link>Get Started</a>
         </div>
       </div>
     </header>
     <!--HeaderTransparentEnd-->
 
     <div class="c-page c-page--top">
-      <div class="c-block-push-page__wrap">
+      <div class="c-block-push-page__wrap" id="push-page-block">
         <div class="container container-lg">
           <div class="c-block-push-page">
             <div class="c-block-push-page__content">
@@ -55,7 +55,7 @@
                 Unily is the employee experience platform that connects, informs, and engages your enterprise. Get your
                 free demo now.
               </p>
-              <ul class="tick-list paragraph-02">
+              <ul class="tick-list">
                 <li>Supercharge your digital employee experience</li>
                 <li>Enterprise grade security including SOC2</li>
                 <li>Rated #1 intranet by Forrester and Clearbox</li>
@@ -99,24 +99,24 @@
               <div>
                 <p class="paragraph-02 text-center mt-4 mb-4 color-white-alpha">Trusted by the world’s best brands</p>
                 <div class="c-block-push-page__brands">
-                  <a href="#" class="c-block-push-page__brands-item">
-                    <img src="assets/img/brands/mcdnds.svg" alt="McDonald" />
-                  </a>
-                  <a href="#" class="c-block-push-page__brands-item">
-                    <img src="assets/img/brands/cvs.svg" alt="CVS" />
-                  </a>
-                  <a href="#" class="c-block-push-page__brands-item">
-                    <img src="assets/img/brands/comcast.svg" alt="Comcast" />
-                  </a>
-                  <a href="#" class="c-block-push-page__brands-item">
-                    <img src="assets/img/brands/loreal.svg" alt="Loreal" />
-                  </a>
-                  <a href="#" class="c-block-push-page__brands-item">
-                    <img src="assets/img/brands/am-express.svg" alt="American Express" />
-                  </a>
-                  <a href="#" class="c-block-push-page__brands-item">
-                    <img src="assets/img/brands/j-j.svg" alt="J&J" />
-                  </a>
+                  <div class="c-block-push-page__brands-item">
+                    <img src="assets/img/brands/mcdnds.svg" alt="McDonald" class="img-alt" height="22" />
+                  </div>
+                  <div class="c-block-push-page__brands-item">
+                    <img src="assets/img/brands/cvs.svg" alt="CVS" class="img-alt" height="22" />
+                  </div>
+                  <div class="c-block-push-page__brands-item">
+                    <img src="assets/img/brands/comcast.svg" alt="Comcast" class="img-alt" height="22" />
+                  </div>
+                  <div class="c-block-push-page__brands-item">
+                    <img src="assets/img/brands/loreal.svg" alt="Loreal" class="img-alt" height="22" />
+                  </div>
+                  <div class="c-block-push-page__brands-item">
+                    <img src="assets/img/brands/am-express.svg" alt="American Express" class="img-alt" height="22" />
+                  </div>
+                  <div class="c-block-push-page__brands-item">
+                    <img src="assets/img/brands/j-j.svg" alt="J&J" class="img-alt" height="22" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -428,7 +428,7 @@
           </div>
           <div class="mr-auto">
 			<p class="c-foot__logo c-foot__logo-push-page text-center">
-				<a href="/">
+				<a href="#" data-push-page-link>
 				  <img src="https://unilyweb2020.azureedge.net/media/3fzkiktv/unily-strap-navy.svg" alt="Unily - unite your enterprise" height="40" width="150" />
 				</a>
 			</p>
@@ -442,6 +442,7 @@
     <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
     <script src="assets/js/navigation.js"></script>
     <script src="assets/js/vendor/simplebar.min.js"></script>
+	<script src="assets/js/pushpage.js"></script>
     <script src="assets/js/app.js"></script>
 	
   </body>
