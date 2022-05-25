@@ -96,7 +96,6 @@
     list-style: none;
     padding-left: 0;
     display: flex;
-    display: flex;
     align-items: center;
     flex-grow: 1;
     border-bottom: rem-size(5px) solid $color-02; 
@@ -105,12 +104,22 @@
     @media (max-width: $breakpoint-md-down) {
       border-bottom-width: rem-size(3px);
     }
+
+    &--horizontal {
+        padding: 0 20px;
+        justify-content: space-between;
+    }
   }
 
   &__item {
     padding-left: rem-size(60px);
     padding-right: rem-size(60px);
     margin-bottom:0px;
+
+    &--horizontal {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     @media (max-width: $breakpoint-md-down) {
       padding-left: rem-size(30px);

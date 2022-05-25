@@ -3033,7 +3033,6 @@ p.c-metadata__item + p.c-metadata__item {
   list-style: none;
   padding-left: 0;
   display: flex;
-  display: flex;
   align-items: center;
   flex-grow: 1;
   border-bottom: 0.3125rem solid #dcdcdc;
@@ -3044,10 +3043,18 @@ p.c-metadata__item + p.c-metadata__item {
     border-bottom-width: 0.1875rem;
   }
 }
+.c-category-nav__list--horizontal {
+  padding: 0 20px;
+  justify-content: space-between;
+}
 .c-category-nav__item {
   padding-left: 3.75rem;
   padding-right: 3.75rem;
   margin-bottom: 0px;
+}
+.c-category-nav__item--horizontal {
+  padding-left: 0;
+  padding-right: 0;
 }
 @media (max-width: 767px) {
   .c-category-nav__item {
