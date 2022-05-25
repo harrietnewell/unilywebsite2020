@@ -33,7 +33,7 @@
     @media (min-width: $breakpoint-md) {
       flex: 0 0 50%;
       padding-left: 0px;
-      padding-right: rem-size(20px);
+      padding-right: 40px;
     }
   }
 
@@ -67,10 +67,6 @@
     &-item {
       opacity: 0.75;
       transition: 0.3s;
-
-      &:hover {
-        opacity: 1;
-      }
 
       &:not(:first-child) {
         margin-left: rem-size(25px);

@@ -34,7 +34,7 @@
     .d-single-card {
       //width: 49%;
       width: 100%;
-      max-width: 498px;
+      max-width: 500px;
       display: flex;
       flex-direction: column;
       position: relative;
@@ -155,7 +155,7 @@
 
     .c-block-05__content {
       @media (min-width: $breakpoint-md) {
-        max-width: 498px;
+        max-width: 500px;
       }
     }
   }
@@ -171,6 +171,10 @@
       .d-single-card {
         margin-bottom: 0;
       }
+    }
+
+    .c-block-05__col:last-child {
+        padding-bottom: 0 !important;
     }
 
     @media (max-width: 767px) {

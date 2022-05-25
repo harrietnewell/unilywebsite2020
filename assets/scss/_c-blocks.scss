@@ -174,7 +174,7 @@
       padding-bottom: 0;
       align-items: center;
       &:first-child {
-        padding-right: rem-size(48px);
+        padding-right: 48px;
       }
 
       &:last-child {
@@ -259,7 +259,7 @@
           }
 
           &:last-child {
-            padding-left: 0px;
+            padding-right: 48px;
             justify-content: flex-end;
           }
         }

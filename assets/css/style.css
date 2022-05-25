@@ -3770,7 +3770,7 @@ textarea.hs-input {
     align-items: center;
   }
   .c-block-05__col:first-child {
-    padding-right: 3rem;
+    padding-right: 48px;
   }
   .c-block-05__col:last-child {
     padding-left: 0;
@@ -3833,7 +3833,7 @@ textarea.hs-input {
     padding-right: 0px;
   }
   .c-block-05--alt .c-block-05__row .c-block-05__col:last-child {
-    padding-left: 0px;
+    padding-right: 48px;
     justify-content: flex-end;
   }
 }

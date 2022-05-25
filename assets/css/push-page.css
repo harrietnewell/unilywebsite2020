@@ -31,7 +31,7 @@
   .c-block-push-page__content {
     flex: 0 0 50%;
     padding-left: 0px;
-    padding-right: 1.25rem;
+    padding-right: 40px;
   }
 }
 .c-block-push-page__info {
@@ -61,9 +61,6 @@
 .c-block-push-page__brands-item {
   opacity: 0.75;
   transition: 0.3s;
-}
-.c-block-push-page__brands-item:hover {
-  opacity: 1;
 }
 .c-block-push-page__brands-item:not(:first-child) {
   margin-left: 1.5625rem;
