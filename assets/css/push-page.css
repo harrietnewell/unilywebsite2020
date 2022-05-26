@@ -65,8 +65,10 @@
 .c-block-push-page__brands-item:not(:first-child) {
   margin-left: 1.5625rem;
 }
-.c-block-push-page__brands-item > img {
-  max-width: unset;
+@media (min-width: 768px) {
+  .c-block-push-page__brands-item > img {
+    max-width: unset;
+  }
 }
 .c-block-push-page__clients {
   display: grid;

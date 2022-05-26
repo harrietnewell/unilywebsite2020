@@ -73,7 +73,9 @@
       }
 
       > img {
-        max-width: unset;
+        @media (min-width: $breakpoint-md) {
+          max-width: unset;
+        }
       }
     }
   }
