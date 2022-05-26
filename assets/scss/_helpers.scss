@@ -557,6 +557,15 @@
     }
   }
 
+  &.btn-07 {
+    background: $color-09;
+    color: $color-white;
+
+    &:hover {
+      background: darken($color-09, 10%);
+    }
+  }
+
   &.btn-block {
     display: block;
     white-space: normal;
