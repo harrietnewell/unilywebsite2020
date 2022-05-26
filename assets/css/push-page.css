@@ -11,8 +11,7 @@
   .c-block-push-page__wrap {
     flex-direction: row;
     text-align: unset;
-    padding: 10rem 0;
-    height: calc(100vh - 100px);
+    min-height: 47.5rem;
   }
 }
 .c-block-push-page__wrap__heading {
