@@ -2259,10 +2259,16 @@ body.sticky-header .c-page--top {
       }
   }*/
 }
-@media (min-width: 1754px) {
+@media (min-width: 768px) {
   .c-articles__container {
-    width: 109.625rem;
-    max-width: 109.625rem;
+    width: 1220px;
+    max-width: 1220px;
+  }
+}
+@media (min-width: 1800px) {
+  .c-articles__container {
+    width: 1800px;
+    max-width: 1800px;
   }
 }
 .c-articles__item {
@@ -6322,7 +6328,7 @@ button.ot-sdk-show-settings:hover {
 }
 
 .mfp-content.widescreen {
-  max-width: 85% !important;
+  max-width: 70% !important;
 }
 
 .video-section__cover {
@@ -6365,7 +6371,7 @@ button.ot-sdk-show-settings:hover {
 }
 @media only screen and (max-width: 767px) {
   .mfp-content.widescreen {
-    max-width: 100% !important;
+    max-width: 90% !important;
   }
 
   .video-section__cover .video-box .play-icon {
