@@ -12,19 +12,23 @@
     align-items: center;
 
     &__container--3 {
-        max-width: rem-size(780px);
+        max-width: calc(#{$site-medium-width} + 40px);
     }
 
     &__container--4 {
-        max-width: rem-size(1040px);
+        max-width: calc(#{$site-medium-width} + 40px);
     }
 
     &__container--5 {
-        max-width: rem-size(1300px);
+        max-width: calc(#{$site-medium-width} + 40px);
     }
 
     &__container--6 {
-        max-width: rem-size(1560px);
+        max-width: calc(#{$site-medium-width} + 40px);
+    }
+
+    &__container--wide {
+        max-width: calc(#{$site-client-logos-wide-width} + 40px);
     }
 
     &__item {
@@ -49,6 +53,13 @@
         @media (min-width: $breakpoint-md) {
             max-width: $site-medium-width;
             margin: 0px auto 20px auto;
+        }
+
+        &--wide {
+            @media (min-width: $breakpoint-md) {
+                max-width: $site-client-logos-wide-width;
+                margin: 0px auto 20px auto;
+            }
         }
     }
 

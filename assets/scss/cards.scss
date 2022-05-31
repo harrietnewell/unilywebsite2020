@@ -173,8 +173,10 @@
       }
     }
 
-    .c-block-05__col:last-child {
-        padding-bottom: 0 !important;
+    @media (min-width: $breakpoint-md) {
+        .c-block-05__col:last-child {
+            padding-bottom: 0 !important;
+        }
     }
 
     @media (max-width: 767px) {

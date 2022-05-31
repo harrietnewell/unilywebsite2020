@@ -139,8 +139,10 @@
 .d-cards .c-block-05__row:last-of-type .d-single-card {
   margin-bottom: 0;
 }
-.d-cards .c-block-05__row .c-block-05__col:last-child {
-  padding-bottom: 0 !important;
+@media (min-width: 768px) {
+  .d-cards .c-block-05__row .c-block-05__col:last-child {
+    padding-bottom: 0 !important;
+  }
 }
 @media (max-width: 767px) {
   .d-cards .c-block-05__row .c-block-05__col {

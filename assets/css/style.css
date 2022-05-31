@@ -1083,7 +1083,7 @@ th {
   align-items: center;
   text-align: left;
   line-height: 1.4;
-  font-size: 20px;
+  font-size: 18px;
 }
 .tick-list > li:before {
   content: "";
@@ -4492,16 +4492,19 @@ textarea.hs-input {
   align-items: center;
 }
 .c-clients__container--3 {
-  max-width: 48.75rem;
+  max-width: calc(1020px + 40px);
 }
 .c-clients__container--4 {
-  max-width: 65rem;
+  max-width: calc(1020px + 40px);
 }
 .c-clients__container--5 {
-  max-width: 81.25rem;
+  max-width: calc(1020px + 40px);
 }
 .c-clients__container--6 {
-  max-width: 97.5rem;
+  max-width: calc(1020px + 40px);
+}
+.c-clients__container--wide {
+  max-width: calc(1280px + 40px);
 }
 .c-clients__item {
   font: 0/0 a;
@@ -4524,6 +4527,12 @@ textarea.hs-input {
 @media (min-width: 768px) {
   .c-clients__header {
     max-width: 1020px;
+    margin: 0px auto 20px auto;
+  }
+}
+@media (min-width: 768px) {
+  .c-clients__header--wide {
+    max-width: 1280px;
     margin: 0px auto 20px auto;
   }
 }
