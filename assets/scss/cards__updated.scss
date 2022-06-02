@@ -16,7 +16,7 @@
 
   &__item {
     flex: 1;
-    margin: rem-size(10px) 0;
+    margin: rem-size(10px) auto;
 
     @media (min-width: $breakpoint-md) {
       margin: rem-size(10px);
@@ -154,6 +154,6 @@
     padding-left: rem-size(35px);
   }
   @media (max-width: $breakpoint-md-down) {
-    max-width: 100%;
+    max-width: rem-size(390px);
   }
 }
