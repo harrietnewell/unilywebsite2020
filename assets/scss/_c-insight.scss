@@ -9,10 +9,12 @@
 
     .c-content__content {
       margin-top: 0px;
+      padding-right: 20px !important;
       flex: 1;
 
       @media (max-width: $breakpoint-md-down) {
         margin-bottom: 30px;
+        padding-right: 0px !important;
 
         .c-article__media {
           margin-left: -20px;
@@ -28,8 +30,13 @@
 
     .c-content__side {
       margin-top: 0px;
+      padding-left: 20px !important;
       flex: 0 0 rem-size(340px);
       margin-left: auto;
+
+      @media (max-width: $breakpoint-md-down) {
+        padding-left: 0px !important;
+      }
 
       .c-articles__media {
         margin-bottom: 10px !important;

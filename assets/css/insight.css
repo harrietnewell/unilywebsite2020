@@ -5,11 +5,13 @@
 }
 .c-insight .c-content .c-content__content {
   margin-top: 0px;
+  padding-right: 20px !important;
   flex: 1;
 }
 @media (max-width: 767px) {
   .c-insight .c-content .c-content__content {
     margin-bottom: 30px;
+    padding-right: 0px !important;
   }
   .c-insight .c-content .c-content__content .c-article__media {
     margin-left: -20px;
@@ -22,8 +24,14 @@
 }
 .c-insight .c-content .c-content__side {
   margin-top: 0px;
+  padding-left: 20px !important;
   flex: 0 0 21.25rem;
   margin-left: auto;
+}
+@media (max-width: 767px) {
+  .c-insight .c-content .c-content__side {
+    padding-left: 0px !important;
+  }
 }
 .c-insight .c-content .c-content__side .c-articles__media {
   margin-bottom: 10px !important;

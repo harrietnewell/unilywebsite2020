@@ -557,6 +557,15 @@
     }
   }
 
+  &.btn-07 {
+    background: $color-09;
+    color: $color-white;
+
+    &:hover {
+      background: darken($color-09, 10%);
+    }
+  }
+
   &.btn-block {
     display: block;
     white-space: normal;
@@ -824,7 +833,7 @@
     align-items: center;
     text-align: left;
     line-height: 1.4;
-    font-size: 20px;
+    font-size: 18px;
     @extend .mb-2;
   }
 
