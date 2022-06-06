@@ -154,8 +154,13 @@
     }
 
     .c-block-05__content {
-      @media (min-width: $breakpoint-md) {
+      @media (min-width: $breakpoint-lg) {
         max-width: 500px;
+      }
+      @media (max-width: $breakpoint-lg-down) {
+        max-width: rem-size(390px);
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
