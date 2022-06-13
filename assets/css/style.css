@@ -3516,6 +3516,20 @@ textarea.hs-input {
   margin-top: 0.3125rem;
 }
 
+.hs-error-msg {
+  color: #F00;
+}
+.hs-error-msg::before {
+  display: inline-block;
+  background: url(https://unilyweb2020dev.azureedge.net/media/liapgnmf/warning-triangle-red.svg) no-repeat;
+  height: 14px;
+  width: 14px;
+  content: "";
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+}
+
 .submitted-message {
   background: #f5f5f5;
   padding: 1.25rem;
@@ -7610,7 +7624,7 @@ li {
 /* Solution/Feature Page Breadcrumb */
 .container-breadcrumb {
   padding: 60px 20px 0px 20px;
-  max-width: 1048px;
+  max-width: calc(1020px + 40px);
   width: 100%;
   margin: 0 auto -30px auto;
 }

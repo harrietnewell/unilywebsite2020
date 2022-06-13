@@ -895,7 +895,7 @@ li {
 /* Solution/Feature Page Breadcrumb */
 .container-breadcrumb {
   padding: 60px 20px 0px 20px;
-  max-width: 1048px;
+  max-width: calc(#{$site-medium-width} + 40px);
   width: 100%;
   margin: 0 auto -30px auto; // TODO - Negative top margin is temp fix for use on solution feature pages where content blocks have top margin of 30px
 

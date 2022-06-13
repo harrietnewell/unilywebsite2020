@@ -379,25 +379,40 @@ textarea.hs-input {
   margin-top: rem-size(5px);
 }
 
-.submitted-message {
-  background: $color-unily-grey-1;
-  padding: rem-size(20px);
-  border-radius: rem-size(4px);
+.hs-error-msg {
+    color: #F00;
 
-  > *:last-child {
-    margin-bottom: 0;
-  }
-
-  a {
-    background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size 0.3s;
-    padding-bottom: 2px;
-
-    &:hover {
-      background-size: 100% 2px;
+    &::before {
+        display: inline-block;
+        background: url(#{$cdn-url}media/liapgnmf/warning-triangle-red.svg) no-repeat;
+        height: 14px;
+        width: 14px;
+        content: '';
+        margin-right: 5px;
+        position: relative;
+        top: 1px;
     }
-  }
+}
+
+.submitted-message {
+    background: $color-unily-grey-1;
+    padding: rem-size(20px);
+    border-radius: rem-size(4px);
+
+    > *:last-child {
+        margin-bottom: 0;
+    }
+
+    a {
+        background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.3s;
+        padding-bottom: 2px;
+
+        &:hover {
+            background-size: 100% 2px;
+        }
+    }
 }
