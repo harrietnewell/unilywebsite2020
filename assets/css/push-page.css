@@ -55,7 +55,8 @@
 .c-block-push-page__brands {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .c-block-push-page__brands-item {
   opacity: 0.75;
