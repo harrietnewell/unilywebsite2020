@@ -4722,10 +4722,10 @@ textarea.hs-input {
 .c-agenda__image {
   position: absolute;
   display: block;
-  width: 3.75rem;
-  height: 3.75rem;
-  left: -1.75rem;
-  top: -1.25rem;
+  width: 60px;
+  height: 60px;
+  left: -30px;
+  top: -20px;
 }
 .c-agenda__image + .c-agenda__heading {
   margin-top: 0 !important;

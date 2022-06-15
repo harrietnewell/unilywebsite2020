@@ -149,10 +149,10 @@
     &__image {
         position: absolute;
         display: block;
-        width: rem-size(60px);
-        height: rem-size(60px);
-        left: rem-size(-28px);
-        top: rem-size(-20px);
+        width: 60px;
+        height: 60px;
+        left: -30px;
+        top: -20px;
 
         & + .c-agenda__heading {
             margin-top: 0 !important;
