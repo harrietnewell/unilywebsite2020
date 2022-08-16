@@ -4,41 +4,97 @@ var unilyLanguageSelection = {
 
 	languageSelectorElementSelector: '#language-selector',
 	languagesListElementSelector: '#languages',
-	languageElementSelector: '#languages-list li a',
-
-	assignCloseLanguagesEvents: function () {
-		setTimeout(function () {
-			$(unilyLanguageSelection.languageSelectorElementSelector).unbind();
-			$(document).on('click', unilyLanguageSelection.hideLanguagesList);
-		}, 100);
-	},
-
-	assignOpenLanguagesEvents: function () {
-		setTimeout(function () {
-			unilyLanguageSelection.assignLanguageSelectorClick();
-			$(document).off('click', unilyLanguageSelection.hideLanguagesList);
-		}, 100);
-	},
+	isLanguagesListFocussed: false,
 
 	showLanguagesList: function () {
 		$(unilyLanguageSelection.languagesListElementSelector).fadeIn();
-		unilyLanguageSelection.assignCloseLanguagesEvents();
 	},
 
 	hideLanguagesList: function () {
 		$(unilyLanguageSelection.languagesListElementSelector).fadeOut();
-		unilyLanguageSelection.assignOpenLanguagesEvents();
 	},
 
-	assignLanguageSelectorClick: function () {
-		$(unilyLanguageSelection.languageSelectorElementSelector).on('click', function (e) {
-			e.preventDefault();
-			unilyLanguageSelection.showLanguagesList();
+	assignLanguageSelectorOpenEvents: function () {
+
+		setTimeout(function () {
+
+			$(unilyLanguageSelection.languageSelectorElementSelector).unbind();
+
+			// Show list
+			$(unilyLanguageSelection.languageSelectorElementSelector).on('click', function (e) {
+				e.preventDefault();
+				unilyLanguageSelection.showLanguagesList();
+				unilyLanguageSelection.assignLanguageSelectorCloseEvents();
+			});
+
+			$(unilyLanguageSelection.languageSelectorElementSelector).on('mouseenter', function () {
+				unilyLanguageSelection.showLanguagesList();
+				unilyLanguageSelection.assignLanguageSelectorCloseEvents();
+			});
+
+		}, 100);
+	},
+
+	assignLanguageSelectorCloseEvents: function () {
+
+		setTimeout(function () {
+
+			$(unilyLanguageSelection.languageSelectorElementSelector).unbind();
+
+			// Hide List
+			$(unilyLanguageSelection.languageSelectorElementSelector).on('click', function (e) {
+				e.preventDefault();
+				unilyLanguageSelection.hideLanguagesList();
+				unilyLanguageSelection.assignLanguageSelectorOpenEvents();
+			});
+
+			$(unilyLanguageSelection.languageSelectorElementSelector).on('mouseleave', function () {
+				setTimeout(function () {
+					if (!unilyLanguageSelection.isLanguagesListFocussed) {
+						unilyLanguageSelection.hideLanguagesList();
+						unilyLanguageSelection.assignLanguageSelectorOpenEvents();
+					}
+				}, 100);
+			});
+
+		}, 100);
+	},
+
+	assignDocumentClickCloseEvent: function () {
+
+		$(document).on('click', function (e) {
+			// Only run document click close code if this was NOT a click of the language selector
+			if (!$.contains($(unilyLanguageSelection.languageSelectorElementSelector)[0], e.target)) {
+				unilyLanguageSelection.hideLanguagesList();
+				unilyLanguageSelection.assignLanguageSelectorOpenEvents();
+			}
+		});
+	},
+
+	assignListMouseEnterEvent: function () {
+
+		$(unilyLanguageSelection.languagesListElementSelector).on('mouseenter', function (e) {
+			console.log('visy visy!');
+			unilyLanguageSelection.isLanguagesListFocussed = true;
+		});
+	},
+
+	assignListMouseLeaveEvent: function () {
+
+		// if visible list loses mouse focus, close it
+		$(unilyLanguageSelection.languagesListElementSelector).on('mouseleave', function (e) {
+			unilyLanguageSelection.isLanguagesListFocussed = false;
+			unilyLanguageSelection.hideLanguagesList();
+			unilyLanguageSelection.assignLanguageSelectorOpenEvents();
 		});
 	},
 
 	init: function () {
-		unilyLanguageSelection.assignLanguageSelectorClick();
+		unilyLanguageSelection.assignLanguageSelectorOpenEvents();
+		unilyLanguageSelection.assignDocumentClickCloseEvent();
+
+		unilyLanguageSelection.assignListMouseEnterEvent();
+		unilyLanguageSelection.assignListMouseLeaveEvent();
 	}
 }
 
