@@ -13,8 +13,8 @@ a#language-selector:hover {
 
 #languages {
   position: absolute;
-  left: -18px;
-  bottom: 36px;
+  left: -8px;
+  bottom: 33px;
   background: #FFF;
   border-radius: 5px;
   padding: 20px 40px 20px 20px;
@@ -25,12 +25,12 @@ a#language-selector:hover {
 
 #languages-arrow {
   position: absolute;
-  left: 10px;
-  bottom: -5px;
-  height: 30px;
-  width: 30px;
+  left: 5px;
+  bottom: -3px;
+  height: 20px;
+  width: 20px;
   background: #FFF;
-  border-radius: 3px;
+  border-radius: 2px;
   transform: rotate(315deg);
   z-index: 11;
 }

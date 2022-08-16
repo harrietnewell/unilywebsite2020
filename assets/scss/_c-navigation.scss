@@ -188,9 +188,15 @@
 
     .dropdown .firstlevel.sub-menu-clm-three li {
         width: auto;
+        min-width: 225px;
         list-style: none;
         padding: 8px 0;
         margin: 0;
+
+        a.twolevel-item span.border {
+            line-height: 20px !important;
+            white-space: break-spaces;
+        }
     }
 
     .dropdown .firstlevel.sub-menu-clm-three li a {
