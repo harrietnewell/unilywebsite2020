@@ -18,20 +18,19 @@ a#language-selector:hover {
   background: #FFF;
   border-radius: 5px;
   padding: 20px 40px 20px 20px;
-  -webkit-box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(5px 5px 10px rgba(28, 28, 27, 0.3));
   display: none;
 }
 
 #languages-arrow {
   position: absolute;
-  left: 5px;
-  bottom: -3px;
-  height: 20px;
-  width: 20px;
+  left: 8px;
+  bottom: -5px;
+  height: 14px;
+  width: 14px;
   background: #FFF;
-  border-radius: 2px;
-  transform: rotate(315deg);
+  border-radius: 2px 0 0 0;
+  transform: rotate(45deg);
   z-index: 11;
 }
 
