@@ -371,6 +371,20 @@ textarea.hs-input {
   }
 }
 
+.smooth-underline {
+  color: $color-unily-light-blue !important;
+  background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue) !important;
+  background-position: 0% 100% !important;
+  background-repeat: no-repeat !important;
+  background-size: 0% 2px !important;
+  transition: background-size 0.3s !important;
+  padding-bottom: 2px !important;
+
+  &:hover {
+    background-size: 100% 2px !important;
+  }
+}
+
 .hs_error_rollup {
     display: none;
 }
