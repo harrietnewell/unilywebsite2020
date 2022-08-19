@@ -1794,7 +1794,7 @@ body.sticky-header .c-page--top {
     margin: 0;
   }
   .dropdown .firstlevel.sub-menu-clm-three li a.twolevel-item span.border {
-    line-height: 20px !important;
+    line-height: 24px !important;
     white-space: break-spaces;
   }
   .dropdown .firstlevel.sub-menu-clm-three li a {
@@ -3472,6 +3472,19 @@ textarea.hs-input {
   padding-bottom: 2px !important;
 }
 .hs-richtext a:hover {
+  background-size: 100% 2px !important;
+}
+
+.smooth-underline {
+  color: #3ec8ed !important;
+  background-image: linear-gradient(#3ec8ed, #3ec8ed) !important;
+  background-position: 0% 100% !important;
+  background-repeat: no-repeat !important;
+  background-size: 0% 2px !important;
+  transition: background-size 0.3s !important;
+  padding-bottom: 2px !important;
+}
+.smooth-underline:hover {
   background-size: 100% 2px !important;
 }
 
