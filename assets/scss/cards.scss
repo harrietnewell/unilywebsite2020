@@ -5,7 +5,7 @@
 @import "functions";
 
 // Variables
-@import "variables"; 
+@import "variables";
 
 .d-cards {
   padding: 0;
@@ -158,6 +158,7 @@
         max-width: 500px;
       }
       @media (max-width: $breakpoint-lg-down) {
+        word-break: break-word;
         max-width: rem-size(390px);
         margin-left: auto;
         margin-right: auto;

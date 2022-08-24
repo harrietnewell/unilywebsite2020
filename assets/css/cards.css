@@ -131,6 +131,7 @@
 }
 @media (max-width: 991px) {
   .d-cards .d-cards-list .c-block-05__content {
+    word-break: break-word;
     max-width: 24.375rem;
     margin-left: auto;
     margin-right: auto;
