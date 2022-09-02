@@ -3180,7 +3180,7 @@ p.c-metadata__item + p.c-metadata__item {
     margin-right: auto;
   }
 }
-.c-form + p {
+.c-form + div.hs-form-sub-text {
   margin-top: 1.25rem;
 }
 @media (min-width: 768px) {
