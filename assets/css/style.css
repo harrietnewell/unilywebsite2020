@@ -5486,7 +5486,6 @@ textarea.hs-input {
 
 #onetrust-banner-sdk #onetrust-accept-btn-handler, #onetrust-banner-sdk #onetrust-reject-all-handler, #onetrust-banner-sdk #onetrust-pc-btn-handler {
   border-radius: 0.125rem !important;
-  padding: 0.5625rem 0.9375rem !important;
   white-space: nowrap !important;
   text-transform: uppercase !important;
   font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
