@@ -142,8 +142,9 @@
 }
 
 #onetrust-banner-sdk #onetrust-button-group {
-  display: inline-flex !important;
-  gap: 1rem;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
 }
 
 #onetrust-banner-sdk .ot-sdk-eight.ot-sdk-columns {
@@ -1212,7 +1213,8 @@ button.ot-sdk-show-settings {
 #onetrust-banner-sdk #onetrust-policy-title {
   font-size: 1.2em;
   line-height: 1.3;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  width: unset !important;
 }
 
 #onetrust-banner-sdk #onetrust-policy-text {
@@ -1266,7 +1268,9 @@ button.ot-sdk-show-settings {
   border: none;
   color: #68b631;
   text-decoration: underline;
-  padding-right: 0
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  width: unset !important;
 }
 
 #onetrust-banner-sdk #onetrust-close-btn-container {
