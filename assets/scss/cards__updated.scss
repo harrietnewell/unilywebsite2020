@@ -43,11 +43,8 @@
   padding: rem-size(45px) rem-size(75px) rem-size(30px) rem-size(75px);
   border-radius: rem-size(40px);
   overflow: hidden;
-  min-height: rem-size(480px);
-
-  @media (min-width: $breakpoint-md) {
-    min-height: rem-size(660px);
-  }
+  min-height: rem-size(660px);
+  word-break: break-all;
 
   .d-card-tag {
     position: absolute;
@@ -56,6 +53,7 @@
     float: none;
     padding: 0;
   }
+
   .d-single-card-content {
     position: relative;
 
@@ -64,12 +62,8 @@
       font-weight: 700;
       color: #1c1c1b;
       margin-bottom: rem-size(25px);
-      font-size: rem-size(36px);
+      font-size: rem-size(54px);
       font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-      @media (min-width: $breakpoint-md) {
-        font-size: rem-size(54px);
-      }
     }
 
     p {
@@ -85,11 +79,13 @@
         max-width: 100%;
       }
     }
+
     .d-card-logos {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+
       img {
         width: 46%;
         object-fit: contain;
@@ -98,11 +94,13 @@
       }
     }
   }
+
   .d-card-bottom {
     position: relative;
     margin-top: auto;
     text-align: center;
   }
+
   .d-card-button {
     font-size: rem-size(16px);
     text-transform: uppercase;
@@ -115,6 +113,7 @@
     text-align: center;
     font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
     transition-timing-function: ease-in-out;
+
     &:hover {
       color: #fff;
       background: #1c1c1b;
@@ -128,15 +127,18 @@
         color: #fff;
       }
     }
+
     .d-card-button {
       color: #fff;
       border-color: #fff;
+
       &:hover {
         color: #1c1c1b;
         background: #fff;
       }
     }
   }
+
   &--bg-img {
     &:before {
       content: "";

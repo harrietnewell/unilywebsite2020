@@ -34,12 +34,8 @@
   padding: 2.8125rem 4.6875rem 1.875rem 4.6875rem;
   border-radius: 2.5rem;
   overflow: hidden;
-  min-height: 30rem;
-}
-@media (min-width: 768px) {
-  .c-block-card {
-    min-height: 41.25rem;
-  }
+  min-height: 41.25rem;
+  word-break: break-all;
 }
 .c-block-card .d-card-tag {
   position: absolute;
@@ -56,13 +52,8 @@
   font-weight: 700;
   color: #1c1c1b;
   margin-bottom: 1.5625rem;
-  font-size: 2.25rem;
+  font-size: 3.375rem;
   font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-@media (min-width: 768px) {
-  .c-block-card .d-single-card-content .d-card-heading {
-    font-size: 3.375rem;
-  }
 }
 .c-block-card .d-single-card-content p {
   color: #1c1c1b;
