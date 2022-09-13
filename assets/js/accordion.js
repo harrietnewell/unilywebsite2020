@@ -2,7 +2,8 @@
 
     init: function init() {        
 		$(".c-accordion").accordion({
-			heightStyle: "content"
+			heightStyle: "content",
+			collapsible: true
 		});
     }
 }
