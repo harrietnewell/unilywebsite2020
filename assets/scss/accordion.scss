@@ -1,0 +1,13 @@
+// Accordion
+
+.c-accordion {
+	
+	&-heading:hover {
+		cursor:pointer;
+	}
+	
+	&-content {
+		padding: 20px 0;
+	}
+	
+}

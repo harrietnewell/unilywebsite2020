@@ -1,0 +1,6 @@
+.c-accordion-heading:hover {
+  cursor: pointer;
+}
+.c-accordion-content {
+  padding: 20px 0;
+}
