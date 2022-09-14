@@ -1,13 +1,13 @@
 // Accordion
 
 .c-accordion {
-	
+
 	&-heading {
-		
+
 		&:hover {
-			cursor:pointer;
+			cursor: pointer;
 		}
-		
+
 		&::before {
 			content: '';
 			display: inline-block;
@@ -21,13 +21,26 @@
 			vertical-align: middle;
 			border-top-right-radius: 2px;
 		}
-		
+
 		&.ui-accordion-header-active::before {
 			transform: rotate(135deg);
 		}
 	}
-	
+
 	&-content {
 		padding: 20px 0;
-	}	
+
+		a {
+			background-image: linear-gradient(#3ec8ed, #3ec8ed); // TODO - Parameterise color
+			background-position: 0% 100%;
+			background-repeat: no-repeat;
+			background-size: 0% 2px;
+			transition: background-size .3s;
+			padding-bottom: 2px;
+
+			&:hover {
+				background-size: 100% 2px;
+			}
+		}
+	}
 }
