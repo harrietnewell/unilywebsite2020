@@ -12,6 +12,7 @@
   margin-right: 10px;
   margin-bottom: 8px;
   vertical-align: middle;
+  border-top-right-radius: 2px;
 }
 .c-accordion-heading.ui-accordion-header-active::before {
   transform: rotate(135deg);
