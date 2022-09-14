@@ -1043,3 +1043,22 @@ li {
 .pt-80px {
   padding-top: rem-size(80px);
 }
+
+a {
+    &.ul {
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.3s;
+        padding-bottom: 2px;
+
+        &:hover {
+            background-size: 100% 2px;
+        }
+
+        &-black {
+            color: $color-unily-black;
+            background-image: linear-gradient($color-unily-black, $color-unily-black);
+        }
+    }
+}
