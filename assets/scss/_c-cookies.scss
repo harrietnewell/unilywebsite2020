@@ -3996,3 +3996,7 @@ button:not(#clear-filters-handler):not(.ot-close-icon):not(#filter-btn-handler):
     bottom: 0px;
   }
 }
+
+#onetrust-banner-sdk .banner-actions-container {
+    width: unset !important;
+}

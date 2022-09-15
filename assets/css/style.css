@@ -9491,6 +9491,10 @@ button.ot-sdk-show-settings:hover {
     bottom: 0px;
   }
 }
+#onetrust-banner-sdk .banner-actions-container {
+  width: unset !important;
+}
+
 .c-testimonials {
   list-style: none;
   padding-left: 0;
