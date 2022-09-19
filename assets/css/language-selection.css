@@ -18,7 +18,8 @@ a#language-selector:hover {
   background: #FFF;
   border-radius: 5px;
   padding: 20px 40px 20px 20px;
-  filter: drop-shadow(5px 5px 10px rgba(28, 28, 27, 0.3));
+  -webkit-box-shadow: 5px 5px 16px rgba(28, 28, 27, 0.15);
+  box-shadow: 5px 5px 16px rgba(28, 28, 27, 0.15);
   display: none;
 }
 
