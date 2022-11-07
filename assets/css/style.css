@@ -364,6 +364,12 @@ th {
   padding-right: 0;
 }
 
+@media (max-width: 767px) {
+  .container-mobile-rollup-intro {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .pt {
   padding-top: 2.5rem !important;
 }
@@ -1673,6 +1679,10 @@ body.sticky-header .c-page--top {
     line-height: calc(24/18);
   }
 
+  .dropdown-menu.thirdlevel > li {
+    padding: 5.7px 0;
+  }
+
   .dropdown-menu > li > a span.border,
 .dropdown-menu.thirdlevel > li > a {
     background-image: linear-gradient(#333333, #333333);
@@ -2587,6 +2597,19 @@ p.c-metadata__item + p.c-metadata__item {
 }
 .c-article__media {
   margin-bottom: 1.875rem;
+}
+.c-article__media .video-section__cover {
+  padding: 0 !important;
+}
+.c-article__media .video-section__cover .lightbox-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.c-article__media .video-section__cover .lightbox-link:hover {
+  background: none !important;
 }
 .c-article__form {
   margin-bottom: 1.875rem;
@@ -4164,6 +4187,18 @@ textarea.hs-input {
   font-size: 5rem;
   font-weight: bold;
   font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.c-block-columns--profiles .c-block-columns__item {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+.c-block-columns--profiles .c-block-columns__item > *:first-child {
+  flex: 1;
+}
+.c-block-columns--profiles .c-block-columns__item-image-container > *:last-child {
+  margin-bottom: 10px;
 }
 
 .c-block-client {
@@ -9495,6 +9530,26 @@ button.ot-sdk-show-settings:hover {
   width: unset !important;
 }
 
+/* 
+    additional styles after markup change by onetrust 07/11/2022
+    If old markup is reverted, remove the below
+*/
+#onetrust-consent-sdk #onetrust-pc-sdk .category-host-list-handler {
+  color: #fff !important;
+  padding: 9px 15px !important;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: bold !important;
+  font-size: 1rem !important;
+}
+
+button.ot-link-btn.back-btn-handler, button.ot-host-box {
+  background-color: transparent !important;
+}
+
+/* 
+    END - additional styles after markup change by onetrust 07/11/2022
+*/
 .c-testimonials {
   list-style: none;
   padding-left: 0;
@@ -11383,17 +11438,10 @@ li {
   padding-top: 5rem;
 }
 
-a.ul {
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.3s;
-  padding-bottom: 2px;
-}
-a.ul:hover {
-  background-size: 100% 2px;
-}
-a.ul-black {
+a.black {
   color: #1c1c1b;
-  background-image: linear-gradient(#1c1c1b, #1c1c1b);
+}
+
+.c-content-block p a {
+  color: #1c1c1b;
 }

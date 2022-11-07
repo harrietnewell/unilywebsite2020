@@ -4000,3 +4000,24 @@ button:not(#clear-filters-handler):not(.ot-close-icon):not(#filter-btn-handler):
 #onetrust-banner-sdk .banner-actions-container {
     width: unset !important;
 }
+
+/* 
+    additional styles after markup change by onetrust 07/11/2022
+    If old markup is reverted, remove the below
+*/
+#onetrust-consent-sdk #onetrust-pc-sdk .category-host-list-handler {
+    color: $color-white !important;
+    padding: 9px 15px !important;
+    text-transform: uppercase;
+    font-family: $font-alt !important;
+    font-weight: bold !important;
+    font-size: rem-size(16px) !important;
+}
+
+button.ot-link-btn.back-btn-handler, button.ot-host-box {
+    background-color: transparent !important;
+}
+
+/* 
+    END - additional styles after markup change by onetrust 07/11/2022
+*/

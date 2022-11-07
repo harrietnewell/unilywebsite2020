@@ -133,3 +133,21 @@
     font-family: $font-alt;
   }
 }
+
+// Fix to remove the need for js-equal script - to make more generic and apply to all cases/tidy up
+.c-block-columns--profiles {
+
+    .c-block-columns__item {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+
+        > *:first-child {
+            flex: 1;
+        }
+
+        &-image-container > *:last-child {
+            margin-bottom: 10px;
+        }
+    }
+}

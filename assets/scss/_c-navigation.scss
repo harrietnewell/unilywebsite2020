@@ -1,7 +1,7 @@
 // Navigation
 
 @media all and (min-width: $breakpoint-head) {
-
+    
     .dropdown-menu > li {
         /* position: relative; */
         -webkit-user-select: none;
@@ -22,7 +22,7 @@
     .dropdown-menu > li.twolevel
     {
        padding: 7px 2rem 7px 0;
-        margin: 0 0 0 2rem;
+        margin: 0 0 0 2rem; 
         width: auto;
     }
 
@@ -36,10 +36,13 @@
         color: $color-unily-black;
         font-weight: bold;
         text-transform: uppercase;
-
         white-space: nowrap;
         width: fit-content;
         line-height: calc(24/18);
+    }
+
+    .dropdown-menu.thirdlevel > li {
+        padding:5.7px 0;
     }
 
     .dropdown-menu > li > a span.border,
@@ -61,9 +64,9 @@
 	.dropdown .c-nav__link,
     .dropdown .c-nav__link.active {
 		span {
-			margin-right: rem-size(9px);
+			margin-right: rem-size(9px);	
 		}
-
+		
 		&::after {
 			margin: 0 0 3px 0;
 			transition: hover .3s;
@@ -79,7 +82,7 @@
 			background-position: center;
 			position: relative;
 			border: none;
-			top: 0;
+			top: 0;	
 		}
 	}
 
@@ -119,7 +122,7 @@
 
     .c-nav__item {
         justify-content: center;
-
+		
 		&.dropdown {
 			padding-right:0;
 		}
@@ -201,7 +204,7 @@
 
     .dropdown .firstlevel.sub-menu-clm-three li a {
         display: flex;
-    align-items: center;
+        align-items: center;
         font-size: 1rem;
         clear: both;
         white-space: nowrap;
@@ -209,8 +212,6 @@
         color: $color-unily-black;
         font-weight: bold;
         text-transform: uppercase;
-
-
         white-space: nowrap;
         width: fit-content;
         line-height: calc(24/18);
@@ -273,7 +274,7 @@
 
 /*mobile resize*/
 @media screen and (max-width: $breakpoint-md) {
-
+    
     #main-menu {
         width: 100%;
         padding-left: 0px !important;

@@ -1,0 +1,77 @@
+// FAQ Block
+
+// Variables
+@import "variables";
+
+.c-faq-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	@media (max-width: $breakpoint-md-down) {
+		display: block;
+	}
+
+	&-item {
+		padding: 20px;
+		width: calc(50% - 10px);
+		background: $color-unily-grey-1;
+		margin: 10px;
+		border-radius: 5px;
+		position: relative;
+		overflow: hidden;
+		transition: max-height 0.5s ease-out;
+		max-height: 200px;
+
+		@media (max-width: $breakpoint-md-down) {
+			width: 100%;
+			margin: 20px 0 !important;
+			max-height: 250px;
+		}
+
+		&.expand {
+			max-height: 1000px;
+		}
+
+		&:nth-child(odd) {
+			margin-left: 0;
+		}
+
+		&:nth-child(even) {
+			margin-right: 0;
+		}
+
+		.readmore-link {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			display: block;
+			width: 100%;
+			height: 100px;
+			text-align: left;
+			color: $color-unily-black;
+			font-weight: bold;
+			font-size: 16px;
+			padding: 60px 20px 20px 20px;
+			background-image: linear-gradient(to bottom, transparent, $color-unily-grey-1 50%);
+			cursor: pointer;
+
+			&.expand {
+				background-image: none;
+			}
+		}
+	}
+
+	&-heading {
+		font-size: 24px !important;
+		font-weight: bold !important;
+	}
+
+	&-content {
+		padding-bottom: 20px;
+
+		a {
+			color: $color-unily-black;
+		}
+	}
+}

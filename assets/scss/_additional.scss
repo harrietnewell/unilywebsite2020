@@ -1045,20 +1045,17 @@ li {
 }
 
 a {
-    &.ul {
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size 0.3s;
-        padding-bottom: 2px;
+    &.black {
+        color: $color-unily-black;
+    }
+}
 
-        &:hover {
-            background-size: 100% 2px;
-        }
-
-        &-black {
-            color: $color-unily-black;
-            background-image: linear-gradient($color-unily-black, $color-unily-black);
+// TODO - put in separate style sheet
+// Content Block Styles
+.c-content-block {
+    p {
+        a {  
+            color: #1c1c1b; // TODO - parameterise
         }
     }
 }
