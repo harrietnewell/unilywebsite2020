@@ -168,6 +168,15 @@
   -webkit-backface-visibility: hidden;
 }
 
+.img-snippet-lg {
+    width: 800px !important;
+    max-width: none !important;
+
+    @media (max-width: $breakpoint-md-down) {
+        width: 100% !important;
+    }
+}
+
 .logo {
   img {
     object-fit: contain; //scale-down;
