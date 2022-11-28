@@ -1,0 +1,45 @@
+// upcoming events
+.w-upcoming-events {
+
+    &-items {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    &-item {
+        width: 400px;
+        flex: 0 0 400px;
+        margin-right: 20px;
+
+        &-link {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        a {
+            background-image: none !important;
+        }
+
+        &-media {
+            position: relative;
+            margin-bottom: 20px;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+
+        &-content {
+            .c-metadata__item--date {
+                font-size:16px;
+            }
+        }
+    }
+}

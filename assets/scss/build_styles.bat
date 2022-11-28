@@ -12,6 +12,8 @@ echo "building report-link.css" &^
 sass --no-source-map report-link.scss ../css/report-link.css &^
 echo "building language-selection.css" &^
 sass --no-source-map language-selection.scss ../css/language-selection.css &^
+echo "building upcoming-events.css" &^
+sass --no-source-map upcoming-events.scss ../css/upcoming-events.css &^
 echo "building push-page.css" &^
 sass --no-source-map push-page.scss ../css/push-page.css &^
 echo "building cards__updated.css" &^
