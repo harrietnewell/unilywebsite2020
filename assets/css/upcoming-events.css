@@ -5,8 +5,8 @@
   list-style: none;
 }
 .w-upcoming-events-item {
-  width: 400px;
-  flex: 0 0 400px;
+  width: 360px;
+  flex: 0 0 360px;
   margin-right: 20px;
 }
 @media (max-width: 767px) {
