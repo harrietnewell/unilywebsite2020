@@ -34,3 +34,9 @@
 .w-upcoming-events-item-content .c-metadata__item--date {
   font-size: 16px;
 }
+.w-upcoming-events-item-content .c-metadata__item--date::before {
+  margin-left: 0 !important;
+}
+.w-upcoming-events-item-content .c-tags__list {
+  margin-top: 1.25rem !important;
+}
