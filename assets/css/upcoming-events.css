@@ -11,8 +11,8 @@
 }
 @media (max-width: 767px) {
   .w-upcoming-events-item {
-    width: 300px;
-    flex: 0 0 300px;
+    width: 280px;
+    flex: 0 0 280px;
   }
 }
 .w-upcoming-events-item-link {
@@ -30,9 +30,6 @@
 .w-upcoming-events-item-media {
   position: relative;
   margin-bottom: 20px;
-}
-.w-upcoming-events-item-media img {
-  border-radius: 5px;
 }
 .w-upcoming-events-item-content .c-metadata__item--date {
   font-size: 16px;
