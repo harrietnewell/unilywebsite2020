@@ -457,11 +457,11 @@
                                 .agenda-toggle {
                                     width: fit-content;
                                     margin: auto;
-                                    background: #fafafa;
-									border-radius:18px;
+                                    background: #f5f5f5;
+									border-radius:24px;
 									position:relative;
 									display:flex;
-									min-width:60%;
+									min-width:50%;
 									z-index:0;
 									margin-bottom:20px;
                                 }
@@ -470,11 +470,14 @@
                                     padding: 10px !important;
                                     cursor: pointer;
                                     font-weight: 500;
-                                    flex: 1 1 33.33%;
+                                    flex: 1 1 50%;
                                     color: #fff;
                                     text-align: center;
                                     z-index: 2;
                                     color: #1c1c1b;
+                                    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+									text-transform:uppercase;
+									font-weight:bold;
                                 }
 
                                 .agenda-toggle-option-selected {
@@ -488,10 +491,10 @@
                                 .agenda-toggle-slide {
                                     position: absolute;
                                     height: 100%;
-                                    width: 33.33%;
+                                    width: 50%;
                                     z-index: 1;
                                     background: #3ec8ed;
-                                    border-radius: 18px;
+                                    border-radius: 24px;
                                     left: 0;
                                     transition-property: left;
                                     transition-duration: 0.25s;
@@ -506,148 +509,299 @@
 							<div class="toggled-agenda-container">
 
 								<div data-agenda-toggle class="agenda-toggle">
-									<a data-agenda-toggle-target-id="1" class="agenda-toggle-option agenda-toggle-option-selected">Agenda 1</a>
-									<a data-agenda-toggle-target-id="2" class="agenda-toggle-option">Agenda 2</a>
-									<a data-agenda-toggle-target-id="3" class="agenda-toggle-option">Agenda 3</a>
+									<a data-agenda-toggle-target-id="1" class="agenda-toggle-option agenda-toggle-option-selected">Day 1</a>
+									<a data-agenda-toggle-target-id="2" class="agenda-toggle-option">Day 2</a>
 									<span class="agenda-toggle-slide"></span>
 								</div>
 
-								<section data-toggled-agenda-id="1" class="agenda container container-sm toggled-agenda" style="display:block;">
-									<h4 class="heading-05 text-center"><strong>Agenda 1</strong></h4>
+								<section data-toggled-agenda-id="1" class="agenda container container-sm pb-sm toggled-agenda" style="display:block;">
+
+									<h3 class="heading-07-alt text-center"><img alt="Unite 22 - Inspire" class="c-agenda__img-heading img-alt loaded" height="30" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/gbaprdbi/inspire.svg?mode=crop&amp;width=500"><br><strong>DAY 1, SEP 20</strong></h3>
 									<ul class="c-agenda list-unite-19-agenda">
 										<li class="c-agenda__item">
 											<span class="c-agenda__bullet"></span>
+											<span class="c-agenda__image">
+												<img alt="Yoga" height="60" width="60" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/4schaydc/yoga.svg?mode=crop&amp;width=120" class="loaded">
+											</span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-20 11:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time" data-ll-status="entered" data-manual-ll-status="loaded">12:00 PM <sup>GMT+1</sup></p>
 											<h3 class="c-agenda__heading">
-												Intro
+												Yoga Sculpt
 											</h3>
-											<p>The future of the digital HQ: can an intranet replace the office?</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
+											<p>Get into the flow with high-intensity cardio yoga with Sky Ting.</p>                        <p class="c-agenda__speaker">
+
+
+												with Krissy Jones - Sky Ting
 											</p>
 										</li>
 										<li class="c-agenda__item">
 											<span class="c-agenda__bullet"></span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-20 12:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time" data-ll-status="entered" data-manual-ll-status="loaded">01:00 PM <sup>GMT+1</sup></p>
 											<h3 class="c-agenda__heading">
-												Culture
+												Watch Party
 											</h3>
-											<p>Discover how to reboot culture with an intranet for everyone. Build trust and community through comms and leadership.</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
+											<p>Doors open in London and New York. Watch live on the big screen. Revive your networking game.</p>                        <ul class="c-agenda__location">
+												<li>Amazing Grace, 9a St Thomas St, London SE1 9RY</li>
+												<li>Pig Beach, 480 Union St, Brooklyn, NY 11231</li>
+											</ul>
+										</li>
+										<li class="c-agenda__item">
+											<span class="c-agenda__bullet"></span>
+											<span class="c-agenda__image">
+												<img alt="Seth Godin" height="60" width="60" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/lpbngrbk/seth-godin.png?mode=crop&amp;width=120" class="loaded">
+											</span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-20 13:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time" data-ll-status="entered" data-manual-ll-status="loaded">02:00 PM <sup>GMT+1</sup></p>
+											<h3 class="c-agenda__heading">
+												<span class="tag tag-02">Keynote</span>
+												This is internal comms: How to market to employees
+											</h3>
+											<p>How would one of the world’s leading marketing minds engage employees with internal comms? Seth Godin returns to Unite 22 to offer a fresh perspective on employee engagement through the lens of a marketeer. As creator of one of the world’s most popular blogs and with 20+ best-selling books, what Seth doesn’t know about the art of connecting people with content isn’t worth knowing. Learn how to apply a marketing eye to internal comms and build a brand from the inside out.</p>                        <p class="c-agenda__speaker">
+
+
+												with Seth Godin
 											</p>
 										</li>
 										<li class="c-agenda__item">
 											<span class="c-agenda__bullet"></span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-20 14:15" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time" data-ll-status="entered" data-manual-ll-status="loaded">03:15 PM <sup>GMT+1</sup></p>
 											<h3 class="c-agenda__heading">
-												Productivity
+												<span class="tag tag-05">Panel</span>
+												Ask an IC expert
 											</h3>
-											<p>Rethink productivity with an intranet at the center of your digital workplace. Use integrations to make your intranet the place where work happens, smarter.</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
+											<p>Seize the opportunity to get your questions answered by top internal communications practitioners and advisors. Come prepared with your trickiest questions and biggest challenges and get the answers you need to supercharge your strategy for the next chapter of work.</p>                        <p class="c-agenda__speaker">
+
+
+												with Chris Andrew - Strategy Director at Caburn Hope;
+												Charlotte Mulliner - Director, Corporate Affairs at Prudential;
+												Rosemary Jean-Louis - Vice President Communications &amp; Engagement Manager at Truist;
+												Marc Whittingham - Internal Communications &amp; Engagement Lead at Holland &amp; Barrett
 											</p>
 										</li>
 										<li class="c-agenda__item">
 											<span class="c-agenda__bullet"></span>
+											<span class="c-agenda__image">
+												<img alt="" height="60" width="60" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/cjuhduqn/kerry-odonnell.png?mode=crop&amp;width=120" class="loaded">
+											</span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-20 15:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time" data-ll-status="entered" data-manual-ll-status="loaded">04:00 PM <sup>GMT+1</sup></p>
 											<h3 class="c-agenda__heading">
-												Experience
+												<span class="tag tag-02">Keynote</span>
+												Making the digital employee experience beautiful
 											</h3>
-											<p>Bring together culture and productivity in a user-experience that drives adoption. Learn how to design enterprise experiences that connect, engage, and inspire.</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
+											<p>Discover how The Estée Lauder Companies (ELC) elegantly connects employees globally and elevates the employee experience with MyELC, ELC’s digital workplace. MyELC celebrates ELC’s culture, strategy, and peer-to-peer connection, while promoting productivity and collaboration to fuel the business.</p>                        <p class="c-agenda__speaker">
+
+
+												with Kerry O'Donnell - Exec Director, Tech for Global Communications at The Estée Lauder Companies
 											</p>
+										</li>
+										<li class="c-agenda__item">
+											<span class="c-agenda__bullet"></span>
+											<span class="c-agenda__image">
+												<img alt="Patricia Bright" height="60" width="60" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/aiohovyj/patricia-bright.png?mode=crop&amp;width=120" class="loaded">
+											</span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-20 16:05" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time" data-ll-status="entered" data-manual-ll-status="loaded">05:05 PM <sup>GMT+1</sup></p>
+											<h3 class="c-agenda__heading">
+												<span class="tag tag-02">Keynote</span>
+												Influencing engagement with next-gen content
+											</h3>
+											<p>How do you create content that drives engagement and builds meaningful relationships with your audience? Hear from the YouTuber, influencer, and businesswoman with 3m+ subscribers and discover her blueprint for success.</p>                        <p class="c-agenda__speaker">
+
+
+												with Patricia Bright - YouTuber
+											</p>
+										</li>
+										<li class="c-agenda__item">
+											<span class="c-agenda__bullet"></span>
+											<span class="c-agenda__image">
+												<img alt="Courtney Paynter" height="60" width="60" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/iqzpbtcs/courtney-paynter.png?mode=crop&amp;width=120" class="loaded">
+											</span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-20 16:50" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time" data-ll-status="entered" data-manual-ll-status="loaded">05:50 PM <sup>GMT+1</sup></p>
+											<h3 class="c-agenda__heading">
+												<span class="tag tag-02">Keynote</span>
+												Building the right hybrid work model for your organization
+											</h3>
+											<p>Every day, we see another company announce a new work model spanning the continuum – more flexibility, an in office expectation, fully remote. How do you know what’s right for your organization and how do you make it stick? AbbVie has consistently delivered high engagement and a great culture. Learn how they evolved their work model to provide predictable flexibility, while protecting performance, collaboration and employee experience.</p>                        <p class="c-agenda__speaker">
+
+
+												with Courtney Paynter - Director, Organizational Excellence at AbbVie
+											</p>
+										</li>
+										<li class="c-agenda__item">
+											<span class="c-agenda__bullet"></span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-20 18:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time" data-ll-status="entered" data-manual-ll-status="loaded">07:00 PM <sup>GMT+1</sup></p>
+											<h3 class="c-agenda__heading">
+												<span class="tag tag-03">Roundtable</span>
+												Roundtables
+											</h3>
+											<p>Are you looking to level up your intranet strategy? Join our subject experts for intimate sessions on topics voted for by you: Comms, Design and Measuring Success. Available for in-person attendees only on a first-come-first-serve basis.</p>                        <ul class="c-agenda__location">
+												<li>Amazing Grace, 9a St Thomas St, London SE1 9RY</li>
+												<li>Pig Beach, 480 Union St, Brooklyn, NY 11231</li>
+											</ul>
 										</li>
 									</ul>
+
 								</section>
 
-								<section data-toggled-agenda-id="2" class="agenda container container-sm toggled-agenda">
-									<h4 class="heading-05 text-center"><strong>Agenda 2</strong></h4>
-									<ul class="c-agenda list-unite-19-agenda">
-										<li class="c-agenda__item">
-											<span class="c-agenda__bullet"></span>
-											<h3 class="c-agenda__heading">
-												Intro
-											</h3>
-											<p>The future of the digital HQ: can an intranet replace the office?</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
-											</p>
-										</li>
-										<li class="c-agenda__item">
-											<span class="c-agenda__bullet"></span>
-											<h3 class="c-agenda__heading">
-												Culture
-											</h3>
-											<p>Discover how to reboot culture with an intranet for everyone. Build trust and community through comms and leadership.</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
-											</p>
-										</li>
-										<li class="c-agenda__item">
-											<span class="c-agenda__bullet"></span>
-											<h3 class="c-agenda__heading">
-												Productivity
-											</h3>
-											<p>Rethink productivity with an intranet at the center of your digital workplace. Use integrations to make your intranet the place where work happens, smarter.</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
-											</p>
-										</li>
-										<li class="c-agenda__item">
-											<span class="c-agenda__bullet"></span>
-											<h3 class="c-agenda__heading">
-												Experience
-											</h3>
-											<p>Bring together culture and productivity in a user-experience that drives adoption. Learn how to design enterprise experiences that connect, engage, and inspire.</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
-											</p>
-										</li>
-									</ul>
-								</section>
+								<section data-toggled-agenda-id="2" class="agenda container container-sm pb-sm toggled-agenda">
 
-								<section data-toggled-agenda-id="3" class="agenda container container-sm toggled-agenda">
-									<h4 class="heading-05 text-center"><strong>Agenda 3</strong></h4>
+									<h3 class="heading-07-alt text-center"><img alt="Unite 21 - Engage" class="c-agenda__img-heading img-alt loaded" height="30" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/asyjxnhb/engage.svg?mode=crop&amp;width=500"><br><strong>Day 2, Sep 21</strong></h3>
 									<ul class="c-agenda list-unite-19-agenda">
 										<li class="c-agenda__item">
 											<span class="c-agenda__bullet"></span>
+											<span class="c-agenda__image">
+												<img alt="" height="60" width="60" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/qyzj04cp/hiit.svg?mode=crop&amp;width=120" class="loaded">
+											</span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-21 11:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time" data-ll-status="entered" data-manual-ll-status="loaded">12:00 PM <sup>GMT+1</sup></p>
 											<h3 class="c-agenda__heading">
-												Intro
+												HIIT
 											</h3>
-											<p>The future of the digital HQ: can an intranet replace the office?</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
+											<p>Take your fitness to the next level with high-intensity interval training.</p>                        <p class="c-agenda__speaker">
+
+
+												with Lottie-Daisy  - The Lottie Method
 											</p>
 										</li>
 										<li class="c-agenda__item">
 											<span class="c-agenda__bullet"></span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-21 12:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time" data-ll-status="entered" data-manual-ll-status="loaded">01:00 PM <sup>GMT+1</sup></p>
 											<h3 class="c-agenda__heading">
-												Culture
+												Watch Party
 											</h3>
-											<p>Discover how to reboot culture with an intranet for everyone. Build trust and community through comms and leadership.</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
+											<p>Doors open in London and New York. Watch live on the big screen. Revive your networking game.</p>                        <ul class="c-agenda__location">
+												<li>Amazing Grace, 9a St Thomas St, London SE1 9RY</li>
+												<li>Pig Beach, 480 Union St, Brooklyn, NY 11231</li>
+											</ul>
+										</li>
+										<li class="c-agenda__item">
+											<span class="c-agenda__bullet"></span>
+											<span class="c-agenda__image">
+												<img src="https://www.unily.com/media/nwej4wql/steven-bartlett.png?mode=crop&amp;width=120" alt="" height="60" width="60" decoding="sync">
+											</span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2021-09-22 13:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">01:00 PM</p>
+											<h3 class="c-agenda__heading">
+												<span class="tag tag-02">Keynote</span>
+												Employee engagement lessons from a CEO
+											</h3>
+											<p>At just 29 years old, Steven Bartlett is widely considered one of the most talented and accomplished young entrepreneurs and philosophical thinkers. His disruptive approach led him to found a $400m social media company aged 21, launch a chart-topping podcast The Diary of a CEO, and become the youngest dragon to enter the Dragon’s Den. Bartlett joins us to discuss his unique ethos on employee engagement, how he’s created a company culture that’s eliminated turnover, and what it takes to lead an organization to success from the perspective of the modern CEO.</p>                        <p class="c-agenda__speaker">
+
+
+												with Steven Bartlett
 											</p>
 										</li>
 										<li class="c-agenda__item">
 											<span class="c-agenda__bullet"></span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-21 14:15" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">02:15 PM</p>
 											<h3 class="c-agenda__heading">
-												Productivity
+												<span class="tag tag-08">Culture</span>
+												Lessons learned from launch and beyond
 											</h3>
-											<p>Rethink productivity with an intranet at the center of your digital workplace. Use integrations to make your intranet the place where work happens, smarter.</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
+											<p>When Pearson identified the need for a new intranet platform, the world’s leading learning company knew they needed to move at warp speed. In just four months, the project team stood up an MVP (minimal viable product) solution for 35k employees leaning on agile methodology to bring their vision to fruition at speed. With a focus on communications, apps and search, today the Hub is transforming communication and engagement across this dynamic enterprise. Discover how Pearson have redefined governance to launch a solution that will stand the test of time, and the lessons they have learned in the eight months since go-live.</p>                        <p class="c-agenda__speaker">
+
+
+												with Kim England - Vice President, Global Employee Communications at Pearson
+											</p>
+											<h3 class="c-agenda__heading">
+												<span class="tag tag-04">Comms</span>
+												Designing experiences to unite a global workforce
+											</h3>
+											<p>Hello! Bonjour! Guten Tag! 你好! Catering your intranet to a global audience is a challenge. But with a user-focus strategy, an agile mindset and the right product, it's possible. Learn how a global company is making it happen.</p>                        <p class="c-agenda__speaker">
+
+
+												with Katie Goodyear - Senior Advisor, Global BAT/HAT Communications and Customer Experience at CAE
 											</p>
 										</li>
 										<li class="c-agenda__item">
 											<span class="c-agenda__bullet"></span>
+											<span class="c-agenda__image">
+												<img src="https://www.unily.com/media/5uznnhap/laurel-mangini.png?mode=crop&amp;width=120" alt="Laurel Mangini" height="60" width="60" decoding="sync">
+											</span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-21 15:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">03:00 PM</p>
 											<h3 class="c-agenda__heading">
-												Experience
+												<span class="tag tag-02">Keynote</span>
+												Building a collaborative community
 											</h3>
-											<p>Bring together culture and productivity in a user-experience that drives adoption. Learn how to design enterprise experiences that connect, engage, and inspire.</p>
-											<p class="c-agenda__link">
-												<a href="#" class="btn btn-01">Watch Now</a>
+											<p>The strategy and application of communities at practice that empower associates and drive engagement at ADP.</p>                        <p class="c-agenda__speaker">
+
+
+												with Laurel Mangini - Collaboration Programs Manager at ADP
 											</p>
+										</li>
+										<li class="c-agenda__item">
+											<span class="c-agenda__bullet"></span>
+											<span class="c-agenda__image">
+												<img src="https://www.unily.com/media/lzbd1khb/kerry-christopher.png?mode=crop&amp;width=120" alt="" height="60" width="60" decoding="sync">
+											</span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-21 16:05" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">04:05 PM</p>
+											<h3 class="c-agenda__heading">
+												<span class="tag tag-02">Keynote</span>
+												A formula for internal communications success
+											</h3>
+											<p>The internal comms landscape today is hardly recognizable from what it was in 20 years ago, but there are fundamental elements that remain foundational to success. In this session, we hear from an internal communicator with 25+ years’ experience about how to adapt a strategy around evergreen principles to engage employees and drive business value amid shifting sands. Discover his framework for success.</p>                        <p class="c-agenda__speaker">
+
+
+												with Kerry Christopher - VP Internal Communications at Cardinal Health
+											</p>
+										</li>
+										<li class="c-agenda__item">
+											<span class="c-agenda__bullet"></span>
+											<span class="c-agenda__image">
+												<img src="https://www.unily.com/media/ulnp3fed/will-saville.png?mode=crop&amp;width=120" alt="Will Saville" height="60" width="60" decoding="sync">
+											</span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-21 16:50" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">04:50 PM</p>
+											<h3 class="c-agenda__heading">
+												<span class="tag tag-02">Keynote</span>
+												Unily: Making it happen
+											</h3>
+											<p>From inspired entrepreneur to CEO of the leading employee experience platform provider. Get up close and personal with Unily’s own Will Saville to hear what it takes to ‘make it happen’ and get a sneak peek of what’s on the horizon for the Unily platform.</p>                        <p class="c-agenda__speaker">
+
+
+												with Will Saville - CEO at Unily
+											</p>
+										</li>
+										<li class="c-agenda__item">
+											<span class="c-agenda__bullet"></span>
+
+
+											<p data-local-date-time="" data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2022-09-21 18:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">06:00 PM</p>
+											<h3 class="c-agenda__heading">
+												<span class="tag tag-03">Roundtable</span>
+												Roundtables
+											</h3>
+											<p>Are you looking to level up your intranet strategy? Join our subject experts for intimate sessions on topics voted for by you: Comms, Design and Measuring Success. Available for in-person attendees only on a first-come-first-serve basis.</p>                        <ul class="c-agenda__location">
+												<li>Amazing Grace, 9a St Thomas St, London SE1 9RY</li>
+												<li>Pig Beach, 480 Union St, Brooklyn, NY 11231</li>
+											</ul>
 										</li>
 									</ul>
+
 								</section>
 
 							</div>
