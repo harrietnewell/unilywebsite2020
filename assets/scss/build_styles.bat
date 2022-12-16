@@ -14,6 +14,8 @@ echo "building language-selection.css" &^
 sass --no-source-map language-selection.scss ../css/language-selection.css &^
 echo "building upcoming-events.css" &^
 sass --no-source-map upcoming-events.scss ../css/upcoming-events.css &^
+echo "building agenda-toggled.css" &^
+sass --no-source-map agenda-toggled.scss ../css/agenda-toggled.css &^
 echo "building push-page.css" &^
 sass --no-source-map push-page.scss ../css/push-page.css &^
 echo "building cards__updated.css" &^
