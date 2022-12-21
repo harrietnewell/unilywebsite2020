@@ -30,6 +30,7 @@
 
   &__content {
     @media (min-width: $breakpoint-md) {
+      max-width: rem-size(510px);
       flex: 0 0 50%;
       padding-left: 0px;
       padding-right: 40px;
@@ -44,8 +45,8 @@
   &__form {
     background: #fff;
     border-radius: 0.5rem;
-    max-width: 32.5rem;
-    width: 100%;
+    max-width: rem-size(478px);
+    width: 30rem;
     padding: rem-size(40px) rem-size(40px);
     color: #1c1c1b;
     position: relative;
@@ -106,7 +107,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: rem-size(-15px);
-    max-width: $site-medium-width;
+    max-width: rem-size(1100px);
     margin-left: auto;
     margin-right: auto;
     padding-top: rem-size(15px);
@@ -127,7 +128,7 @@
 	display:flex;
 	padding-left:20px;
 	padding-right:20px;
-	
+
 	@media (max-width: $breakpoint-md-down) {
 		.c-nav__btn {
 			padding: 5px 8px;

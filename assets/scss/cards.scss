@@ -5,10 +5,12 @@
 @import "functions";
 
 // Variables
-@import "variables"; 
+@import "variables";
 
 .d-cards {
   padding: 0;
+  max-width: calc(#{$site-medium-width} + 40px);
+  margin: 0 auto;
   //max-width: 66.25rem;
   //margin-left: auto;
   //margin-right: auto;

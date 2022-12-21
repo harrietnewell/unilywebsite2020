@@ -28,6 +28,7 @@
 }
 @media (min-width: 768px) {
   .c-block-push-page__content {
+    max-width: 31.875rem;
     flex: 0 0 50%;
     padding-left: 0px;
     padding-right: 40px;
@@ -40,8 +41,8 @@
 .c-block-push-page__form {
   background: #fff;
   border-radius: 0.5rem;
-  max-width: 32.5rem;
-  width: 100%;
+  max-width: 29.875rem;
+  width: 30rem;
   padding: 2.5rem 2.5rem;
   color: #1c1c1b;
   position: relative;
@@ -96,7 +97,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: -0.9375rem;
-    max-width: 1020px;
+    max-width: 68.75rem;
     margin-left: auto;
     margin-right: auto;
     padding-top: 0.9375rem;

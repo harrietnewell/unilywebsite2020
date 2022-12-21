@@ -1,5 +1,7 @@
 .d-cards {
   padding: 0;
+  max-width: calc(1020px + 40px);
+  margin: 0 auto;
 }
 .d-cards .d-cards-list {
   display: flex;
