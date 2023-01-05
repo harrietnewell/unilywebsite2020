@@ -9,18 +9,12 @@
 
 .d-cards {
   padding: 0;
-  max-width: calc(#{$site-medium-width} + 40px);
   margin: 0 auto;
-  //max-width: 66.25rem;
-  //margin-left: auto;
-  //margin-right: auto;
-  //padding-left: 10px;
-  //padding-right: 10px;
+  max-width: rem-size(960px);
 
   .d-cards-list {
     display: flex;
     flex: 0 0 50% !important;
-    //justify-content: space-between;
     flex-wrap: wrap;
 
     &:first-child {
@@ -181,14 +175,8 @@
       }
     }
   }
-  .c-block-05 {
-    margin-top: 0;
-    margin-bottom: 0;
-    .c-block-05__row {
-      padding: 0;
-    }
-  }
   .c-block-05__row {
+    padding: 0;
     &:last-of-type {
       .d-single-card {
         margin-bottom: 0;
