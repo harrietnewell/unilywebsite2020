@@ -176,7 +176,8 @@
     }
   }
   .c-block-05__row {
-    padding: 0;
+    padding: 0 rem-size(10px) 0 rem-size(20px);
+
     &:last-of-type {
       .d-single-card {
         margin-bottom: 0;
