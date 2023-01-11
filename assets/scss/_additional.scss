@@ -557,6 +557,11 @@
   .c-foot__heading {
     margin-bottom: 15px;
     font-size: 0.9375rem;
+    margin-top: 13px;
+  }
+
+  .c-foot__nav-logo {
+      padding-top: 2px !important;
   }
 
   .c-popular__heading {
@@ -1056,6 +1061,21 @@ a {
     p {
         a {  
             color: #1c1c1b; // TODO - parameterise
+        }
+    }
+}
+
+// TODO - Put into relevant file
+@media (min-width: $breakpoint-md) {
+    .c-page--sticky-side-nav {
+        .c-content__side {
+            flex: 0 0 320px !important;
+            padding-right: 20px !important;
+        }
+
+        .c-content__content {
+            flex: 1 0 0 !important;
+            padding-left: 20px !important;
         }
     }
 }

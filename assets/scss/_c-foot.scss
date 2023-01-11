@@ -1,125 +1,129 @@
 // Footer
 
 .c-foot {
-  color: $color-unily-black;
-  font-size: rem-size(16px);
-  padding-bottom: rem-size(20px) !important;
-  padding-top: rem-size(20px);
-
-  a {
     color: $color-unily-black;
-  }
+    font-size: rem-size(16px);
+    padding-bottom: rem-size(20px) !important;
+    padding-top: rem-size(20px);
 
-  &__row {
-    max-width: $site-medium-width;
-    margin: 0 auto;
-    justify-content: space-between;
-    padding: 0;
-
-    @media (min-width: $breakpoint-md) {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: rem-size(40px);
+    a {
+        color: $color-unily-black;
     }
-  }
 
-  &__col {
-    @media (min-width: $breakpoint-md) {
-      flex: 1 1 auto;
-
-      &--contact {
-        flex: 0 0 33.3333%;
-        text-align: right;
-        font-size: rem-size(14px);
-      }
-    }
-  }
-
-  &-nav {
     &__row {
-      margin-top: rem-size(30px);
-      margin-bottom: rem-size(30px);
-
-      @media (min-width: $breakpoint-md) {
-        display: flex;
+        max-width: $site-medium-width;
+        margin: 0 auto;
         justify-content: space-between;
-        margin: rem-size(70px -10px 0 -10px);
-      }
+        padding: 0;
+
+        @media (min-width: $breakpoint-md) {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: rem-size(40px);
+        }
     }
 
     &__col {
-      @media (min-width: $breakpoint-md) {
-        flex: 0 0 25%;
-        padding: rem-size(0 10px);
-      }
-    }
-  }
+        @media (min-width: $breakpoint-md) {
+            flex: 1 1 auto;
 
-  &__heading {
-    font-size: rem-size(18px);
-    margin-bottom: rem-size(20px);
-    font-weight: bold;
-
-    &--contact {
-      font-size: rem-size(18px);
-      margin-bottom: rem-size(20px);
-
-      @media (min-width: $breakpoint-md) {
-        font-size: rem-size(16px);
-      }
-    }
-  }
-
-  &__nav {
-    list-style: none;
-    margin: rem-size(0 0 20px 0);
-    padding: 0;
-
-    @media (max-width: $breakpoint-md-down) {
-      margin-bottom: rem-size(35px);
+            &--contact {
+                flex: 0 0 33.3333%;
+                text-align: right;
+                font-size: rem-size(14px);
+            }
+        }
     }
 
-    li:not(:last-child) {
-      margin-bottom: rem-size(15px);
+    &-nav {
+        &__row {
+            margin-top: rem-size(30px);
+            margin-bottom: rem-size(30px);
+
+            @media (min-width: $breakpoint-md) {
+                display: flex;
+                justify-content: space-between;
+                margin: rem-size(70px -10px 0 -10px);
+            }
+        }
+
+        &__col {
+            @media (min-width: $breakpoint-md) {
+                flex: 0 0 25%;
+                padding: rem-size(0 10px);
+            }
+        }
     }
 
-    li:last-child {
-      margin-bottom: 0;
+    &__heading {
+        font-size: rem-size(18px);
+        margin-bottom: rem-size(20px);
+        font-weight: bold;
+
+        @media (min-width: $breakpoint-md) {
+            margin-bottom: rem-size(20px);
+        }
+
+        &--contact {
+            font-size: rem-size(18px);
+            margin-bottom: rem-size(20px);
+
+            @media (min-width: $breakpoint-md) {
+                font-size: rem-size(16px);
+            }
+        }
     }
 
-    a {
-      background-image: linear-gradient($color-unily-black, $color-unily-black);
-      background-position: 0% 100%;
-      background-repeat: no-repeat;
-      background-size: 0% 2px;
-      transition: background-size 0.3s;
-      padding-bottom: 2px;
+    &__nav {
+        list-style: none;
+        margin: rem-size(0 0 20px 0);
+        padding: 0;
 
-      &:hover {
-        background-size: 100% 2px;
-      }
+        @media (max-width: $breakpoint-md-down) {
+            margin-bottom: rem-size(35px);
+        }
+
+        li:not(:last-child) {
+            margin-bottom: rem-size(15px);
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            background-image: linear-gradient($color-unily-black, $color-unily-black);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size 0.3s;
+            padding-bottom: 2px;
+
+            &:hover {
+                background-size: 100% 2px;
+            }
+        }
     }
-  }
 
-  &__logo {
-    font: 0/0 a;
-    margin-bottom: rem-size(10px) !important;
-  }
-
-  &__col--contact a {
-    span {
-      background-image: linear-gradient($color-unily-black, $color-unily-black);
-      background-position: 0% 100%;
-      background-repeat: no-repeat;
-      background-size: 0% 2px;
-      transition: background-size 0.3s;
-      padding-bottom: 2px;
+    &__logo {
+        font: 0/0 a;
+        margin-bottom: rem-size(10px) !important;
     }
 
-    &:hover span {
-      background-size: 100% 2px;
+    &__col--contact a {
+        span {
+            background-image: linear-gradient($color-unily-black, $color-unily-black);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size 0.3s;
+            padding-bottom: 2px;
+        }
+
+        &:hover span {
+            background-size: 100% 2px;
+        }
     }
-  }
 }
 
 .c-popular {

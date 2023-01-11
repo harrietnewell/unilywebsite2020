@@ -65,7 +65,16 @@ ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
+    line-height: 1.2;
+
+    a {
+        color: $color-unily-black;
+        text-decoration: none;
+
+        &:hover {
+            background-size: 0 !important;
+        }
+    }
 }
 
 h1 {

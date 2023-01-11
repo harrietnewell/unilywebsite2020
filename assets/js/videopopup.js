@@ -17,7 +17,11 @@ var unilyVideoPopup = {
                     var currentPopup = $.magnificPopup.instance;
                     var customClass = currentPopup.st.el.attr('mfp-custom-class');
                     $(currentPopup.contentContainer).addClass(customClass);
+                },
+                close: function () {
+                    $('body').removeClass('no-scroll'); // TODO - Centralise this - it is also in videopopup.js
                 }
+
             }
         });
 
