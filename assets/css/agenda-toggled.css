@@ -7,9 +7,8 @@
   display: flex;
   min-width: 50%;
   z-index: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-
 .agenda-toggle-option {
   padding: 10px !important;
   cursor: pointer;
@@ -23,15 +22,12 @@
   text-transform: uppercase;
   font-weight: bold;
 }
-
 .agenda-toggle-option-selected {
   color: #FFF;
 }
-
 .agenda-toggle-option:hover {
   background-size: 0 !important;
 }
-
 .agenda-toggle-slide {
   position: absolute;
   height: 100%;
