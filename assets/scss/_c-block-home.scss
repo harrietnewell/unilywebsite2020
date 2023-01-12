@@ -63,7 +63,7 @@
   &__media {
     @media (min-width: $breakpoint-md) {
       flex: 0 0 50%;
-      padding-left: rem-size(20px);
+      padding-left: rem-size(50px);
       padding-right: rem-size(20px);
     }
   }

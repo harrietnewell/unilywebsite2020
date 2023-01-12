@@ -1,6 +1,10 @@
 // upcoming events
 .w-upcoming-events {
 
+    @media (max-width: 767px) {
+        width: calc(100% + 20px);
+    }
+
     &-items {
         display: flex;
         flex-wrap: nowrap;

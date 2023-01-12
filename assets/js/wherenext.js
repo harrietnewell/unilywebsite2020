@@ -7,6 +7,7 @@ var unilyWhereNext = {
         var carouselWrap = $(element);
 
         var nodeId = carouselWrap.attr('data-node-id');
+        var currentCulture = carouselWrap.attr('data-current-culture');
         var page = 1;
         var simplebar = new SimpleBar(carouselWrap[0]);
         var scrollElement = simplebar.getScrollElement();
@@ -15,22 +16,27 @@ var unilyWhereNext = {
         var itemsParent = carouselWrap.find("li.c-articles__item").parent();
 
         var isLoading = false;
+        var isEndOfData = false;
 
         scrollElement.addEventListener('scroll', function () {
 
-            if ($(scrollElement).scrollLeft() + $(scrollElement).innerWidth() >= scrollWidth - scrollEndThreshold && !isLoading) {
+            if ($(scrollElement).scrollLeft() + $(scrollElement).innerWidth() >= scrollWidth - scrollEndThreshold && !isLoading && !isEndOfData) {
 
                 isLoading = true;
 
                 $.ajax({
                     method: 'GET',
-                    url: '/umbraco/api/insights/GetWhereNextContent?nodeId=' + nodeId + '&page=' + page,
+                    url: '/umbraco/api/insights/GetWhereNextContent?nodeId=' + nodeId + '&page=' + page + '&currentCulture=' + currentCulture,
                     success: function success(data) {
-                        itemsParent.append($(data));
-                        unilyLazyLoading.refresh();
-                        scrollWidth = $(scrollElement)[0].scrollWidth;
-                        page++;
-                        isLoading = false;
+                        if (data) {
+                            itemsParent.append($($(data)));
+                            unilyLazyLoading.refresh();
+                            scrollWidth = $(scrollElement)[0].scrollWidth;
+                            page++;
+                            isLoading = false;
+                        } else {
+                            isEndOfData = true;
+                        }
                     }
                 });
             }

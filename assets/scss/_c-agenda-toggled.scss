@@ -1,1 +1,53 @@
 // agenda toggled
+.agenda-toggle {
+    margin: auto;
+    background: $color-unily-grey-1;
+    border-radius: 24px;
+    position: relative;
+    display: flex;
+    z-index: 0;
+    margin-bottom: 30px;
+    min-width: 50%;
+    max-width: 60%;
+
+    @media (max-width: $breakpoint-md-down) {
+        max-width: 80%;
+    }
+
+    &-option {
+        padding: 10px !important;
+        cursor: pointer;
+        font-weight: 500;
+        flex: 1 1 50%;
+        text-align: center;
+        z-index: 2;
+        color: $color-unily-black;
+        font-family: $font-alt;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &-selected {
+            color: $color-white;
+        }
+
+        &:hover {
+            background-size: 0 !important;
+        }
+    }
+
+    &-slide {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        z-index: 1;
+        background: $color-unily-light-blue;
+        border-radius: 24px;
+        left: 0;
+        transition-property: left;
+        transition-duration: 0.25s;
+    }
+}
+
+.toggled-agenda {
+    display: none;
+}
