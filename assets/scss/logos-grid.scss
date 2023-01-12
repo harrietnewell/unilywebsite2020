@@ -1,13 +1,24 @@
+// Functions
+@import "functions";
+
+// Variables
+@import "variables";
+
 .logos-grid {
   padding: 0;
   margin: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: max-content repeat(4, auto);
+  grid-template-columns: repeat(2, auto);
 
   justify-items: center;
   align-items: center;
   grid-gap: 3rem;
+
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: max-content repeat(4, auto)
+  }
 }
 
 .logos-grid__item {
