@@ -22,6 +22,8 @@ echo "building cards__updated.css" &^
 sass --no-source-map cards__updated.scss ../css/cards__updated.css &^
 echo "building clients__updated.css" &^
 sass --no-source-map clients__updated.scss ../css/clients__updated.css &^
+echo "building logos-grid.css" &^
+sass --no-source-map logos-grid.scss ../css/logos-grid.css &^
 echo "building awards.css" &^
 sass --no-source-map awards.scss ../css/awards.css &^
 echo "building accordion.css" &^

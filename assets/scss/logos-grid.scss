@@ -1,0 +1,20 @@
+.logos-grid {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: max-content repeat(4, auto);
+
+  justify-items: center;
+  align-items: center;
+  grid-gap: 3rem;
+}
+
+.logos-grid__item {
+  margin: 0;
+  padding: 0;
+}
+
+.logos-grid__item .img-alt {
+  display: flex;
+}

@@ -32,6 +32,10 @@
   padding-left: rem-size(20px);
   padding-right: rem-size(20px);
   max-width: rem-size($site-medium-width + 40px);
+
+  &--extended {
+    max-width: rem-size($site-client-logos-wide-width + 40px);
+  }
 }
 
 .container-md {
