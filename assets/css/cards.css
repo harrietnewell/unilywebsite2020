@@ -1,7 +1,7 @@
 .d-cards {
   padding: 0;
-  max-width: calc(1020px + 40px);
   margin: 0 auto;
+  max-width: 60rem;
 }
 .d-cards .d-cards-list {
   display: flex;
@@ -150,17 +150,13 @@
     margin-right: auto;
   }
 }
-.d-cards .c-block-05 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.d-cards .c-block-05 .c-block-05__row {
-  padding: 0;
-}
 .d-cards .c-block-05__row:last-of-type .d-single-card {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
+  .d-cards .c-block-05__row {
+    padding: 0 0.625rem 0 1.25rem;
+  }
   .d-cards .c-block-05__row .c-block-05__col:last-child {
     padding-bottom: 0 !important;
   }

@@ -3,10 +3,15 @@
   margin: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(2, auto);
   justify-items: center;
   align-items: center;
   grid-gap: 3rem;
+}
+@media (min-width: 768px) {
+  .logos-grid {
+    grid-template-columns: max-content repeat(4, auto);
+  }
 }
 
 .logos-grid__item {

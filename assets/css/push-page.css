@@ -41,8 +41,8 @@
 .c-block-push-page__form {
   background: #fff;
   border-radius: 0.5rem;
-  max-width: 29.875rem;
-  width: 30rem;
+  max-width: 100%;
+  width: 30.4375rem;
   padding: 2.5rem 2.5rem;
   color: #1c1c1b;
   position: relative;
