@@ -1,7 +1,7 @@
 // Navigation
 
 @media all and (min-width: $breakpoint-head) {
-    
+
     .dropdown-menu > li {
         /* position: relative; */
         -webkit-user-select: none;
@@ -18,12 +18,12 @@
         padding: 7px 0px;
         margin: 0 2rem;
         width: fit-content;
-        height:35px;
+        //height:35px;
     }
     .dropdown-menu > li.twolevel
     {
        padding: 7px 2rem 7px 0;
-        margin: 0 0 0 2rem; 
+        margin: 0 0 0 2rem;
         width: auto;
     }
 
@@ -65,9 +65,9 @@
 	.dropdown .c-nav__link,
     .dropdown .c-nav__link.active {
 		span {
-			margin-right: rem-size(9px);	
+			margin-right: rem-size(9px);
 		}
-		
+
 		&::after {
 			margin: 0 0 3px 0;
 			transition: hover .3s;
@@ -83,7 +83,7 @@
 			background-position: center;
 			position: relative;
 			border: none;
-			top: 0;	
+			top: 0;
 		}
 	}
 
@@ -123,7 +123,7 @@
 
     .c-nav__item {
         justify-content: center;
-		
+
 		&.dropdown {
 			padding-right:0;
 		}
@@ -275,7 +275,7 @@
 
 /*mobile resize*/
 @media screen and (max-width: $breakpoint-md) {
-    
+
     #main-menu {
         width: 100%;
         padding-left: 0px !important;
