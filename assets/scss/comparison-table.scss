@@ -10,12 +10,24 @@
 .comparison-table {
     width: 100%;
 
+    @media (max-width: $breakpoint-md-down) {
+        width: fit-content;
+    }
+
     .header {
         display: flex;
-        padding: 30px 0;
 
         &-item {
             flex: 1;
+            padding: 20px;
+            display:flex;
+            flex-direction:column;
+
+            @media (max-width: $breakpoint-md-down) {
+                &:first-of-type {
+                    width: 225px;
+                }
+            }
 
             &-title {
                 display: block;
@@ -23,6 +35,7 @@
                 font-weight: bold;
                 margin: auto;
                 margin-bottom: 20px;
+                text-align: center;
             }
 
             &-button {
@@ -35,7 +48,8 @@
                 border-radius: 24px;
                 font-weight: bold;
                 text-transform: uppercase;
-                margin: auto;
+                margin: 0 auto;
+                text-align: center;
             }
         }
     }
@@ -43,7 +57,7 @@
     .row {
         display: flex;
         padding: 20px 0;
-        border-bottom: solid 1px #AFAFAF;
+        border-bottom: solid 1px #DCDCDC;
 
         &:last-of-type {
             border-bottom: none;
@@ -52,6 +66,12 @@
         &-item {
             flex: 1;
             position: relative;
+
+            @media (max-width: $breakpoint-md-down) {
+                &:first-of-type {
+                    width: 225px;
+                }
+            }
 
             &-description {
                 font-weight: bold;

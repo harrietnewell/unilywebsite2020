@@ -94,6 +94,9 @@ var unilyApp = {
         }
 
         // Custom Scrollbars (Using SimpleBar)
+        if ($('[data-scroll]').length) {
+            new SimpleBar($('[data-scroll]')[0]);
+        }
 
         if ($('.c-testimonials__wrap').length) {
             new SimpleBar($('.c-testimonials__wrap')[0]);
