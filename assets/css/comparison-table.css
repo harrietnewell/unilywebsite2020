@@ -17,7 +17,7 @@
 }
 @media (max-width: 767px) {
   .comparison-table .header-item:first-of-type {
-    width: 225px;
+    width: 200px;
   }
 }
 .comparison-table .header-item-title {
@@ -58,7 +58,7 @@
 }
 @media (max-width: 767px) {
   .comparison-table .row-item:first-of-type {
-    width: 225px;
+    width: 200px;
   }
 }
 .comparison-table .row-item-description {
