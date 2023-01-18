@@ -50,6 +50,7 @@
                 text-transform: uppercase;
                 margin: 0 auto;
                 text-align: center;
+                white-space: nowrap;
 
                 &:hover {
                     background: darken(#F0F, 10%);
@@ -75,10 +76,6 @@
                 &:first-of-type {
                     width: 200px;
                 }
-            }
-
-            &-description {
-                font-weight: bold;
             }
 
             &-checked::before {

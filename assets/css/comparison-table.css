@@ -40,6 +40,7 @@
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
+  white-space: nowrap;
 }
 .comparison-table .header-item-button:hover {
   background: #cc00cc;
@@ -60,9 +61,6 @@
   .comparison-table .row-item:first-of-type {
     width: 200px;
   }
-}
-.comparison-table .row-item-description {
-  font-weight: bold;
 }
 .comparison-table .row-item-checked::before {
   content: "";
