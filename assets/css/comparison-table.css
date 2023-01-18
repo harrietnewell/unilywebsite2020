@@ -41,6 +41,9 @@
   margin: 0 auto;
   text-align: center;
 }
+.comparison-table .header-item-button:hover {
+  background: #cc00cc;
+}
 .comparison-table .row {
   display: flex;
   padding: 20px 0;
@@ -66,8 +69,8 @@
   background: url("https://www.unily.com/media/dmlnid3g/check-black.svg"); /* TODO - Make this dynamic */
   background-repeat: no-repeat;
   position: absolute;
-  top: calc(50% - 10px);
-  left: calc(50% - 10px);
-  height: 20px;
-  width: 20px;
+  top: calc(50% - 8.5px);
+  left: calc(50% - 8.5px);
+  height: 17px;
+  width: 17px;
 }
