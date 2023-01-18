@@ -20,8 +20,8 @@
         &-item {
             flex: 1;
             padding: 20px;
-            display:flex;
-            flex-direction:column;
+            display: flex;
+            flex-direction: column;
 
             @media (max-width: $breakpoint-md-down) {
                 &:first-of-type {
@@ -79,7 +79,7 @@
 
             &-checked::before {
                 content: '';
-                background: url('../img/circle-check-black.svg');
+                background: url('https://www.unily.com/media/dmlnid3g/check-black.svg'); /* TODO - Make this dynamic */
                 background-repeat: no-repeat;
                 position: absolute;
                 top: calc(50% - 10px);

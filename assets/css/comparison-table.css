@@ -63,7 +63,7 @@
 }
 .comparison-table .row-item-checked::before {
   content: "";
-  background: url("../img/circle-check-black.svg");
+  background: url("https://www.unily.com/media/dmlnid3g/check-black.svg"); /* TODO - Make this dynamic */
   background-repeat: no-repeat;
   position: absolute;
   top: calc(50% - 10px);
