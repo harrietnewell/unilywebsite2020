@@ -1,0 +1,93 @@
+// Cards
+// TODO - UPDATE WITH SCSS VARIABLES
+
+// Functions
+@import "functions";
+
+// Variables
+@import "variables";
+
+.comparison-table {
+    width: 100%;
+
+    @media (max-width: $breakpoint-md-down) {
+        width: fit-content;
+    }
+
+    .header {
+        display: flex;
+
+        &-item {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: $breakpoint-md-down) {
+                &:first-of-type {
+                    width: 200px;
+                }
+            }
+
+            &-title {
+                display: block;
+                width: fit-content;
+                font-weight: bold;
+                margin: auto;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            &-button {
+                display: block;
+                background: #F0F;
+                font-family: $font-alt;
+                width: fit-content;
+                color: #FFF;
+                padding: 10px 20px;
+                border-radius: 24px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 0 auto;
+                text-align: center;
+                white-space: nowrap;
+
+                &:hover {
+                    background: darken(#F0F, 10%);
+                }
+            }
+        }
+    }
+
+    .row {
+        display: flex;
+        padding: 20px 0;
+        border-bottom: solid 1px #DCDCDC;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        &-item {
+            flex: 1;
+            position: relative;
+
+            @media (max-width: $breakpoint-md-down) {
+                &:first-of-type {
+                    width: 200px;
+                }
+            }
+
+            &-checked::before {
+                content: '';
+                background: url('https://www.unily.com/media/dmlnid3g/check-black.svg'); /* TODO - Make this dynamic */
+                background-repeat: no-repeat;
+                position: absolute;
+                top: calc(50% - 8.5px);
+                left: calc(50% - 8.5px);
+                height: 17px;
+                width: 17px;
+            }
+        }
+    }
+}

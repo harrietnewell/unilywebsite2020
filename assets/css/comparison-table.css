@@ -1,0 +1,74 @@
+.comparison-table {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .comparison-table {
+    width: fit-content;
+  }
+}
+.comparison-table .header {
+  display: flex;
+}
+.comparison-table .header-item {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .comparison-table .header-item:first-of-type {
+    width: 200px;
+  }
+}
+.comparison-table .header-item-title {
+  display: block;
+  width: fit-content;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.comparison-table .header-item-button {
+  display: block;
+  background: #F0F;
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: fit-content;
+  color: #FFF;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+}
+.comparison-table .header-item-button:hover {
+  background: #cc00cc;
+}
+.comparison-table .row {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: solid 1px #DCDCDC;
+}
+.comparison-table .row:last-of-type {
+  border-bottom: none;
+}
+.comparison-table .row-item {
+  flex: 1;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .comparison-table .row-item:first-of-type {
+    width: 200px;
+  }
+}
+.comparison-table .row-item-checked::before {
+  content: "";
+  background: url("https://www.unily.com/media/dmlnid3g/check-black.svg"); /* TODO - Make this dynamic */
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(50% - 8.5px);
+  left: calc(50% - 8.5px);
+  height: 17px;
+  width: 17px;
+}
