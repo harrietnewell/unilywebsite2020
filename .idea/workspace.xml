@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="26bd623b-b0c4-41b1-ba18-0386da4f6e67" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/_rounded-images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_rounded-images.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,8 @@
       <workItem from="1673887042374" duration="2041000" />
       <workItem from="1673967607106" duration="8000" />
       <workItem from="1674053372780" duration="1812000" />
-      <workItem from="1674072099980" duration="428000" />
+      <workItem from="1674072099980" duration="1053000" />
+      <workItem from="1674140566821" duration="972000" />
     </task>
     <servers />
   </component>
