@@ -25,7 +25,8 @@
 
             @media (max-width: $breakpoint-md-down) {
                 &:first-of-type {
-                    width: 200px;
+                    width: 150px;
+                    max-width: 150px;
                 }
             }
 
@@ -52,6 +53,11 @@
                 text-align: center;
                 white-space: nowrap;
 
+                @media (max-width: $breakpoint-md-down) {
+                    padding: 8px 16px;
+                    font-size: 16px;
+                }
+
                 &:hover {
                     background: darken(#F0F, 10%);
                 }
@@ -72,9 +78,13 @@
             flex: 1;
             position: relative;
 
+
             @media (max-width: $breakpoint-md-down) {
+                font-size: 16px;
+
                 &:first-of-type {
-                    width: 200px;
+                    width: 150px;
+                    max-width: 150px;
                 }
             }
 

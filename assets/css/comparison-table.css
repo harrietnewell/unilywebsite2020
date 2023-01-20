@@ -17,7 +17,8 @@
 }
 @media (max-width: 767px) {
   .comparison-table .header-item:first-of-type {
-    width: 200px;
+    width: 150px;
+    max-width: 150px;
   }
 }
 .comparison-table .header-item-title {
@@ -42,6 +43,12 @@
   text-align: center;
   white-space: nowrap;
 }
+@media (max-width: 767px) {
+  .comparison-table .header-item-button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
 .comparison-table .header-item-button:hover {
   background: #cc00cc;
 }
@@ -58,8 +65,12 @@
   position: relative;
 }
 @media (max-width: 767px) {
+  .comparison-table .row-item {
+    font-size: 16px;
+  }
   .comparison-table .row-item:first-of-type {
-    width: 200px;
+    width: 150px;
+    max-width: 150px;
   }
 }
 .comparison-table .row-item-checked::before {
