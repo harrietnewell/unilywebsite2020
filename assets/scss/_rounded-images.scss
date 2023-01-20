@@ -1,5 +1,8 @@
-.c-articles__media > img, .c-articles__media .c-embed,
-.c-content__content .w-upcoming-events-item .img-full {
+.c-articles__media > img,
+.c-articles__media .c-embed,
+.c-content__content .w-upcoming-events-item .img-full,
+.c-content__content .c-widget__media .img-full,
+.c-content__content .c-widget__media .c-embed--video {
   overflow: hidden;
   border-radius: rem-size(12px);
 }
