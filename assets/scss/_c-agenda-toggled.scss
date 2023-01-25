@@ -1,17 +1,17 @@
 // agenda toggled
 .agenda-toggle {
     margin: auto;
-    background: $color-unily-grey-1;
-    border-radius: 24px;
+    background: none;
+    border: solid 2px #3ec8ed;
+    border-radius: 25px;
     position: relative;
     display: flex;
     z-index: 0;
     margin-bottom: 30px;
-    min-width: 50%;
-    max-width: 60%;
+    max-width: 25%;
 
     @media (max-width: $breakpoint-md-down) {
-        max-width: 80%;
+        max-width: 70%;
     }
 
     &-option {
@@ -21,13 +21,13 @@
         flex: 1 1 50%;
         text-align: center;
         z-index: 2;
-        color: $color-unily-black;
+        color: $color-unily-light-blue;
         font-family: $font-alt;
         text-transform: uppercase;
         font-weight: bold;
 
         &-selected {
-            color: $color-white;
+            color: $color-white !important;
         }
 
         &:hover {
@@ -41,7 +41,7 @@
         width: 50%;
         z-index: 1;
         background: $color-unily-light-blue;
-        border-radius: 24px;
+        border-radius: 22px;
         left: 0;
         transition-property: left;
         transition-duration: 0.25s;
