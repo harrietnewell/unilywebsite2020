@@ -377,7 +377,7 @@
   .text-md-right {
     text-align: right !important;
   }
-  
+
   .d-md-none {
     display: none !important;
   }
@@ -545,7 +545,7 @@
   font-size: 0.9375rem;
 
   .c-foot-nav__col {
-    flex: 0 0 auto;
+    //flex: 0 0 auto;
 
     .c-foot__nav {
       li {
@@ -1059,7 +1059,7 @@ a {
 // Content Block Styles
 .c-content-block {
     p {
-        a {  
+        a {
             color: #1c1c1b; // TODO - parameterise
         }
     }
