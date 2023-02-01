@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26bd623b-b0c4-41b1-ba18-0386da4f6e67" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/home-1100px-p-40.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home-1100px-p-60.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insights-p-40.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insights-p-60.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/agenda-toggled.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/agenda-toggled.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/comparison-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/comparison-table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/_additional.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_additional.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/_c-foot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_c-foot.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-1100px-v1.html" beforeDir="false" afterPath="$PROJECT_DIR$/home-1100px-v1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insights.html" beforeDir="false" afterPath="$PROJECT_DIR$/insights.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,8 @@
       <workItem from="1674072099980" duration="1053000" />
       <workItem from="1674140566821" duration="1568000" />
       <workItem from="1674658866865" duration="850000" />
-      <workItem from="1675178499514" duration="1677000" />
+      <workItem from="1675178499514" duration="2979000" />
+      <workItem from="1675294134040" duration="1688000" />
     </task>
     <servers />
   </component>
