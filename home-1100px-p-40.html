@@ -28,11 +28,35 @@
         rel="stylesheet"/>
 
   <style>
-    .container,
-    .c-block-05 {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+      .container {
+          max-width: calc(1100px + 80px);
+      }
+
+      .container,
+      .c-block-05 {
+          padding-left: 40px;
+          padding-right: 40px;
+      }
+
+      .c-foot-nav__row > .column-logo {
+          padding: unset;
+      }
+
+      .c-foot-nav__row > .wrap-unwrap,
+      .c-foot-nav__row > .column-logo {
+          flex: 1;
+          overflow: hidden;
+      }
+
+      .c-foot-nav__col {
+          flex: unset;
+      }
+
+      @media (min-width: 768px) {
+          .c-foot-nav__col {
+              white-space: nowrap;
+          }
+      }
   </style>
 </head>
 <body>
@@ -1864,178 +1888,137 @@
       <div class="c-foot__col">
         <div class="c-foot-nav__row">
           <div class="c-foot-nav__col column-logo">
-            <a href="#">
-              <img src="https://unilyweb2020.azureedge.net/media/jijdxg5z/unily-intranet-solutions-navy.svg"
-                   alt="Unily - unite your enterprise"
-                   height="40"
-                   width="83"/>
+            <a href="/">
+              <img alt="Unily - unite your enterprise" data-lazy="" height="40" width="83" decoding="sync"
+                   data-ll-status="loaded"
+                   src="https://unilyweb2020.azureedge.net/media/jijdxg5z/unily-intranet-solutions-navy.svg"
+                   class="loaded">
             </a>
-            <ul class="c-foot__nav">
-              <li>
-                <a href="#">Contact Us</a>
+            <ul class="c-foot__nav c-foot__nav-logo">
+
+
+              <li id="language-control">
+                <a href="#" id="language-selector">
+                  <svg id="language-icon" width="16" height="16" viewBox="0 0 16 16">
+                    <path
+                      d="M7.5 2C10.91 2 13 4.01 13 6.5c0 2.07-1.45 3.82-3.92 4.34L6.62 13.3a.66.66 0 0 1-1.12-.46v-2.1C3.29 10.12 2 8.45 2 6.5 2 4.01 4.09 2 7.5 2z"
+                      fill="#0A2540" fill-rule="evenodd"></path>
+                  </svg>
+                  <span>English</span>
+                </a>
               </li>
-              <li>
-                <a href="#"
-                   data-hs-lightbox-open-id="73ff4d24-846d-403a-88b3-9890a58353de">
+
+              <li><a href="/contact">Contact Us</a></li>
+
+
+              <li class="">
+                <a href="#" data-hs-lightbox-open-id="d7c96447-d3d6-46ba-abd0-de6b8b03650a">
+
                   Subscribe
+
                 </a>
               </li>
             </ul>
           </div>
-          <div class="c-foot-nav__col">
-            <div class="c-foot__heading">Solutions</div>
-            <ul class="c-foot__nav">
-              <li>
-                <a href="#">Internal Communications</a>
-              </li>
-              <li>
-                <a href="#">Culture &amp; Engagement</a>
-              </li>
-              <li>
-                <a href="#">
-                  Productivity &amp;
-                  Collaboration
-                </a>
-              </li>
-              <li>
-                <a href="#">Knowledge Management</a>
-              </li>
-              <li>
-                <a href="#">Frontline Workers</a>
-              </li>
-              <li>
-                <a href="#">Networked Enterprise</a>
-              </li>
-            </ul>
+          <div class="wrap-unwrap">
+            <div class="c-foot-nav__col" data-wrap-unwrap="1">
+              <div class="c-foot__heading">Solutions</div>
+              <ul class="c-foot__nav">
+                <li><a href="/solutions/internal-communications" target="_self">Internal Communications</a></li>
+                <li><a href="/solutions/knowledge-management" target="_self">Knowledge Management</a></li>
+                <li><a href="/solutions/culture-and-engagement" target="_self">Culture &amp; Engagement</a></li>
+                <li><a href="/solutions/frontline-workers" target="_self">Frontline Workers</a></li>
+                <li><a href="/solutions/productivity-and-collaboration" target="_self">Productivity &amp;
+                  Collaboration</a></li>
+                <li><a href="/solutions/networked-enterprise" target="_self">Networked Enterprise</a></li>
+              </ul>
+            </div>
+            <div class="c-foot-nav__col" data-wrap-unwrap="1">
+              <div class="c-foot__heading abs-heading">Functions</div>
+              <ul class="c-foot__nav abs-nav">
+                <li><a href="/functions/internal-communications" target="_self">Internal Communications</a></li>
+                <li><a href="/functions/human-resources" target="_self">Human Resources</a></li>
+                <li><a href="/functions/information-technology" target="_self">Information Technology</a></li>
+                <li><a href="/functions/c-suite" target="_self">C Suite</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="c-foot-nav__col">
-            <div class="c-foot__heading">Company</div>
-            <ul class="c-foot__nav">
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Clients</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Partner</a>
-              </li>
-              <li>
-                <a href="#">Pricing</a>
-              </li>
-              <li>
-                <a href="https://unily.teamtailor.com/"
-                   target="_blank">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#"
-                   target="_blank">
-                  Unite 21
-                </a>
-              </li>
-            </ul>
+
+
+          <div class="wrap-unwrap">
+            <div class="c-foot-nav__col" data-wrap-unwrap="2">
+              <div class="c-foot__heading">Company</div>
+              <ul class="c-foot__nav">
+                <li><a href="/about" target="_self">About Us</a></li>
+                <li><a href="/clients" target="_self">Clients</a></li>
+                <li><a href="/services" target="_self">Services</a></li>
+                <li><a href="/pricing" target="_self">Pricing</a></li>
+                <li><a href="/careers" target="_self">Careers</a></li>
+                <li><a href="/corporate-social-responsibility" target="_self">Corporate Social Responsibility </a></li>
+                <li><a href="/unite" target="_blank">Unite</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="c-foot-nav__col">
-            <div class="c-foot__heading">Insights</div>
-            <ul class="c-foot__nav">
-              <li>
-                <a href="#">Blogs</a>
-              </li>
-              <li>
-                <a href="#">Guides</a>
-              </li>
-              <li>
-                <a href="#">Case Studies</a>
-              </li>
-              <li>
-                <a href="#">Events</a>
-              </li>
-              <li>
-                <a href="#">Webinars</a>
-              </li>
-              <li>
-                <a href="#">Podcasts</a>
-              </li>
-              <li>
-                <a href="#">Archive</a>
-              </li>
-            </ul>
+
+
+          <div class="wrap-unwrap">
+            <div class="c-foot-nav__col" data-wrap-unwrap="3">
+              <div class="c-foot__heading">Insights</div>
+              <ul class="c-foot__nav">
+                <li><a href="/insights/blogs" target="_self">Blogs</a></li>
+                <li><a href="/insights/guides" target="_self">Guides</a></li>
+                <li><a href="/insights/case-studies" target="_self">Case Studies</a></li>
+                <li><a href="/insights/events" target="_self">Events</a></li>
+                <li><a href="/insights/on-demand" target="_self">On-demand</a></li>
+                <li><a href="/insights/podcasts" target="_self">Podcasts</a></li>
+                <li><a href="/insights/archive" target="_self">Archive</a></li>
+              </ul>
+            </div>
+            <div class="c-foot-nav__col" data-wrap-unwrap="3">
+              <div class="c-foot__heading">Deep Dives</div>
+              <ul class="c-foot__nav">
+                <li><a href="/intranet-basics" target="_self">Intranet Basics</a></li>
+                <li><a href="/digital-workplace" target="_self">Digital Workplace</a></li>
+                <li><a href="/employee-experience" target="_self">Employee Experience </a></li>
+                <li><a href="/intranet-software" target="_self">Intranet Software</a></li>
+                <li><a href="/internal-communications" target="_self">Internal Communications</a></li>
+                <li><a href="/enterprise-intranet" target="_self">Enterprise Intranet</a></li>
+                <li><a href="/features/social-intranet" target="_self">Social Intranet</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="c-foot-nav__col wrap-unwrap">
-            <div class="c-foot-nav__col wrap-unwrap__child">
+
+
+          <div class="wrap-unwrap">
+            <div class="c-foot-nav__col" data-wrap-unwrap="4">
               <div class="c-foot__heading">Legal</div>
               <ul class="c-foot__nav">
-                <li>
-                  <a href="#">Terms of Use</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">GDPR</a>
-                </li>
+                <li><a href="/legal/terms-of-use" target="_self">Terms of Use</a></li>
+                <li><a href="/legal/privacy-policy" target="_self">Privacy Policy</a></li>
+                <li><a href="/legal/gdpr-compliance" target="_self">GDPR</a></li>
+                <li><a href="/legal/cookie-notice" target="_self">Cookie Notice</a></li>
+                <li><a href="/legal/sub-processors" target="_self">Sub-Processors</a></li>
+                <li><a href="/legal/data-protection-addendum" target="_self">Data Protection Addendum</a></li>
               </ul>
             </div>
-            <div class="c-foot-nav__col wrap-unwrap__child">
+            <div class="c-foot-nav__col" data-wrap-unwrap="4">
+              <div class="c-foot__heading abs-heading">Existing Clients</div>
+              <ul class="c-foot__nav abs-nav">
+                <li><a href="https://universe.unily.com/" target="_blank">Universe</a></li>
+                <li><a href="/help" target="_blank">Help</a></li>
+              </ul>
+            </div>
+            <div class="c-foot-nav__col" data-wrap-unwrap="4">
               <div class="c-foot__heading abs-heading">Social</div>
               <ul class="c-foot__nav abs-nav">
-                <li>
-                  <a href="https://www.facebook.com/weareunily"
-                     target="_blank">
-                    Facebook
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/WeAreUnily"
-                     target="_blank">
-                    Twitter
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/company/unily"
-                     target="_blank">
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/unily"
-                     target="_blank">
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="https://vimeo.com/unily"
-                     target="_blank">
-                    Vimeo
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/unily"
-                     target="_blank">
-                    YouTube
-                  </a>
-                </li>
+                <li><a href="https://www.facebook.com/weareunily" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/WeAreUnily" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/company/unily" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/unily/" target="_blank">Instagram</a></li>
+                <li><a href="https://vimeo.com/unily" target="_blank">Vimeo</a></li>
+                <li><a href="https://www.youtube.com/unily" target="_blank">YouTube</a></li>
               </ul>
             </div>
-          </div>
-          <div class="c-foot-nav__col">
-            <div class="c-foot__heading">Existing Clients</div>
-            <ul class="c-foot__nav">
-              <li>
-                <a href="https://universe.unily.com/"
-                   target="_blank">
-                  Universe
-                </a>
-              </li>
-              <li>
-                <a href="#">Help</a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
