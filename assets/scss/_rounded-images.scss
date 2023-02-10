@@ -1,10 +1,15 @@
 .c-articles__media > img,
 .c-articles__media .c-embed,
 .c-content__content .w-upcoming-events-item .img-full,
-.c-content__content .c-widget__media .img-full,
 .c-content__content .c-widget__media .c-embed--video,
 .c-content__content .c-widget__media .c-embed--video iframe,
 .c-articles__media .c-embed--video iframe {
   overflow: hidden;
   border-radius: rem-size(12px);
+}
+@media (min-width: $breakpoint-md) {
+  .c-content__content .c-widget__media .img-full {
+    overflow: hidden;
+    border-radius: rem-size(12px);
+  }
 }
