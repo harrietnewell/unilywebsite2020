@@ -60,18 +60,18 @@
           padding-top: unset;
       }
 
-      .c-foot-nav--social-desktop {
-          margin-top: 30px;
-      }
-
       @media (min-width: 768px) {
+          .c-foot-nav__row {
+              gap: 50px;
+          }
           .c-foot-nav__col {
               white-space: nowrap;
               padding: unset;
           }
-
-          .d-md-block {
-              display: block;
+          .c-foot__nav-logo-wrapper {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
           }
       }
   </style>
@@ -1905,37 +1905,39 @@
       <div class="c-foot__col">
         <div class="c-foot-nav__row">
           <div class="c-foot-nav__col column-logo">
-            <a href="/">
-              <img alt="Unily - unite your enterprise" data-lazy="" height="40" width="83" decoding="sync"
-                   data-ll-status="loaded"
-                   src="https://unilyweb2020.azureedge.net/media/jijdxg5z/unily-intranet-solutions-navy.svg"
-                   class="loaded">
-            </a>
-            <ul class="c-foot__nav c-foot__nav-logo">
+            <div class="c-foot__nav-logo-wrapper">
+              <a href="/">
+                <img alt="Unily - unite your enterprise" data-lazy="" height="40" width="83" decoding="sync"
+                     data-ll-status="loaded"
+                     src="https://unilyweb2020.azureedge.net/media/jijdxg5z/unily-intranet-solutions-navy.svg"
+                     class="loaded">
+              </a>
+              <ul class="c-foot__nav c-foot__nav-logo">
 
 
-              <li id="language-control">
-                <a href="#" id="language-selector">
-                  <svg id="language-icon" width="16" height="16" viewBox="0 0 16 16">
-                    <path
-                      d="M7.5 2C10.91 2 13 4.01 13 6.5c0 2.07-1.45 3.82-3.92 4.34L6.62 13.3a.66.66 0 0 1-1.12-.46v-2.1C3.29 10.12 2 8.45 2 6.5 2 4.01 4.09 2 7.5 2z"
-                      fill="#0A2540" fill-rule="evenodd"></path>
-                  </svg>
-                  <span>English</span>
-                </a>
-              </li>
+                <li id="language-control">
+                  <a href="#" id="language-selector">
+                    <svg id="language-icon" width="16" height="16" viewBox="0 0 16 16">
+                      <path
+                        d="M7.5 2C10.91 2 13 4.01 13 6.5c0 2.07-1.45 3.82-3.92 4.34L6.62 13.3a.66.66 0 0 1-1.12-.46v-2.1C3.29 10.12 2 8.45 2 6.5 2 4.01 4.09 2 7.5 2z"
+                        fill="#0A2540" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>English</span>
+                  </a>
+                </li>
 
-              <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
 
 
-              <li class="">
-                <a href="#" data-hs-lightbox-open-id="d7c96447-d3d6-46ba-abd0-de6b8b03650a">
+                <li class="">
+                  <a href="#" data-hs-lightbox-open-id="d7c96447-d3d6-46ba-abd0-de6b8b03650a">
 
-                  Subscribe
+                    Subscribe
 
-                </a>
-              </li>
-            </ul>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="wrap-unwrap">
             <div class="c-foot-nav__col" data-wrap-unwrap="1">
