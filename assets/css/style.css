@@ -4869,6 +4869,9 @@ textarea.hs-input {
 .c-table tr {
   border-bottom: 1px solid #dcdcdc;
 }
+.c-table tr:last-of-type {
+  border-bottom: none;
+}
 .c-table th {
   padding-bottom: 0.625rem;
   padding-left: 0.625rem;
