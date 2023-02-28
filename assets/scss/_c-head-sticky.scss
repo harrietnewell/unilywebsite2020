@@ -13,7 +13,7 @@ body.sticky-header {
         }
 
         &--top {
-            padding-top: rem-size(50px - 1px);
+            padding-top: rem-size(49px); // Note that this is 49px not 50px to fix white line issue on safari/mobile in some cases
         }
     }
 }
