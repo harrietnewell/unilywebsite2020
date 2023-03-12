@@ -1,0 +1,2611 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="forrester:file" content="Unily EXPlatform v20230307Web">
+    <meta name="forrester:date" content="3/7/2023 12:29:57 PM">
+    <meta name="forrester:initials" content="NF">
+    <title data-source-namedcell="varToolTitleWeb1"></title>
+    <link rel="stylesheet" href="https://tools.totaleconomicimpact.com/go/unily/explatform/css/bootstrap/5.1.3/bootstrap.min.css">
+    <link rel="stylesheet" href="https://tools.totaleconomicimpact.com/go/unily/explatform/css/bootstrap/slider/bootstrap-slider.min.css">
+<!--    TODO - Remove this line in the production environment-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<!--    <link rel="stylesheet" href="https://tools.totaleconomicimpact.com/go/unily/explatform/css/fontawesome/5.15.1/css/all.min.css">-->
+    <link rel="stylesheet" href="https://tools.totaleconomicimpact.com/go/unily/explatform/css/styles.css?v=20230307122957">
+    <link rel="stylesheet" href="https://tools.totaleconomicimpact.com/go/unily/explatform/css/styles-2022.css">
+    <link rel="stylesheet" href="https://tools.totaleconomicimpact.com/go/unily/explatform/css/slider.css">
+    <link rel="stylesheet" href="https://tools.totaleconomicimpact.com/go/unily/explatform/css/slider-2022.css">
+    <link rel="stylesheet" href="https://tools.totaleconomicimpact.com/go/unily/explatform/css/custom.css?v=20230307122957">
+    <link rel="icon" href="https://tools.totaleconomicimpact.com/go/unily/explatform/img/faviconV2.png">
+    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/jquery/3.6.0/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/bootstrap/5.3.1/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/bootstrap/slider/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/highcharts/9.3.2/highcharts.src.js"></script>
+    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/highcharts/9.3.2/exporting.src.js"></script>
+    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/forrester/parser.js?v=20230307122957"></script>
+    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/forrester/custom.js?v=20230307122957"></script>
+    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/accounting/0.3.2/accounting.js"></script>
+    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/mainstay/jquery.cookie.js"></script>
+    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/mainstay/jquery.json-2.3.min.js"></script>
+<!--    TODO - Turn this on the live version (and remove one?)-->
+<!--    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/mainstay/main.js?seed=1"></script>-->
+<!--    <script type="text/javascript" src="https://tools.totaleconomicimpact.com/go/unily/explatform/js/mainstay/data.js?seed=1"></script>-->
+    <style>
+
+      /* New styles - Ana */
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      .row.content-wrap-row {
+        margin-left: 0;
+      }
+      #s1Sub2-section {
+        margin-top: 93px;
+        padding-bottom: 50px;
+      }
+      #s1Sub2-section > .container-fluid {
+        padding-right: 4px;
+        padding-left: 4px;
+        --bs-gutter-x: 40px;
+      }
+      #s1Sub2-section > .container-fluid > .row {
+        --bs-gutter-x: 40px;
+        align-items: unset !important;
+        margin-bottom: 50px;
+      }
+      #s1Sub2-section > .container-fluid > .row > * {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+      }
+      #s1Sub2-section > .container-fluid > .row > .col-md-6 {
+        display: flex;
+        flex-direction: column;
+      }
+      div.div-input-box {
+        border: none;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 15px;
+        padding: 20px 24px;
+        margin-bottom: 0;
+        flex-grow: 1;
+      }
+      div.div-input-box > .row:not(:first-child) {
+        margin-top: 25px;
+      }
+      .reg-input-label-only {
+        font-weight: bold;
+        font-size: 20px;
+        color: #1C1C1B;
+      }
+      div.div-input-box .slider-label {
+        font-size: 18px;
+        color: #1C1C1B;
+      }
+      div.div-input-box .slider-limit {
+        display: none;
+      }
+      #content .slider-track {
+        height: 5px;
+        background-color: #DCDCDC;
+      }
+      .slider-track-high {
+        background-color: #DCDCDC;
+      }
+      #content .slider-selection {
+        background-color: #3EC8ED;
+      }
+      #content .slider-handle {
+        background-color: #3EC8ED;
+        height: 13px;
+        width: 13px;
+        box-shadow: none;
+      }
+      #content .slider-handle:active,
+      #content .slider-handle:focus {
+        box-shadow: 0 0 0 10px rgba(62, 200, 237, 0.26);
+      }
+      .slider-group hr {
+        display: none;
+      }
+      #content input[type=text].slider-input,
+      #content select.slider-input {
+        border: 1px solid #dcdcdc;
+        margin: 0;
+        width: 100%;
+        font-size: 1.125rem;
+        padding: .75rem .5rem;
+        border-radius: 2px;
+        color: #3ec8ed;
+        outline: none !important;
+      }
+      #content input[type=text].slider-input:focus,
+      #content select.slider-input:focus {
+        border-color: #3ec8ed;
+        color: #3ec8ed;
+        outline: none;
+        box-shadow: inset 0 0 0 1px #3ec8ed;
+      }
+      #content div.totalNPVArea {
+        border: none;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 15px;
+        padding: 36px 20px 29px;
+        margin-bottom: 23px;
+      }
+      .totalNPVArea p {
+        margin-bottom: 0;
+      }
+      #content section.tbl p {
+        color: #112A3F;
+      }
+      p#s1\!B21,
+      p#s1\!H43,
+      p#s1\!H46,
+      p#s1\!J49 {
+        display: none;
+      }
+      button {
+        font-family: 'Roboto Condensed', sans-serif;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #content div.totalNPVArea div.btnspacing {
+        padding-top: 0;
+      }
+      #content div.totalNPVArea div.btnspacing button {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+      #content .totalNPV1 {
+        color: #112A3F;
+        margin-bottom: 5px;
+        line-height: 35px;
+      }
+      p#s1\!D45 {
+        margin-bottom: 37px;
+      }
+      p#s1\!D49 {
+        margin-bottom: 37px;
+      }
+      #content div.totalNPVChart {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .chart-responsive.totalNPVChart {
+        border: none;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 15px;
+        padding: 36px 20px 29px;
+      }
+
+    /*  CSS - Ana */
+      div.div-input-box .div-input-box {
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        box-shadow: none;
+      }
+      input:checked + .toggle-slider {
+        background-color: #3EC8ED;
+      }
+      input:not(:checked) + .toggle-slider.toggle-content-data:after,
+      input:checked + .toggle-slider.toggle-content-data:after {
+        position: relative;
+        top: 1px;
+        margin-left: 4px;
+      }
+      .fa-info-circle {
+        color: #3EC8ED;
+      }
+      .slider-sidebar .col-12.slider-label {
+        display: flex;
+        align-items: center;
+      }
+      #content .totalNPV1 {
+        margin-top: 20px;
+      }
+      #content .totalNPV1 {
+        margin-top: 20px;
+      }
+      #content section.tbl p.totalNPVDescription {
+        padding-bottom: 10px;
+      }
+      #content div.totalNPVArea div.btnspacing {
+        padding-top: 30px;
+      }
+      .tooltip > .tooltip-inner {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        background-color: #ffffff;
+        line-height: 18px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .tooltip.show {
+        opacity: 1;
+      }
+      .bs-tooltip-auto[x-placement^=top] .tooltip-arrow::before,
+      .bs-tooltip-top .tooltip-arrow::before {
+        border-top-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body class="body-forr layout-nav-top layout-width-default body-background-default scroll-y-wide lgtCookieConsent body-b4">
+    <p class="microToolVersion" style="display:none;">20230307122957-0</p>
+    <div id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true" class="modal fade">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="s2!E15" class="modal-title"></h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="s2!C19"></p>
+            <p id="s2!D19"></p>
+            <p id="s2!C20"></p>
+            <p id="s2!D20"></p>
+            <form id="s2!C24">
+              <div class="row mb-3">
+                <label id="s2!D25" for="s2!E25" class="text-md-end col-sm-3 col-form-label-sm"></label>
+                <div class="col-sm-9">
+                  <input id="s2!E25" type="text" value="" class="text-left form-control-sm width-xxxxl register">
+                  <span id="s2!G25" class="form-text-b5 registerError"></span>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label id="s2!D26" for="s2!E26" class="text-md-end col-sm-3 col-form-label-sm"></label>
+                <div class="col-sm-9">
+                  <input id="s2!E26" type="text" value="" class="text-left form-control-sm width-xxxxl register">
+                  <span id="s2!G26" class="form-text-b5 registerError"></span>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label id="s2!D27" for="s2!E27" class="text-md-end col-sm-3 col-form-label-sm"></label>
+                <div class="col-sm-9">
+                  <input id="s2!E27" type="text" value="" class="text-left form-control-sm width-xxxxl register">
+                  <span id="s2!G27" class="form-text-b5 registerError"></span>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label id="s2!D28" for="s2!E28" class="text-md-end col-sm-3 col-form-label-sm"></label>
+                <div class="col-sm-9">
+                  <input id="s2!E28" type="text" value="" class="text-left form-control-sm width-xxxxl register">
+                  <span id="s2!G28" class="form-text-b5 registerError"></span>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label id="s2!D29" for="s2!E29" class="text-md-end col-sm-3 col-form-label-sm"></label>
+                <div class="col-sm-9">
+                  <input id="s2!E29" type="text" value="" class="text-left form-control-sm width-xxxxl register">
+                  <span id="s2!G29" class="form-text-b5 registerError"></span>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label id="s2!D30" for="s2!E30" class="text-md-end col-sm-3 col-form-label-sm"></label>
+                <div class="col-sm-9">
+                  <input id="s2!E30" type="text" value="" class="text-left form-control-sm width-xxxxl register">
+                  <span id="s2!G30" class="form-text-b5 registerError"></span>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label id="s2!D31" for="s2!E31" class="text-md-end col-sm-3 col-form-label-sm"></label>
+                <div class="col-sm-9">
+                  <select id="s2!E31" name="country" class="form-control-sm input-lg width-xxxxl register1 registerCountry"></select>
+                  <span id="s2!G31" class="form-text-b5 registerError"></span>
+                </div>
+              </div>
+              <div class="row mb-3 align-items-center">
+                <label id="s2!D32" for="s2!E32_Control" class="text-md-end col-sm-3 col-form-label-sm"></label>
+                <div class="col-sm-9">
+                  <input id="s2!E32_Control" type="checkbox" data-group="s2_cg1" class="form-control-sm width-xxxxl">
+                  <span id="s2!G32" class="form-text-b5 registerError"></span>
+                </div>
+              </div>
+              <input id="s2!E33" type="hidden" value="">
+              <input id="s2!E34" type="hidden" value="" name="analysisURL" data-format="7" class="MicroToolUrl regInput microToolInput" data-dbentity="analysisURL">
+              <div class="row mb-3">
+                <span id="s2!C35" class="col-sm-3"></span>
+                <div class="col-sm-9">
+                  <span id="s2!D35" class="form-text-b4 registerErrorAll"></span>
+                  <div class="btnspacing">
+                    <button id="s2!E35_Control" type="button" class="btn btn-forr btn-lg"></button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="row mb-3 skipRegistration">
+              <p id="s2!B37"></p>
+              <span id="s2!C37" class="col-sm-3"></span>
+              <div class="col-sm-9">
+                <span id="s2!D37" class="form-text-b4 registerErrorAll"></span>
+                <div class="btnspacing">
+                  <button id="s2!E37_Control" type="button" data-bs-dismiss="modal" class="btn btn-forr btn-lg"></button>
+                </div>
+              </div>
+            </div>
+            <input id="s2!E39" type="hidden" value="" name="customerName" data-format="7" class="regInput microToolInput" data-dbentity="customerName">
+            <div class="text-center btnspacing" style="display:none;">
+              <button id="s2!E40_Control" type="button" class="gotoRegisterBtn"></button>
+            </div>
+            <div class="text-center btnspacing" style="display:none;">
+              <button id="s2!E41_Control" type="button" data-bs-dismiss="modal" class="registerBtn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header-forr header-background-white">
+      <div class="container-fluid header-forr layout-width-default">
+        <div class="row align-items-center div-forr">
+          <div id="divLogo" class="col-3 logo">
+            <a id="logo_anchor" data-source-namedcell="varToolTitleHref{href}">
+              <img id="logo" src="https://tools.totaleconomicimpact.com/go/unily/explatform/img/logo.png" alt="logo" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-6 desc-forr div-forr">
+            <span class="headerTitle" data-source-namedcell="varToolTitleWeb" data-visible-after-language-change="true"></span>
+          </div>
+          <div class="col-3 brand">
+            <div class="row">
+              <div id="divBrand" class="col-10 offset-2 col-md-10 offset-md-2 col-lg-8 offset-lg-4">
+                <a id="brand_anchor" href="https://www.forrester.com">
+                  <img id="brand2" src="https://tools.totaleconomicimpact.com/go/unily/explatform/img/forrester-logo-green.svg" alt="logo" class="img-fluid">
+                </a>
+                <p data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" class="commissionedBy d-none d-md-block" data-source-namedcell="varCommissionedBy,varHeaderInfo{data-original-title},varHeaderInfo{data-bs-original-title}" data-visible-after-language-change="true"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="loader-div" data-loader="true">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border text-dark" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <p class="license-expired" data-license-expired="true"></p>
+    <div id="console" class="container-fluid nav-top">
+      <div class="row menu-wrap-row align-items-center">
+        <div class="col-12 nav-wrap nav-horiz">
+          <div class="nav nav-pills nav-menu nav-menu-b4">
+            <div class="nav nav-pills nav-menu nav-menu-b4">
+              <div data-nav-outer="Inputs" data-nav-outer-tag="inputs">
+                <div class="mainnav nav-item microToolAnalyticsClickEvent" data-sheet="Inputs" data-event-category="Navigation" data-event-action="Inputs">
+                  <a class="nav-link nav-plain" data-source-namedcell="navTitle0"></a>
+                </div>
+              </div>
+              <div data-nav-outer="Results" data-nav-outer-tag="results" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" data-tooltiponactivatedispose="true">
+                <div class="mainnav nav-item microToolAnalyticsClickEvent disabled" data-sheet="Results" data-event-category="Navigation" data-event-action="Results">
+                  <a class="nav-link nav-plain" data-source-namedcell="navTitle1"></a>
+                </div>
+              </div>
+              <div data-nav-outer="Methodology" data-nav-outer-tag="methodology">
+                <div class="mainnav nav-item microToolAnalyticsClickEvent" data-sheet="Methodology" data-event-category="Navigation" data-event-action="Methodology">
+                  <a class="nav-link nav-plain" data-source-namedcell="navTitle2"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="content-wrap-row" class="row content-wrap-row">
+        <div id="content-wrap" class="console-wrap col-12">
+          <div id="content" class="console-menu">
+            <div id="s1-section" data-sheet="Inputs" data-codename="s1">
+              <section id="s1Sub0-section" class="c-head d-none d-md-block">
+                <h2 id="s1!C1" class="h2-forr"></h2>
+              </section>
+              <section id="s1Sub1-section" class="tbl">
+                <p id="s1!C5"></p>
+                <p id="s1!D5"></p>
+                <p id="s1!C6"></p>
+                <p id="s1!D6"></p>
+                <p id="s1!C7"></p>
+                <p id="s1!D7"></p>
+                <ul>
+                  <li id="s1!E10"></li>
+                  <li id="s1!E11"></li>
+                  <li id="s1!E12"></li>
+                  <li id="s1!E13"></li>
+                  <li id="s1!E14"></li>
+                </ul>
+                <p id="s1!D17"></p>
+              </section>
+              <div class="container-fluid results-box-container">
+                <div class="row">
+                  <div class="col-3 offset-9 col-md-2 offset-md-10 d-block d-lg-none">
+                    <div class="results-box-div">
+                      <div class="col-12 results-box">
+                        <span id="s1!C19"></span>
+                        <span id="s1!D19" data-results-box="npvx" class="btnRegister blur-text1"></span>
+                        <span id="s1!E19" data-results-box="npv" class="btnResults" style="display:none;"></span>
+                      </div>
+                      <div class="col-12 results-box">
+                        <span id="s1!F19"></span>
+                        <span id="s1!G19" data-results-box="roix" class="btnRegister blur-text1"></span>
+                        <span id="s1!H19" data-results-box="roi" class="btnResults" style="display:none;"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section id="s1Sub2-section" class="tbl">
+                <p id="s1!B21"></p>
+                <div class="container-fluid">
+                  <div class="row align-items-center">
+                    <div class="col-12 col-md-6 slider-sidebar">
+                      <div data-section="currency" class="row align-items-center reg-input-group reg-input-group-hr" style="display:none;">
+                        <div class="col-12 col-lg-6 reg-input-label">
+                          <span id="s1!D26"></span>
+                        </div>
+                        <div class="col-12 col-lg-6 reg-input-div">
+                          <label>
+                            <select id="s1!H26" name="varCurrency" data-format="7" class="width-xl reg-input regInput microToolInput" data-dbentity="varCurrency" style="font-size:0.9em;"></select>
+                          </label>
+                          <br>
+                          <span id="s1!H27" class="text-center" style="font-size:0.7em;width:190px;"></span>
+                        </div>
+                        <div class="col-12">
+                          <hr>
+                        </div>
+                      </div>
+                      <div class="div-input-box">
+                        <div class="row">
+                          <div class="col-12 reg-input-label-only">
+                            <span id="s1!D30" style="font-weight:bold;"></span>
+                          </div>
+                        </div>
+                        <div class="row align-items-center slider-group slider-group-hr">
+                          <div class="col-12 slider-label">
+                            <span id="s1!D31"></span>
+                          </div>
+                          <div class="col-12 col-lg-9 d-none d-md-block">
+                            <div id="s1!I31_Control" class="slider-new"></div>
+                            <span id="s1!J31" class="slider-limit slider-limit-low"></span>
+                            <span id="s1!K31" class="slider-limit slider-limit-high"></span>
+                          </div>
+                          <div class="col-12 col-lg-3 slider-input-div">
+                            <button id="s1!O31_Control" type="button" data-step="true" class="btn btn-forr d-inline-flex d-lg-none">
+                              <i id="s1!O31" class="fas fa-minus fa-sm"></i>
+                            </button>
+                            <label>
+                              <input id="s1!P31" type="text" value="" name="numUsers" data-format="1" class="width-sm slider-input slider-input-1 regInput microToolInput" data-dbentity="numUsers">
+                            </label>
+                            <button id="s1!Q31_Control" type="button" data-step="true" class="btn btn-forr d-inline-flex d-lg-none">
+                              <i id="s1!Q31" class="fas fa-plus fa-sm"></i>
+                            </button>
+                          </div>
+                          <div class="col-12">
+                            <hr>
+                          </div>
+                        </div>
+                        <div class="row align-items-center slider-group slider-group-hr">
+                          <div class="col-12 slider-label">
+                            <span id="s1!D32"></span>
+                            <span id="s1!H32" class="fas fa-info-circle fa-lg" data-bs-toggle="tooltip" data-bs-container="body" data-bs-html="true"></span>
+                          </div>
+                          <div class="col-12 col-lg-9 d-none d-md-block">
+                            <div id="s1!I32_Control" class="slider-new"></div>
+                            <span id="s1!J32" class="slider-limit slider-limit-low"></span>
+                            <span id="s1!K32" class="slider-limit slider-limit-high"></span>
+                          </div>
+                          <div class="col-12 col-lg-3 slider-input-div">
+                            <button id="s1!O32_Control" type="button" data-step="true" class="btn btn-forr d-inline-flex d-lg-none">
+                              <i id="s1!O32" class="fas fa-minus fa-sm"></i>
+                            </button>
+                            <label>
+                              <input id="s1!P32" type="text" value="" name="numContentContributors" data-format="1" class="width-sm slider-input slider-input-1 regInput microToolInput" data-dbentity="numContentContributors">
+                            </label>
+                            <button id="s1!Q32_Control" type="button" data-step="true" class="btn btn-forr d-inline-flex d-lg-none">
+                              <i id="s1!Q32" class="fas fa-plus fa-sm"></i>
+                            </button>
+                          </div>
+                          <div class="col-12">
+                            <hr>
+                          </div>
+                        </div>
+                        <div class="row align-items-center slider-group slider-group-hr">
+                          <div class="col-12 slider-label">
+                            <span id="s1!D33"></span>
+                            <span id="s1!H33" class="fas fa-info-circle fa-lg" data-bs-toggle="tooltip" data-bs-container="body" data-bs-html="true"></span>
+                          </div>
+                          <div class="col-12 col-lg-9 d-none d-md-block">
+                            <div id="s1!I33_Control" class="slider-new"></div>
+                            <span id="s1!J33" class="slider-limit slider-limit-low"></span>
+                            <span id="s1!K33" class="slider-limit slider-limit-high"></span>
+                          </div>
+                          <div class="col-12 col-lg-3 slider-input-div">
+                            <button id="s1!O33_Control" type="button" data-step="true" class="btn btn-forr d-inline-flex d-lg-none">
+                              <i id="s1!O33" class="fas fa-minus fa-sm"></i>
+                            </button>
+                            <label>
+                              <input id="s1!P33" type="text" value="" name="numITStaff" data-format="1" class="width-sm slider-input slider-input-1 regInput microToolInput" data-dbentity="numITStaff">
+                            </label>
+                            <button id="s1!Q33_Control" type="button" data-step="true" class="btn btn-forr d-inline-flex d-lg-none">
+                              <i id="s1!Q33" class="fas fa-plus fa-sm"></i>
+                            </button>
+                          </div>
+                          <div class="col-12">
+                            <hr>
+                          </div>
+                        </div>
+                        <div class="row align-items-center slider-group slider-group-hr">
+                          <div class="col-12 slider-label">
+                            <span id="s1!D34"></span>
+                          </div>
+                          <div class="col-12 col-lg-9 d-none d-md-block">
+                            <div id="s1!I34_Control" class="slider-new"></div>
+                            <span id="s1!J34" class="slider-limit slider-limit-low"></span>
+                            <span id="s1!K34" class="slider-limit slider-limit-high"></span>
+                          </div>
+                          <div class="col-12 col-lg-3 slider-input-div">
+                            <button id="s1!O34_Control" type="button" data-step="true" class="btn btn-forr d-inline-flex d-lg-none">
+                              <i id="s1!O34" class="fas fa-minus fa-sm"></i>
+                            </button>
+                            <label>
+                              <input id="s1!P34" type="text" value="" name="numPortals" data-format="1" class="width-sm slider-input slider-input-1 regInput microToolInput" data-dbentity="numPortals">
+                            </label>
+                            <button id="s1!Q34_Control" type="button" data-step="true" class="btn btn-forr d-inline-flex d-lg-none">
+                              <i id="s1!Q34" class="fas fa-plus fa-sm"></i>
+                            </button>
+                          </div>
+                          <div class="col-12">
+                            <hr>
+                          </div>
+                        </div>
+                        <div class="div-input-box">
+                          <div class="row align-items-center">
+                            <div class="col-12 reg-input-label" style="padding-bottom:4px;">
+                              <span id="s1!D36"></span>
+                            </div>
+                          </div>
+                          <div class="row align-items-center reg-input-group reg-input-group-hr">
+                            <div class="col-12 col-lg-9 reg-input-label" >
+                              <span id="s1!D37"></span>
+                            </div>
+                            <div class="col-12 col-lg-3 reg-input-div">
+                              <label class="toggle-switch">
+                                <input id="s1!I37_Control" type="checkbox" data-group="s1_cg2" name="optionEmailBuilder" class="checkboxInput microToolInput" data-dbentity="optionEmailBuilder">
+                                <span data-content-before="Yes" data-content-after="No" class="toggle-slider round toggle-content-data toggle-content-data-yesno"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <p id="s1!J37" style="margin-bottom:5px;"></p>
+                          <p id="s1!K37" class="microToolOutput" data-dbentity="option1YN" style="display:none;"></p>
+                          <div class="row align-items-center reg-input-group reg-input-group-hr">
+                            <div class="col-12 col-lg-9 reg-input-label" >
+                              <span id="s1!D38"></span>
+                            </div>
+                            <div class="col-12 col-lg-3 reg-input-div">
+                              <label class="toggle-switch">
+                                <input id="s1!I38_Control" type="checkbox" data-group="s1_cg2" name="optionRewardRecognition" class="checkboxInput microToolInput" data-dbentity="optionRewardRecognition">
+                                <span data-content-before="Yes" data-content-after="No" class="toggle-slider round toggle-content-data toggle-content-data-yesno"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <p id="s1!J38" style="margin-bottom:5px;"></p>
+                          <p id="s1!K38" class="microToolOutput" data-dbentity="option2YN" style="display:none;"></p>
+                          <div class="row align-items-center reg-input-group reg-input-group-hr">
+                            <div class="col-12 col-lg-9 reg-input-label" >
+                              <span id="s1!D39"></span>
+                            </div>
+                            <div class="col-12 col-lg-3 reg-input-div">
+                              <label class="toggle-switch">
+                                <input id="s1!I39_Control" type="checkbox" data-group="s1_cg2" name="optionSocialPlatform" class="checkboxInput microToolInput" data-dbentity="optionSocialPlatform">
+                                <span data-content-before="Yes" data-content-after="No" class="toggle-slider round toggle-content-data toggle-content-data-yesno"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <p id="s1!J39" style="margin-bottom:5px;"></p>
+                          <p id="s1!K39" class="microToolOutput" data-dbentity="option3YN" style="display:none;"></p>
+                          <div class="row align-items-center reg-input-group reg-input-group-hr">
+                            <div class="col-12 col-lg-9 reg-input-label" >
+                              <span id="s1!D40"></span>
+                            </div>
+                            <div class="col-12 col-lg-3 reg-input-div">
+                              <label class="toggle-switch">
+                                <input id="s1!I40_Control" type="checkbox" data-group="s1_cg2" name="optionEmployeeApp" class="checkboxInput microToolInput" data-dbentity="optionEmployeeApp">
+                                <span data-content-before="Yes" data-content-after="No" class="toggle-slider round toggle-content-data toggle-content-data-yesno"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <p id="s1!J40" style="margin-bottom:5px;"></p>
+                          <p id="s1!K40" class="microToolOutput" data-dbentity="option4YN" style="display:none;"></p>
+                          <div class="row align-items-center reg-input-group reg-input-group-hr">
+                            <div class="col-12 col-lg-9 reg-input-label" >
+                              <span id="s1!D41"></span>
+                            </div>
+                            <div class="col-12 col-lg-3 reg-input-div">
+                              <label class="toggle-switch">
+                                <input id="s1!I41_Control" type="checkbox" data-group="s1_cg2" name="optionFrontlineLicenses" class="checkboxInput microToolInput" data-dbentity="optionFrontlineLicenses">
+                                <span data-content-before="Yes" data-content-after="No" class="toggle-slider round toggle-content-data toggle-content-data-yesno"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <p id="s1!J41" style="margin-bottom:5px;"></p>
+                          <p id="s1!K41" class="microToolOutput" data-dbentity="option5YN" style="display:none;"></p>
+                          <div class="row align-items-center reg-input-group reg-input-group-hr">
+                            <div class="col-12 col-lg-9 reg-input-label" >
+                              <span id="s1!D42"></span>
+                            </div>
+                            <div class="col-12 col-lg-3 reg-input-div">
+                              <label class="toggle-switch">
+                                <input id="s1!I42_Control" type="checkbox" data-group="s1_cg2" name="optionTranslationServices" class="checkboxInput microToolInput" data-dbentity="optionTranslationServices">
+                                <span data-content-before="Yes" data-content-after="No" class="toggle-slider round toggle-content-data toggle-content-data-yesno"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <p id="s1!J42" style="margin-bottom:5px;"></p>
+                          <p id="s1!K42" class="microToolOutput" data-dbentity="option6YN" style="display:none;"></p>
+                          <div class="row align-items-center reg-input-group reg-input-group-hr">
+                            <div class="col-12 col-lg-9 reg-input-label" >
+                              <span id="s1!D43"></span>
+                            </div>
+                            <div class="col-12 col-lg-3 reg-input-div">
+                              <label class="toggle-switch">
+                                <input id="s1!I43_Control" type="checkbox" data-group="s1_cg2" name="optionAgencySupport" class="checkboxInput microToolInput" data-dbentity="optionAgencySupport">
+                                <span data-content-before="Yes" data-content-after="No" class="toggle-slider round toggle-content-data toggle-content-data-yesno"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <p id="s1!J43" style="margin-bottom:5px;"></p>
+                          <p id="s1!K43" class="microToolOutput" data-dbentity="option7YN" style="display:none;"></p>
+                          <div class="row align-items-center reg-input-group reg-input-group-hr">
+                            <div class="col-12 col-lg-9 reg-input-label">
+                              <span id="s1!D44"></span>
+                            </div>
+                            <div class="col-12 col-lg-3 reg-input-div">
+                              <label>
+                                <input id="s1!I44" type="text" value="" disabled data-format="3" class="reg-input regInput microToolInput" data-dbentity="Inputs_I44">
+                              </label>
+                            </div>
+                            <div class="col-12">
+                              <hr>
+                            </div>
+                          </div>
+                          <div class="row align-items-center slider-group slider-group-hr" style="display:none;">
+                            <div class="col-12 slider-label">
+                              <span id="s1!D45"></span>
+                            </div>
+                            <div class="col-12 col-lg-9 d-none d-md-block">
+                              <div id="s1!I45_Control" class="slider-new"></div>
+                              <span id="s1!J45" class="slider-limit slider-limit-low"></span>
+                              <span id="s1!K45" class="slider-limit slider-limit-high"></span>
+                            </div>
+                            <div class="col-12 col-lg-3 slider-input-div">
+                              <button id="s1!O45_Control" type="button" data-step="true" class="btn btn-forr d-inline-flex d-lg-none">
+                                <i id="s1!O45" class="fas fa-minus fa-sm"></i>
+                              </button>
+                              <label>
+                                <input id="s1!P45" type="text" value="" name="legacyFees" data-format="3" class="width-sm slider-input slider-input-1 regInput microToolInput" data-dbentity="legacyFees">
+                              </label>
+                              <button id="s1!Q45_Control" type="button" data-step="true" class="btn btn-forr d-inline-flex d-lg-none">
+                                <i id="s1!Q45" class="fas fa-plus fa-sm"></i>
+                              </button>
+                            </div>
+                            <div class="col-12">
+                              <hr>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="totalNPVArea">
+                        <p id="s1!C54"></p>
+                        <p id="s1!D54" class="totalNPV1">
+                          <span id="s1!F54" class="btnResults" style="display:none;"></span>
+                          <span id="s1!G54" class="btnRegister blur-text1"></span>
+                        </p>
+                        <p id="s1!H54"></p>
+                        <span id="s1!F55" style="display:none;"></span>
+                        <span id="s1!G55" class="blur-text1" style="display:none;"></span>
+                        <p id="s1!D56" class="text-center totalNPVDescription"></p>
+                        <p id="s1!C57"></p>
+                        <p id="s1!D57" class="totalNPV1">
+                          <span id="s1!F57" class="btnResults" style="display:none;"></span>
+                          <span id="s1!G57" class="btnRegister blur-text1"></span>
+                        </p>
+                        <p id="s1!H57"></p>
+                        <p id="s1!D59" class="text-center totalNPVDescription"></p>
+                        <p id="s1!C60"></p>
+                        <p id="s1!D60" class="text-center totalNPVDescription"></p>
+                        <p id="s1!J60"></p>
+                        <div data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Accept cookies to continue" class="text-center btnspacing btnRegister lgtCookieConsentAcceptedTooltipDispose">
+                          <button id="s1!E61_Control" type="button" data-bs-toggle="modal" data-bs-target="#registerModal" class="btn btn-forr btn-lg lgtCookieConsentAcceptedEnable"></button>
+                        </div>
+                        <div class="text-center btnspacing btnResults" style="display:none;">
+                          <button id="s1!E62_Control" type="button" class="btn btn-forr btn-lg"></button>
+                        </div>
+                      </div>
+                      <div class="chart-responsive totalNPVChart">
+                        <div id="s1!E65_Chart" class="chart chartAutoCenter microToolChart" data-chartName="CFBenefit1Chart">Loading chart...</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Accept cookies to continue" class="text-center btnspacing btnRegister lgtCookieConsentAcceptedTooltipDispose">
+                    <button id="s1!E83_Control" type="button" data-bs-toggle="modal" data-bs-target="#registerModal" class="btn btn-forr btn-lg lgtCookieConsentAcceptedEnable"></button>
+                  </div>
+                  <div class="text-center btnspacing btnResults" style="display:none;">
+                    <button id="s1!E84_Control" type="button" class="btn btn-forr btn-lg"></button>
+                  </div>
+                  <p id="s1!C85"></p>
+                </div>
+              </section>
+              <footer>
+                <a id="s1!D90" class="microToolCookieConsentFullBtn" style="display:inline;"></a>
+                <br>
+                <p id="s1!D91"></p>
+              </footer>
+            </div>
+            <div id="s3-section" data-sheet="Results" data-codename="s3">
+              <section id="s3Sub0-section" class="c-head d-none d-md-block">
+                <h2 id="s3!C1" class="h2-forr"></h2>
+              </section>
+              <section id="s3Sub1-section" class="tbl">
+                <p id="s3!E5" style="display:none;"></p>
+                <div class="text-center btnspacing">
+                  <button id="s3!E6_Control" type="button" class="btn btn-success btn-lg"></button>
+                </div>
+                <div class="text-center btnspacing">
+                  <button id="s3!E7_Control" type="button" class="btn btn-success btn-lg microToolDownloadButton"></button>
+                </div>
+                <hr style="margin-top:0;margin-bottom:10px;margin-block-start:0;">
+                <p id="s3!C9"></p>
+              </section>
+              <section id="s3Sub2-section" class="tbl">
+                <h3 id="s3!E13" class="h3-forr"></h3>
+                <div class="table-responsive">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s3_row14">
+                        <th id="s3!E14"></th>
+                        <th id="s3!F14"></th>
+                        <th id="s3!G14"></th>
+                        <th id="s3!H14"></th>
+                        <th id="s3!I14"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s3_row15" class="tally">
+                        <td id="s3!E15" class="ROI"></td>
+                        <td id="s3!F15"></td>
+                        <td id="s3!G15"></td>
+                        <td id="s3!H15"></td>
+                        <td id="s3!I15"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section id="s3Sub3-section" class="tbl">
+                <div class="chart-responsive">
+                  <div id="s3!E21_Chart" class="chart chartAutoCenter microToolChart" data-chartName="CFSChart">Loading chart...</div>
+                </div>
+              </section>
+              <section id="s3Sub4-section" class="tbl">
+                <h3 id="s3!E45" class="h3-forr"></h3>
+                <div class="table-responsive">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s3_row46">
+                        <th id="s3!E46" class="benefits"></th>
+                        <th id="s3!H46"></th>
+                        <th id="s3!I46"></th>
+                        <th id="s3!J46"></th>
+                        <th id="s3!K46"></th>
+                        <th id="s3!L46"></th>
+                        <th id="s3!M46"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s3_row47">
+                        <td id="s3!E47" class="benefits"></td>
+                        <td id="s3!H47" class="microToolOutput" data-dbentity="CostTotalCFNegYear0"></td>
+                        <td id="s3!I47" class="microToolOutput" data-dbentity="CostTotalCFNegYear1"></td>
+                        <td id="s3!J47" class="microToolOutput" data-dbentity="CostTotalCFNegYear2"></td>
+                        <td id="s3!K47" class="microToolOutput" data-dbentity="CostTotalCFNegYear3"></td>
+                        <td id="s3!L47" class="microToolOutput" data-dbentity="CostTotalCFNegTotal"></td>
+                        <td id="s3!M47" class="microToolOutput" data-dbentity="CostTotalCFNegPV"></td>
+                      </tr>
+                      <tr id="s3_row48">
+                        <td id="s3!E48" class="benefits"></td>
+                        <td id="s3!H48"></td>
+                        <td id="s3!I48"></td>
+                        <td id="s3!J48"></td>
+                        <td id="s3!K48"></td>
+                        <td id="s3!L48"></td>
+                        <td id="s3!M48"></td>
+                      </tr>
+                      <tr id="s3_row49" class="tally">
+                        <td id="s3!E49" class="benefits"></td>
+                        <td id="s3!H49" class="microToolOutput" data-dbentity="TotalCFYear0"></td>
+                        <td id="s3!I49" class="microToolOutput" data-dbentity="TotalCFYear1"></td>
+                        <td id="s3!J49" class="microToolOutput" data-dbentity="TotalCFYear2"></td>
+                        <td id="s3!K49" class="microToolOutput" data-dbentity="TotalCFYear3"></td>
+                        <td id="s3!L49" class="microToolOutput" data-dbentity="TotalCFTotal"></td>
+                        <td id="s3!M49" class="microToolOutput" data-dbentity="TotalCFPV"></td>
+                      </tr>
+                      <tr id="s3_row50" class="tally">
+                        <td id="s3!E50" class="benefits"></td>
+                        <td id="s3!H50"></td>
+                        <td id="s3!I50"></td>
+                        <td id="s3!J50"></td>
+                        <td id="s3!K50"></td>
+                        <td id="s3!L50"></td>
+                        <td id="s3!M50" class="microToolOutput" data-dbentity="ROI"></td>
+                      </tr>
+                      <tr id="s3_row51" class="tally">
+                        <td id="s3!E51" class="benefits"></td>
+                        <td id="s3!H51"></td>
+                        <td id="s3!I51"></td>
+                        <td id="s3!J51"></td>
+                        <td id="s3!K51"></td>
+                        <td id="s3!L51"></td>
+                        <td id="s3!M51" class="microToolOutput" data-dbentity="Payback"></td>
+                      </tr>
+                      <tr id="s3_row52" class="tally" style="display:none;">
+                        <td id="s3!E52" class="benefits"></td>
+                        <td id="s3!H52"></td>
+                        <td id="s3!I52"></td>
+                        <td id="s3!J52"></td>
+                        <td id="s3!K52"></td>
+                        <td id="s3!L52"></td>
+                        <td id="s3!M52"></td>
+                      </tr>
+                      <tr id="s3_row53" class="tally" style="display:none;">
+                        <td id="s3!E53" class="benefits"></td>
+                        <td id="s3!H53"></td>
+                        <td id="s3!I53"></td>
+                        <td id="s3!J53"></td>
+                        <td id="s3!K53"></td>
+                        <td id="s3!L53"></td>
+                        <td id="s3!M53"></td>
+                      </tr>
+                      <tr id="s3_row54" class="tally" style="display:none;">
+                        <td id="s3!E54" class="benefits"></td>
+                        <td id="s3!H54"></td>
+                        <td id="s3!I54"></td>
+                        <td id="s3!J54"></td>
+                        <td id="s3!K54"></td>
+                        <td id="s3!L54"></td>
+                        <td id="s3!M54"></td>
+                      </tr>
+                      <tr id="s3_row55" class="tally" style="display:none;">
+                        <td id="s3!E55" class="benefits"></td>
+                        <td id="s3!H55"></td>
+                        <td id="s3!I55"></td>
+                        <td id="s3!J55"></td>
+                        <td id="s3!K55"></td>
+                        <td id="s3!L55"></td>
+                        <td id="s3!M55"></td>
+                      </tr>
+                      <tr id="s3_row56" class="tally" style="display:none;">
+                        <td id="s3!E56" class="benefits"></td>
+                        <td id="s3!H56"></td>
+                        <td id="s3!I56"></td>
+                        <td id="s3!J56"></td>
+                        <td id="s3!K56"></td>
+                        <td id="s3!L56"></td>
+                        <td id="s3!M56"></td>
+                      </tr>
+                      <tr id="s3_row57" class="tally" style="display:none;">
+                        <td id="s3!E57" class="benefits"></td>
+                        <td id="s3!H57"></td>
+                        <td id="s3!I57"></td>
+                        <td id="s3!J57"></td>
+                        <td id="s3!K57"></td>
+                        <td id="s3!L57"></td>
+                        <td id="s3!M57"></td>
+                      </tr>
+                      <tr id="s3_row58" class="tally" style="display:none;">
+                        <td id="s3!E58" class="benefits"></td>
+                        <td id="s3!H58"></td>
+                        <td id="s3!I58"></td>
+                        <td id="s3!J58"></td>
+                        <td id="s3!K58"></td>
+                        <td id="s3!L58"></td>
+                        <td id="s3!M58"></td>
+                      </tr>
+                      <tr id="s3_row59" class="tally" style="display:none;">
+                        <td id="s3!E59" class="benefits"></td>
+                        <td id="s3!H59"></td>
+                        <td id="s3!I59"></td>
+                        <td id="s3!J59"></td>
+                        <td id="s3!K59"></td>
+                        <td id="s3!L59"></td>
+                        <td id="s3!M59"></td>
+                      </tr>
+                      <tr id="s3_row60" style="display:none;">
+                        <td id="s3!E60" class="benefits"></td>
+                        <td id="s3!H60"></td>
+                        <td id="s3!I60"></td>
+                        <td id="s3!J60"></td>
+                        <td id="s3!K60"></td>
+                        <td id="s3!L60"></td>
+                        <td id="s3!M60"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p id="s3!E61" style="display:none;"></p>
+              </section>
+              <footer>
+                <a id="s3!D67" class="microToolCookieConsentFullBtn" style="display:inline;"></a>
+                <br>
+                <p id="s3!D68"></p>
+              </footer>
+            </div>
+            <div id="s4-section" data-sheet="BenefitDetails" data-codename="s4">
+              <section id="s4Sub0-section" class="c-head d-none d-md-block">
+                <h2 id="s4!C1" class="h2-forr"></h2>
+              </section>
+              <section id="s4Sub1-section" class="tbl">
+                <h3 id="s4!D9" class="h3-forr"></h3>
+                <div class="table-responsive">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s4_row10">
+                        <th id="s4!D10" class="title"></th>
+                        <th id="s4!E10" class="benefits text-center"></th>
+                        <th id="s4!H10" style="display:none;"></th>
+                        <th id="s4!I10"></th>
+                        <th id="s4!J10"></th>
+                        <th id="s4!K10"></th>
+                        <th id="s4!L10"></th>
+                        <th id="s4!M10"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s4_row11">
+                        <td id="s4!D11" class="title"></td>
+                        <td id="s4!E11" class="benefits"></td>
+                        <td id="s4!H11" style="display:none;"></td>
+                        <td id="s4!I11"></td>
+                        <td id="s4!J11"></td>
+                        <td id="s4!K11"></td>
+                        <td id="s4!L11"></td>
+                        <td id="s4!M11"></td>
+                      </tr>
+                      <tr id="s4_row12">
+                        <td id="s4!D12" class="title"></td>
+                        <td id="s4!E12" class="benefits"></td>
+                        <td id="s4!H12" style="display:none;"></td>
+                        <td id="s4!I12"></td>
+                        <td id="s4!J12"></td>
+                        <td id="s4!K12"></td>
+                        <td id="s4!L12"></td>
+                        <td id="s4!M12"></td>
+                      </tr>
+                      <tr id="s4_row13">
+                        <td id="s4!D13" class="title"></td>
+                        <td id="s4!E13" class="benefits"></td>
+                        <td id="s4!H13" style="display:none;"></td>
+                        <td id="s4!I13"></td>
+                        <td id="s4!J13"></td>
+                        <td id="s4!K13"></td>
+                        <td id="s4!L13"></td>
+                        <td id="s4!M13"></td>
+                      </tr>
+                      <tr id="s4_row14">
+                        <td id="s4!D14" class="title"></td>
+                        <td id="s4!E14" class="benefits"></td>
+                        <td id="s4!H14" style="display:none;"></td>
+                        <td id="s4!I14"></td>
+                        <td id="s4!J14"></td>
+                        <td id="s4!K14"></td>
+                        <td id="s4!L14"></td>
+                        <td id="s4!M14"></td>
+                      </tr>
+                      <tr id="s4_row15">
+                        <td id="s4!D15" class="title"></td>
+                        <td id="s4!E15" class="benefits"></td>
+                        <td id="s4!H15" style="display:none;"></td>
+                        <td id="s4!I15"></td>
+                        <td id="s4!J15"></td>
+                        <td id="s4!K15"></td>
+                        <td id="s4!L15"></td>
+                        <td id="s4!M15"></td>
+                      </tr>
+                      <tr id="s4_row16" class="tally">
+                        <td id="s4!D16" class="title"></td>
+                        <td id="s4!E16" class="benefits"></td>
+                        <td id="s4!H16" class="microToolOutput" data-dbentity="BenefitTotalCFYear0" style="display:none;"></td>
+                        <td id="s4!I16" class="microToolOutput" data-dbentity="BenefitTotalCFYear1"></td>
+                        <td id="s4!J16" class="microToolOutput" data-dbentity="BenefitTotalCFYear2"></td>
+                        <td id="s4!K16" class="microToolOutput" data-dbentity="BenefitTotalCFYear3"></td>
+                        <td id="s4!L16" class="microToolOutput" data-dbentity="BenefitTotalCFTotal"></td>
+                        <td id="s4!M16" class="microToolOutput" data-dbentity="BenefitTotalCFPV"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <span id="s4!D17" style="display:none;"></span>
+                <span id="s4!F17" style="display:none;"></span>
+                <span id="s4!G17" style="display:none;"></span>
+                <span id="s4!D18" style="display:none;"></span>
+                <span id="s4!F18" style="display:none;"></span>
+              </section>
+              <section id="s4Sub2-section" class="tbl">
+                <div class="chart-responsive">
+                  <div id="s4!E21_Chart" class="chart chartAutoCenter microToolChart" data-chartName="CFBenefitChart">Loading chart...</div>
+                </div>
+              </section>
+              <section id="s4Sub3-section" class="tbl">
+                <h3 id="s4!D37" class="h3-forr"></h3>
+                <p id="s4!D38"></p>
+                <p id="s4!D39" class="text-center equationRowsTrigger" style="display:block;"></p>
+                <div class="table-responsive">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s4_row40" data-rowTag="H">
+                        <th id="s4!D40" class="title"></th>
+                        <th id="s4!E40" class="benefits text-center"></th>
+                        <th id="s4!G40" class="calculation"></th>
+                        <th id="s4!H40" style="display:none;"></th>
+                        <th id="s4!I40"></th>
+                        <th id="s4!J40"></th>
+                        <th id="s4!K40"></th>
+                        <th id="s4!L40" class="equation-col-total"></th>
+                        <th id="s4!M40" class="equation-col-pv"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s4_row41" data-rowTag="V">
+                        <td id="s4!D41" class="title"></td>
+                        <td id="s4!E41" class="benefits"></td>
+                        <td id="s4!G41" class="calculation"></td>
+                        <td id="s4!H41" style="display:none;"></td>
+                        <td id="s4!I41" class="microToolOutput" data-dbentity="Benefit1A1CFYear1"></td>
+                        <td id="s4!J41" class="microToolOutput" data-dbentity="Benefit1A1CFYear2"></td>
+                        <td id="s4!K41" class="microToolOutput" data-dbentity="Benefit1A1CFYear3"></td>
+                        <td id="s4!L41" class="equation-col-total"></td>
+                        <td id="s4!M41" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row42" data-rowTag="V">
+                        <td id="s4!D42" class="title"></td>
+                        <td id="s4!E42" class="benefits"></td>
+                        <td id="s4!G42" class="calculation"></td>
+                        <td id="s4!H42" style="display:none;"></td>
+                        <td id="s4!I42" class="microToolOutput" data-dbentity="Benefit1A2CFYear1"></td>
+                        <td id="s4!J42" class="microToolOutput" data-dbentity="Benefit1A2CFYear2"></td>
+                        <td id="s4!K42" class="microToolOutput" data-dbentity="Benefit1A2CFYear3"></td>
+                        <td id="s4!L42" class="equation-col-total"></td>
+                        <td id="s4!M42" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row43" data-rowTag="V">
+                        <td id="s4!D43" class="title"></td>
+                        <td id="s4!E43" class="benefits"></td>
+                        <td id="s4!G43" class="calculation"></td>
+                        <td id="s4!H43" style="display:none;"></td>
+                        <td id="s4!I43" class="microToolOutput" data-dbentity="Benefit1A3CFYear1"></td>
+                        <td id="s4!J43" class="microToolOutput" data-dbentity="Benefit1A3CFYear2"></td>
+                        <td id="s4!K43" class="microToolOutput" data-dbentity="Benefit1A3CFYear3"></td>
+                        <td id="s4!L43" class="equation-col-total"></td>
+                        <td id="s4!M43" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row44" data-rowTag="V">
+                        <td id="s4!D44" class="title"></td>
+                        <td id="s4!E44" class="benefits"></td>
+                        <td id="s4!G44" class="calculation"></td>
+                        <td id="s4!H44" style="display:none;"></td>
+                        <td id="s4!I44" class="microToolOutput" data-dbentity="Benefit1A4CFYear1"></td>
+                        <td id="s4!J44" class="microToolOutput" data-dbentity="Benefit1A4CFYear2"></td>
+                        <td id="s4!K44" class="microToolOutput" data-dbentity="Benefit1A4CFYear3"></td>
+                        <td id="s4!L44" class="equation-col-total"></td>
+                        <td id="s4!M44" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row45" data-rowTag="V">
+                        <td id="s4!D45" class="title"></td>
+                        <td id="s4!E45" class="benefits"></td>
+                        <td id="s4!G45" class="calculation"></td>
+                        <td id="s4!H45" style="display:none;"></td>
+                        <td id="s4!I45" class="microToolOutput" data-dbentity="Benefit1A5CFYear1"></td>
+                        <td id="s4!J45" class="microToolOutput" data-dbentity="Benefit1A5CFYear2"></td>
+                        <td id="s4!K45" class="microToolOutput" data-dbentity="Benefit1A5CFYear3"></td>
+                        <td id="s4!L45" class="equation-col-total"></td>
+                        <td id="s4!M45" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row46" data-rowTag="V">
+                        <td id="s4!D46" class="title"></td>
+                        <td id="s4!E46" class="benefits"></td>
+                        <td id="s4!G46" class="calculation"></td>
+                        <td id="s4!H46" style="display:none;"></td>
+                        <td id="s4!I46" class="microToolOutput" data-dbentity="Benefit1A6CFYear1"></td>
+                        <td id="s4!J46" class="microToolOutput" data-dbentity="Benefit1A6CFYear2"></td>
+                        <td id="s4!K46" class="microToolOutput" data-dbentity="Benefit1A6CFYear3"></td>
+                        <td id="s4!L46" class="equation-col-total"></td>
+                        <td id="s4!M46" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row47" data-rowTag="V">
+                        <td id="s4!D47" class="title"></td>
+                        <td id="s4!E47" class="benefits"></td>
+                        <td id="s4!G47" class="calculation"></td>
+                        <td id="s4!H47" style="display:none;"></td>
+                        <td id="s4!I47" class="microToolOutput" data-dbentity="Benefit1A7CFYear1"></td>
+                        <td id="s4!J47" class="microToolOutput" data-dbentity="Benefit1A7CFYear2"></td>
+                        <td id="s4!K47" class="microToolOutput" data-dbentity="Benefit1A7CFYear3"></td>
+                        <td id="s4!L47" class="equation-col-total"></td>
+                        <td id="s4!M47" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row48" data-rowTag="V">
+                        <td id="s4!D48" class="title"></td>
+                        <td id="s4!E48" class="benefits"></td>
+                        <td id="s4!G48" class="calculation"></td>
+                        <td id="s4!H48" style="display:none;"></td>
+                        <td id="s4!I48" class="microToolOutput" data-dbentity="Benefit1A8CFYear1"></td>
+                        <td id="s4!J48" class="microToolOutput" data-dbentity="Benefit1A8CFYear2"></td>
+                        <td id="s4!K48" class="microToolOutput" data-dbentity="Benefit1A8CFYear3"></td>
+                        <td id="s4!L48" class="equation-col-total"></td>
+                        <td id="s4!M48" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row49" data-rowTag="V">
+                        <td id="s4!D49" class="title"></td>
+                        <td id="s4!E49" class="benefits"></td>
+                        <td id="s4!G49" class="calculation"></td>
+                        <td id="s4!H49" style="display:none;"></td>
+                        <td id="s4!I49" class="microToolOutput" data-dbentity="Benefit1A9CFYear1"></td>
+                        <td id="s4!J49" class="microToolOutput" data-dbentity="Benefit1A9CFYear2"></td>
+                        <td id="s4!K49" class="microToolOutput" data-dbentity="Benefit1A9CFYear3"></td>
+                        <td id="s4!L49" class="equation-col-total"></td>
+                        <td id="s4!M49" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row50" data-rowTag="Original">
+                        <td id="s4!D50" class="title"></td>
+                        <td id="s4!E50" class="benefits"></td>
+                        <td id="s4!G50" class="calculation"></td>
+                        <td id="s4!H50" class="microToolOutput" data-dbentity="Benefit1AtCFYear0" style="display:none;"></td>
+                        <td id="s4!I50" class="microToolOutput" data-dbentity="Benefit1AtCFYear1"></td>
+                        <td id="s4!J50" class="microToolOutput" data-dbentity="Benefit1AtCFYear2"></td>
+                        <td id="s4!K50" class="microToolOutput" data-dbentity="Benefit1AtCFYear3"></td>
+                        <td id="s4!L50" class="equation-col-total microToolOutput" data-dbentity="Benefit1AtCFTotal"></td>
+                        <td id="s4!M50" class="equation-col-pv microToolOutput" data-dbentity="Benefit1AtCFPV"></td>
+                      </tr>
+                      <tr id="s4_row51" data-rowTag="ra">
+                        <td id="s4!D51" class="title"></td>
+                        <td id="s4!E51" class="benefits"></td>
+                        <td id="s4!G51"></td>
+                        <td id="s4!H51" style="display:none;"></td>
+                        <td id="s4!I51"></td>
+                        <td id="s4!J51"></td>
+                        <td id="s4!K51"></td>
+                        <td id="s4!L51" class="equation-col-total"></td>
+                        <td id="s4!M51" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row52" class="tally">
+                        <td id="s4!D52" class="title"></td>
+                        <td id="s4!E52" class="benefits"></td>
+                        <td id="s4!G52" class="calculation"></td>
+                        <td id="s4!H52" class="microToolOutput" data-dbentity="Benefit1AtrCFYear0" style="display:none;"></td>
+                        <td id="s4!I52" class="microToolOutput" data-dbentity="Benefit1AtrCFYear1"></td>
+                        <td id="s4!J52" class="microToolOutput" data-dbentity="Benefit1AtrCFYear2"></td>
+                        <td id="s4!K52" class="microToolOutput" data-dbentity="Benefit1AtrCFYear3"></td>
+                        <td id="s4!L52" class="equation-col-total microToolOutput" data-dbentity="Benefit1AtrCFTotal"></td>
+                        <td id="s4!M52" class="equation-col-pv microToolOutput" data-dbentity="Benefit1AtrCFPV"></td>
+                      </tr>
+                      <tr id="s4_row53" class="tally equation-row-total">
+                        <td id="s4!D53" class="title" style="font-weight:bold;"></td>
+                        <td id="s4!E53" class="benefits"></td>
+                        <td id="s4!G53" class="calculation"></td>
+                        <td id="s4!H53" style="display:none;"></td>
+                        <td id="s4!I53"></td>
+                        <td id="s4!J53"></td>
+                        <td id="s4!K53"></td>
+                        <td id="s4!L53" class="equation-col-total"></td>
+                        <td id="s4!M53" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row54" class="tally equation-row-pv">
+                        <td id="s4!D54" class="title" style="font-weight:bold;"></td>
+                        <td id="s4!E54" class="benefits"></td>
+                        <td id="s4!G54" class="calculation"></td>
+                        <td id="s4!H54" style="display:none;"></td>
+                        <td id="s4!I54"></td>
+                        <td id="s4!J54"></td>
+                        <td id="s4!K54"></td>
+                        <td id="s4!L54" class="equation-col-total"></td>
+                        <td id="s4!M54" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row55" class="tally" style="display:none;">
+                        <td id="s4!D55" class="title"></td>
+                        <td id="s4!E55" class="benefits"></td>
+                        <td id="s4!G55" class="calculation"></td>
+                        <td id="s4!H55" style="display:none;"></td>
+                        <td id="s4!I55"></td>
+                        <td id="s4!J55"></td>
+                        <td id="s4!K55"></td>
+                        <td id="s4!L55" class="equation-col-total"></td>
+                        <td id="s4!M55" class="equation-col-pv"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section id="s4Sub4-section" class="tbl">
+                <h3 id="s4!D60" class="h3-forr"></h3>
+                <p id="s4!D61"></p>
+                <p id="s4!D62" class="text-center equationRowsTrigger" style="display:block;"></p>
+                <div class="table-responsive">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s4_row63" data-rowTag="H">
+                        <th id="s4!D63" class="title"></th>
+                        <th id="s4!E63" class="benefits text-center"></th>
+                        <th id="s4!G63" class="calculation"></th>
+                        <th id="s4!H63" style="display:none;"></th>
+                        <th id="s4!I63"></th>
+                        <th id="s4!J63"></th>
+                        <th id="s4!K63"></th>
+                        <th id="s4!L63" class="equation-col-total"></th>
+                        <th id="s4!M63" class="equation-col-pv"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s4_row64" data-rowTag="V">
+                        <td id="s4!D64" class="title"></td>
+                        <td id="s4!E64" class="benefits"></td>
+                        <td id="s4!G64" class="calculation"></td>
+                        <td id="s4!H64" style="display:none;"></td>
+                        <td id="s4!I64" class="microToolOutput" data-dbentity="Benefit2B1CFYear1"></td>
+                        <td id="s4!J64" class="microToolOutput" data-dbentity="Benefit2B1CFYear2"></td>
+                        <td id="s4!K64" class="microToolOutput" data-dbentity="Benefit2B1CFYear3"></td>
+                        <td id="s4!L64" class="equation-col-total"></td>
+                        <td id="s4!M64" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row65" data-rowTag="V">
+                        <td id="s4!D65" class="title"></td>
+                        <td id="s4!E65" class="benefits"></td>
+                        <td id="s4!G65" class="calculation"></td>
+                        <td id="s4!H65" style="display:none;"></td>
+                        <td id="s4!I65" class="microToolOutput" data-dbentity="Benefit2B2CFYear1"></td>
+                        <td id="s4!J65" class="microToolOutput" data-dbentity="Benefit2B2CFYear2"></td>
+                        <td id="s4!K65" class="microToolOutput" data-dbentity="Benefit2B2CFYear3"></td>
+                        <td id="s4!L65" class="equation-col-total"></td>
+                        <td id="s4!M65" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row66" data-rowTag="V">
+                        <td id="s4!D66" class="title"></td>
+                        <td id="s4!E66" class="benefits"></td>
+                        <td id="s4!G66" class="calculation"></td>
+                        <td id="s4!H66" style="display:none;"></td>
+                        <td id="s4!I66" class="microToolOutput" data-dbentity="Benefit2B3CFYear1"></td>
+                        <td id="s4!J66" class="microToolOutput" data-dbentity="Benefit2B3CFYear2"></td>
+                        <td id="s4!K66" class="microToolOutput" data-dbentity="Benefit2B3CFYear3"></td>
+                        <td id="s4!L66" class="equation-col-total"></td>
+                        <td id="s4!M66" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row67" data-rowTag="V">
+                        <td id="s4!D67" class="title"></td>
+                        <td id="s4!E67" class="benefits"></td>
+                        <td id="s4!G67" class="calculation"></td>
+                        <td id="s4!H67" style="display:none;"></td>
+                        <td id="s4!I67" class="microToolOutput" data-dbentity="Benefit2B4CFYear1"></td>
+                        <td id="s4!J67" class="microToolOutput" data-dbentity="Benefit2B4CFYear2"></td>
+                        <td id="s4!K67" class="microToolOutput" data-dbentity="Benefit2B4CFYear3"></td>
+                        <td id="s4!L67" class="equation-col-total"></td>
+                        <td id="s4!M67" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row68" data-rowTag="V">
+                        <td id="s4!D68" class="title"></td>
+                        <td id="s4!E68" class="benefits"></td>
+                        <td id="s4!G68" class="calculation"></td>
+                        <td id="s4!H68" style="display:none;"></td>
+                        <td id="s4!I68" class="microToolOutput" data-dbentity="Benefit2B5CFYear1"></td>
+                        <td id="s4!J68" class="microToolOutput" data-dbentity="Benefit2B5CFYear2"></td>
+                        <td id="s4!K68" class="microToolOutput" data-dbentity="Benefit2B5CFYear3"></td>
+                        <td id="s4!L68" class="equation-col-total"></td>
+                        <td id="s4!M68" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row69" data-rowTag="V">
+                        <td id="s4!D69" class="title"></td>
+                        <td id="s4!E69" class="benefits"></td>
+                        <td id="s4!G69" class="calculation"></td>
+                        <td id="s4!H69" style="display:none;"></td>
+                        <td id="s4!I69" class="microToolOutput" data-dbentity="Benefit2B6CFYear1"></td>
+                        <td id="s4!J69" class="microToolOutput" data-dbentity="Benefit2B6CFYear2"></td>
+                        <td id="s4!K69" class="microToolOutput" data-dbentity="Benefit2B6CFYear3"></td>
+                        <td id="s4!L69" class="equation-col-total"></td>
+                        <td id="s4!M69" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row70" data-rowTag="V">
+                        <td id="s4!D70" class="title"></td>
+                        <td id="s4!E70" class="benefits"></td>
+                        <td id="s4!G70" class="calculation"></td>
+                        <td id="s4!H70" style="display:none;"></td>
+                        <td id="s4!I70" class="microToolOutput" data-dbentity="Benefit2B7CFYear1"></td>
+                        <td id="s4!J70" class="microToolOutput" data-dbentity="Benefit2B7CFYear2"></td>
+                        <td id="s4!K70" class="microToolOutput" data-dbentity="Benefit2B7CFYear3"></td>
+                        <td id="s4!L70" class="equation-col-total"></td>
+                        <td id="s4!M70" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row71" data-rowTag="Original">
+                        <td id="s4!D71" class="title"></td>
+                        <td id="s4!E71" class="benefits"></td>
+                        <td id="s4!G71" class="calculation"></td>
+                        <td id="s4!H71" class="microToolOutput" data-dbentity="Benefit2BtCFYear0" style="display:none;"></td>
+                        <td id="s4!I71" class="microToolOutput" data-dbentity="Benefit2BtCFYear1"></td>
+                        <td id="s4!J71" class="microToolOutput" data-dbentity="Benefit2BtCFYear2"></td>
+                        <td id="s4!K71" class="microToolOutput" data-dbentity="Benefit2BtCFYear3"></td>
+                        <td id="s4!L71" class="equation-col-total microToolOutput" data-dbentity="Benefit2BtCFTotal"></td>
+                        <td id="s4!M71" class="equation-col-pv microToolOutput" data-dbentity="Benefit2BtCFPV"></td>
+                      </tr>
+                      <tr id="s4_row72" data-rowTag="ra">
+                        <td id="s4!D72" class="title"></td>
+                        <td id="s4!E72" class="benefits"></td>
+                        <td id="s4!G72"></td>
+                        <td id="s4!H72" style="display:none;"></td>
+                        <td id="s4!I72"></td>
+                        <td id="s4!J72"></td>
+                        <td id="s4!K72"></td>
+                        <td id="s4!L72" class="equation-col-total"></td>
+                        <td id="s4!M72" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row73" class="tally">
+                        <td id="s4!D73" class="title"></td>
+                        <td id="s4!E73" class="benefits"></td>
+                        <td id="s4!G73" class="calculation"></td>
+                        <td id="s4!H73" class="microToolOutput" data-dbentity="Benefit2BtrCFYear0" style="display:none;"></td>
+                        <td id="s4!I73" class="microToolOutput" data-dbentity="Benefit2BtrCFYear1"></td>
+                        <td id="s4!J73" class="microToolOutput" data-dbentity="Benefit2BtrCFYear2"></td>
+                        <td id="s4!K73" class="microToolOutput" data-dbentity="Benefit2BtrCFYear3"></td>
+                        <td id="s4!L73" class="equation-col-total microToolOutput" data-dbentity="Benefit2BtrCFTotal"></td>
+                        <td id="s4!M73" class="equation-col-pv microToolOutput" data-dbentity="Benefit2BtrCFPV"></td>
+                      </tr>
+                      <tr id="s4_row74" class="tally equation-row-total">
+                        <td id="s4!D74" class="title" style="font-weight:bold;"></td>
+                        <td id="s4!E74" class="benefits"></td>
+                        <td id="s4!G74" class="calculation"></td>
+                        <td id="s4!H74" style="display:none;"></td>
+                        <td id="s4!I74"></td>
+                        <td id="s4!J74"></td>
+                        <td id="s4!K74"></td>
+                        <td id="s4!L74" class="equation-col-total"></td>
+                        <td id="s4!M74" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row75" class="tally equation-row-pv">
+                        <td id="s4!D75" class="title" style="font-weight:bold;"></td>
+                        <td id="s4!E75" class="benefits"></td>
+                        <td id="s4!G75" class="calculation"></td>
+                        <td id="s4!H75" style="display:none;"></td>
+                        <td id="s4!I75"></td>
+                        <td id="s4!J75"></td>
+                        <td id="s4!K75"></td>
+                        <td id="s4!L75" class="equation-col-total"></td>
+                        <td id="s4!M75" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row76" class="tally" style="display:none;">
+                        <td id="s4!D76" class="title"></td>
+                        <td id="s4!E76" class="benefits"></td>
+                        <td id="s4!G76" class="calculation"></td>
+                        <td id="s4!H76" style="display:none;"></td>
+                        <td id="s4!I76"></td>
+                        <td id="s4!J76"></td>
+                        <td id="s4!K76"></td>
+                        <td id="s4!L76" class="equation-col-total"></td>
+                        <td id="s4!M76" class="equation-col-pv"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section id="s4Sub5-section" class="tbl">
+                <h3 id="s4!D81" class="h3-forr"></h3>
+                <p id="s4!D82"></p>
+                <p id="s4!D83" class="text-center equationRowsTrigger" style="display:block;"></p>
+                <div class="table-responsive">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s4_row84" data-rowTag="H">
+                        <th id="s4!D84" class="title"></th>
+                        <th id="s4!E84" class="benefits text-center"></th>
+                        <th id="s4!G84" class="calculation"></th>
+                        <th id="s4!H84" style="display:none;"></th>
+                        <th id="s4!I84"></th>
+                        <th id="s4!J84"></th>
+                        <th id="s4!K84"></th>
+                        <th id="s4!L84" class="equation-col-total"></th>
+                        <th id="s4!M84" class="equation-col-pv"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s4_row85" data-rowTag="V">
+                        <td id="s4!D85" class="title"></td>
+                        <td id="s4!E85" class="benefits"></td>
+                        <td id="s4!G85" class="calculation"></td>
+                        <td id="s4!H85" style="display:none;"></td>
+                        <td id="s4!I85" class="microToolOutput" data-dbentity="Benefit3C1CFYear1"></td>
+                        <td id="s4!J85" class="microToolOutput" data-dbentity="Benefit3C1CFYear2"></td>
+                        <td id="s4!K85" class="microToolOutput" data-dbentity="Benefit3C1CFYear3"></td>
+                        <td id="s4!L85" class="equation-col-total"></td>
+                        <td id="s4!M85" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row86" data-rowTag="V">
+                        <td id="s4!D86" class="title"></td>
+                        <td id="s4!E86" class="benefits"></td>
+                        <td id="s4!G86" class="calculation"></td>
+                        <td id="s4!H86" style="display:none;"></td>
+                        <td id="s4!I86" class="microToolOutput" data-dbentity="Benefit3C2CFYear1"></td>
+                        <td id="s4!J86" class="microToolOutput" data-dbentity="Benefit3C2CFYear2"></td>
+                        <td id="s4!K86" class="microToolOutput" data-dbentity="Benefit3C2CFYear3"></td>
+                        <td id="s4!L86" class="equation-col-total"></td>
+                        <td id="s4!M86" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row87" data-rowTag="V">
+                        <td id="s4!D87" class="title"></td>
+                        <td id="s4!E87" class="benefits"></td>
+                        <td id="s4!G87" class="calculation"></td>
+                        <td id="s4!H87" style="display:none;"></td>
+                        <td id="s4!I87" class="microToolOutput" data-dbentity="Benefit3C3CFYear1"></td>
+                        <td id="s4!J87" class="microToolOutput" data-dbentity="Benefit3C3CFYear2"></td>
+                        <td id="s4!K87" class="microToolOutput" data-dbentity="Benefit3C3CFYear3"></td>
+                        <td id="s4!L87" class="equation-col-total"></td>
+                        <td id="s4!M87" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row88" data-rowTag="V">
+                        <td id="s4!D88" class="title"></td>
+                        <td id="s4!E88" class="benefits"></td>
+                        <td id="s4!G88" class="calculation"></td>
+                        <td id="s4!H88" style="display:none;"></td>
+                        <td id="s4!I88" class="microToolOutput" data-dbentity="Benefit3C4CFYear1"></td>
+                        <td id="s4!J88" class="microToolOutput" data-dbentity="Benefit3C4CFYear2"></td>
+                        <td id="s4!K88" class="microToolOutput" data-dbentity="Benefit3C4CFYear3"></td>
+                        <td id="s4!L88" class="equation-col-total"></td>
+                        <td id="s4!M88" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row89" data-rowTag="V">
+                        <td id="s4!D89" class="title"></td>
+                        <td id="s4!E89" class="benefits"></td>
+                        <td id="s4!G89" class="calculation"></td>
+                        <td id="s4!H89" style="display:none;"></td>
+                        <td id="s4!I89" class="microToolOutput" data-dbentity="Benefit3C5CFYear1"></td>
+                        <td id="s4!J89" class="microToolOutput" data-dbentity="Benefit3C5CFYear2"></td>
+                        <td id="s4!K89" class="microToolOutput" data-dbentity="Benefit3C5CFYear3"></td>
+                        <td id="s4!L89" class="equation-col-total"></td>
+                        <td id="s4!M89" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row90" data-rowTag="Original">
+                        <td id="s4!D90" class="title"></td>
+                        <td id="s4!E90" class="benefits"></td>
+                        <td id="s4!G90" class="calculation"></td>
+                        <td id="s4!H90" class="microToolOutput" data-dbentity="Benefit3CtCFYear0" style="display:none;"></td>
+                        <td id="s4!I90" class="microToolOutput" data-dbentity="Benefit3CtCFYear1"></td>
+                        <td id="s4!J90" class="microToolOutput" data-dbentity="Benefit3CtCFYear2"></td>
+                        <td id="s4!K90" class="microToolOutput" data-dbentity="Benefit3CtCFYear3"></td>
+                        <td id="s4!L90" class="equation-col-total microToolOutput" data-dbentity="Benefit3CtCFTotal"></td>
+                        <td id="s4!M90" class="equation-col-pv microToolOutput" data-dbentity="Benefit3CtCFPV"></td>
+                      </tr>
+                      <tr id="s4_row91" data-rowTag="ra">
+                        <td id="s4!D91" class="title"></td>
+                        <td id="s4!E91" class="benefits"></td>
+                        <td id="s4!G91"></td>
+                        <td id="s4!H91" style="display:none;"></td>
+                        <td id="s4!I91"></td>
+                        <td id="s4!J91"></td>
+                        <td id="s4!K91"></td>
+                        <td id="s4!L91" class="equation-col-total"></td>
+                        <td id="s4!M91" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row92" class="tally">
+                        <td id="s4!D92" class="title"></td>
+                        <td id="s4!E92" class="benefits"></td>
+                        <td id="s4!G92" class="calculation"></td>
+                        <td id="s4!H92" class="microToolOutput" data-dbentity="Benefit3CtrCFYear0" style="display:none;"></td>
+                        <td id="s4!I92" class="microToolOutput" data-dbentity="Benefit3CtrCFYear1"></td>
+                        <td id="s4!J92" class="microToolOutput" data-dbentity="Benefit3CtrCFYear2"></td>
+                        <td id="s4!K92" class="microToolOutput" data-dbentity="Benefit3CtrCFYear3"></td>
+                        <td id="s4!L92" class="equation-col-total microToolOutput" data-dbentity="Benefit3CtrCFTotal"></td>
+                        <td id="s4!M92" class="equation-col-pv microToolOutput" data-dbentity="Benefit3CtrCFPV"></td>
+                      </tr>
+                      <tr id="s4_row93" class="tally equation-row-total">
+                        <td id="s4!D93" class="title" style="font-weight:bold;"></td>
+                        <td id="s4!E93" class="benefits"></td>
+                        <td id="s4!G93" class="calculation"></td>
+                        <td id="s4!H93" style="display:none;"></td>
+                        <td id="s4!I93"></td>
+                        <td id="s4!J93"></td>
+                        <td id="s4!K93"></td>
+                        <td id="s4!L93" class="equation-col-total"></td>
+                        <td id="s4!M93" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row94" class="tally equation-row-pv">
+                        <td id="s4!D94" class="title" style="font-weight:bold;"></td>
+                        <td id="s4!E94" class="benefits"></td>
+                        <td id="s4!G94" class="calculation"></td>
+                        <td id="s4!H94" style="display:none;"></td>
+                        <td id="s4!I94"></td>
+                        <td id="s4!J94"></td>
+                        <td id="s4!K94"></td>
+                        <td id="s4!L94" class="equation-col-total"></td>
+                        <td id="s4!M94" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row95" class="tally" style="display:none;">
+                        <td id="s4!D95" class="title"></td>
+                        <td id="s4!E95" class="benefits"></td>
+                        <td id="s4!G95" class="calculation"></td>
+                        <td id="s4!H95" style="display:none;"></td>
+                        <td id="s4!I95"></td>
+                        <td id="s4!J95"></td>
+                        <td id="s4!K95"></td>
+                        <td id="s4!L95" class="equation-col-total"></td>
+                        <td id="s4!M95" class="equation-col-pv"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section id="s4Sub6-section" class="tbl">
+                <h3 id="s4!D100" class="h3-forr"></h3>
+                <p id="s4!D101"></p>
+                <p id="s4!D102" class="text-center equationRowsTrigger" style="display:block;"></p>
+                <div class="table-responsive">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s4_row103" data-rowTag="H">
+                        <th id="s4!D103" class="title"></th>
+                        <th id="s4!E103" class="benefits text-center"></th>
+                        <th id="s4!G103" class="calculation"></th>
+                        <th id="s4!H103" style="display:none;"></th>
+                        <th id="s4!I103"></th>
+                        <th id="s4!J103"></th>
+                        <th id="s4!K103"></th>
+                        <th id="s4!L103" class="equation-col-total"></th>
+                        <th id="s4!M103" class="equation-col-pv"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s4_row104" data-rowTag="V">
+                        <td id="s4!D104" class="title"></td>
+                        <td id="s4!E104" class="benefits"></td>
+                        <td id="s4!G104" class="calculation"></td>
+                        <td id="s4!H104" style="display:none;"></td>
+                        <td id="s4!I104" class="microToolOutput" data-dbentity="Benefit4D1CFYear1"></td>
+                        <td id="s4!J104" class="microToolOutput" data-dbentity="Benefit4D1CFYear2"></td>
+                        <td id="s4!K104" class="microToolOutput" data-dbentity="Benefit4D1CFYear3"></td>
+                        <td id="s4!L104" class="equation-col-total"></td>
+                        <td id="s4!M104" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row105" data-rowTag="V">
+                        <td id="s4!D105" class="title"></td>
+                        <td id="s4!E105" class="benefits"></td>
+                        <td id="s4!G105" class="calculation"></td>
+                        <td id="s4!H105" style="display:none;"></td>
+                        <td id="s4!I105" class="microToolOutput" data-dbentity="Benefit4D2CFYear1"></td>
+                        <td id="s4!J105" class="microToolOutput" data-dbentity="Benefit4D2CFYear2"></td>
+                        <td id="s4!K105" class="microToolOutput" data-dbentity="Benefit4D2CFYear3"></td>
+                        <td id="s4!L105" class="equation-col-total"></td>
+                        <td id="s4!M105" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row106" data-rowTag="V">
+                        <td id="s4!D106" class="title"></td>
+                        <td id="s4!E106" class="benefits"></td>
+                        <td id="s4!G106" class="calculation"></td>
+                        <td id="s4!H106" style="display:none;"></td>
+                        <td id="s4!I106" class="microToolOutput" data-dbentity="Benefit4D3CFYear1"></td>
+                        <td id="s4!J106" class="microToolOutput" data-dbentity="Benefit4D3CFYear2"></td>
+                        <td id="s4!K106" class="microToolOutput" data-dbentity="Benefit4D3CFYear3"></td>
+                        <td id="s4!L106" class="equation-col-total"></td>
+                        <td id="s4!M106" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row107" data-rowTag="V">
+                        <td id="s4!D107" class="title"></td>
+                        <td id="s4!E107" class="benefits"></td>
+                        <td id="s4!G107" class="calculation"></td>
+                        <td id="s4!H107" style="display:none;"></td>
+                        <td id="s4!I107" class="microToolOutput" data-dbentity="Benefit4D4CFYear1"></td>
+                        <td id="s4!J107" class="microToolOutput" data-dbentity="Benefit4D4CFYear2"></td>
+                        <td id="s4!K107" class="microToolOutput" data-dbentity="Benefit4D4CFYear3"></td>
+                        <td id="s4!L107" class="equation-col-total"></td>
+                        <td id="s4!M107" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row108" data-rowTag="V">
+                        <td id="s4!D108" class="title"></td>
+                        <td id="s4!E108" class="benefits"></td>
+                        <td id="s4!G108" class="calculation"></td>
+                        <td id="s4!H108" style="display:none;"></td>
+                        <td id="s4!I108" class="microToolOutput" data-dbentity="Benefit4D5CFYear1"></td>
+                        <td id="s4!J108" class="microToolOutput" data-dbentity="Benefit4D5CFYear2"></td>
+                        <td id="s4!K108" class="microToolOutput" data-dbentity="Benefit4D5CFYear3"></td>
+                        <td id="s4!L108" class="equation-col-total"></td>
+                        <td id="s4!M108" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row109" data-rowTag="V">
+                        <td id="s4!D109" class="title"></td>
+                        <td id="s4!E109" class="benefits"></td>
+                        <td id="s4!G109" class="calculation"></td>
+                        <td id="s4!H109" style="display:none;"></td>
+                        <td id="s4!I109" class="microToolOutput" data-dbentity="Benefit4D6CFYear1"></td>
+                        <td id="s4!J109" class="microToolOutput" data-dbentity="Benefit4D6CFYear2"></td>
+                        <td id="s4!K109" class="microToolOutput" data-dbentity="Benefit4D6CFYear3"></td>
+                        <td id="s4!L109" class="equation-col-total"></td>
+                        <td id="s4!M109" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row110" data-rowTag="V">
+                        <td id="s4!D110" class="title"></td>
+                        <td id="s4!E110" class="benefits"></td>
+                        <td id="s4!G110" class="calculation"></td>
+                        <td id="s4!H110" style="display:none;"></td>
+                        <td id="s4!I110" class="microToolOutput" data-dbentity="Benefit4D7CFYear1"></td>
+                        <td id="s4!J110" class="microToolOutput" data-dbentity="Benefit4D7CFYear2"></td>
+                        <td id="s4!K110" class="microToolOutput" data-dbentity="Benefit4D7CFYear3"></td>
+                        <td id="s4!L110" class="equation-col-total"></td>
+                        <td id="s4!M110" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row111" data-rowTag="Original">
+                        <td id="s4!D111" class="title"></td>
+                        <td id="s4!E111" class="benefits"></td>
+                        <td id="s4!G111" class="calculation"></td>
+                        <td id="s4!H111" class="microToolOutput" data-dbentity="Benefit4DtCFYear0" style="display:none;"></td>
+                        <td id="s4!I111" class="microToolOutput" data-dbentity="Benefit4DtCFYear1"></td>
+                        <td id="s4!J111" class="microToolOutput" data-dbentity="Benefit4DtCFYear2"></td>
+                        <td id="s4!K111" class="microToolOutput" data-dbentity="Benefit4DtCFYear3"></td>
+                        <td id="s4!L111" class="equation-col-total microToolOutput" data-dbentity="Benefit4DtCFTotal"></td>
+                        <td id="s4!M111" class="equation-col-pv microToolOutput" data-dbentity="Benefit4DtCFPV"></td>
+                      </tr>
+                      <tr id="s4_row112" data-rowTag="ra">
+                        <td id="s4!D112" class="title"></td>
+                        <td id="s4!E112" class="benefits"></td>
+                        <td id="s4!G112"></td>
+                        <td id="s4!H112" style="display:none;"></td>
+                        <td id="s4!I112"></td>
+                        <td id="s4!J112"></td>
+                        <td id="s4!K112"></td>
+                        <td id="s4!L112" class="equation-col-total"></td>
+                        <td id="s4!M112" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row113" class="tally">
+                        <td id="s4!D113" class="title"></td>
+                        <td id="s4!E113" class="benefits"></td>
+                        <td id="s4!G113" class="calculation"></td>
+                        <td id="s4!H113" class="microToolOutput" data-dbentity="Benefit4DtrCFYear0" style="display:none;"></td>
+                        <td id="s4!I113" class="microToolOutput" data-dbentity="Benefit4DtrCFYear1"></td>
+                        <td id="s4!J113" class="microToolOutput" data-dbentity="Benefit4DtrCFYear2"></td>
+                        <td id="s4!K113" class="microToolOutput" data-dbentity="Benefit4DtrCFYear3"></td>
+                        <td id="s4!L113" class="equation-col-total microToolOutput" data-dbentity="Benefit4DtrCFTotal"></td>
+                        <td id="s4!M113" class="equation-col-pv microToolOutput" data-dbentity="Benefit4DtrCFPV"></td>
+                      </tr>
+                      <tr id="s4_row114" class="tally equation-row-total">
+                        <td id="s4!D114" class="title" style="font-weight:bold;"></td>
+                        <td id="s4!E114" class="benefits"></td>
+                        <td id="s4!G114" class="calculation"></td>
+                        <td id="s4!H114" style="display:none;"></td>
+                        <td id="s4!I114"></td>
+                        <td id="s4!J114"></td>
+                        <td id="s4!K114"></td>
+                        <td id="s4!L114" class="equation-col-total"></td>
+                        <td id="s4!M114" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row115" class="tally equation-row-pv">
+                        <td id="s4!D115" class="title" style="font-weight:bold;"></td>
+                        <td id="s4!E115" class="benefits"></td>
+                        <td id="s4!G115" class="calculation"></td>
+                        <td id="s4!H115" style="display:none;"></td>
+                        <td id="s4!I115"></td>
+                        <td id="s4!J115"></td>
+                        <td id="s4!K115"></td>
+                        <td id="s4!L115" class="equation-col-total"></td>
+                        <td id="s4!M115" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row116" class="tally" style="display:none;">
+                        <td id="s4!D116" class="title"></td>
+                        <td id="s4!E116" class="benefits"></td>
+                        <td id="s4!G116" class="calculation"></td>
+                        <td id="s4!H116" style="display:none;"></td>
+                        <td id="s4!I116"></td>
+                        <td id="s4!J116"></td>
+                        <td id="s4!K116"></td>
+                        <td id="s4!L116" class="equation-col-total"></td>
+                        <td id="s4!M116" class="equation-col-pv"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section id="s4Sub7-section" class="tbl">
+                <h3 id="s4!D121" class="h3-forr"></h3>
+                <p id="s4!D122"></p>
+                <p id="s4!D123" class="text-center equationRowsTrigger" style="display:block;"></p>
+                <div class="table-responsive">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s4_row124" data-rowTag="H">
+                        <th id="s4!D124" class="title"></th>
+                        <th id="s4!E124" class="benefits text-center"></th>
+                        <th id="s4!G124" class="calculation"></th>
+                        <th id="s4!H124" style="display:none;"></th>
+                        <th id="s4!I124"></th>
+                        <th id="s4!J124"></th>
+                        <th id="s4!K124"></th>
+                        <th id="s4!L124" class="equation-col-total"></th>
+                        <th id="s4!M124" class="equation-col-pv"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s4_row125" data-rowTag="V">
+                        <td id="s4!D125" class="title"></td>
+                        <td id="s4!E125" class="benefits"></td>
+                        <td id="s4!G125" class="calculation"></td>
+                        <td id="s4!H125" style="display:none;"></td>
+                        <td id="s4!I125" class="microToolOutput" data-dbentity="Benefit5E1CFYear1"></td>
+                        <td id="s4!J125" class="microToolOutput" data-dbentity="Benefit5E1CFYear2"></td>
+                        <td id="s4!K125" class="microToolOutput" data-dbentity="Benefit5E1CFYear3"></td>
+                        <td id="s4!L125" class="equation-col-total"></td>
+                        <td id="s4!M125" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row126" data-rowTag="Original">
+                        <td id="s4!D126" class="title"></td>
+                        <td id="s4!E126" class="benefits"></td>
+                        <td id="s4!G126" class="calculation"></td>
+                        <td id="s4!H126" class="microToolOutput" data-dbentity="Benefit5EtCFYear0" style="display:none;"></td>
+                        <td id="s4!I126" class="microToolOutput" data-dbentity="Benefit5EtCFYear1"></td>
+                        <td id="s4!J126" class="microToolOutput" data-dbentity="Benefit5EtCFYear2"></td>
+                        <td id="s4!K126" class="microToolOutput" data-dbentity="Benefit5EtCFYear3"></td>
+                        <td id="s4!L126" class="equation-col-total microToolOutput" data-dbentity="Benefit5EtCFTotal"></td>
+                        <td id="s4!M126" class="equation-col-pv microToolOutput" data-dbentity="Benefit5EtCFPV"></td>
+                      </tr>
+                      <tr id="s4_row127" data-rowTag="ra">
+                        <td id="s4!D127" class="title"></td>
+                        <td id="s4!E127" class="benefits"></td>
+                        <td id="s4!G127"></td>
+                        <td id="s4!H127" style="display:none;"></td>
+                        <td id="s4!I127"></td>
+                        <td id="s4!J127"></td>
+                        <td id="s4!K127"></td>
+                        <td id="s4!L127" class="equation-col-total"></td>
+                        <td id="s4!M127" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row128" class="tally">
+                        <td id="s4!D128" class="title"></td>
+                        <td id="s4!E128" class="benefits"></td>
+                        <td id="s4!G128" class="calculation"></td>
+                        <td id="s4!H128" class="microToolOutput" data-dbentity="Benefit5EtrCFYear0" style="display:none;"></td>
+                        <td id="s4!I128" class="microToolOutput" data-dbentity="Benefit5EtrCFYear1"></td>
+                        <td id="s4!J128" class="microToolOutput" data-dbentity="Benefit5EtrCFYear2"></td>
+                        <td id="s4!K128" class="microToolOutput" data-dbentity="Benefit5EtrCFYear3"></td>
+                        <td id="s4!L128" class="equation-col-total microToolOutput" data-dbentity="Benefit5EtrCFTotal"></td>
+                        <td id="s4!M128" class="equation-col-pv microToolOutput" data-dbentity="Benefit5EtrCFPV"></td>
+                      </tr>
+                      <tr id="s4_row129" class="tally equation-row-total">
+                        <td id="s4!D129" class="title" style="font-weight:bold;"></td>
+                        <td id="s4!E129" class="benefits"></td>
+                        <td id="s4!G129" class="calculation"></td>
+                        <td id="s4!H129" style="display:none;"></td>
+                        <td id="s4!I129"></td>
+                        <td id="s4!J129"></td>
+                        <td id="s4!K129"></td>
+                        <td id="s4!L129" class="equation-col-total"></td>
+                        <td id="s4!M129" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row130" class="tally equation-row-pv">
+                        <td id="s4!D130" class="title" style="font-weight:bold;"></td>
+                        <td id="s4!E130" class="benefits"></td>
+                        <td id="s4!G130" class="calculation"></td>
+                        <td id="s4!H130" style="display:none;"></td>
+                        <td id="s4!I130"></td>
+                        <td id="s4!J130"></td>
+                        <td id="s4!K130"></td>
+                        <td id="s4!L130" class="equation-col-total"></td>
+                        <td id="s4!M130" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s4_row131" class="tally" style="display:none;">
+                        <td id="s4!D131" class="title"></td>
+                        <td id="s4!E131" class="benefits"></td>
+                        <td id="s4!G131" class="calculation"></td>
+                        <td id="s4!H131" style="display:none;"></td>
+                        <td id="s4!I131"></td>
+                        <td id="s4!J131"></td>
+                        <td id="s4!K131"></td>
+                        <td id="s4!L131" class="equation-col-total"></td>
+                        <td id="s4!M131" class="equation-col-pv"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <footer>
+                <a id="s4!D136" class="microToolCookieConsentFullBtn" style="display:inline;"></a>
+                <br>
+                <p id="s4!D137"></p>
+              </footer>
+            </div>
+            <div id="s5-section" data-sheet="CostDetails" data-codename="s5">
+              <section id="s5Sub0-section" class="c-head d-none d-md-block">
+                <h2 id="s5!C1" class="h2-forr"></h2>
+              </section>
+              <section id="s5Sub1-section" class="tbl">
+                <h3 id="s5!D9" class="h3-forr"></h3>
+                <div class="table-responsive">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s5_row10">
+                        <th id="s5!D10" class="title"></th>
+                        <th id="s5!E10" class="benefits text-center"></th>
+                        <th id="s5!H10"></th>
+                        <th id="s5!I10"></th>
+                        <th id="s5!J10"></th>
+                        <th id="s5!K10"></th>
+                        <th id="s5!L10"></th>
+                        <th id="s5!M10"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s5_row11">
+                        <td id="s5!D11" class="title"></td>
+                        <td id="s5!E11" class="benefits"></td>
+                        <td id="s5!H11"></td>
+                        <td id="s5!I11"></td>
+                        <td id="s5!J11"></td>
+                        <td id="s5!K11"></td>
+                        <td id="s5!L11"></td>
+                        <td id="s5!M11"></td>
+                      </tr>
+                      <tr id="s5_row12">
+                        <td id="s5!D12" class="title"></td>
+                        <td id="s5!E12" class="benefits"></td>
+                        <td id="s5!H12"></td>
+                        <td id="s5!I12"></td>
+                        <td id="s5!J12"></td>
+                        <td id="s5!K12"></td>
+                        <td id="s5!L12"></td>
+                        <td id="s5!M12"></td>
+                      </tr>
+                      <tr id="s5_row13" class="tally">
+                        <td id="s5!D13" class="title"></td>
+                        <td id="s5!E13" class="benefits"></td>
+                        <td id="s5!H13" class="microToolOutput" data-dbentity="CostTotalCFYear0"></td>
+                        <td id="s5!I13" class="microToolOutput" data-dbentity="CostTotalCFYear1"></td>
+                        <td id="s5!J13" class="microToolOutput" data-dbentity="CostTotalCFYear2"></td>
+                        <td id="s5!K13" class="microToolOutput" data-dbentity="CostTotalCFYear3"></td>
+                        <td id="s5!L13" class="microToolOutput" data-dbentity="CostTotalCFTotal"></td>
+                        <td id="s5!M13" class="microToolOutput" data-dbentity="CostTotalCFPV"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <span id="s5!D14" style="display:none;"></span>
+                <span id="s5!F14" style="display:none;"></span>
+                <span id="s5!G14" style="display:none;"></span>
+                <span id="s5!D15" style="display:none;"></span>
+                <span id="s5!F15" style="display:none;"></span>
+              </section>
+              <section id="s5Sub2-section" class="tbl">
+                <div class="chart-responsive">
+                  <div id="s5!E19_Chart" class="chart chartAutoCenter microToolChart" data-chartName="CFCostChart">Loading chart...</div>
+                </div>
+              </section>
+              <section id="s5Sub3-section" class="tbl">
+                <h3 id="s5!D34" class="h3-forr"></h3>
+                <p id="s5!D35"></p>
+                <p id="s5!D36" class="text-center equationRowsTrigger" style="display:block;"></p>
+                <div class="table-responsive">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s5_row37" data-rowTag="H">
+                        <th id="s5!D37" class="title"></th>
+                        <th id="s5!E37" class="benefits text-center"></th>
+                        <th id="s5!G37" class="calculation"></th>
+                        <th id="s5!H37"></th>
+                        <th id="s5!I37"></th>
+                        <th id="s5!J37"></th>
+                        <th id="s5!K37"></th>
+                        <th id="s5!L37" class="equation-col-total"></th>
+                        <th id="s5!M37" class="equation-col-pv"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s5_row38" data-rowTag="V">
+                        <td id="s5!D38" class="title"></td>
+                        <td id="s5!E38" class="benefits"></td>
+                        <td id="s5!G38" class="calculation"></td>
+                        <td id="s5!H38"></td>
+                        <td id="s5!I38" class="microToolOutput" data-dbentity="Cost1F1CFYear1"></td>
+                        <td id="s5!J38" class="microToolOutput" data-dbentity="Cost1F1CFYear2"></td>
+                        <td id="s5!K38" class="microToolOutput" data-dbentity="Cost1F1CFYear3"></td>
+                        <td id="s5!L38" class="equation-col-total"></td>
+                        <td id="s5!M38" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row39" data-rowTag="V">
+                        <td id="s5!D39" class="title"></td>
+                        <td id="s5!E39" class="benefits"></td>
+                        <td id="s5!G39" class="calculation"></td>
+                        <td id="s5!H39"></td>
+                        <td id="s5!I39" class="microToolOutput" data-dbentity="Cost1F2CFYear1"></td>
+                        <td id="s5!J39" class="microToolOutput" data-dbentity="Cost1F2CFYear2"></td>
+                        <td id="s5!K39" class="microToolOutput" data-dbentity="Cost1F2CFYear3"></td>
+                        <td id="s5!L39" class="equation-col-total"></td>
+                        <td id="s5!M39" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row40" data-rowTag="Original">
+                        <td id="s5!D40" class="title"></td>
+                        <td id="s5!E40" class="benefits"></td>
+                        <td id="s5!G40" class="calculation"></td>
+                        <td id="s5!H40" class="microToolOutput" data-dbentity="Cost1FtCFYear0"></td>
+                        <td id="s5!I40" class="microToolOutput" data-dbentity="Cost1FtCFYear1"></td>
+                        <td id="s5!J40" class="microToolOutput" data-dbentity="Cost1FtCFYear2"></td>
+                        <td id="s5!K40" class="microToolOutput" data-dbentity="Cost1FtCFYear3"></td>
+                        <td id="s5!L40" class="equation-col-total microToolOutput" data-dbentity="Cost1FtCFTotal"></td>
+                        <td id="s5!M40" class="equation-col-pv microToolOutput" data-dbentity="Cost1FtCFPV"></td>
+                      </tr>
+                      <tr id="s5_row41" data-rowTag="ra">
+                        <td id="s5!D41" class="title"></td>
+                        <td id="s5!E41" class="benefits"></td>
+                        <td id="s5!G41"></td>
+                        <td id="s5!H41"></td>
+                        <td id="s5!I41"></td>
+                        <td id="s5!J41"></td>
+                        <td id="s5!K41"></td>
+                        <td id="s5!L41" class="equation-col-total"></td>
+                        <td id="s5!M41" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row42" class="tally">
+                        <td id="s5!D42" class="title"></td>
+                        <td id="s5!E42" class="benefits"></td>
+                        <td id="s5!G42" class="calculation"></td>
+                        <td id="s5!H42" class="microToolOutput" data-dbentity="Cost1FtrCFYear0"></td>
+                        <td id="s5!I42" class="microToolOutput" data-dbentity="Cost1FtrCFYear1"></td>
+                        <td id="s5!J42" class="microToolOutput" data-dbentity="Cost1FtrCFYear2"></td>
+                        <td id="s5!K42" class="microToolOutput" data-dbentity="Cost1FtrCFYear3"></td>
+                        <td id="s5!L42" class="equation-col-total microToolOutput" data-dbentity="Cost1FtrCFTotal"></td>
+                        <td id="s5!M42" class="equation-col-pv microToolOutput" data-dbentity="Cost1FtrCFPV"></td>
+                      </tr>
+                      <tr id="s5_row43" class="tally equation-row-total">
+                        <td id="s5!D43" class="title" style="font-weight:bold;"></td>
+                        <td id="s5!E43" class="benefits"></td>
+                        <td id="s5!G43" class="calculation"></td>
+                        <td id="s5!H43"></td>
+                        <td id="s5!I43"></td>
+                        <td id="s5!J43"></td>
+                        <td id="s5!K43"></td>
+                        <td id="s5!L43" class="equation-col-total"></td>
+                        <td id="s5!M43" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row44" class="tally equation-row-pv">
+                        <td id="s5!D44" class="title" style="font-weight:bold;"></td>
+                        <td id="s5!E44" class="benefits"></td>
+                        <td id="s5!G44" class="calculation"></td>
+                        <td id="s5!H44"></td>
+                        <td id="s5!I44"></td>
+                        <td id="s5!J44"></td>
+                        <td id="s5!K44"></td>
+                        <td id="s5!L44" class="equation-col-total"></td>
+                        <td id="s5!M44" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row45" class="tally" style="display:none;">
+                        <td id="s5!D45" class="title"></td>
+                        <td id="s5!E45" class="benefits"></td>
+                        <td id="s5!G45" class="calculation"></td>
+                        <td id="s5!H45"></td>
+                        <td id="s5!I45"></td>
+                        <td id="s5!J45"></td>
+                        <td id="s5!K45"></td>
+                        <td id="s5!L45" class="equation-col-total"></td>
+                        <td id="s5!M45" class="equation-col-pv"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section id="s5Sub4-section" class="tbl">
+                <h3 id="s5!D50" class="h3-forr"></h3>
+                <p id="s5!D51"></p>
+                <p id="s5!D52" class="text-center equationRowsTrigger" style="display:block;"></p>
+                <div class="table-responsive">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s5_row53" data-rowTag="H">
+                        <th id="s5!D53" class="title"></th>
+                        <th id="s5!E53" class="benefits text-center"></th>
+                        <th id="s5!G53" class="calculation"></th>
+                        <th id="s5!H53"></th>
+                        <th id="s5!I53"></th>
+                        <th id="s5!J53"></th>
+                        <th id="s5!K53"></th>
+                        <th id="s5!L53" class="equation-col-total"></th>
+                        <th id="s5!M53" class="equation-col-pv"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s5_row54" data-rowTag="V">
+                        <td id="s5!D54" class="title"></td>
+                        <td id="s5!E54" class="benefits"></td>
+                        <td id="s5!G54" class="calculation"></td>
+                        <td id="s5!H54" class="microToolOutput" data-dbentity="Cost2G1CFYear0"></td>
+                        <td id="s5!I54" class="microToolOutput" data-dbentity="Cost2G1CFYear1"></td>
+                        <td id="s5!J54" class="microToolOutput" data-dbentity="Cost2G1CFYear2"></td>
+                        <td id="s5!K54" class="microToolOutput" data-dbentity="Cost2G1CFYear3"></td>
+                        <td id="s5!L54" class="equation-col-total"></td>
+                        <td id="s5!M54" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row55" data-rowTag="V">
+                        <td id="s5!D55" class="title"></td>
+                        <td id="s5!E55" class="benefits"></td>
+                        <td id="s5!G55" class="calculation"></td>
+                        <td id="s5!H55" class="microToolOutput" data-dbentity="Cost2G2CFYear0"></td>
+                        <td id="s5!I55" class="microToolOutput" data-dbentity="Cost2G2CFYear1"></td>
+                        <td id="s5!J55" class="microToolOutput" data-dbentity="Cost2G2CFYear2"></td>
+                        <td id="s5!K55" class="microToolOutput" data-dbentity="Cost2G2CFYear3"></td>
+                        <td id="s5!L55" class="equation-col-total"></td>
+                        <td id="s5!M55" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row56" data-rowTag="V">
+                        <td id="s5!D56" class="title"></td>
+                        <td id="s5!E56" class="benefits"></td>
+                        <td id="s5!G56" class="calculation"></td>
+                        <td id="s5!H56" class="microToolOutput" data-dbentity="Cost2G3CFYear0"></td>
+                        <td id="s5!I56" class="microToolOutput" data-dbentity="Cost2G3CFYear1"></td>
+                        <td id="s5!J56" class="microToolOutput" data-dbentity="Cost2G3CFYear2"></td>
+                        <td id="s5!K56" class="microToolOutput" data-dbentity="Cost2G3CFYear3"></td>
+                        <td id="s5!L56" class="equation-col-total"></td>
+                        <td id="s5!M56" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row57" data-rowTag="V">
+                        <td id="s5!D57" class="title"></td>
+                        <td id="s5!E57" class="benefits"></td>
+                        <td id="s5!G57" class="calculation"></td>
+                        <td id="s5!H57" class="microToolOutput" data-dbentity="Cost2G4CFYear0"></td>
+                        <td id="s5!I57" class="microToolOutput" data-dbentity="Cost2G4CFYear1"></td>
+                        <td id="s5!J57" class="microToolOutput" data-dbentity="Cost2G4CFYear2"></td>
+                        <td id="s5!K57" class="microToolOutput" data-dbentity="Cost2G4CFYear3"></td>
+                        <td id="s5!L57" class="equation-col-total"></td>
+                        <td id="s5!M57" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row58" data-rowTag="V">
+                        <td id="s5!D58" class="title"></td>
+                        <td id="s5!E58" class="benefits"></td>
+                        <td id="s5!G58" class="calculation"></td>
+                        <td id="s5!H58" class="microToolOutput" data-dbentity="Cost2G5CFYear0"></td>
+                        <td id="s5!I58" class="microToolOutput" data-dbentity="Cost2G5CFYear1"></td>
+                        <td id="s5!J58" class="microToolOutput" data-dbentity="Cost2G5CFYear2"></td>
+                        <td id="s5!K58" class="microToolOutput" data-dbentity="Cost2G5CFYear3"></td>
+                        <td id="s5!L58" class="equation-col-total"></td>
+                        <td id="s5!M58" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row59" data-rowTag="V">
+                        <td id="s5!D59" class="title"></td>
+                        <td id="s5!E59" class="benefits"></td>
+                        <td id="s5!G59" class="calculation"></td>
+                        <td id="s5!H59" class="microToolOutput" data-dbentity="Cost2G6CFYear0"></td>
+                        <td id="s5!I59" class="microToolOutput" data-dbentity="Cost2G6CFYear1"></td>
+                        <td id="s5!J59" class="microToolOutput" data-dbentity="Cost2G6CFYear2"></td>
+                        <td id="s5!K59" class="microToolOutput" data-dbentity="Cost2G6CFYear3"></td>
+                        <td id="s5!L59" class="equation-col-total"></td>
+                        <td id="s5!M59" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row60" data-rowTag="V">
+                        <td id="s5!D60" class="title"></td>
+                        <td id="s5!E60" class="benefits"></td>
+                        <td id="s5!G60" class="calculation"></td>
+                        <td id="s5!H60" class="microToolOutput" data-dbentity="Cost2G7CFYear0"></td>
+                        <td id="s5!I60"></td>
+                        <td id="s5!J60"></td>
+                        <td id="s5!K60"></td>
+                        <td id="s5!L60" class="equation-col-total"></td>
+                        <td id="s5!M60" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row61" data-rowTag="V">
+                        <td id="s5!D61" class="title"></td>
+                        <td id="s5!E61" class="benefits"></td>
+                        <td id="s5!G61" class="calculation"></td>
+                        <td id="s5!H61"></td>
+                        <td id="s5!I61"></td>
+                        <td id="s5!J61"></td>
+                        <td id="s5!K61"></td>
+                        <td id="s5!L61" class="equation-col-total"></td>
+                        <td id="s5!M61" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row62" data-rowTag="V">
+                        <td id="s5!D62" class="title"></td>
+                        <td id="s5!E62" class="benefits"></td>
+                        <td id="s5!G62" class="text-left calculation"></td>
+                        <td id="s5!H62" class="microToolOutput" data-dbentity="Cost2G9CFYear0"></td>
+                        <td id="s5!I62"></td>
+                        <td id="s5!J62"></td>
+                        <td id="s5!K62"></td>
+                        <td id="s5!L62" class="equation-col-total"></td>
+                        <td id="s5!M62" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row63" data-rowTag="Original">
+                        <td id="s5!D63" class="title"></td>
+                        <td id="s5!E63" class="benefits"></td>
+                        <td id="s5!G63" class="calculation"></td>
+                        <td id="s5!H63" class="microToolOutput" data-dbentity="Cost2GtCFYear0"></td>
+                        <td id="s5!I63" class="microToolOutput" data-dbentity="Cost2GtCFYear1"></td>
+                        <td id="s5!J63" class="microToolOutput" data-dbentity="Cost2GtCFYear2"></td>
+                        <td id="s5!K63" class="microToolOutput" data-dbentity="Cost2GtCFYear3"></td>
+                        <td id="s5!L63" class="equation-col-total microToolOutput" data-dbentity="Cost2GtCFTotal"></td>
+                        <td id="s5!M63" class="equation-col-pv microToolOutput" data-dbentity="Cost2GtCFPV"></td>
+                      </tr>
+                      <tr id="s5_row64" data-rowTag="ra">
+                        <td id="s5!D64" class="title"></td>
+                        <td id="s5!E64" class="benefits"></td>
+                        <td id="s5!G64"></td>
+                        <td id="s5!H64"></td>
+                        <td id="s5!I64"></td>
+                        <td id="s5!J64"></td>
+                        <td id="s5!K64"></td>
+                        <td id="s5!L64" class="equation-col-total"></td>
+                        <td id="s5!M64" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row65" class="tally">
+                        <td id="s5!D65" class="title"></td>
+                        <td id="s5!E65" class="benefits"></td>
+                        <td id="s5!G65" class="calculation"></td>
+                        <td id="s5!H65" class="microToolOutput" data-dbentity="Cost2GtrCFYear0"></td>
+                        <td id="s5!I65" class="microToolOutput" data-dbentity="Cost2GtrCFYear1"></td>
+                        <td id="s5!J65" class="microToolOutput" data-dbentity="Cost2GtrCFYear2"></td>
+                        <td id="s5!K65" class="microToolOutput" data-dbentity="Cost2GtrCFYear3"></td>
+                        <td id="s5!L65" class="equation-col-total microToolOutput" data-dbentity="Cost2GtrCFTotal"></td>
+                        <td id="s5!M65" class="equation-col-pv microToolOutput" data-dbentity="Cost2GtrCFPV"></td>
+                      </tr>
+                      <tr id="s5_row66" class="tally equation-row-total">
+                        <td id="s5!D66" class="title" style="font-weight:bold;"></td>
+                        <td id="s5!E66" class="benefits"></td>
+                        <td id="s5!G66" class="calculation"></td>
+                        <td id="s5!H66"></td>
+                        <td id="s5!I66"></td>
+                        <td id="s5!J66"></td>
+                        <td id="s5!K66"></td>
+                        <td id="s5!L66" class="equation-col-total"></td>
+                        <td id="s5!M66" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row67" class="tally equation-row-pv">
+                        <td id="s5!D67" class="title" style="font-weight:bold;"></td>
+                        <td id="s5!E67" class="benefits"></td>
+                        <td id="s5!G67" class="calculation"></td>
+                        <td id="s5!H67"></td>
+                        <td id="s5!I67"></td>
+                        <td id="s5!J67"></td>
+                        <td id="s5!K67"></td>
+                        <td id="s5!L67" class="equation-col-total"></td>
+                        <td id="s5!M67" class="equation-col-pv"></td>
+                      </tr>
+                      <tr id="s5_row68" class="tally" style="display:none;">
+                        <td id="s5!D68" class="title"></td>
+                        <td id="s5!E68" class="benefits"></td>
+                        <td id="s5!G68" class="calculation"></td>
+                        <td id="s5!H68"></td>
+                        <td id="s5!I68"></td>
+                        <td id="s5!J68"></td>
+                        <td id="s5!K68"></td>
+                        <td id="s5!L68" class="equation-col-total"></td>
+                        <td id="s5!M68" class="equation-col-pv"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <footer>
+                <a id="s5!D73" class="microToolCookieConsentFullBtn" style="display:inline;"></a>
+                <br>
+                <p id="s5!D74"></p>
+              </footer>
+            </div>
+            <div id="s6-section" data-sheet="Settings" data-codename="s6">
+              <section id="s6Sub0-section" class="c-head d-none d-md-block">
+                <h2 id="s6!C1" class="h2-forr"></h2>
+              </section>
+              <section id="s6Sub1-section" class="tbl">
+                <div class="container-fluid container-xs-border">
+                  <h3 id="s6!C6" class="h3-forr"></h3>
+                  <div class="row">
+                    <div id="s6!D11" class="row-input-text col-xs-12 col-sm-4 hidden-xs" style="visibility:hidden;"></div>
+                    <div id="s6!H11" class="text-center col-xs-12 col-sm-5 col-md-4" style="font-size:0.7em;"></div>
+                  </div>
+                </div>
+                <p id="s6!H13" data-role="exchangeRateDate" style="display:none;"></p>
+                <div data-role="exchangeRates" class="container-fluid container-xs-border" style="display:none;">
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D16" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H16" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I16" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D17" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H17" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I17" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D18" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H18" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I18" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D19" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H19" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I19" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D20" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H20" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I20" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D21" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H21" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I21" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D22" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H22" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I22" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D23" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H23" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I23" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D24" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H24" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I24" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D25" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H25" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I25" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D26" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H26" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I26" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D27" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H27" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I27" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D28" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H28" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I28" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D29" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H29" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I29" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D30" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H30" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I30" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D31" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H31" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I31" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D32" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H32" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I32" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D33" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H33" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I33" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D34" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H34" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I34" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D35" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H35" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I35" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D36" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H36" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I36" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D37" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H37" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I37" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-xs-border">
+                    <div id="s6!D38" class="row-input-text col-xs-12 col-sm-6"></div>
+                    <p id="s6!H38" class="text-center" style="display:none;"></p>
+                    <div class="text-left col-xs-12 col-sm-6">
+                      <label>
+                        <input id="s6!I38" type="text" value="" class="text-right width-md">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-align-items-center row-input row-input-short">
+                    <div id="s6!D39" class="col-xs-12 col-sm-3 col-sm-offset-3"></div>
+                    <p id="s6!H39" class="text-center" style="display:none;"></p>
+                    <div id="s6!I39" class="text-right col-xs-12 col-sm-3"></div>
+                  </div>
+                </div>
+              </section>
+              <section id="s6Sub2-section" class="tbl">
+                <h3 id="s6!C45" class="h3-forr"></h3>
+                <div class="row row-align-items-center row-xs-border row-input">
+                  <div id="s6!D47" class="row-input-text col-xs-12 col-sm-4"></div>
+                  <div class="col-xs-12 col-sm-5 col-md-4">
+                    <label>
+                      <select id="s6!H47" name="varLanguage" data-format="7" class="width-xxl regInput microToolInput" data-dbentity="varLanguage" style="font-size:0.9em;"></select>
+                    </label>
+                  </div>
+                </div>
+                <p id="s6!E54" class="text-center" style="display:none;"></p>
+                <p id="s6!I54" class="text-center microToolOutput" data-dbentity="varFormData2" style="display:none;"></p>
+              </section>
+              <section id="s6Sub3-section" class="tbl">
+                <h3 id="s6!C58" class="h3-forr"></h3>
+                <div class="row">
+                  <div id="s6!D60" class="row-input-text col-xs-12 col-sm-3 col-md-6"></div>
+                  <div class="col-xs-12 col-sm-3 col-md-2">
+                    <label>
+                      <input id="s6!K60" type="text" value="" name="varDiscountRate" data-format="2" class="width-md regInput microToolInput" data-dbentity="varDiscountRate">
+                    </label>
+                  </div>
+                </div>
+              </section>
+              <footer>
+                <a id="s6!D65" class="microToolCookieConsentFullBtn" style="display:inline;"></a>
+                <br>
+                <p id="s6!D66"></p>
+              </footer>
+            </div>
+            <div id="s7-section" data-sheet="Methodology" data-codename="s7">
+              <section id="s7Sub0-section" class="c-head d-none d-md-block">
+                <h2 id="s7!C1" class="h2-forr"></h2>
+              </section>
+              <section id="s7Sub1-section" class="tbl">
+                <h3 id="s7!D5" class="h3-forr"></h3>
+                <p id="s7!D6"></p>
+                <ul>
+                  <li id="s7!E9"></li>
+                  <li id="s7!E10"></li>
+                  <li id="s7!E11"></li>
+                  <li id="s7!E12"></li>
+                  <li id="s7!E13"></li>
+                </ul>
+                <p id="s7!D16"></p>
+                <p id="s7!D17"></p>
+                <div class="table-responsive" style="padding-left:15px;padding-right:15px;">
+                  <table class="table table-striped margin-btm output">
+                    <thead>
+                      <tr id="s7_row19">
+                        <th id="s7!E19"></th>
+                        <th id="s7!F19"></th>
+                        <th id="s7!G19"></th>
+                        <th id="s7!H19"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="s7_row21">
+                        <td id="s7!E21" class="text-left"></td>
+                        <td id="s7!F21" class="text-left"></td>
+                        <td id="s7!G21" class="text-left"></td>
+                        <td id="s7!H21" class="text-left"></td>
+                      </tr>
+                      <tr id="s7_row22">
+                        <td id="s7!E22" class="text-left"></td>
+                        <td id="s7!F22" class="text-left"></td>
+                        <td id="s7!G22" class="text-left"></td>
+                        <td id="s7!H22" class="text-left"></td>
+                      </tr>
+                      <tr id="s7_row23">
+                        <td id="s7!E23" class="text-left"></td>
+                        <td id="s7!F23" class="text-left"></td>
+                        <td id="s7!G23" class="text-left"></td>
+                        <td id="s7!H23" class="text-left"></td>
+                      </tr>
+                      <tr id="s7_row24">
+                        <td id="s7!E24" class="text-left"></td>
+                        <td id="s7!F24" class="text-left"></td>
+                        <td id="s7!G24" class="text-left"></td>
+                        <td id="s7!H24" class="text-left"></td>
+                      </tr>
+                      <tr id="s7_row25">
+                        <td id="s7!E25" class="text-left"></td>
+                        <td id="s7!F25" class="text-left"></td>
+                        <td id="s7!G25" class="text-left"></td>
+                        <td id="s7!H25" class="text-left"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p id="s7!E26"></p>
+              </section>
+              <section id="s7Sub2-section" class="tbl">
+                <h3 id="s7!D31" class="h3-forr"></h3>
+                <p id="s7!D33"></p>
+                <ul>
+                  <li id="s7!D35"></li>
+                  <li id="s7!D36"></li>
+                  <li id="s7!D37"></li>
+                  <li id="s7!D38"></li>
+                  <li id="s7!D39"></li>
+                </ul>
+              </section>
+              <section id="s7Sub3-section" class="tbl">
+                <h3 id="s7!D44" class="h3-forr"></h3>
+                <p id="s7!D46"></p>
+                <p id="s7!D47"></p>
+              </section>
+              <section id="s7Sub4-section" class="tbl">
+                <h3 id="s7!D51" class="h3-forr"></h3>
+                <p id="s7!D53"></p>
+                <ul>
+                  <li id="s7!D55"></li>
+                  <li id="s7!D56"></li>
+                  <li id="s7!D57"></li>
+                  <li id="s7!D58"></li>
+                  <li id="s7!D59"></li>
+                </ul>
+              </section>
+              <section id="s7Sub5-section" class="tbl">
+                <h3 id="s7!D64" class="h3-forr"></h3>
+                <img id="s7!F65_Img" src="https://tools.totaleconomicimpact.com/go/unily/explatform/img/TEIMethodology.gif" alt="" class="img-fluid mx-auto d-block methodologyImg">
+                <p id="s7!G65" class="methodologyImg"></p>
+                <p id="s7!D81"></p>
+              </section>
+              <section id="s7Sub6-section" class="tbl">
+                <h3 id="s7!D85" class="h3-forr"></h3>
+                <table class="table table-striped margin-btm">
+                  <tbody>
+                    <tr id="s7_row87">
+                      <td id="s7!D87" class="question qsm"></td>
+                      <td id="s7!G87" class="text-left"></td>
+                    </tr>
+                    <tr id="s7_row88">
+                      <td id="s7!D88" class="question qsm"></td>
+                      <td id="s7!G88" class="text-left"></td>
+                    </tr>
+                    <tr id="s7_row89">
+                      <td id="s7!D89" class="question qsm"></td>
+                      <td id="s7!G89" class="text-left"></td>
+                    </tr>
+                    <tr id="s7_row90">
+                      <td id="s7!D90" class="question qsm"></td>
+                      <td id="s7!G90" class="text-left"></td>
+                    </tr>
+                    <tr id="s7_row91">
+                      <td id="s7!D91" class="question qsm"></td>
+                      <td id="s7!G91" class="text-left"></td>
+                    </tr>
+                    <tr id="s7_row92">
+                      <td id="s7!D92" class="question qsm"></td>
+                      <td id="s7!G92" class="text-left"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <footer>
+                <a id="s7!D96" class="microToolCookieConsentFullBtn" style="display:inline;"></a>
+                <br>
+                <p id="s7!D97"></p>
+              </footer>
+            </div>
+            <div id="s8-section" data-sheet="$Vars" data-codename="s8">
+              <section id="s8Sub0-section" class="c-head d-none d-md-block">
+                <h2 id="s8!C1" class="h2-forr"></h2>
+              </section>
+              <p id="s8!D37"></p>
+              <label>
+                <input id="s8!D39" type="text" value="" name="sheetsVisited" data-role="sheetsVisited" data-format="7" class="text-left regInput microToolInput" data-dbentity="sheetsVisited">
+              </label>
+              <label>
+                <input id="s8!D40" type="text" value="" name="inputsChanged" data-role="inputsChanged" data-format="7" class="text-left regInput microToolInput" data-dbentity="inputsChanged">
+              </label>
+              <p id="s8!D42" class="text-right"></p>
+              <p id="s8!C45"></p>
+              <p id="s8!C48" class="microToolCookieConsentAcceptBtnCaption"></p>
+              <p id="s8!C49" class="microToolCookieConsentDeclineBtnCaption"></p>
+              <p id="s8!C50" class="microToolCookieConsentCloseBtnCaption"></p>
+              <p id="s8!C51" class="microToolCookieConsentBannerText"></p>
+              <p id="s8!C52" class="microToolCookieConsentFullPageText"></p>
+              <p id="s8!C94"></p>
+              <p id="s8!C95"></p>
+              <p id="s8!C96"></p>
+              <p id="s8!C97"></p>
+              <p id="s8!C98"></p>
+              <p id="s8!C99"></p>
+              <p id="s8!C102"></p>
+              <p id="s8!C103"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
