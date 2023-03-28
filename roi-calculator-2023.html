@@ -261,7 +261,9 @@
         flex-direction: column;
         min-height: 100%;
         line-height: 1.4;
-        font-size: 1.125rem;
+        font-size: 1.125rem !important;
+        overflow: scroll !important;
+        -webkit-overflow-scrolling: touch !important;
       }
 
       @media (min-width: 1000px) {
@@ -894,12 +896,28 @@
       }
 
       .btn.btn-02 {
-        background: #dcdcdc;
-        color: #1c1c1b;
+        background: #dcdcdc !important;
+        color: #1c1c1b !important;
+        border-radius: .125rem;
+        padding: .5625rem .9375rem;
+        display: inline-block;
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: bold;
+        font-size: 1.125rem;
+        border: 0;
+        margin: 0;
+        line-height: 1.35;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none !important;
+        box-shadow: none !important;
       }
 
       .btn.btn-02:hover {
-        background: #c3c3c3;
+        background: #c3c3c3 !important;
       }
 
       .btn.btn-03 {
@@ -12586,7 +12604,7 @@
       }
       #s1Sub2-section {
         margin-top: 93px;
-        padding-bottom: 50px;
+        padding-bottom: 0;
       }
       @media (max-width: 991px) {
         #s1Sub2-section {
@@ -12602,7 +12620,7 @@
       #s1Sub2-section > .container-fluid > .row {
         --bs-gutter-x: 40px;
         align-items: unset !important;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
       }
       #s1Sub2-section > .container-fluid > .row > * {
         padding-right: calc(var(--bs-gutter-x) * .5);
@@ -12654,7 +12672,7 @@
         margin-bottom: 8px;
       }
       div.div-input-box .slider-limit {
-        display: none;
+        /*display: none;*/
       }
       #content .slider-track {
         height: 5px;
@@ -12698,7 +12716,6 @@
         margin: 0;
         font-size: 1.125rem;
         outline: none !important;
-        pointer-events: none;
         text-align: right;
         width: 82px;
         flex-shrink: 0;
@@ -12712,14 +12729,27 @@
         margin-left: 15px;
       }
       .slider-input-div label {
-        width: 100px;
+        width: 110px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        border-bottom: 1px solid #DCDCDC !important;
       }
       #content input[type=text].slider-input {
         font-weight: 700;
+        border: 1px solid #dcdcdc !important;
+        margin: 0 !important;
+        width: 100% !important;
+        font-size: 1.125rem !important;
+        padding: .125rem .9375rem !important;
+        border-radius: 2px !important;
+        color: #3ec8ed !important;
+        min-height: 35px;
+      }
+      #content input[type=text].slider-input:focus {
+        border-color: #3ec8ed !important;
+        color: #3ec8ed !important;
+        outline: none !important;
+        box-shadow: inset 0 0 0 1px #3ec8ed !important;
       }
       #content div.totalNPVArea {
         border: none;
@@ -12831,6 +12861,7 @@
       #console {
         overflow: auto;
         max-width: 100%;
+        padding-top: 50px !important;
       }
 
       #content-wrap-row {
@@ -12901,6 +12932,7 @@
 
       #content section {
         color: inherit;
+        border-bottom: none;
       }
 
       #content section table {
@@ -12923,6 +12955,11 @@
         border-bottom: 1px solid #dcdcdc;
       }
 
+      #content section table tbody tr:last-child,
+      #content section table tbody tr.tally.equation-row-pv {
+        border-bottom: none;
+      }
+
       #content section table tbody tr:last-of-type {
         border-bottom: none;
       }
@@ -12938,6 +12975,12 @@
         padding-right: .625rem !important;
         vertical-align: bottom;
         font-weight: bold;
+        text-transform: none;
+      }
+
+      #content section table td {
+        vertical-align: top;
+        padding: .625rem !important;
       }
 
       #content section table th:last-child,
@@ -12948,11 +12991,6 @@
       #content section table th:first-child,
       #content section table td:first-child {
         padding-left: 0 !important;
-      }
-
-      #content section table td {
-        vertical-align: top;
-        padding: .625rem !important;
       }
 
       body.layout-nav-top.layout-width-default .console-menu,
@@ -12981,6 +13019,7 @@
 
       #content h2.h2-forr {
         padding-left: 0;
+        font-size: 2em;
       }
       #content section.results-title-section {
         display: flex;
@@ -13154,40 +13193,135 @@
       body.scroll-y-wide .console-menu {
         overflow: visible;
       }
+      .highcharts-series-group {
+        transform: translateY(-8px);
+      }
+      @media (max-width: 1199px) {
+        .highcharts-series-group {
+          transform: translateY(-8px);
+        }
+      }
+      @media (max-width: 440px) {
+        .highcharts-series-group {
+          transform: translateY(-12px);
+        }
+      }
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        outline: 0;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        overflow: auto;
+        display: block;
+        background: rgba(28,28,27,.8);
+        z-index: 9999;
+      }
+      .modal.show {
+        visibility: visible;
+        opacity: 1;
+        position: fixed;
+        height: inherit;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .modal-dialog {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.25rem;
+      }
+      @media (min-width: 768px) {
+        .modal-dialog {
+          padding: 2.5rem;
+        }
+      }
+      .modal .modal-content {
+        background: #fff;
+        border-radius: 0.5rem;
+        max-width: 32.5rem;
+        width: 100%;
+        padding: 2.5rem;
+        color: #1c1c1b;
+        position: relative;
+        box-shadow: 0 0 8px rgb(0 0 0 / 60%);
+        text-align: left;
+        margin: auto 0;
+      }
+      body header.c-head {
+        position: fixed !important;
+      }
+      #content footer p, #content footer a {
+        padding-left: 0;
+      }
+      .highcharts-legend-item:nth-child(1) {
+        transform: translate(8px, 3px);
+      }
+      .highcharts-legend-item:nth-child(2) {
+        transform: translate(8px, 40px);
+      }
+      .highcharts-legend-item:nth-child(3) {
+        transform: translate(8px, 77px);
+      }
+      .highcharts-legend-item:nth-child(4) {
+        transform: translate(8px, 114px);
+      }
+      .highcharts-legend-item:nth-child(5) {
+        transform: translate(8px, 151px);
+      }
+      #content-wrap {
+        min-height: 100vh;
+      }
+      p a {
+        color: #3ec8ed !important;
+        background-image: linear-gradient(#3ec8ed,#3ec8ed) !important;
+        background-position: 0% 100% !important;
+        background-repeat: no-repeat !important;
+        background-size: 0% 2px !important;
+        transition: background-size .3s !important;
+        padding-bottom: 2px !important;
+      }
+      p a:hover {
+        background-size: 100% 2px !important;
+      }
     </style>
   </head>
   <body class="body-forr layout-nav-top layout-width-default body-background-default scroll-y-wide lgtCookieConsent body-b4">
     <p class="microToolVersion" style="display:none;">20230315141815-0</p>
     <div id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true" class="modal fade">
-      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-md-down">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 id="s2!E15" class="modal-title"></h5>
-            <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
-          </div>
-          <div class="modal-body">
-            <p id="s2!C19"></p>
-            <p id="s2!D19"></p>
-            <p id="s2!C20"></p>
-            <p id="s2!D20"></p>
-            <div class="hubspotForm"></div>
-            <div class="row mb-3 skipRegistration">
-              <p id="s2!B26"></p>
-              <span id="s2!C26" class="col-sm-3"></span>
-              <div class="col-sm-9">
-                <span id="s2!D26" class="form-text-b4 registerErrorAll"></span>
-                <div class="btnspacing">
-                  <button id="s2!E26_Control" type="button" data-bs-dismiss="modal" class="btn btn-success btn-lg"></button>
-                </div>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="close-popup"></button>
+          <h5 id="s2!E15" class="heading-06"></h5>
+<!--          <p id="s2!C19" class="paragraph-01"></p>-->
+          <p id="s2!D19" class="paragraph-01"></p>
+          <p id="s2!C20" class="paragraph-01 mb-0"></p>
+<!--          <p id="s2!D20" class="paragraph-01"></p>-->
+          <div class="hubspotForm"></div>
+          <div class="row mb-3 skipRegistration">
+            <p id="s2!B26"></p>
+            <span id="s2!C26" class="col-12"></span>
+            <div class="col-12">
+              <span id="s2!D26" class="form-text-b4 registerErrorAll"></span>
+              <div class="btnspacing">
+                <button id="s2!E26_Control" type="button" data-bs-dismiss="modal" class="btn btn-success btn-lg full-width"></button>
               </div>
             </div>
-            <input id="s2!E28" type="hidden" value="" name="customerName" data-format="7" class="regInput microToolInput" data-dbentity="customerName">
-            <div class="text-center btnspacing" style="display:none;">
-              <button id="s2!E29_Control" type="button" class="gotoRegisterBtn"></button>
-            </div>
-            <div class="text-center btnspacing" style="display:none;">
-              <button id="s2!E30_Control" type="button" data-bs-dismiss="modal" class="registerBtn"></button>
-            </div>
+          </div>
+          <input id="s2!E28" type="hidden" value="" name="customerName" data-format="7" class="regInput microToolInput" data-dbentity="customerName">
+          <div class="text-center btnspacing" style="display:none;">
+            <button id="s2!E29_Control" type="button" class="gotoRegisterBtn"></button>
+          </div>
+          <div class="text-center btnspacing" style="display:none;">
+            <button id="s2!E30_Control" type="button" data-bs-dismiss="modal" class="registerBtn"></button>
           </div>
         </div>
       </div>
@@ -13898,17 +14032,17 @@
           <div class="col-12 nav-wrap nav-horiz">
             <div class="nav nav-pills nav-menu nav-menu-b4">
               <div data-nav-outer="Inputs" data-nav-outer-tag="inputs">
-                <div class="mainnav nav-item microToolAnalyticsClickEvent" data-sheet="Inputs" data-event-category="Navigation" data-event-action="Inputs">
+                <div class="mainnav nav-item microToolAnalyticsClickEvent" data-sheet="Inputs" data-event-1category="Navigation" data-event-action1="Inputs">
                   <a class="nav-link nav-plain" data-source-namedcell="navTitle0"></a>
                 </div>
               </div>
               <div data-nav-outer="Results" data-nav-outer-tag="results" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" data-tooltiponactivatedispose="true">
-                <div class="mainnav nav-item microToolAnalyticsClickEvent disabled" data-sheet="Results" data-event-category="Navigation" data-event-action="Results">
+                <div class="mainnav nav-item microToolAnalyticsClickEvent disabled" data-sheet="Results" data-event-1category="Navigation" data-event-action1="Results">
                   <a class="nav-link nav-plain" data-source-namedcell="navTitle1"></a>
                 </div>
               </div>
               <div data-nav-outer="Methodology" data-nav-outer-tag="methodology">
-                <div class="mainnav nav-item microToolAnalyticsClickEvent" data-sheet="Methodology" data-event-category="Navigation" data-event-action="Methodology">
+                <div class="mainnav nav-item microToolAnalyticsClickEvent" data-sheet="Methodology" data-event-1category="Navigation" data-event-action1="Methodology">
                   <a class="nav-link nav-plain" data-source-namedcell="navTitle2"></a>
                 </div>
               </div>
@@ -13938,24 +14072,24 @@
                   </ul>
                   <p id="s1!D17"></p>
                 </section>
-                <div class="container-fluid results-box-container">
-                  <div class="row">
-                    <div class="col-3 offset-9 col-md-2 offset-md-10 d-block d-lg-none">
-                      <div class="results-box-div">
-                        <div class="col-12 results-box">
-                          <span id="s1!C19"></span>
-                          <span id="s1!D19" data-results-box="npvx" class="btnRegister blur-text1"></span>
-                          <span id="s1!E19" data-results-box="npv" class="btnResults" style="display:none;"></span>
-                        </div>
-                        <div class="col-12 results-box">
-                          <span id="s1!F19"></span>
-                          <span id="s1!G19" data-results-box="roix" class="btnRegister blur-text1"></span>
-                          <span id="s1!H19" data-results-box="roi" class="btnResults" style="display:none;"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+<!--                <div class="container-fluid results-box-container">-->
+<!--                  <div class="row">-->
+<!--                    <div class="col-3 offset-9 col-md-2 offset-md-10 d-block d-lg-none">-->
+<!--                      <div class="results-box-div">-->
+<!--                        <div class="col-12 results-box">-->
+<!--                          <span id="s1!C19"></span>-->
+<!--                          <span id="s1!D19" data-results-box="npvx" class="btnRegister blur-text1"></span>-->
+<!--                          <span id="s1!E19" data-results-box="npv" class="btnResults" style="display:none;"></span>-->
+<!--                        </div>-->
+<!--                        <div class="col-12 results-box">-->
+<!--                          <span id="s1!F19"></span>-->
+<!--                          <span id="s1!G19" data-results-box="roix" class="btnRegister blur-text1"></span>-->
+<!--                          <span id="s1!H19" data-results-box="roi" class="btnResults" style="display:none;"></span>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
                 <section id="s1Sub2-section" class="tbl">
                   <p id="s1!B21"></p>
                   <div class="container-fluid">
@@ -14271,9 +14405,9 @@
                         </div>
                       </div>
                     </div>
-                    <div data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Accept cookies to continue" class="text-center btnspacing btnRegister lgtCookieConsentAcceptedTooltipDispose">
-                      <button id="s1!E92_Control" type="button" data-bs-toggle="modal" data-bs-target="#registerModal" class="btn btn-success btn-lg lgtCookieConsentAcceptedEnable"></button>
-                    </div>
+<!--                    <div data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Accept cookies to continue" class="text-center btnspacing btnRegister lgtCookieConsentAcceptedTooltipDispose">-->
+<!--                      <button id="s1!E92_Control" type="button" data-bs-toggle="modal" data-bs-target="#registerModal" class="btn btn-success btn-lg lgtCookieConsentAcceptedEnable"></button>-->
+<!--                    </div>-->
                     <div class="text-center btnspacing btnResults" style="display:none;">
                       <button id="s1!E93_Control" type="button" class="btn btn-success btn-lg"></button>
                     </div>
@@ -14397,87 +14531,87 @@
                           <td id="s3!L51"></td>
                           <td id="s3!M51" class="microToolOutput" data-dbentity="Payback"></td>
                         </tr>
-                        <tr id="s3_row52" style="display:none;">
-                          <td id="s3!E52" class="benefits"></td>
-                          <td id="s3!H52"></td>
-                          <td id="s3!I52"></td>
-                          <td id="s3!J52"></td>
-                          <td id="s3!K52"></td>
-                          <td id="s3!L52"></td>
-                          <td id="s3!M52"></td>
-                        </tr>
-                        <tr id="s3_row53" style="display:none;">
-                          <td id="s3!E53" class="benefits"></td>
-                          <td id="s3!H53"></td>
-                          <td id="s3!I53"></td>
-                          <td id="s3!J53"></td>
-                          <td id="s3!K53"></td>
-                          <td id="s3!L53"></td>
-                          <td id="s3!M53"></td>
-                        </tr>
-                        <tr id="s3_row54" style="display:none;">
-                          <td id="s3!E54" class="benefits"></td>
-                          <td id="s3!H54"></td>
-                          <td id="s3!I54"></td>
-                          <td id="s3!J54"></td>
-                          <td id="s3!K54"></td>
-                          <td id="s3!L54"></td>
-                          <td id="s3!M54"></td>
-                        </tr>
-                        <tr id="s3_row55" style="display:none;">
-                          <td id="s3!E55" class="benefits"></td>
-                          <td id="s3!H55"></td>
-                          <td id="s3!I55"></td>
-                          <td id="s3!J55"></td>
-                          <td id="s3!K55"></td>
-                          <td id="s3!L55"></td>
-                          <td id="s3!M55"></td>
-                        </tr>
-                        <tr id="s3_row56" style="display:none;">
-                          <td id="s3!E56" class="benefits"></td>
-                          <td id="s3!H56"></td>
-                          <td id="s3!I56"></td>
-                          <td id="s3!J56"></td>
-                          <td id="s3!K56"></td>
-                          <td id="s3!L56"></td>
-                          <td id="s3!M56"></td>
-                        </tr>
-                        <tr id="s3_row57" style="display:none;">
-                          <td id="s3!E57" class="benefits"></td>
-                          <td id="s3!H57"></td>
-                          <td id="s3!I57"></td>
-                          <td id="s3!J57"></td>
-                          <td id="s3!K57"></td>
-                          <td id="s3!L57"></td>
-                          <td id="s3!M57"></td>
-                        </tr>
-                        <tr id="s3_row58" style="display:none;">
-                          <td id="s3!E58" class="benefits"></td>
-                          <td id="s3!H58"></td>
-                          <td id="s3!I58"></td>
-                          <td id="s3!J58"></td>
-                          <td id="s3!K58"></td>
-                          <td id="s3!L58"></td>
-                          <td id="s3!M58"></td>
-                        </tr>
-                        <tr id="s3_row59" style="display:none;">
-                          <td id="s3!E59" class="benefits"></td>
-                          <td id="s3!H59"></td>
-                          <td id="s3!I59"></td>
-                          <td id="s3!J59"></td>
-                          <td id="s3!K59"></td>
-                          <td id="s3!L59"></td>
-                          <td id="s3!M59"></td>
-                        </tr>
-                        <tr id="s3_row60" style="display:none;">
-                          <td id="s3!E60" class="benefits"></td>
-                          <td id="s3!H60"></td>
-                          <td id="s3!I60"></td>
-                          <td id="s3!J60"></td>
-                          <td id="s3!K60"></td>
-                          <td id="s3!L60"></td>
-                          <td id="s3!M60"></td>
-                        </tr>
+<!--                        <tr id="s3_row52" style="display:none;">-->
+<!--                          <td id="s3!E52" class="benefits"></td>-->
+<!--                          <td id="s3!H52"></td>-->
+<!--                          <td id="s3!I52"></td>-->
+<!--                          <td id="s3!J52"></td>-->
+<!--                          <td id="s3!K52"></td>-->
+<!--                          <td id="s3!L52"></td>-->
+<!--                          <td id="s3!M52"></td>-->
+<!--                        </tr>-->
+<!--                        <tr id="s3_row53" style="display:none;">-->
+<!--                          <td id="s3!E53" class="benefits"></td>-->
+<!--                          <td id="s3!H53"></td>-->
+<!--                          <td id="s3!I53"></td>-->
+<!--                          <td id="s3!J53"></td>-->
+<!--                          <td id="s3!K53"></td>-->
+<!--                          <td id="s3!L53"></td>-->
+<!--                          <td id="s3!M53"></td>-->
+<!--                        </tr>-->
+<!--                        <tr id="s3_row54" style="display:none;">-->
+<!--                          <td id="s3!E54" class="benefits"></td>-->
+<!--                          <td id="s3!H54"></td>-->
+<!--                          <td id="s3!I54"></td>-->
+<!--                          <td id="s3!J54"></td>-->
+<!--                          <td id="s3!K54"></td>-->
+<!--                          <td id="s3!L54"></td>-->
+<!--                          <td id="s3!M54"></td>-->
+<!--                        </tr>-->
+<!--                        <tr id="s3_row55" style="display:none;">-->
+<!--                          <td id="s3!E55" class="benefits"></td>-->
+<!--                          <td id="s3!H55"></td>-->
+<!--                          <td id="s3!I55"></td>-->
+<!--                          <td id="s3!J55"></td>-->
+<!--                          <td id="s3!K55"></td>-->
+<!--                          <td id="s3!L55"></td>-->
+<!--                          <td id="s3!M55"></td>-->
+<!--                        </tr>-->
+<!--                        <tr id="s3_row56" style="display:none;">-->
+<!--                          <td id="s3!E56" class="benefits"></td>-->
+<!--                          <td id="s3!H56"></td>-->
+<!--                          <td id="s3!I56"></td>-->
+<!--                          <td id="s3!J56"></td>-->
+<!--                          <td id="s3!K56"></td>-->
+<!--                          <td id="s3!L56"></td>-->
+<!--                          <td id="s3!M56"></td>-->
+<!--                        </tr>-->
+<!--                        <tr id="s3_row57" style="display:none;">-->
+<!--                          <td id="s3!E57" class="benefits"></td>-->
+<!--                          <td id="s3!H57"></td>-->
+<!--                          <td id="s3!I57"></td>-->
+<!--                          <td id="s3!J57"></td>-->
+<!--                          <td id="s3!K57"></td>-->
+<!--                          <td id="s3!L57"></td>-->
+<!--                          <td id="s3!M57"></td>-->
+<!--                        </tr>-->
+<!--                        <tr id="s3_row58" style="display:none;">-->
+<!--                          <td id="s3!E58" class="benefits"></td>-->
+<!--                          <td id="s3!H58"></td>-->
+<!--                          <td id="s3!I58"></td>-->
+<!--                          <td id="s3!J58"></td>-->
+<!--                          <td id="s3!K58"></td>-->
+<!--                          <td id="s3!L58"></td>-->
+<!--                          <td id="s3!M58"></td>-->
+<!--                        </tr>-->
+<!--                        <tr id="s3_row59" style="display:none;">-->
+<!--                          <td id="s3!E59" class="benefits"></td>-->
+<!--                          <td id="s3!H59"></td>-->
+<!--                          <td id="s3!I59"></td>-->
+<!--                          <td id="s3!J59"></td>-->
+<!--                          <td id="s3!K59"></td>-->
+<!--                          <td id="s3!L59"></td>-->
+<!--                          <td id="s3!M59"></td>-->
+<!--                        </tr>-->
+<!--                        <tr id="s3_row60" style="display:none;">-->
+<!--                          <td id="s3!E60" class="benefits"></td>-->
+<!--                          <td id="s3!H60"></td>-->
+<!--                          <td id="s3!I60"></td>-->
+<!--                          <td id="s3!J60"></td>-->
+<!--                          <td id="s3!K60"></td>-->
+<!--                          <td id="s3!L60"></td>-->
+<!--                          <td id="s3!M60"></td>-->
+<!--                        </tr>-->
                       </tbody>
                     </table>
                   </div>
@@ -14587,7 +14721,7 @@
                 <section id="s4Sub3-section" class="tbl">
                   <h3 id="s4!D37" class="h3-forr"></h3>
                   <p id="s4!D38"></p>
-                  <button id="s4!D39" class="equationRowsTrigger btn btn-success" style="display:block;"></button>
+                  <button id="s4!D39" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -14776,7 +14910,7 @@
                 <section id="s4Sub4-section" class="tbl">
                   <h3 id="s4!D60" class="h3-forr"></h3>
                   <p id="s4!D61"></p>
-                  <button id="s4!D62" class="equationRowsTrigger btn btn-success" style="display:block;"></button>
+                  <button id="s4!D62" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -14943,7 +15077,7 @@
                 <section id="s4Sub5-section" class="tbl">
                   <h3 id="s4!D81" class="h3-forr"></h3>
                   <p id="s4!D82"></p>
-                  <button id="s4!D83" class="equationRowsTrigger btn btn-success" style="display:block;"></button>
+                  <button id="s4!D83" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -15088,7 +15222,7 @@
                 <section id="s4Sub6-section" class="tbl">
                   <h3 id="s4!D100" class="h3-forr"></h3>
                   <p id="s4!D101"></p>
-                  <button id="s4!D102" class="equationRowsTrigger btn btn-success" style="display:block;"></button>
+                  <button id="s4!D102" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -15255,7 +15389,7 @@
                 <section id="s4Sub7-section" class="tbl">
                   <h3 id="s4!D121" class="h3-forr"></h3>
                   <p id="s4!D122"></p>
-                  <button id="s4!D123" class="equationRowsTrigger btn btn-success" style="display:block;"></button>
+                  <button id="s4!D123" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -15427,7 +15561,7 @@
                 <section id="s5Sub3-section" class="tbl">
                   <h3 id="s5!D34" class="h3-forr"></h3>
                   <p id="s5!D35"></p>
-                  <button id="s5!D36" class="equationRowsTrigger btn btn-success" style="display:block;"></button>
+                  <button id="s5!D36" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -15539,7 +15673,7 @@
                 <section id="s5Sub4-section" class="tbl">
                   <h3 id="s5!D50" class="h3-forr"></h3>
                   <p id="s5!D51"></p>
-                  <button id="s5!D52" class="equationRowsTrigger btn btn-success" style="display:block;"></button>
+                  <button id="s5!D52" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
