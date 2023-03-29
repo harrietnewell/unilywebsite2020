@@ -12602,13 +12602,16 @@
       .row.content-wrap-row {
         margin-left: 0;
       }
+      #s1Sub1-section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
       #s1Sub2-section {
-        margin-top: 93px;
+        margin-top: 0;
         padding-bottom: 0;
       }
       @media (max-width: 991px) {
         #s1Sub2-section {
-          margin-top: 45px;
           padding-bottom: 30px;
         }
       }
@@ -12729,7 +12732,7 @@
         margin-left: 15px;
       }
       .slider-input-div label {
-        width: 110px;
+        width: 95px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -12740,9 +12743,9 @@
         margin: 0 !important;
         width: 100% !important;
         font-size: 1.125rem !important;
-        padding: .125rem .9375rem !important;
+        padding: .125rem .5rem !important;
         border-radius: 2px !important;
-        color: #3ec8ed !important;
+        color: #1c1c1b !important;
         min-height: 35px;
       }
       #content input[type=text].slider-input:focus {
@@ -12953,6 +12956,7 @@
 
       #content section table tr {
         border-bottom: 1px solid #dcdcdc;
+        height: auto;
       }
 
       #content section table tbody tr:last-child,
@@ -12979,6 +12983,7 @@
       }
 
       #content section table td {
+        min-height: 40px;
         vertical-align: top;
         padding: .625rem !important;
       }
@@ -13038,6 +13043,10 @@
       }
       #content h3.h3-forr {
         color: #1c1c1b;
+        font-size: 1.5rem;
+      }
+      #content h2.h2-forr {
+        font-size: 2rem;
       }
       #content section table.output td {
         text-align: left;
@@ -13057,6 +13066,9 @@
       #content section table.output td.title,
       #content section table.output th.title {
         text-align: left;
+      }
+      #content section table td:first-child {
+        vertical-align: top;
       }
       ul {
         padding-left: 1.2rem;
@@ -13173,11 +13185,6 @@
       .btn-group {
         display: flex;
       }
-      @media (min-width: 1200px) {
-        .btn-group {
-          margin-left: auto;
-        }
-      }
       @media (min-width: 600px) {
         .btn-group .btnspacing:nth-child(2) {
           margin-left: 20px;
@@ -13292,9 +13299,21 @@
       p a:hover {
         background-size: 100% 2px !important;
       }
+      .close-popup {
+        padding-right: 0;
+      }
       .close-popup:hover {
         background: transparent !important;
-        padding-right: 0;
+      }
+      p:empty {
+        margin: 0;
+      }
+      footer[style="visibility: hidden;"] {
+        height: 25px !important;
+      }
+      #s3Sub2-section h3,
+      #s7Sub1-section h3 {
+        padding-top: 0 !important;
       }
     </style>
   </head>
@@ -13305,10 +13324,8 @@
         <div class="modal-content">
           <button type="button" data-bs-dismiss="modal" aria-label="Close" class="close-popup"></button>
           <h5 id="s2!E15" class="heading-06"></h5>
-<!--          <p id="s2!C19" class="paragraph-01"></p>-->
           <p id="s2!D19" class="paragraph-01"></p>
           <p id="s2!C20" class="paragraph-01 mb-0"></p>
-<!--          <p id="s2!D20" class="paragraph-01"></p>-->
           <div class="hubspotForm"></div>
           <div class="row mb-3 skipRegistration">
             <p id="s2!B26"></p>
@@ -14057,43 +14074,6 @@
           <div id="content-wrap" class="console-wrap col-12">
             <div id="content" class="console-menu">
               <div id="s1-section" data-sheet="Inputs" data-codename="s1">
-                <section id="s1Sub0-section" class="c-head d-none d-md-block">
-                  <h2 id="s1!C1" class="h2-forr"></h2>
-                </section>
-                <section id="s1Sub1-section" class="tbl">
-                  <p id="s1!C5"></p>
-                  <p id="s1!D5"></p>
-                  <p id="s1!C6"></p>
-                  <p id="s1!D6"></p>
-                  <p id="s1!C7"></p>
-                  <p id="s1!D7"></p>
-                  <ul>
-                    <li id="s1!E10"></li>
-                    <li id="s1!E11"></li>
-                    <li id="s1!E12"></li>
-                    <li id="s1!E13"></li>
-                    <li id="s1!E14"></li>
-                  </ul>
-                  <p id="s1!D17"></p>
-                </section>
-<!--                <div class="container-fluid results-box-container">-->
-<!--                  <div class="row">-->
-<!--                    <div class="col-3 offset-9 col-md-2 offset-md-10 d-block d-lg-none">-->
-<!--                      <div class="results-box-div">-->
-<!--                        <div class="col-12 results-box">-->
-<!--                          <span id="s1!C19"></span>-->
-<!--                          <span id="s1!D19" data-results-box="npvx" class="btnRegister blur-text1"></span>-->
-<!--                          <span id="s1!E19" data-results-box="npv" class="btnResults" style="display:none;"></span>-->
-<!--                        </div>-->
-<!--                        <div class="col-12 results-box">-->
-<!--                          <span id="s1!F19"></span>-->
-<!--                          <span id="s1!G19" data-results-box="roix" class="btnRegister blur-text1"></span>-->
-<!--                          <span id="s1!H19" data-results-box="roi" class="btnResults" style="display:none;"></span>-->
-<!--                        </div>-->
-<!--                      </div>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </div>-->
                 <section id="s1Sub2-section" class="tbl">
                   <p id="s1!B21"></p>
                   <div class="container-fluid">
@@ -14400,7 +14380,7 @@
                           </div>
                           <div class="text-center btnspacing btnResults" style="display:none;">
                             <button id="s1!E71_Control" type="button" class="btn btn-success btn-lg"></button>
-                          </div>
+   `                       </div>
                         </div>
                         <div class="chart-responsive-wrapper">
                           <div class="chart-responsive totalNPVChart">
@@ -14418,6 +14398,44 @@
                     <p id="s1!C94"></p>
                   </div>
                 </section>
+
+<!--                <section id="s1Sub0-section" class="c-head d-none d-md-block">-->
+<!--                  <h2 id="s1!C1" class="h2-forr"></h2>-->
+<!--                </section>-->
+                <section id="s1Sub1-section" class="tbl">
+                  <p id="s1!C5"></p>
+                  <p id="s1!D5"></p>
+                  <p id="s1!C6"></p>
+                  <p id="s1!D6"></p>
+                  <p id="s1!C7"></p>
+                  <p id="s1!D7"></p>
+                  <ul>
+                    <li id="s1!E10"></li>
+                    <li id="s1!E11"></li>
+                    <li id="s1!E12"></li>
+                    <li id="s1!E13"></li>
+                    <li id="s1!E14"></li>
+                  </ul>
+                  <p id="s1!D17"></p>
+                </section>
+                <div class="container-fluid results-box-container">
+                  <div class="row">
+                    <div class="col-3 offset-9 col-md-2 offset-md-10 d-block d-lg-none">
+                      <div class="results-box-div">
+                        <div class="col-12 results-box">
+                          <span id="s1!C19"></span>
+                          <span id="s1!D19" data-results-box="npvx" class="btnRegister blur-text1"></span>
+                          <span id="s1!E19" data-results-box="npv" class="btnResults" style="display:none;"></span>
+                        </div>
+                        <div class="col-12 results-box">
+                          <span id="s1!F19"></span>
+                          <span id="s1!G19" data-results-box="roix" class="btnRegister blur-text1"></span>
+                          <span id="s1!H19" data-results-box="roi" class="btnResults" style="display:none;"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <footer>
                   <a id="s1!D99" class="microToolCookieConsentFullBtn" style="display:inline;"></a>
                   <br>
@@ -14429,11 +14447,6 @@
 <!--                  <h2 id="s3!C1" class="h2-forr"></h2>-->
 <!--                </section>-->
                 <section id="s3Sub1-section" class="tbl results-title-section">
-                  <div>
-                    <h2 id="s3!C1" class="h2-forr"></h2>
-                    <p id="s3!E5" style="display:none;"></p>
-                    <p id="s3!C9" class="full-width"></p>
-                  </div>
                   <div class="btn-group">
                     <div class="text-center btnspacing">
                       <button id="s3!E6_Control" type="button" class="btn btn-success btn-lg"></button>
@@ -16128,9 +16141,6 @@
                 </footer>
               </div>
               <div id="s7-section" data-sheet="Methodology" data-codename="s7">
-                <section id="s7Sub0-section" class="c-head d-none d-md-block">
-                  <h2 id="s7!C1" class="h2-forr"></h2>
-                </section>
                 <section id="s7Sub1-section" class="tbl">
                   <h3 id="s7!D5" class="h3-forr"></h3>
                   <p id="s7!D6"></p>
