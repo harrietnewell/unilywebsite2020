@@ -920,6 +920,33 @@
         background: #c3c3c3 !important;
       }
 
+      #s3-section,
+      #s4-section {
+        /*display: block !important;*/
+      }
+
+      .btn.btn-link {
+        background: transparent !important;
+        color: #1c1c1b !important;
+        padding: 0;
+        display: inline-block;
+        white-space: nowrap;
+        font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        border: 0;
+        margin: 0 0 10px;
+        line-height: 1.35;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none !important;
+        box-shadow: none !important;
+        text-transform: none !important;
+      }
+
+      .btn.btn-link:hover {}
+
       .btn.btn-03 {
         background: #333;
         color: #fff;
@@ -12612,7 +12639,7 @@
       }
       @media (max-width: 991px) {
         #s1Sub2-section {
-          padding-bottom: 30px;
+          /*padding-bottom: 30px;*/
         }
       }
       #s1Sub2-section > .container-fluid {
@@ -12675,7 +12702,7 @@
         margin-bottom: 8px;
       }
       div.div-input-box .slider-limit {
-        /*display: none;*/
+        font-size: 14px;
       }
       #content .slider-track {
         height: 5px;
@@ -12767,6 +12794,13 @@
         div.div-input-box {
           padding: 0;
           box-shadow: none;
+          margin-bottom: 0;
+        }
+        #content div.chart-responsive {
+          padding: 0;
+        }
+        #s1Sub2-section > .container-fluid > .row {
+          margin-bottom: 0;
         }
       }
       .totalNPVArea p {
@@ -13196,6 +13230,16 @@
           align-items: flex-start;
         }
       }
+      @media (max-width: 409px) {
+        .btn-group .btnspacing:nth-child(2) button {
+          font-size: 17px;
+        }
+      }
+      @media (max-width: 389px) {
+        .btn-group .btnspacing:nth-child(2) button {
+          font-size: 16px;
+        }
+      }
       body.scroll-y-wide .console-wrap,
       body.scroll-y-wide .console-menu {
         overflow: visible;
@@ -13268,6 +13312,16 @@
       }
       #content footer p, #content footer a {
         padding-left: 0;
+      }
+      .highcharts-title,
+      .highcharts-legend-item text {
+        fill: #1c1c1b !important;
+        color: #1c1c1b !important;
+      }
+      .highcharts-legend-item rect {
+        rx: 10px;
+        ry: 10px;
+        transform: translateY(1px);
       }
       .highcharts-legend-item:nth-child(1) {
         transform: translate(8px, 3px);
@@ -14420,7 +14474,7 @@
                 </section>
                 <div class="container-fluid results-box-container">
                   <div class="row">
-                    <div class="col-3 offset-9 col-md-2 offset-md-10 d-block d-lg-none">
+                    <div class="col-3 offset-9 col-md-2 offset-md-10 d-none d-lg-none">
                       <div class="results-box-div">
                         <div class="col-12 results-box">
                           <span id="s1!C19"></span>
@@ -14738,7 +14792,7 @@
                 <section id="s4Sub3-section" class="tbl">
                   <h3 id="s4!D37" class="h3-forr"></h3>
                   <p id="s4!D38"></p>
-                  <button id="s4!D39" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
+                  <button id="s4!D39" class="equationRowsTrigger btn btn-link" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -14927,7 +14981,7 @@
                 <section id="s4Sub4-section" class="tbl">
                   <h3 id="s4!D60" class="h3-forr"></h3>
                   <p id="s4!D61"></p>
-                  <button id="s4!D62" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
+                  <button id="s4!D62" class="equationRowsTrigger btn btn-link" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -15094,7 +15148,7 @@
                 <section id="s4Sub5-section" class="tbl">
                   <h3 id="s4!D81" class="h3-forr"></h3>
                   <p id="s4!D82"></p>
-                  <button id="s4!D83" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
+                  <button id="s4!D83" class="equationRowsTrigger btn btn-link" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -15239,7 +15293,7 @@
                 <section id="s4Sub6-section" class="tbl">
                   <h3 id="s4!D100" class="h3-forr"></h3>
                   <p id="s4!D101"></p>
-                  <button id="s4!D102" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
+                  <button id="s4!D102" class="equationRowsTrigger btn btn-link" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -15406,7 +15460,7 @@
                 <section id="s4Sub7-section" class="tbl">
                   <h3 id="s4!D121" class="h3-forr"></h3>
                   <p id="s4!D122"></p>
-                  <button id="s4!D123" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
+                  <button id="s4!D123" class="equationRowsTrigger btn btn-link" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -15578,7 +15632,7 @@
                 <section id="s5Sub3-section" class="tbl">
                   <h3 id="s5!D34" class="h3-forr"></h3>
                   <p id="s5!D35"></p>
-                  <button id="s5!D36" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
+                  <button id="s5!D36" class="equationRowsTrigger btn btn-link" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
@@ -15690,7 +15744,7 @@
                 <section id="s5Sub4-section" class="tbl">
                   <h3 id="s5!D50" class="h3-forr"></h3>
                   <p id="s5!D51"></p>
-                  <button id="s5!D52" class="equationRowsTrigger btn btn-02" style="display:block;"></button>
+                  <button id="s5!D52" class="equationRowsTrigger btn btn-link" style="display:block;"></button>
                   <div class="table-responsive">
                     <table class="table table-striped margin-btm output">
                       <thead>
