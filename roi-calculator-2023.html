@@ -13306,6 +13306,7 @@
         box-shadow: 0 0 8px rgb(0 0 0 / 60%);
         text-align: left;
         margin: auto 0;
+        border: none;
       }
       body header.c-head {
         position: fixed !important;
@@ -13314,7 +13315,8 @@
         padding-left: 0;
       }
       .highcharts-title,
-      .highcharts-legend-item text {
+      .highcharts-legend-item text,
+      .highcharts-axis-labels text {
         fill: #1c1c1b !important;
         color: #1c1c1b !important;
       }
@@ -13369,6 +13371,29 @@
       #s7Sub1-section h3 {
         padding-top: 0 !important;
       }
+      .btn-submitHS {
+        background: #3ec8ed !important;
+        border: none !important;
+        color: #FFF !important;
+        width: 100%;
+      }
+      .btn-submitHS:active,
+      .btn-submitHS:focus,
+      .btn-submitHS:active:focus {
+        color: #fff !important;
+        background: #15b7e3 !important;
+      }
+      .modal-content input:not([type="submit"]) {
+        line-height: 1.15;
+      }
+      .modal-content .invalid {
+        background: initial;
+        font-weight: initial;
+      }
+      .modal-content .hs-main-font-element {
+        margin-bottom: 0 !important;
+        line-height: 1.1875;
+      }
     </style>
   </head>
   <body class="body-forr layout-nav-top layout-width-default body-background-default scroll-y-wide lgtCookieConsent body-b4">
@@ -13381,16 +13406,6 @@
           <p id="s2!D19" class="paragraph-01"></p>
           <p id="s2!C20" class="paragraph-01 mb-0"></p>
           <div class="hubspotForm"></div>
-          <div class="row mb-3 skipRegistration">
-            <p id="s2!B26"></p>
-            <span id="s2!C26" class="col-12"></span>
-            <div class="col-12">
-              <span id="s2!D26" class="form-text-b4 registerErrorAll"></span>
-              <div class="btnspacing">
-                <button id="s2!E26_Control" type="button" data-bs-dismiss="modal" class="btn btn-success btn-lg full-width"></button>
-              </div>
-            </div>
-          </div>
           <input id="s2!E28" type="hidden" value="" name="customerName" data-format="7" class="regInput microToolInput" data-dbentity="customerName">
           <div class="text-center btnspacing" style="display:none;">
             <button id="s2!E29_Control" type="button" class="gotoRegisterBtn"></button>
