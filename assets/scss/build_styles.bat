@@ -30,4 +30,6 @@ echo "building accordion.css" &^
 sass --no-source-map accordion.scss ../css/accordion.css &^
 echo "building comparison-table.css" &^
 sass --no-source-map comparison-table.scss ../css/comparison-table.css &^
+echo "building insights-carousel.css" &^
+sass --no-source-map insights-carousel.scss ../css/insights-carousel.css &^
 PAUSE

@@ -1,0 +1,21 @@
+.c-insights-carousel-heading {
+  font-size: 22px !important;
+}
+.c-insights-carousel a:hover {
+  background-size: 0 !important;
+}
+.c-insights-carousel ul.c-articles--carousel {
+  padding-left: 0 !important;
+}
+.c-insights-carousel ul.c-articles--carousel li.c-articles__item {
+  margin-right: 20px !important;
+  padding: 0px !important;
+  width: 360px !important;
+  flex: 0 0 360px !important;
+}
+@media (max-width: 767px) {
+  .c-insights-carousel ul.c-articles--carousel li.c-articles__item {
+    width: 280px !important;
+    flex: 0 0 280px !important;
+  }
+}
