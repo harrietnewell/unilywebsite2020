@@ -3,16 +3,21 @@
 // Containers
 
 .container {
-  width: 100%;
-  max-width: calc(#{$site-medium-width} + 40px);
-  min-height: 1px;
-  margin: 0 auto;
-  padding-left: rem-size(20px);
-  padding-right: rem-size(20px);
+    width: 100%;
+    max-width: calc(#{$site-medium-width} + 80px);
+    min-height: 1px;
+    margin: 0 auto;
+    padding-left: rem-size(20px);
+    padding-right: rem-size(20px);
 
-  > p:last-child {
-    margin-bottom: 0;
-  }
+    @media (min-width: $breakpoint-md) {
+        padding-left: rem-size(40px);
+        padding-right: rem-size(40px);
+    }
+
+    > p:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .container-xxs {
@@ -170,6 +175,10 @@
   -webkit-transform: translateZ(0);
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
+}
+
+.img-square {
+    border-radius:0 !important;
 }
 
 .img-snippet-lg {

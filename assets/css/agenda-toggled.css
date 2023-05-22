@@ -7,7 +7,7 @@
   display: flex;
   z-index: 0;
   margin-bottom: 30px;
-  max-width: 25%;
+  max-width: 250px;
 }
 @media (max-width: 767px) {
   .agenda-toggle {

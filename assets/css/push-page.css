@@ -38,6 +38,11 @@
   align-self: flex-start;
   margin-top: 1rem;
 }
+@media (min-width: 768px) and (max-width: 1099px) {
+  .c-block-push-page__info {
+    max-width: 50%;
+  }
+}
 .c-block-push-page__form {
   background: #fff;
   border-radius: 0.5rem;
@@ -48,7 +53,12 @@
   position: relative;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   text-align: left;
-  margin: auto 0;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .c-block-push-page__form {
+    padding: 1.875rem 1.875rem;
+  }
 }
 .c-block-push-page__form .legal-consent-container, .c-block-push-page__form .hs-error-msgs {
   text-align: left;

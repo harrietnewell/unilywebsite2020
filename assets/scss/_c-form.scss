@@ -26,32 +26,32 @@
     position: relative;
 
     .hs-input {
-      border: 1px solid $color-02;
-      margin: 0;
-      font-size: rem-size(18px);
-      padding: rem-size(12px 140px 12px 15px);
-      background: transparent;
-      border-radius: 2px;
-      color: $color-unily-light-blue; //$color-white;
-      height: rem-size(46px);
-      border-color: rgba($color-white, 0.7);
+      border: 1px solid $color-02 !important;
+      margin: 0 !important;
+      font-size: rem-size(18px) !important;
+      padding: rem-size(12px 140px 12px 15px) !important;
+      background: transparent !important;
+      border-radius: 2px !important;
+      color: $color-unily-light-blue !important; //$color-white;
+      height: rem-size(46px) !important;
+      border-color: rgba($color-white, 0.7) !important;
 
       &::placeholder {
-        color: rgba($color-white, 0.7); //$color-08; //$color-07; //$color-unily-grey-3;
+        color: rgba($color-white, 0.7) !important; //$color-08; //$color-07; //$color-unily-grey-3;
       }
 
       &:focus {
-        border-color: $color-unily-light-blue;
-        outline: none;
-        box-shadow: inset 0 0 0 1px $color-unily-light-blue;
+        border-color: $color-unily-light-blue !important;
+        outline: none !important;
+        box-shadow: inset 0 0 0 1px $color-unily-light-blue !important;
         //color: $color-unily-light-blue !important;
       }
     }
 
     .hs-submit {
-      position: absolute;
-      top: 0;
-      right: 0;
+      position: absolute !important;
+      top: 0 !important;
+      right: 0 !important;
     }
 
     .hs-richtext {
@@ -71,7 +71,7 @@
   }
 
   .hs-richtext {
-    color: inherit;
+    color: inherit !important;
   }
 }
 
@@ -81,16 +81,16 @@
     color: $color-01 !important;
   }
   .hs-input {
-    color: $color-unily-light-blue; //$color-unily-black;
-    border: 1px solid $color-02;
+    color: $color-unily-light-blue !important; //$color-unily-black;
+    border: 1px solid $color-02 !important;
 
     &::placeholder {
-      color: $color-08; //$color-07; //$color-unily-grey-3;
+      color: $color-08 !important; //$color-07; //$color-unily-grey-3;
     }
 
     &:focus {
-      color: $color-unily-light-blue;
-      border-color: $color-unily-light-blue;
+      color: $color-unily-light-blue !important;
+      border-color: $color-unily-light-blue !important;
     }
   }
 }
@@ -103,23 +103,23 @@
 
 .c-block-full--bg .c-form {
   .hs-input {
-    border: 1px solid $color-02;
-    margin: 0;
-    font-size: rem-size(18px);
-    padding: rem-size(12px 140px 12px 15px);
-    background: transparent;
-    border-radius: 2px;
-    color: $color-white;
+    border: 1px solid $color-02 !important;
+    margin: 0 !important;
+    font-size: rem-size(18px) !important;
+    padding: rem-size(12px 140px 12px 15px) !important;
+    background: transparent !important;
+    border-radius: 2px !important;
+    color: $color-white !important;
 
     &:focus {
-      border-color: $color-unily-light-blue;
-      outline: none;
-      box-shadow: inset 0 0 0 1px $color-unily-light-blue;
+      border-color: $color-unily-light-blue !important;
+      outline: none !important;
+      box-shadow: inset 0 0 0 1px $color-unily-light-blue !important;
     }
   }
 
   .hs-richtext {
-    color: $color-white;
+    color: $color-white !important;
   }
 }
 
@@ -129,153 +129,153 @@
 
 .hs-form-radio,
 .hs-form-checkbox {
-  margin-bottom: rem-size(5px);
+  margin-bottom: rem-size(5px) !important;
 }
 
 .hs-form-radio label,
 .hs-form-checkbox label {
-  display: block;
+    display: block !important;
 }
 
 .hs-form-checkbox label span {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  padding-left: rem-size(28px);
-  font-size: rem-size(16px);
+    cursor: pointer !important;
+    position: relative !important;
+    display: block !important;
+    padding-left: rem-size(28px) !important;
+    font-size: rem-size(16px) !important;
 }
 
 .hs-form-checkbox label span:before {
-  text-align: center;
-  font-size: rem-size(11px);
-  content: "";
-  position: absolute;
-  border-radius: 2px;
-  top: rem-size(2px);
-  left: 0;
-  border: 1px solid $color-06;
-  color: $color-unily-pink;
-  width: rem-size(18px);
-  height: rem-size(18px);
-  line-height: rem-size(18px);
+    text-align: center !important;
+    font-size: rem-size(11px) !important;
+    content: "" !important;
+    position: absolute !important;
+    border-radius: 2px !important;
+    top: rem-size(2px) !important;
+    left: 0 !important;
+    border: 1px solid $color-06 !important;
+    color: $color-unily-pink !important;
+    width: rem-size(18px) !important;
+    height: rem-size(18px) !important;
+    line-height: rem-size(18px) !important;
 }
 
 .hs-form-checkbox input[type="checkbox"] {
-  opacity: 0;
-  position: absolute;
+    opacity: 0 !important;
+    position: absolute !important;
 }
 
 .hs-form-checkbox input[type="checkbox"]:checked + span:before {
-  border-color: $color-unily-light-blue;
-  background: url(#{$cdn-url}media/cubcwicu/checkmark-blue.svg) no-repeat center center;
-  background-size: rem-size(12px 12px);
+    border-color: $color-unily-light-blue !important;
+    background: url(#{$cdn-url}media/cubcwicu/checkmark-blue.svg) no-repeat center center !important;
+    background-size: rem-size(12px 12px) !important;
 }
 
 .hs-form-checkbox input[type="checkbox"][disabled] + span {
-  cursor: not-allowed;
-  opacity: 0.8;
+    cursor: not-allowed !important;
+    opacity: 0.8 !important;
 }
 
 .hs-form-radio label span {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  padding-left: rem-size(28px);
-  font-size: rem-size(16px);
+    cursor: pointer !important;
+    position: relative !important;
+    display: block !important;
+    padding-left: rem-size(28px) !important;
+    font-size: rem-size(16px) !important;
 }
 
 .hs-form-radio label span:before {
-  text-align: center;
-  font-size: rem-size(11px);
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  top: 2px;
-  left: 0;
-  border: 1px solid #c8c8c8;
-  color: $color-unily-pink;
-  width: rem-size(18px);
-  height: rem-size(18px);
-  line-height: rem-size(18px);
+    text-align: center !important;
+    font-size: rem-size(11px) !important;
+    content: "" !important;
+    position: absolute !important;
+    border-radius: 50% !important;
+    top: 2px !important;
+    left: 0 !important;
+    border: 1px solid #c8c8c8 !important;
+    color: $color-unily-pink !important;
+    width: rem-size(18px) !important;
+    height: rem-size(18px) !important;
+    line-height: rem-size(18px) !important;
 }
 
 .hs-form-radio input[type="radio"] {
-  opacity: 0;
-  position: absolute;
+    opacity: 0 !important;
+    position: absolute !important;
 }
 
 .hs-form-radio input[type="radio"]:checked + span:before {
-  border: 4px solid $color-unily-light-blue;
+    border: 4px solid $color-unily-light-blue !important;
 }
 
 .hs-form-radio input[type="radio"][disabled] + span {
-  cursor: not-allowed;
-  opacity: 0.8;
+    cursor: not-allowed !important;
+    opacity: 0.8 !important;
 }
 
 .inputs-list {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-  overflow: hidden;
-
-  .hs-input {
-    width: 0;
-  }
-
-  li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
     overflow: hidden;
-  }
+
+    .hs-input {
+        width: 0 !important;
+    }
+
+    li {
+        overflow: hidden;
+    }
 }
 
 select.hs-input {
-  color: #999;
+    color: #999 !important;
 }
 select.hs-input:focus {
-  color: $color-unily-light-blue;
+    color: $color-unily-light-blue !important;
 }
 
 .hs-main-font-element {
-  color: $color-unily-black !important;
-  margin-bottom: 1.25rem;
+    color: $color-unily-black !important;
+    margin-bottom: 1.25rem !important;
 }
 
 .hs-fieldtype-select .input {
-  overflow: hidden;
-  margin: 0;
-  position: relative;
-  background: url(#{$cdn-url}media/w5xe2k00/arrow-down-gray.svg) no-repeat;
-  background-size: rem-size(20px 20px);
-  background-position: right 15px center;
+    overflow: hidden !important;
+    margin: 0 !important;
+    position: relative !important;
+    background: url(#{$cdn-url}media/w5xe2k00/arrow-down-gray.svg) no-repeat !important;
+    background-size: rem-size(20px 20px) !important;
+    background-position: right 15px center !important;
 
-  select {
-    -webkit-appearance: none;
-    appearance: none;
-    background: transparent;
-    color: $color-unily-light-blue; //$color-unily-black;
+    select {
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        background: transparent !important;
+        color: $color-unily-light-blue !important; //$color-unily-black;
 
-    &::placeholder {
-      color: $color-08; //$color-07; //$color-unily-grey-3;
+        &::placeholder {
+            color: $color-08 !important; //$color-07; //$color-unily-grey-3;
+        }
+
+        &.is-placeholder {
+            color: $color-08 !important; //$color-07; //$color-unily-grey-3;
+        }
+
+        &:invalid {
+            color: $color-08 !important; //$color-unily-grey-3;
+        }
+
+        &:focus {
+            border-color: $color-unily-light-blue !important;
+            color: $color-unily-light-blue !important;
+            outline: none !important;
+        }
     }
-
-    &.is-placeholder {
-      color: $color-08; //$color-07; //$color-unily-grey-3;
-    }
-
-    &:invalid {
-      color: $color-08; //$color-unily-grey-3;
-    }
-
-    &:focus {
-      border-color: $color-unily-light-blue;
-      color: $color-unily-light-blue;
-      outline: none;
-    }
-  }
 }
 
 .hs-button:focus {
-  outline: none;
+    outline: none !important;
 }
 
 .bg-06 .hs-richtext a {
@@ -284,73 +284,75 @@ select.hs-input:focus {
 
 .hs-fieldtype-radio > label,
 .hs-fieldtype-checkbox > label {
-  display: block !important;
-  font-size: rem-size(16px);
-  font-weight: bold;
-  margin-bottom: rem-size(6px);
+    display: block !important;
+    font-size: rem-size(16px) !important;
+    font-weight: bold !important;
+    margin-bottom: rem-size(6px) !important;
 }
 
 .hs-form-field {
-  > label {
-    display: none;
-  }
+    > label {
+        display: none; // Do not set as !important - hides radio button labels
+    }
 }
 
 .hs-form-field {
-  margin-bottom: rem-size(20px);
+    margin-bottom: rem-size(20px) !important;
 }
 
 .hs-input {
-  border: 1px solid $color-02;
-  margin: 0;
-  width: 100%;
-  font-size: rem-size(18px);
-  padding: rem-size(12px 15px);
-  border-radius: 2px;
-  color: $color-unily-light-blue; //$color-unily-black; //$color-unily-light-blue; //
+    border: 1px solid $color-02 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    font-size: rem-size(18px) !important;
+    padding: rem-size(12px 15px) !important;
+    border-radius: 2px !important;
+    color: $color-unily-light-blue !important; //$color-unily-black; //$color-unily-light-blue; //
 
-  &::placeholder {
-    color: $color-08; //$color-07; //$color-unily-grey-3;
-  }
+    &::placeholder {
+        color: $color-08 !important; //$color-07; //$color-unily-grey-3;
+    }
 
-  &:focus {
-    border-color: $color-unily-light-blue;
-    color: $color-unily-light-blue;
-    outline: none;
-    box-shadow: inset 0 0 0 1px $color-unily-light-blue;
-  }
+    &:focus {
+        border-color: $color-unily-light-blue !important;
+        color: $color-unily-light-blue !important;
+        outline: none !important;
+        box-shadow: inset 0 0 0 1px $color-unily-light-blue !important;
+    }
 }
 
 textarea.hs-input {
-  height: rem-size(92px); //rem-size(120px);
+    height: rem-size(92px) !important; //rem-size(120px);
 }
 
 .hs-button {
-  border-radius: rem-size(2px);
-  padding: rem-size(9px 15px);
-  display: inline-block;
-  white-space: nowrap;
-  text-transform: uppercase;
-  font-family: $font-alt;
-  font-weight: bold;
-  font-size: rem-size(18px);
-  border: 0;
-  margin: 0;
-  line-height: 1.35;
-  cursor: pointer;
-  text-align: center;
-  padding-top: rem-size(11px);
-  padding-bottom: rem-size(11px);
-  display: block;
-  background: $color-unily-light-blue;
-  color: $color-white;
-  white-space: normal;
-  width: 100%;
+    border-radius: rem-size(2px) !important;
+    padding: rem-size(9px 15px) !important;
+    display: inline-block !important;
+    white-space: nowrap !important;
+    text-transform: uppercase !important;
+    font-family: $font-alt !important;
+    font-weight: bold !important;
+    font-size: rem-size(18px) !important;
+    border: 0 !important;
+    margin: 0 !important;
+    line-height: 1.35 !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    padding-top: rem-size(11px) !important;
+    padding-bottom: rem-size(11px) !important;
+    display: block !important;
+    background: $color-unily-light-blue !important;
+    color: $color-white !important;
+    white-space: normal !important;
+    width: 100% !important;
 
-  &:hover {
-    background: darken($color-unily-light-blue, 10%);
-  }
+    &:hover {
+        background: darken($color-unily-light-blue, 10%) !important;
+    }
 }
+
+/* TODO - test and remove repreated anchor styles below, "[data-hs] a" may cover all */
 
 .hs-richtext {
   font-size: rem-size(16px) !important;
@@ -371,7 +373,19 @@ textarea.hs-input {
   }
 }
 
+[data-hs] a {
+    color: $color-unily-light-blue !important;
+    background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue) !important;
+    background-position: 0% 100% !important;
+    background-repeat: no-repeat !important;
+    background-size: 0% 2px !important;
+    transition: background-size 0.3s !important;
+    padding-bottom: 2px !important;
 
+    &:hover {
+        background-size: 100% 2px !important;
+    }
+}
 
 .hs-form-sub-text a {
   color: $color-unily-light-blue !important;
@@ -392,25 +406,26 @@ textarea.hs-input {
 }
 
 .hs-error-msgs {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: rem-size(16px);
-  margin-top: rem-size(5px);
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: rem-size(16px) !important;
+    margin-top: rem-size(5px) !important;
+    text-align: left !important;
 }
 
 .hs-error-msg {
-    color: #F00;
+    color: #F00 !important;
 
     &::before {
-        display: inline-block;
-        background: url(#{$cdn-url}media/liapgnmf/warning-triangle-red.svg) no-repeat;
-        height: 14px;
-        width: 14px;
-        content: '';
-        margin-right: 5px;
-        position: relative;
-        top: 1px;
+        display: inline-block !important;
+        background: url(#{$cdn-url}media/liapgnmf/warning-triangle-red.svg) no-repeat !important;
+        height: 14px !important;
+        width: 14px !important;
+        content: '' !important;
+        margin-right: 5px !important;
+        position: relative !important;
+        top: 1px !important;
     }
 }
 
@@ -435,4 +450,8 @@ textarea.hs-input {
             background-size: 100% 2px;
         }
     }
+}
+
+.hs_recaptcha {
+    display: none !important;
 }

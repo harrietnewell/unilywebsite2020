@@ -29,6 +29,11 @@
   text-align: left;
   margin: auto 0;
 }
+@media (max-width: 767px) {
+  .c-lightbox .c-lightbox__content {
+    padding: 1.875rem;
+  }
+}
 .c-lightbox .c-lightbox__content p {
   margin-left: unset !important;
   margin-right: unset !important;

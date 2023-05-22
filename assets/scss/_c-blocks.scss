@@ -139,6 +139,11 @@
   padding-right: rem-size(20px);
 
   @media (min-width: $breakpoint-md) {
+        padding-left: rem-size(40px);
+        padding-right: rem-size(40px);
+    }
+
+  @media (min-width: $breakpoint-md) {
     margin-top: 0;
     margin-bottom: 0;
   }

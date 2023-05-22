@@ -29,8 +29,12 @@
     }
   }
 
-  @media (min-width: $breakpoint-md) {
-    .c-form--subscribe {
+  
+  .c-form--subscribe {
+
+    text-align:left !important;
+
+    @media (min-width: $breakpoint-md) {
       margin-top: rem-size(32px);
     }
   }

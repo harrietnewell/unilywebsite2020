@@ -22,7 +22,7 @@
     }
     .dropdown-menu > li.twolevel
     {
-       padding: 7px 2rem 7px 0;
+        padding: 7px 2rem 7px 0;
         margin: 0 0 0 2rem;
         width: auto;
     }
@@ -43,7 +43,7 @@
     }
 
     .dropdown-menu.thirdlevel > li {
-        padding:5.7px 0;
+        padding:3px 0;
     }
 
     .dropdown-menu > li > a span.border,
@@ -54,7 +54,7 @@
         background-size: 0% 3px;
         padding: 0.25rem 0;
         transition: background .3s;
-        line-height: 1;
+        line-height: 21.33px !important;
     }
 
     .dropdown-menu > li:hover > a span.border,
@@ -194,11 +194,11 @@
         width: auto;
         min-width: 225px;
         list-style: none;
-        padding: 8px 0;
+        padding: 7px 0;
         margin: 0;
 
         a.twolevel-item span.border {
-            line-height: 24px !important;
+            line-height: 21.33px !important;
             white-space: break-spaces;
         }
     }

@@ -121,8 +121,8 @@
   left: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.36) 0%, transparent 100%);
 }
-.d-cards .d-cards-list .d-single-card--bg-img-zt:before {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.36) 0%, transparent 0%);
+.d-cards .d-cards-list .d-single-card--bg-img.reverse-gradient:before {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.36) 0%, transparent 100%) !important;
 }
 @media (max-width: 991px) {
   .d-cards .d-cards-list .d-single-card {

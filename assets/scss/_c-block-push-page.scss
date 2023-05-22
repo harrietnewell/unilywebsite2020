@@ -40,6 +40,10 @@
   &__info {
     align-self: flex-start;
     margin-top: 1rem;
+
+    @media (min-width: $breakpoint-md) and (max-width: 1099px) {
+        max-width: 50%;    
+    }
   }
 
   &__form {
@@ -52,7 +56,11 @@
     position: relative;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     text-align: left;
-    margin: auto 0;
+    margin: auto;
+
+    @media (max-width: $breakpoint-md-down) {
+        padding: rem-size(30px) rem-size(30px);
+    }
 
     .legal-consent-container, .hs-error-msgs {
         text-align: left;

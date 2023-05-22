@@ -26,6 +26,9 @@
     max-width: rem-size(520px);
     width: 100%;
     padding: rem-size(40px);
+    @media (max-width: $breakpoint-md-down) {
+        padding: rem-size(30px);
+    }
     color: $color-unily-black;
     position: relative;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
