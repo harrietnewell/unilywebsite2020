@@ -377,7 +377,7 @@
   .text-md-right {
     text-align: right !important;
   }
-
+  
   .d-md-none {
     display: none !important;
   }
@@ -545,7 +545,7 @@
   font-size: 0.9375rem;
 
   .c-foot-nav__col {
-    //flex: 0 0 auto;
+    flex: 0 0 auto;
 
     .c-foot__nav {
       li {
@@ -738,6 +738,10 @@
     img {
       display: none;
     }
+
+    .copyright {
+      display: none;
+    }
   }
 }
 
@@ -899,14 +903,20 @@ li {
 
 /* Solution/Feature Page Breadcrumb */
 .container-breadcrumb {
-  padding: 60px 20px 0px 20px;
-  max-width: calc(#{$site-medium-width} + 40px);
-  width: 100%;
-  margin: 0 auto -30px auto; // TODO - Negative top margin is temp fix for use on solution feature pages where content blocks have top margin of 30px
+    padding: 60px 20px 0px 20px;
+    max-width: calc(#{$site-medium-width} + 40px);
 
-  @media (max-width: 767px) {
-    padding-top: 25px;
-  }
+    @media (min-width: $breakpoint-md) {
+        padding: 60px 40px 0px 40px;
+        max-width: calc(#{$site-medium-width} + 80px);
+    }
+
+    width: 100%;
+    margin: 0 auto -30px auto; // TODO - Negative top margin is temp fix for use on solution feature pages where content blocks have top margin of 30px
+
+    @media (max-width: 767px) {
+        padding-top: 25px;
+    }
 }
 
 // snippet title styles
@@ -933,7 +943,7 @@ li {
 // no-scroll
 .no-scroll {
   overflow: hidden;
-  position: fixed;
+  position: relative;
   width: 100%;
   max-width: 100%;
 }
@@ -1059,7 +1069,7 @@ a {
 // Content Block Styles
 .c-content-block {
     p {
-        a {
+        a {  
             color: #1c1c1b; // TODO - parameterise
         }
     }
@@ -1076,6 +1086,104 @@ a {
         .c-content__content {
             flex: 1 0 0 !important;
             padding-left: 20px !important;
+        }
+    }
+}
+
+// ROI Calculator
+.container-roi {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: -120px;
+
+    @media (min-width: $breakpoint-md) {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    @media (max-width: $breakpoint-md-down) {
+        margin-top: -60px;
+    }
+}
+
+iframe#roi-calculator {
+    width: 1px;
+    min-width: 100%;
+}
+
+// Custom Footer
+.c-foot-custom {
+    padding: 40px 0px !important;
+
+    .c-foot-custom-logo {
+        max-width: none !important;
+
+        &-link {
+            display: block !important;
+            margin-bottom: 10px !important;
+        }
+    }
+
+    .c-foot__row {
+        margin-bottom: 0 !important;
+    }
+
+    .c-foot__nav {
+        margin-bottom: 0 !important;
+    }
+
+    .c-foot__nav li:last-of-type {
+        margin-bottom: 0 !important;
+    }
+
+    .copyright {
+        text-align: left !important;
+    }
+
+    .c-foot-nav__row {
+        flex-wrap: wrap !important;
+
+        .c-foot-nav__col {
+            margin-bottom: 0px !important;
+            width: 100% !important;
+
+            @media (min-width: $breakpoint-md) {
+                width: 50% !important;
+            }
+
+            &.column-logo {
+                width: 100% !important;
+            }
+
+            &:nth-of-type(3) {
+                margin-top: 15px !important;
+
+                @media (min-width: $breakpoint-md) {
+                    text-align: right !important;
+                    margin-top: 0px !important;
+                }
+            }
+        }
+    }
+}
+
+/* TODO - Move this to separate scss/css file */
+.c-block-columns--content-call-out-grid {
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+
+    .c-block-columns__col {
+        margin-bottom: 10px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+        .c-articles__item {
+            width: 100% !important;
+            margin-bottom: 0px !important;
+
+            a:hover {
+                background-size: 0 !important;
+            }
         }
     }
 }

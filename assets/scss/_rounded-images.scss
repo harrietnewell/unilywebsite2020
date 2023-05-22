@@ -4,7 +4,8 @@
 .c-content__content .c-widget__media .img-full,
 .c-content__content .c-widget__media .c-embed--video,
 .c-content__content .c-widget__media .c-embed--video iframe,
-.c-articles__media .c-embed--video iframe {
+.c-articles__media .c-embed--video iframe,
+.img-rounded {
   overflow: hidden;
   border-radius: rem-size(12px);
 }

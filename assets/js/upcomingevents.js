@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-var unilyWhereNext = {
+var unilyUpcomingEvents = {
 
     init: function init(element) {
 
@@ -13,7 +13,7 @@ var unilyWhereNext = {
         var scrollElement = simplebar.getScrollElement();
         var scrollWidth = $(scrollElement)[0].scrollWidth;
         var scrollEndThreshold = 200;
-        var itemsParent = carouselWrap.find("li.c-articles__item").parent();
+        var itemsParent = carouselWrap.find("li.w-upcoming-events-item").parent();
 
         var isLoading = false;
         var isEndOfData = false;
@@ -25,13 +25,8 @@ var unilyWhereNext = {
                 isLoading = true;
 
                 $.ajax({
-                    method: 'POST',
-                    url: '/umbraco/api/insights/GetWhereNextContent',
-                    data: {
-                        nodeId: nodeId,
-                        page: page,
-                        currentCulture: currentCulture
-                    },
+                    method: 'GET',
+                    url: '/umbraco/api/events/GetUpcomingEventsContent?nodeId=' + nodeId + '&page=' + page + '&currentCulture=' + currentCulture,
                     success: function success(data) {
                         if (data) {
                             itemsParent.append($($(data)));

@@ -55,7 +55,6 @@
 
   &__item {
     @media (min-width: $breakpoint-md) {
-      max-width: rem-size(330px);
       margin-left: auto;
       margin-right: auto;
     }
@@ -140,7 +139,10 @@
     .c-block-columns__item {
         display: flex;
         flex-flow: column;
-        height: 100%;
+
+        @media (min-width: $breakpoint-md) {
+            height: 100%;
+        }
 
         > *:first-child {
             flex: 1;

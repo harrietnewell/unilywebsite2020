@@ -9,7 +9,6 @@ var unilyApp = {
         $('.js-nav-toggle').on('click', function () {
             handleNavToggle();
         });
-
         function handleNavToggle() {
             if ($('.c-head__navigation').hasClass('active')) {
                 $('.c-head__navigation').removeClass('active');
@@ -18,13 +17,14 @@ var unilyApp = {
                 if ($('.c-nav__subnav').hasClass('active')) {
                     $('.c-nav__subnav').removeClass('active');
                 }
+
+                $('body').removeAttr('style'); // Important - done to override any modifications a 3rd party script may have made (lightbox related)
             } else {
                 $('.c-head__navigation').addClass('active');
                 $('body').addClass('nav-active');
             }
             return false;
         }
-
         // Mobile Secondary Navigation
 
         $(window).resize(function () {
@@ -87,7 +87,6 @@ var unilyApp = {
                 addTransparency();
             });
         }
-
         function addTransparency() {
             if ($(document).scrollTop() > 100) {
                 $('.c-head').addClass('scrolling');
@@ -96,6 +95,7 @@ var unilyApp = {
             }
         }
 
+        // TODO - Condense all instances of SimpleBar into one
         // Custom Scrollbars (Using SimpleBar)
         if ($('[data-scroll]').length) {
             new SimpleBar($('[data-scroll]')[0]);
@@ -105,11 +105,15 @@ var unilyApp = {
             new SimpleBar($('.c-testimonials__wrap')[0]);
         }
 
-        if ($('.c-table--scrollable').length) {
-            new SimpleBar($('.c-table--scrollable')[0]);
+        var scollableTables = $('.c-table--scrollable');
+        if (scollableTables.length) {
+            scollableTables.each(function (idx) {
+                new SimpleBar(scollableTables[idx]);
+            });
+            
         }
 
-
+        
         /** New scroll **/
         // TODO - Combine this with code in pillarpagenav.js, repetetive
         if ($('.scroll-to-section').length) {
@@ -117,7 +121,7 @@ var unilyApp = {
             $('.scroll-to-section li.js-nav-link a').on('click', function (e) {
 
                 handleNavToggle();
-
+                
                 const $target = $($(this).attr('href'));
 
                 if ($target.length > 0) { // item with that id exists
@@ -126,7 +130,7 @@ var unilyApp = {
                         scrollTop: $target.offset().top - 50 // Scroll to this location.
                     }, {
                         duration: 400,
-                        step: function (now, fx) {
+                            step: function (now, fx) {
 
                             //  location will change as images etc. are lazy loaded
                             //  Where is the target now located on the page?
@@ -187,18 +191,23 @@ var unilyApp = {
         // Footer nav wrap
 
         $(window).on('resize', function () {
-            var wrapElementIds = new Set($('[data-wrap-unwrap]').map(function (idx, el) {
-                return $(el).attr('data-wrap-unwrap');
-            }));
+
+            var wrapElementIds = new Set($('[data-wrap-unwrap]').map(function (idx, el) { return $(el).attr('data-wrap-unwrap'); }));
+
             if ($(window).width() > 767) {
+
                 wrapElementIds.forEach(function (idx, id) {
+
                     var wrapElements = $('[data-wrap-unwrap="' + id + '"]');
+
                     if (!wrapElements.parent().hasClass('wrap-unwrap'))
-                        wrapElements.wrapAll("<div class='wrap-unwrap' />");
-                });
-            } else {
+                        wrapElements.wrapAll("<div class='wrap-unwrap' />");    
+                });    
+            }
+            else {
                 $('.wrap-unwrap').contents().unwrap();
             }
+
         }).resize();
 
     }
@@ -206,7 +215,7 @@ var unilyApp = {
 
 unilyApp.init();
 
-// NOTE - This script is used in the template https://harrietnewell.github.io/unilywebsite2020/card-design.html,
+// NOTE - This script is used in the template https://harrietnewell.github.io/unilywebsite2020/card-design.html, 
 // which is not used in the live site as of yet (16/05/2021)
 // Display svg when document is loaded (e.g. svg after font is loaded)
 //document.fonts.ready.then(function() {

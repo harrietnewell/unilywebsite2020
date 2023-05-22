@@ -36,7 +36,7 @@
             flex: 0 1 50%;
         }
 
-        @media (min-width: 1754px) {
+        @media (min-width: 1800px) {
             flex: 0 1 25%;
         }
     }
@@ -188,6 +188,11 @@
         margin-bottom: 0;
         padding-left: rem-size(10px);
         padding-right: rem-size(10px);
+
+        @media (min-width: $breakpoint-md) {
+            padding-left: rem-size(30px);
+            padding-right: rem-size(30px);
+        }
 
         &:after {
             content: "";

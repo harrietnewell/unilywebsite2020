@@ -12,6 +12,7 @@ var unilyHsFormLightbox = {
     trackBySessionAttr: "data-hs-lightbox-track-by-session",
     closeOnSubmissionAttr: "data-hs-lightbox-close-on-submission",
     hsFormLightboxIdAttr: "data-hs-form-lightbox-id",
+    hsFormLightboxAutoOpenSelector: "[data-hs-lightbox-is-auto-open='true']",
     hsFormIdAttr: "data-hs-form-id",
     hsFormVideoSelector: "data-hs-form-video",
     
@@ -36,6 +37,16 @@ var unilyHsFormLightbox = {
                 unilyHsFormLightbox.close(hsLightboxId);
             }
         });
+
+        unilyHsFormLightbox.autoOpen();
+    },
+
+    autoOpen: function () {
+        var autoOpenLightbox = $(unilyHsFormLightbox.hsFormLightboxAutoOpenSelector);
+        if (autoOpenLightbox.length) {
+            var lightboxId = $(autoOpenLightbox).attr(unilyHsFormLightbox.openAttr);
+            unilyHsFormLightbox.open(lightboxId);
+        }
     },
 
     open: function open(hsLightboxId) {
