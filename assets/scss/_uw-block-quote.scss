@@ -1,11 +1,11 @@
-.uw-content {
+.uw-block-quote {
   @media (min-width: 768px) {
     display: flex;
     margin: 0 -0.625rem;
     flex-wrap: nowrap;
   }
 
-  .uw-content-content {
+  .uw-block-quote-content {
     @media (min-width: 768px) {
       flex: 0 0 80%;
       padding-left: 0.625rem;
@@ -19,7 +19,7 @@
       margin-left: 0;
       padding-left: 1.25rem;
 
-      &.uw-content-content-blockquote-alt {
+      &.uw-block-quote-content-blockquote-alt {
         border-left: none;
         padding-left: 0;
 
