@@ -13426,7 +13426,7 @@
         .gq-cards-wrapper .gq-cards-item .gq-cards-item-title {
           font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
           text-transform: uppercase;
-          font-size: 27px;
+          font-size: 28px;
           margin-bottom: 20px;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
@@ -13464,6 +13464,7 @@
           display: none;
         }
         .gq-cards-wrapper .gq-cards-item .gq-cards-item-list li .gq-cards-item-list-item-title {
+          font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
           display: flex;
           align-items: center;
           cursor: pointer;
@@ -14089,7 +14090,7 @@
               </li>
             </ul>
             <div class="gq-cards-item-button">
-              <button type="button">Get quote</button>
+              <button type="button" class="js-gq-cards-item-button-trigger">Get quote</button>
             </div>
           </div>
           <div class="gq-cards-item blue">
@@ -14301,7 +14302,7 @@
               </li>
             </ul>
             <div class="gq-cards-item-button">
-              <button type="button">Get quote</button>
+              <button type="button" class="js-gq-cards-item-button-trigger">Get quote</button>
             </div>
           </div>
           <div class="gq-cards-item green">
@@ -14421,7 +14422,7 @@
               </li>
             </ul>
             <div class="gq-cards-item-button">
-              <button type="button">Get quote</button>
+              <button type="button" class="js-gq-cards-item-button-trigger">Get quote</button>
             </div>
           </div>
           <div class="gq-cards-item purple">
@@ -14515,7 +14516,7 @@
               </li>
             </ul>
             <div class="gq-cards-item-button">
-              <button type="button">Get quote</button>
+              <button type="button" class="js-gq-cards-item-button-trigger">Get quote</button>
             </div>
           </div>
         </div>
@@ -14751,6 +14752,7 @@
 
     <script>
       $(document).ready(function () {
+        // Toggle dropdown item
         $(document).on('click', '.js-gq-cards-list-item-selector', function (){
           if (!($(this).siblings('.children:visible').length > 0)) {
             $('.children:visible').slideToggle('fast');
@@ -14759,6 +14761,13 @@
           $(this).toggleClass('active');
           $(this).siblings('.children').slideToggle('fast');
           console.log('click', $(this).siblings('.children'));
+        });
+
+        // Handle Get quote button click
+        $(document).on('click', '.js-gq-cards-item-button-trigger', function (){
+          $([document.documentElement, document.body]).animate({
+            scrollTop: $("#form-5288eb2b-e1b2-474a-8ff6-74406622e7e9").closest('.container').offset().top - 25
+          }, 1000);
         });
       });
     </script>
