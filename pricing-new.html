@@ -13127,12 +13127,17 @@
       </section>
 
       <style>
-        .gq-cards-wrapper {
+        .gq-cards-wrapper-divider {
+          margin-bottom: 21px;
+        }
+        .gq-cards-wrapper,
+        .gq-cards-item-columns {
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
         }
-        .gq-cards-wrapper .gq-cards-item {
+        .gq-cards-wrapper .gq-cards-item,
+        .gq-cards-item-columns .gq-cards-item-column {
           width: calc(25% - 16px);
           background-color: #f5f5f5;
           border-radius: 20px;
@@ -13157,6 +13162,16 @@
             margin-bottom: 32px;
           }
         }
+        .gq-cards-item-columns .gq-cards-item-column {
+          padding: 0;
+        }
+        .gq-cards-wrapper .gq-cards-item.gq-cards-item-fullwidth {
+          width: 100%;
+        }
+        .gq-cards-wrapper .gq-cards-item.gq-cards-item-fullwidth .gq-cards-item-description {
+          min-height: 0;
+        }
+
         .gq-cards-wrapper .gq-cards-item .gq-cards-item-dots {
           display: flex;
           align-items: center;
@@ -13239,6 +13254,12 @@
         }
         .gq-cards-wrapper .gq-cards-item .gq-cards-item-list li li {
           padding-left: 10px;
+        }
+        .gq-cards-wrapper .gq-cards-item .gq-cards-item-column > .gq-cards-item-list > li > .gq-cards-item-list-item-title h6 {
+          margin-left: 0;
+        }
+        .gq-cards-wrapper .gq-cards-item-column .gq-cards-item-list li li {
+          padding-left: 0;
         }
         .gq-cards-wrapper .gq-cards-item .gq-cards-item-list li .children {
           display: none;
@@ -14297,6 +14318,200 @@
                 </div>
               </li>
             </ul>
+            <div class="gq-cards-item-button">
+              <button type="button" class="js-gq-cards-item-button-trigger">Get quote</button>
+            </div>
+          </div>
+        </div>
+        <div class="gq-cards-wrapper-divider"></div>
+        <div class="gq-cards-wrapper">
+          <div class="gq-cards-item gq-cards-item-fullwidth">
+            <div class="gq-cards-item-dots">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <h4 class="gq-cards-item-title">All Modules</h4>
+            <p class="gq-cards-item-description">Customer community designed to drive maximum user adoption and business value.</p>
+            <div class="gq-cards-item-columns">
+              <div class="gq-cards-item-column">
+                <ul class="gq-cards-item-list">
+                  <li>
+                    <div class="gq-cards-item-list-item-title cursor-pointer">
+                      <h6>Communications</h6>
+                    </div>
+                    <ul class="gq-cards-item-list">
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>User Data Sync</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Multiple IDP Connectors</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>WCAG 2.1 AA Accessibility</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Microservices</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Unily Graph</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Analytics</h6>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="gq-cards-item-column">
+                <ul class="gq-cards-item-list">
+                  <li>
+                    <div class="gq-cards-item-list-item-title cursor-pointer">
+                      <h6>Security</h6>
+                    </div>
+                    <ul class="gq-cards-item-list">
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>GDPR Compliant</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Data Encryption</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Penetration Tested and Certified</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>MicroservicesIntrusion Detection System</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Continuous Backups</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Data Domicile Options</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>IP Allow Listing</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Geo Blocking\Allowing</h6>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="gq-cards-item-column">
+                <ul class="gq-cards-item-list">
+                  <li>
+                    <div class="gq-cards-item-list-item-title cursor-pointer">
+                      <h6>Services</h6>
+                    </div>
+                    <ul class="gq-cards-item-list">
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Onboarding</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Customer Success</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Support</h6>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="gq-cards-item-column">
+                <ul class="gq-cards-item-list">
+                  <li>
+                    <div class="gq-cards-item-list-item-title cursor-pointer">
+                      <h6>Universe</h6>
+                    </div>
+                    <ul class="gq-cards-item-list">
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Training and Guides</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Community Events</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Exclusive Thought Leadership</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Customer Social Communities</h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="gq-cards-item-list-item-title">
+                          <img src="assets/img/check4.svg" alt="" />
+                          <h6>Platform Ideation</h6>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <div class="gq-cards-item-button">
               <button type="button" class="js-gq-cards-item-button-trigger">Get quote</button>
             </div>
