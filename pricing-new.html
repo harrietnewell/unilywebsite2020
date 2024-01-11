@@ -13121,7 +13121,7 @@
           </div>
 
         </div>
-        <div class="c-block-full__media" style="background-image: url('https://www.unily.com//media/gdqfeb1a/employee-experience-platform-mobile.jpg?mode=crop&amp;width=2000');">
+        <div class="c-block-full__media" style="background-image: url('assets/img/get-quote.jpg');">
           &nbsp;
         </div>
       </section>
@@ -13145,6 +13145,23 @@
           display: flex;
           flex-direction: column;
         }
+        @media (min-width: 900px) {
+          .gq-cards-item-columns {
+            flex-wrap: nowrap;
+          }
+          .gq-cards-item-columns .gq-cards-item-column {
+            width: auto;
+            padding: 0 10px;
+          }
+          .gq-cards-item-columns .gq-cards-item-column:first-child {
+            padding-right: 10px;
+            padding-left: 0;
+          }
+          .gq-cards-item-columns .gq-cards-item-column:last-child {
+            padding-right: 0;
+            padding-left: 10px;
+          }
+        }
         @media (max-width: 1024px) {
           .gq-cards-wrapper .gq-cards-item {
             width: calc(50% - 16px);
@@ -13154,6 +13171,17 @@
             margin-bottom: 32px;
           }
         }
+        @media (max-width: 899px) {
+          .gq-cards-item-columns .gq-cards-item-column {
+            width: calc(50% - 16px);
+            padding: 0;
+          }
+        }
+        @media (max-width: 599px) {
+          .gq-cards-item-columns .gq-cards-item-column {
+            width: 100%;
+          }
+        }
         @media (max-width: 499px) {
           .gq-cards-wrapper .gq-cards-item {
             width: 100%;
@@ -13161,9 +13189,6 @@
           .gq-cards-wrapper .gq-cards-item:nth-child(3) {
             margin-bottom: 32px;
           }
-        }
-        .gq-cards-item-columns .gq-cards-item-column {
-          padding: 0;
         }
         .gq-cards-wrapper .gq-cards-item.gq-cards-item-fullwidth {
           width: 100%;
@@ -13257,6 +13282,7 @@
         }
         .gq-cards-wrapper .gq-cards-item .gq-cards-item-column > .gq-cards-item-list > li > .gq-cards-item-list-item-title h6 {
           margin-left: 0;
+          font-size: 18px;
         }
         .gq-cards-wrapper .gq-cards-item-column .gq-cards-item-list li li {
           padding-left: 0;
@@ -13299,6 +13325,15 @@
           width: 20px;
           height: 20px;
         }
+        .gq-cards-wrapper .gq-cards-item .gq-cards-item-list li .gq-cards-item-list-item-title.img-title > img {
+          width: 100px;
+          height: 20px;
+          object-fit: contain;
+          object-position: left;
+        }
+        .gq-cards-wrapper .gq-cards-item .gq-cards-item-list li .gq-cards-item-list-item-title.img-title.custom-1 > img {
+          transform: translateY(-4px);
+        }
         .gq-cards-wrapper .gq-cards-item .gq-cards-item-list li .gq-cards-item-list-item-title h6 {
           font-size: 16px;
           margin-bottom: 0;
@@ -13339,7 +13374,7 @@
               <span></span>
             </div>
             <h4 class="gq-cards-item-title">REACH</h4>
-            <p class="gq-cards-item-description">A trusted platform that serves as the home of the digital employee experience.</p>
+            <p class="gq-cards-item-description">The trusted home of the digital employee experience.</p>
             <ul class="gq-cards-item-list">
               <li>
                 <div class="gq-cards-item-list-item-title cursor-pointer js-gq-cards-list-item-selector">
@@ -13904,7 +13939,7 @@
               <span></span>
             </div>
             <h4 class="gq-cards-item-title">ENGAGE</h4>
-            <p class="gq-cards-item-description">The tools to elevate your people from passive visitors to actively engaged.</p>
+            <p class="gq-cards-item-description">Elevate your people from passive visitors to actively engaged employees.</p>
             <ul class="gq-cards-item-list">
               <li>
                 <div class="gq-cards-item-list-item-title cursor-pointer js-gq-cards-list-item-selector">
@@ -14116,7 +14151,7 @@
               <span></span>
             </div>
             <h4 class="gq-cards-item-title">AMPLIFY</h4>
-            <p class="gq-cards-item-description">Personalization and automation to amplify engagement at scale.</p>
+            <p class="gq-cards-item-description">Powerful automation and intelligence to amplify engagement at scale.</p>
             <ul class="gq-cards-item-list">
               <li>
                 <div class="gq-cards-item-list-item-title cursor-pointer js-gq-cards-list-item-selector">
@@ -14236,7 +14271,7 @@
               <span class="active"></span>
             </div>
             <h4 class="gq-cards-item-title">EXTEND</h4>
-            <p class="gq-cards-item-description">A framework that enables you to deliver completely unique experiences.</p>
+            <p class="gq-cards-item-description">Shape your platform to meet every unique business need.</p>
             <ul class="gq-cards-item-list">
               <li>
                 <div class="gq-cards-item-list-item-title cursor-pointer js-gq-cards-list-item-selector">
@@ -14326,12 +14361,12 @@
         <div class="gq-cards-wrapper-divider"></div>
         <div class="gq-cards-wrapper">
           <div class="gq-cards-item gq-cards-item-fullwidth">
-            <div class="gq-cards-item-dots">
-              <span class="active"></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+<!--            <div class="gq-cards-item-dots">-->
+<!--              <span class="active"></span>-->
+<!--              <span></span>-->
+<!--              <span></span>-->
+<!--              <span></span>-->
+<!--            </div>-->
             <h4 class="gq-cards-item-title">All Modules</h4>
             <p class="gq-cards-item-description">Customer community designed to drive maximum user adoption and business value.</p>
             <div class="gq-cards-item-columns">
@@ -14339,7 +14374,7 @@
                 <ul class="gq-cards-item-list">
                   <li>
                     <div class="gq-cards-item-list-item-title cursor-pointer">
-                      <h6>Communications</h6>
+                      <h6>Platform</h6>
                     </div>
                     <ul class="gq-cards-item-list">
                       <li>
@@ -14473,8 +14508,9 @@
               <div class="gq-cards-item-column">
                 <ul class="gq-cards-item-list">
                   <li>
-                    <div class="gq-cards-item-list-item-title cursor-pointer">
-                      <h6>Universe</h6>
+                    <div class="gq-cards-item-list-item-title cursor-pointer img-title custom-1">
+<!--                      <h6>Universe</h6>-->
+                      <img src="assets/img/universe-navy.svg" alt="" />
                     </div>
                     <ul class="gq-cards-item-list">
                       <li>
@@ -14512,9 +14548,9 @@
                 </ul>
               </div>
             </div>
-            <div class="gq-cards-item-button">
-              <button type="button" class="js-gq-cards-item-button-trigger">Get quote</button>
-            </div>
+<!--            <div class="gq-cards-item-button">-->
+<!--              <button type="button" class="js-gq-cards-item-button-trigger">Get quote</button>-->
+<!--            </div>-->
           </div>
         </div>
       </section>
