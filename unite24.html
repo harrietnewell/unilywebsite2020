@@ -17640,6 +17640,9 @@
       .grid-section-type-1__col-4 {
         flex: 0 0 33.333333%;
         min-width: 33.333333%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 150px;
       }
 
       .grid-section-type-1__col-8 {
@@ -17648,15 +17651,15 @@
         padding-right: 80px;
         padding-left: 140px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 70px 50px;
-        padding-top: 150px;
+        padding-top: 300px;
       }
 
       .grid-section-type-1__title {
-        font-size: 70px;
-        line-height: 100px;
-        margin-bottom: 100px;
+        font-size: 58px;
+        line-height: 80px;
+        margin-bottom: 90px;
         font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
         width: 275px;
         margin-left: auto;
@@ -17664,6 +17667,12 @@
 
       .grid-section-type-1__media img {
         max-width: 100%;
+      }
+
+      .grid-section-type-1__col__content {
+        min-height: 400px;
+        height: 70vh;
+        max-height: 600px;
       }
 
       .grid-section-type-1__col__content img {
@@ -17688,6 +17697,10 @@
 
       .grid-section-type-1__col__content .heading-01-alt {
         margin-bottom: 40px;
+      }
+
+      .grid-section-type-1__col__content-inner {
+
       }
 
       .counter-section {
@@ -17786,6 +17799,10 @@
       .f-testimonials__role {
         margin-bottom: 0;
       }
+
+      .overflow-unset {
+        overflow: unset;
+      }
     </style>
     <script>
       document.addEventListener("DOMContentLoaded", function(event) {
@@ -17828,7 +17845,7 @@
         };
 
         var counters = document.getElementsByClassName('counter-wrapper');
-
+        var was = document.getElementsByClassName('jss-7734');
         // Add listener
         window.addEventListener('scroll', function(event) {
           counters.forEach(element => {
@@ -17841,6 +17858,11 @@
               }
             }
           });
+          // Check does counter should start on init
+          if (isInViewport(counters[0])) {
+            counters[0].classList.add("active");
+            document.querySelectorAll("[data-counter]").forEach(counter);
+          }
 
           // Testimonials scroll
           // var testimonials = document.getElementsByClassName('f-testimonials')
@@ -17848,14 +17870,19 @@
           //   event.preventDefault();
           //   console.log('adsjhbdas');
           // }
+
+          // Why attend section
+          was.forEach(element => {
+            if (isInViewport(element)) {
+              // element.classList.add("active", element.getAttribute('data-img'));
+              // console.log('element', element);
+              document.getElementById('irs7734').setAttribute('src', element.getAttribute('data-img'));
+            } else {
+              element.classList.remove("active");
+            }
+          });
+
         }, false);
-
-        // Check on init
-        if (isInViewport(counters[0])) {
-          counters[0].classList.add("active");
-
-          document.querySelectorAll("[data-counter]").forEach(counter);
-        }
       });
     </script>
   </head>
@@ -17912,7 +17939,7 @@
       </div>
 
     </header>
-    <div class="c-page c-page--top">
+    <div class="c-page c-page--top overflow-unset">
       <div class="c-block-video">
 
         <div class="c-block-video__video">
@@ -18037,29 +18064,37 @@
               <div class="grid-section-type-1__col-4">
                 <h2 class="grid-section-type-1__title">WHY ATTEND UNITE 24</h2>
                 <div class="grid-section-type-1__media">
-                  <img alt="Collage of photos from Unite 23" data-lazy="" class="img img-shadow" style="aspect-ratio:3000/2209" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/juxmhmiv/unite-23-inspire-v4.png?mode=crop&amp;width=1500&amp;format=webp">
+                  <img id="irs7734" alt="Collage of photos from Unite 23" data-lazy="" class="img img-shadow" style="aspect-ratio:3000/2209" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/juxmhmiv/unite-23-inspire-v4.png?mode=crop&amp;width=1500&amp;format=webp">
                 </div>
               </div>
               <div class="grid-section-type-1__col-8">
                 <div class="grid-section-type-1__col__content">
-                  <img data-src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-                  <h2 class="heading-01-alt"><strong><strong>Learn</strong> </strong></h2>
-                  <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
+                  <div class="grid-section-type-1__col__content-inner jss-7734" data-img="https://www.unily.com/media/juxmhmiv/unite-23-inspire-v4.png?mode=crop&amp;width=1500&amp;format=webp">
+                    <img data-src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
+                    <h2 class="heading-01-alt ml-0"><strong><strong>Learn</strong> </strong></h2>
+                    <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
+                  </div>
                 </div>
                 <div class="grid-section-type-1__col__content">
-                  <img data-src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-                  <h2 class="heading-01-alt"><strong><strong>Network</strong> </strong></h2>
-                  <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
+                  <div class="grid-section-type-1__col__content-inner jss-7734" data-img="https://www.unily.com/media/3tvpbtqf/triple-leader-homepage-content-block.png?mode=crop&width=1200&format=webp">
+                    <img data-src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
+                    <h2 class="heading-01-alt ml-0"><strong><strong>Network</strong> </strong></h2>
+                    <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
+                  </div>
                 </div>
                 <div class="grid-section-type-1__col__content">
-                  <img data-src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-                  <h2 class="heading-01-alt"><strong><strong>Get inpired</strong> </strong></h2>
-                  <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
+                  <div class="grid-section-type-1__col__content-inner jss-7734" data-img="https://www.unily.com/media/juxmhmiv/unite-23-inspire-v4.png?mode=crop&amp;width=1500&amp;format=webp">
+                    <img data-src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
+                    <h2 class="heading-01-alt ml-0"><strong><strong>Get inpired</strong> </strong></h2>
+                    <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
+                  </div>
                 </div>
                 <div class="grid-section-type-1__col__content">
-                  <img data-src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-                  <h2 class="heading-01-alt"><strong><strong>Have fun</strong> </strong></h2>
-                  <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
+                  <div class="grid-section-type-1__col__content-inner jss-7734" data-img="https://www.unily.com/media/3tvpbtqf/triple-leader-homepage-content-block.png?mode=crop&width=1200&format=webp">
+                    <img data-src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
+                    <h2 class="heading-01-alt ml-0"><strong><strong>Have fun</strong> </strong></h2>
+                    <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
+                  </div>
                 </div>
               </div>
             </div>
