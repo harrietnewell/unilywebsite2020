@@ -246,7 +246,7 @@ li.connected-circles__item {
 
 .hero-section {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
