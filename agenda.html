@@ -13452,23 +13452,24 @@
     .addeventatc_dropdown .drop_markup {
       background-color: #f4f4f4;
     }</style>
-    <style id="onetrust-style">#onetrust-banner-sdk {
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%
-    }
+    <style id="onetrust-style">
+      #onetrust-banner-sdk {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%
+      }
 
-    #onetrust-banner-sdk .onetrust-vendors-list-handler {
-      cursor: pointer;
-      color: #1f96db;
-      font-size: inherit;
-      font-weight: bold;
-      text-decoration: none;
-      margin-left: 5px
-    }
+      #onetrust-banner-sdk .onetrust-vendors-list-handler {
+        cursor: pointer;
+        color: #1f96db;
+        font-size: inherit;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 5px
+      }
 
-    #onetrust-banner-sdk .onetrust-vendors-list-handler:hover {
-      color: #1f96db
-    }
+      #onetrust-banner-sdk .onetrust-vendors-list-handler:hover {
+        color: #1f96db
+      }
 
     #onetrust-banner-sdk:focus {
       outline: 2px solid #000;
@@ -17261,91 +17262,10 @@
     }</style>
 
     <!-- Added styles - Ana -->
+    <style>
+      .agenda-toggle{margin:auto;background:none;border:solid 2px #3ec8ed;border-radius:25px;position:relative;display:flex;z-index:0;margin-bottom:30px;max-width:250px;}@media(max-width:767px){.agenda-toggle{max-width:70%;}}.agenda-toggle-option{padding:10px !important;cursor:pointer;font-weight:500;flex:1 1 50%;text-align:center;z-index:2;color:#3ec8ed;font-family:"Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:bold;}.agenda-toggle-option-selected{color:#fff !important;}.agenda-toggle-option:hover{background-size:0 !important;}.agenda-toggle-slide{position:absolute;height:100%;width:50%;z-index:1;background:#3ec8ed;border-radius:22px;left:0;transition-property:left;transition-duration:.25s;}.toggled-agenda{display:none;}
+    </style>
     <link href="assets/css/ana.css" rel="stylesheet">
-    <script>
-      document.addEventListener("DOMContentLoaded", function(event) {
-        var isAnimationTriggered = false;
-        var isInViewport = function(elem) {
-          var distance = elem.getBoundingClientRect();
-          return (
-              distance.top >= 0 &&
-              distance.left >= 0 &&
-              distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-              distance.right <= (window.innerWidth || document.documentElement.clientWidth)
-          );
-        };
-
-        const counter = (EL) => {
-
-          const duration = 2200;
-
-          const start = parseInt(EL.textContent, 10);
-          const end = parseInt(EL.dataset.counter, 10);
-
-          if (start === end) return;
-
-          const range = end - start;
-          let curr = start;
-
-          const timeStart = Date.now();
-
-          const loop = () => {
-            let elaps = Date.now() - timeStart;
-            if (elaps > duration) elaps = duration;
-            const frac = elaps / duration;
-            const step = frac * range;
-            curr = start + step;
-            EL.textContent = Math.trunc(curr);
-            if (elaps < duration) requestAnimationFrame(loop);
-          };
-
-          requestAnimationFrame(loop);
-        };
-
-        var counters = document.getElementsByClassName('counter-wrapper');
-        var imgSource = document.getElementsByClassName('jss-7734');
-        var imgDestination = document.getElementsByClassName('jss-4377');
-        // Add listener
-        window.addEventListener('scroll', function(event) {
-          counters.forEach(element => {
-            if (isInViewport(element)) {
-              element.classList.add("active");
-
-              if (!isAnimationTriggered) {
-                isAnimationTriggered = true;
-                document.querySelectorAll("[data-counter]").forEach(counter);
-              }
-            }
-          });
-          // Check does counter should start on init
-          if (isInViewport(counters[0]) && !isAnimationTriggered) {
-            isAnimationTriggered = true;
-            counters[0].classList.add("active");
-            document.querySelectorAll("[data-counter]").forEach(counter);
-          }
-
-          // Why attend section
-          imgSource.forEach(element => {
-            if (isInViewport(element)) {
-              // element.classList.add("active", element.getAttribute('data-img'));
-              // console.log('element', element);
-              // document.getElementById('irs7734').setAttribute('src', element.getAttribute('data-img'));
-              // const imgId = element.getAttribute('data-img-pair')
-              const imgId = element.getAttribute('data-img-id')
-              Array.from(imgDestination).forEach(
-                (el) => {
-                  el.classList.remove('active');
-                  if (el.getAttribute('data-img-pair') === imgId) el.classList.add('active');
-                }
-              );
-            } else {
-              element.classList.remove("active");
-            }
-          });
-
-        }, false);
-      });
-    </script>
   </head>
   <body class="unite sticky-header" style="padding-top: 41px;">
     <div class="c-loading">
@@ -17396,361 +17316,631 @@
 
     </header>
     <div class="c-page c-page--top overflow-unset">
-      <div class="c-block-video">
-
-        <div class="c-block-video__video">
-          <video preload="metadata" autoplay="" muted="" loop="" playsinline="" data-lazy="" data-ll-status="loaded" poster="https://www.unily.com/media/1yxbxhns/unite-24-poster-image.jpg" class="loaded">
-            <source type="video/webm" src="https://www.unily.com/media/55sdeu0x/unite-24-hero-recap.webm">
-            <source type="video/mp4" src="https://www.unily.com/media/2r4dmfxu/unite-24-hero-recap.mp4">
-          </video>
+      <div id="About" class="id-section">
+        <div class="hero-section">
+          <img src="assets/img/speakers.jpeg" alt="Banner" />
+          <div class="container c-clients__container--5 hero-section__text">
+            <h1>Agenda</h1>
+            <p>Hear from visionaries who will challenge your thinking and open your mind to fresh ideas.</p>
+          </div>
         </div>
+        <div class="grid-content-item">
 
-        <div class="container py c-block-video__container">
-          <p class="c-block-client__logo logo">
-            <img alt="Unite employee experience conference highlight video" data-lazy="" class="img-alt loaded" height="172" style="aspect-ratio:0/0" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/joroblke/unite-24-v-dates-white.svg?mode=crop&amp;width=288&amp;height=162">
-          </p>
-          <p class="c-block-video__link">
-            <a data-lazy="" data-video-popup="" href="https://www.youtube.com/watch?v=IYr9tRd6Fgc" class="link-play" mfp-custom-class="widescreen" data-ll-status="entered" data-manual-ll-status="loaded"> <img src="https://unilyweb2020.azureedge.net/media/axbecndz/play-white.svg" alt="Play"> <span style="font-size:1.2rem;">Watch <strong class="font-alt">UNITE 23</strong> highlights</span> </a>
-          </p>
+          <div class="pt-sm pb-sm">
+
+            <div class="container container-sm">
+              <h2 class="heading-01-alt text-center">
+                <strong>Agenda.</strong>
+                Ignite your imagination.
+              </h2>
+              <div class="intro ">
+                <p>Attend every session in London or watch select sessions live online.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="grid-content-item">
+
+          <section class="container ">
+
+            <div class="toggled-agenda-container">
+
+              <div data-agenda-toggle class="agenda-toggle" style="border:solid 2px #ff00ff">
+                <a data-agenda-toggle-target-id="1" class="agenda-toggle-option agenda-toggle-option-selected" style="color:#ff00ff">In person</a>
+                <a data-agenda-toggle-target-id="2" class="agenda-toggle-option " style="color:#ff00ff">Online</a>
+                <span class="agenda-toggle-slide" style="background:#ff00ff"></span>
+              </div>
+
+              <div data-toggled-agenda-id="1" class="toggled-agenda" style="display:block;">
+
+                <section class="agenda pb-sm">
+
+                  <h3 class="heading-07-alt text-center">
+                    <img src="https://www.unily.com/media/0fbjn3zn/inspire.svg?mode=crop&width=800" alt="" data-lazy class="c-agenda__img-heading img-alt" height="30" style="aspect-ratio:0/0" decoding="sync">
+                    <br/>
+                    <strong>DAY 1, SEP 13</strong>
+                  </h3>
+                  <ul class="c-agenda list-unite-19-agenda">
+                    <li class="c-agenda__item">
+                      <span class="c-agenda__bullet"></span>
+                      <span class="c-agenda__image">
+                                            <img src="https://www.unily.com/media/0tihn1ok/kobox.svg?mode=crop&width=120" alt="" data-lazy height="60" width="60" style="aspect-ratio:0/0" decoding="sync">
+                                        </span>
+
+                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-13 07:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">
+                        07:00 AM
+                        <sup>BST</sup>
+                      </p>
+                      <h3 class="c-agenda__heading">
+                        KOBOX
+                      </h3>
+                      <p>Fight club meets night club – 50 minute high intensity boxing class for all fitness levels.</p>
+                      <p></p>
+                      <p>Transport available from One Hundred Shoreditch hotel at 06:45 AM.</p>
+                      <ul class="c-agenda__location">
+                        <li>KOBOX City, 85 London Wall, London EC2M 7AD</li>
+                      </ul>
+                    </li>
+                    <li class="c-agenda__item">
+                      <span class="c-agenda__bullet"></span>
+
+                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-13 08:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">
+                        08:00 AM
+                        <sup>BST</sup>
+                      </p>
+                      <h3 class="c-agenda__heading">
+                        Registration, breakfast, and networking
+                      </h3>
+                      <ul class="c-agenda__location">
+                        <li>Convene, 22 Bishopsgate, London EC2N 4BQ</li>
+                      </ul>
+                    </li>
+                    <li class="c-agenda__item">
+                      <span class="c-agenda__bullet"></span>
+                      <span class="c-agenda__image">
+                                            <img src="https://www.unily.com/media/10gf1lkn/stephen-fry.png?mode=crop&width=120&format=webp" alt="" data-lazy height="60" width="60" style="aspect-ratio:1200/1200" decoding="sync">
+                                        </span>
+
+                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-13 10:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">
+                        10:00 AM
+                        <sup>BST</sup>
+                      </p>
+                      <h3 class="c-agenda__heading">
+                        <span class="tag tag-11">Keynote</span>
+
+                        Fry&#39;s future of work
+
+                      </h3>
+                      <p>
+                        <span class="ui-provider vt b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak">In the midst of the biggest workplace revolution of our time, everything we thought we knew about work is up for debate. In this opening keynote, we’re joined by the brilliant mind of Stephen Fry to discuss everything from how to use technology as a force for good, what it takes to create a culture where everyone belongs, and how to champion mental wellbeing through human storytelling and open conversation.</span>
+                      </p>
+                      <p class="c-agenda__speaker">
+
+
+                        with Stephen Fry                            </p>
+                      <ul class="c-agenda__location">
+                        <li>Main Stage - Convene, 22 Bishopsgate, London EC2N 4BQ</li>
+                      </ul>
+                    </li>
+                    <li class="c-agenda__item">
+                      <span class="c-agenda__bullet"></span>
+
+                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-13 11:30" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">
+                        11:30 AM
+                        <sup>BST</sup>
+                      </p>
+                      <h3 class="c-agenda__heading">
+                        <span class="tag tag-12">Comms</span>
+
+                        Ask an internal comms expert
+
+                      </h3>
+                      <p>Take the opportunity to get your questions answered by top internal communicators. Come prepared with your trickiest questions and biggest challenges and get the answers you need.</p>
+                    </li>
+                    <li class="c-agenda__item">
+                      <span class="c-agenda__bullet"></span>
+
+                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 12:30" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">
+                        12:30 PM
+                        <sup>BST</sup>
+                      </p>
+                      <h3 class="c-agenda__heading">
+                        Lunch, networking, and roundtables
+                      </h3>
+                      <ul class="c-agenda__location">
+                        <li>Convene, 22 Bishopsgate, London EC2N 4BQ</li>
+                      </ul>
+                    </li>
+                    <li class="c-agenda__item">
+                      <span class="c-agenda__bullet"></span>
+                      <span class="c-agenda__image">
+                                            <img src="https://www.unily.com/media/zghnpxne/shantell-ogden.png?mode=crop&width=120&format=webp" alt="" data-lazy height="60" width="60" style="aspect-ratio:1200/1200" decoding="sync">
+                                        </span>
+
+                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-13 14:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">
+                        02:00 PM
+                        <sup>BST</sup>
+                      </p>
+                      <h3 class="c-agenda__heading">
+                        <span class="tag tag-11">Keynote</span>
+
+                        A digital workday: How 260k employees are changing the way they work
+
+                      </h3>
+                      <p>Less than a year ago, Wipro employees were digging through a collection of siloed portals to access what they needed to succeed at work. Today, The Dot is leveraging the latest advancements in employee experience technology to connect 260k employees with everything they need to stay productive and engaged. Get a behind-the-scenes look at how they devised a change strategy to rollout a new digital employee engagement platform, how they managed the challenge of transitioning 500+ channels from Yammer to native Unily social, and learn how they are making information more accessible through automation. Get tips for digitally engaging employees at your own organization, no matter where you are in your transformation journey.</p>
+                      <p class="c-agenda__speaker">
+
+
+                        with Shantell Ogden - Global Business Transformation Director at Wipro                            </p>
+                      <ul class="c-agenda__location">
+                        <li>Main Stage - Convene, 22 Bishopsgate, London EC2N 4BQ</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                </section>
+
+              </div>
+<!--              <div data-toggled-agenda-id="1" class="toggled-agenda" style="display:block;">-->
+
+<!--                <section class="agenda pb-sm">-->
+
+<!--                  <h3 class="heading-07-alt text-center">-->
+<!--                    <img src="https://www.unily.com/media/asyjxnhb/engage.svg?mode=crop&width=800" alt="" data-lazy class="c-agenda__img-heading img-alt" height="30" style="aspect-ratio:0/0" decoding="sync">-->
+<!--                    <br/>-->
+<!--                    <strong>DAY 2, SEP 14</strong>-->
+<!--                  </h3>-->
+<!--                  <ul class="c-agenda list-unite-19-agenda">-->
+<!--                    <li class="c-agenda__item">-->
+<!--                      <span class="c-agenda__bullet"></span>-->
+
+<!--                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 08:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">-->
+<!--                        08:00 AM-->
+<!--                        <sup>BST</sup>-->
+<!--                      </p>-->
+<!--                      <h3 class="c-agenda__heading">-->
+<!--                        Registration, breakfast, networking, and roundtables-->
+<!--                      </h3>-->
+<!--                      <ul class="c-agenda__location">-->
+<!--                        <li>Convene, 22 Bishopsgate, London EC2N 4BQ</li>-->
+<!--                      </ul>-->
+<!--                    </li>-->
+<!--                    <li class="c-agenda__item">-->
+<!--                      <span class="c-agenda__bullet"></span>-->
+<!--                      <span class="c-agenda__image">-->
+<!--                                            <img src="https://www.unily.com/media/cqubl5ja/steven-bartlett.png?mode=crop&width=120&format=webp" alt="" data-lazy height="60" width="60" style="aspect-ratio:1200/1200" decoding="sync">-->
+<!--                                        </span>-->
+
+<!--                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 10:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">-->
+<!--                        10:00 AM-->
+<!--                        <sup>BST</sup>-->
+<!--                      </p>-->
+<!--                      <h3 class="c-agenda__heading">-->
+<!--                        <span class="tag tag-11">Keynote</span>-->
+
+<!--                        Employee engagement lessons from a CEO-->
+
+<!--                      </h3>-->
+<!--                      <p>Entrepreneur, dragon, and host of The Diary of a CEO podcast - Steven Bartlett - returns to the Unite stage to share his unique ethos on engaging employees and creating winning cultures from the perspective of the modern CEO.</p>-->
+<!--                      <p class="c-agenda__speaker">-->
+
+
+<!--                        with Steven Bartlett                            </p>-->
+<!--                      <ul class="c-agenda__location">-->
+<!--                        <li>Main Stage - Convene, 22 Bishopsgate, London EC2N 4BQ</li>-->
+<!--                      </ul>-->
+<!--                    </li>-->
+<!--                    <li class="c-agenda__item">-->
+<!--                      <span class="c-agenda__bullet"></span>-->
+
+<!--                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 11:30" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">-->
+<!--                        11:30 AM-->
+<!--                        <sup>BST</sup>-->
+<!--                      </p>-->
+<!--                      <h3 class="c-agenda__heading">-->
+<!--                        <span class="tag tag-12">Comms</span>-->
+
+<!--                        Leadership: Removing the pedestal-->
+
+<!--                      </h3>-->
+<!--&lt;!&ndash;                      <p>In a world that’s clamoring for authenticity and openness, how do you evolve your leadership communications to maximize employee engagement? How do you bring your leaders closer to their teams? Discover how Prudential is repositioning its Corporate Affairs function to support a new era of leadership – one that embraces co-creation, creativity and digital channels.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p class="c-agenda__speaker">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                        with Charlotte Mulliner - Director, Executive &amp; Internal Communications, Group Corporate Affairs at Prudential                            </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <ul class="c-agenda__location">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>Main Stage - Convene, 22 Bishopsgate, London EC2N 4BQ</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <h3 class="c-agenda__heading">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span class="tag tag-03">Deep Dive</span>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        Getting started with Employee Journeys&ndash;&gt;-->
+
+<!--&lt;!&ndash;                      </h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p>Get up close and personal with Unily’s latest innovation: Employee Journeys. Learn how to identify common journeys in the employee lifecycle and design meaningful and repeatable experiences that elevate the employee experience to enable your employees at every stage of their career.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p class="c-agenda__speaker">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                        with Aislinn Logan - Product Marketing Manager at Unily                            </p>&ndash;&gt;-->
+<!--                      <ul class="c-agenda__location">-->
+<!--                        <li>Breakout 1 - Convene, 22 Bishopsgate, London EC2N 4BQ</li>-->
+<!--                      </ul>-->
+<!--                      <h3 class="c-agenda__heading">-->
+<!--                        <span class="tag tag-02">Tech</span>-->
+
+<!--                        EX + AI: How employee experience leaders are thinking about AI-->
+
+<!--                      </h3>-->
+<!--&lt;!&ndash;                      <p>AI, automation, machine learning – all are fast becoming the buzzwords of the year, but can they really power the future of employee experience? Our panel of enterprise employee experience are here to reveal how they are thinking about leveraging AI to enhance the next generation of employee experiences. Join us for an interactive discussion on the future of digital employee experience powered by AI and discover how leading enterprises are preparing for an AI-powered future of work.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p class="c-agenda__speaker">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                        with Charisse Soutar - General Manager, Sustainability &amp; Employee Communications at REA Group;&ndash;&gt;-->
+<!--&lt;!&ndash;                        Drew Munn - Strategy Partner: Future of Work at Gallagher;&ndash;&gt;-->
+<!--&lt;!&ndash;                        Sam Marshall - Director at ClearBox;&ndash;&gt;-->
+<!--&lt;!&ndash;                        Maxime Horman - Communications Manager at The Adecco Group France                            </p>&ndash;&gt;-->
+<!--                      <ul class="c-agenda__location">-->
+<!--                        <li>Breakout 2 - Convene, 22 Bishopsgate, London EC2N 4BQ</li>-->
+<!--                      </ul>-->
+<!--                    </li>-->
+<!--                    <li class="c-agenda__item">-->
+<!--                      <span class="c-agenda__bullet"></span>-->
+
+<!--                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 12:30" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">-->
+<!--                        12:30 PM-->
+<!--                        <sup>BST</sup>-->
+<!--                      </p>-->
+<!--                      <h3 class="c-agenda__heading">-->
+<!--                        Lunch, networking, and roundtables-->
+<!--                      </h3>-->
+<!--                      <ul class="c-agenda__location">-->
+<!--                        <li>Convene, 22 Bishopsgate, London EC2N 4BQ</li>-->
+<!--                      </ul>-->
+<!--                    </li>-->
+<!--                    <li class="c-agenda__item">-->
+<!--                      <span class="c-agenda__bullet"></span>-->
+<!--                      <span class="c-agenda__image">-->
+<!--                                            <img src="https://www.unily.com/media/aygauioc/unily-circle.svg?mode=crop&width=120" alt="" data-lazy height="60" width="60" style="aspect-ratio:0/0" decoding="sync">-->
+<!--                                        </span>-->
+
+<!--                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 14:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">-->
+<!--                        02:00 PM-->
+<!--                        <sup>BST</sup>-->
+<!--                      </p>-->
+<!--                      <h3 class="c-agenda__heading">-->
+<!--                        <span class="tag tag-11">Keynote</span>-->
+
+<!--                        Unily: The future-->
+
+<!--                      </h3>-->
+<!--                      <p>Get an exclusive first-look at Unily’s next big innovation and hear how we’re evolving our product to meet emerging enterprise needs.</p>-->
+<!--                      <p class="c-agenda__speaker">-->
+
+
+<!--                        with Chris Ciauri - CEO at Unily;-->
+<!--                        Sam Hassani - CTO at Unily                            </p>-->
+<!--                      <ul class="c-agenda__location">-->
+<!--                        <li>Main Stage - Convene, 22 Bishopsgate, London EC2N 4BQ</li>-->
+<!--                      </ul>-->
+<!--                    </li>-->
+<!--                    <li class="c-agenda__item">-->
+<!--                      <span class="c-agenda__bullet"></span>-->
+
+<!--                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 15:15" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">-->
+<!--                        03:15 PM-->
+<!--                        <sup>BST</sup>-->
+<!--                      </p>-->
+<!--                      <h3 class="c-agenda__heading">-->
+<!--                        <span class="tag tag-12">Comms</span>-->
+
+<!--                        Everything under one roof: Weaving together a global and regional digital experience-->
+
+<!--                      </h3>-->
+<!--                      <p>'How can we leverage the power of global while offering a regional experience at the same time?’ is the question WSP Global asked themselves as they set out to deploy an all-new employee experience platform to level up engagement for its 66k-strong and diverse workforce. Discover how a rapidly growing organization is bringing its people together locally and globally.</p>-->
+<!--                      <p class="c-agenda__speaker">-->
+
+
+<!--                        with Anne-Marie Ferrara - Director, Global Digital Experience at WSP                            </p>-->
+<!--                      <ul class="c-agenda__location">-->
+<!--                        <li>Main Stage - Convene, 22 Bishopsgate, London EC2N 4BQ</li>-->
+<!--                      </ul>-->
+<!--&lt;!&ndash;                      <h3 class="c-agenda__heading">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span class="tag tag-03">Deep Dive</span>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        Tech talks: Infrastructure, security, and engineering&ndash;&gt;-->
+
+<!--&lt;!&ndash;                      </h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p>Under the hood, the Unily employee experience platform is a complex yet well-oiled machine. Keeping it running smoothly and securely to deliver enterprise-grade peace of mind is a talented team of technical professionals. In this session, they will be providing insights into how the Unily platform works and continuous modernization programs that keep your platform on the cutting edge.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p class="c-agenda__speaker">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                        with Hugh Wilkinson - Technical Operations Manager – Infrastructure at Unily;&ndash;&gt;-->
+<!--&lt;!&ndash;                        Michele Johl - Technical Operations Manager – Service Engineering at Unily;&ndash;&gt;-->
+<!--&lt;!&ndash;                        James Heathcote - Technical Operations Manager – Information and Security at Unily;&ndash;&gt;-->
+<!--&lt;!&ndash;                        Matt Harding - Global Head of Engineering at Unily                            </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <ul class="c-agenda__location">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>Breakout 1 - Convene, 22 Bishopsgate, London EC2N 4BQ</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <h3 class="c-agenda__heading">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span class="tag tag-02">Tech</span>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        Elevating your intranet experience through collaboration&ndash;&gt;-->
+
+<!--&lt;!&ndash;                      </h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p>All too often, intranet management falls to one team, leading to sub-par results. Kayla and Cody argue that strategic collaboration between information technology and communications teams is the secret to successfully delivering and maintaining a high-value intranet. Discover how one organization is leveraging collaboration in the planning, execution, support, and enhancement phases of intranet deployment to elevate success and upgrade the employee experience.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p class="c-agenda__speaker">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                        with Cody Patterson - Corporate Communications Manager at Farm Credit Mid-America;&ndash;&gt;-->
+<!--&lt;!&ndash;                        Kayla Mears - Business Solutions Manager at Farm Credit Mid-America                            </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <ul class="c-agenda__location">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>Breakout 2 - Convene, 22 Bishopsgate, London EC2N 4BQ</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </ul>&ndash;&gt;-->
+<!--                    </li>-->
+<!--&lt;!&ndash;                    <li class="c-agenda__item">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <span class="c-agenda__bullet"></span>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 16:15" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">&ndash;&gt;-->
+<!--&lt;!&ndash;                        04:15 PM&ndash;&gt;-->
+<!--&lt;!&ndash;                        <sup>BST</sup>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <h3 class="c-agenda__heading">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span class="tag tag-12">Comms</span>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        Using your intranet to drive high-performance culture&ndash;&gt;-->
+
+<!--&lt;!&ndash;                      </h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p>Discover how the world’s leading learning company Pearson, is using its employee experience platform to drive growth and help 22k employees worldwide focus and work simpler. By using Gallup's 12 elements of engagement, they are able to guide decision-making to optimize business impact and drive engagement.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p class="c-agenda__speaker">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                        with Kim England - Vice President, Global Employee Communications at Pearson                            </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <ul class="c-agenda__location">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>Main Stage - Convene, 22 Bishopsgate, London EC2N 4BQ</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <h3 class="c-agenda__heading">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span class="tag tag-03">Deep Dive</span>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        Product innovation: People, process, progress&ndash;&gt;-->
+
+<!--&lt;!&ndash;                      </h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p>Meet the three bright minds shaping the future of Unily. From innovation labs and ideation to roadmap and execution, Hannah, Katie, and Leslie will walk you through what it takes to build the world’s best employee experience platform and how they place customer thinking at the heart of what they do.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p class="c-agenda__speaker">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                        with Hannah Unsworth - Head of Product Innovation at Unily;&ndash;&gt;-->
+<!--&lt;!&ndash;                        Katie Johnson - Product Innovation Lead at Unily;&ndash;&gt;-->
+<!--&lt;!&ndash;                        Leslie Bagala - Product Innovation Lead at Unily                            </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <ul class="c-agenda__location">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>Breakout 1 - Convene, 22 Bishopsgate, London EC2N 4BQ</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <h3 class="c-agenda__heading">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span class="tag tag-02">Tech</span>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        Engaging your frontline workforce&ndash;&gt;-->
+
+<!--&lt;!&ndash;                      </h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p>An engaged and informed frontline workforce is a precursor to excellent customer experience, yet too many frontline workers feel disconnected from the enterprise. We're joined by a panel of experts to discuss strategies for overcoming frontline engagement barriers, fit with real-world examples of how some of the largest enterprises are solving frontline disconnect.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p class="c-agenda__speaker">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                        with Marc  Whittingham - Engagement &amp; Employer Brand Lead at Holland &amp; Barrett;&ndash;&gt;-->
+<!--&lt;!&ndash;                        Debbie Braden - Director, Culture and Communications Officer at Caliber Collision;&ndash;&gt;-->
+<!--&lt;!&ndash;                        Rachael Knowles - Internal Communications Manager at Kerzner                            </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <ul class="c-agenda__location">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>Breakout 2 - Convene, 22 Bishopsgate, London EC2N 4BQ</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="c-agenda__item">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <span class="c-agenda__bullet"></span>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 17:15" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">&ndash;&gt;-->
+<!--&lt;!&ndash;                        05:15 PM&ndash;&gt;-->
+<!--&lt;!&ndash;                        <sup>BST</sup>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <h3 class="c-agenda__heading">&ndash;&gt;-->
+<!--&lt;!&ndash;                        Wrap-Up &amp; Awards&ndash;&gt;-->
+<!--&lt;!&ndash;                      </h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <ul class="c-agenda__location">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>Main Stage - Convene, 22 Bishopsgate, London EC2N 4BQ</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="c-agenda__item">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <span class="c-agenda__bullet"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <span class="c-agenda__image">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <img src="https://www.unily.com/media/dqqbo3ij/after-party.png?mode=crop&width=120&format=webp" alt="" data-lazy height="60" width="60" style="aspect-ratio:1200/1200" decoding="sync">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </span>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 19:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="true" class="c-agenda__time">&ndash;&gt;-->
+<!--&lt;!&ndash;                        07:00 PM&ndash;&gt;-->
+<!--&lt;!&ndash;                        <sup>BST</sup>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <h3 class="c-agenda__heading">&ndash;&gt;-->
+<!--&lt;!&ndash;                        After Party&ndash;&gt;-->
+<!--&lt;!&ndash;                      </h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <p>Happy hour never ends at our After Party. Live it up in the vaults beneath The Royal Exchange.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <ul class="c-agenda__location">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>The Libertine, 1 Royal Exchange, Cornhill, London, EC3V 3LL</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--                  </ul>-->
+
+<!--                </section>-->
+
+<!--              </div>-->
+              <div data-toggled-agenda-id="2" class="toggled-agenda" style="">
+
+                <section class="agenda pb-sm">
+
+                  <h3 class="heading-07-alt text-center">
+                    <img src="https://www.unily.com/media/0fbjn3zn/inspire.svg?mode=crop&width=800" alt="" data-lazy class="c-agenda__img-heading img-alt" height="30" style="aspect-ratio:0/0" decoding="sync">
+                    <br/>
+                    <strong>DAY 1, SEP 13</strong>
+                  </h3>
+                  <ul class="c-agenda list-unite-19-agenda">
+                    <li class="c-agenda__item">
+                      <span class="c-agenda__bullet"></span>
+                      <span class="c-agenda__image">
+                                            <img src="https://www.unily.com/media/zghnpxne/shantell-ogden.png?mode=crop&width=120&format=webp" alt="" data-lazy height="60" width="60" style="aspect-ratio:1200/1200" decoding="sync">
+                                        </span>
+
+                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-13 13:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">01:00 PM</p>
+                      <h3 class="c-agenda__heading">
+                        <span class="tag tag-11">Keynote</span>
+
+                        A digital workday: How 260k employees are changing the way they work
+
+                      </h3>
+                      <p>Less than a year ago, Wipro employees were digging through a collection of siloed portals to access what they needed to succeed at work. Today, The Dot is leveraging the latest advancements in employee experience technology to connect 260k employees with everything they need to stay productive and engaged. Get a behind-the-scenes look at how they devised a change strategy to rollout a new digital employee engagement platform, how they managed the challenge of transitioning 500+ channels from Yammer to native Unily social, and learn how they are making information more accessible through automation. Get tips for digitally engaging employees at your own organization, no matter where you are in your transformation journey.</p>
+                      <p class="c-agenda__speaker">
+
+
+                        with Shantell Ogden - Global Business Transformation Director at Wipro                            </p>
+                    </li>
+                    <li class="c-agenda__item">
+                      <span class="c-agenda__bullet"></span>
+
+                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-13 14:15" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">02:15 PM</p>
+                      <h3 class="c-agenda__heading">
+                        <span class="tag tag-12">Comms</span>
+
+                        Re-aligning employees behind your values in a hybrid world
+
+                      </h3>
+                      <p>Embedded organizational values and ethics lay the foundation for a happy, connected, and engaged workforce. Discover how National Grid has successfully embedded their company values across their 33k+ global hybrid workforce, truly embracing the company’s culture and vision to deliver a clean, fair, and affordable energy future.</p>
+                      <p class="c-agenda__speaker">
+
+
+                        with Michelle Marston - Content Specialist at National Grid;
+                        Rebecca Martin - Group Internal Communication Manager, HR at National Grid                            </p>
+                    </li>
+                    <li class="c-agenda__item">
+                      <span class="c-agenda__bullet"></span>
+
+                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-13 15:15" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">03:15 PM</p>
+                      <h3 class="c-agenda__heading">
+                        <span class="tag tag-12">Comms</span>
+
+                        Mastering mobile: Creating an app employees love
+
+                      </h3>
+                      <p>Discover how Kerzner, the world-famous luxury hotel operator behind Atlantis Resorts &amp; Residences, One&amp;Only Resorts and Private Homes, SIRO and Rare Finds, is transforming employee engagement with an app that empowers its people to create amazing experiences and everlasting memories for guests all over the world.</p>
+                      <p class="c-agenda__speaker">
+
+
+                        with Rachael Knowles - Internal Communications Manager at Kerzner                            </p>
+                    </li>
+                    <li class="c-agenda__item">
+                      <span class="c-agenda__bullet"></span>
+                      <span class="c-agenda__image">
+                                            <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=120&format=webp" alt="" data-lazy height="60" width="60" style="aspect-ratio:1200/1200" decoding="sync">
+                                        </span>
+
+                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-13 16:15" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">04:15 PM</p>
+                      <h3 class="c-agenda__heading">
+                        <span class="tag tag-11">Keynote</span>
+
+                        Working hard, hardly working: Productivity hacks for your workforce
+
+                      </h3>
+                      <p>Grace Beverley isn’t just the author of a best-selling book on hacking productivity, or host of chart topping podcast Working Hard, Hardly Working with a total reach of over 3 million, she’s also the founder and CEO of two disruptive businesses, including a sustainably-made activewear brand making waves within the industry. Grace has been on a mission to discover the secret work-life balance, and now juggling several growing businesses, she joins us to share her secrets to success and how she applies them at her own organizations.</p>
+                      <p class="c-agenda__speaker">
+
+
+                        with Grace Beverley                            </p>
+                    </li>
+                  </ul>
+
+                </section>
+
+              </div>
+<!--              <div data-toggled-agenda-id="2" class="toggled-agenda" style="">-->
+
+<!--                <section class="agenda pb-sm">-->
+
+<!--                  <h3 class="heading-07-alt text-center">-->
+<!--                    <img src="https://www.unily.com/media/asyjxnhb/engage.svg?mode=crop&width=800" alt="" data-lazy class="c-agenda__img-heading img-alt" height="30" style="aspect-ratio:0/0" decoding="sync">-->
+<!--                    <br/>-->
+<!--                    <strong>DAY 2, SEP 14</strong>-->
+<!--                  </h3>-->
+<!--                  <ul class="c-agenda list-unite-19-agenda">-->
+<!--                    <li class="c-agenda__item">-->
+<!--                      <span class="c-agenda__bullet"></span>-->
+<!--                      <span class="c-agenda__image">-->
+<!--                                            <img src="https://www.unily.com/media/aygauioc/unily-circle.svg?mode=crop&width=120" alt="" data-lazy height="60" width="60" style="aspect-ratio:0/0" decoding="sync">-->
+<!--                                        </span>-->
+
+<!--                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 13:00" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">01:00 PM</p>-->
+<!--                      <h3 class="c-agenda__heading">-->
+<!--                        <span class="tag tag-11">Keynote</span>-->
+
+<!--                        Unily: The future-->
+
+<!--                      </h3>-->
+<!--                      <p>Get an exclusive first-look at Unily’s next big innovation and hear how we’re evolving our product to meet emerging enterprise needs.</p>-->
+<!--                      <p class="c-agenda__speaker">-->
+
+
+<!--                        with Chris Ciauri - CEO at Unily;-->
+<!--                        Sam Hassani - CTO at Unily                            </p>-->
+<!--                    </li>-->
+<!--                    <li class="c-agenda__item">-->
+<!--                      <span class="c-agenda__bullet"></span>-->
+
+<!--                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 14:15" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">02:15 PM</p>-->
+<!--                      <h3 class="c-agenda__heading">-->
+<!--                        <span class="tag tag-12">Comms</span>-->
+
+<!--                        Everything under one roof: Weaving together a global and regional digital experience-->
+
+<!--                      </h3>-->
+<!--                      <p>How can we leverage the power of global while offering a regional experience at the same time?’ is the question WSP Global asked themselves as they set out to deploy an all-new employee experience platform that would level up engagement for its 66k-strong and diverse workforce. Discover how a rapidly growing organization is bringing its people together locally and globally.</p>-->
+<!--                      <p class="c-agenda__speaker">-->
+
+
+<!--                        with Anne-Marie Ferrara - Director, Global Digital Experience at WSP                            </p>-->
+<!--                    </li>-->
+<!--                    <li class="c-agenda__item">-->
+<!--                      <span class="c-agenda__bullet"></span>-->
+
+<!--                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 15:15" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">03:15 PM</p>-->
+<!--                      <h3 class="c-agenda__heading">-->
+<!--                        <span class="tag tag-12">Comms</span>-->
+
+<!--                        Using your intranet to drive high-performance culture-->
+
+<!--                      </h3>-->
+<!--                      <p>Discover how the world’s leading learning company Pearson, is using its employee experience platform to drive growth and help 22k employees worldwide focus and work simpler. By using Gallup's 12 elements of engagement, they are able to guide decision-making to optimize business impact and drive engagement.</p>-->
+<!--                      <p class="c-agenda__speaker">-->
+
+
+<!--                        with Kim England - Vice President, Global Employee Communications at Pearson                            </p>-->
+<!--                    </li>-->
+<!--                    <li class="c-agenda__item">-->
+<!--                      <span class="c-agenda__bullet"></span>-->
+
+<!--                      <p data-lazy data-local-date-time data-local-date-time-time-only="true" data-local-date-time-include-time-zone="false" data-local-date-time-time-zone-wrap-element="sup" data-local-date-time-base-date="2023-09-14 16:15" data-local-date-time-format="" data-local-date-time-event-id="0" data-local-date-time-omit-time="false" data-local-date-time-is-converted="false" class="c-agenda__time">04:15 PM</p>-->
+<!--                      <h3 class="c-agenda__heading">-->
+<!--                        Wrap-Up &amp; Awards-->
+<!--                      </h3>-->
+<!--                    </li>-->
+<!--                  </ul>-->
+
+<!--                </section>-->
+
+<!--              </div>-->
+
+            </div>
+
+          </section>
+
         </div>
 
       </div>
-      <div id="About" class="id-section">
-        <div class="grid-content-item">
+      <div id="Fun" class="id-section">
 
-
-          <section class="pb-5">
-
-            <div class="container pt">
-              <h1 class="heading-01-alt text-center"><strong>Unite 24.</strong> The future is here.</h1>
-            </div>
-            <div class="container container-sm">
-              <div class="intro">
-                <p class="paragraph-02">Unite isn't just an employee experience conference, it's an experience. The world's leading enterprises unite here to learn, network, get inspired, and have fun. With deep dives into how enterprises level up employee experience, visionary keynotes from the biggest names, and fun that you won't forget. It all happens here.</p>
-              </div>
-            </div>
-
-            <div class="container pt-30 pb-50">
-              <div class="c-block-columns justify-content-center c-block-columns--4 ">
-
-                <div class="c-block-columns__col">
-                  <div class="c-block-columns__item">
-                    <p class="logo js-equal" style="height: 42px;"><img alt="" data-lazy="" class="img-alt loaded" height="42" style="aspect-ratio:0/0" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/elkeviex/big-ben-black.svg?mode=crop&amp;width=288&amp;height=162"></p>
-                    <h3 class="heading-07-alt">
-                      <strong> London &amp; Online </strong>
-                    </h3>
-
-                    <p class="paragraph-01 ">Attend in London or watch select sessions live online.</p>
-                  </div>
-                </div>
-                <div class="c-block-columns__col">
-                  <div class="c-block-columns__item">
-                    <p class="logo js-equal" style="height: 42px;"><img alt="" data-lazy="" class="img-alt loaded" height="30" style="aspect-ratio:0/0" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/o4dp5yw0/circles-black.svg?mode=crop&amp;width=288&amp;height=162"></p>
-                    <h3 class="heading-07-alt">
-                      <strong> Network </strong>
-                    </h3>
-
-                    <p class="paragraph-01 ">Join the largest gathering of enterprise EX leaders.</p>
-                  </div>
-                </div>
-                <div class="c-block-columns__col">
-                  <div class="c-block-columns__item">
-                    <p class="logo js-equal" style="height: 42px;"><img alt="" data-lazy="" class="img-alt loaded" height="35" style="aspect-ratio:0/0" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/t0upisl1/lightning-black.svg?mode=crop&amp;width=288&amp;height=162"></p>
-                    <h3 class="heading-07-alt">
-                      <strong> Speakers </strong>
-                    </h3>
-
-                    <p class="paragraph-01 ">Hear from visionary speakers leading the EX revolution.</p>
-                  </div>
-                </div>
-                <div class="c-block-columns__col">
-                  <div class="c-block-columns__item">
-                    <p class="logo js-equal" style="height: 42px;"><img alt="" data-lazy="" class="img-alt loaded" height="40" style="aspect-ratio:0/0" decoding="sync" data-ll-status="loaded" src="https://www.unily.com/media/k41e4ori/music-black.svg?mode=crop&amp;width=288&amp;height=162"></p>
-                    <h3 class="heading-07-alt">
-                      <strong> Fun </strong>
-                    </h3>
-
-                    <p class="paragraph-01 ">Work hard and play harder with workouts and nightly parties.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </section>
-
-
-        </div>
-        <div class="grid-content-item bg-01">
-
-
-          <section class="container c-clients__container--5   pt pb">
-
-            <h2 class="heading-01-alt text-center pb-3 mb-4"><strong>THE STORY SO FAR.</strong> We're just getting started.</h2>
-            <div class="container container-sm mb-5">
-              <p class="text-center">Unite 23 was sold out and waitlisted. Don't miss out! Join the list to be the first to hear when Unite 24 tickets are available.</p>
-            </div>
-
-            <ul class="connected-circles pt-4">
-              <li class="connected-circles__item">
-                <img src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <div class="connected-circles__item-divider"></div>
-              <li class="connected-circles__item">
-                <img src="https://www.unily.com/media/0u2nff1u/nielsen-norman.svg?mode=crop&amp;width=288&amp;height=162" alt="Nielson Norman logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <div class="connected-circles__item-divider"></div>
-              <li class="connected-circles__item">
-                <img src="https://www.unily.com/media/34uaxnmh/pearson.svg?mode=crop&amp;width=288&amp;height=162" alt="Pearson logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <div class="connected-circles__item-divider"></div>
-              <li class="connected-circles__item">
-                <img src="https://www.unily.com/media/0u2nff1u/nielsen-norman.svg?mode=crop&amp;width=288&amp;height=162" alt="Nielson Norman logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <div class="connected-circles__item-divider"></div>
-              <li class="connected-circles__item">
-                <img src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-            </ul>
-          </section>
-        </div>
-        <div class="grid-content-item">
-          <section class="grid-section-type-1">
-            <div class="grid-section-type-1__row">
-              <div class="grid-section-type-1__col-4">
-                <h2 class="grid-section-type-1__title">WHY ATTEND UNITE 24</h2>
-                <div class="grid-section-type-1__media">
-                  <div class="grid-section-type-1__media-item jss-4377 active" data-img-pair="1"><img alt="Collage of photos from Unite 23" data-lazy="" class="img img-shadow" src="https://www.unily.com/media/juxmhmiv/unite-23-inspire-v4.png?mode=crop&amp;width=1500&amp;format=webp"></div>
-                  <div class="grid-section-type-1__media-item jss-4377" data-img-pair="2"><img alt="Collage of photos from Unite 23" data-lazy="" class="img img-shadow" src="https://www.unily.com/media/3tvpbtqf/triple-leader-homepage-content-block.png?mode=crop&width=1200&format=webp"></div>
-                  <div class="grid-section-type-1__media-item jss-4377" data-img-pair="3"><img alt="Collage of photos from Unite 23" data-lazy="" class="img img-shadow" src="https://www.unily.com/media/juxmhmiv/unite-23-inspire-v4.png?mode=crop&amp;width=1500&amp;format=webp"></div>
-                  <div class="grid-section-type-1__media-item jss-4377" data-img-pair="4"><img alt="Collage of photos from Unite 23" data-lazy="" class="img img-shadow" src="https://www.unily.com/media/3tvpbtqf/triple-leader-homepage-content-block.png?mode=crop&width=1200&format=webp"></div>
-                </div>
-              </div>
-              <div class="grid-section-type-1__col-8">
-                <div class="grid-section-type-1__col__content">
-                  <div class="grid-section-type-1__col__content-inner jss-7734" data-img-id="1">
-                    <img src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-                    <h2 class="heading-01-alt ml-0"><strong><strong>Learn</strong> </strong></h2>
-                    <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
-                  </div>
-                </div>
-                <div class="grid-section-type-1__col__content">
-                  <div class="grid-section-type-1__col__content-inner jss-7734" data-img-id="2">
-                    <img src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-                    <h2 class="heading-01-alt ml-0"><strong><strong>Network</strong> </strong></h2>
-                    <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
-                  </div>
-                </div>
-                <div class="grid-section-type-1__col__content">
-                  <div class="grid-section-type-1__col__content-inner jss-7734" data-img-id="3">
-                    <img src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-                    <h2 class="heading-01-alt ml-0"><strong><strong>Get inpired</strong> </strong></h2>
-                    <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
-                  </div>
-                </div>
-                <div class="grid-section-type-1__col__content">
-                  <div class="grid-section-type-1__col__content-inner jss-7734" data-img-id="4">
-                    <img src="https://www.unily.com/media/fb0fwy1n/biogen.svg?mode=crop&amp;width=288&amp;height=162" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-                    <h2 class="heading-01-alt ml-0"><strong><strong>Have fun</strong> </strong></h2>
-                    <p>Take a deep dive into the world of employee experience excellence. Go behind the scenes with trailblazing enterprises, get hands-on with interactive breakout sessions, and escape the echo chamber with expert panels. All geared towards solving your challenges and sharing secrets to success.&nbsp;</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="grid-content-item">
-          <section class="container c-clients__container--5   pt pb">
-
-            <h2 class="heading-01-alt text-center"><strong>NETWORK.</strong> Meet your peers.</h2>
-
-            <ul class="c-clients c-clients--5">
-
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//tm1mokjl/nationalgrid.svg?mode=crop&width=288&height=162" alt="National grid logo" data-lazy class="img-alt" height="30" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//tkierw1d/wipro.svg?mode=crop&width=288&height=162" alt="Wipro logo" data-lazy class="img-alt" height="60" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//ppsf3rqa/kerzner-red.svg?mode=crop&width=288&height=162" alt="Kerzner logo" data-lazy class="img-alt" height="30" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//pkrgouvl/holland-and-barrett.svg?mode=crop&width=288&height=162" alt="Holland and Barrett logo" data-lazy class="img-alt" height="28" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//gsvm1g2w/estee-lauder-companies.svg?mode=crop&width=288&height=162" alt="Estee Lauder Companies logo" data-lazy class="img-alt" height="50" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//5khpukpv/ey.svg?mode=crop&width=288&height=162" alt="EY logo" data-lazy class="img-alt" height="50" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//gmraojdw/forrester.svg?mode=crop&width=288&height=162" alt="Forrester logo" data-lazy class="img-alt" height="25" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//2yfbszqy/j-j.svg?mode=crop&width=288&height=162" alt="Johnson and Johnson logo" data-lazy class="img-alt" height="45" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//nikex5ch/crayola.svg?mode=crop&width=288&height=162" alt="Crayola logo" data-lazy class="img-alt" height="45" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//tlejvpp5/ba.svg?mode=crop&width=288&height=162" alt="British airways logo" data-lazy class="img-alt" height="30" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//15nmfrfy/cathay-pacific.svg?mode=crop&width=288&height=162" alt="Cathay pacific logo" data-lazy class="img-alt" height="30" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//pehjv01v/wsp.svg?mode=crop&width=288&height=162" alt="WSP logo" data-lazy class="img-alt" height="35" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//fb0fwy1n/biogen.svg?mode=crop&width=288&height=162" alt="Biogen logo" data-lazy class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//0u2nff1u/nielsen-norman.svg?mode=crop&width=288&height=162" alt="Nielson Norman logo" data-lazy class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-              <li class="c-clients__item">
-                <img src="https://www.unily.com/media//34uaxnmh/pearson.svg?mode=crop&width=288&height=162" alt="Pearson logo" data-lazy class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-              </li>
-            </ul>
-          </section>
-        </div>
-        <div class="grid-content-item bg-gray-dark py-5">
-          <section class="container counter-section">
-            <h2>UNITE IN NUMBERS</h2>
-            <div class="counter-wrapper">
-              <div class="counter-wrapper__item">
-                <span data-counter="100">0</span>
-                <label>Something</label>
-              </div>
-              <div class="counter-wrapper__item">
-                <span data-counter="50">0</span>%
-                <label>Something</label>
-              </div>
-              <div class="counter-wrapper__item">
-                <span data-counter="10">0</span>
-                <label>Something</label>
-              </div>
-              <div class="counter-wrapper__item">
-                <span data-counter="2">0</span>
-                <label>Something</label>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="grid-content-item py-5">
-          <section class="container-full py-5">
-            <h2 class="heading-01-alt text-center"><strong>FEEDBACK.</strong> Don't just take our word for it.</h2>
-            <div class="f-testimonials">
-              <div class="f-testimonials-wrapper">
-                <div class="f-testimonials__item">
-                  <div class="f-testimonials__quote-before">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="162.511" height="113.609" viewBox="0 0 162.511 113.609">
-                      <g id="Close-Quote--Streamline-Ultimate.svg" transform="translate(-0.48 -3.93)" opacity="0.5">
-                        <path id="Path_3579" data-name="Path 3579" d="M52.947,3.93a34.794,34.794,0,1,0,0,69.589,31.7,31.7,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,.493,1.62A48.106,48.106,0,0,1,21.674,99.65a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,88.093,47.247V38.724A35.217,35.217,0,0,0,52.947,3.93Z" transform="translate(74.878 0)" fill="#7d12ff"/>
-                        <path id="Path_3580" data-name="Path 3580" d="M41.05,3.93a34.794,34.794,0,1,0,0,69.589,32.119,32.119,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,0,1.9A48.177,48.177,0,0,1,9.284,99.931a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,75.7,47.529v-8.8A35.217,35.217,0,0,0,41.05,3.93Z" transform="translate(0)" fill="#7d12ff"/>
-                      </g>
-                    </svg>
-                  </div>
-                  <h5 class="f-testimonials__text">If you should excited about anything right now, <br /> it's <strong>employee experience</strong>.</h5>
-                  <p class="f-testimonials__author">Chris Manning</p>
-                  <p class="f-testimonials__role">Managing Consultant at Wipro</p>
-                  <div class="f-testimonials__quote-after">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="162.511" height="113.609" viewBox="0 0 162.511 113.609">
-                      <g id="Close-Quote--Streamline-Ultimate.svg" transform="translate(-0.48 -3.93)" opacity="0.5">
-                        <path id="Path_3579" data-name="Path 3579" d="M52.947,3.93a34.794,34.794,0,1,0,0,69.589,31.7,31.7,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,.493,1.62A48.106,48.106,0,0,1,21.674,99.65a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,88.093,47.247V38.724A35.217,35.217,0,0,0,52.947,3.93Z" transform="translate(74.878 0)" fill="#7d12ff"/>
-                        <path id="Path_3580" data-name="Path 3580" d="M41.05,3.93a34.794,34.794,0,1,0,0,69.589,32.119,32.119,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,0,1.9A48.177,48.177,0,0,1,9.284,99.931a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,75.7,47.529v-8.8A35.217,35.217,0,0,0,41.05,3.93Z" transform="translate(0)" fill="#7d12ff"/>
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div class="f-testimonials__item">
-                  <div class="f-testimonials__quote-before">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="162.511" height="113.609" viewBox="0 0 162.511 113.609">
-                      <g id="Close-Quote--Streamline-Ultimate.svg" transform="translate(-0.48 -3.93)" opacity="0.5">
-                        <path id="Path_3579" data-name="Path 3579" d="M52.947,3.93a34.794,34.794,0,1,0,0,69.589,31.7,31.7,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,.493,1.62A48.106,48.106,0,0,1,21.674,99.65a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,88.093,47.247V38.724A35.217,35.217,0,0,0,52.947,3.93Z" transform="translate(74.878 0)" fill="#7d12ff"/>
-                        <path id="Path_3580" data-name="Path 3580" d="M41.05,3.93a34.794,34.794,0,1,0,0,69.589,32.119,32.119,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,0,1.9A48.177,48.177,0,0,1,9.284,99.931a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,75.7,47.529v-8.8A35.217,35.217,0,0,0,41.05,3.93Z" transform="translate(0)" fill="#7d12ff"/>
-                      </g>
-                    </svg>
-                  </div>
-                  <h5 class="f-testimonials__text">If you should excited about anything right now, <br /> it's <strong>employee experience</strong>.</h5>
-                  <p class="f-testimonials__author">Chris Manning</p>
-                  <p class="f-testimonials__role">Managing Consultant at Wipro</p>
-                  <div class="f-testimonials__quote-after">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="162.511" height="113.609" viewBox="0 0 162.511 113.609">
-                      <g id="Close-Quote--Streamline-Ultimate.svg" transform="translate(-0.48 -3.93)" opacity="0.5">
-                        <path id="Path_3579" data-name="Path 3579" d="M52.947,3.93a34.794,34.794,0,1,0,0,69.589,31.7,31.7,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,.493,1.62A48.106,48.106,0,0,1,21.674,99.65a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,88.093,47.247V38.724A35.217,35.217,0,0,0,52.947,3.93Z" transform="translate(74.878 0)" fill="#7d12ff"/>
-                        <path id="Path_3580" data-name="Path 3580" d="M41.05,3.93a34.794,34.794,0,1,0,0,69.589,32.119,32.119,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,0,1.9A48.177,48.177,0,0,1,9.284,99.931a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,75.7,47.529v-8.8A35.217,35.217,0,0,0,41.05,3.93Z" transform="translate(0)" fill="#7d12ff"/>
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div class="f-testimonials__item">
-                  <div class="f-testimonials__quote-before">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="162.511" height="113.609" viewBox="0 0 162.511 113.609">
-                      <g id="Close-Quote--Streamline-Ultimate.svg" transform="translate(-0.48 -3.93)" opacity="0.5">
-                        <path id="Path_3579" data-name="Path 3579" d="M52.947,3.93a34.794,34.794,0,1,0,0,69.589,31.7,31.7,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,.493,1.62A48.106,48.106,0,0,1,21.674,99.65a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,88.093,47.247V38.724A35.217,35.217,0,0,0,52.947,3.93Z" transform="translate(74.878 0)" fill="#7d12ff"/>
-                        <path id="Path_3580" data-name="Path 3580" d="M41.05,3.93a34.794,34.794,0,1,0,0,69.589,32.119,32.119,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,0,1.9A48.177,48.177,0,0,1,9.284,99.931a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,75.7,47.529v-8.8A35.217,35.217,0,0,0,41.05,3.93Z" transform="translate(0)" fill="#7d12ff"/>
-                      </g>
-                    </svg>
-                  </div>
-                  <h5 class="f-testimonials__text">If you should excited about.</h5>
-                  <p class="f-testimonials__author">Chris Manning</p>
-                  <p class="f-testimonials__role">Managing Consultant at Wipro</p>
-                  <div class="f-testimonials__quote-after">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="162.511" height="113.609" viewBox="0 0 162.511 113.609">
-                      <g id="Close-Quote--Streamline-Ultimate.svg" transform="translate(-0.48 -3.93)" opacity="0.5">
-                        <path id="Path_3579" data-name="Path 3579" d="M52.947,3.93a34.794,34.794,0,1,0,0,69.589,31.7,31.7,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,.493,1.62A48.106,48.106,0,0,1,21.674,99.65a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,88.093,47.247V38.724A35.217,35.217,0,0,0,52.947,3.93Z" transform="translate(74.878 0)" fill="#7d12ff"/>
-                        <path id="Path_3580" data-name="Path 3580" d="M41.05,3.93a34.794,34.794,0,1,0,0,69.589,32.119,32.119,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,0,1.9A48.177,48.177,0,0,1,9.284,99.931a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,75.7,47.529v-8.8A35.217,35.217,0,0,0,41.05,3.93Z" transform="translate(0)" fill="#7d12ff"/>
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div class="f-testimonials__item">
-                  <div class="f-testimonials__quote-before">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="162.511" height="113.609" viewBox="0 0 162.511 113.609">
-                      <g id="Close-Quote--Streamline-Ultimate.svg" transform="translate(-0.48 -3.93)" opacity="0.5">
-                        <path id="Path_3579" data-name="Path 3579" d="M52.947,3.93a34.794,34.794,0,1,0,0,69.589,31.7,31.7,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,.493,1.62A48.106,48.106,0,0,1,21.674,99.65a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,88.093,47.247V38.724A35.217,35.217,0,0,0,52.947,3.93Z" transform="translate(74.878 0)" fill="#7d12ff"/>
-                        <path id="Path_3580" data-name="Path 3580" d="M41.05,3.93a34.794,34.794,0,1,0,0,69.589,32.119,32.119,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,0,1.9A48.177,48.177,0,0,1,9.284,99.931a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,75.7,47.529v-8.8A35.217,35.217,0,0,0,41.05,3.93Z" transform="translate(0)" fill="#7d12ff"/>
-                      </g>
-                    </svg>
-                  </div>
-                  <h5 class="f-testimonials__text">If you should excited about anything right now, <br /> it's <strong>employee experience</strong>.</h5>
-                  <p class="f-testimonials__author">Chris Manning</p>
-                  <p class="f-testimonials__role">Managing Consultant at Wipro</p>
-                  <div class="f-testimonials__quote-after">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="162.511" height="113.609" viewBox="0 0 162.511 113.609">
-                      <g id="Close-Quote--Streamline-Ultimate.svg" transform="translate(-0.48 -3.93)" opacity="0.5">
-                        <path id="Path_3579" data-name="Path 3579" d="M52.947,3.93a34.794,34.794,0,1,0,0,69.589,31.7,31.7,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,.493,1.62A48.106,48.106,0,0,1,21.674,99.65a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,88.093,47.247V38.724A35.217,35.217,0,0,0,52.947,3.93Z" transform="translate(74.878 0)" fill="#7d12ff"/>
-                        <path id="Path_3580" data-name="Path 3580" d="M41.05,3.93a34.794,34.794,0,1,0,0,69.589,32.119,32.119,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,0,1.9A48.177,48.177,0,0,1,9.284,99.931a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,75.7,47.529v-8.8A35.217,35.217,0,0,0,41.05,3.93Z" transform="translate(0)" fill="#7d12ff"/>
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div class="f-testimonials__item">
-                  <div class="f-testimonials__quote-before">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="162.511" height="113.609" viewBox="0 0 162.511 113.609">
-                      <g id="Close-Quote--Streamline-Ultimate.svg" transform="translate(-0.48 -3.93)" opacity="0.5">
-                        <path id="Path_3579" data-name="Path 3579" d="M52.947,3.93a34.794,34.794,0,1,0,0,69.589,31.7,31.7,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,.493,1.62A48.106,48.106,0,0,1,21.674,99.65a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,88.093,47.247V38.724A35.217,35.217,0,0,0,52.947,3.93Z" transform="translate(74.878 0)" fill="#7d12ff"/>
-                        <path id="Path_3580" data-name="Path 3580" d="M41.05,3.93a34.794,34.794,0,1,0,0,69.589,32.119,32.119,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,0,1.9A48.177,48.177,0,0,1,9.284,99.931a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,75.7,47.529v-8.8A35.217,35.217,0,0,0,41.05,3.93Z" transform="translate(0)" fill="#7d12ff"/>
-                      </g>
-                    </svg>
-                  </div>
-                  <h5 class="f-testimonials__text">If you should excited about anything right now, <br /> it's <strong>employee experience</strong>.</h5>
-                  <p class="f-testimonials__author">Chris Manning</p>
-                  <p class="f-testimonials__role">Managing Consultant at Wipro</p>
-                  <div class="f-testimonials__quote-after">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="162.511" height="113.609" viewBox="0 0 162.511 113.609">
-                      <g id="Close-Quote--Streamline-Ultimate.svg" transform="translate(-0.48 -3.93)" opacity="0.5">
-                        <path id="Path_3579" data-name="Path 3579" d="M52.947,3.93a34.794,34.794,0,1,0,0,69.589,31.7,31.7,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,.493,1.62A48.106,48.106,0,0,1,21.674,99.65a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,88.093,47.247V38.724A35.217,35.217,0,0,0,52.947,3.93Z" transform="translate(74.878 0)" fill="#7d12ff"/>
-                        <path id="Path_3580" data-name="Path 3580" d="M41.05,3.93a34.794,34.794,0,1,0,0,69.589,32.119,32.119,0,0,0,7.818-.986,1.831,1.831,0,0,1,1.831.7,1.69,1.69,0,0,1,0,1.9A48.177,48.177,0,0,1,9.284,99.931a8.8,8.8,0,0,0,0,17.608A68.391,68.391,0,0,0,75.7,47.529v-8.8A35.217,35.217,0,0,0,41.05,3.93Z" transform="translate(0)" fill="#7d12ff"/>
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
       </div>
     </div>
 
@@ -17848,6 +18038,7 @@
     <script src="https://www.unily.com/assets/js/videopopup.min.js?v=2.10.8" defer=""></script>
     <script src="https://www.unily.com/assets/js/datalayer.min.js?v=2.10.8" defer=""></script>
     <script src="https://www.unily.com/assets/js/vendor/jquery.matchHeight.min.js" defer=""></script>
+    <script src="https://www.unily.com/assets/js/agendatoggle.min.js?v=2.10.9"  defer></script>
     <script src="//unpkg.com/dayjs@1.9.6/dayjs.min.js" defer=""></script>
     <script src="//unpkg.com/dayjs@1.9.6/plugin/utc.js" defer=""></script>
     <script src="//unpkg.com/dayjs@1.9.6/plugin/timezone.js" defer=""></script>
