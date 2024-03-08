@@ -26,7 +26,7 @@ li.connected-circles__item {
   flex-shrink: 0;
   /*padding: 20px;*/
 }
-x
+
 .connected-circles__item-divider {
   content: '';
   width: 100px;
@@ -142,6 +142,19 @@ x
   overflow-y: auto;
   padding-top: 80px;
   padding-bottom: 80px;
+  scrollbar-arrow-color: #c1c1c1;
+  scrollbar-darkshadow-color: #c1c1c1;
+  scrollbar-face-color: #c1c1c1;
+  scrollbar-shadow-color: #c1c1c1;
+}
+
+.f-testimonials-wrapper::-webkit-scrollbar {
+  width: 11px;
+}
+
+.f-testimonials-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #c1c1c1;
 }
 
 .f-testimonials__item {
