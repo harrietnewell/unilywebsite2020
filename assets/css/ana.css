@@ -308,3 +308,7 @@ li.connected-circles__item {
 .c-articles--speakers .c-articles__content {
   margin-top: 20px;
 }
+
+.scroll-last-item {
+  padding: 16px;
+}
