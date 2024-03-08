@@ -139,22 +139,16 @@ li.connected-circles__item {
 
 .f-testimonials-wrapper {
   display: flex;
-  overflow-y: auto;
+  /*overflow-y: auto;*/
   padding-top: 80px;
   padding-bottom: 80px;
-  scrollbar-arrow-color: #c1c1c1;
-  scrollbar-darkshadow-color: #c1c1c1;
-  scrollbar-face-color: #c1c1c1;
-  scrollbar-shadow-color: #c1c1c1;
-}
-
-.f-testimonials-wrapper::-webkit-scrollbar {
-  width: 11px;
-}
-
-.f-testimonials-wrapper::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: #c1c1c1;
+  align-items: unset;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: nowrap;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .f-testimonials__item {
