@@ -332,6 +332,16 @@ li.connected-circles__item {
 
 .speakers-list .speakers-item__item ul li::marker {
   content: '';
+  color: transparent;
+  z-index: -5;
+  position: absolute;
+}
+
+.speakers-list .speakers-item__item ul li::-webkit-details-marker {
+  display:none;
+  color: transparent;
+  z-index: -5;
+  position: absolute;
 }
 
 .speakers-wrapper {
