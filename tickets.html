@@ -40,11 +40,11 @@
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://www.unily.com/favicons/apple-touch-icon.png">
 
 
-<!--    <link rel="preload" href="https://www.unily.com/assets/fonts/roboto-400.woff2" as="font" type="font/woff2" crossorigin="">-->
-<!--    <link rel="preload" href="https://www.unily.com/assets/fonts/roboto-500.woff2" as="font" type="font/woff2" crossorigin="">-->
-<!--    <link rel="preload" href="https://www.unily.com/assets/fonts/roboto-700.woff2" as="font" type="font/woff2" crossorigin="">-->
-<!--    <link rel="preload" href="https://www.unily.com/assets/fonts/roboto-condensed-400.woff2" as="font" type="font/woff2" crossorigin="">-->
-<!--    <link rel="preload" href="https://www.unily.com/assets/fonts/roboto-condensed-700.woff2" as="font" type="font/woff2" crossorigin="">-->
+    <!--    <link rel="preload" href="https://www.unily.com/assets/fonts/roboto-400.woff2" as="font" type="font/woff2" crossorigin="">-->
+    <!--    <link rel="preload" href="https://www.unily.com/assets/fonts/roboto-500.woff2" as="font" type="font/woff2" crossorigin="">-->
+    <!--    <link rel="preload" href="https://www.unily.com/assets/fonts/roboto-700.woff2" as="font" type="font/woff2" crossorigin="">-->
+    <!--    <link rel="preload" href="https://www.unily.com/assets/fonts/roboto-condensed-400.woff2" as="font" type="font/woff2" crossorigin="">-->
+    <!--    <link rel="preload" href="https://www.unily.com/assets/fonts/roboto-condensed-700.woff2" as="font" type="font/woff2" crossorigin="">-->
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&amp;family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
@@ -12388,7 +12388,7 @@
         }
       }
 
-      .name {
+      .post-title {
         font-weight: 700;
         font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
         margin-bottom: 15px;
@@ -12396,12 +12396,12 @@
         line-height: 1.4;
       }
 
-      .name a {
+      .post-title a {
         color: #1c1c1b;
         text-decoration: none;
       }
 
-      .c-articles--side .name, .c-articles--dropdown .name {
+      .c-articles--side .post-title, .c-articles--dropdown .post-title {
         font-size: 18px;
       }
 
@@ -13245,7 +13245,7 @@
         position: relative;
       }
     </style>
-<!--    <script src="https://cookie-cdn.cookiepro.com/scripttemplates/6.36.0/otBannerSdk.js" async="" type="text/javascript"></script>-->
+    <!--    <script src="https://cookie-cdn.cookiepro.com/scripttemplates/6.36.0/otBannerSdk.js" async="" type="text/javascript"></script>-->
     <style type="text/css" id="ate_css">@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap");
 
     .addeventatc {
@@ -13453,24 +13453,23 @@
     .addeventatc_dropdown .drop_markup {
       background-color: #f4f4f4;
     }</style>
-    <style id="onetrust-style">
-      #onetrust-banner-sdk {
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%
-      }
+    <style id="onetrust-style">#onetrust-banner-sdk {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%
+    }
 
-      #onetrust-banner-sdk .onetrust-vendors-list-handler {
-        cursor: pointer;
-        color: #1f96db;
-        font-size: inherit;
-        font-weight: bold;
-        text-decoration: none;
-        margin-left: 5px
-      }
+    #onetrust-banner-sdk .onetrust-vendors-list-handler {
+      cursor: pointer;
+      color: #1f96db;
+      font-size: inherit;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 5px
+    }
 
-      #onetrust-banner-sdk .onetrust-vendors-list-handler:hover {
-        color: #1f96db
-      }
+    #onetrust-banner-sdk .onetrust-vendors-list-handler:hover {
+      color: #1f96db
+    }
 
     #onetrust-banner-sdk:focus {
       outline: 2px solid #000;
@@ -17262,8 +17261,222 @@
       background-image: url('https://cookie-cdn.cookiepro.com/logos/static/ot_persistent_cookie_icon.png')
     }</style>
 
+    <style>
+      .comparison-table {
+        width: 100%;
+      }
+
+      @media (max-width: 767px) {
+        .comparison-table {
+          width: fit-content;
+        }
+      }
+
+      .comparison-table .header {
+        display: flex;
+      }
+
+      .comparison-table .header-item {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (max-width: 767px) {
+        .comparison-table .header-item:first-of-type {
+          width: 150px;
+          max-width: 150px;
+        }
+      }
+
+      .comparison-table .header-item-title {
+        display: block;
+        width: fit-content;
+        font-weight: bold;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .comparison-table .header-item-button {
+        display: block;
+        background: #f0f;
+        font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: fit-content;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 767px) {
+        .comparison-table .header-item-button {
+          padding: 8px 16px;
+          font-size: 16px;
+        }
+      }
+
+      .comparison-table .header-item-button:hover {
+        background: #c0c;
+      }
+
+      .comparison-table .row {
+        display: flex;
+        padding: 20px 0;
+        border-bottom: solid 1px #dcdcdc;
+      }
+
+      .comparison-table .row:last-of-type {
+        border-bottom: none;
+      }
+
+      .comparison-table .row-item {
+        flex: 1;
+        position: relative;
+      }
+
+      @media (max-width: 767px) {
+        .comparison-table .row-item {
+          font-size: 16px;
+        }
+
+        .comparison-table .row-item:first-of-type {
+          width: 150px;
+          max-width: 150px;
+        }
+      }
+
+      .comparison-table .row-item-checked::before {
+        content: '';
+        background: url(https://unilyweb2020.azureedge.net/media/dmlnid3g/check-black.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: calc(50% - 8.5px);
+        left: calc(50% - 8.5px);
+        height: 17px;
+        width: 17px;
+      }
+    </style>
     <!-- Added styles - Ana -->
     <link href="assets/css/ana.css" rel="stylesheet">
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        var isAnimationTriggered = false;
+        var isInViewport = function (elem) {
+          var distance = elem.getBoundingClientRect();
+          return (
+              distance.top >= 0 &&
+              distance.left >= 0 &&
+              distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+              distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        };
+
+        const counter = (EL) => {
+
+          const duration = 2200;
+
+          const start = parseInt(EL.textContent, 10);
+          const end = parseInt(EL.dataset.counter, 10);
+
+          if (start === end) return;
+
+          const range = end - start;
+          let curr = start;
+
+          const timeStart = Date.now();
+
+          const loop = () => {
+            let elaps = Date.now() - timeStart;
+            if (elaps > duration) elaps = duration;
+            const frac = elaps / duration;
+            const step = frac * range;
+            curr = start + step;
+            EL.textContent = Math.trunc(curr);
+            if (elaps < duration) requestAnimationFrame(loop);
+          };
+
+          requestAnimationFrame(loop);
+        };
+
+        var counters = document.getElementsByClassName('counter-wrapper');
+        var imgSource = document.getElementsByClassName('jss-7734');
+        var imgDestination = document.getElementsByClassName('jss-4377');
+        // Add listener
+        window.addEventListener('scroll', function (event) {
+          counters.forEach(element => {
+            if (isInViewport(element)) {
+              element.classList.add("active");
+
+              if (!isAnimationTriggered) {
+                isAnimationTriggered = true;
+                document.querySelectorAll("[data-counter]").forEach(counter);
+              }
+            }
+          });
+          // Check does counter should start on init
+          if (isInViewport(counters[0]) && !isAnimationTriggered) {
+            isAnimationTriggered = true;
+            counters[0].classList.add("active");
+            document.querySelectorAll("[data-counter]").forEach(counter);
+          }
+
+          // Why attend section
+          imgSource.forEach(element => {
+            if (isInViewport(element)) {
+              // element.classList.add("active", element.getAttribute('data-img'));
+              // console.log('element', element);
+              // document.getElementById('irs7734').setAttribute('src', element.getAttribute('data-img'));
+              // const imgId = element.getAttribute('data-img-pair')
+              const imgId = element.getAttribute('data-img-id')
+              Array.from(imgDestination).forEach(
+                  (el) => {
+                    el.classList.remove('active');
+                    if (el.getAttribute('data-img-pair') === imgId) el.classList.add('active');
+                  }
+              );
+            } else {
+              element.classList.remove("active");
+            }
+          });
+
+        }, false);
+      });
+
+      $(document).ready(function() {
+        $('.faq-question-wrapper').on('click', function() {
+          $(this).toggleClass('active');
+          $(this).next().slideToggle('fast');
+        });
+
+        $('#expand-all-faq').on('click', function() {
+          $('.faq-answer').each(function() {
+            if ($(this).css('display') === 'none') {
+              $(this).closest('.faq-item').find('.faq-question-wrapper').addClass('active');
+              $(this).slideToggle('fast');
+            }
+          });
+          $(this).hide();
+          $('#collapse-all-faq').show();
+        });
+
+        $('#collapse-all-faq').on('click', function() {
+          $('.faq-answer').each(function() {
+            if ($(this).css('display') !== 'none') {
+              $(this).closest('.faq-item').find('.faq-question-wrapper').removeClass('active');
+              $(this).slideToggle('fast');
+            }
+          });
+          $(this).hide();
+          $('#expand-all-faq').show();
+        });
+      })
+    </script>
   </head>
   <body class="unite sticky-header" style="padding-top: 41px;">
     <div class="c-loading">
@@ -17284,7 +17497,7 @@
       </div>
 
 
-      <div class="c-head__wrap">
+      <div class="c-head__wrap c-head__wrap--type2">
 
         <div class="c-head__container">
           <div class="c-logo">
@@ -17314,199 +17527,161 @@
 
     </header>
     <div class="c-page c-page--top overflow-unset">
+      <div class="hero-section hero-section--type2">
+        <img src="assets/img/img-cdn/tickets-hero.jpg" alt="Banner" />
+        <div class="container c-clients__container--5 hero-section__text">
+          <h1>Tickets</h1>
+          <p>Ticket options.</p>
+        </div>
+      </div>
       <div id="About" class="id-section">
-        <div class="hero-section hero-section--type3">
-          <img src="assets/img/img-cdn/speakers-hero.jpeg" alt="Banner" />
-          <div class="container c-clients__container--5 hero-section__text">
-            <h1>Speakers</h1>
-            <p>Hear from visionaries who will challenge your thinking and open your mind to fresh ideas.</p>
-          </div>
-        </div>
-        <div class="grid-content-item bg-01">
-          <div class="pt pb">
-            <ul class="speakers-list pt-4">
-              <li class="speakers-item__item">
-                <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" alt="Biogen logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync">
-                <h3 class="heading-07">Grace Beverley</h3>
-                <p style="font-weight: 400;">Entrepreneur, best-selling author, and podcast host</p>
-                <ul class="c-social">
-                  <li class="c-social__item"><a href="https://www.youtube.com/@GraceFitUKtube" class="c-social__link c-social__link--youtube" target="_blank">YouTube</a></li>
-                  <li class="c-social__item"><a href="https://www.instagram.com/gracebeverley/?hl=en" class="c-social__link c-social__link--instagram" target="_blank">Instagram</a></li>
-                  <li class="c-social__item"><a href="https://www.linkedin.com/in/grace-beverley-574a10102/" class="c-social__link c-social__link--linkedin" target="_blank">LinkedIn</a></li>
-                </ul>
-              </li>
-              <li class="speakers-item__item">
-                <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" alt="Nielson Norman logo" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync" />
-                <h3 class="heading-07">Grace Beverley</h3>
-                <p style="font-weight: 400;">Entrepreneur, best-selling author, and podcast host</p>
-                <ul class="c-social">
-                  <li class="c-social__item"><a href="https://www.youtube.com/@GraceFitUKtube" class="c-social__link c-social__link--youtube" target="_blank">YouTube</a></li>
-                  <li class="c-social__item"><a href="https://www.instagram.com/gracebeverley/?hl=en" class="c-social__link c-social__link--instagram" target="_blank">Instagram</a></li>
-                  <li class="c-social__item"><a href="https://www.linkedin.com/in/grace-beverley-574a10102/" class="c-social__link c-social__link--linkedin" target="_blank">LinkedIn</a></li>
-                </ul>
-              </li>
-              <li class="speakers-item__item">
-                <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync" />
-                <h3 class="heading-07">Grace Beverley</h3>
-                <p style="font-weight: 400;">Entrepreneur, best-selling author, and podcast host</p>
-                <ul class="c-social">
-                  <li class="c-social__item"><a href="https://www.youtube.com/@GraceFitUKtube" class="c-social__link c-social__link--youtube" target="_blank">YouTube</a></li>
-                  <li class="c-social__item"><a href="https://www.instagram.com/gracebeverley/?hl=en" class="c-social__link c-social__link--instagram" target="_blank">Instagram</a></li>
-                  <li class="c-social__item"><a href="https://www.linkedin.com/in/grace-beverley-574a10102/" class="c-social__link c-social__link--linkedin" target="_blank">LinkedIn</a></li>
-                </ul>
-              </li>
-              <li class="speakers-item__item">
-                <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync" />
-                <h3 class="heading-07">Grace Beverley</h3>
-                <p style="font-weight: 400;">Entrepreneur, best-selling author, and podcast host</p>
-                <ul class="c-social">
-                  <li class="c-social__item"><a href="https://www.youtube.com/@GraceFitUKtube" class="c-social__link c-social__link--youtube" target="_blank">YouTube</a></li>
-                  <li class="c-social__item"><a href="https://www.instagram.com/gracebeverley/?hl=en" class="c-social__link c-social__link--instagram" target="_blank">Instagram</a></li>
-                  <li class="c-social__item"><a href="https://www.linkedin.com/in/grace-beverley-574a10102/" class="c-social__link c-social__link--linkedin" target="_blank">LinkedIn</a></li>
-                </ul>
-              </li>
-              <li class="speakers-item__item">
-                <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" data-lazy="" class="img-alt" height="40" style="aspect-ratio:0/0" decoding="sync" />
-                <h3 class="heading-07">Grace Beverley</h3>
-                <p style="font-weight: 400;">Entrepreneur, best-selling author, and podcast host</p>
-                <ul class="c-social">
-                  <li class="c-social__item"><a href="https://www.youtube.com/@GraceFitUKtube" class="c-social__link c-social__link--youtube" target="_blank">YouTube</a></li>
-                  <li class="c-social__item"><a href="https://www.instagram.com/gracebeverley/?hl=en" class="c-social__link c-social__link--instagram" target="_blank">Instagram</a></li>
-                  <li class="c-social__item"><a href="https://www.linkedin.com/in/grace-beverley-574a10102/" class="c-social__link c-social__link--linkedin" target="_blank">LinkedIn</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="grid-content-item py-5">
-          <section class="pb">
+        <div class="grid-content-item py">
+          <section class="container " data-scroll>
 
-            <div class="container container-full pt">
-              <div class="heading-06">Past speakers</div>
+            <div class="comparison-table">
+              <div class="header">
+                <div class="header-item"></div>
+                <div class="header-item">
+                  <span class="header-item-title">Online</span>
+
+                  <a href="javascript:void(0)" id="eventbrite-widget-modal-trigger-629d14c3-b76a-48fc-b3b6-3b931529ff87-557154111947" data-datalayer="button:click:unite_registration" class="header-item-button">Register now</a>
+                </div>
+                <div class="header-item">
+                  <span class="header-item-title">In Person - General Admission</span>
+
+                  <a href="javascript:void(0)" id="eventbrite-widget-modal-trigger-e9cd5bcf-8b05-42ac-8474-39194f81f793-557154111947" data-datalayer="button:click:unite_registration" class="header-item-button">Register now</a>
+                </div>
+                <div class="header-item">
+                  <span class="header-item-title">In Person - VIP</span>
+
+                  <a href="javascript:void(0)" id="eventbrite-widget-modal-trigger-5bbb6555-f7de-4c78-82d7-0948a07c6d91-557154111947" data-datalayer="button:click:unite_registration" class="header-item-button">Register now</a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="row-item row-item-description">Watch select sessions live online</div>
+
+                <div class="row-item row-item-checked"></div>
+                <div class="row-item row-item-checked"></div>
+                <div class="row-item row-item-checked"></div>
+
+              </div>
+              <div class="row">
+                <div class="row-item row-item-description">First access to every session on-demand</div>
+
+                <div class="row-item row-item-checked"></div>
+                <div class="row-item row-item-checked"></div>
+                <div class="row-item row-item-checked"></div>
+
+              </div>
+              <div class="row">
+                <div class="row-item row-item-description">In person access to every session with speakers live in London</div>
+
+                <div class="row-item "></div>
+                <div class="row-item row-item-checked"></div>
+                <div class="row-item row-item-checked"></div>
+
+              </div>
+              <div class="row">
+                <div class="row-item row-item-description">Genius Bar, networking, roundtables</div>
+
+                <div class="row-item "></div>
+                <div class="row-item row-item-checked"></div>
+                <div class="row-item row-item-checked"></div>
+
+              </div>
+              <div class="row">
+                <div class="row-item row-item-description">Access to KOBOX boxing class, London Calling Party, and After Party</div>
+
+                <div class="row-item "></div>
+                <div class="row-item row-item-checked"></div>
+                <div class="row-item row-item-checked"></div>
+
+              </div>
+              <div class="row">
+                <div class="row-item row-item-description">Reserved front-of-house Main Stage seating</div>
+
+                <div class="row-item "></div>
+                <div class="row-item "></div>
+                <div class="row-item row-item-checked"></div>
+
+              </div>
+              <div class="row">
+                <div class="row-item row-item-description">VIP networking drinks on Sep 12</div>
+
+                <div class="row-item "></div>
+                <div class="row-item "></div>
+                <div class="row-item row-item-checked"></div>
+
+              </div>
+              <div class="row">
+                <div class="row-item row-item-description">Access to VIP lounge alongside headline speakers</div>
+
+                <div class="row-item "></div>
+                <div class="row-item "></div>
+                <div class="row-item row-item-checked"></div>
+
+              </div>
             </div>
 
-            <div class="past-speakers-list">
-              <div
-                   data-lazy
-                   data-where-next
-                   data-node-id="3148"
-                   data-current-culture="en">
-                <div class="speakers-wrapper">
-                  <div class="speakers-item">
-                    <div class=" speakers-item-media">
-                      <!--                    <a href="/insights/events/the-future-of-employee-engagement-then-now-next-sydney" class="c-articles__link"></a>-->
-                      <img src="https://www.unily.com/media/10gf1lkn/stephen-fry.png?mode=crop&width=800&format=webp" alt="" data-lazy class="img-full">
-                    </div>
-                    <div class="speakers-item-content">
-                      <p class="name">
-                        Stephen Fry
-                      </p>
-                    </div>
+          </section>
+
+        </div>
+        <div class="">
+          <section class="bg-06 c-block-subscribe">
+            <div class="container py">
+              <div>
+                <h2 class="heading-01-alt full-width-form-block-header text-center"><strong>CONVINCE YOUR BOSS</strong>. Download the template.</h2>
+                <p class="text-center">Need approval? Get the go ahead with our convince your boss letter.</p>
+                <div id="form-dd6f12b6-dc70-4901-a49f-5ff9330b519c" class="full-width-form-block unite-form">
+                  <div class="subscribe-form">
+                    <input type="text" placeholder="Email" />
+                    <a href="mailto:someemail@gmail.com">DOWNLOAD</a>
                   </div>
-                  <div class="speakers-item">
-                    <div class="speakers-item-media">
-  <!--                    <a href="/insights/events/the-future-of-employee-engagement-then-now-next-sydney" class="c-articles__link"></a>-->
-                      <img src="https://www.unily.com/media/cqubl5ja/steven-bartlett.png?mode=crop&width=800&format=webp" alt="" data-lazy class="img-full">
-                    </div>
-                    <div class="speakers-item-content">
-                      <p class="name">
-                        Steven Bartlett
-                      </p>
-                    </div>
-                  </div>
-                  <div class="speakers-item">
-                    <div class="speakers-item-media">
-  <!--                    <a href="/insights/blogs/is-the-intranet-part-of-the-hr-tech-stack" class="c-articles__link"></a>-->
-                      <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" alt="" data-lazy class="img-full">
-                    </div>
-                    <div class="speakers-item-content">
-                      <p class="name">
-                        Grace Beverly
-                      </p>
-                    </div>
-                  </div>
-                  <div class="speakers-item">
-                    <div class="speakers-item-media">
-  <!--                    <a href="/insights/blogs/is-the-intranet-part-of-the-hr-tech-stack" class="c-articles__link"></a>-->
-                      <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" alt="" data-lazy class="img-full">
-                    </div>
-                    <div class="speakers-item-content">
-                      <p class="name">
-                        Grace Beverly
-                      </p>
-                    </div>
-                  </div>
-                  <div class="speakers-item">
-                    <div class="speakers-item-media">
-  <!--                    <a href="/insights/blogs/is-the-intranet-part-of-the-hr-tech-stack" class="c-articles__link"></a>-->
-                      <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" alt="" data-lazy class="img-full">
-                    </div>
-                    <div class="speakers-item-content">
-                      <p class="name">
-                        Grace Beverly
-                      </p>
-                    </div>
-                  </div>
-                  <div class="speakers-item">
-                    <div class="speakers-item-media">
-  <!--                    <a href="/insights/blogs/is-the-intranet-part-of-the-hr-tech-stack" class="c-articles__link"></a>-->
-                      <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" alt="" data-lazy class="img-full">
-                    </div>
-                    <div class="speakers-item-content">
-                      <p class="name">
-                        Grace Beverly
-                      </p>
-                    </div>
-                  </div>
-                  <div class="speakers-item">
-                    <div class="speakers-item-media">
-  <!--                    <a href="/insights/blogs/is-the-intranet-part-of-the-hr-tech-stack" class="c-articles__link"></a>-->
-                      <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" alt="" data-lazy class="img-full">
-                    </div>
-                    <div class="speakers-item-content">
-                      <p class="name">
-                        Grace Beverly
-                      </p>
-                    </div>
-                  </div>
-                  <div class="speakers-item">
-                    <div class="speakers-item-media">
-  <!--                    <a href="/insights/blogs/is-the-intranet-part-of-the-hr-tech-stack" class="c-articles__link"></a>-->
-                      <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" alt="" data-lazy class="img-full">
-                    </div>
-                    <div class="speakers-item-content">
-                      <p class="name">
-                        Grace Beverly
-                      </p>
-                    </div>
-                  </div>
-                  <div class="speakers-item">
-                    <div class="speakers-item-media">
-  <!--                    <a href="/insights/blogs/is-the-intranet-part-of-the-hr-tech-stack" class="c-articles__link"></a>-->
-                      <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" alt="" data-lazy class="img-full">
-                    </div>
-                    <div class="speakers-item-content">
-                      <p class="name">
-                        Grace Beverly
-                      </p>
-                    </div>
-                  </div>
-                  <div class="speakers-item">
-                    <div class="speakers-item-media">
-  <!--                    <a href="/insights/blogs/is-the-intranet-part-of-the-hr-tech-stack" class="c-articles__link"></a>-->
-                      <img src="https://www.unily.com/media/lzkjdwsv/grace-beverly.png?mode=crop&width=800&format=webp" alt="" data-lazy class="img-full">
-                    </div>
-                    <div class="speakers-item-content">
-                      <p class="name">
-                        Grace Beverly
-                      </p>
-                    </div>
-                  </div>
-                  <div class="speakers-item-last"></div>
                 </div>
               </div>
             </div>
           </section>
+        </div>
+        <div class="grid-content-item py">
+          <div class="container py">
+            <div class="faq-section-title-wrapper">
+              <h2>All the A's to your Q's</h2>
+              <div class="cursor-pointer">
+                <button type="button" id="expand-all-faq">Expand all</button>
+                <button type="button" id="collapse-all-faq" style="display: none;">Collapse all</button>
+              </div>
+            </div>
+            <div class="faq-wrapper">
+              <div class="faq-item">
+                <div class="faq-question-wrapper">
+                  <h4>I’ve bought a ticket but I can no longer attend, what do I do?</h4>
+                  <div class="faq-arrow"></div>
+                </div>
+                <div class="faq-answer" style="display: none;">
+                  <p>Please email unite@unily.com and we will do xz and z.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question-wrapper">
+                  <h4>Is the venue accessible?</h4>
+                  <div class="faq-arrow"></div>
+                </div>
+                <div class="faq-answer" style="display: none;">
+                  <p>Please email unite@unily.com and we will do xz and z.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question-wrapper">
+                  <h4>I’ve bought a ticket but I can no longer attend, what do I do?</h4>
+                  <div class="faq-arrow"></div>
+                </div>
+                <div class="faq-answer" style="display: none;">
+                  <p>Please email unite@unily.com and we will do xz and z.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -17615,9 +17790,45 @@
     <script src="//addevent.com/libs/atc/1.6.1/atc.min.js"></script>
     <script src="https://www.unily.com/assets/js/addtocalendarbutton.min.js?v=2.10.8"></script>
     <script src="https://www.unily.com/assets/js/vendor/intersection-observer-0.12.0.min.js?v=2.10.8"></script>
-    <script src="https://www.unily.com/assets/js/app.min.js?v=2.10.8"></script>
+    <!--    <script src="https://unily.com/assets/js/lazyload.min.js?v=2.10.9" ></script>-->
     <script>
-      "use strict";var unilyLazyLoading={lazyLoadElementSelector:"[data-lazy]",eagerLoadElementSelector:"[data-eager]",lazyLoadManualLoadStatusAttribute:"data-manual-ll-status",cancelExitingLoads:!1,matchHeightElementSelector:".js-equal",matchHeightRunOnLoaded:!1,loadViewDistanceThreshold:200,init:function(){this.matchHeightRunOnLoaded=$(this.matchHeightElementSelector).length&&$(this.matchHeightElementSelector).matchHeight;window.lazyLoadOptions={elements_selector:this.lazyLoadElementSelector,cancel_on_exit:this.cancelExitingLoads,threshold:this.loadViewDistanceThreshold,callback_loaded:function(){unilyLazyLoading.matchHeightRunOnLoaded&&$(unilyLazyLoading.matchHeightElementSelector).matchHeight()},callback_enter:function(n){unilyLazyLoading.loadElement(n)}};var n=document.createElement("script");n.async=!0;n.src="https://www.unily.com/assets/js/vendor/vanilla-lazyload-17.8.8.min.js";document.body.appendChild(n);unilyLazyLoading.loadEagerElements()},loadEagerElements:function(){$(unilyLazyLoading.eagerLoadElementSelector).each(function(n,t){unilyLazyLoading.loadElement(t)})},loadElement:function(n){unilyLazyLoading.checkLoad(n,"data-hs")?unilyHsForms.loadForm(n):unilyLazyLoading.checkLoad(n,"data-local-date-time")?unilyLocalDateTime.convertDateTime(n):unilyLazyLoading.checkLoad(n,"data-where-next")?unilyWhereNext.init(n):unilyLazyLoading.checkLoad(n,"data-insights-carousel")?unilyInsightsCarousel.init(n):unilyLazyLoading.checkLoad(n,"data-upcoming-events")?unilyUpcomingEvents.init(n):unilyLazyLoading.checkLoad(n,"data-video-popup")?unilyVideoPopup.init(n):unilyLazyLoading.checkLoad(n,"data-script-placeholder")&&unilyLazyLoading.loadScript(n)},checkLoad:function(n,t){var i=$(n),r=i.attr(t);return typeof r=="undefined"||r===!1?!1:i.attr(unilyLazyLoading.lazyLoadManualLoadStatusAttribute)==="loaded"?!1:(i.attr(unilyLazyLoading.lazyLoadManualLoadStatusAttribute,"loaded"),!0)},loadScript:function(n){var i=$(n).attr("data-src"),t=document.createElement("script");t.async=!0;t.src=i;document.body.appendChild(t);$("[data-script-placeholder][data-src='"+i+"']").attr(unilyLazyLoading.lazyLoadManualLoadStatusAttribute,"loaded")},refresh:function(){new LazyLoad(window.lazyLoadOptions)}};unilyLazyLoading.init();
+      "use strict";
+      var unilyLazyLoading = {
+        lazyLoadElementSelector: "[data-lazy]", eagerLoadElementSelector: "[data-eager]", lazyLoadManualLoadStatusAttribute: "data-manual-ll-status", cancelExitingLoads: !1, matchHeightElementSelector: ".js-equal", matchHeightRunOnLoaded: !1, loadViewDistanceThreshold: 200, init: function () {
+          this.matchHeightRunOnLoaded = $(this.matchHeightElementSelector).length && $(this.matchHeightElementSelector).matchHeight;
+          window.lazyLoadOptions = {
+            elements_selector: this.lazyLoadElementSelector, cancel_on_exit: this.cancelExitingLoads, threshold: this.loadViewDistanceThreshold, callback_loaded: function () {
+              unilyLazyLoading.matchHeightRunOnLoaded && $(unilyLazyLoading.matchHeightElementSelector).matchHeight()
+            }, callback_enter: function (n) {
+              unilyLazyLoading.loadElement(n)
+            }
+          };
+          var n = document.createElement("script");
+          n.async = !0;
+          n.src = "https://www.unily.com/assets/js/vendor/vanilla-lazyload-17.8.8.min.js";
+          document.body.appendChild(n);
+          unilyLazyLoading.loadEagerElements()
+        }, loadEagerElements: function () {
+          $(unilyLazyLoading.eagerLoadElementSelector).each(function (n, t) {
+            unilyLazyLoading.loadElement(t)
+          })
+        }, loadElement: function (n) {
+          unilyLazyLoading.checkLoad(n, "data-hs") ? unilyHsForms.loadForm(n) : unilyLazyLoading.checkLoad(n, "data-local-date-time") ? unilyLocalDateTime.convertDateTime(n) : unilyLazyLoading.checkLoad(n, "data-where-next") ? unilyWhereNext.init(n) : unilyLazyLoading.checkLoad(n, "data-insights-carousel") ? unilyInsightsCarousel.init(n) : unilyLazyLoading.checkLoad(n, "data-upcoming-events") ? unilyUpcomingEvents.init(n) : unilyLazyLoading.checkLoad(n, "data-video-popup") ? unilyVideoPopup.init(n) : unilyLazyLoading.checkLoad(n, "data-script-placeholder") && unilyLazyLoading.loadScript(n)
+        }, checkLoad: function (n, t) {
+          var i = $(n), r = i.attr(t);
+          return typeof r == "undefined" || r === !1 ? !1 : i.attr(unilyLazyLoading.lazyLoadManualLoadStatusAttribute) === "loaded" ? !1 : (i.attr(unilyLazyLoading.lazyLoadManualLoadStatusAttribute, "loaded"), !0)
+        }, loadScript: function (n) {
+          var i = $(n).attr("data-src"), t = document.createElement("script");
+          t.async = !0;
+          t.src = i;
+          document.body.appendChild(t);
+          $("[data-script-placeholder][data-src='" + i + "']").attr(unilyLazyLoading.lazyLoadManualLoadStatusAttribute, "loaded")
+        }, refresh: function () {
+          new LazyLoad(window.lazyLoadOptions)
+        }
+      };
+      unilyLazyLoading.init();
     </script>
+    <script src="https://www.unily.com/assets/js/app.min.js?v=2.10.8"></script>
   </body>
 </html>
