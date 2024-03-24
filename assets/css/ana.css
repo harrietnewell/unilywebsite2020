@@ -973,6 +973,7 @@ li.connected-circles__item {
   position: relative;
   overflow: hidden;
   display: flex;
+  max-height: 450px;
 }
 
 .gallery-3 .gallery-item img {
