@@ -948,6 +948,10 @@ li.connected-circles__item {
   padding-top: 40px;
 }
 
+.gallery-2 .gallery-item .text h3 {
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .gallery-2 .gallery-item a {
   border: 3px solid #fff;
   color: #fff;
@@ -956,6 +960,7 @@ li.connected-circles__item {
   z-index: 2;
   border-radius: 40px;
   transition: all 100ms ease-in-out;
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .gallery-2 .gallery-item a:hover {
@@ -1117,6 +1122,7 @@ li.connected-circles__item {
 }
 
 .section-scroll-wrapper {
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
